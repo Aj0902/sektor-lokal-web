@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "pinterest": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@iflow-mcp/collactivelabs-pinterest-mcp-server"
+      ],
+      "env": {
+        "PINTEREST_ACCESS_TOKEN": "YOUR_PINTEREST_TOKEN_HERE"
+      }
+    }
+  }
+}

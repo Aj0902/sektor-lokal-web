@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "vercel-helper": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-vercel"
+      ],
+      "env": {
+        "VERCEL_TOKEN": "YOUR_VERCEL_TOKEN_HERE"
+      }
+    }
+  }
+}
