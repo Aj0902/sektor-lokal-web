@@ -14,74 +14,59 @@ html {
 
 body {
   overflow-x: hidden;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.4s cubic-bezier(0.16, 1, 0.3, 1), color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Custom Scrollbar */
+/* Minimal Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 5px;
 }
 ::-webkit-scrollbar-track {
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: #e11d48;
-  border-radius: 3px;
+  background: rgba(225, 29, 72, 0.4);
+  border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #f43f5e;
+  background: rgba(225, 29, 72, 0.8);
 }
 
-/* Editorial Glass & Borders */
-.glass-panel-dark {
-  background: rgba(11, 15, 25, 0.85);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.glass-panel-light {
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(0, 0, 0, 0.08);
-}
-
-/* Red Accent Bar Hidup & Animasi (Glowing Pulse) */
-.red-accent-bar-animated {
-  width: 12px;
-  background: linear-gradient(180deg, #fb7185 0%, #e11d48 50%, #9f1239 100%);
-  box-shadow: 0 0 20px rgba(225, 29, 72, 0.7), 0 0 40px rgba(225, 29, 72, 0.35);
+/* Sleek Red Accent Bar - Refined & Luxurious */
+.red-accent-bar-luxe {
+  width: 6px;
+  background: linear-gradient(180deg, #f43f5e 0%, #e11d48 50%, #be123c 100%);
+  box-shadow: 0 0 16px rgba(225, 29, 72, 0.4);
+  border-radius: 9999px;
   position: relative;
   overflow: hidden;
-  border-radius: 2px;
 }
 
-.red-accent-bar-animated::after {
+.red-accent-bar-luxe::after {
   content: '';
   position: absolute;
   top: -100%;
   left: 0;
   right: 0;
   height: 100%;
-  background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.9), transparent);
-  animation: barSheen 2.6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.7), transparent);
+  animation: luxeSheen 3.5s cubic-bezier(0.16, 1, 0.3, 1) infinite;
 }
 
-@keyframes barSheen {
+@keyframes luxeSheen {
   0% { top: -100%; }
-  50%, 100% { top: 100%; }
+  45%, 100% { top: 100%; }
 }
 
-/* Red Animated Timeline Track */
-.timeline-track-glow {
-  background: linear-gradient(180deg, #e11d48 0%, #f43f5e 50%, #e11d48 100%);
-  box-shadow: 0 0 16px rgba(225, 29, 72, 0.6);
+/* Elegant Minimal Timeline Track */
+.timeline-track-minimal {
+  background: linear-gradient(180deg, rgba(225, 29, 72, 0.2) 0%, rgba(225, 29, 72, 0.8) 50%, rgba(225, 29, 72, 0.2) 100%);
   position: relative;
   overflow: hidden;
+  border-radius: 9999px;
 }
 
-.timeline-track-glow::after {
+.timeline-track-minimal::after {
   content: '';
   position: absolute;
   top: -40%;
@@ -89,69 +74,38 @@ body {
   right: 0;
   height: 40%;
   background: linear-gradient(180deg, transparent, #ffffff, transparent);
-  animation: trackFlow 2.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  animation: trackGlowFlow 3s cubic-bezier(0.16, 1, 0.3, 1) infinite;
 }
 
-@keyframes trackFlow {
+@keyframes trackGlowFlow {
   0% { top: -40%; opacity: 0; }
-  30% { opacity: 1; }
+  40% { opacity: 0.9; }
   100% { top: 100%; opacity: 0; }
 }
 
-/* Red Outline Card (Sesuai Sketsa Canva) */
-.red-outline-card-dark {
-  background: #080c14;
-  border: 2px solid #e11d48;
-  box-shadow: 0 0 25px rgba(225, 29, 72, 0.3), inset 0 0 15px rgba(225, 29, 72, 0.05);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+/* Hairline Glass & Card Styles */
+.card-luxe-dark {
+  background: rgba(14, 19, 34, 0.65);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.red-outline-card-light {
+.card-luxe-dark:hover {
+  border-color: rgba(225, 29, 72, 0.35);
+  box-shadow: 0 16px 40px -12px rgba(0, 0, 0, 0.7), 0 0 24px -6px rgba(225, 29, 72, 0.15);
+}
+
+.card-luxe-light {
   background: #ffffff;
-  border: 2px solid #e11d48;
-  box-shadow: 0 8px 24px rgba(225, 29, 72, 0.15);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.03);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.red-outline-card-dark:hover,
-.red-outline-card-light:hover {
-  box-shadow: 0 0 35px rgba(225, 29, 72, 0.55);
-  transform: translateY(-2px);
-}
-
-/* Accordion Closed Item */
-.accordion-closed-dark {
-  background: #080b11;
-  border: 1px solid rgba(225, 29, 72, 0.4);
-  transition: all 0.25s ease;
-}
-
-.accordion-closed-dark:hover {
-  background: #0d1322;
-  border-color: #f43f5e;
-  box-shadow: 0 0 20px rgba(225, 29, 72, 0.35);
-  transform: translateX(4px);
-}
-
-.accordion-closed-light {
-  background: #f8fafc;
-  border: 1px solid rgba(225, 29, 72, 0.35);
-  transition: all 0.25s ease;
-}
-
-.accordion-closed-light:hover {
-  background: #ffffff;
-  border-color: #e11d48;
-  box-shadow: 0 4px 20px rgba(225, 29, 72, 0.2);
-  transform: translateX(4px);
-}
-
-/* Shimmer animation */
-@keyframes shimmer {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(100%); }
-}
-
-.animate-shimmer {
-  animation: shimmer 2s infinite;
+.card-luxe-light:hover {
+  border-color: rgba(225, 29, 72, 0.25);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06), 0 0 20px rgba(225, 29, 72, 0.08);
 }
