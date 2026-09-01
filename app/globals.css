@@ -2,38 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Cinzel:ital,wght@0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,400;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 
 :root {
   --font-display: 'Anton', sans-serif;
-  --font-serif: 'Cinzel', serif;
+  --font-editorial: 'Playfair Display', serif;
   --font-sans: 'Plus Jakarta Sans', sans-serif;
-  color-scheme: dark;
 }
 
 body {
-  background-color: #0b0e14;
-  color: #f3f4f6;
   font-family: var(--font-sans);
   overflow-x: hidden;
-  selection-background-color: #e11d48;
-  selection-color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .font-display {
   font-family: var(--font-display);
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
 }
 
-.font-serif-editorial {
-  font-family: var(--font-serif);
-}
-
-/* Background Noise Texture */
-.texture-bg {
-  background-color: #0b0e14;
-  background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 0);
-  background-size: 24px 24px;
+.font-editorial {
+  font-family: var(--font-editorial);
 }
 
 /* Custom Scrollbar */
@@ -41,40 +30,60 @@ body {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #0b0e14;
+  background: transparent;
 }
 ::-webkit-scrollbar-thumb {
   background: #e11d48;
   border-radius: 3px;
 }
 
-/* Canva Red Glow Border & Bar */
+/* Red Accent Bar (Sesuai Sketsa Canva) */
 .red-accent-bar {
-  width: 12px;
+  width: 10px;
   background: #e11d48;
-  box-shadow: 0 0 20px rgba(225, 29, 72, 0.6);
+  box-shadow: 0 0 16px rgba(225, 29, 72, 0.4);
 }
 
-.red-outline-card {
-  background: #06080d;
+/* Red Outline Card (Sesuai Sketsa Canva) */
+.red-outline-card-dark {
+  background: #080b11;
   border: 2px solid #e11d48;
-  box-shadow: 0 0 15px rgba(225, 29, 72, 0.25);
+  box-shadow: 0 0 20px rgba(225, 29, 72, 0.2);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.red-outline-card:hover {
-  box-shadow: 0 0 25px rgba(225, 29, 72, 0.5);
+.red-outline-card-light {
+  background: #ffffff;
+  border: 2px solid #e11d48;
+  box-shadow: 0 4px 20px rgba(225, 29, 72, 0.12);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.red-outline-card-dark:hover,
+.red-outline-card-light:hover {
+  box-shadow: 0 0 28px rgba(225, 29, 72, 0.4);
   transform: translateY(-2px);
 }
 
-/* Accordion Item Styling */
-.accordion-closed {
-  background: #06080d;
-  border: 1px solid #e11d48;
+/* Accordion Closed Item */
+.accordion-closed-dark {
+  background: #080b11;
+  border: 1px solid rgba(225, 29, 72, 0.6);
   transition: all 0.2s ease;
 }
 
-.accordion-closed:hover {
-  background: #111622;
+.accordion-closed-dark:hover {
+  background: #111724;
   border-color: #f43f5e;
+}
+
+.accordion-closed-light {
+  background: #f8fafc;
+  border: 1px solid rgba(225, 29, 72, 0.5);
+  transition: all 0.2s ease;
+}
+
+.accordion-closed-light:hover {
+  background: #f1f5f9;
+  border-color: #e11d48;
 }
