@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 :root {
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 html {
@@ -20,21 +20,22 @@ body {
 /* Minimal Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 5px;
+  height: 5px;
 }
 ::-webkit-scrollbar-track {
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(225, 29, 72, 0.4);
+  background: rgba(225, 29, 72, 0.3);
   border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(225, 29, 72, 0.8);
+  background: rgba(225, 29, 72, 0.7);
 }
 
 /* Sleek Red Accent Bar - Refined & Luxurious */
 .red-accent-bar-luxe {
-  width: 6px;
+  width: 5px;
   background: linear-gradient(180deg, #f43f5e 0%, #e11d48 50%, #be123c 100%);
   box-shadow: 0 0 16px rgba(225, 29, 72, 0.4);
   border-radius: 9999px;
@@ -83,29 +84,30 @@ body {
   100% { top: 100%; opacity: 0; }
 }
 
-/* Hairline Glass & Card Styles */
-.card-luxe-dark {
-  background: rgba(14, 19, 34, 0.65);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+/* Open Editorial Storytelling Cards & Dividers */
+.editorial-panel-dark {
+  background: rgba(14, 19, 34, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border: 1px solid rgba(255, 255, 255, 0.07);
-  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
   transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.card-luxe-dark:hover {
-  border-color: rgba(225, 29, 72, 0.35);
-  box-shadow: 0 16px 40px -12px rgba(0, 0, 0, 0.7), 0 0 24px -6px rgba(225, 29, 72, 0.15);
-}
-
-.card-luxe-light {
-  background: #ffffff;
+.editorial-panel-light {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border: 1px solid rgba(0, 0, 0, 0.06);
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.03);
   transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.card-luxe-light:hover {
-  border-color: rgba(225, 29, 72, 0.25);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06), 0 0 20px rgba(225, 29, 72, 0.08);
+/* Hide scrollbar for clean tab streams */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
