@@ -46,6 +46,7 @@ export interface Article {
   tag: string;
   read_time: string;
   description: string;
+  content_full?: string;
   link_url: string;
   order_index: number;
 }
@@ -65,6 +66,8 @@ export interface Initiative {
   title: string;
   category: string;
   description: string;
+  price?: string;
+  price_variants?: string[];
   action_text: string;
   link_url: string;
   order_index: number;

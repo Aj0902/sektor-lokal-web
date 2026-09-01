@@ -39,17 +39,52 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
     ],
     articles: [
       { id: 'a1', profile_id: 'ferry-001', title: 'Analisis Kritis Literasi Keuangan & Pertahanan Nalar', tag: 'ESAI KRITIS', read_time: '5 Menit Membaca', description: 'Mengapa kemampuan bernalar kritis dan pengujian logika adalah instrumen perlindungan diri paling mendasar di era disinformasi digital.', link_url: 'https://youtube.com/@ferryirwandi', order_index: 1 },
-      { id: 'a2', profile_id: 'ferry-001', title: 'Stoikisme: Bukan Pasrah, Melainkan Aksi Nyata', tag: 'FILSAFAT TERAPAN', read_time: '7 Menit Membaca', description: 'Membedah esensi sejati filosofi stoikisme: fokuskan energi penuh pada apa yang bisa diubah, bukan meratapi apa yang di luar kendali.', link_url: 'https://youtube.com/@ferryirwandi', order_index: 2 }
+      { id: 'a2', profile_id: 'ferry-001', title: 'Stoikisme: Bukan Pasrah, Melainkan Aksi Nyata', tag: 'FILSAFAT TERAPAN', read_time: '7 Menit Membaca', description: 'Membedah esensi sejati filosofi stoikisme: fokuskan energi penuh pada apa yang bisa diubah, bukan meratapi apa yang di luar kendali.', link_url: 'https://youtube.com/@ferryirwandi', order_index: 2 },
+      { id: 'a3', profile_id: 'ferry-001', title: 'Matematika Di Balik Penipuan Judi Digital', tag: 'INVESTIGASI', read_time: '6 Menit Membaca', description: 'Menelanjangi algoritma dan probabilitas buatan yang selalu memenangkan bandar dalam jebakan judi online.', link_url: 'https://youtube.com/@ferryirwandi', order_index: 3 }
     ],
     testimonials: [
       { id: 't1', profile_id: 'ferry-001', author_name: 'Gita Wirjawan', author_role: 'Pendidik & Founder Endgame Podcast', quote: 'Ferry mampu mengemas materi keuangan dan diskursus sosial yang berat menjadi narasi yang sangat relevan dan dicintai generasi muda.', order_index: 1 },
       { id: 't2', profile_id: 'ferry-001', author_name: 'Baskara Putra (Hindia)', author_role: 'Musisi & Penulis Lagu', quote: 'Konsistensinya menyuarakan kebenaran di tengah riuhnya internet memberikan rasa aman bagi anak muda yang haus akan akal sehat.', order_index: 2 },
-      { id: 't3', profile_id: 'ferry-001', author_name: 'Rian', author_role: 'Penerima Beasiswa Warga', quote: 'Berkat edukasi Mas Ferry, keluarga saya terbebas dari jeratan pinjol dan saya bisa melanjutkan studi sarjana dengan beasiswa warga.', order_index: 3 }
+      { id: 't3', profile_id: 'ferry-001', author_name: 'Rian', author_role: 'Penerima Beasiswa Warga', quote: 'Berkat edukasi Mas Ferry, keluarga saya terbebas dari jeratan pinjol dan saya bisa melanjutkan studi sarjana dengan beasiswa warga.', order_index: 3 },
+      { id: 't4', profile_id: 'ferry-001', author_name: 'Nadia', author_role: 'Praktisi Keuangan Muda', quote: 'Video esai Malaka mengubah cara pandang saya mengelola risiko dan tidak lagi tergiur investasi bodong.', order_index: 4 }
     ],
     initiatives: [
-      { id: 'i1', profile_id: 'ferry-001', title: 'Jurnal Stoikisme Publik', category: 'Buku & Publikasi', description: 'Catatan pemikiran dan panduan bernalar praktis untuk navigasi kehidupan sehari-hari.', action_text: 'Pelajari Buku', link_url: 'https://youtube.com/@ferryirwandi', order_index: 1 },
-      { id: 'i2', profile_id: 'ferry-001', title: 'Apparel Resmi Malaka', category: 'Merchandise Kolektif', description: 'Koleksi apparel sebagai bentuk dukungan langsung pada independensi riset Malaka Project.', action_text: 'Kunjungi Toko', link_url: 'https://malakaproject.id', order_index: 2 },
-      { id: 'i3', profile_id: 'ferry-001', title: 'Dana Beasiswa Warga', category: 'Inisiatif Sosial', description: 'Kanal gotong royong publik untuk membiayai pendidikan anak-anak daerah berprestasi.', action_text: 'Salurkan Donasi', link_url: 'https://youtube.com/@ferryirwandi', order_index: 3 }
+      { 
+        id: 'i1', 
+        profile_id: 'ferry-001', 
+        title: 'Jurnal Stoikisme Publik', 
+        category: 'Buku & Publikasi', 
+        description: 'Catatan pemikiran dan panduan bernalar praktis untuk navigasi kehidupan sehari-hari.', 
+        price: 'Rp 149.000',
+        price_variants: ['Softcover (Rp 149.000)', 'Hardcover Signature (Rp 249.000)'],
+        action_text: 'Pelajari Buku', 
+        link_url: 'https://youtube.com/@ferryirwandi', 
+        order_index: 1 
+      },
+      { 
+        id: 'i2', 
+        profile_id: 'ferry-001', 
+        title: 'Apparel Resmi Malaka', 
+        category: 'Merchandise Kolektif', 
+        description: 'Koleksi apparel sebagai bentuk dukungan langsung pada independensi riset Malaka Project.', 
+        price: 'Rp 299.000',
+        price_variants: ['Heavyweight Cotton (Rp 299.000)', 'Limited Edition Boxset (Rp 499.000)'],
+        action_text: 'Kunjungi Toko', 
+        link_url: 'https://malakaproject.id', 
+        order_index: 2 
+      },
+      { 
+        id: 'i3', 
+        profile_id: 'ferry-001', 
+        title: 'Dana Beasiswa Warga', 
+        category: 'Inisiatif Sosial', 
+        description: 'Kanal gotong royong publik untuk membiayai pendidikan anak-anak daerah berprestasi.', 
+        price: 'Mulai Rp 50.000',
+        price_variants: ['Dukungan 1 Bulan (Rp 50.000)', 'Donatur Tetap Semester (Rp 500.000)'],
+        action_text: 'Salurkan Donasi', 
+        link_url: 'https://youtube.com/@ferryirwandi', 
+        order_index: 3 
+      }
     ]
   },
   'gita-wirjawan': {
@@ -88,7 +123,18 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
       { id: 'gt1', profile_id: 'gita-002', author_name: 'Ferry Irwandi', author_role: 'Disruptor & Creator', quote: 'Pak Gita adalah mentor yang senantiasa menantang anak muda untuk berpikir jauh melampaui zamannya.', order_index: 1 }
     ],
     initiatives: [
-      { id: 'gi1', profile_id: 'gita-002', title: 'Beasiswa Ancora Foundation', category: 'Pendidikan', description: 'Dukungan Beasiswa ke Perguruan Tinggi Terbaik Dunia.', action_text: 'Lihat Beasiswa', link_url: 'https://ancorafoundation.org', order_index: 1 }
+      { 
+        id: 'gi1', 
+        profile_id: 'gita-002', 
+        title: 'Beasiswa Ancora Foundation', 
+        category: 'Pendidikan', 
+        description: 'Dukungan Beasiswa ke Perguruan Tinggi Terbaik Dunia.', 
+        price: 'Gratis / Beasiswa Penuh',
+        price_variants: ['Program Sarjana', 'Program Pascasarjana World Class'],
+        action_text: 'Lihat Beasiswa', 
+        link_url: 'https://ancorafoundation.org', 
+        order_index: 1 
+      }
     ]
   },
   'baskara-putra': {
@@ -126,7 +172,18 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
       { id: 'bt1', profile_id: 'baskara-003', author_name: 'Ferry Irwandi', author_role: 'Disruptor & Creator', quote: 'Lirik-lirik Hindia memberi tempat berteduh jujur di tengah kebisingan perkotaan.', order_index: 1 }
     ],
     initiatives: [
-      { id: 'bi1', profile_id: 'baskara-003', title: 'Sun Eats Hours Collective', category: 'Musik & Seni', description: 'Kolektif independen pendukung karya musik lokal.', action_text: 'Dengar Musik', link_url: 'https://spotify.com', order_index: 1 }
+      { 
+        id: 'bi1', 
+        profile_id: 'baskara-003', 
+        title: 'Sun Eats Hours Collective', 
+        category: 'Musik & Seni', 
+        description: 'Kolektif independen pendukung karya musik lokal.', 
+        price: 'Rp 199.000',
+        price_variants: ['Piringan Hitam Vinyl (Rp 450.000)', 'Kaset Pita Special (Rp 199.000)'],
+        action_text: 'Dengar Musik', 
+        link_url: 'https://spotify.com', 
+        order_index: 1 
+      }
     ]
   }
 };
