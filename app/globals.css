@@ -2,23 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Cinzel:ital,wght@0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap');
+
 :root {
+  --font-display: 'Anton', sans-serif;
+  --font-serif: 'Cinzel', serif;
   --font-sans: 'Plus Jakarta Sans', sans-serif;
   color-scheme: dark;
 }
 
 body {
-  background-color: #05070c;
+  background-color: #0b0e14;
   color: #f3f4f6;
   font-family: var(--font-sans);
   overflow-x: hidden;
-  selection-background-color: #6366f1;
+  selection-background-color: #e11d48;
   selection-color: #ffffff;
 }
 
-/* Custom Grain / Noise Overlay */
-.grain-overlay {
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.035'/%3E%3C/svg%3E");
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: 0.02em;
+}
+
+.font-serif-editorial {
+  font-family: var(--font-serif);
+}
+
+/* Background Noise Texture */
+.texture-bg {
+  background-color: #0b0e14;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 0);
+  background-size: 24px 24px;
 }
 
 /* Custom Scrollbar */
@@ -26,66 +41,40 @@ body {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #05070c;
+  background: #0b0e14;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1e293b;
+  background: #e11d48;
   border-radius: 3px;
 }
-::-webkit-scrollbar-thumb:hover {
-  background: #6366f1;
+
+/* Canva Red Glow Border & Bar */
+.red-accent-bar {
+  width: 12px;
+  background: #e11d48;
+  box-shadow: 0 0 20px rgba(225, 29, 72, 0.6);
 }
 
-/* Awwwards Magazine Typography & Effects */
-.text-stroke-title {
-  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.25);
-  color: transparent;
+.red-outline-card {
+  background: #06080d;
+  border: 2px solid #e11d48;
+  box-shadow: 0 0 15px rgba(225, 29, 72, 0.25);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.text-stroke-active {
-  -webkit-text-stroke: 1.5px #6366f1;
-  color: transparent;
+.red-outline-card:hover {
+  box-shadow: 0 0 25px rgba(225, 29, 72, 0.5);
+  transform: translateY(-2px);
 }
 
-.writing-vertical {
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
+/* Accordion Item Styling */
+.accordion-closed {
+  background: #06080d;
+  border: 1px solid #e11d48;
+  transition: all 0.2s ease;
 }
 
-/* Ultra Glassmorphism Magazine Panels */
-.magazine-card {
-  background: rgba(13, 18, 30, 0.75);
-  backdrop-filter: blur(24px) saturate(190%);
-  border: 1px solid rgba(255, 255, 255, 0.07);
-  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.magazine-card:hover {
-  border-color: rgba(99, 102, 241, 0.5);
-  transform: translateY(-6px) scale(1.01);
-  box-shadow: 0 30px 60px -12px rgba(99, 102, 241, 0.2);
-}
-
-.editorial-badge {
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.2) 0%, rgba(168, 85, 247, 0.2) 100%);
-  border: 1px solid rgba(168, 85, 247, 0.4);
-}
-
-/* Glowing Neon Gradients */
-.glow-mesh-1 {
-  background: radial-gradient(circle at 50% 30%, rgba(99, 102, 241, 0.25) 0%, rgba(20, 184, 166, 0.1) 45%, transparent 70%);
-}
-
-.glow-mesh-2 {
-  background: radial-gradient(circle at 80% 70%, rgba(168, 85, 247, 0.2) 0%, rgba(245, 158, 11, 0.1) 50%, transparent 75%);
-}
-
-/* Drop Cap Styling */
-.drop-cap::first-letter {
-  font-size: 3.5rem;
-  font-weight: 900;
-  float: left;
-  line-height: 0.8;
-  margin-right: 0.75rem;
-  color: #c084fc;
+.accordion-closed:hover {
+  background: #111622;
+  border-color: #f43f5e;
 }
