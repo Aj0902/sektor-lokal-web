@@ -2,27 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,400;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
-
 :root {
-  --font-display: 'Anton', sans-serif;
-  --font-editorial: 'Playfair Display', serif;
-  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  color-scheme: dark;
 }
 
 body {
-  font-family: var(--font-sans);
   overflow-x: hidden;
   transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.font-display {
-  font-family: var(--font-display);
-  letter-spacing: 0.03em;
-}
-
-.font-editorial {
-  font-family: var(--font-editorial);
 }
 
 /* Custom Scrollbar */
@@ -37,53 +23,98 @@ body {
   border-radius: 3px;
 }
 
-/* Red Accent Bar (Sesuai Sketsa Canva) */
-.red-accent-bar {
-  width: 10px;
-  background: #e11d48;
-  box-shadow: 0 0 16px rgba(225, 29, 72, 0.4);
+/* Red Accent Bar Hidup & Animasi (Glowing Pulse) */
+.red-accent-bar-animated {
+  width: 12px;
+  background: linear-gradient(180deg, #f43f5e 0%, #e11d48 50%, #9f1239 100%);
+  box-shadow: 0 0 20px rgba(225, 29, 72, 0.6), 0 0 40px rgba(225, 29, 72, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.red-accent-bar-animated::after {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+  animation: barSheen 3s ease-in-out infinite;
+}
+
+@keyframes barSheen {
+  0% { top: -100%; }
+  50%, 100% { top: 100%; }
+}
+
+/* Red Animated Timeline Track */
+.timeline-track-glow {
+  background: linear-gradient(180deg, #e11d48 0%, #f43f5e 50%, #e11d48 100%);
+  box-shadow: 0 0 15px rgba(225, 29, 72, 0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+.timeline-track-glow::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(180deg, transparent, #ffffff, transparent);
+  animation: trackFlow 2.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@keyframes trackFlow {
+  0% { top: -50%; opacity: 0; }
+  50% { opacity: 1; }
+  100% { top: 100%; opacity: 0; }
 }
 
 /* Red Outline Card (Sesuai Sketsa Canva) */
 .red-outline-card-dark {
   background: #080b11;
   border: 2px solid #e11d48;
-  box-shadow: 0 0 20px rgba(225, 29, 72, 0.2);
+  box-shadow: 0 0 20px rgba(225, 29, 72, 0.25);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .red-outline-card-light {
   background: #ffffff;
   border: 2px solid #e11d48;
-  box-shadow: 0 4px 20px rgba(225, 29, 72, 0.12);
+  box-shadow: 0 4px 20px rgba(225, 29, 72, 0.15);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .red-outline-card-dark:hover,
 .red-outline-card-light:hover {
-  box-shadow: 0 0 28px rgba(225, 29, 72, 0.4);
+  box-shadow: 0 0 30px rgba(225, 29, 72, 0.5);
   transform: translateY(-2px);
 }
 
 /* Accordion Closed Item */
 .accordion-closed-dark {
   background: #080b11;
-  border: 1px solid rgba(225, 29, 72, 0.6);
+  border: 1px solid rgba(225, 29, 72, 0.5);
   transition: all 0.2s ease;
 }
 
 .accordion-closed-dark:hover {
   background: #111724;
   border-color: #f43f5e;
+  box-shadow: 0 0 15px rgba(225, 29, 72, 0.3);
 }
 
 .accordion-closed-light {
   background: #f8fafc;
-  border: 1px solid rgba(225, 29, 72, 0.5);
+  border: 1px solid rgba(225, 29, 72, 0.4);
   transition: all 0.2s ease;
 }
 
 .accordion-closed-light:hover {
   background: #f1f5f9;
   border-color: #e11d48;
+  box-shadow: 0 0 15px rgba(225, 29, 72, 0.2);
 }

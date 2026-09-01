@@ -13,13 +13,13 @@ import {
   Instagram, 
   Mail, 
   Radio, 
-  Quote, 
-  BookOpen, 
-  ShoppingBag, 
-  HeartHandshake,
-  CheckCircle2,
-  ArrowUpRight
+  CheckCircle2, 
+  ArrowUpRight,
+  Sparkles,
+  Zap,
+  Flame
 } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 export default function MahakaryaEditorialPage() {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -105,7 +105,7 @@ export default function MahakaryaEditorialPage() {
   ];
 
   return (
-    <div className={`min-h-screen ${bgClass} transition-colors duration-300`}>
+    <div className={`min-h-screen ${bgClass} transition-colors duration-300 font-sans`}>
 
       {/* TOP NAVIGATION BAR */}
       <nav className={`sticky top-0 z-50 backdrop-blur-xl border-b px-6 py-4 ${isDarkMode ? 'bg-[#070a10]/90 border-gray-800' : 'bg-white/90 border-gray-200'}`}>
@@ -113,11 +113,11 @@ export default function MahakaryaEditorialPage() {
           
           {/* Logo SEKTOR LOKAL (Canva Style) */}
           <div className="flex items-center gap-2">
-            <div className="flex flex-col leading-none font-display text-2xl tracking-tight text-inherit">
+            <div className="flex flex-col leading-none font-display text-3xl tracking-tight text-inherit">
               <span>SEKTOR</span>
               <div className="flex items-center gap-1.5">
                 <span>LOKAL</span>
-                <span className="w-3.5 h-4 bg-rose-600 rounded-xs flex items-center justify-center text-[10px] text-white font-bold shadow-sm">
+                <span className="w-4 h-4 bg-rose-600 rounded-xs flex items-center justify-center text-[10px] text-white font-bold shadow-md shadow-rose-600/40">
                   🏮
                 </span>
               </div>
@@ -131,7 +131,7 @@ export default function MahakaryaEditorialPage() {
               onClick={() => setIsDarkMode(!isDarkMode)}
               className={`p-2.5 rounded-xl border transition flex items-center gap-2 text-xs font-bold ${
                 isDarkMode 
-                  ? 'bg-[#0b0f19] border-gray-700 text-yellow-400 hover:border-yellow-400/50' 
+                  ? 'bg-[#0b0f19] border-gray-700 text-yellow-400 hover:border-yellow-400/50 hover:bg-yellow-950/20' 
                   : 'bg-gray-100 border-gray-300 text-gray-800 hover:bg-gray-200'
               }`}
               title="Ganti Tema Light / Dark Mode"
@@ -143,7 +143,7 @@ export default function MahakaryaEditorialPage() {
             {/* Hamburger Button */}
             <button 
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className={`p-2 rounded-xl border transition ${isDarkMode ? 'border-gray-800 text-white hover:border-rose-600' : 'border-gray-300 text-gray-900 hover:border-rose-600'}`}
+              className={`p-2.5 rounded-xl border transition ${isDarkMode ? 'border-gray-800 text-white hover:border-rose-600' : 'border-gray-300 text-gray-900 hover:border-rose-600'}`}
             >
               {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -153,17 +153,24 @@ export default function MahakaryaEditorialPage() {
       </nav>
 
       {/* MOBILE MENU DROPDOWN */}
-      {isMenuOpen && (
-        <div className={`fixed inset-0 top-[73px] z-40 p-8 flex flex-col space-y-6 text-2xl font-display uppercase tracking-wide border-b border-rose-600 backdrop-blur-2xl ${isDarkMode ? 'bg-[#070a10]/98 text-white' : 'bg-white/98 text-gray-900'}`}>
-          <a href="#hero" onClick={() => setIsMenuOpen(false)} className="hover:text-rose-600 transition">PROFILE COVER</a>
-          <a href="#tentang" onClick={() => setIsMenuOpen(false)} className="hover:text-rose-600 transition">TENTANG</a>
-          <a href="#perjalanan" onClick={() => setIsMenuOpen(false)} className="hover:text-rose-600 transition">PERJALANAN HIDUP</a>
-          <a href="#karya" onClick={() => setIsMenuOpen(false)} className="hover:text-rose-600 transition">DISCOVERY KARYA</a>
-          <a href="#artikel" onClick={() => setIsMenuOpen(false)} className="hover:text-rose-600 transition">ARTIKEL & WAWASAN</a>
-          <a href="#kata-warga" onClick={() => setIsMenuOpen(false)} className="hover:text-rose-600 transition">KATA WARGA</a>
-          <a href="#produk" onClick={() => setIsMenuOpen(false)} className="hover:text-rose-600 transition">PRODUK TERKAIT</a>
-        </div>
-      )}
+      <AnimatePresence>
+        {isMenuOpen && (
+          <motion.div 
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            className={`fixed inset-0 top-[73px] z-40 p-8 flex flex-col space-y-6 text-2xl font-display uppercase tracking-wide border-b border-rose-600 backdrop-blur-2xl ${isDarkMode ? 'bg-[#070a10]/98 text-white' : 'bg-white/98 text-gray-900'}`}
+          >
+            <a href="#hero" onClick={() => setIsMenuOpen(false)} className="hover:text-rose-600 transition">PROFILE COVER</a>
+            <a href="#tentang" onClick={() => setIsMenuOpen(false)} className="hover:text-rose-600 transition">TENTANG</a>
+            <a href="#perjalanan" onClick={() => setIsMenuOpen(false)} className="hover:text-rose-600 transition">PERJALANAN HIDUP</a>
+            <a href="#karya" onClick={() => setIsMenuOpen(false)} className="hover:text-rose-600 transition">DISCOVERY KARYA</a>
+            <a href="#artikel" onClick={() => setIsMenuOpen(false)} className="hover:text-rose-600 transition">ARTIKEL & WAWASAN</a>
+            <a href="#kata-warga" onClick={() => setIsMenuOpen(false)} className="hover:text-rose-600 transition">KATA WARGA</a>
+            <a href="#produk" onClick={() => setIsMenuOpen(false)} className="hover:text-rose-600 transition">PRODUK TERKAIT</a>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* ASYMMETRIC 2-COLUMN DESKTOP GRID (max-w-7xl) */}
       <div className="max-w-7xl mx-auto px-6 py-8 md:py-12">
@@ -175,7 +182,12 @@ export default function MahakaryaEditorialPage() {
           <aside className="lg:col-span-5 lg:sticky lg:top-24 space-y-6">
             
             {/* Framed Photo Container (Canva Hero Style) */}
-            <div className={`rounded-3xl border overflow-hidden shadow-2xl transition-all ${isDarkMode ? 'bg-[#080b11] border-gray-800' : 'bg-white border-gray-300'}`}>
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.98 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+              className={`rounded-3xl border overflow-hidden shadow-2xl transition-all ${isDarkMode ? 'bg-[#080b11] border-gray-800' : 'bg-white border-gray-300'}`}
+            >
               
               <div className="relative w-full aspect-[4/5] bg-gray-900 overflow-hidden flex items-center justify-center">
                 <img 
@@ -186,7 +198,7 @@ export default function MahakaryaEditorialPage() {
                 <div className={`absolute inset-0 bg-gradient-to-t ${isDarkMode ? 'from-[#080b11] via-transparent to-transparent' : 'from-white/60 via-transparent to-transparent'}`} />
               </div>
 
-              {/* Title & Red Bar Box */}
+              {/* Title & Animated Red Bar Box */}
               <div className="p-6 md:p-8 space-y-4">
                 <div className="flex items-end justify-between gap-4">
                   <div>
@@ -198,12 +210,12 @@ export default function MahakaryaEditorialPage() {
                     </h1>
                   </div>
 
-                  {/* Red Accent Bar (Sesuai Sketsa Canva) */}
-                  <div className="red-accent-bar h-14 md:h-20 shrink-0 rounded-xs" />
+                  {/* Animated Red Accent Bar (Sesuai Sketsa Canva) */}
+                  <div className="red-accent-bar-animated h-14 md:h-20 shrink-0 rounded-xs" />
                 </div>
 
                 {/* Subtitle in Playfair Display (Sesuai Koreksi Font) */}
-                <p className="font-editorial italic font-semibold text-sm md:text-base tracking-wide text-rose-600">
+                <p className="font-editorial italic font-bold text-sm md:text-base tracking-wide text-rose-600">
                   THE VOICES • DISRUPTOR • LITERASI KRITIS
                 </p>
 
@@ -219,8 +231,8 @@ export default function MahakaryaEditorialPage() {
                       rel="noreferrer"
                       className={`w-10 h-10 rounded-xl border flex items-center justify-center transition ${
                         isDarkMode 
-                          ? 'bg-[#0d1322] border-gray-700 text-gray-300 hover:text-white hover:border-rose-600 hover:bg-rose-950/40' 
-                          : 'bg-gray-100 border-gray-300 text-gray-700 hover:text-rose-600 hover:border-rose-600 hover:bg-rose-50'
+                          ? 'bg-[#0d1322] border-gray-700 text-gray-300 hover:text-white hover:border-rose-600 hover:bg-rose-950/40 shadow-sm' 
+                          : 'bg-gray-100 border-gray-300 text-gray-700 hover:text-rose-600 hover:border-rose-600 hover:bg-rose-50 shadow-sm'
                       }`}
                       title="YouTube Channel"
                     >
@@ -233,8 +245,8 @@ export default function MahakaryaEditorialPage() {
                       rel="noreferrer"
                       className={`w-10 h-10 rounded-xl border flex items-center justify-center transition ${
                         isDarkMode 
-                          ? 'bg-[#0d1322] border-gray-700 text-gray-300 hover:text-white hover:border-rose-600 hover:bg-rose-950/40' 
-                          : 'bg-gray-100 border-gray-300 text-gray-700 hover:text-rose-600 hover:border-rose-600 hover:bg-rose-50'
+                          ? 'bg-[#0d1322] border-gray-700 text-gray-300 hover:text-white hover:border-rose-600 hover:bg-rose-950/40 shadow-sm' 
+                          : 'bg-gray-100 border-gray-300 text-gray-700 hover:text-rose-600 hover:border-rose-600 hover:bg-rose-50 shadow-sm'
                       }`}
                       title="X / Twitter"
                     >
@@ -247,8 +259,8 @@ export default function MahakaryaEditorialPage() {
                       rel="noreferrer"
                       className={`w-10 h-10 rounded-xl border flex items-center justify-center transition ${
                         isDarkMode 
-                          ? 'bg-[#0d1322] border-gray-700 text-gray-300 hover:text-white hover:border-rose-600 hover:bg-rose-950/40' 
-                          : 'bg-gray-100 border-gray-300 text-gray-700 hover:text-rose-600 hover:border-rose-600 hover:bg-rose-50'
+                          ? 'bg-[#0d1322] border-gray-700 text-gray-300 hover:text-white hover:border-rose-600 hover:bg-rose-950/40 shadow-sm' 
+                          : 'bg-gray-100 border-gray-300 text-gray-700 hover:text-rose-600 hover:border-rose-600 hover:bg-rose-50 shadow-sm'
                       }`}
                       title="Instagram"
                     >
@@ -261,8 +273,8 @@ export default function MahakaryaEditorialPage() {
                       rel="noreferrer"
                       className={`w-10 h-10 rounded-xl border flex items-center justify-center transition ${
                         isDarkMode 
-                          ? 'bg-[#0d1322] border-gray-700 text-gray-300 hover:text-white hover:border-rose-600 hover:bg-rose-950/40' 
-                          : 'bg-gray-100 border-gray-300 text-gray-700 hover:text-rose-600 hover:border-rose-600 hover:bg-rose-50'
+                          ? 'bg-[#0d1322] border-gray-700 text-gray-300 hover:text-white hover:border-rose-600 hover:bg-rose-950/40 shadow-sm' 
+                          : 'bg-gray-100 border-gray-300 text-gray-700 hover:text-rose-600 hover:border-rose-600 hover:bg-rose-50 shadow-sm'
                       }`}
                       title="Podcast & Audio"
                     >
@@ -273,8 +285,8 @@ export default function MahakaryaEditorialPage() {
                       href="mailto:contact@malakaproject.id" 
                       className={`w-10 h-10 rounded-xl border flex items-center justify-center transition ${
                         isDarkMode 
-                          ? 'bg-[#0d1322] border-gray-700 text-gray-300 hover:text-white hover:border-rose-600 hover:bg-rose-950/40' 
-                          : 'bg-gray-100 border-gray-300 text-gray-700 hover:text-rose-600 hover:border-rose-600 hover:bg-rose-50'
+                          ? 'bg-[#0d1322] border-gray-700 text-gray-300 hover:text-white hover:border-rose-600 hover:bg-rose-950/40 shadow-sm' 
+                          : 'bg-gray-100 border-gray-300 text-gray-700 hover:text-rose-600 hover:border-rose-600 hover:bg-rose-50 shadow-sm'
                       }`}
                       title="Email Korespondensi"
                     >
@@ -284,11 +296,11 @@ export default function MahakaryaEditorialPage() {
                 </div>
 
               </div>
-            </div>
+            </motion.div>
 
             {/* Quick Summary Pill */}
-            <div className={`p-5 rounded-2xl border ${cardBgClass} flex items-center justify-between text-xs font-bold`}>
-              <span className={subTextClass}>STATUS KURASI SECTOR LOKAL</span>
+            <div className={`p-5 rounded-2xl border ${cardBgClass} flex items-center justify-between text-xs font-bold shadow-lg`}>
+              <span className={subTextClass}>STATUS KURASI SEKTOR LOKAL</span>
               <span className="text-rose-600 font-display uppercase tracking-wide">60% MAINSTREAM DISRUPTOR</span>
             </div>
 
@@ -302,7 +314,14 @@ export default function MahakaryaEditorialPage() {
             {/* ------------------------------------------------------- */}
             {/* SECTION 1: TENTANG (Sesuai Sketsa 2 Canva)              */}
             {/* ------------------------------------------------------- */}
-            <section id="tentang" className={`p-8 md:p-12 rounded-3xl border shadow-xl space-y-8 ${cardBgClass}`}>
+            <motion.section 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              id="tentang" 
+              className={`p-8 md:p-12 rounded-3xl border shadow-xl space-y-8 ${cardBgClass}`}
+            >
               <h2 className="text-3xl md:text-5xl font-display uppercase tracking-tight text-inherit border-b pb-4 border-inherit/20">
                 TENTANG FERRY IRWANDI
               </h2>
@@ -316,33 +335,40 @@ export default function MahakaryaEditorialPage() {
                 </p>
               </div>
 
-              {/* Quote Block with Red Accent Bar (Sesuai Sketsa Canva) */}
-              <div className={`p-6 rounded-2xl border flex items-stretch justify-between gap-6 ${quoteBgClass}`}>
-                <blockquote className="font-editorial italic font-semibold text-base md:text-xl leading-relaxed text-inherit">
+              {/* Quote Block with Animated Red Bar (Sesuai Sketsa Canva) */}
+              <div className={`p-6 rounded-2xl border flex items-stretch justify-between gap-6 shadow-md ${quoteBgClass}`}>
+                <blockquote className="font-editorial italic font-bold text-base md:text-xl leading-relaxed text-inherit">
                   &ldquo;Berpikir kritis adalah benteng terakhir kebebasan individu di tengah gempuran skema penipuan dan kebodohan finansial.&rdquo;
                 </blockquote>
 
-                {/* Red Accent Bar Right */}
-                <div className="red-accent-bar shrink-0 rounded-xs" />
+                {/* Animated Red Accent Bar Right */}
+                <div className="red-accent-bar-animated shrink-0 rounded-xs" />
               </div>
-            </section>
+            </motion.section>
 
             {/* ------------------------------------------------------- */}
-            {/* SECTION 2: PERJALANAN HIDUP (Sesuai Sketsa 3 Canva)     */}
+            {/* SECTION 2: PERJALANAN HIDUP (Timeline Hidup Berpendar)  */}
             {/* ------------------------------------------------------- */}
-            <section id="perjalanan" className={`p-8 md:p-12 rounded-3xl border shadow-xl space-y-8 ${cardBgClass}`}>
+            <motion.section 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              id="perjalanan" 
+              className={`p-8 md:p-12 rounded-3xl border shadow-xl space-y-8 ${cardBgClass}`}
+            >
               <h2 className="text-3xl md:text-5xl font-display uppercase tracking-tight text-inherit border-b pb-4 border-inherit/20">
                 PERJALANAN HIDUP
               </h2>
 
-              {/* Timeline Layout with Left Red Vertical Track Bar */}
+              {/* Timeline Layout with Animated Red Vertical Track Bar */}
               <div className="relative pl-8 space-y-8">
-                {/* Red Track Line */}
-                <div className="absolute left-0 top-0 bottom-0 w-2.5 bg-rose-600 rounded-full" />
+                {/* Red Animated Glowing Track Line */}
+                <div className="absolute left-0 top-0 bottom-0 w-2.5 timeline-track-glow rounded-full" />
 
                 {/* Item 1 */}
                 <div className="relative space-y-1.5">
-                  <div className={`absolute -left-[39px] top-1.5 w-5 h-5 border-2 border-rose-600 rounded-xs ${isDarkMode ? 'bg-[#070a10]' : 'bg-white'}`} />
+                  <div className={`absolute -left-[39px] top-1.5 w-5 h-5 border-2 border-rose-600 rounded-xs shadow-md ${isDarkMode ? 'bg-[#070a10]' : 'bg-white'}`} />
                   <h3 className="text-lg md:text-xl font-display uppercase text-inherit tracking-wide">
                     ABDI NEGARA (KEMENKEU)
                   </h3>
@@ -353,7 +379,7 @@ export default function MahakaryaEditorialPage() {
 
                 {/* Item 2 */}
                 <div className="relative space-y-1.5">
-                  <div className={`absolute -left-[39px] top-1.5 w-5 h-5 border-2 border-rose-600 rounded-xs ${isDarkMode ? 'bg-[#070a10]' : 'bg-white'}`} />
+                  <div className={`absolute -left-[39px] top-1.5 w-5 h-5 border-2 border-rose-600 rounded-xs shadow-md ${isDarkMode ? 'bg-[#070a10]' : 'bg-white'}`} />
                   <h3 className="text-lg md:text-xl font-display uppercase text-inherit tracking-wide">
                     TITIK BALIK
                   </h3>
@@ -364,7 +390,7 @@ export default function MahakaryaEditorialPage() {
 
                 {/* Item 3 */}
                 <div className="relative space-y-1.5">
-                  <div className={`absolute -left-[39px] top-1.5 w-5 h-5 border-2 border-rose-600 rounded-xs ${isDarkMode ? 'bg-[#070a10]' : 'bg-white'}`} />
+                  <div className={`absolute -left-[39px] top-1.5 w-5 h-5 border-2 border-rose-600 rounded-xs shadow-md ${isDarkMode ? 'bg-[#070a10]' : 'bg-white'}`} />
                   <h3 className="text-lg md:text-xl font-display uppercase text-inherit tracking-wide">
                     INISIATIF KOLEKTIF
                   </h3>
@@ -375,7 +401,7 @@ export default function MahakaryaEditorialPage() {
 
                 {/* Item 4 */}
                 <div className="relative space-y-1.5">
-                  <div className={`absolute -left-[39px] top-1.5 w-5 h-5 border-2 border-rose-600 rounded-xs ${isDarkMode ? 'bg-[#070a10]' : 'bg-white'}`} />
+                  <div className={`absolute -left-[39px] top-1.5 w-5 h-5 border-2 border-rose-600 rounded-xs shadow-md ${isDarkMode ? 'bg-[#070a10]' : 'bg-white'}`} />
                   <h3 className="text-lg md:text-xl font-display uppercase text-inherit tracking-wide">
                     DAMPAK LAPANGAN
                   </h3>
@@ -384,12 +410,19 @@ export default function MahakaryaEditorialPage() {
                   </p>
                 </div>
               </div>
-            </section>
+            </motion.section>
 
             {/* ------------------------------------------------------- */}
-            {/* SECTION 3: DISCOVERY KARYA (Sesuai Sketsa 4 Canva)      */}
+            {/* SECTION 3: DISCOVERY KARYA (Accordion Animasi)          */}
             {/* ------------------------------------------------------- */}
-            <section id="karya" className="space-y-6">
+            <motion.section 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              id="karya" 
+              className="space-y-6"
+            >
               <h2 className="text-3xl md:text-5xl font-display uppercase tracking-tight text-inherit border-b pb-4 border-inherit/20">
                 DISCOVERY KARYA
               </h2>
@@ -411,39 +444,56 @@ export default function MahakaryaEditorialPage() {
                         <h3 className="text-lg md:text-2xl font-display uppercase text-inherit tracking-wide">
                           {karya.title}
                         </h3>
-                        <span className="text-rose-600 font-bold text-lg font-mono">
+                        <span className="text-rose-600 font-bold text-xl font-mono">
                           {isOpen ? '−' : '+'}
                         </span>
                       </div>
 
-                      {isOpen && (
-                        <div className="mt-4 pt-4 border-t border-rose-600/30 space-y-4">
-                          <p className={`text-xs md:text-sm leading-relaxed font-medium ${subTextClass}`}>
-                            {karya.desc}
-                          </p>
-                          <div className="flex justify-end">
-                            <a 
-                              href={karya.link} 
-                              target="_blank" 
-                              rel="noreferrer"
-                              className="px-5 py-2 bg-rose-600 text-white font-bold text-xs rounded-full hover:bg-rose-700 transition flex items-center gap-1.5 shadow-md shadow-rose-600/20"
-                            >
-                              <LinkIcon className="w-3.5 h-3.5" />
-                              <span>Buka Karya</span>
-                            </a>
-                          </div>
-                        </div>
-                      )}
+                      <AnimatePresence>
+                        {isOpen && (
+                          <motion.div 
+                            initial={{ opacity: 0, height: 0 }}
+                            animate={{ opacity: 1, height: 'auto' }}
+                            exit={{ opacity: 0, height: 0 }}
+                            transition={{ duration: 0.3 }}
+                            className="overflow-hidden"
+                          >
+                            <div className="mt-4 pt-4 border-t border-rose-600/30 space-y-4">
+                              <p className={`text-xs md:text-sm leading-relaxed font-medium ${subTextClass}`}>
+                                {karya.desc}
+                              </p>
+                              <div className="flex justify-end">
+                                <a 
+                                  href={karya.link} 
+                                  target="_blank" 
+                                  rel="noreferrer"
+                                  className="px-5 py-2 bg-rose-600 text-white font-bold text-xs rounded-full hover:bg-rose-700 transition flex items-center gap-1.5 shadow-md shadow-rose-600/30"
+                                >
+                                  <LinkIcon className="w-3.5 h-3.5" />
+                                  <span>Buka Karya</span>
+                                </a>
+                              </div>
+                            </div>
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
                     </div>
                   );
                 })}
               </div>
-            </section>
+            </motion.section>
 
             {/* ------------------------------------------------------- */}
             {/* SECTION 4: ARTIKEL & WAWASAN (Sesuai Sketsa 5 Canva)    */}
             {/* ------------------------------------------------------- */}
-            <section id="artikel" className="space-y-6">
+            <motion.section 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              id="artikel" 
+              className="space-y-6"
+            >
               <h2 className="text-3xl md:text-5xl font-display uppercase tracking-tight text-inherit border-b pb-4 border-inherit/20">
                 ARTIKEL & WAWASAN
               </h2>
@@ -467,7 +517,7 @@ export default function MahakaryaEditorialPage() {
                         href={art.link} 
                         target="_blank" 
                         rel="noreferrer"
-                        className="px-5 py-2 bg-rose-600 text-white font-bold text-xs rounded-full hover:bg-rose-700 transition flex items-center gap-1.5 shadow-md shadow-rose-600/20"
+                        className="px-5 py-2 bg-rose-600 text-white font-bold text-xs rounded-full hover:bg-rose-700 transition flex items-center gap-1.5 shadow-md shadow-rose-600/30"
                       >
                         <LinkIcon className="w-3.5 h-3.5" />
                         <span>Baca Artikel</span>
@@ -479,60 +529,74 @@ export default function MahakaryaEditorialPage() {
 
               {/* Animated Loading Spinner */}
               <div className="flex justify-center pt-6">
-                <Loader2 className="w-7 h-7 text-rose-600 animate-spin" />
+                <Loader2 className="w-8 h-8 text-rose-600 animate-spin" />
               </div>
-            </section>
+            </motion.section>
 
             {/* ------------------------------------------------------- */}
             {/* SECTION 5: KATA WARGA (Testimonials)                   */}
             {/* ------------------------------------------------------- */}
-            <section id="kata-warga" className="space-y-6">
+            <motion.section 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              id="kata-warga" 
+              className="space-y-6"
+            >
               <h2 className="text-3xl md:text-5xl font-display uppercase tracking-tight text-inherit border-b pb-4 border-inherit/20">
                 KATA WARGA & TESTIMONI
               </h2>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 {kataWargaList.map((item, idx) => (
-                  <div key={idx} className={`p-6 rounded-2xl border space-y-3 flex flex-col justify-between ${cardBgClass}`}>
-                    <blockquote className="font-editorial italic text-xs leading-relaxed text-inherit">
+                  <div key={idx} className={`p-6 rounded-2xl border space-y-3 flex flex-col justify-between shadow-lg ${cardBgClass}`}>
+                    <blockquote className="font-editorial italic font-semibold text-xs leading-relaxed text-inherit">
                       &ldquo;{item.quote}&rdquo;
                     </blockquote>
                     <div className="pt-3 border-t border-inherit/10">
-                      <p className="font-display uppercase text-sm text-inherit">{item.nama}</p>
+                      <p className="font-display uppercase text-base text-inherit">{item.nama}</p>
                       <p className={`text-[10px] ${subTextClass}`}>{item.peran}</p>
                     </div>
                   </div>
                 ))}
               </div>
-            </section>
+            </motion.section>
 
             {/* ------------------------------------------------------- */}
             {/* SECTION 6: PRODUK TERKAIT & DUKUNGAN (Merchandise/Buku) */}
             {/* ------------------------------------------------------- */}
-            <section id="produk" className="space-y-6">
+            <motion.section 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              id="produk" 
+              className="space-y-6"
+            >
               <h2 className="text-3xl md:text-5xl font-display uppercase tracking-tight text-inherit border-b pb-4 border-inherit/20">
                 PRODUK TERKAIT & DUKUNGAN
               </h2>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 {produkList.map((prod, idx) => (
-                  <div key={idx} className={`p-6 rounded-2xl border space-y-4 flex flex-col justify-between ${cardBgClass}`}>
+                  <div key={idx} className={`p-6 rounded-2xl border space-y-4 flex flex-col justify-between shadow-lg ${cardBgClass}`}>
                     <div className="space-y-2">
-                      <h3 className="font-display uppercase text-base text-inherit tracking-wide">
+                      <h3 className="font-display uppercase text-lg text-inherit tracking-wide">
                         {prod.title}
                       </h3>
                       <p className={`text-xs leading-relaxed ${subTextClass}`}>
                         {prod.desc}
                       </p>
                     </div>
-                    <button className="w-full py-2.5 bg-rose-600 hover:bg-rose-700 text-white font-bold text-xs rounded-xl transition flex items-center justify-center gap-1.5 shadow-md shadow-rose-600/20">
+                    <button className="w-full py-2.5 bg-rose-600 hover:bg-rose-700 text-white font-bold text-xs rounded-xl transition flex items-center justify-center gap-1.5 shadow-md shadow-rose-600/30">
                       <span>{prod.action}</span>
                       <ArrowUpRight className="w-3.5 h-3.5" />
                     </button>
                   </div>
                 ))}
               </div>
-            </section>
+            </motion.section>
 
           </main>
 
@@ -542,11 +606,11 @@ export default function MahakaryaEditorialPage() {
       {/* FOOTER */}
       <footer className={`border-t py-12 px-6 mt-12 ${isDarkMode ? 'bg-[#05070c] border-gray-800' : 'bg-gray-100 border-gray-200'}`}>
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
-          <div className="flex items-center gap-2 font-display text-base text-inherit">
+          <div className="flex items-center gap-2 font-display text-lg text-inherit">
             <span>SEKTOR LOKAL</span>
-            <span className="w-2.5 h-3.5 bg-rose-600 rounded-xs inline-block" />
+            <span className="w-3 h-4 bg-rose-600 rounded-xs inline-block" />
           </div>
-          <p className={subTextClass}>© 2026 Sector Lokal. Mading Kebanggaan Warga Indonesia Era Pop Modern.</p>
+          <p className={subTextClass}>© 2026 Sektor Lokal. Mading Kebanggaan Warga Indonesia Era Pop Modern.</p>
         </div>
       </footer>
 

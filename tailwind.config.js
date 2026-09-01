@@ -6,30 +6,27 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        display: ['var(--font-anton)', 'Impact', 'Arial Black', 'sans-serif'],
+        editorial: ['var(--font-playfair)', 'Georgia', 'serif'],
+        sans: ['var(--font-jakarta)', 'system-ui', 'sans-serif'],
+      },
       colors: {
-        background: '#070a11',
-        surface: {
-          DEFAULT: 'rgba(15, 23, 42, 0.75)',
-          border: 'rgba(255, 255, 255, 0.08)',
-          glow: 'rgba(99, 102, 241, 0.15)',
-        },
+        background: '#070a10',
         brand: {
-          teal: '#14b8a6',
-          indigo: '#6366f1',
-          purple: '#a855f7',
-          amber: '#f59e0b',
+          rose: '#e11d48',
+          red: '#dc2626',
+          coral: '#f43f5e',
         }
       },
-      fontFamily: {
-        sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
-      },
       animation: {
-        'pulse-glow': 'pulseGlow 6s ease-in-out infinite',
+        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'beam': 'beamFlow 2.5s ease-in-out infinite',
       },
       keyframes: {
-        pulseGlow: {
-          '0%, 100%': { opacity: '0.4', transform: 'scale(1)' },
-          '50%': { opacity: '0.8', transform: 'scale(1.08)' },
+        beamFlow: {
+          '0%, 100%': { opacity: '0.4', transform: 'scaleY(0.95)' },
+          '50%': { opacity: '1', transform: 'scaleY(1.05)' },
         }
       }
     },

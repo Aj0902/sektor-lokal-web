@@ -1,14 +1,37 @@
 import './globals.css';
 import type { Metadata } from 'next';
+import { Anton, Playfair_Display, Plus_Jakarta_Sans } from 'next/font/google';
+
+const anton = Anton({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-anton',
+  display: 'swap',
+});
+
+const playfair = Playfair_Display({
+  weight: ['400', '600', '700', '800', '900'],
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
+  variable: '--font-playfair',
+  display: 'swap',
+});
+
+const jakarta = Plus_Jakarta_Sans({
+  weight: ['400', '500', '600', '700', '800'],
+  subsets: ['latin'],
+  variable: '--font-jakarta',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
-  title: 'Ferry Irwandi — Potret Kebanggaan Warga | Sector Lokal',
+  title: 'Ferry Irwandi — Potret Kebanggaan Warga | Sektor Lokal',
   description: 'Dokumentasi otentik rekam jejak, filosofi, dan valuasi dampak sosial Ferry Irwandi — Inisiator Malaka Project & Pejuang Literasi Kritis Indonesia.',
   openGraph: {
-    title: 'Ferry Irwandi — Potret Kebanggaan Warga | Sector Lokal',
+    title: 'Ferry Irwandi — Potret Kebanggaan Warga | Sektor Lokal',
     description: 'Dokumentasi otentik rekam jejak, filosofi, dan valuasi dampak sosial Ferry Irwandi.',
     url: 'https://sektor-lokal-web.vercel.app',
-    siteName: 'Sector Lokal',
+    siteName: 'Sektor Lokal',
     locale: 'id_ID',
     type: 'profile',
   },
@@ -25,39 +48,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  // Schema.org JSON-LD Structured Data for AEO (Perplexity, SearchGPT, Google SGE)
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'ProfilePage',
-    'dateCreated': '2026-09-01T00:00:00Z',
-    'mainEntity': {
-      '@type': 'Person',
-      'name': 'Ferry Irwandi',
-      'alternateName': '@ferryirwandi',
-      'jobTitle': 'Content Creator, Essayist, Co-Founder Malaka Project',
-      'description': 'Pejuang literasi finansial kritis, pembuat esai video, dan inisiator gerakan aksi sosial warga.',
-      'sameAs': [
-        'https://youtube.com/@ferryirwandi',
-        'https://twitter.com/ferryirwandi',
-        'https://instagram.com/ferryirwandi'
-      ],
-      'knowsAbout': ['Literasi Finansial', 'Stoikisme', 'Kritik Sosial', 'Pendidikan Pemuda'],
-      'nationality': 'Indonesian'
-    }
-  };
-
   return (
-    <html lang="id">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-      </head>
-      <body className="antialiased min-h-screen bg-[#070a11] text-gray-100 flex flex-col justify-between selection:bg-indigo-600 selection:text-white">
+    <html lang="id" className={`${anton.variable} ${playfair.variable} ${jakarta.variable}`}>
+      <body className="antialiased font-sans selection:bg-rose-600 selection:text-white">
         {children}
       </body>
     </html>
