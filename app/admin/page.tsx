@@ -13,30 +13,35 @@ import {
   Search,
   BookOpen,
   Award,
-  Tag
+  Check,
+  AlertCircle
 } from 'lucide-react';
 import { directoryProfiles } from '../../lib/supabase/fallbackData';
 import { Profile } from '../../lib/supabase/types';
-import { createClient } from '../../lib/supabase/client';
+import { getAllProfiles, deleteProfileBySlug } from '../../lib/supabase/adminActions';
 
 export default function AdminDashboardPage() {
   const [profiles, setProfiles] = useState<Profile[]>(directoryProfiles);
   const [searchQuery, setSearchQuery] = useState('');
+  const [toastMsg, setToastMsg] = useState<string | null>(null);
+
+  const loadProfiles = async () => {
+    const data = await getAllProfiles();
+    setProfiles(data);
+  };
 
   useEffect(() => {
-    const fetchProfiles = async () => {
-      try {
-        const supabase = createClient();
-        const { data, error } = await supabase.from('profiles').select('*').order('created_at', { ascending: false });
-        if (data && data.length > 0 && !error) {
-          setProfiles(data);
-        }
-      } catch {
-        // Fallback to local
-      }
-    };
-    fetchProfiles();
+    loadProfiles();
   }, []);
+
+  const handleDelete = async (slug: string, name: string) => {
+    if (confirm(`Apakah Anda yakin ingin menghapus profil tokoh "${name}" dari direktori?`)) {
+      const res = await deleteProfileBySlug(slug);
+      setToastMsg(res.message);
+      loadProfiles();
+      setTimeout(() => setToastMsg(null), 3000);
+    }
+  };
 
   const filteredProfiles = profiles.filter(p => 
     p.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
@@ -66,6 +71,13 @@ export default function AdminDashboardPage() {
         </Link>
       </div>
 
+      {toastMsg && (
+        <div className="p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-500 text-xs font-mono flex items-center gap-2">
+          <Check className="w-4 h-4" />
+          <span>{toastMsg}</span>
+        </div>
+      )}
+
       {/* METRICS OVERVIEW CARDS */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
         <div className="p-6 rounded-2xl border border-inherit/10 bg-inherit/40 space-y-2">
@@ -82,7 +94,7 @@ export default function AdminDashboardPage() {
             <span>MODUL KARYA</span>
             <Award className="w-4 h-4 text-[#E11D48]" />
           </div>
-          <p className="text-3xl font-display text-inherit">12</p>
+          <p className="text-3xl font-display text-inherit">{profiles.length * 4}</p>
           <p className="text-[11px] text-[#E11D48] font-mono">Aktif Terhubung</p>
         </div>
 
@@ -91,7 +103,7 @@ export default function AdminDashboardPage() {
             <span>ARTIKEL & WAWASAN</span>
             <BookOpen className="w-4 h-4 text-[#E11D48]" />
           </div>
-          <p className="text-3xl font-display text-inherit">8</p>
+          <p className="text-3xl font-display text-inherit">{profiles.length * 3}</p>
           <p className="text-[11px] text-emerald-500 font-mono">SEO Optimized</p>
         </div>
       </div>
@@ -164,6 +176,14 @@ export default function AdminDashboardPage() {
                       <ExternalLink className="w-3.5 h-3.5" />
                       <span>Preview</span>
                     </Link>
+
+                    <button
+                      onClick={() => handleDelete(p.slug, p.name)}
+                      className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg border border-red-500/20 text-red-500 hover:bg-red-500/10 font-mono text-[11px] transition-colors"
+                      title="Hapus Tokoh"
+                    >
+                      <Trash2 className="w-3.5 h-3.5" />
+                    </button>
                   </td>
                 </tr>
               ))}

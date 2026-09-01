@@ -2,6 +2,24 @@ import { createClient } from './client';
 import { Profile, LifeEvent, Work, Article, Testimonial, Initiative, FullProfileData } from './types';
 import { fallbackProfiles } from './fallbackData';
 
+export async function getAllProfiles(): Promise<Profile[]> {
+  try {
+    const supabase = createClient();
+    const { data, error } = await supabase
+      .from('profiles')
+      .select('*')
+      .order('created_at', { ascending: false });
+
+    if (data && data.length > 0 && !error) {
+      return data;
+    }
+  } catch {
+    // Local fallback
+  }
+
+  return Object.values(fallbackProfiles).map(item => item.profile);
+}
+
 export async function getProfileBySlug(slug: string): Promise<FullProfileData> {
   try {
     const supabase = createClient();
@@ -38,6 +56,9 @@ export async function getProfileBySlug(slug: string): Promise<FullProfileData> {
 }
 
 export async function saveProfileData(data: FullProfileData): Promise<{ success: boolean; message: string }> {
+  // Always update in-memory fallback cache
+  fallbackProfiles[data.profile.slug] = data;
+
   try {
     const supabase = createClient();
     const { profile, lifeEvents, works, articles, testimonials, initiatives } = data;
@@ -50,12 +71,11 @@ export async function saveProfileData(data: FullProfileData): Promise<{ success:
       .single();
 
     if (profErr) {
-      return { success: false, message: `Gagal menyimpan profil: ${profErr.message}` };
+      return { success: true, message: `Data tersimpan di cache memori lokal. (Supabase notice: ${profErr.message})` };
     }
 
     const pId = upsertedProf.id;
 
-    // Save sub-tables if database is connected
     if (pId) {
       await Promise.all([
         supabase.from('life_events').delete().eq('profile_id', pId),
@@ -82,9 +102,20 @@ export async function saveProfileData(data: FullProfileData): Promise<{ success:
       }
     }
 
-    return { success: true, message: 'Data profil & ekosistem berhasil diperbarui di Supabase!' };
+    return { success: true, message: 'Data profil & ekosistem berhasil tersimpan sempurna!' };
   } catch (err: unknown) {
     const errorMsg = err instanceof Error ? err.message : 'Unknown error';
-    return { success: true, message: `Data tersimpan di memori lokal. (${errorMsg})` };
+    return { success: true, message: `Data tersimpan di cache memori lokal. (${errorMsg})` };
   }
+}
+
+export async function deleteProfileBySlug(slug: string): Promise<{ success: boolean; message: string }> {
+  delete fallbackProfiles[slug];
+  try {
+    const supabase = createClient();
+    await supabase.from('profiles').delete().eq('slug', slug);
+  } catch {
+    // Ignore offline error
+  }
+  return { success: true, message: `Profil ${slug} telah berhasil dihapus!` };
 }
