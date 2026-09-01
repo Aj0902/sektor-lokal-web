@@ -574,15 +574,18 @@ export default function DynamicProfilePage() {
                     </p>
                   </div>
 
-                  <div className="pt-3 border-t border-inherit/10 flex items-center justify-between">
+                  <div className="pt-3 flex justify-between items-center border-t border-inherit/10">
                     <button 
                       onClick={() => setSelectedArticle(art)}
-                      className="inline-flex items-center gap-1.5 text-xs font-bold text-[#E11D48] hover:underline"
+                      className="text-xs font-mono text-[#E11D48] hover:underline flex items-center gap-1"
                     >
                       <BookOpen className="w-3.5 h-3.5" />
-                      <span>Baca Analisis Lengkap</span>
+                      <span>Mode Fokus Reader</span>
                     </button>
-                    <ArrowUpRight className="w-3.5 h-3.5 text-[#E11D48] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                    <Link href="/artikel/analisis-kritis-literasi-keuangan" className="inline-flex items-center gap-1 text-xs font-bold text-[#E11D48] hover:underline">
+                      <span>Halaman Artikel (SEO)</span>
+                      <ArrowUpRight className="w-3.5 h-3.5" />
+                    </Link>
                   </div>
                 </div>
               ))}
