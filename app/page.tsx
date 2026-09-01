@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { 
   Menu, 
   X, 
@@ -319,10 +320,13 @@ export default function MahakaryaEditorialPage() {
 
               {/* Portrait Image Canvas */}
               <div className="relative w-full aspect-[4/5] bg-gray-950 overflow-hidden flex items-center justify-center group">
-                <img 
+                <Image 
                   src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80" 
                   alt="Ferry Irwandi — Potret Kebanggaan Warga" 
-                  className="w-full h-full object-cover filter grayscale contrast-125 group-hover:scale-105 group-hover:filter group-hover:contrast-110 transition duration-700 ease-out"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 40vw"
+                  priority
+                  className="object-cover filter grayscale contrast-125 group-hover:scale-105 group-hover:filter group-hover:contrast-110 transition duration-700 ease-out"
                 />
                 
                 {/* Visual Gradient Shading */}
