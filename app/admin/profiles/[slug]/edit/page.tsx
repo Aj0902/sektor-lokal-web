@@ -479,7 +479,7 @@ export default function EditProfileEditorPage() {
                   read_time: '5 Menit Membaca',
                   description: 'Ringkasan esai baru...',
                   content_full: '',
-                  link_url: '/artikel/analisis-kritis-literasi-keuangan',
+                  link_url: '',
                   order_index: articles.length + 1
                 };
                 setData({ ...data, articles: [...articles, newArt] });

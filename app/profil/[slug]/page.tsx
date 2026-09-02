@@ -409,9 +409,10 @@ export default function DynamicProfilePage() {
               {articles.map((art, idx) => {
                 const hasCustomUrl = art.link_url && art.link_url !== '#' && art.link_url.trim() !== '';
                 const isExternal = hasCustomUrl && (art.link_url.startsWith('http://') || art.link_url.startsWith('https://'));
-                const targetArticleUrl = hasCustomUrl 
+                const articleSlug = art.title ? art.title.toLowerCase().trim().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-') : art.id;
+                const targetArticleUrl = isExternal 
                   ? art.link_url 
-                  : `/artikel/${art.title.toLowerCase().trim().replace(/\s+/g, '-')}`;
+                  : `/artikel/${articleSlug || art.id}`;
 
                 return (
                   <div key={idx} className={`p-6 sm:p-8 rounded-3xl border space-y-4 flex flex-col justify-between ${cardClass}`}>

@@ -59,10 +59,18 @@ export default function ArticleDetailPage() {
         const { data: articles, error } = await supabase.from('articles').select('*');
         
         if (articles && articles.length > 0 && !error) {
-          // Find matching article by slugified title or exact match
+          // Find matching article by ID, clean slugified title, or link_url
+          const cleanRawSlug = decodeURIComponent(rawSlug).toLowerCase().trim().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-');
+
           const matched = articles.find((a: Article) => {
-            const articleSlug = a.title.toLowerCase().trim().replace(/\s+/g, '-');
-            return articleSlug === rawSlug || rawSlug.includes(articleSlug) || articleSlug.includes(rawSlug);
+            const articleSlug = a.title ? a.title.toLowerCase().trim().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-') : '';
+            return (
+              a.id === rawSlug ||
+              articleSlug === cleanRawSlug ||
+              (a.link_url && a.link_url.toLowerCase().includes(cleanRawSlug)) ||
+              (articleSlug.length > 3 && cleanRawSlug.includes(articleSlug)) ||
+              (cleanRawSlug.length > 3 && articleSlug.includes(cleanRawSlug))
+            );
           }) || articles[0];
 
           if (matched) {
