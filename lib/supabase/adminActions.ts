@@ -32,7 +32,6 @@ export async function getProfileBySlug(slug: string): Promise<FullProfileData> {
     if (prof && !pError) {
       const pId = prof.id;
 
-      // Safe individual queries to avoid failing entire profile if 1 table is missing
       const [lifeRes, wrkRes, artRes, tstRes, iniRes, galRes] = await Promise.allSettled([
         supabase.from('life_events').select('*').eq('profile_id', pId).order('order_index'),
         supabase.from('works').select('*').eq('profile_id', pId).order('order_index'),
@@ -84,119 +83,116 @@ export async function saveProfileData(data: FullProfileData): Promise<{ success:
       console.error('Profile Upsert Error:', profErr);
       return { 
         success: false, 
-        message: `Gagal menyimpan ke Supabase: ${profErr.message} (Data tersimpan di memori lokal)` 
+        message: `Gagal menyimpan profil: ${profErr.message}` 
       };
     }
 
     const pId = upsertedProf?.id || profile.id;
+    const errors: string[] = [];
 
     // 2. Save Life Events
-    try {
-      await supabase.from('life_events').delete().eq('profile_id', pId);
-      if (lifeEvents && lifeEvents.length > 0) {
-        await supabase.from('life_events').insert(lifeEvents.map((item, idx) => ({
-          id: isValidUUID(item.id) ? item.id : crypto.randomUUID(),
-          profile_id: pId,
-          year_range: item.year_range || '',
-          title: item.title || '',
-          description: item.description || '',
-          order_index: idx + 1
-        })));
-      }
-    } catch (e) {
-      console.error('Life Events Save Error:', e);
+    const { error: delLifeErr } = await supabase.from('life_events').delete().eq('profile_id', pId);
+    if (delLifeErr) errors.push(`life_events delete: ${delLifeErr.message}`);
+    if (lifeEvents && lifeEvents.length > 0) {
+      const { error: insLifeErr } = await supabase.from('life_events').insert(lifeEvents.map((item, idx) => ({
+        id: isValidUUID(item.id) ? item.id : crypto.randomUUID(),
+        profile_id: pId,
+        year_range: item.year_range || '',
+        title: item.title || '',
+        description: item.description || '',
+        order_index: idx + 1
+      })));
+      if (insLifeErr) errors.push(`life_events insert: ${insLifeErr.message}`);
     }
 
     // 3. Save Works
-    try {
-      await supabase.from('works').delete().eq('profile_id', pId);
-      if (works && works.length > 0) {
-        await supabase.from('works').insert(works.map((item, idx) => ({
-          id: isValidUUID(item.id) ? item.id : crypto.randomUUID(),
-          profile_id: pId,
-          title: item.title || '',
-          category: item.category || 'Riset',
-          description: item.description || '',
-          link_url: item.link_url || '#',
-          order_index: idx + 1
-        })));
-      }
-    } catch (e) {
-      console.error('Works Save Error:', e);
+    const { error: delWrkErr } = await supabase.from('works').delete().eq('profile_id', pId);
+    if (delWrkErr) errors.push(`works delete: ${delWrkErr.message}`);
+    if (works && works.length > 0) {
+      const { error: insWrkErr } = await supabase.from('works').insert(works.map((item, idx) => ({
+        id: isValidUUID(item.id) ? item.id : crypto.randomUUID(),
+        profile_id: pId,
+        title: item.title || '',
+        category: item.category || 'Riset',
+        description: item.description || '',
+        link_url: item.link_url || '#',
+        order_index: idx + 1
+      })));
+      if (insWrkErr) errors.push(`works insert: ${insWrkErr.message}`);
     }
 
     // 4. Save Articles
-    try {
-      await supabase.from('articles').delete().eq('profile_id', pId);
-      if (articles && articles.length > 0) {
-        await supabase.from('articles').insert(articles.map((item, idx) => ({
-          id: isValidUUID(item.id) ? item.id : crypto.randomUUID(),
-          profile_id: pId,
-          title: item.title || '',
-          tag: item.tag || 'ESAI KRITIS',
-          read_time: item.read_time || '5 Menit Membaca',
-          description: item.description || '',
-          content_full: item.content_full || '',
-          link_url: item.link_url || '#',
-          order_index: idx + 1
-        })));
-      }
-    } catch (e) {
-      console.error('Articles Save Error:', e);
+    const { error: delArtErr } = await supabase.from('articles').delete().eq('profile_id', pId);
+    if (delArtErr) errors.push(`articles delete: ${delArtErr.message}`);
+    if (articles && articles.length > 0) {
+      const { error: insArtErr } = await supabase.from('articles').insert(articles.map((item, idx) => ({
+        id: isValidUUID(item.id) ? item.id : crypto.randomUUID(),
+        profile_id: pId,
+        title: item.title || '',
+        tag: item.tag || 'ESAI KRITIS',
+        read_time: item.read_time || '5 Menit Membaca',
+        description: item.description || '',
+        content_full: item.content_full || '',
+        link_url: item.link_url || '#',
+        order_index: idx + 1
+      })));
+      if (insArtErr) errors.push(`articles insert: ${insArtErr.message}`);
     }
 
     // 5. Save Testimonials
-    try {
-      await supabase.from('testimonials').delete().eq('profile_id', pId);
-      if (testimonials && testimonials.length > 0) {
-        await supabase.from('testimonials').insert(testimonials.map((item, idx) => ({
-          id: isValidUUID(item.id) ? item.id : crypto.randomUUID(),
-          profile_id: pId,
-          author_name: item.author_name || 'Warga',
-          author_role: item.author_role || 'Tokoh',
-          quote: item.quote || '',
-          order_index: idx + 1
-        })));
-      }
-    } catch (e) {
-      console.error('Testimonials Save Error:', e);
+    const { error: delTstErr } = await supabase.from('testimonials').delete().eq('profile_id', pId);
+    if (delTstErr) errors.push(`testimonials delete: ${delTstErr.message}`);
+    if (testimonials && testimonials.length > 0) {
+      const { error: insTstErr } = await supabase.from('testimonials').insert(testimonials.map((item, idx) => ({
+        id: isValidUUID(item.id) ? item.id : crypto.randomUUID(),
+        profile_id: pId,
+        author_name: item.author_name || 'Warga',
+        author_role: item.author_role || 'Tokoh',
+        quote: item.quote || '',
+        order_index: idx + 1
+      })));
+      if (insTstErr) errors.push(`testimonials insert: ${insTstErr.message}`);
     }
 
     // 6. Save Initiatives (Products)
-    try {
-      await supabase.from('initiatives').delete().eq('profile_id', pId);
-      if (initiatives && initiatives.length > 0) {
-        await supabase.from('initiatives').insert(initiatives.map((item, idx) => ({
-          id: isValidUUID(item.id) ? item.id : crypto.randomUUID(),
-          profile_id: pId,
-          title: item.title || '',
-          category: item.category || 'Inisiatif',
-          description: item.description || '',
-          price: item.price || '',
-          image_url: item.image_url || '',
-          action_text: item.action_text || 'Lihat',
-          link_url: item.link_url || '#',
-          order_index: idx + 1
-        })));
-      }
-    } catch (e) {
-      console.error('Initiatives Save Error:', e);
+    const { error: delIniErr } = await supabase.from('initiatives').delete().eq('profile_id', pId);
+    if (delIniErr) errors.push(`initiatives delete: ${delIniErr.message}`);
+    if (initiatives && initiatives.length > 0) {
+      const { error: insIniErr } = await supabase.from('initiatives').insert(initiatives.map((item, idx) => ({
+        id: isValidUUID(item.id) ? item.id : crypto.randomUUID(),
+        profile_id: pId,
+        title: item.title || '',
+        category: item.category || 'Inisiatif',
+        description: item.description || '',
+        price: item.price || '',
+        image_url: item.image_url || '',
+        action_text: item.action_text || 'Lihat',
+        link_url: item.link_url || '#',
+        order_index: idx + 1
+      })));
+      if (insIniErr) errors.push(`initiatives insert: ${insIniErr.message}`);
     }
 
-    // 7. Save Gallery (Safe Try-Catch in case table gallery is not created in DB yet)
-    try {
-      await supabase.from('gallery').delete().eq('profile_id', pId);
-      if (gallery && gallery.length > 0) {
-        await supabase.from('gallery').insert(gallery.map((item, idx) => ({
-          id: isValidUUID(item.id) ? item.id : crypto.randomUUID(),
-          profile_id: pId,
-          title: item.title || '',
-          image_url: item.image_url || '',
-          order_index: idx + 1
-        })));
-      }
-    } catch (e) {
-      console.error('Gallery Save Error:', e);
+    // 7. Save Gallery
+    const { error: delGalErr } = await supabase.from('gallery').delete().eq('profile_id', pId);
+    if (delGalErr) errors.push(`gallery delete: ${delGalErr.message}`);
+    if (gallery && gallery.length > 0) {
+      const { error: insGalErr } = await supabase.from('gallery').insert(gallery.map((item, idx) => ({
+        id: isValidUUID(item.id) ? item.id : crypto.randomUUID(),
+        profile_id: pId,
+        title: item.title || '',
+        image_url: item.image_url || '',
+        order_index: idx + 1
+      })));
+      if (insGalErr) errors.push(`gallery insert: ${insGalErr.message}`);
+    }
+
+    if (errors.length > 0) {
+      console.error('Supabase child table errors:', errors);
+      return {
+        success: false,
+        message: `Profil tersimpan, namun ada kendala di sub-tabel: ${errors.join('; ')}`
+      };
     }
 
     return { 
@@ -208,7 +204,7 @@ export async function saveProfileData(data: FullProfileData): Promise<{ success:
     const errorMsg = err instanceof Error ? err.message : 'Unknown error';
     return { 
       success: false, 
-      message: `Terjadi kendala jaringan ke Supabase: ${errorMsg} (Data tersimpan sementara di memori lokal)` 
+      message: `Terjadi kendala jaringan ke Supabase: ${errorMsg}` 
     };
   }
 }
