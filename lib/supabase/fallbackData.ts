@@ -113,6 +113,115 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
       }
     ]
   },
+  'najwa-shihab': {
+    profile: {
+      id: '44444444-4444-4444-4444-444444444444',
+      slug: 'najwa-shihab',
+      name: 'NAJWA SHIHAB',
+      title: 'THE VOICES • JURNALIS UTAMA • SUARA KETENAGAN & KEADILAN',
+      category: 'THE VOICES',
+      bio_paragraphs: [
+        'Najwa Shihab adalah jurnalis senior, pembawa acara Mata Najwa, dan pendiri Narasi yang selama lebih dari dua dekade konsisten menguji kebenaran, menagih akuntabilitas penguasa, dan menyuarakan keadilan bagi warga Indonesia.',
+        'Melalui Narasi dan berbagai aksi independennya, Najwa mengubah jurnalisme dari sekadar siaran berita menjadi gerakan partisipasi publik: mendorong generasi muda berani bersuara, mengawal isu-isu korupsi dan kebijakan publik, serta menggalang solidaritas warga untuk pendidikan dan kemanusiaan.'
+      ],
+      quote: 'Di hadapan keadilan dan kebenaran, kewajiban tertinggi seorang jurnalis adalah berdiri bersama warga dan menagih pertanggungjawaban dari mereka yang memegang kekuasaan.',
+      photo_url: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80',
+      verified: true,
+      status_text: 'VERIFIKASI TERKURASI',
+      social_links: {
+        youtube: 'https://youtube.com/@NarasiOfficial',
+        instagram: 'https://instagram.com/najwashihab',
+        twitter: 'https://twitter.com/NajwaShihab',
+        spotify: 'https://open.spotify.com/show/matanajwa',
+        website: 'https://narasi.tv',
+        tiktok: 'https://tiktok.com/@najwashihab'
+      },
+      theme_default: 'light'
+    },
+    lifeEvents: [
+      { id: '1', profile_id: '44444444-4444-4444-4444-444444444444', year_range: '2001 — 2017', title: 'DEDIKASI JURNALISME (METRO TV & MATA NAJWA)', description: 'Mengawali karier sebagai reporter lapangan, meliput Tsunami Aceh 2004, hingga memandu program dialog politik paling berpengaruh di Indonesia.', order_index: 1 },
+      { id: '2', profile_id: '44444444-4444-4444-4444-444444444444', year_range: '2017', title: 'TITIK BALIK INDEPENDENSI (PENDIRIAN NARASI)', description: 'Mendirikan Narasi sebagai ekosistem media independen berbasis kisah, jurnalistik kritis, dan partisipasi aktif anak muda.', order_index: 2 },
+      { id: '3', profile_id: '44444444-4444-4444-4444-444444444444', year_range: '2018 — 2023', title: 'DUTA BACA INDONESIA & EDUSIASI LITERASI', description: 'Menjabat sebagai Duta Baca Indonesia, berkeliling ke berbagai penjuru negeri untuk menyalakan gairah membaca dan literasi kritis.', order_index: 3 },
+      { id: '4', profile_id: '44444444-4444-4444-4444-444444444444', year_range: '2024 — 2026', title: 'GERAKAN KAWAL WAKIL RAKYAT & NARRATIVE FREEDOM', description: 'Mengawal transparansi pemilu, membuka ruang debat publik anak muda, dan memperjuangkan kebebasan pers di era digital.', order_index: 4 }
+    ],
+    works: [
+      { id: 'w1', profile_id: '44444444-4444-4444-4444-444444444444', title: 'Mata Najwa', category: 'Program Dialog Politik & Investigasi', description: 'Program acara perbincangan mendalam yang menguji ketajaman argumen pejabat publik dan menagih komitmen keadilan bagi masyarakat.', link_url: 'https://narasi.tv/mata-najwa', order_index: 1 },
+      { id: 'w2', profile_id: '44444444-4444-4444-4444-444444444444', title: 'Narasi Ecosystem', category: 'Platform Media & Diskursus Publik', description: 'Ekosistem konten digital independen yang mewadahi suara anak muda, esai budaya, dan jurnalisme investigatif.', link_url: 'https://narasi.tv', order_index: 2 },
+      { id: 'w3', profile_id: '44444444-4444-4444-4444-444444444444', title: 'Catatan Najwa', category: 'Karya Tulis & Esai Kebangsaan', description: 'Refleksi kritis dan catatan personal Najwa Shihab tentang perjalanan demokrasi, hukum, dan harapan warga Indonesia.', link_url: 'https://www.gramedia.com', order_index: 3 },
+      { id: 'w4', profile_id: '44444444-4444-4444-4444-444444444444', title: 'Gerakan Indonesia Membaca & Literasi Warga', category: 'Advokasi Pendidikan & Kebudayaan', description: 'Inisiatif berkelanjutan memperluas akses buku dan ruang diskusi kritis bagi komunitas anak muda di daerah.', link_url: 'https://narasi.tv', order_index: 4 }
+    ],
+    gallery: [
+      { id: 'g1', profile_id: '44444444-4444-4444-4444-444444444444', title: 'Mata Najwa: Panggung Dialog Politik & Akuntabilitas', image_url: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1200&q=80', order_index: 1 },
+      { id: 'g2', profile_id: '44444444-4444-4444-4444-444444444444', title: 'Gerakan Literasi Warga: Berkeliling Pelosok Nusantara', image_url: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1200&q=80', order_index: 2 },
+      { id: 'g3', profile_id: '44444444-4444-4444-4444-444444444444', title: 'Narasi Fest: Ruang Kolaborasi & Suara Anak Muda', image_url: 'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=80', order_index: 3 }
+    ],
+    articles: [
+      { 
+        id: 'a1', 
+        profile_id: '44444444-4444-4444-4444-444444444444', 
+        title: 'Menagih Marwah Keadilan: Mengapa Suara Warga Tak Boleh Dikebiri', 
+        tag: 'ESAI JURNALISTIK', 
+        read_time: '8 Menit Membaca', 
+        description: 'Refleksi mendalam Najwa Shihab tentang peran vital pers dan jurnalisme kritis dalam mengawal kebebasan berpendapat dan transparansi publik.', 
+        content_full: 'Di tengah arus informasi yang serba cepat dan riuhnya opini digital, peran jurnalisme tidak pernah surut dari garis depan pertahanan demokrasi.\n\nBagi Najwa Shihab, menagih pertanggungjawaban penguasa bukan persoalan konfrontasi politik, melainkan mandat konstitusional warga. Ketika ruang-ruang publik dipenuhi narasi rekayasa dan retorika manis, tugas pers adalah menghadirkan pertanyaan-pertanyaan jernih yang mewakili kegelisahan rakyat biasa.\n\n"Kebenaran tidak pernah takut pada pengujian," tegas Najwa. Mengawal keadilan memerlukan keberanian untuk tetap berdiri di sisi warga, menguji setiap kebijakan yang berdampak pada hajat hidup orang banyak, dan memastikan bahwa suara mereka yang tak terdengar tetap menggema di panggung nasional.', 
+        link_url: '/artikel/menagih-marwah-keadilan-najwa-shihab', 
+        order_index: 1 
+      },
+      { 
+        id: 'a2', 
+        profile_id: '44444444-4444-4444-4444-444444444444', 
+        title: 'Catatan Keberanian: Menyalakan Nyala Literasi di Ujung Negeri', 
+        tag: 'LITERASI & WARISAN', 
+        read_time: '7 Menit Membaca', 
+        description: 'Catatan perjalanan Najwa Shihab berkeliling pelosok Nusantara untuk membangun ruang baca dan kesadaran bernalar anak muda.', 
+        content_full: 'Membaca bukan sekadar mengeja kata di atas kertas, melainkan membuka jendela kedaulatan berpikir.\n\nDalam perjalanannya sebagai Duta Baca Indonesia, Najwa menyaksikan sendiri dahaganya anak-anak di pelosok Nusantara akan ilmu pengetahuan. Dari perpustakaan apung di pesisir hingga pojok baca sederhana di kaki gunung, semangat gotong royong warga untuk merawat literasi selalu menjadi pemantik harapan.\n\nGenerasi muda yang kritis dan terdidik adalah benteng terkuat sebuah bangsa. Ketika anak-anak kita dibekali keberanian bernalar dan akses literasi yang luas, mereka tidak akan mudah digoyahkan oleh pembodohan atau disinformasi.', 
+        link_url: '/artikel/catatan-keberanian-literasi-najwa-shihab', 
+        order_index: 2 
+      }
+    ],
+    testimonials: [
+      { id: 't1', profile_id: '44444444-4444-4444-4444-444444444444', author_name: 'Gita Wirjawan', author_role: 'Pendidik & Founder Endgame Podcast', quote: 'Najwa adalah simbol keberanian jurnalisme Indonesia yang konsisten mengawal kualitas diskursus publik kita.', order_index: 1 },
+      { id: 't2', profile_id: '44444444-4444-4444-4444-444444444444', author_name: 'Ferry Irwandi', author_role: 'Video Esais & Pendiri Malaka Project', quote: 'Ketajaman dan konsistensi Mba Nana dalam menagih akuntabilitas adalah inspirasi besar bagi gerakan nalar kritis anak muda.', order_index: 2 }
+    ],
+    initiatives: [
+      { 
+        id: 'i1', 
+        profile_id: '44444444-4444-4444-4444-444444444444', 
+        title: 'Buku Catatan Najwa', 
+        category: 'Buku Resmi Gramedia', 
+        description: 'Buku esai dan pemikiran kritis Najwa Shihab tentang perjalanan demokrasi, hukum, dan harapan kebangsaan.', 
+        price: 'Rp 125.000', 
+        image_url: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 
+        action_text: 'Pesan Buku Resmi Gramedia', 
+        link_url: 'https://www.gramedia.com', 
+        order_index: 1 
+      },
+      { 
+        id: 'i2', 
+        profile_id: '44444444-4444-4444-4444-444444444444', 
+        title: 'Merchandise Resmi Narasi', 
+        category: 'Merchandise Resmi', 
+        description: 'Koleksi apparel dan jurnal resmi Narasi bertema kebebasan bersuara dan literasi publik.', 
+        price: 'Rp 199.000', 
+        image_url: 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80', 
+        action_text: 'Kunjungi Narasi Store', 
+        link_url: 'https://narasi.tv', 
+        order_index: 2 
+      },
+      { 
+        id: 'i3', 
+        profile_id: '44444444-4444-4444-4444-444444444444', 
+        title: 'Tiket Event Narasi Fest & Kelas Jurnalistik', 
+        category: 'Tiket Resmi Event', 
+        description: 'Tiket festival wawasan, kelas jurnalisme publik, dan temu komunitas pemuda Narasi.', 
+        price: 'Rp 150.000', 
+        image_url: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80', 
+        action_text: 'Pesan Tiket Resmi', 
+        link_url: 'https://narasi.tv', 
+        order_index: 3 
+      }
+    ]
+  },
   'gita-wirjawan': {
     profile: {
       id: '1151aa5c-2c9d-47d5-a88a-be2a452d7d5a',
