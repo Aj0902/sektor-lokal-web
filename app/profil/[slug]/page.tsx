@@ -40,6 +40,8 @@ export default function DynamicProfilePage() {
   const params = useParams();
   const slug = (params?.slug as string) || 'ferry-irwandi';
 
+  const defaultData = fallbackProfiles[slug] || fallbackProfiles['ferry-irwandi'];
+
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [activeAccordion, setActiveAccordion] = useState<number | null>(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -47,9 +49,7 @@ export default function DynamicProfilePage() {
 
   const [selectedArticle, setSelectedArticle] = useState<Article | null>(null);
 
-  const [profileData, setProfileData] = useState<FullProfileData>(
-    fallbackProfiles[slug] || fallbackProfiles['ferry-irwandi']
-  );
+  const [profileData, setProfileData] = useState<FullProfileData>(defaultData);
 
   useEffect(() => {
     const fetchFromSupabase = async () => {
@@ -74,12 +74,12 @@ export default function DynamicProfilePage() {
 
           setProfileData({
             profile: prof,
-            lifeEvents: life.data || [],
-            works: wrk.data || [],
-            articles: art.data || [],
-            testimonials: tst.data || [],
-            initiatives: ini.data || [],
-            gallery: gal.data || []
+            lifeEvents: (life.data && life.data.length > 0) ? life.data : defaultData.lifeEvents,
+            works: (wrk.data && wrk.data.length > 0) ? wrk.data : defaultData.works,
+            articles: (art.data && art.data.length > 0) ? art.data : defaultData.articles,
+            testimonials: (tst.data && tst.data.length > 0) ? tst.data : defaultData.testimonials,
+            initiatives: (ini.data && ini.data.length > 0) ? ini.data : defaultData.initiatives,
+            gallery: (gal.data && gal.data.length > 0) ? gal.data : defaultData.gallery
           });
         }
       } catch {
@@ -88,7 +88,7 @@ export default function DynamicProfilePage() {
     };
 
     fetchFromSupabase();
-  }, [slug]);
+  }, [slug, defaultData]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -127,9 +127,13 @@ export default function DynamicProfilePage() {
     { key: 'patreon', label: 'Patreon', icon: <HeartHandshake className="w-4 h-4 text-coral-500" /> },
   ];
 
-  // Marquee repeaters
-  const marqueeInitiatives = initiatives.length > 0 ? [...initiatives, ...initiatives, ...initiatives] : [];
-  const marqueeTestimonials = testimonials.length > 0 ? [...testimonials, ...testimonials, ...testimonials] : [];
+  const marqueeInitiatives = initiatives.length > 0 
+    ? [...initiatives, ...initiatives, ...initiatives, ...initiatives] 
+    : [];
+
+  const marqueeTestimonials = testimonials.length > 0 
+    ? [...testimonials, ...testimonials, ...testimonials, ...testimonials] 
+    : [];
 
   return (
     <div className={`min-h-screen ${bgCanvas} font-sans antialiased selection:bg-[#E11D48] selection:text-white relative`}>
@@ -261,7 +265,7 @@ export default function DynamicProfilePage() {
               </p>
             </div>
 
-            {/* DYNAMIC SOCIAL LINKS BAR (A-Z CHANNEL AUTOMATIC RENDERING) */}
+            {/* DYNAMIC SOCIAL LINKS BAR */}
             <div className="flex items-center justify-center gap-2 flex-wrap pt-2">
               {socialIconMap.map((item) => {
                 const url = soc[item.key];
@@ -394,7 +398,7 @@ export default function DynamicProfilePage() {
           <ParallaxGallery isDarkMode={isDarkMode} />
         </section>
 
-        {/* 05 // ARTIKEL & WAWASAN (DIRECT DYNAMIC SEO LINKS & READER MODAL) */}
+        {/* 05 // ARTIKEL & WAWASAN */}
         {articles.length > 0 && (
           <section id="artikel" className="space-y-8 scroll-mt-24">
             <div className="flex items-center gap-3 border-b pb-4 border-inherit/10">
@@ -440,7 +444,7 @@ export default function DynamicProfilePage() {
           </section>
         )}
 
-        {/* 06 // PRODUK & INISIATIF WARGA (SINGLE-ROW INFINITE MARQUEE SLIDER) */}
+        {/* 06 // PRODUK & INISIATIF WARGA (SLIDER MARQUEE 1-BARIS) */}
         {initiatives.length > 0 && (
           <section id="produk" className="space-y-8 scroll-mt-24 overflow-hidden">
             <div className="flex items-center justify-between border-b pb-4 border-inherit/10">
@@ -449,23 +453,23 @@ export default function DynamicProfilePage() {
                 <h2 className="text-3xl sm:text-4xl font-display uppercase tracking-tight">PRODUK & INISIATIF WARGA</h2>
               </div>
               <span className="text-[10px] font-mono uppercase tracking-widest text-[#E11D48] font-bold animate-pulse">
-                • AUTO-PLAY SLIDER
+                • MARQUEE SLIDER
               </span>
             </div>
 
-            {/* INFINITE MARQUEE CONTAINER */}
-            <div className="relative w-full overflow-hidden py-2 group">
-              <div className="flex gap-6 w-max animate-marquee group-hover:[animation-play-state:paused]">
+            {/* MARQUEE CONTAINER */}
+            <div className="relative w-full overflow-hidden py-4">
+              <div className="flex gap-6 w-max animate-marquee hover:[animation-play-state:paused]">
                 {marqueeInitiatives.map((prod, idx) => (
                   <div 
                     key={idx} 
-                    className={`w-[300px] sm:w-[360px] p-6 rounded-3xl border flex flex-col justify-between space-y-4 shrink-0 shadow-lg ${cardClass}`}
+                    className={`w-[290px] sm:w-[340px] p-6 rounded-3xl border flex flex-col justify-between space-y-4 shrink-0 shadow-lg ${cardClass}`}
                   >
                     <div className="space-y-3">
                       {/* Product Thumbnail */}
                       {prod.image_url && (
-                        <div className="relative w-full h-44 rounded-2xl overflow-hidden bg-neutral-900 border border-inherit/10">
-                          <Image src={prod.image_url} alt={prod.title} fill sizes="360px" className="object-cover filter grayscale contrast-110" />
+                        <div className="relative w-full h-40 rounded-2xl overflow-hidden bg-neutral-900 border border-inherit/10">
+                          <Image src={prod.image_url} alt={prod.title} fill sizes="340px" className="object-cover filter grayscale contrast-110" />
                         </div>
                       )}
 
@@ -500,7 +504,7 @@ export default function DynamicProfilePage() {
           </section>
         )}
 
-        {/* 07 // KATA WARGA & TESTIMONI (SINGLE-ROW INFINITE MARQUEE SLIDER) */}
+        {/* 07 // KATA WARGA & TESTIMONI (SLIDER MARQUEE 1-BARIS) */}
         {testimonials.length > 0 && (
           <section id="kata-warga" className="space-y-8 scroll-mt-24 overflow-hidden">
             <div className="flex items-center justify-between border-b pb-4 border-inherit/10">
@@ -509,23 +513,23 @@ export default function DynamicProfilePage() {
                 <h2 className="text-3xl sm:text-4xl font-display uppercase tracking-tight">KATA WARGA & TESTIMONI</h2>
               </div>
               <span className="text-[10px] font-mono uppercase tracking-widest text-[#E11D48] font-bold animate-pulse">
-                • AUTO-PLAY SLIDER
+                • MARQUEE SLIDER
               </span>
             </div>
 
-            {/* INFINITE MARQUEE CONTAINER */}
-            <div className="relative w-full overflow-hidden py-2 group">
-              <div className="flex gap-6 w-max animate-marquee-reverse group-hover:[animation-play-state:paused]">
+            {/* MARQUEE CONTAINER */}
+            <div className="relative w-full overflow-hidden py-4">
+              <div className="flex gap-6 w-max animate-marquee-reverse hover:[animation-play-state:paused]">
                 {marqueeTestimonials.map((item, idx) => (
                   <div 
                     key={idx} 
-                    className={`w-[300px] sm:w-[360px] p-6 sm:p-7 rounded-3xl border flex flex-col justify-between space-y-4 shrink-0 shadow-lg ${cardClass}`}
+                    className={`w-[290px] sm:w-[340px] p-6 sm:p-7 rounded-3xl border flex flex-col justify-between space-y-4 shrink-0 shadow-lg ${cardClass}`}
                   >
                     <blockquote className="font-editorial italic text-sm leading-relaxed text-inherit">
                       &ldquo;{item.quote}&rdquo;
                     </blockquote>
-                    <div className="pt-3 border-t border-inherit/10">
-                      <p className="font-display uppercase text-base text-inherit">{item.author_name}</p>
+                    <div className="pt-3 border-t border-inherit/10 font-mono">
+                      <p className="font-display uppercase text-base text-inherit font-sans">{item.author_name}</p>
                       <p className={`text-xs ${mutedText}`}>{item.author_role}</p>
                     </div>
                   </div>
@@ -593,7 +597,7 @@ export default function DynamicProfilePage() {
 
       {/* FOOTER */}
       <footer className={`border-t py-12 px-6 ${isDarkMode ? 'border-white/[0.08]' : 'border-black/[0.08]'}`}>
-        <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
+        <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-mono">
           <div className="flex items-center gap-2 font-display text-lg text-inherit">
             <span>SEKTOR LOKAL</span>
             <span className="w-2 h-2 rounded-full bg-[#E11D48]" />
