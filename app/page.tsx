@@ -34,7 +34,7 @@ export default function DirectoryHomePage() {
     const fetchProfiles = async () => {
       try {
         const supabase = createClient();
-        const { data, error } = await supabase.from('profiles').select('*').order('created_at', { ascending: false });
+        const { data, error } = await supabase.from('profiles_warga').select('*').order('created_at', { ascending: false });
         if (data && data.length > 0 && !error) {
           setProfiles(data);
         }
