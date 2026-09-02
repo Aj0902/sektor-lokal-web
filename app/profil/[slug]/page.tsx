@@ -102,7 +102,7 @@ export default function DynamicProfilePage() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const { profile, lifeEvents, works, articles, testimonials, initiatives } = profileData;
+  const { profile, lifeEvents, works, articles, testimonials, initiatives, gallery = [] } = profileData;
 
   const bgCanvas = isDarkMode ? 'particle-wave-dark text-[#EDE8DC]' : 'particle-wave-light text-[#0A0E1A]';
   const cardClass = isDarkMode ? 'spotlight-card-dark' : 'spotlight-card-light';
@@ -395,7 +395,7 @@ export default function DynamicProfilePage() {
             <span className="font-mono text-xs text-[#E11D48] font-bold">04 //</span>
             <h2 className="text-3xl sm:text-4xl font-display uppercase tracking-tight">GALERI VISUAL PARALLAX</h2>
           </div>
-          <ParallaxGallery isDarkMode={isDarkMode} />
+          <ParallaxGallery isDarkMode={isDarkMode} items={gallery} />
         </section>
 
         {/* 05 // ARTIKEL & WAWASAN */}
@@ -407,7 +407,9 @@ export default function DynamicProfilePage() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {articles.map((art, idx) => {
-                const targetArticleUrl = art.link_url?.startsWith('/artikel/') 
+                const hasCustomUrl = art.link_url && art.link_url !== '#' && art.link_url.trim() !== '';
+                const isExternal = hasCustomUrl && (art.link_url.startsWith('http://') || art.link_url.startsWith('https://'));
+                const targetArticleUrl = hasCustomUrl 
                   ? art.link_url 
                   : `/artikel/${art.title.toLowerCase().trim().replace(/\s+/g, '-')}`;
 
@@ -429,13 +431,26 @@ export default function DynamicProfilePage() {
                         <BookOpen className="w-3.5 h-3.5" />
                         <span>Mode Reader</span>
                       </button>
-                      <Link 
-                        href={targetArticleUrl} 
-                        className="inline-flex items-center gap-1 text-xs font-bold text-[#E11D48] hover:underline"
-                      >
-                        <span>Baca Artikel Full (SEO)</span>
-                        <ArrowUpRight className="w-3.5 h-3.5" />
-                      </Link>
+
+                      {isExternal ? (
+                        <a 
+                          href={targetArticleUrl} 
+                          target="_blank" 
+                          rel="noreferrer"
+                          className="inline-flex items-center gap-1 text-xs font-bold text-[#E11D48] hover:underline"
+                        >
+                          <span>Buka Link Artikel</span>
+                          <ArrowUpRight className="w-3.5 h-3.5" />
+                        </a>
+                      ) : (
+                        <Link 
+                          href={targetArticleUrl} 
+                          className="inline-flex items-center gap-1 text-xs font-bold text-[#E11D48] hover:underline"
+                        >
+                          <span>Baca Artikel Full (SEO)</span>
+                          <ArrowUpRight className="w-3.5 h-3.5" />
+                        </Link>
+                      )}
                     </div>
                   </div>
                 );
