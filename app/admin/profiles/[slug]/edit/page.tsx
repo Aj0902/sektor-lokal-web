@@ -536,7 +536,7 @@ export default function EditProfileEditorPage() {
                 </div>
 
                 {/* Metadata Row */}
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label className={labelStyle}>Kategori / Tag Badge:</label>
                     <input 
@@ -560,20 +560,6 @@ export default function EditProfileEditorPage() {
                       onChange={(e) => {
                         const next = [...articles];
                         next[idx].read_time = e.target.value;
-                        setData({ ...data, articles: next });
-                      }}
-                      className={inputStyle}
-                    />
-                  </div>
-                  <div>
-                    <label className={labelStyle}>Tautan SEO / Slug URL:</label>
-                    <input 
-                      type="text" 
-                      placeholder="/artikel/judul-esai"
-                      value={art.link_url}
-                      onChange={(e) => {
-                        const next = [...articles];
-                        next[idx].link_url = e.target.value;
                         setData({ ...data, articles: next });
                       }}
                       className={inputStyle}
