@@ -518,8 +518,17 @@ export default function EditProfileEditorPage() {
                     placeholder="Judul Esai Yang Menggugah Nalar..."
                     value={art.title}
                     onChange={(e) => {
+                      const newTitle = e.target.value;
                       const next = [...articles];
-                      next[idx].title = e.target.value;
+                      next[idx].title = newTitle;
+                      
+                      // Auto generate clean slug unless user typed a custom external HTTP URL
+                      const isExternal = next[idx].link_url && (next[idx].link_url.startsWith('http://') || next[idx].link_url.startsWith('https://'));
+                      if (!isExternal) {
+                        const cleanSlug = newTitle.toLowerCase().trim().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-');
+                        next[idx].link_url = cleanSlug ? `/artikel/${cleanSlug}` : '';
+                      }
+                      
                       setData({ ...data, articles: next });
                     }}
                     className="w-full p-3 rounded-xl border font-display text-xl text-gray-900 bg-white dark:bg-[#0A0E1A] dark:text-[#EDE8DC] border-gray-300 dark:border-white/20 focus:border-[#E11D48] focus:outline-none"
