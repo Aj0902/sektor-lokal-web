@@ -31,14 +31,10 @@ export default function ParallaxGallery({ isDarkMode, items }: ParallaxGalleryPr
 
   const hasCustomItems = items && items.length > 0;
 
-  const col1 = hasCustomItems ? items.filter((_, i) => i % 3 === 0) : defaultImagesCol1;
-  const col2 = hasCustomItems ? items.filter((_, i) => i % 3 === 1) : defaultImagesCol2;
-  const col3 = hasCustomItems ? items.filter((_, i) => i % 3 === 2) : defaultImagesCol3;
-
-  // Fallbacks if one column is empty when items is small
-  const finalCol1 = col1.length > 0 ? col1 : defaultImagesCol1;
-  const finalCol2 = col2.length > 0 ? col2 : defaultImagesCol2;
-  const finalCol3 = col3.length > 0 ? col3 : defaultImagesCol3;
+  // Use ONLY custom items if provided. Do NOT mix with sample images!
+  const finalCol1 = hasCustomItems ? items.filter((_, i) => i % 3 === 0) : defaultImagesCol1;
+  const finalCol2 = hasCustomItems ? items.filter((_, i) => i % 3 === 1) : defaultImagesCol2;
+  const finalCol3 = hasCustomItems ? items.filter((_, i) => i % 3 === 2) : defaultImagesCol3;
 
   const cardBorder = isDarkMode ? 'border-white/10 bg-[#111726]/60' : 'border-black/10 bg-white/80';
 
@@ -55,7 +51,7 @@ export default function ParallaxGallery({ isDarkMode, items }: ParallaxGalleryPr
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 h-[480px] overflow-y-auto no-scrollbar rounded-3xl p-3 border border-inherit/10 shadow-inner">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 min-h-[300px] max-h-[500px] overflow-y-auto no-scrollbar rounded-3xl p-3 border border-inherit/10 shadow-inner">
         
         {/* Column 1 */}
         <div className="space-y-4">
