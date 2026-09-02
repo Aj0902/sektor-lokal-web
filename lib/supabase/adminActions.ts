@@ -6,7 +6,7 @@ export async function getAllProfiles(): Promise<Profile[]> {
   try {
     const supabase = createClient();
     const { data, error } = await supabase
-      .from('profiles')
+      .from('profiles_warga')
       .select('*')
       .order('created_at', { ascending: false });
 
@@ -24,7 +24,7 @@ export async function getProfileBySlug(slug: string): Promise<FullProfileData> {
   try {
     const supabase = createClient();
     const { data: prof, error: pError } = await supabase
-      .from('profiles')
+      .from('profiles_warga')
       .select('*')
       .eq('slug', slug)
       .single();
@@ -33,12 +33,12 @@ export async function getProfileBySlug(slug: string): Promise<FullProfileData> {
       const pId = prof.id;
 
       const [lifeRes, wrkRes, artRes, tstRes, iniRes, galRes] = await Promise.allSettled([
-        supabase.from('life_events').select('*').eq('profile_id', pId).order('order_index'),
-        supabase.from('works').select('*').eq('profile_id', pId).order('order_index'),
-        supabase.from('articles').select('*').eq('profile_id', pId).order('order_index'),
-        supabase.from('testimonials').select('*').eq('profile_id', pId).order('order_index'),
-        supabase.from('initiatives').select('*').eq('profile_id', pId).order('order_index'),
-        supabase.from('gallery').select('*').eq('profile_id', pId).order('order_index'),
+        supabase.from('life_events_warga').select('*').eq('profile_id', pId).order('order_index'),
+        supabase.from('works_warga').select('*').eq('profile_id', pId).order('order_index'),
+        supabase.from('articles_warga').select('*').eq('profile_id', pId).order('order_index'),
+        supabase.from('testimonials_warga').select('*').eq('profile_id', pId).order('order_index'),
+        supabase.from('initiatives_warga').select('*').eq('profile_id', pId).order('order_index'),
+        supabase.from('gallery_warga').select('*').eq('profile_id', pId).order('order_index'),
       ]);
 
       const getVal = (res: PromiseSettledResult<any>) => res.status === 'fulfilled' && res.value?.data ? res.value.data : [];
@@ -74,7 +74,7 @@ export async function saveProfileData(data: FullProfileData): Promise<{ success:
 
     // 1. Upsert Profile
     const { data: upsertedProf, error: profErr } = await supabase
-      .from('profiles')
+      .from('profiles_warga')
       .upsert(profile, { onConflict: 'slug' })
       .select()
       .single();
@@ -91,10 +91,10 @@ export async function saveProfileData(data: FullProfileData): Promise<{ success:
     const errors: string[] = [];
 
     // 2. Save Life Events
-    const { error: delLifeErr } = await supabase.from('life_events').delete().eq('profile_id', pId);
+    const { error: delLifeErr } = await supabase.from('life_events_warga').delete().eq('profile_id', pId);
     if (delLifeErr) errors.push(`life_events delete: ${delLifeErr.message}`);
     if (lifeEvents && lifeEvents.length > 0) {
-      const { error: insLifeErr } = await supabase.from('life_events').insert(lifeEvents.map((item, idx) => ({
+      const { error: insLifeErr } = await supabase.from('life_events_warga').insert(lifeEvents.map((item, idx) => ({
         id: isValidUUID(item.id) ? item.id : crypto.randomUUID(),
         profile_id: pId,
         year_range: item.year_range || '',
@@ -106,10 +106,10 @@ export async function saveProfileData(data: FullProfileData): Promise<{ success:
     }
 
     // 3. Save Works
-    const { error: delWrkErr } = await supabase.from('works').delete().eq('profile_id', pId);
+    const { error: delWrkErr } = await supabase.from('works_warga').delete().eq('profile_id', pId);
     if (delWrkErr) errors.push(`works delete: ${delWrkErr.message}`);
     if (works && works.length > 0) {
-      const { error: insWrkErr } = await supabase.from('works').insert(works.map((item, idx) => ({
+      const { error: insWrkErr } = await supabase.from('works_warga').insert(works.map((item, idx) => ({
         id: isValidUUID(item.id) ? item.id : crypto.randomUUID(),
         profile_id: pId,
         title: item.title || '',
@@ -122,10 +122,10 @@ export async function saveProfileData(data: FullProfileData): Promise<{ success:
     }
 
     // 4. Save Articles
-    const { error: delArtErr } = await supabase.from('articles').delete().eq('profile_id', pId);
+    const { error: delArtErr } = await supabase.from('articles_warga').delete().eq('profile_id', pId);
     if (delArtErr) errors.push(`articles delete: ${delArtErr.message}`);
     if (articles && articles.length > 0) {
-      const { error: insArtErr } = await supabase.from('articles').insert(articles.map((item, idx) => ({
+      const { error: insArtErr } = await supabase.from('articles_warga').insert(articles.map((item, idx) => ({
         id: isValidUUID(item.id) ? item.id : crypto.randomUUID(),
         profile_id: pId,
         title: item.title || '',
@@ -140,10 +140,10 @@ export async function saveProfileData(data: FullProfileData): Promise<{ success:
     }
 
     // 5. Save Testimonials
-    const { error: delTstErr } = await supabase.from('testimonials').delete().eq('profile_id', pId);
+    const { error: delTstErr } = await supabase.from('testimonials_warga').delete().eq('profile_id', pId);
     if (delTstErr) errors.push(`testimonials delete: ${delTstErr.message}`);
     if (testimonials && testimonials.length > 0) {
-      const { error: insTstErr } = await supabase.from('testimonials').insert(testimonials.map((item, idx) => ({
+      const { error: insTstErr } = await supabase.from('testimonials_warga').insert(testimonials.map((item, idx) => ({
         id: isValidUUID(item.id) ? item.id : crypto.randomUUID(),
         profile_id: pId,
         author_name: item.author_name || 'Warga',
@@ -155,10 +155,10 @@ export async function saveProfileData(data: FullProfileData): Promise<{ success:
     }
 
     // 6. Save Initiatives (Products)
-    const { error: delIniErr } = await supabase.from('initiatives').delete().eq('profile_id', pId);
+    const { error: delIniErr } = await supabase.from('initiatives_warga').delete().eq('profile_id', pId);
     if (delIniErr) errors.push(`initiatives delete: ${delIniErr.message}`);
     if (initiatives && initiatives.length > 0) {
-      const { error: insIniErr } = await supabase.from('initiatives').insert(initiatives.map((item, idx) => ({
+      const { error: insIniErr } = await supabase.from('initiatives_warga').insert(initiatives.map((item, idx) => ({
         id: isValidUUID(item.id) ? item.id : crypto.randomUUID(),
         profile_id: pId,
         title: item.title || '',
@@ -174,10 +174,10 @@ export async function saveProfileData(data: FullProfileData): Promise<{ success:
     }
 
     // 7. Save Gallery
-    const { error: delGalErr } = await supabase.from('gallery').delete().eq('profile_id', pId);
+    const { error: delGalErr } = await supabase.from('gallery_warga').delete().eq('profile_id', pId);
     if (delGalErr) errors.push(`gallery delete: ${delGalErr.message}`);
     if (gallery && gallery.length > 0) {
-      const { error: insGalErr } = await supabase.from('gallery').insert(gallery.map((item, idx) => ({
+      const { error: insGalErr } = await supabase.from('gallery_warga').insert(gallery.map((item, idx) => ({
         id: isValidUUID(item.id) ? item.id : crypto.randomUUID(),
         profile_id: pId,
         title: item.title || '',
@@ -197,7 +197,7 @@ export async function saveProfileData(data: FullProfileData): Promise<{ success:
 
     return { 
       success: true, 
-      message: '✅ Berhasil! Semua data profil, artikel, dan produk tersimpan sempurna di Supabase Cloud Database!' 
+      message: '✅ Berhasil! Semua data profil, artikel, dan produk tersimpan sempurna di Supabase Cloud Database (Tabel _warga)!' 
     };
 
   } catch (err: unknown) {
@@ -213,7 +213,7 @@ export async function deleteProfileBySlug(slug: string): Promise<{ success: bool
   delete fallbackProfiles[slug];
   try {
     const supabase = createClient();
-    await supabase.from('profiles').delete().eq('slug', slug);
+    await supabase.from('profiles_warga').delete().eq('slug', slug);
   } catch {
     // Ignore offline error
   }

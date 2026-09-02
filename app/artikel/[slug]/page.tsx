@@ -56,7 +56,7 @@ export default function ArticleDetailPage() {
         const supabase = createClient();
         
         // Fetch all articles from Supabase to find best slug match
-        const { data: articles, error } = await supabase.from('articles').select('*');
+        const { data: articles, error } = await supabase.from('articles_warga').select('*');
         
         if (articles && articles.length > 0 && !error) {
           // Find matching article by ID, clean slugified title, or link_url
@@ -80,7 +80,7 @@ export default function ArticleDetailPage() {
             let authorPhoto = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80";
 
             if (matched.profile_id) {
-              const { data: prof } = await supabase.from('profiles').select('*').eq('id', matched.profile_id).single();
+              const { data: prof } = await supabase.from('profiles_warga').select('*').eq('id', matched.profile_id).single();
               if (prof) {
                 authorName = prof.name || authorName;
                 authorTitle = prof.title || authorTitle;

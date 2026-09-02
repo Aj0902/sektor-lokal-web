@@ -57,7 +57,7 @@ export default function DynamicProfilePage() {
       try {
         const supabase = createClient();
         const { data: prof, error: pError } = await supabase
-          .from('profiles')
+          .from('profiles_warga')
           .select('*')
           .eq('slug', slug)
           .single();
@@ -65,12 +65,12 @@ export default function DynamicProfilePage() {
         if (prof && !pError) {
           const pId = prof.id;
           const [life, wrk, art, tst, ini, gal] = await Promise.all([
-            supabase.from('life_events').select('*').eq('profile_id', pId).order('order_index'),
-            supabase.from('works').select('*').eq('profile_id', pId).order('order_index'),
-            supabase.from('articles').select('*').eq('profile_id', pId).order('order_index'),
-            supabase.from('testimonials').select('*').eq('profile_id', pId).order('order_index'),
-            supabase.from('initiatives').select('*').eq('profile_id', pId).order('order_index'),
-            supabase.from('gallery').select('*').eq('profile_id', pId).order('order_index'),
+            supabase.from('life_events_warga').select('*').eq('profile_id', pId).order('order_index'),
+            supabase.from('works_warga').select('*').eq('profile_id', pId).order('order_index'),
+            supabase.from('articles_warga').select('*').eq('profile_id', pId).order('order_index'),
+            supabase.from('testimonials_warga').select('*').eq('profile_id', pId).order('order_index'),
+            supabase.from('initiatives_warga').select('*').eq('profile_id', pId).order('order_index'),
+            supabase.from('gallery_warga').select('*').eq('profile_id', pId).order('order_index'),
           ]);
 
           setProfileData({
