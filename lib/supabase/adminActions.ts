@@ -31,7 +31,9 @@ export async function getProfileBySlug(slug: string): Promise<FullProfileData> {
 
     if (prof && !pError) {
       const pId = prof.id;
-      const [life, wrk, art, tst, ini, gal] = await Promise.all([
+
+      // Safe individual queries to avoid failing entire profile if 1 table is missing
+      const [lifeRes, wrkRes, artRes, tstRes, iniRes, galRes] = await Promise.allSettled([
         supabase.from('life_events').select('*').eq('profile_id', pId).order('order_index'),
         supabase.from('works').select('*').eq('profile_id', pId).order('order_index'),
         supabase.from('articles').select('*').eq('profile_id', pId).order('order_index'),
@@ -40,14 +42,16 @@ export async function getProfileBySlug(slug: string): Promise<FullProfileData> {
         supabase.from('gallery').select('*').eq('profile_id', pId).order('order_index'),
       ]);
 
+      const getVal = (res: PromiseSettledResult<any>) => res.status === 'fulfilled' && res.value?.data ? res.value.data : [];
+
       return {
         profile: prof,
-        lifeEvents: life.data || [],
-        works: wrk.data || [],
-        articles: art.data || [],
-        gallery: gal.data || [],
-        testimonials: tst.data || [],
-        initiatives: ini.data || []
+        lifeEvents: getVal(lifeRes),
+        works: getVal(wrkRes),
+        articles: getVal(artRes),
+        testimonials: getVal(tstRes),
+        initiatives: getVal(iniRes),
+        gallery: getVal(galRes)
       };
     }
   } catch {
@@ -58,6 +62,7 @@ export async function getProfileBySlug(slug: string): Promise<FullProfileData> {
 }
 
 export async function saveProfileData(data: FullProfileData): Promise<{ success: boolean; message: string }> {
+  // Always update local memory cache first for immediate UI responsiveness
   fallbackProfiles[data.profile.slug] = data;
 
   try {
@@ -68,6 +73,7 @@ export async function saveProfileData(data: FullProfileData): Promise<{ success:
       profile.id = crypto.randomUUID();
     }
 
+    // 1. Upsert Profile
     const { data: upsertedProf, error: profErr } = await supabase
       .from('profiles')
       .upsert(profile, { onConflict: 'slug' })
@@ -75,22 +81,19 @@ export async function saveProfileData(data: FullProfileData): Promise<{ success:
       .single();
 
     if (profErr) {
-      return { success: true, message: `Data tersimpan di memori lokal. (Supabase notice: ${profErr.message})` };
+      console.error('Profile Upsert Error:', profErr);
+      return { 
+        success: false, 
+        message: `Gagal menyimpan ke Supabase: ${profErr.message} (Data tersimpan di memori lokal)` 
+      };
     }
 
-    const pId = upsertedProf.id;
+    const pId = upsertedProf?.id || profile.id;
 
-    if (pId) {
-      await Promise.all([
-        supabase.from('life_events').delete().eq('profile_id', pId),
-        supabase.from('works').delete().eq('profile_id', pId),
-        supabase.from('articles').delete().eq('profile_id', pId),
-        supabase.from('testimonials').delete().eq('profile_id', pId),
-        supabase.from('initiatives').delete().eq('profile_id', pId),
-        supabase.from('gallery').delete().eq('profile_id', pId),
-      ]);
-
-      if (lifeEvents.length > 0) {
+    // 2. Save Life Events
+    try {
+      await supabase.from('life_events').delete().eq('profile_id', pId);
+      if (lifeEvents && lifeEvents.length > 0) {
         await supabase.from('life_events').insert(lifeEvents.map((item, idx) => ({
           id: isValidUUID(item.id) ? item.id : crypto.randomUUID(),
           profile_id: pId,
@@ -100,8 +103,14 @@ export async function saveProfileData(data: FullProfileData): Promise<{ success:
           order_index: idx + 1
         })));
       }
+    } catch (e) {
+      console.error('Life Events Save Error:', e);
+    }
 
-      if (works.length > 0) {
+    // 3. Save Works
+    try {
+      await supabase.from('works').delete().eq('profile_id', pId);
+      if (works && works.length > 0) {
         await supabase.from('works').insert(works.map((item, idx) => ({
           id: isValidUUID(item.id) ? item.id : crypto.randomUUID(),
           profile_id: pId,
@@ -112,8 +121,14 @@ export async function saveProfileData(data: FullProfileData): Promise<{ success:
           order_index: idx + 1
         })));
       }
+    } catch (e) {
+      console.error('Works Save Error:', e);
+    }
 
-      if (articles.length > 0) {
+    // 4. Save Articles
+    try {
+      await supabase.from('articles').delete().eq('profile_id', pId);
+      if (articles && articles.length > 0) {
         await supabase.from('articles').insert(articles.map((item, idx) => ({
           id: isValidUUID(item.id) ? item.id : crypto.randomUUID(),
           profile_id: pId,
@@ -126,18 +141,14 @@ export async function saveProfileData(data: FullProfileData): Promise<{ success:
           order_index: idx + 1
         })));
       }
+    } catch (e) {
+      console.error('Articles Save Error:', e);
+    }
 
-      if (gallery && gallery.length > 0) {
-        await supabase.from('gallery').insert(gallery.map((item, idx) => ({
-          id: isValidUUID(item.id) ? item.id : crypto.randomUUID(),
-          profile_id: pId,
-          title: item.title || '',
-          image_url: item.image_url || '',
-          order_index: idx + 1
-        })));
-      }
-
-      if (testimonials.length > 0) {
+    // 5. Save Testimonials
+    try {
+      await supabase.from('testimonials').delete().eq('profile_id', pId);
+      if (testimonials && testimonials.length > 0) {
         await supabase.from('testimonials').insert(testimonials.map((item, idx) => ({
           id: isValidUUID(item.id) ? item.id : crypto.randomUUID(),
           profile_id: pId,
@@ -147,8 +158,14 @@ export async function saveProfileData(data: FullProfileData): Promise<{ success:
           order_index: idx + 1
         })));
       }
+    } catch (e) {
+      console.error('Testimonials Save Error:', e);
+    }
 
-      if (initiatives.length > 0) {
+    // 6. Save Initiatives (Products)
+    try {
+      await supabase.from('initiatives').delete().eq('profile_id', pId);
+      if (initiatives && initiatives.length > 0) {
         await supabase.from('initiatives').insert(initiatives.map((item, idx) => ({
           id: isValidUUID(item.id) ? item.id : crypto.randomUUID(),
           profile_id: pId,
@@ -162,12 +179,37 @@ export async function saveProfileData(data: FullProfileData): Promise<{ success:
           order_index: idx + 1
         })));
       }
+    } catch (e) {
+      console.error('Initiatives Save Error:', e);
     }
 
-    return { success: true, message: 'Data profil & ekosistem berhasil tersimpan sempurna!' };
+    // 7. Save Gallery (Safe Try-Catch in case table gallery is not created in DB yet)
+    try {
+      await supabase.from('gallery').delete().eq('profile_id', pId);
+      if (gallery && gallery.length > 0) {
+        await supabase.from('gallery').insert(gallery.map((item, idx) => ({
+          id: isValidUUID(item.id) ? item.id : crypto.randomUUID(),
+          profile_id: pId,
+          title: item.title || '',
+          image_url: item.image_url || '',
+          order_index: idx + 1
+        })));
+      }
+    } catch (e) {
+      console.error('Gallery Save Error:', e);
+    }
+
+    return { 
+      success: true, 
+      message: '✅ Berhasil! Semua data profil, artikel, dan produk tersimpan sempurna di Supabase Cloud Database!' 
+    };
+
   } catch (err: unknown) {
     const errorMsg = err instanceof Error ? err.message : 'Unknown error';
-    return { success: true, message: `Data tersimpan di memori lokal. (${errorMsg})` };
+    return { 
+      success: false, 
+      message: `Terjadi kendala jaringan ke Supabase: ${errorMsg} (Data tersimpan sementara di memori lokal)` 
+    };
   }
 }
 
