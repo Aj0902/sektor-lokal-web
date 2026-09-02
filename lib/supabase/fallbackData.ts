@@ -6,14 +6,14 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
       id: '1e88343e-74f0-4595-8e11-3efa40ea9edc',
       slug: 'ferry-irwandi',
       name: 'FERRY IRWANDI',
-      title: 'THE VOICES • DISRUPTOR • LITERASI KRITIS',
+      title: 'THE VOICES • DISRUPTOR • SANG PENENUN NALAR WARGA',
       category: 'THE VOICES',
       bio_paragraphs: [
-        'Ferry Irwandi adalah mantan ASN Kementerian Keuangan yang mengambil keputusan berani untuk menanggalkan stabilitas birokrasi demi memperjuangkan independensi narasi publik, pendidikan nalar kritis, dan pembongkaran kejahatan finansial digital di Indonesia.',
-        'Melalui platform Malaka Project dan kanal pribadinya, ia menggerakkan aksi nyata warga: menggalang dana beasiswa lebih dari Rp 10,7 Miliar untuk ribuan pelajar daerah, meluncurkan program subsidi UKT perguruan tinggi, serta mempopulerkan filsafat stoikisme terapan sebagai instrumen kedaulatan berpikir generasi muda.'
+        'Di balik deretan meja birokrasi Kementerian Keuangan, seorang alumnus STAN bernama Ferry Irwandi menyaksikan bagaimana jurang literasi dan rapuhnya pertahanan nalar telah menjerumuskan jutaan warga ke dalam jerat penipuan finansial digital. Pada tahun 2021, ia mengambil pertaruhan terbesar dalam hidupnya: menanggalkan status kemapanan abdi negara demi mendirikan mimbar independen tanpa kompromi.',
+        'Dari studio mandiri yang kemudian bermetamorfosis menjadi Malaka Project, Ferry melancarkan perang terbuka melawan sindikat judi online dan rekayasa skema ponzi modern. Menghadapi intimidasi dan disinformasi dengan ketenangan stoik, ia membuktikan bahwa kritik digital bisa bermuara pada aksi lapangan: memimpin penggalangan dana gotong royong publik lebih dari Rp 10,7 Miliar untuk beasiswa daerah serta subsidi UKT bagi ribuan mahasiswa prasejahtera.'
       ],
-      quote: 'Di tengah bisingnya algoritma pembodohan dan skema penipuan massal, nalar kritis bukan lagi sekadar opsi moral—ia adalah instrumen pertahanan hidup paling mendasar.',
-      photo_url: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80',
+      quote: 'Ketika algoritma digital dirancang untuk mengeksploitasi keputusasaan, nalar kritis bukan lagi sekadar opsi intelektual—ia adalah benteng terakhir kedaulatan manusia.',
+      photo_url: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80',
       verified: true,
       status_text: 'VERIFIKASI TERKURASI',
       social_links: {
@@ -42,31 +42,31 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
       { id: 'w4', profile_id: '1e88343e-74f0-4595-8e11-3efa40ea9edc', title: 'Gerakan Beasiswa & Bantuan UKT Mahasiswa', category: 'Filantropi & Pendidikan Daerah', description: 'Inisiatif gotong royong publik yang mendanai kuliah penuh dan pembayaran UKT bagi ribuan mahasiswa daerah berprestasi.', link_url: 'https://kitabisa.com', order_index: 4 }
     ],
     gallery: [
-      { id: 'g1', profile_id: '1e88343e-74f0-4595-8e11-3efa40ea9edc', title: 'Orasi & Diskursus Nalar Publik', image_url: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80', order_index: 1 },
-      { id: 'g2', profile_id: '1e88343e-74f0-4595-8e11-3efa40ea9edc', title: 'Sesi Riset Independen Malaka Project', image_url: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80', order_index: 2 },
-      { id: 'g3', profile_id: '1e88343e-74f0-4595-8e11-3efa40ea9edc', title: 'Penyaluran Beasiswa Pelajar Daerah', image_url: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80', order_index: 3 }
+      { id: 'g1', profile_id: '1e88343e-74f0-4595-8e11-3efa40ea9edc', title: 'Mimbar Bebas: Dialektika Nalar Kritis di Hadapan Ribuan Mahasiswa', image_url: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80', order_index: 1 },
+      { id: 'g2', profile_id: '1e88343e-74f0-4595-8e11-3efa40ea9edc', title: 'Dapur Riset & Produksi Malaka Project: Membedah Alur Keuangan Gelap', image_url: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80', order_index: 2 },
+      { id: 'g3', profile_id: '1e88343e-74f0-4595-8e11-3efa40ea9edc', title: 'Penyaluran Nyata: Beasiswa & Subsidi UKT Mahasiswa Berprestasi Daerah', image_url: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80', order_index: 3 }
     ],
     articles: [
       { 
         id: 'a1', 
         profile_id: '1e88343e-74f0-4595-8e11-3efa40ea9edc', 
-        title: 'Analisis Kritis Literasi Keuangan & Pertahanan Nalar', 
-        tag: 'ESAI KRITIS', 
-        read_time: '6 Menit Membaca', 
-        description: 'Mengapa kemampuan bernalar kritis dan pengujian logika adalah instrumen perlindungan diri paling mendasar di era disinformasi digital.', 
-        content_full: 'Di era di mana informasi bergerak lebih cepat daripada kejernihan nalar, kejahatan finansial telah berevolusi menjadi bentuk yang amat canggih dan manipulatif.\n\nSkema ponzi modern, robot trading palsu, hingga judi online berkedok permainan digital tidak hanya memangsa uang masyarakat, tetapi juga mengeksploitasi bias psikologis dan keputusasaan ekonomi.\n\nMatematika di balik skema penipuan ini selalu sama: pengelola dan bandar memegang keunggulan statistik mutlak yang mustahil dikalahkan dalam jangka panjang. Ketika seseorang meyakini bahwa keuntungan instan dapat diraih tanpa proses nilai tambah yang riil, saat itulah benteng nalar telah runtuh.\n\nOleh karena itu, literasi keuangan sejati bukan sekadar tahu cara menabung atau membeli saham. Literasi keuangan adalah tentang skeptisisme yang sehat: keberanian untuk bertanya, menguji klaim secara metodis, dan tidak membiarkan emosi keserakahan mengendalikan keputusan hidup kita.', 
-        link_url: '/artikel/analisis-kritis-literasi-keuangan', 
+        title: 'Anatomi Perburuan Ilusi: Catatan Investigasi Ferry Irwandi Membongkar Gurita Judol & Skema Ponzi', 
+        tag: 'INVESTIGASI & ADVOKASI', 
+        read_time: '9 Menit Membaca', 
+        description: 'Kisah di balik layar perlawanan Ferry Irwandi melawan sindikat penipuan finansial digital: matematika di balik manipulasi dopamin, ancaman teror, dan pertaruhan akal sehat publik.', 
+        content_full: 'Malam itu di pertengahan 2023, kotak pesan media sosial Ferry Irwandi dibanjiri ratusan pesan keputusasaan. Dari buruh pabrik yang kehilangan seluruh tabungan pensiun hingga mahasiswa yang terjerat pinjaman ilegal demi mengejar algoritma "kemenangan instan", polanya selalu identik: mereka dimangsa oleh ilusi yang dirancang dengan presisi matematis.\n\nBagi Ferry, yang menghabiskan hampir satu dekade mempelajari aliran kas negara di Kementerian Keuangan, fenomena judi online dan robot trading palsu bukan sekadar persoalan kriminalitas biasa. Ini adalah eksploitasi terstruktur terhadap kelemahan kognitif masyarakat kita.\n\n"Secara statistik, bandar tidak pernah bisa kalah. Matematika di balik algoritma mereka didesain dengan negative expected value mutlak," ungkap Ferry di depan papan tulis studionya. Namun, menyampaikan kebenaran matematika di tengah masyarakat yang sedang terhimpit ekonomi bukanlah perkara mudah. Ia berhadapan langsung dengan mesin propaganda masif, endorsemen figur publik ternama, hingga teror dan intimidasi digital yang dialamatkan ke ruang pribadinya.\n\nFriksi terberat bukan datang dari sang bandar, melainkan dari resistensi para korban yang masih terperangkap dalam bias "sunk cost fallacy"—keyakinan semu bahwa kekalahan berikutnya akan terbalaskan jika mereka terus bertaruh. Melalui serial esai video investigatifnya di Malaka Project, Ferry tidak hanya membongkar alur transaksi perbankan gelap, melainkan membedah psikologi keserakahan dan keputusasaan.\n\nPerjuangan ini bukan tanpa risiko. Namun bagi Ferry, membiarkan kebodohan finansial merajalela tanpa perlawanan sama saja dengan mengkhianati nurani. Literasi kritis yang ia bangun adalah seruan perang untuk merebut kembali kedaulatan nalar warga dari cengkeraman ilusi digital.', 
+        link_url: '/artikel/anatomi-perburuan-ilusi-investigasi-ferry-irwandi', 
         order_index: 1 
       },
       { 
         id: 'a2', 
         profile_id: '1e88343e-74f0-4595-8e11-3efa40ea9edc', 
-        title: 'Stoikisme Terapan: Kedaulatan Berpikir di Tengah Krisis', 
-        tag: 'FILSAFAT TERAPAN', 
-        read_time: '8 Menit Membaca', 
-        description: 'Membedah esensi filosofi stoikisme bukan sebagai kepasrahan, melainkan fokus radikal pada aksi nyata yang berada di dalam kendali diri.', 
-        content_full: 'Banyak orang salah memahami stoikisme sebagai ajaran untuk bersikap dingin, pasrah, atau apatis terhadap penderitaan dunia.\n\nPada hakikatnya, stoikisme adalah filsafat tindakan. Epictetus dan Marcus Aurelius mengajarkan kita dikotomi kendali: pisahkan dengan tegas apa yang berada di bawah kuasa kita (pertimbangan, tindakan, integritas) dan apa yang di luar kendali kita (opini orang lain, krisis ekonomi global, hasil akhir).\n\nKetika kita memusatkan seluruh energi nalar pada apa yang bisa kita kendalikan, kita membebaskan diri dari kecemasan yang melumpuhkan. Di tengah ketidakpastian hidup modern, stoikisme adalah jangkar ketenangan yang memungkinkan kita tetap berkarya secara berani dan bermartabat.', 
-        link_url: '/artikel/stoikisme-terapan-kedaulatan-berpikir', 
+        title: 'Benteng di Ruang Sempit: Bagaimana Ferry Irwandi Menjangkarkan Stoikisme Melawan Teror & Krisis', 
+        tag: 'FILSAFAT & DIALEKTIKA', 
+        read_time: '11 Menit Membaca', 
+        description: 'Refleksi personal Ferry Irwandi tentang bagaimana filsafat stoikisme terapan menjadi kompas ketenangan di tengah badai resignasi, tuduhan tak berdasar, dan beban ekspektasi publik.', 
+        content_full: 'Keputusan untuk melepaskan seragam pegawai negeri pada tahun 2021 bukan lahir dari dorongan impulsif. Di kamar berukuran 3x4 meter yang menjadi saksi bisu hari-hari awalnya sebagai kreator independen, Ferry Irwandi berkali-kali membuka kembali lembaran Enchiridion karya Epictetus dan Meditations karya Marcus Aurelius.\n\nDi hadapannya terbentang ketidakpastian brutal: hilangnya pendapatan tetap, cibiran lingkungan birokrasi, dan tanggung jawab menghidupi keluarga tanpa jaring pengaman institusional. Di titik nadir itulah, konsep dikotomi kendali beralih dari sekadar teori di atas kertas menjadi urat nadi kehidupannya.\n\n"Dunia luar—mulai dari opini orang lain, algoritma platform yang berubah-ubah, hingga tudingan buzzer—sama sekali berada di luar kendali kita. Satu-satunya yang berada 100% dalam kuasa kita adalah kejernihan pertimbangan nalar, integritas tindakan, dan keberanian kita untuk melangkah," tulis Ferry dalam jurnal pribadinya.\n\nFilsafat inilah yang membuatnya tetap bergeming ketika gelombang fitnah menerpanya: mulai dari tuduhan sebagai agen asing, ancaman pelaporan hukum, hingga serangan siber ke platform Malaka Project. Alih-alih merespons dengan kemarahan reaktif, Ferry memilih mengalirkan energi perlawanan ke dalam karya-karya edukasi berbobot dan inisiatif nyata: mendanai beasiswa miliaran rupiah bagi anak-anak daerah yang kurang beruntung.\n\nBagi generasi muda Indonesia yang kini terkepung oleh kecemasan karier, perbandingan sosial di media maya, dan disrupsi ekonomi, perjalanan Ferry Irwandi membuktikan satu hal mendasar: Stoikisme bukanlah tentang berdiam diri dan pasrah menerima nasib, melainkan tentang membangun benteng nalar yang tak tertembus agar kita bisa bertarung di dunia nyata dengan hati yang jernih dan jiwa yang merdeka.', 
+        link_url: '/artikel/benteng-di-ruang-sempit-stoikisme-ferry-irwandi', 
         order_index: 2 
       }
     ],
@@ -78,36 +78,36 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
       { 
         id: 'i1', 
         profile_id: '1e88343e-74f0-4595-8e11-3efa40ea9edc', 
-        title: 'Buku Prinsipal Nalar & Stoikisme', 
-        category: 'Buku & Panduan Bernalar', 
-        description: 'Karya tulis komprehensif membedah cara bernalar mandiri dan membangun ketahanan mental di era disrupsi digital.', 
+        title: 'Buku Panduan Bernalar & Stoikisme Praktis', 
+        category: 'Buku Resmi Gramedia', 
+        description: 'Karya literatur komprehensif mengupas metode dikotomi kendali, pertahanan logika dari manipulasi finansial, dan navigasi hidup generasi modern.', 
         price: 'Rp 149.000', 
         image_url: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 
-        action_text: 'Beli Buku Resmi', 
+        action_text: 'Pesan Buku Resmi Gramedia', 
         link_url: 'https://www.gramedia.com', 
         order_index: 1 
       },
       { 
         id: 'i2', 
         profile_id: '1e88343e-74f0-4595-8e11-3efa40ea9edc', 
-        title: 'Apparel Resmi Kolektif Malaka', 
-        category: 'Merchandise Resmi', 
-        description: 'Koleksi kaos dan merchandise resmi di mana sebagian keuntungannya dialokasikan langsung untuk mendanai riset independen & beasiswa.', 
+        title: 'Apparel Resmi Kolektif Malaka Project', 
+        category: 'Merchandise Kolektif Warga', 
+        description: 'Koleksi apparel resmi bertema kesadaran nalar di mana seluruh keuntungan dialokasikan untuk mendanai operasional riset independen & beasiswa.', 
         price: 'Rp 249.000', 
         image_url: 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80', 
-        action_text: 'Kunjungi Toko Resmi', 
+        action_text: 'Kunjungi Malaka Store Resmi', 
         link_url: 'https://malakaproject.id', 
         order_index: 2 
       },
       { 
         id: 'i3', 
         profile_id: '1e88343e-74f0-4595-8e11-3efa40ea9edc', 
-        title: 'Donasi Beasiswa Warga & Bantuan UKT', 
-        category: 'Inisiatif Gotong Royong', 
-        description: 'Kanal donasi publik resmi melalui Kitabisa untuk membiayai kuliah penuh dan tunggakan UKT mahasiswa daerah berprestasi.', 
+        title: 'Kanal Donasi Beasiswa Warga & Bantuan UKT', 
+        category: 'Inisiatif Gotong Royong Publik', 
+        description: 'Kanal crowdfunding resmi di Kitabisa yang telah menyalurkan lebih dari Rp 10,7 Miliar untuk biaya kuliah penuh ribuan mahasiswa daerah berprestasi.', 
         price: 'Gotong Royong', 
         image_url: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80', 
-        action_text: 'Salurkan Donasi Resmi', 
+        action_text: 'Salurkan Donasi di Kitabisa', 
         link_url: 'https://kitabisa.com', 
         order_index: 3 
       }
