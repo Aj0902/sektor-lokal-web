@@ -60,6 +60,9 @@ export default function EditProfileEditorPage() {
     setTimeout(() => setToastMsg(null), 3500);
   };
 
+  const inputStyle = "w-full p-2.5 rounded-xl border text-xs font-sans text-gray-900 bg-white dark:bg-[#0A0E1A] dark:text-[#EDE8DC] border-gray-300 dark:border-white/20 focus:border-[#E11D48] focus:outline-none transition-colors";
+  const labelStyle = "text-xs font-mono uppercase font-bold text-gray-700 dark:text-gray-300 block mb-1";
+
   return (
     <div className="space-y-8 max-w-4xl mx-auto pb-20">
       
@@ -96,7 +99,7 @@ export default function EditProfileEditorPage() {
       </div>
 
       {toastMsg && (
-        <div className="p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-500 text-xs font-mono flex items-center gap-2 animate-fade-in">
+        <div className="p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-500 text-xs font-mono flex items-center gap-2">
           <Check className="w-4 h-4" />
           <span>{toastMsg}</span>
         </div>
@@ -128,24 +131,24 @@ export default function EditProfileEditorPage() {
 
       {/* TAB CONTENT 1: PROFIL UTAMA */}
       {activeTab === 'profile' && (
-        <div className="space-y-6 text-xs font-mono">
+        <div className="space-y-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div className="space-y-2">
-              <label className="text-gray-400 uppercase">Nama Lengkap Tokoh:</label>
+            <div>
+              <label className={labelStyle}>Nama Lengkap Tokoh:</label>
               <input 
                 type="text" 
                 value={profile.name} 
                 onChange={(e) => setData({ ...data, profile: { ...profile, name: e.target.value } })}
-                className="w-full p-3 rounded-xl border border-inherit/20 bg-inherit/50 font-sans text-sm font-bold focus:border-[#E11D48]"
+                className={inputStyle}
               />
             </div>
 
-            <div className="space-y-2">
-              <label className="text-gray-400 uppercase">Kategori Matriks:</label>
+            <div>
+              <label className={labelStyle}>Kategori Matriks:</label>
               <select
                 value={profile.category}
                 onChange={(e) => setData({ ...data, profile: { ...profile, category: e.target.value } })}
-                className="w-full p-3 rounded-xl border border-inherit/20 bg-inherit/50 focus:border-[#E11D48]"
+                className={inputStyle}
               >
                 <option value="THE VOICES">THE VOICES</option>
                 <option value="THE STRATEGISTS">THE STRATEGISTS</option>
@@ -155,25 +158,24 @@ export default function EditProfileEditorPage() {
             </div>
           </div>
 
-          <div className="space-y-2">
-            <label className="text-gray-400 uppercase">Gelar Subtitle Editorial:</label>
+          <div>
+            <label className={labelStyle}>Gelar Subtitle Editorial:</label>
             <input 
               type="text" 
               value={profile.title} 
               onChange={(e) => setData({ ...data, profile: { ...profile, title: e.target.value } })}
-              className="w-full p-3 rounded-xl border border-inherit/20 bg-inherit/50 font-sans focus:border-[#E11D48]"
+              className={inputStyle}
             />
           </div>
 
-          {/* Photo URL & Live Preview */}
-          <div className="space-y-2">
-            <label className="text-gray-400 uppercase">Foto Portrait URL:</label>
+          <div>
+            <label className={labelStyle}>Foto Portrait URL:</label>
             <div className="flex gap-4 items-center">
               <input 
                 type="text" 
                 value={profile.photo_url} 
                 onChange={(e) => setData({ ...data, profile: { ...profile, photo_url: e.target.value } })}
-                className="w-full p-3 rounded-xl border border-inherit/20 bg-inherit/50 focus:border-[#E11D48]"
+                className={inputStyle}
               />
               <div className="relative w-12 h-14 rounded-lg overflow-hidden border border-[#E11D48]/40 shrink-0 bg-neutral-900">
                 <Image src={profile.photo_url} alt="Preview" fill sizes="48px" className="object-cover filter grayscale" />
@@ -181,18 +183,18 @@ export default function EditProfileEditorPage() {
             </div>
           </div>
 
-          <div className="space-y-2">
-            <label className="text-gray-400 uppercase">Kutipan Emas (Pull Quote):</label>
+          <div>
+            <label className={labelStyle}>Kutipan Emas (Pull Quote):</label>
             <textarea 
               rows={2}
               value={profile.quote} 
               onChange={(e) => setData({ ...data, profile: { ...profile, quote: e.target.value } })}
-              className="w-full p-3 rounded-xl border border-inherit/20 bg-inherit/50 font-sans focus:border-[#E11D48]"
+              className={inputStyle}
             />
           </div>
 
-          <div className="space-y-2">
-            <label className="text-gray-400 uppercase">Biografi Paragraf 1:</label>
+          <div>
+            <label className={labelStyle}>Biografi Paragraf 1:</label>
             <textarea 
               rows={3}
               value={profile.bio_paragraphs[0] || ''} 
@@ -201,12 +203,12 @@ export default function EditProfileEditorPage() {
                 nextBios[0] = e.target.value;
                 setData({ ...data, profile: { ...profile, bio_paragraphs: nextBios } });
               }}
-              className="w-full p-3 rounded-xl border border-inherit/20 bg-inherit/50 font-sans focus:border-[#E11D48]"
+              className={inputStyle}
             />
           </div>
 
-          <div className="space-y-2">
-            <label className="text-gray-400 uppercase">Biografi Paragraf 2:</label>
+          <div>
+            <label className={labelStyle}>Biografi Paragraf 2:</label>
             <textarea 
               rows={3}
               value={profile.bio_paragraphs[1] || ''} 
@@ -215,39 +217,38 @@ export default function EditProfileEditorPage() {
                 nextBios[1] = e.target.value;
                 setData({ ...data, profile: { ...profile, bio_paragraphs: nextBios } });
               }}
-              className="w-full p-3 rounded-xl border border-inherit/20 bg-inherit/50 font-sans focus:border-[#E11D48]"
+              className={inputStyle}
             />
           </div>
 
-          {/* Social Links Form */}
           <div className="pt-4 border-t border-inherit/10 space-y-3">
-            <span className="text-[#E11D48] font-bold uppercase">TAUTAN MEDIA SOSIAL:</span>
+            <span className="text-[#E11D48] font-bold font-mono text-xs uppercase">TAUTAN MEDIA SOSIAL:</span>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
               <div>
-                <label className="text-gray-400">YouTube URL:</label>
+                <label className={labelStyle}>YouTube URL:</label>
                 <input 
                   type="text" 
                   value={profile.social_links.youtube || ''} 
                   onChange={(e) => setData({ ...data, profile: { ...profile, social_links: { ...profile.social_links, youtube: e.target.value } } })}
-                  className="w-full p-2.5 rounded-xl border border-inherit/20 bg-inherit/50"
+                  className={inputStyle}
                 />
               </div>
               <div>
-                <label className="text-gray-400">Twitter X URL:</label>
+                <label className={labelStyle}>Twitter X URL:</label>
                 <input 
                   type="text" 
                   value={profile.social_links.twitter || ''} 
                   onChange={(e) => setData({ ...data, profile: { ...profile, social_links: { ...profile.social_links, twitter: e.target.value } } })}
-                  className="w-full p-2.5 rounded-xl border border-inherit/20 bg-inherit/50"
+                  className={inputStyle}
                 />
               </div>
               <div>
-                <label className="text-gray-400">Instagram URL:</label>
+                <label className={labelStyle}>Instagram URL:</label>
                 <input 
                   type="text" 
                   value={profile.social_links.instagram || ''} 
                   onChange={(e) => setData({ ...data, profile: { ...profile, social_links: { ...profile.social_links, instagram: e.target.value } } })}
-                  className="w-full p-2.5 rounded-xl border border-inherit/20 bg-inherit/50"
+                  className={inputStyle}
                 />
               </div>
             </div>
@@ -255,19 +256,19 @@ export default function EditProfileEditorPage() {
         </div>
       )}
 
-      {/* TAB CONTENT 2: LINIMASA HIDUP (FULL FUNCTIONAL EDITOR) */}
+      {/* TAB CONTENT 2: LINIMASA HIDUP (UUID v4 & High Contrast Text) */}
       {activeTab === 'events' && (
-        <div className="space-y-6 text-xs font-mono">
+        <div className="space-y-6 font-mono text-xs">
           <div className="flex items-center justify-between">
-            <span className="text-gray-400 uppercase">DAFTAR PERISTIWA LINIMASA PERJALANAN HIDUP</span>
+            <span className="text-gray-400 uppercase">DAFTAR PERISTIWA LINIMASA</span>
             <button
               onClick={() => {
                 const newEv: LifeEvent = {
-                  id: genId(),
+                  id: crypto.randomUUID(),
                   profile_id: profile.id,
                   year_range: '2025 — 2026',
                   title: 'PERISTIWA BARU',
-                  description: 'Deskripsi singkat peristiwa perjalanan hidup...',
+                  description: 'Deskripsi singkat peristiwa...',
                   order_index: lifeEvents.length + 1
                 };
                 setData({ ...data, lifeEvents: [...lifeEvents, newEv] });
@@ -294,7 +295,7 @@ export default function EditProfileEditorPage() {
 
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                   <div>
-                    <label className="text-gray-400">Rentang Tahun:</label>
+                    <label className={labelStyle}>Rentang Tahun:</label>
                     <input 
                       type="text" 
                       value={ev.year_range}
@@ -303,11 +304,11 @@ export default function EditProfileEditorPage() {
                         next[idx].year_range = e.target.value;
                         setData({ ...data, lifeEvents: next });
                       }}
-                      className="w-full p-2.5 rounded-xl border border-inherit/20 bg-inherit/50 font-bold"
+                      className={inputStyle}
                     />
                   </div>
                   <div className="sm:col-span-2">
-                    <label className="text-gray-400">Judul Peristiwa:</label>
+                    <label className={labelStyle}>Judul Peristiwa:</label>
                     <input 
                       type="text" 
                       value={ev.title}
@@ -316,13 +317,13 @@ export default function EditProfileEditorPage() {
                         next[idx].title = e.target.value;
                         setData({ ...data, lifeEvents: next });
                       }}
-                      className="w-full p-2.5 rounded-xl border border-inherit/20 bg-inherit/50 font-sans font-bold"
+                      className={inputStyle}
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="text-gray-400">Deskripsi Lengkap Peristiwa:</label>
+                  <label className={labelStyle}>Deskripsi Lengkap Peristiwa:</label>
                   <textarea 
                     rows={2}
                     value={ev.description}
@@ -331,7 +332,7 @@ export default function EditProfileEditorPage() {
                       next[idx].description = e.target.value;
                       setData({ ...data, lifeEvents: next });
                     }}
-                    className="w-full p-2.5 rounded-xl border border-inherit/20 bg-inherit/50 font-sans"
+                    className={inputStyle}
                   />
                 </div>
               </div>
@@ -340,15 +341,15 @@ export default function EditProfileEditorPage() {
         </div>
       )}
 
-      {/* TAB CONTENT 3: DISCOVERY KARYA (FULL FUNCTIONAL EDITOR) */}
+      {/* TAB CONTENT 3: DISCOVERY KARYA */}
       {activeTab === 'works' && (
-        <div className="space-y-6 text-xs font-mono">
+        <div className="space-y-6 font-mono text-xs">
           <div className="flex items-center justify-between">
-            <span className="text-gray-400 uppercase">DAFTAR DISCOVERY KARYA TERKURASI</span>
+            <span className="text-gray-400 uppercase">DAFTAR DISCOVERY KARYA</span>
             <button
               onClick={() => {
                 const newWork: Work = {
-                  id: genId(),
+                  id: crypto.randomUUID(),
                   profile_id: profile.id,
                   title: 'Karya Baru',
                   category: 'Riset & Advokasi',
@@ -380,7 +381,7 @@ export default function EditProfileEditorPage() {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <div>
-                    <label className="text-gray-400">Judul Karya:</label>
+                    <label className={labelStyle}>Judul Karya:</label>
                     <input 
                       type="text" 
                       value={w.title}
@@ -389,11 +390,11 @@ export default function EditProfileEditorPage() {
                         next[idx].title = e.target.value;
                         setData({ ...data, works: next });
                       }}
-                      className="w-full p-2.5 rounded-xl border border-inherit/20 bg-inherit/50 font-sans font-bold"
+                      className={inputStyle}
                     />
                   </div>
                   <div>
-                    <label className="text-gray-400">Kategori Karya:</label>
+                    <label className={labelStyle}>Kategori Karya:</label>
                     <input 
                       type="text" 
                       value={w.category}
@@ -402,13 +403,13 @@ export default function EditProfileEditorPage() {
                         next[idx].category = e.target.value;
                         setData({ ...data, works: next });
                       }}
-                      className="w-full p-2.5 rounded-xl border border-inherit/20 bg-inherit/50"
+                      className={inputStyle}
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="text-gray-400">Deskripsi Ringkas Karya:</label>
+                  <label className={labelStyle}>Deskripsi Ringkas Karya:</label>
                   <textarea 
                     rows={2}
                     value={w.description}
@@ -417,12 +418,12 @@ export default function EditProfileEditorPage() {
                       next[idx].description = e.target.value;
                       setData({ ...data, works: next });
                     }}
-                    className="w-full p-2.5 rounded-xl border border-inherit/20 bg-inherit/50 font-sans"
+                    className={inputStyle}
                   />
                 </div>
 
                 <div>
-                  <label className="text-gray-400">Tautan Link Rujukan Karya:</label>
+                  <label className={labelStyle}>Tautan Link Rujukan Karya:</label>
                   <input 
                     type="text" 
                     value={w.link_url}
@@ -431,7 +432,7 @@ export default function EditProfileEditorPage() {
                       next[idx].link_url = e.target.value;
                       setData({ ...data, works: next });
                     }}
-                    className="w-full p-2.5 rounded-xl border border-inherit/20 bg-inherit/50"
+                    className={inputStyle}
                   />
                 </div>
               </div>
@@ -440,15 +441,15 @@ export default function EditProfileEditorPage() {
         </div>
       )}
 
-      {/* TAB CONTENT 4: ARTIKEL & SEO (OPSI A: FORM TERSTRUKTUR & MARKDOWN HASIL DISKUSI) */}
+      {/* TAB CONTENT 4: ARTIKEL & SEO */}
       {activeTab === 'articles' && (
-        <div className="space-y-6 text-xs font-mono">
+        <div className="space-y-6 font-mono text-xs">
           <div className="flex items-center justify-between">
-            <span className="text-gray-400 uppercase">DAFTAR ESAI ARTIKEL TERPUBLIKASI (OPTIMASI SEO)</span>
+            <span className="text-gray-400 uppercase">DAFTAR ESAI ARTIKEL TERPUBLIKASI (SEO)</span>
             <button
               onClick={() => {
                 const newArt: Article = {
-                  id: genId(),
+                  id: crypto.randomUUID(),
                   profile_id: profile.id,
                   title: 'Judul Analisis Terbaru',
                   tag: 'ESAI KRITIS',
@@ -481,7 +482,7 @@ export default function EditProfileEditorPage() {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <div>
-                    <label className="text-gray-400">Judul Artikel:</label>
+                    <label className={labelStyle}>Judul Artikel:</label>
                     <input 
                       type="text" 
                       value={art.title}
@@ -490,11 +491,11 @@ export default function EditProfileEditorPage() {
                         next[idx].title = e.target.value;
                         setData({ ...data, articles: next });
                       }}
-                      className="w-full p-2.5 rounded-xl border border-inherit/20 bg-inherit/50 font-sans font-bold"
+                      className={inputStyle}
                     />
                   </div>
                   <div>
-                    <label className="text-gray-400">Tag & Waktu Baca:</label>
+                    <label className={labelStyle}>Tag & Waktu Baca:</label>
                     <div className="flex gap-2">
                       <input 
                         type="text" 
@@ -504,7 +505,7 @@ export default function EditProfileEditorPage() {
                           next[idx].tag = e.target.value;
                           setData({ ...data, articles: next });
                         }}
-                        className="w-1/2 p-2.5 rounded-xl border border-inherit/20 bg-inherit/50"
+                        className={inputStyle}
                       />
                       <input 
                         type="text" 
@@ -514,14 +515,14 @@ export default function EditProfileEditorPage() {
                           next[idx].read_time = e.target.value;
                           setData({ ...data, articles: next });
                         }}
-                        className="w-1/2 p-2.5 rounded-xl border border-inherit/20 bg-inherit/50"
+                        className={inputStyle}
                       />
                     </div>
                   </div>
                 </div>
 
                 <div>
-                  <label className="text-gray-400">Ringkasan Abstrak:</label>
+                  <label className={labelStyle}>Ringkasan Abstrak:</label>
                   <textarea 
                     rows={2}
                     value={art.description}
@@ -530,7 +531,7 @@ export default function EditProfileEditorPage() {
                       next[idx].description = e.target.value;
                       setData({ ...data, articles: next });
                     }}
-                    className="w-full p-2.5 rounded-xl border border-inherit/20 bg-inherit/50 font-sans"
+                    className={inputStyle}
                   />
                 </div>
               </div>
@@ -541,13 +542,13 @@ export default function EditProfileEditorPage() {
 
       {/* TAB CONTENT 5: PRODUK & VARIASI HARGA */}
       {activeTab === 'products' && (
-        <div className="space-y-6 text-xs font-mono">
+        <div className="space-y-6 font-mono text-xs">
           <div className="flex items-center justify-between">
             <span className="text-gray-400 uppercase">PRODUK, KARYA CETAK & INISIATIF WARGA</span>
             <button
               onClick={() => {
                 const newProd: Initiative = {
-                  id: genId(),
+                  id: crypto.randomUUID(),
                   profile_id: profile.id,
                   title: 'Inisiatif Baru',
                   category: 'Merchandise',
@@ -582,7 +583,7 @@ export default function EditProfileEditorPage() {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <div>
-                    <label className="text-gray-400">Nama Produk / Inisiatif:</label>
+                    <label className={labelStyle}>Nama Produk / Inisiatif:</label>
                     <input 
                       type="text" 
                       value={prod.title}
@@ -591,11 +592,11 @@ export default function EditProfileEditorPage() {
                         next[idx].title = e.target.value;
                         setData({ ...data, initiatives: next });
                       }}
-                      className="w-full p-2.5 rounded-xl border border-inherit/20 bg-inherit/50 font-sans font-bold"
+                      className={inputStyle}
                     />
                   </div>
                   <div>
-                    <label className="text-gray-400">Harga Utama (Display Badge):</label>
+                    <label className={labelStyle}>Harga Utama (Display Badge):</label>
                     <input 
                       type="text" 
                       value={prod.price || ''}
@@ -605,13 +606,13 @@ export default function EditProfileEditorPage() {
                         next[idx].price = e.target.value;
                         setData({ ...data, initiatives: next });
                       }}
-                      className="w-full p-2.5 rounded-xl border border-inherit/20 bg-inherit/50 text-[#E11D48] font-bold"
+                      className={inputStyle}
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="text-gray-400">Variasi Harga & Tiering (Pisahkan Komma):</label>
+                  <label className={labelStyle}>Variasi Harga & Tiering (Pisahkan Komma):</label>
                   <input 
                     type="text" 
                     value={(prod.price_variants || []).join(', ')}
@@ -621,7 +622,7 @@ export default function EditProfileEditorPage() {
                       next[idx].price_variants = e.target.value.split(',').map(s => s.trim()).filter(Boolean);
                       setData({ ...data, initiatives: next });
                     }}
-                    className="w-full p-2.5 rounded-xl border border-inherit/20 bg-inherit/50 font-sans"
+                    className={inputStyle}
                   />
                 </div>
               </div>
@@ -630,15 +631,15 @@ export default function EditProfileEditorPage() {
         </div>
       )}
 
-      {/* TAB CONTENT 6: KATA WARGA & TESTIMONI (FULL FUNCTIONAL EDITOR) */}
+      {/* TAB CONTENT 6: KATA WARGA & TESTIMONI */}
       {activeTab === 'testimonials' && (
-        <div className="space-y-6 text-xs font-mono">
+        <div className="space-y-6 font-mono text-xs">
           <div className="flex items-center justify-between">
-            <span className="text-gray-400 uppercase">DAFTAR KATA WARGA & TESTIMONI TOKOH</span>
+            <span className="text-gray-400 uppercase">DAFTAR KATA WARGA & TESTIMONI</span>
             <button
               onClick={() => {
                 const newTst: Testimonial = {
-                  id: genId(),
+                  id: crypto.randomUUID(),
                   profile_id: profile.id,
                   author_name: 'Nama Tokoh Pembuat',
                   author_role: 'Peran / Jabatan',
@@ -669,7 +670,7 @@ export default function EditProfileEditorPage() {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <div>
-                    <label className="text-gray-400">Nama Pembuat Testimoni:</label>
+                    <label className={labelStyle}>Nama Pembuat Testimoni:</label>
                     <input 
                       type="text" 
                       value={item.author_name}
@@ -678,11 +679,11 @@ export default function EditProfileEditorPage() {
                         next[idx].author_name = e.target.value;
                         setData({ ...data, testimonials: next });
                       }}
-                      className="w-full p-2.5 rounded-xl border border-inherit/20 bg-inherit/50 font-sans font-bold"
+                      className={inputStyle}
                     />
                   </div>
                   <div>
-                    <label className="text-gray-400">Peran / Jabatan:</label>
+                    <label className={labelStyle}>Peran / Jabatan:</label>
                     <input 
                       type="text" 
                       value={item.author_role}
@@ -691,13 +692,13 @@ export default function EditProfileEditorPage() {
                         next[idx].author_role = e.target.value;
                         setData({ ...data, testimonials: next });
                       }}
-                      className="w-full p-2.5 rounded-xl border border-inherit/20 bg-inherit/50 font-sans"
+                      className={inputStyle}
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="text-gray-400">Kutipan Testimoni Warga:</label>
+                  <label className={labelStyle}>Kutipan Testimoni Warga:</label>
                   <textarea 
                     rows={2}
                     value={item.quote}
@@ -706,7 +707,7 @@ export default function EditProfileEditorPage() {
                       next[idx].quote = e.target.value;
                       setData({ ...data, testimonials: next });
                     }}
-                    className="w-full p-2.5 rounded-xl border border-inherit/20 bg-inherit/50 font-sans"
+                    className={inputStyle}
                   />
                 </div>
               </div>
@@ -717,8 +718,4 @@ export default function EditProfileEditorPage() {
 
     </div>
   );
-}
-
-function genId() {
-  return Math.random().toString(36).substring(2, 9);
 }

@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { ArrowLeft, Save, Plus, Check } from 'lucide-react';
+import { ArrowLeft, Save, Check } from 'lucide-react';
 import { saveProfileData } from '../../../../lib/supabase/adminActions';
 
 export default function NewProfilePage() {
@@ -24,14 +24,14 @@ export default function NewProfilePage() {
     if (!slug || !name) return;
 
     const newProfile = {
-      id: genId(),
-      slug: slug.toLowerCase().replace(/\s+/g, '-'),
-      name: name.toUpperCase(),
-      title,
+      id: crypto.randomUUID(),
+      slug: slug.toLowerCase().trim().replace(/\s+/g, '-'),
+      name: name.toUpperCase().trim(),
+      title: title.trim(),
       category,
       bio_paragraphs: [bio1, bio2].filter(Boolean),
-      quote,
-      photo_url: photoUrl,
+      quote: quote.trim(),
+      photo_url: photoUrl.trim(),
       verified: true,
       status_text: 'VERIFIKASI TERKURASI',
       social_links: { youtube: '', twitter: '', instagram: '' }
@@ -49,12 +49,10 @@ export default function NewProfilePage() {
     setToastMsg(res.message);
     setTimeout(() => {
       router.push(`/admin/profiles/${newProfile.slug}/edit`);
-    }, 1500);
+    }, 1200);
   };
 
-  function genId() {
-    return Math.random().toString(36).substring(2, 9);
-  }
+  const inputStyle = "w-full p-3 rounded-xl border text-sm font-sans text-gray-900 bg-white dark:bg-[#0A0E1A] dark:text-[#EDE8DC] border-gray-300 dark:border-white/20 focus:border-[#E11D48] focus:outline-none transition-colors";
 
   return (
     <div className="space-y-8 max-w-3xl mx-auto">
@@ -62,11 +60,11 @@ export default function NewProfilePage() {
       {/* HEADER */}
       <div className="flex items-center justify-between border-b pb-4 border-inherit/10">
         <div className="flex items-center gap-3">
-          <Link href="/admin" className="p-2 rounded-xl border border-inherit/10 hover:border-[#E11D48]">
+          <Link href="/admin" className="p-2 rounded-xl border border-inherit/10 hover:border-[#E11D48] transition-colors">
             <ArrowLeft className="w-4 h-4" />
           </Link>
           <div>
-            <span className="text-xs font-mono text-[#E11D48] font-bold uppercase">ADMIN FORM</span>
+            <span className="text-xs font-mono text-[#E11D48] font-bold uppercase tracking-wider">ADMIN FORM</span>
             <h1 className="text-3xl font-display uppercase tracking-tight">+ TAMBAH TOKOH BARU</h1>
           </div>
         </div>
@@ -79,42 +77,42 @@ export default function NewProfilePage() {
         </div>
       )}
 
-      {/* FORM */}
+      {/* FORM WITH HIGH CONTRAST TEXT VISIBILITY */}
       <form onSubmit={handleSave} className="space-y-6 text-xs font-mono">
         <div className="space-y-2">
-          <label className="block text-gray-400 uppercase">Nama Lengkap Tokoh:</label>
+          <label className="block text-gray-700 dark:text-gray-300 font-bold uppercase">Nama Lengkap Tokoh:</label>
           <input 
             type="text" 
             placeholder="misal: TAN MALAKA"
             value={name}
             onChange={(e) => {
               setName(e.target.value);
-              setSlug(e.target.value.toLowerCase().replace(/\s+/g, '-'));
+              setSlug(e.target.value.toLowerCase().trim().replace(/\s+/g, '-'));
             }}
             required
-            className="w-full p-3 rounded-xl border border-inherit/20 bg-inherit/50 focus:border-[#E11D48] text-sm font-sans"
+            className={inputStyle}
           />
         </div>
 
         <div className="space-y-2">
-          <label className="block text-gray-400 uppercase">URL Slug (ID Unik URL):</label>
+          <label className="block text-gray-700 dark:text-gray-300 font-bold uppercase">URL Slug (ID Unik URL):</label>
           <input 
             type="text" 
             placeholder="tan-malaka"
             value={slug}
             onChange={(e) => setSlug(e.target.value)}
             required
-            className="w-full p-3 rounded-xl border border-inherit/20 bg-inherit/50 focus:border-[#E11D48]"
+            className={inputStyle}
           />
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="space-y-2">
-            <label className="block text-gray-400 uppercase">Kategori Tokoh:</label>
+            <label className="block text-gray-700 dark:text-gray-300 font-bold uppercase">Kategori Tokoh:</label>
             <select 
               value={category} 
               onChange={(e) => setCategory(e.target.value)}
-              className="w-full p-3 rounded-xl border border-inherit/20 bg-inherit/50 focus:border-[#E11D48]"
+              className={inputStyle}
             >
               <option value="THE VOICES">THE VOICES</option>
               <option value="THE STRATEGISTS">THE STRATEGISTS</option>
@@ -124,52 +122,52 @@ export default function NewProfilePage() {
           </div>
 
           <div className="space-y-2">
-            <label className="block text-gray-400 uppercase">Gelar Subtitle Editorial:</label>
+            <label className="block text-gray-700 dark:text-gray-300 font-bold uppercase">Gelar Subtitle Editorial:</label>
             <input 
               type="text" 
               placeholder="The Strategist • Pejuang Nalar"
               value={title}
               onChange={(e) => setTitle(e.target.value)}
-              className="w-full p-3 rounded-xl border border-inherit/20 bg-inherit/50 focus:border-[#E11D48] font-sans"
+              className={inputStyle}
             />
           </div>
         </div>
 
         <div className="space-y-2">
-          <label className="block text-gray-400 uppercase">Foto Portrait URL:</label>
+          <label className="block text-gray-700 dark:text-gray-300 font-bold uppercase">Foto Portrait URL:</label>
           <input 
             type="text" 
             value={photoUrl}
             onChange={(e) => setPhotoUrl(e.target.value)}
-            className="w-full p-3 rounded-xl border border-inherit/20 bg-inherit/50 focus:border-[#E11D48]"
+            className={inputStyle}
           />
         </div>
 
         <div className="space-y-2">
-          <label className="block text-gray-400 uppercase">Kutipan Emas (Pull Quote):</label>
+          <label className="block text-gray-700 dark:text-gray-300 font-bold uppercase">Kutipan Emas (Pull Quote):</label>
           <textarea 
             rows={2}
             placeholder="Kutipan prinsipil..."
             value={quote}
             onChange={(e) => setQuote(e.target.value)}
-            className="w-full p-3 rounded-xl border border-inherit/20 bg-inherit/50 focus:border-[#E11D48] font-sans"
+            className={inputStyle}
           />
         </div>
 
         <div className="space-y-2">
-          <label className="block text-gray-400 uppercase">Biografi Paragraf 1:</label>
+          <label className="block text-gray-700 dark:text-gray-300 font-bold uppercase">Biografi Paragraf 1:</label>
           <textarea 
             rows={3}
             placeholder="Ringkasan biografi..."
             value={bio1}
             onChange={(e) => setBio1(e.target.value)}
-            className="w-full p-3 rounded-xl border border-inherit/20 bg-inherit/50 focus:border-[#E11D48] font-sans"
+            className={inputStyle}
           />
         </div>
 
         <button 
           type="submit"
-          className="w-full py-3.5 bg-[#E11D48] hover:bg-[#BE123C] text-white font-bold rounded-xl flex items-center justify-center gap-2 uppercase tracking-wider text-xs shadow-md shadow-[#E11D48]/30"
+          className="w-full py-3.5 bg-[#E11D48] hover:bg-[#BE123C] text-white font-bold rounded-xl flex items-center justify-center gap-2 uppercase tracking-wider text-xs shadow-md shadow-[#E11D48]/30 transition-colors"
         >
           <Save className="w-4 h-4" />
           <span>SIMPAN TOKOH & LANJUT EDITOR DETAIL</span>
