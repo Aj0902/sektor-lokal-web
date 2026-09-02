@@ -32,6 +32,7 @@ import {
 import { motion, AnimatePresence } from 'framer-motion';
 import ConstellationCanvas from '../../../components/ConstellationCanvas';
 import ParallaxGallery from '../../../components/ParallaxGallery';
+import InteractiveMarquee from '../../../components/InteractiveMarquee';
 import { fallbackProfiles } from '../../../lib/supabase/fallbackData';
 import { FullProfileData, Article, SocialLinks } from '../../../lib/supabase/types';
 import { createClient } from '../../../lib/supabase/client';
@@ -460,7 +461,7 @@ export default function DynamicProfilePage() {
           </section>
         )}
 
-        {/* 06 // PRODUK & INISIATIF WARGA (SLIDER MARQUEE 1-BARIS) */}
+        {/* 06 // PRODUK & INISIATIF WARGA (SLIDER MARQUEE 1-BARIS INTERAKTIF) */}
         {initiatives.length > 0 && (
           <section id="produk" className="space-y-8 scroll-mt-24 overflow-hidden">
             <div className="flex items-center justify-between border-b pb-4 border-inherit/10">
@@ -469,58 +470,56 @@ export default function DynamicProfilePage() {
                 <h2 className="text-3xl sm:text-4xl font-display uppercase tracking-tight">PRODUK & INISIATIF WARGA</h2>
               </div>
               <span className="text-[10px] font-mono uppercase tracking-widest text-[#E11D48] font-bold animate-pulse">
-                • MARQUEE SLIDER
+                • DRAGGABLE MARQUEE
               </span>
             </div>
 
-            {/* MARQUEE CONTAINER */}
-            <div className="relative w-full overflow-hidden py-4">
-              <div className="flex gap-6 w-max animate-marquee hover:[animation-play-state:paused]">
-                {marqueeInitiatives.map((prod, idx) => (
-                  <div 
-                    key={idx} 
-                    className={`w-[290px] sm:w-[340px] p-6 rounded-3xl border flex flex-col justify-between space-y-4 shrink-0 shadow-lg ${cardClass}`}
-                  >
-                    <div className="space-y-3">
-                      {/* Product Thumbnail */}
-                      {prod.image_url && (
-                        <div className="relative w-full h-40 rounded-2xl overflow-hidden bg-neutral-900 border border-inherit/10">
-                          <Image src={prod.image_url} alt={prod.title} fill sizes="340px" className="object-cover filter grayscale contrast-110" />
-                        </div>
-                      )}
-
-                      <div className="space-y-1.5">
-                        <div className="flex items-center justify-between">
-                          <span className="text-[10px] font-mono text-[#E11D48] uppercase font-bold">{prod.category}</span>
-                          {prod.price && (
-                            <span className="px-2.5 py-0.5 rounded-full bg-[#E11D48]/10 text-[#E11D48] text-xs font-mono font-bold border border-[#E11D48]/30">
-                              {prod.price}
-                            </span>
-                          )}
-                        </div>
-
-                        <h3 className="font-display uppercase text-lg sm:text-xl text-inherit">{prod.title}</h3>
-                        <p className={`text-xs leading-relaxed line-clamp-2 ${mutedText}`}>{prod.description}</p>
+            {/* INTERACTIVE MARQUEE CONTAINER */}
+            <InteractiveMarquee direction="left" speed={0.8}>
+              {marqueeInitiatives.map((prod, idx) => (
+                <div 
+                  key={idx} 
+                  className={`w-[290px] sm:w-[340px] p-6 rounded-3xl border flex flex-col justify-between space-y-4 shrink-0 shadow-lg ${cardClass}`}
+                >
+                  <div className="space-y-3">
+                    {/* Product Thumbnail */}
+                    {prod.image_url && (
+                      <div className="relative w-full h-40 rounded-2xl overflow-hidden bg-neutral-900 border border-inherit/10 pointer-events-none">
+                        <Image src={prod.image_url} alt={prod.title} fill sizes="340px" className="object-cover filter grayscale contrast-110" />
                       </div>
-                    </div>
+                    )}
 
-                    <a 
-                      href={prod.link_url} 
-                      target="_blank" 
-                      rel="noreferrer" 
-                      className="w-full py-2.5 bg-[#E11D48] hover:bg-[#BE123C] text-white font-bold text-xs rounded-xl transition-colors flex items-center justify-center gap-1.5 shadow-md shadow-[#E11D48]/30 font-mono uppercase"
-                    >
-                      <span>{prod.action_text}</span>
-                      <ArrowUpRight className="w-4 h-4" />
-                    </a>
+                    <div className="space-y-1.5">
+                      <div className="flex items-center justify-between">
+                        <span className="text-[10px] font-mono text-[#E11D48] uppercase font-bold">{prod.category}</span>
+                        {prod.price && (
+                          <span className="px-2.5 py-0.5 rounded-full bg-[#E11D48]/10 text-[#E11D48] text-xs font-mono font-bold border border-[#E11D48]/30">
+                            {prod.price}
+                          </span>
+                        )}
+                      </div>
+
+                      <h3 className="font-display uppercase text-lg sm:text-xl text-inherit">{prod.title}</h3>
+                      <p className={`text-xs leading-relaxed line-clamp-2 ${mutedText}`}>{prod.description}</p>
+                    </div>
                   </div>
-                ))}
-              </div>
-            </div>
+
+                  <a 
+                    href={prod.link_url} 
+                    target="_blank" 
+                    rel="noreferrer" 
+                    className="w-full py-2.5 bg-[#E11D48] hover:bg-[#BE123C] text-white font-bold text-xs rounded-xl transition-colors flex items-center justify-center gap-1.5 shadow-md shadow-[#E11D48]/30 font-mono uppercase"
+                  >
+                    <span>{prod.action_text}</span>
+                    <ArrowUpRight className="w-4 h-4" />
+                  </a>
+                </div>
+              ))}
+            </InteractiveMarquee>
           </section>
         )}
 
-        {/* 07 // KATA WARGA & TESTIMONI (SLIDER MARQUEE 1-BARIS) */}
+        {/* 07 // KATA WARGA & TESTIMONI (SLIDER MARQUEE 1-BARIS INTERAKTIF) */}
         {testimonials.length > 0 && (
           <section id="kata-warga" className="space-y-8 scroll-mt-24 overflow-hidden">
             <div className="flex items-center justify-between border-b pb-4 border-inherit/10">
@@ -529,29 +528,27 @@ export default function DynamicProfilePage() {
                 <h2 className="text-3xl sm:text-4xl font-display uppercase tracking-tight">KATA WARGA & TESTIMONI</h2>
               </div>
               <span className="text-[10px] font-mono uppercase tracking-widest text-[#E11D48] font-bold animate-pulse">
-                • MARQUEE SLIDER
+                • DRAGGABLE MARQUEE
               </span>
             </div>
 
-            {/* MARQUEE CONTAINER */}
-            <div className="relative w-full overflow-hidden py-4">
-              <div className="flex gap-6 w-max animate-marquee-reverse hover:[animation-play-state:paused]">
-                {marqueeTestimonials.map((item, idx) => (
-                  <div 
-                    key={idx} 
-                    className={`w-[290px] sm:w-[340px] p-6 sm:p-7 rounded-3xl border flex flex-col justify-between space-y-4 shrink-0 shadow-lg ${cardClass}`}
-                  >
-                    <blockquote className="font-editorial italic text-sm leading-relaxed text-inherit">
-                      &ldquo;{item.quote}&rdquo;
-                    </blockquote>
-                    <div className="pt-3 border-t border-inherit/10 font-mono">
-                      <p className="font-display uppercase text-base text-inherit font-sans">{item.author_name}</p>
-                      <p className={`text-xs ${mutedText}`}>{item.author_role}</p>
-                    </div>
+            {/* INTERACTIVE MARQUEE CONTAINER */}
+            <InteractiveMarquee direction="right" speed={0.8}>
+              {marqueeTestimonials.map((item, idx) => (
+                <div 
+                  key={idx} 
+                  className={`w-[290px] sm:w-[340px] p-6 sm:p-7 rounded-3xl border flex flex-col justify-between space-y-4 shrink-0 shadow-lg ${cardClass}`}
+                >
+                  <blockquote className="font-editorial italic text-sm leading-relaxed text-inherit">
+                    &ldquo;{item.quote}&rdquo;
+                  </blockquote>
+                  <div className="pt-3 border-t border-inherit/10 font-mono">
+                    <p className="font-display uppercase text-base text-inherit font-sans">{item.author_name}</p>
+                    <p className={`text-xs ${mutedText}`}>{item.author_role}</p>
                   </div>
-                ))}
-              </div>
-            </div>
+                </div>
+              ))}
+            </InteractiveMarquee>
           </section>
         )}
 
