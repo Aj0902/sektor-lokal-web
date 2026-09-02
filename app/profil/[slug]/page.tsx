@@ -18,17 +18,22 @@ import {
   ChevronDown,
   ArrowDown,
   ArrowLeft,
-  ArrowRight,
   BookOpen,
   Globe,
   Share2,
-  Bookmark
+  Video,
+  Linkedin,
+  Facebook,
+  HeartHandshake,
+  Feather,
+  Sparkles,
+  ExternalLink
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import ConstellationCanvas from '../../../components/ConstellationCanvas';
 import ParallaxGallery from '../../../components/ParallaxGallery';
 import { fallbackProfiles } from '../../../lib/supabase/fallbackData';
-import { FullProfileData, Article } from '../../../lib/supabase/types';
+import { FullProfileData, Article, SocialLinks } from '../../../lib/supabase/types';
 import { createClient } from '../../../lib/supabase/client';
 
 export default function DynamicProfilePage() {
@@ -40,8 +45,6 @@ export default function DynamicProfilePage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
 
-  const [productSlideIndex, setProductSlideIndex] = useState(0);
-  const [testimonialSlideIndex, setTestimonialSlideIndex] = useState(0);
   const [selectedArticle, setSelectedArticle] = useState<Article | null>(null);
 
   const [profileData, setProfileData] = useState<FullProfileData>(
@@ -99,7 +102,7 @@ export default function DynamicProfilePage() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const { profile, lifeEvents, works, articles, testimonials, initiatives, gallery = [] } = profileData;
+  const { profile, lifeEvents, works, articles, testimonials, initiatives } = profileData;
 
   const bgCanvas = isDarkMode ? 'particle-wave-dark text-[#EDE8DC]' : 'particle-wave-light text-[#0A0E1A]';
   const cardClass = isDarkMode ? 'spotlight-card-dark' : 'spotlight-card-light';
@@ -107,6 +110,26 @@ export default function DynamicProfilePage() {
   const navBg = isDarkMode ? 'bg-[#0A0E1A]/90 border-white/[0.08]' : 'bg-[#F9F8F5]/90 border-black/[0.08]';
 
   const soc = profile.social_links || {};
+
+  const socialIconMap: { key: keyof SocialLinks; label: string; icon: React.ReactNode }[] = [
+    { key: 'youtube', label: 'YouTube', icon: <Youtube className="w-4 h-4 text-red-500" /> },
+    { key: 'twitter', label: 'Twitter / X', icon: <Twitter className="w-4 h-4 text-sky-400" /> },
+    { key: 'instagram', label: 'Instagram', icon: <Instagram className="w-4 h-4 text-pink-500" /> },
+    { key: 'spotify', label: 'Spotify', icon: <Radio className="w-4 h-4 text-emerald-500" /> },
+    { key: 'tiktok', label: 'TikTok', icon: <Video className="w-4 h-4 text-[#E11D48]" /> },
+    { key: 'linkedin', label: 'LinkedIn', icon: <Linkedin className="w-4 h-4 text-blue-500" /> },
+    { key: 'facebook', label: 'Facebook', icon: <Facebook className="w-4 h-4 text-blue-600" /> },
+    { key: 'email', label: 'Email', icon: <Mail className="w-4 h-4 text-amber-500" /> },
+    { key: 'website', label: 'Website', icon: <Globe className="w-4 h-4 text-indigo-400" /> },
+    { key: 'substack', label: 'Substack', icon: <Feather className="w-4 h-4 text-orange-500" /> },
+    { key: 'medium', label: 'Medium', icon: <BookOpen className="w-4 h-4 text-[#EDE8DC]" /> },
+    { key: 'trakteer', label: 'Trakteer', icon: <HeartHandshake className="w-4 h-4 text-rose-500" /> },
+    { key: 'patreon', label: 'Patreon', icon: <HeartHandshake className="w-4 h-4 text-coral-500" /> },
+  ];
+
+  // Marquee repeaters
+  const marqueeInitiatives = initiatives.length > 0 ? [...initiatives, ...initiatives, ...initiatives] : [];
+  const marqueeTestimonials = testimonials.length > 0 ? [...testimonials, ...testimonials, ...testimonials] : [];
 
   return (
     <div className={`min-h-screen ${bgCanvas} font-sans antialiased selection:bg-[#E11D48] selection:text-white relative`}>
@@ -129,7 +152,7 @@ export default function DynamicProfilePage() {
             <span>KEMBALI KE DIREKTORI</span>
           </Link>
 
-          <nav className="hidden md:flex items-center gap-6 text-xs font-medium tracking-wide uppercase">
+          <nav className="hidden md:flex items-center gap-6 text-xs font-medium tracking-wide uppercase font-mono">
             <a href="#tentang" className="hover:text-[#E11D48] transition-colors">Tentang</a>
             <a href="#perjalanan" className="hover:text-[#E11D48] transition-colors">Perjalanan</a>
             <a href="#karya" className="hover:text-[#E11D48] transition-colors">Karya</a>
@@ -238,38 +261,29 @@ export default function DynamicProfilePage() {
               </p>
             </div>
 
-            {/* DYNAMIC SOCIAL LINKS BAR (ONLY RENDER IF PRESENT IN SOCIAL_LINKS) */}
+            {/* DYNAMIC SOCIAL LINKS BAR (A-Z CHANNEL AUTOMATIC RENDERING) */}
             <div className="flex items-center justify-center gap-2 flex-wrap pt-2">
-              {soc.youtube && (
-                <a href={soc.youtube} target="_blank" rel="noreferrer" title="YouTube" className={`w-10 h-10 rounded-xl border flex items-center justify-center transition-all ${isDarkMode ? 'border-white/10 hover:border-[#E11D48] text-[#8A93A8]' : 'border-black/10 hover:border-[#E11D48] text-gray-600'}`}>
-                  <Youtube className="w-4 h-4" />
-                </a>
-              )}
-              {soc.twitter && (
-                <a href={soc.twitter} target="_blank" rel="noreferrer" title="Twitter / X" className={`w-10 h-10 rounded-xl border flex items-center justify-center transition-all ${isDarkMode ? 'border-white/10 hover:border-[#E11D48] text-[#8A93A8]' : 'border-black/10 hover:border-[#E11D48] text-gray-600'}`}>
-                  <Twitter className="w-4 h-4" />
-                </a>
-              )}
-              {soc.instagram && (
-                <a href={soc.instagram} target="_blank" rel="noreferrer" title="Instagram" className={`w-10 h-10 rounded-xl border flex items-center justify-center transition-all ${isDarkMode ? 'border-white/10 hover:border-[#E11D48] text-[#8A93A8]' : 'border-black/10 hover:border-[#E11D48] text-gray-600'}`}>
-                  <Instagram className="w-4 h-4" />
-                </a>
-              )}
-              {soc.spotify && (
-                <a href={soc.spotify} target="_blank" rel="noreferrer" title="Spotify" className={`w-10 h-10 rounded-xl border flex items-center justify-center transition-all ${isDarkMode ? 'border-white/10 hover:border-[#E11D48] text-[#8A93A8]' : 'border-black/10 hover:border-[#E11D48] text-gray-600'}`}>
-                  <Radio className="w-4 h-4" />
-                </a>
-              )}
-              {soc.email && (
-                <a href={`mailto:${soc.email}`} title="Email" className={`w-10 h-10 rounded-xl border flex items-center justify-center transition-all ${isDarkMode ? 'border-white/10 hover:border-[#E11D48] text-[#8A93A8]' : 'border-black/10 hover:border-[#E11D48] text-gray-600'}`}>
-                  <Mail className="w-4 h-4" />
-                </a>
-              )}
-              {soc.website && (
-                <a href={soc.website} target="_blank" rel="noreferrer" title="Website Personal" className={`w-10 h-10 rounded-xl border flex items-center justify-center transition-all ${isDarkMode ? 'border-white/10 hover:border-[#E11D48] text-[#8A93A8]' : 'border-black/10 hover:border-[#E11D48] text-gray-600'}`}>
-                  <Globe className="w-4 h-4" />
-                </a>
-              )}
+              {socialIconMap.map((item) => {
+                const url = soc[item.key];
+                if (!url) return null;
+                const isMail = item.key === 'email';
+                return (
+                  <a 
+                    key={item.key} 
+                    href={isMail ? `mailto:${url}` : url} 
+                    target="_blank" 
+                    rel="noreferrer" 
+                    title={item.label} 
+                    className={`w-10 h-10 rounded-xl border flex items-center justify-center transition-all ${
+                      isDarkMode 
+                        ? 'border-white/10 hover:border-[#E11D48] bg-[#111726]/60 text-[#8A93A8] hover:text-white' 
+                        : 'border-black/10 hover:border-[#E11D48] bg-white text-gray-600 hover:text-black'
+                    }`}
+                  >
+                    {item.icon}
+                  </a>
+                );
+              })}
             </div>
 
             {/* Scroll Cue */}
@@ -355,7 +369,7 @@ export default function DynamicProfilePage() {
                           <div className="mt-4 pt-4 border-t border-inherit/10 space-y-3">
                             <p className={`text-sm sm:text-base leading-relaxed ${mutedText}`}>{w.description}</p>
                             <div className="flex justify-end">
-                              <a href={w.link_url} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 text-xs font-bold text-[#E11D48] hover:underline">
+                              <a href={w.link_url} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 text-xs font-bold text-[#E11D48] hover:underline font-mono">
                                 <span>Buka Rujukan Karya</span>
                                 <ArrowUpRight className="w-3.5 h-3.5" />
                               </a>
@@ -380,7 +394,7 @@ export default function DynamicProfilePage() {
           <ParallaxGallery isDarkMode={isDarkMode} />
         </section>
 
-        {/* 05 // ARTIKEL & WAWASAN */}
+        {/* 05 // ARTIKEL & WAWASAN (DIRECT DYNAMIC SEO LINKS & READER MODAL) */}
         {articles.length > 0 && (
           <section id="artikel" className="space-y-8 scroll-mt-24">
             <div className="flex items-center gap-3 border-b pb-4 border-inherit/10">
@@ -388,148 +402,135 @@ export default function DynamicProfilePage() {
               <h2 className="text-3xl sm:text-4xl font-display uppercase tracking-tight">ARTIKEL & WAWASAN</h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {articles.map((art, idx) => (
-                <div key={idx} className={`p-6 sm:p-8 rounded-3xl border space-y-4 flex flex-col justify-between ${cardClass}`}>
-                  <div className="space-y-3">
-                    <div className="flex items-center justify-between text-xs font-mono text-[#E11D48]">
-                      <span>{art.tag}</span>
-                      <span>{art.read_time}</span>
+              {articles.map((art, idx) => {
+                const targetArticleUrl = art.link_url?.startsWith('/artikel/') 
+                  ? art.link_url 
+                  : `/artikel/${art.title.toLowerCase().trim().replace(/\s+/g, '-')}`;
+
+                return (
+                  <div key={idx} className={`p-6 sm:p-8 rounded-3xl border space-y-4 flex flex-col justify-between ${cardClass}`}>
+                    <div className="space-y-3">
+                      <div className="flex items-center justify-between text-xs font-mono text-[#E11D48]">
+                        <span>{art.tag}</span>
+                        <span>{art.read_time}</span>
+                      </div>
+                      <h3 className="text-xl sm:text-2xl font-display uppercase text-inherit leading-snug">{art.title}</h3>
+                      <p className={`text-sm leading-relaxed ${mutedText}`}>{art.description}</p>
                     </div>
-                    <h3 className="text-xl sm:text-2xl font-display uppercase text-inherit leading-snug">{art.title}</h3>
-                    <p className={`text-sm leading-relaxed ${mutedText}`}>{art.description}</p>
+                    <div className="pt-3 flex justify-between items-center border-t border-inherit/10 font-mono">
+                      <button 
+                        onClick={() => setSelectedArticle(art)}
+                        className="text-xs text-[#E11D48] hover:underline flex items-center gap-1 font-bold"
+                      >
+                        <BookOpen className="w-3.5 h-3.5" />
+                        <span>Mode Reader</span>
+                      </button>
+                      <Link 
+                        href={targetArticleUrl} 
+                        className="inline-flex items-center gap-1 text-xs font-bold text-[#E11D48] hover:underline"
+                      >
+                        <span>Baca Artikel Full (SEO)</span>
+                        <ArrowUpRight className="w-3.5 h-3.5" />
+                      </Link>
+                    </div>
                   </div>
-                  <div className="pt-3 flex justify-between items-center border-t border-inherit/10">
-                    <button 
-                      onClick={() => setSelectedArticle(art)}
-                      className="text-xs font-mono text-[#E11D48] hover:underline flex items-center gap-1"
-                    >
-                      <BookOpen className="w-3.5 h-3.5" />
-                      <span>Mode Fokus Reader</span>
-                    </button>
-                    <Link href="/artikel/analisis-kritis-literasi-keuangan" className="inline-flex items-center gap-1 text-xs font-bold text-[#E11D48] hover:underline">
-                      <span>Halaman Artikel (SEO)</span>
-                      <ArrowUpRight className="w-3.5 h-3.5" />
-                    </Link>
-                  </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </section>
         )}
 
-        {/* 06 // PRODUK & INISIATIF WARGA (SLIDER + THUMBNAILS & DIRECT LINKS) */}
+        {/* 06 // PRODUK & INISIATIF WARGA (SINGLE-ROW INFINITE MARQUEE SLIDER) */}
         {initiatives.length > 0 && (
-          <section id="produk" className="space-y-8 scroll-mt-24">
+          <section id="produk" className="space-y-8 scroll-mt-24 overflow-hidden">
             <div className="flex items-center justify-between border-b pb-4 border-inherit/10">
               <div className="flex items-center gap-3">
                 <span className="font-mono text-xs text-[#E11D48] font-bold">06 //</span>
                 <h2 className="text-3xl sm:text-4xl font-display uppercase tracking-tight">PRODUK & INISIATIF WARGA</h2>
               </div>
-              
-              <div className="flex items-center gap-2">
-                <button
-                  onClick={() => setProductSlideIndex(Math.max(0, productSlideIndex - 1))}
-                  disabled={productSlideIndex === 0}
-                  className={`p-2 rounded-xl border transition ${productSlideIndex === 0 ? 'opacity-30 cursor-not-allowed' : 'hover:border-[#E11D48]'} ${cardClass}`}
-                >
-                  <ArrowLeft className="w-4 h-4" />
-                </button>
-                <button
-                  onClick={() => setProductSlideIndex(Math.min(initiatives.length - 1, productSlideIndex + 1))}
-                  disabled={productSlideIndex === initiatives.length - 1}
-                  className={`p-2 rounded-xl border transition ${productSlideIndex === initiatives.length - 1 ? 'opacity-30 cursor-not-allowed' : 'hover:border-[#E11D48]'} ${cardClass}`}
-                >
-                  <ArrowRight className="w-4 h-4" />
-                </button>
-              </div>
+              <span className="text-[10px] font-mono uppercase tracking-widest text-[#E11D48] font-bold animate-pulse">
+                • AUTO-PLAY SLIDER
+              </span>
             </div>
 
-            <div className="overflow-hidden">
-              <motion.div 
-                animate={{ x: `-${productSlideIndex * 100}%` }}
-                transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-                className="flex gap-6"
-              >
-                {initiatives.map((prod, idx) => (
-                  <div key={idx} className={`w-full min-w-full md:min-w-[48%] lg:min-w-[32%] p-6 rounded-3xl border flex flex-col justify-between space-y-5 shrink-0 ${cardClass}`}>
-                    <div className="space-y-4">
-                      
+            {/* INFINITE MARQUEE CONTAINER */}
+            <div className="relative w-full overflow-hidden py-2 group">
+              <div className="flex gap-6 w-max animate-marquee group-hover:[animation-play-state:paused]">
+                {marqueeInitiatives.map((prod, idx) => (
+                  <div 
+                    key={idx} 
+                    className={`w-[300px] sm:w-[360px] p-6 rounded-3xl border flex flex-col justify-between space-y-4 shrink-0 shadow-lg ${cardClass}`}
+                  >
+                    <div className="space-y-3">
                       {/* Product Thumbnail */}
                       {prod.image_url && (
-                        <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-neutral-900 border border-inherit/10">
-                          <Image src={prod.image_url} alt={prod.title} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover filter grayscale contrast-110" />
+                        <div className="relative w-full h-44 rounded-2xl overflow-hidden bg-neutral-900 border border-inherit/10">
+                          <Image src={prod.image_url} alt={prod.title} fill sizes="360px" className="object-cover filter grayscale contrast-110" />
                         </div>
                       )}
 
-                      <div className="space-y-2">
+                      <div className="space-y-1.5">
                         <div className="flex items-center justify-between">
-                          <span className="text-[10px] font-mono text-[#E11D48] uppercase font-semibold">{prod.category}</span>
+                          <span className="text-[10px] font-mono text-[#E11D48] uppercase font-bold">{prod.category}</span>
                           {prod.price && (
-                            <span className="px-2.5 py-1 rounded-full bg-[#E11D48]/10 text-[#E11D48] text-xs font-mono font-bold border border-[#E11D48]/30">
+                            <span className="px-2.5 py-0.5 rounded-full bg-[#E11D48]/10 text-[#E11D48] text-xs font-mono font-bold border border-[#E11D48]/30">
                               {prod.price}
                             </span>
                           )}
                         </div>
 
-                        <h3 className="font-display uppercase text-xl text-inherit">{prod.title}</h3>
-                        <p className={`text-xs leading-relaxed ${mutedText}`}>{prod.description}</p>
+                        <h3 className="font-display uppercase text-lg sm:text-xl text-inherit">{prod.title}</h3>
+                        <p className={`text-xs leading-relaxed line-clamp-2 ${mutedText}`}>{prod.description}</p>
                       </div>
                     </div>
 
-                    <a href={prod.link_url} target="_blank" rel="noreferrer" className="w-full py-3 bg-[#E11D48] hover:bg-[#BE123C] text-white font-bold text-xs rounded-xl transition-colors flex items-center justify-center gap-1.5 shadow-md shadow-[#E11D48]/30">
+                    <a 
+                      href={prod.link_url} 
+                      target="_blank" 
+                      rel="noreferrer" 
+                      className="w-full py-2.5 bg-[#E11D48] hover:bg-[#BE123C] text-white font-bold text-xs rounded-xl transition-colors flex items-center justify-center gap-1.5 shadow-md shadow-[#E11D48]/30 font-mono uppercase"
+                    >
                       <span>{prod.action_text}</span>
                       <ArrowUpRight className="w-4 h-4" />
                     </a>
                   </div>
                 ))}
-              </motion.div>
+              </div>
             </div>
           </section>
         )}
 
-        {/* 07 // KATA WARGA & TESTIMONI */}
+        {/* 07 // KATA WARGA & TESTIMONI (SINGLE-ROW INFINITE MARQUEE SLIDER) */}
         {testimonials.length > 0 && (
-          <section id="kata-warga" className="space-y-8 scroll-mt-24">
+          <section id="kata-warga" className="space-y-8 scroll-mt-24 overflow-hidden">
             <div className="flex items-center justify-between border-b pb-4 border-inherit/10">
               <div className="flex items-center gap-3">
                 <span className="font-mono text-xs text-[#E11D48] font-bold">07 //</span>
                 <h2 className="text-3xl sm:text-4xl font-display uppercase tracking-tight">KATA WARGA & TESTIMONI</h2>
               </div>
-
-              <div className="flex items-center gap-2">
-                <button
-                  onClick={() => setTestimonialSlideIndex(Math.max(0, testimonialSlideIndex - 1))}
-                  disabled={testimonialSlideIndex === 0}
-                  className={`p-2 rounded-xl border transition ${testimonialSlideIndex === 0 ? 'opacity-30 cursor-not-allowed' : 'hover:border-[#E11D48]'} ${cardClass}`}
-                >
-                  <ArrowLeft className="w-4 h-4" />
-                </button>
-                <button
-                  onClick={() => setTestimonialSlideIndex(Math.min(testimonials.length - 1, testimonialSlideIndex + 1))}
-                  disabled={testimonialSlideIndex === testimonials.length - 1}
-                  className={`p-2 rounded-xl border transition ${testimonialSlideIndex === testimonials.length - 1 ? 'opacity-30 cursor-not-allowed' : 'hover:border-[#E11D48]'} ${cardClass}`}
-                >
-                  <ArrowRight className="w-4 h-4" />
-                </button>
-              </div>
+              <span className="text-[10px] font-mono uppercase tracking-widest text-[#E11D48] font-bold animate-pulse">
+                • AUTO-PLAY SLIDER
+              </span>
             </div>
 
-            <div className="overflow-hidden">
-              <motion.div 
-                animate={{ x: `-${testimonialSlideIndex * 100}%` }}
-                transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-                className="flex gap-6"
-              >
-                {testimonials.map((item, idx) => (
-                  <div key={idx} className={`w-full min-w-full md:min-w-[48%] lg:min-w-[32%] p-6 sm:p-7 rounded-3xl border flex flex-col justify-between space-y-4 shrink-0 ${cardClass}`}>
-                    <blockquote className="font-editorial italic text-sm leading-relaxed text-inherit">&ldquo;{item.quote}&rdquo;</blockquote>
-                    <div className="pt-4 border-t border-inherit/10">
+            {/* INFINITE MARQUEE CONTAINER */}
+            <div className="relative w-full overflow-hidden py-2 group">
+              <div className="flex gap-6 w-max animate-marquee-reverse group-hover:[animation-play-state:paused]">
+                {marqueeTestimonials.map((item, idx) => (
+                  <div 
+                    key={idx} 
+                    className={`w-[300px] sm:w-[360px] p-6 sm:p-7 rounded-3xl border flex flex-col justify-between space-y-4 shrink-0 shadow-lg ${cardClass}`}
+                  >
+                    <blockquote className="font-editorial italic text-sm leading-relaxed text-inherit">
+                      &ldquo;{item.quote}&rdquo;
+                    </blockquote>
+                    <div className="pt-3 border-t border-inherit/10">
                       <p className="font-display uppercase text-base text-inherit">{item.author_name}</p>
                       <p className={`text-xs ${mutedText}`}>{item.author_role}</p>
                     </div>
                   </div>
                 ))}
-              </motion.div>
+              </div>
             </div>
           </section>
         )}
@@ -577,7 +578,10 @@ export default function DynamicProfilePage() {
               </div>
 
               <div className="pt-4 border-t border-inherit/10 flex justify-end">
-                <Link href="/artikel/analisis-kritis-literasi-keuangan" className="px-5 py-2.5 bg-[#E11D48] text-white font-bold text-xs rounded-xl flex items-center gap-1.5">
+                <Link 
+                  href={`/artikel/${selectedArticle.title.toLowerCase().trim().replace(/\s+/g, '-')}`} 
+                  className="px-5 py-2.5 bg-[#E11D48] text-white font-bold text-xs rounded-xl flex items-center gap-1.5 font-mono"
+                >
                   <span>Buka Halaman Artikel (SEO)</span>
                   <ArrowUpRight className="w-4 h-4" />
                 </Link>
