@@ -222,6 +222,114 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
       }
     ]
   },
+  'sujiwo-tejo': {
+    profile: {
+      id: '55555555-5555-5555-5555-555555555555',
+      slug: 'sujiwo-tejo',
+      name: 'SUJIWO TEJO',
+      title: 'THE VOICES • BUDAYAWAN • PRESIDEN JANKOKU',
+      category: 'THE VOICES',
+      bio_paragraphs: [
+        'Sujiwo Tejo (dikenal juga sebagai Mbah Jiwo) adalah seorang budayawan, dalang, penulis, dan seniman serba bisa Indonesia yang selama puluhan tahun konsisten menyuarakan kebebasan berpikir, kejujuran nurani, dan satir kebudayaan lewat media seni.',
+        'Melalui karya sastra, pertunjukan wayang suket, lagu, dan esai-esainya, Mbah Jiwo merawat nilai-nilai kearifan lokal Nusantara sekaligus menjadi pemikir bebas yang berani menelanjangi kepalsuan sosial dengan humor filosofis yang membumi.'
+      ],
+      quote: 'Menikahi perempuan yang lo cintai itu soal takdir, tapi mencintai perempuan yang lo nikahi itu soal tanggung jawab. Sama halnya dengan mencintai negeri ini.',
+      photo_url: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=800&q=80',
+      verified: true,
+      status_text: 'VERIFIKASI TERKURASI',
+      social_links: {
+        youtube: 'https://youtube.com/@sujiwotejo',
+        twitter: 'https://twitter.com/sudjiwotedjo',
+        instagram: 'https://instagram.com/president_jancukers',
+        spotify: 'https://open.spotify.com/artist/sujiwotejo',
+        website: 'https://sujiwotejo.com'
+      },
+      theme_default: 'dark'
+    },
+    lifeEvents: [
+      { id: '1', profile_id: '55555555-5555-5555-5555-555555555555', year_range: '1980 — 1990', title: 'AWAL KARIER WARTAWAN & DALANG', description: 'Mengawali karier sebagai jurnalis harian Kompas sebelum mendedikasikan hidup sepenuhnya sebagai dalang dan seniman independen.', order_index: 1 },
+      { id: '2', profile_id: '55555555-5555-5555-5555-555555555555', year_range: '1998 — 2005', title: 'MAHAKARYA WAYANG SUKET & TEATER', description: 'Menciptakan pertunjukan wayang suket (rumput) yang inovatif, mendobrak sekat teater tradisional dengan kebebasan gagasan.', order_index: 2 },
+      { id: '3', profile_id: '55555555-5555-5555-5555-555555555555', year_range: '2011 — 2020', title: 'REPUBLIK JANCUKERS & REVOLUSI SASTRA', description: 'Meluncurkan buku-buku sastra terlaris seperti Tali Jiwo dan menggerakkan komunitas berpikir bebas Jancukers.', order_index: 3 },
+      { id: '4', profile_id: '55555555-5555-5555-5555-555555555555', year_range: '2021 — 2026', title: 'MAESTRO BUDAYA & EDUKASI KEBIJAKAN', description: 'Aktif membedah kearifan lokal, etika berbangsa, dan sastra budaya di tengah disrupsi teknologi digital.', order_index: 4 }
+    ],
+    works: [
+      { id: 'w1', profile_id: '55555555-5555-5555-5555-555555555555', title: 'Pertunjukan Wayang Suket & Orasi Budaya', category: 'Seni Pertunjukan & Dalang', description: 'Pagelaran seni wayang rumput kontemporer yang memadukan humor satir, musik, dan kritik sosial mendalam.', link_url: 'https://sujiwotejo.com', order_index: 1 },
+      { id: 'w2', profile_id: '55555555-5555-5555-5555-555555555555', title: 'Buku Sastra & Esai Tali Jiwo', category: 'Karya Tulis & Antologi Pemikiran', description: 'Kumpulan tulisan filosofis, puisi cinta, dan perenungan sosial budaya tentang hakikat kemanusiaan.', link_url: 'https://www.gramedia.com', order_index: 2 },
+      { id: 'w3', profile_id: '55555555-5555-5555-5555-555555555555', title: 'Album Musik & Tembang Jiwo', category: 'Karya Musik & Komposisi Seni', description: 'Koleksi lagu-lagu etnoid independen dengan lirik poetis yang menggugah jiwa.', link_url: 'https://open.spotify.com/artist/sujiwotejo', order_index: 3 },
+      { id: 'w4', profile_id: '55555555-5555-5555-5555-555555555555', title: 'Podcast & Kolam Diskusi Kebudayaan', category: 'Media Edukasi Budaya', description: 'Ruang bincang kebudayaan yang mengajak generasi muda menyelami akar sejarah dan kejujuran nurani.', link_url: 'https://youtube.com/@sujiwotejo', order_index: 4 }
+    ],
+    gallery: [
+      { id: 'g1', profile_id: '55555555-5555-5555-5555-555555555555', title: 'Pagelaran Wayang Suket & Orasi Kebudayaan Mbah Jiwo', image_url: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=1200&q=80', order_index: 1 },
+      { id: 'g2', profile_id: '55555555-5555-5555-5555-555555555555', title: 'Sesi Melukis & Ekspresi Seni Rupa Sujiwo Tejo', image_url: 'https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=1200&q=80', order_index: 2 },
+      { id: 'g3', profile_id: '55555555-5555-5555-5555-555555555555', title: 'Diskusi Sastra & Sapa Warga Jancukers', image_url: 'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=80', order_index: 3 }
+    ],
+    articles: [
+      { 
+        id: 'a1', 
+        profile_id: '55555555-5555-5555-5555-555555555555', 
+        title: 'Mencintai Tanpa Kepalsuan: Catatan Filosofis Sujiwo Tejo Tentang Kejujuran Nurani', 
+        tag: 'FILSAFAT & KEBUDAYAAN', 
+        read_time: '8 Menit Membaca', 
+        description: 'Refleksi mendalam Sujiwo Tejo tentang pentingnya kejujuran rasa, kebebasan berpikir, dan menanggalkan jubah kepalsuan sosial.', 
+        content_full: 'Di tengah masyarakat yang makin mengagungkan pencitraan dan formalisme agama maupun hukum, Sujiwo Tejo hadir sebagai pengingat akan pentingnya kejujuran nurani.\n\nBagi Mbah Jiwo, kebudayaan sejati bukan tentang pakaian adat atau ritual kaku, melainkan tentang bagaimana kita memperlakukan sesama manusia dengan rasa hormat dan empati tanpa kepalsuan.\n\n"Banyak orang pintar bicara kebenaran, tapi lupa cara mencintai," kata Sujiwo Tejo. Lewat pendekatan seni yang humoris dan satir, ia mengajak generasi muda untuk berani jujur pada diri sendiri, tidak mudah menghakimi orang lain, dan merawat cinta kasihan sebagai fondasi utama berbangsa.', 
+        link_url: '/artikel/mencintai-tanpa-kepalsuan-sujiwo-tejo', 
+        order_index: 1 
+      },
+      { 
+        id: 'a2', 
+        profile_id: '55555555-5555-5555-5555-555555555555', 
+        title: 'Wayang dan Nalar Bangsa: Merawat Akar Budaya di Era Disrupsi Digital', 
+        tag: 'SASTRA & KEARIFAN LOKAL', 
+        read_time: '7 Menit Membaca', 
+        description: 'Pembedahan Sujiwo Tejo mengenai nilai-nilai kearifan wayang Nusantara sebagai cermin kehidupan modern.', 
+        content_full: 'Wayang bukan sekadar seni pertunjukan kuno, ia adalah cermin psikologi manusia dan filsafat kehidupan.\n\nDalam sudut pandang Sujiwo Tejo, tokoh-tokoh wayang seperti Semar, Petruk, atau Pandawa menyimbolkan pergulatan batin manusia antara ketakwaan, ego, dan godaan kekuasaan. Di era digital di mana informasi bergerak tanpa saringan, nilai-nilai wayang memberikan kita keheningan untuk berfikir dan berefleksi.\n\nMerawat budaya lokal bukan berarti menolak kemajuan zaman, melainkan menjadikan akar tradisi sebagai jangkar agar kita tidak kehilangan identitas kemanusiaan di tengah gelombang modernisasi.', 
+        link_url: '/artikel/wayang-dan-nalar-bangsa-sujiwo-tejo', 
+        order_index: 2 
+      }
+    ],
+    testimonials: [
+      { id: 't1', profile_id: '55555555-5555-5555-5555-555555555555', author_name: 'Najwa Shihab', author_role: 'Jurnalis Utama & Pendiri Narasi', quote: 'Mbah Jiwo selalu punya cara unik untuk menelanjangi kepalsuan kita dengan kejujuran rasa dan humor budaya yang mendalam.', order_index: 1 },
+      { id: 't2', profile_id: '55555555-5555-5555-5555-555555555555', author_name: 'Gita Wirjawan', author_role: 'Pendidik & Founder Endgame Podcast', quote: 'Kedalaman apresiasi seni dan filsafat kebudayaan Sujiwo Tejo memberikan warna tersendiri dalam diskursus kebangsaan kita.', order_index: 2 }
+    ],
+    initiatives: [
+      { 
+        id: 'i1', 
+        profile_id: '55555555-5555-5555-5555-555555555555', 
+        title: 'Buku Sastra Tali Jiwo & Lupa Endonesi', 
+        category: 'Buku Resmi Gramedia', 
+        description: 'Buku-buku sastra terlaris karya Sujiwo Tejo yang mengupas cinta, filsafat hidup, dan satir sosial.', 
+        price: 'Rp 98.000', 
+        image_url: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 
+        action_text: 'Pesan Buku Resmi Gramedia', 
+        link_url: 'https://www.gramedia.com', 
+        order_index: 1 
+      },
+      { 
+        id: 'i2', 
+        profile_id: '55555555-5555-5555-5555-555555555555', 
+        title: 'Koleksi Apparel Resmi Republik Jancukers', 
+        category: 'Merchandise Resmi', 
+        description: 'Kaos dan merchandise resmi bertema kata-kata mutiara sastra karya Sujiwo Tejo.', 
+        price: 'Rp 185.000', 
+        image_url: 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80', 
+        action_text: 'Kunjungi Toko Resmi', 
+        link_url: 'https://sujiwotejo.com', 
+        order_index: 2 
+      },
+      { 
+        id: 'i3', 
+        profile_id: '55555555-5555-5555-5555-555555555555', 
+        title: 'Tiket Pagelaran Musik & Wayang Suket', 
+        category: 'Tiket Resmi Event', 
+        description: 'Tiket pertunjukan seni live, musik etnoid, dan orasi budaya Sujiwo Tejo.', 
+        price: 'Rp 175.000', 
+        image_url: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80', 
+        action_text: 'Pesan Tiket Resmi', 
+        link_url: 'https://sujiwotejo.com', 
+        order_index: 3 
+      }
+    ]
+  },
   'gita-wirjawan': {
     profile: {
       id: '1151aa5c-2c9d-47d5-a88a-be2a452d7d5a',
