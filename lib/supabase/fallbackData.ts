@@ -138,96 +138,14 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
       },
       theme_default: 'light'
     },
-    lifeEvents: [
-      { id: '1', profile_id: '44444444-4444-4444-4444-444444444444', year_range: '2001 — 2017', title: 'DEDIKASI JURNALISME (METRO TV & MATA NAJWA)', description: 'Mengawali karier sebagai reporter lapangan, meliput Tsunami Aceh 2004, hingga memandu program dialog politik paling berpengaruh di Indonesia.', order_index: 1 },
-      { id: '2', profile_id: '44444444-4444-4444-4444-444444444444', year_range: '2017', title: 'TITIK BALIK INDEPENDENSI (PENDIRIAN NARASI)', description: 'Mendirikan Narasi sebagai ekosistem media independen berbasis kisah, jurnalistik kritis, dan partisipasi aktif anak muda.', order_index: 2 },
-      { id: '3', profile_id: '44444444-4444-4444-4444-444444444444', year_range: '2018 — 2023', title: 'DUTA BACA INDONESIA & EDUSIASI LITERASI', description: 'Menjabat sebagai Duta Baca Indonesia, berkeliling ke berbagai penjuru negeri untuk menyalakan gairah membaca dan literasi kritis.', order_index: 3 },
-      { id: '4', profile_id: '44444444-4444-4444-4444-444444444444', year_range: '2024 — 2026', title: 'GERAKAN KAWAL WAKIL RAKYAT & NARRATIVE FREEDOM', description: 'Mengawal transparansi pemilu, membuka ruang debat publik anak muda, dan memperjuangkan kebebasan pers di era digital.', order_index: 4 }
-    ],
-    works: [
-      { id: 'w1', profile_id: '44444444-4444-4444-4444-444444444444', title: 'Mata Najwa', category: 'Program Dialog Politik & Investigasi', description: 'Program acara perbincangan mendalam yang menguji ketajaman argumen pejabat publik dan menagih komitmen keadilan bagi masyarakat.', link_url: 'https://narasi.tv/mata-najwa', order_index: 1 },
-      { id: 'w2', profile_id: '44444444-4444-4444-4444-444444444444', title: 'Narasi Ecosystem', category: 'Platform Media & Diskursus Publik', description: 'Ekosistem konten digital independen yang mewadahi suara anak muda, esai budaya, dan jurnalisme investigatif.', link_url: 'https://narasi.tv', order_index: 2 },
-      { id: 'w3', profile_id: '44444444-4444-4444-4444-444444444444', title: 'Catatan Najwa', category: 'Karya Tulis & Esai Kebangsaan', description: 'Refleksi kritis dan catatan personal Najwa Shihab tentang perjalanan demokrasi, hukum, dan harapan warga Indonesia.', link_url: 'https://www.gramedia.com', order_index: 3 },
-      { id: 'w4', profile_id: '44444444-4444-4444-4444-444444444444', title: 'Gerakan Indonesia Membaca & Literasi Warga', category: 'Advokasi Pendidikan & Kebudayaan', description: 'Inisiatif berkelanjutan memperluas akses buku dan ruang diskusi kritis bagi komunitas anak muda di daerah.', link_url: 'https://narasi.tv', order_index: 4 }
-    ],
-    gallery: [
-      { id: 'g1', profile_id: '44444444-4444-4444-4444-444444444444', title: 'Mata Najwa: Panggung Dialog Politik & Akuntabilitas', image_url: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1200&q=80', order_index: 1 },
-      { id: 'g2', profile_id: '44444444-4444-4444-4444-444444444444', title: 'Gerakan Literasi Warga: Berkeliling Pelosok Nusantara', image_url: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1200&q=80', order_index: 2 },
-      { id: 'g3', profile_id: '44444444-4444-4444-4444-444444444444', title: 'Narasi Fest: Ruang Kolaborasi & Suara Anak Muda', image_url: 'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=80', order_index: 3 }
-    ],
-    articles: [
-      { 
-        id: 'a1', 
-        profile_id: '44444444-4444-4444-4444-444444444444', 
-        title: 'Menagih Marwah Keadilan: Mengapa Suara Warga Tak Boleh Dikebiri', 
-        tag: 'ESAI JURNALISTIK', 
-        read_time: '8 Menit Membaca', 
-        description: 'Refleksi mendalam Najwa Shihab tentang peran vital pers dan jurnalisme kritis dalam mengawal kebebasan berpendapat dan transparansi publik.', 
-        content_full: 'Di tengah arus informasi yang serba cepat dan riuhnya opini digital, peran jurnalisme tidak pernah surut dari garis depan pertahanan demokrasi.\n\nBagi Najwa Shihab, menagih pertanggungjawaban penguasa bukan persoalan konfrontasi politik, melainkan mandat konstitusional warga. Ketika ruang-ruang publik dipenuhi narasi rekayasa dan retorika manis, tugas pers adalah menghadirkan pertanyaan-pertanyaan jernih yang mewakili kegelisahan rakyat biasa.\n\n"Kebenaran tidak pernah takut pada pengujian," tegas Najwa. Mengawal keadilan memerlukan keberanian untuk tetap berdiri di sisi warga, menguji setiap kebijakan yang berdampak pada hajat hidup orang banyak, dan memastikan bahwa suara mereka yang tak terdengar tetap menggema di panggung nasional.', 
-        link_url: '/artikel/menagih-marwah-keadilan-najwa-shihab', 
-        order_index: 1 
-      },
-      { 
-        id: 'a2', 
-        profile_id: '44444444-4444-4444-4444-444444444444', 
-        title: 'Catatan Keberanian: Menyalakan Nyala Literasi di Ujung Negeri', 
-        tag: 'LITERASI & WARISAN', 
-        read_time: '7 Menit Membaca', 
-        description: 'Catatan perjalanan Najwa Shihab berkeliling pelosok Nusantara untuk membangun ruang baca dan kesadaran bernalar anak muda.', 
-        content_full: 'Membaca bukan sekadar mengeja kata di atas kertas, melainkan membuka jendela kedaulatan berpikir.\n\nDalam perjalanannya sebagai Duta Baca Indonesia, Najwa menyaksikan sendiri dahaganya anak-anak di pelosok Nusantara akan ilmu pengetahuan. Dari perpustakaan apung di pesisir hingga pojok baca sederhana di kaki gunung, semangat gotong royong warga untuk merawat literasi selalu menjadi pemantik harapan.\n\nGenerasi muda yang kritis dan terdidik adalah benteng terkuat sebuah bangsa. Ketika anak-anak kita dibekali keberanian bernalar dan akses literasi yang luas, mereka tidak akan mudah digoyahkan oleh pembodohan atau disinformasi.', 
-        link_url: '/artikel/catatan-keberanian-literasi-najwa-shihab', 
-        order_index: 2 
-      }
-    ],
-    testimonials: [
-      { id: 't1', profile_id: '44444444-4444-4444-4444-444444444444', author_name: 'Gita Wirjawan', author_role: 'Pendidik & Founder Endgame Podcast', quote: 'Najwa adalah simbol keberanian jurnalisme Indonesia yang konsisten mengawal kualitas diskursus publik kita.', order_index: 1 },
-      { id: 't2', profile_id: '44444444-4444-4444-4444-444444444444', author_name: 'Ferry Irwandi', author_role: 'Video Esais & Pendiri Malaka Project', quote: 'Ketajaman dan konsistensi Mba Nana dalam menagih akuntabilitas adalah inspirasi besar bagi gerakan nalar kritis anak muda.', order_index: 2 }
-    ],
-    initiatives: [
-      { 
-        id: 'i1', 
-        profile_id: '44444444-4444-4444-4444-444444444444', 
-        title: 'Buku Catatan Najwa', 
-        category: 'Buku Resmi Gramedia', 
-        description: 'Buku esai dan pemikiran kritis Najwa Shihab tentang perjalanan demokrasi, hukum, dan harapan kebangsaan.', 
-        price: 'Rp 125.000', 
-        image_url: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 
-        action_text: 'Pesan Buku Resmi Gramedia', 
-        link_url: 'https://www.gramedia.com', 
-        order_index: 1 
-      },
-      { 
-        id: 'i2', 
-        profile_id: '44444444-4444-4444-4444-444444444444', 
-        title: 'Merchandise Resmi Narasi', 
-        category: 'Merchandise Resmi', 
-        description: 'Koleksi apparel dan jurnal resmi Narasi bertema kebebasan bersuara dan literasi publik.', 
-        price: 'Rp 199.000', 
-        image_url: 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80', 
-        action_text: 'Kunjungi Narasi Store', 
-        link_url: 'https://narasi.tv', 
-        order_index: 2 
-      },
-      { 
-        id: 'i3', 
-        profile_id: '44444444-4444-4444-4444-444444444444', 
-        title: 'Tiket Event Narasi Fest & Kelas Jurnalistik', 
-        category: 'Tiket Resmi Event', 
-        description: 'Tiket festival wawasan, kelas jurnalisme publik, dan temu komunitas pemuda Narasi.', 
-        price: 'Rp 150.000', 
-        image_url: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80', 
-        action_text: 'Pesan Tiket Resmi', 
-        link_url: 'https://narasi.tv', 
-        order_index: 3 
-      }
-    ]
+    lifeEvents: [], works: [], gallery: [], articles: [], testimonials: [], initiatives: []
   },
   'sujiwo-tejo': {
     profile: {
       id: '55555555-5555-5555-5555-555555555555',
       slug: 'sujiwo-tejo',
       name: 'SUJIWO TEJO',
-      title: 'THE VOICES • BUDAYAWAN • PRESIDEN JANKOKU',
+      title: 'THE VOICES • BUDAYAWAN • PRESIDEN JANCUKERS',
       category: 'THE VOICES',
       bio_paragraphs: [
         'Sujiwo Tejo (dikenal juga sebagai Mbah Jiwo) adalah seorang budayawan, dalang, penulis, dan seniman serba bisa Indonesia yang selama puluhan tahun konsisten menyuarakan kebebasan berpikir, kejujuran nurani, dan satir kebudayaan lewat media seni.',
@@ -246,89 +164,230 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
       },
       theme_default: 'dark'
     },
-    lifeEvents: [
-      { id: '1', profile_id: '55555555-5555-5555-5555-555555555555', year_range: '1980 — 1990', title: 'AWAL KARIER WARTAWAN & DALANG', description: 'Mengawali karier sebagai jurnalis harian Kompas sebelum mendedikasikan hidup sepenuhnya sebagai dalang dan seniman independen.', order_index: 1 },
-      { id: '2', profile_id: '55555555-5555-5555-5555-555555555555', year_range: '1998 — 2005', title: 'MAHAKARYA WAYANG SUKET & TEATER', description: 'Menciptakan pertunjukan wayang suket (rumput) yang inovatif, mendobrak sekat teater tradisional dengan kebebasan gagasan.', order_index: 2 },
-      { id: '3', profile_id: '55555555-5555-5555-5555-555555555555', year_range: '2011 — 2020', title: 'REPUBLIK JANCUKERS & REVOLUSI SASTRA', description: 'Meluncurkan buku-buku sastra terlaris seperti Tali Jiwo dan menggerakkan komunitas berpikir bebas Jancukers.', order_index: 3 },
-      { id: '4', profile_id: '55555555-5555-5555-5555-555555555555', year_range: '2021 — 2026', title: 'MAESTRO BUDAYA & EDUKASI KEBIJAKAN', description: 'Aktif membedah kearifan lokal, etika berbangsa, dan sastra budaya di tengah disrupsi teknologi digital.', order_index: 4 }
-    ],
-    works: [
-      { id: 'w1', profile_id: '55555555-5555-5555-5555-555555555555', title: 'Pertunjukan Wayang Suket & Orasi Budaya', category: 'Seni Pertunjukan & Dalang', description: 'Pagelaran seni wayang rumput kontemporer yang memadukan humor satir, musik, dan kritik sosial mendalam.', link_url: 'https://sujiwotejo.com', order_index: 1 },
-      { id: 'w2', profile_id: '55555555-5555-5555-5555-555555555555', title: 'Buku Sastra & Esai Tali Jiwo', category: 'Karya Tulis & Antologi Pemikiran', description: 'Kumpulan tulisan filosofis, puisi cinta, dan perenungan sosial budaya tentang hakikat kemanusiaan.', link_url: 'https://www.gramedia.com', order_index: 2 },
-      { id: 'w3', profile_id: '55555555-5555-5555-5555-555555555555', title: 'Album Musik & Tembang Jiwo', category: 'Karya Musik & Komposisi Seni', description: 'Koleksi lagu-lagu etnoid independen dengan lirik poetis yang menggugah jiwa.', link_url: 'https://open.spotify.com/artist/sujiwotejo', order_index: 3 },
-      { id: 'w4', profile_id: '55555555-5555-5555-5555-555555555555', title: 'Podcast & Kolam Diskusi Kebudayaan', category: 'Media Edukasi Budaya', description: 'Ruang bincang kebudayaan yang mengajak generasi muda menyelami akar sejarah dan kejujuran nurani.', link_url: 'https://youtube.com/@sujiwotejo', order_index: 4 }
-    ],
-    gallery: [
-      { id: 'g1', profile_id: '55555555-5555-5555-5555-555555555555', title: 'Pagelaran Wayang Suket & Orasi Kebudayaan Mbah Jiwo', image_url: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=1200&q=80', order_index: 1 },
-      { id: 'g2', profile_id: '55555555-5555-5555-5555-555555555555', title: 'Sesi Melukis & Ekspresi Seni Rupa Sujiwo Tejo', image_url: 'https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=1200&q=80', order_index: 2 },
-      { id: 'g3', profile_id: '55555555-5555-5555-5555-555555555555', title: 'Diskusi Sastra & Sapa Warga Jancukers', image_url: 'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=80', order_index: 3 }
-    ],
-    articles: [
-      { 
-        id: 'a1', 
-        profile_id: '55555555-5555-5555-5555-555555555555', 
-        title: 'Mencintai Tanpa Kepalsuan: Catatan Filosofis Sujiwo Tejo Tentang Kejujuran Nurani', 
-        tag: 'FILSAFAT & KEBUDAYAAN', 
-        read_time: '8 Menit Membaca', 
-        description: 'Refleksi mendalam Sujiwo Tejo tentang pentingnya kejujuran rasa, kebebasan berpikir, dan menanggalkan jubah kepalsuan sosial.', 
-        content_full: 'Di tengah masyarakat yang makin mengagungkan pencitraan dan formalisme agama maupun hukum, Sujiwo Tejo hadir sebagai pengingat akan pentingnya kejujuran nurani.\n\nBagi Mbah Jiwo, kebudayaan sejati bukan tentang pakaian adat atau ritual kaku, melainkan tentang bagaimana kita memperlakukan sesama manusia dengan rasa hormat dan empati tanpa kepalsuan.\n\n"Banyak orang pintar bicara kebenaran, tapi lupa cara mencintai," kata Sujiwo Tejo. Lewat pendekatan seni yang humoris dan satir, ia mengajak generasi muda untuk berani jujur pada diri sendiri, tidak mudah menghakimi orang lain, dan merawat cinta kasihan sebagai fondasi utama berbangsa.', 
-        link_url: '/artikel/mencintai-tanpa-kepalsuan-sujiwo-tejo', 
-        order_index: 1 
+    lifeEvents: [], works: [], gallery: [], articles: [], testimonials: [], initiatives: []
+  },
+  'cania-citta': {
+    profile: {
+      id: '66666666-6666-6666-6666-666666666666',
+      slug: 'cania-citta',
+      name: 'CANIA CITTA',
+      title: 'THE VOICES • PEMIKIR POLITIK • CO-FOUNDER MALAKA',
+      category: 'THE VOICES',
+      bio_paragraphs: [
+        'Cania Citta Marsshita adalah pemikir politik, video esais, dan co-founder Malaka Project yang dikenal lewat keberaniannya membedah filsafat politik dan kebebasan individu.',
+        'Melalui konten berbasis riset di Malaka Project, Cania mengajak generasi muda mempertanyakan dogma politik dan membangun nalar kritis.'
+      ],
+      quote: 'Kebebasan berpikir dan rasionalitas adalah hak paling mendasar yang tidak boleh dikompromikan oleh dogma apa pun.',
+      photo_url: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80',
+      verified: true,
+      status_text: 'VERIFIKASI TERKURASI',
+      social_links: {
+        youtube: 'https://youtube.com/@caniacitta',
+        instagram: 'https://instagram.com/caniacitta',
+        twitter: 'https://twitter.com/caniacitta'
       },
-      { 
-        id: 'a2', 
-        profile_id: '55555555-5555-5555-5555-555555555555', 
-        title: 'Wayang dan Nalar Bangsa: Merawat Akar Budaya di Era Disrupsi Digital', 
-        tag: 'SASTRA & KEARIFAN LOKAL', 
-        read_time: '7 Menit Membaca', 
-        description: 'Pembedahan Sujiwo Tejo mengenai nilai-nilai kearifan wayang Nusantara sebagai cermin kehidupan modern.', 
-        content_full: 'Wayang bukan sekadar seni pertunjukan kuno, ia adalah cermin psikologi manusia dan filsafat kehidupan.\n\nDalam sudut pandang Sujiwo Tejo, tokoh-tokoh wayang seperti Semar, Petruk, atau Pandawa menyimbolkan pergulatan batin manusia antara ketakwaan, ego, dan godaan kekuasaan. Di era digital di mana informasi bergerak tanpa saringan, nilai-nilai wayang memberikan kita keheningan untuk berfikir dan berefleksi.\n\nMerawat budaya lokal bukan berarti menolak kemajuan zaman, melainkan menjadikan akar tradisi sebagai jangkar agar kita tidak kehilangan identitas kemanusiaan di tengah gelombang modernisasi.', 
-        link_url: '/artikel/wayang-dan-nalar-bangsa-sujiwo-tejo', 
-        order_index: 2 
-      }
-    ],
-    testimonials: [
-      { id: 't1', profile_id: '55555555-5555-5555-5555-555555555555', author_name: 'Najwa Shihab', author_role: 'Jurnalis Utama & Pendiri Narasi', quote: 'Mbah Jiwo selalu punya cara unik untuk menelanjangi kepalsuan kita dengan kejujuran rasa dan humor budaya yang mendalam.', order_index: 1 },
-      { id: 't2', profile_id: '55555555-5555-5555-5555-555555555555', author_name: 'Gita Wirjawan', author_role: 'Pendidik & Founder Endgame Podcast', quote: 'Kedalaman apresiasi seni dan filsafat kebudayaan Sujiwo Tejo memberikan warna tersendiri dalam diskursus kebangsaan kita.', order_index: 2 }
-    ],
-    initiatives: [
-      { 
-        id: 'i1', 
-        profile_id: '55555555-5555-5555-5555-555555555555', 
-        title: 'Buku Sastra Tali Jiwo & Lupa Endonesi', 
-        category: 'Buku Resmi Gramedia', 
-        description: 'Buku-buku sastra terlaris karya Sujiwo Tejo yang mengupas cinta, filsafat hidup, dan satir sosial.', 
-        price: 'Rp 98.000', 
-        image_url: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 
-        action_text: 'Pesan Buku Resmi Gramedia', 
-        link_url: 'https://www.gramedia.com', 
-        order_index: 1 
+      theme_default: 'light'
+    },
+    lifeEvents: [], works: [], gallery: [], articles: [], testimonials: [], initiatives: []
+  },
+  'jerome-polin': {
+    profile: {
+      id: '77777777-7777-7777-7777-777777777777',
+      slug: 'jerome-polin',
+      name: 'JEROME POLIN',
+      title: 'THE STRATEGISTS • EDUKATOR MATEMATIKA • FOUNDER MANTAPPU',
+      category: 'THE STRATEGISTS',
+      bio_paragraphs: [
+        'Jerome Polin Sijabat adalah edukator matematika, YouTuber lulusan Waseda University, dan pengusaha muda pendiri Mantappu Corp.',
+        'Lewat pembawaannya yang komunikatif, Jerome mengikis stigma matematika sebagai pelajaran menakutkan.'
+      ],
+      quote: 'Matematika bukan tentang menghafal rumus, tapi tentang mengasah pola pikir pemecahan masalah.',
+      photo_url: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80',
+      verified: true,
+      status_text: 'VERIFIKASI TERKURASI',
+      social_links: {
+        youtube: 'https://youtube.com/@nihongomantappu',
+        instagram: 'https://instagram.com/jeromepolin'
       },
-      { 
-        id: 'i2', 
-        profile_id: '55555555-5555-5555-5555-555555555555', 
-        title: 'Koleksi Apparel Resmi Republik Jancukers', 
-        category: 'Merchandise Resmi', 
-        description: 'Kaos dan merchandise resmi bertema kata-kata mutiara sastra karya Sujiwo Tejo.', 
-        price: 'Rp 185.000', 
-        image_url: 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80', 
-        action_text: 'Kunjungi Toko Resmi', 
-        link_url: 'https://sujiwotejo.com', 
-        order_index: 2 
+      theme_default: 'light'
+    },
+    lifeEvents: [], works: [], gallery: [], articles: [], testimonials: [], initiatives: []
+  },
+  'yohanes-surya': {
+    profile: {
+      id: '88888888-8888-8888-8888-888888888888',
+      slug: 'yohanes-surya',
+      name: 'PROF. YOHANES SURYA',
+      title: 'THE STRATEGISTS • FISIKAWAN • PENGEMBANG METODE GASING',
+      category: 'THE STRATEGISTS',
+      bio_paragraphs: [
+        'Prof. Yohanes Surya Ph.D adalah fisikawan senior dan pencipta metode pembelajaran GASING.',
+        'Beliau melatih anak-anak terpencil Indonesia hingga meraih emas olimpiade sains dunia.'
+      ],
+      quote: 'Tidak ada anak yang bodoh di dunia ini, yang ada hanyalah anak yang belum mendapatkan kesempatan belajar dengan cara yang tepat.',
+      photo_url: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80',
+      verified: true,
+      status_text: 'VERIFIKASI TERKURASI',
+      social_links: {
+        website: 'https://yohanessurya.com'
       },
-      { 
-        id: 'i3', 
-        profile_id: '55555555-5555-5555-5555-555555555555', 
-        title: 'Tiket Pagelaran Musik & Wayang Suket', 
-        category: 'Tiket Resmi Event', 
-        description: 'Tiket pertunjukan seni live, musik etnoid, dan orasi budaya Sujiwo Tejo.', 
-        price: 'Rp 175.000', 
-        image_url: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80', 
-        action_text: 'Pesan Tiket Resmi', 
-        link_url: 'https://sujiwotejo.com', 
-        order_index: 3 
-      }
-    ]
+      theme_default: 'light'
+    },
+    lifeEvents: [], works: [], gallery: [], articles: [], testimonials: [], initiatives: []
+  },
+  'ryu-hasan': {
+    profile: {
+      id: '99999999-9999-9999-9999-999999999999',
+      slug: 'ryu-hasan',
+      name: 'DR. RYU HASAN',
+      title: 'THE STRATEGISTS • PAKAR NEUROSAINS • EDUKATOR BIOLOGI PERILAKU',
+      category: 'THE STRATEGISTS',
+      bio_paragraphs: [
+        'Dr. Ryu Hasan adalah dokter spesialis bedah saraf dan komunikator sains biologi perilaku manusia.',
+        'Dr. Ryu mendekonstruksi mitos emosi dan keputusan manusia dari sudut pandang neurosains.'
+      ],
+      quote: 'Semua keputusan dan emosi manusia berakar dari aktivitas biologis otak.',
+      photo_url: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=800&q=80',
+      verified: true,
+      status_text: 'VERIFIKASI TERKURASI',
+      social_links: {
+        youtube: 'https://youtube.com/@ryuhasan'
+      },
+      theme_default: 'light'
+    },
+    lifeEvents: [], works: [], gallery: [], articles: [], testimonials: [], initiatives: []
+  },
+  'pandji-pragiwaksono': {
+    profile: {
+      id: 'aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa',
+      slug: 'pandji-pragiwaksono',
+      name: 'PANDJI PRAGIWAKSONO',
+      title: 'THE ENTERTAINERS • KOMIKA SATIR • PIONIR STAND-UP COMEDY',
+      category: 'THE ENTERTAINERS',
+      bio_paragraphs: [
+        'Pandji Pragiwaksono adalah pionir stand-up comedy Indonesia dan komika satir politik.',
+        'Pandji mengajarkan pentingnya menertawakan isu-isu tabu dan menjaga ruang kebebasan berpendapat.'
+      ],
+      quote: 'Komedi adalah cara paling elegan untuk membicarakan hal-hal jujur yang biasanya ditakuti orang banyak.',
+      photo_url: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=800&q=80',
+      verified: true,
+      status_text: 'VERIFIKASI TERKURASI',
+      social_links: {
+        youtube: 'https://youtube.com/@pandjipragiwaksono'
+      },
+      theme_default: 'dark'
+    },
+    lifeEvents: [], works: [], gallery: [], articles: [], testimonials: [], initiatives: []
+  },
+  'sal-priadi': {
+    profile: {
+      id: 'bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb',
+      slug: 'sal-priadi',
+      name: 'SAL PRIADI',
+      title: 'THE ENTERTAINERS • MUSISI POETIS • SASTRAWAN PERTUNJUKAN',
+      category: 'THE ENTERTAINERS',
+      bio_paragraphs: [
+        'Sal Priadi adalah penyanyi dan penulis lagu Indonesia yang dikenal lewat narasi lirik musiknya yang sangat poetis.',
+        'Karya-karyanya seperti Gala Bunga Matahari menjadi fenomena katarsis budaya bagi generasi muda.'
+      ],
+      quote: 'Musik adalah rumah bagi perasaan-perasaan yang tidak pernah sempat kita ucapkan secara langsung.',
+      photo_url: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80',
+      verified: true,
+      status_text: 'VERIFIKASI TERKURASI',
+      social_links: {
+        spotify: 'https://open.spotify.com/artist/salpriadi'
+      },
+      theme_default: 'dark'
+    },
+    lifeEvents: [], works: [], gallery: [], articles: [], testimonials: [], initiatives: []
+  },
+  'arie-kriting': {
+    profile: {
+      id: 'cccccccc-cccc-cccc-cccc-cccccccccccc',
+      slug: 'arie-kriting',
+      name: 'ARIE KRITING',
+      title: 'THE ENTERTAINERS • KOMIKA SATIR • SUARA KETENAGAN TIMUR',
+      category: 'THE ENTERTAINERS',
+      bio_paragraphs: [
+        'Arie Kriting adalah komika, sutradara, dan aktor yang menyuarakan keadilan sosial Indonesia Timur.',
+        'Arie menggunakan platform komedi untuk meruntuhkan stereotipe dan memperjuangkan hak warga daerah.'
+      ],
+      quote: 'Indonesia itu indah karena ragam suaranya, dan keadilan harus bisa dirasakan sama dari barat sampai ke timur.',
+      photo_url: 'https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?auto=format&fit=crop&w=800&q=80',
+      verified: true,
+      status_text: 'VERIFIKASI TERKURASI',
+      social_links: {
+        youtube: 'https://youtube.com/@ArieKritingOfficial'
+      },
+      theme_default: 'dark'
+    },
+    lifeEvents: [], works: [], gallery: [], articles: [], testimonials: [], initiatives: []
+  },
+  'butet-manurung': {
+    profile: {
+      id: 'dddddddd-dddd-dddd-dddd-dddddddddddd',
+      slug: 'butet-manurung',
+      name: 'BUTET MANURUNG',
+      title: 'THE GRASSROOTS • AKTIVIS PENDIDIKAN • PENDIRI SOKOLA RIMBA',
+      category: 'THE GRASSROOTS',
+      bio_paragraphs: [
+        'Butet Manurung adalah pendiri Sokola Rimba yang mendedikasikan hidupnya mengajar Orang Rimba.',
+        'Butet membela hak kedaulatan tanah dan identitas budaya masyarakat adat Indonesia.'
+      ],
+      quote: 'Pendidikan sejati tidak boleh mencabut seseorang dari akar budaya dan lingkungannya.',
+      photo_url: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80',
+      verified: true,
+      status_text: 'VERIFIKASI TERKURASI',
+      social_links: {
+        website: 'https://sokola.org'
+      },
+      theme_default: 'light'
+    },
+    lifeEvents: [], works: [], gallery: [], articles: [], testimonials: [], initiatives: []
+  },
+  'swietenia-puspa': {
+    profile: {
+      id: 'eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee',
+      slug: 'swietenia-puspa',
+      name: 'SWIETENIA PUSPA',
+      title: 'THE GRASSROOTS • AKTIVIS LINGKUNGAN • PENDIRI DIVERS CLEAN ACTION',
+      category: 'THE GRASSROOTS',
+      bio_paragraphs: [
+        'Swietenia Puspa Lestari adalah pendiri Divers Clean Action (DCA) yang menggerakkan pemuda membersihkan sampah laut.',
+        'Swietenia masuk dalam daftar BBC 100 Women sebagai penggerak penyelamatan ekosistem laut Nusantara.'
+      ],
+      quote: 'Menjaga laut Indonesia bukan cuma tugas pemerintah, tapi tanggung jawab tiap individu.',
+      photo_url: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80',
+      verified: true,
+      status_text: 'VERIFIKASI TERKURASI',
+      social_links: {
+        website: 'https://diverscleanaction.org'
+      },
+      theme_default: 'light'
+    },
+    lifeEvents: [], works: [], gallery: [], articles: [], testimonials: [], initiatives: []
+  },
+  'mbah-minto': {
+    profile: {
+      id: 'ffffffff-ffff-ffff-ffff-ffffffffffff',
+      slug: 'mbah-minto',
+      name: 'MBAH MINTO',
+      title: 'THE GRASSROOTS • MAESTRO BUDAYA • SIMBOL KEARIFAN LOKAL',
+      category: 'THE GRASSROOTS',
+      bio_paragraphs: [
+        'Mbah Minto adalah maestro seni tradisi dan figur jenaka asal Klaten yang menjadi pahlawan kebudayaan warga.',
+        'Sosoknya membuktikan bahwa kearifan lokal dan seni tradisi mampu menyatukan hati jutaan rakyat Indonesia.'
+      ],
+      quote: 'Keturunan dan gelar itu bisa dicari, tapi kejujuran hati dan rasa saling mengasihi adalah warisan terbesar manusia.',
+      photo_url: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80',
+      verified: true,
+      status_text: 'VERIFIKASI TERKURASI',
+      social_links: {
+        youtube: 'https://youtube.com/@UCPoket'
+      },
+      theme_default: 'light'
+    },
+    lifeEvents: [], works: [], gallery: [], articles: [], testimonials: [], initiatives: []
   },
   'gita-wirjawan': {
     profile: {
@@ -354,12 +413,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
       },
       theme_default: 'light'
     },
-    lifeEvents: [],
-    works: [],
-    gallery: [],
-    articles: [],
-    testimonials: [],
-    initiatives: []
+    lifeEvents: [], works: [], gallery: [], articles: [], testimonials: [], initiatives: []
   },
   'baskara-putra': {
     profile: {
@@ -384,12 +438,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
       },
       theme_default: 'dark'
     },
-    lifeEvents: [],
-    works: [],
-    gallery: [],
-    articles: [],
-    testimonials: [],
-    initiatives: []
+    lifeEvents: [], works: [], gallery: [], articles: [], testimonials: [], initiatives: []
   }
 };
 
