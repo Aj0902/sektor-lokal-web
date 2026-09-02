@@ -1,3 +1,20 @@
+export interface SocialLinks {
+  youtube?: string;
+  twitter?: string;
+  instagram?: string;
+  spotify?: string;
+  tiktok?: string;
+  linkedin?: string;
+  threads?: string;
+  facebook?: string;
+  website?: string;
+  email?: string;
+  substack?: string;
+  medium?: string;
+  trakteer?: string;
+  patreon?: string;
+}
+
 export interface Profile {
   id: string;
   slug: string;
@@ -9,13 +26,7 @@ export interface Profile {
   photo_url: string;
   verified: boolean;
   status_text: string;
-  social_links: {
-    youtube?: string;
-    twitter?: string;
-    instagram?: string;
-    spotify?: string;
-    email?: string;
-  };
+  social_links: SocialLinks;
   theme_default?: 'light' | 'dark';
   created_at?: string;
 }
@@ -51,6 +62,14 @@ export interface Article {
   order_index: number;
 }
 
+export interface GalleryItem {
+  id: string;
+  profile_id: string;
+  title: string;
+  image_url: string;
+  order_index: number;
+}
+
 export interface Testimonial {
   id: string;
   profile_id: string;
@@ -67,7 +86,7 @@ export interface Initiative {
   category: string;
   description: string;
   price?: string;
-  price_variants?: string[];
+  image_url?: string;
   action_text: string;
   link_url: string;
   order_index: number;
@@ -78,6 +97,7 @@ export interface FullProfileData {
   lifeEvents: LifeEvent[];
   works: Work[];
   articles: Article[];
+  gallery: GalleryItem[];
   testimonials: Testimonial[];
   initiatives: Initiative[];
 }

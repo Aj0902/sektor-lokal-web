@@ -16,24 +16,19 @@ import {
   Radio, 
   ArrowUpRight,
   ChevronDown,
-  ChevronLeft,
-  ChevronRight,
   ArrowDown,
   ArrowLeft,
-  Share2,
+  ArrowRight,
   BookOpen,
-  CheckCircle2,
-  Sparkles,
-  Tag,
-  Clock,
-  ExternalLink,
-  ShieldCheck
+  Globe,
+  Share2,
+  Bookmark
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import ConstellationCanvas from '../../../components/ConstellationCanvas';
 import ParallaxGallery from '../../../components/ParallaxGallery';
 import { fallbackProfiles } from '../../../lib/supabase/fallbackData';
-import { FullProfileData, Article, Initiative } from '../../../lib/supabase/types';
+import { FullProfileData, Article } from '../../../lib/supabase/types';
 import { createClient } from '../../../lib/supabase/client';
 
 export default function DynamicProfilePage() {
@@ -44,24 +39,16 @@ export default function DynamicProfilePage() {
   const [activeAccordion, setActiveAccordion] = useState<number | null>(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
-  const [copiedToast, setCopiedToast] = useState(false);
 
-  // Article Modal State
+  const [productSlideIndex, setProductSlideIndex] = useState(0);
+  const [testimonialSlideIndex, setTestimonialSlideIndex] = useState(0);
   const [selectedArticle, setSelectedArticle] = useState<Article | null>(null);
-
-  // Product Carousel State
-  const [productIndex, setProductIndex] = useState(0);
-  const [selectedVariant, setSelectedVariant] = useState<Record<string, string>>({});
-
-  // Testimonial Carousel State
-  const [testimonialIndex, setTestimonialIndex] = useState(0);
 
   const [profileData, setProfileData] = useState<FullProfileData>(
     fallbackProfiles[slug] || fallbackProfiles['ferry-irwandi']
   );
 
   useEffect(() => {
-    // Attempt Supabase Fetch
     const fetchFromSupabase = async () => {
       try {
         const supabase = createClient();
@@ -73,12 +60,13 @@ export default function DynamicProfilePage() {
 
         if (prof && !pError) {
           const pId = prof.id;
-          const [life, wrk, art, tst, ini] = await Promise.all([
+          const [life, wrk, art, tst, ini, gal] = await Promise.all([
             supabase.from('life_events').select('*').eq('profile_id', pId).order('order_index'),
             supabase.from('works').select('*').eq('profile_id', pId).order('order_index'),
             supabase.from('articles').select('*').eq('profile_id', pId).order('order_index'),
             supabase.from('testimonials').select('*').eq('profile_id', pId).order('order_index'),
             supabase.from('initiatives').select('*').eq('profile_id', pId).order('order_index'),
+            supabase.from('gallery').select('*').eq('profile_id', pId).order('order_index'),
           ]);
 
           setProfileData({
@@ -87,11 +75,12 @@ export default function DynamicProfilePage() {
             works: wrk.data || [],
             articles: art.data || [],
             testimonials: tst.data || [],
-            initiatives: ini.data || []
+            initiatives: ini.data || [],
+            gallery: gal.data || []
           });
         }
       } catch {
-        // Use local fallback
+        // Local fallback
       }
     };
 
@@ -110,51 +99,17 @@ export default function DynamicProfilePage() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleShare = () => {
-    if (typeof navigator !== 'undefined') {
-      navigator.clipboard.writeText(window.location.href);
-      setCopiedToast(true);
-      setTimeout(() => setCopiedToast(false), 2500);
-    }
-  };
+  const { profile, lifeEvents, works, articles, testimonials, initiatives, gallery = [] } = profileData;
 
-  const { profile, lifeEvents, works, articles, testimonials, initiatives } = profileData;
+  const bgCanvas = isDarkMode ? 'particle-wave-dark text-[#EDE8DC]' : 'particle-wave-light text-[#0A0E1A]';
+  const cardClass = isDarkMode ? 'spotlight-card-dark' : 'spotlight-card-light';
+  const mutedText = isDarkMode ? 'text-[#8A93A8]' : 'text-[#64748B]';
+  const navBg = isDarkMode ? 'bg-[#0A0E1A]/90 border-white/[0.08]' : 'bg-[#F9F8F5]/90 border-black/[0.08]';
 
-  const bgCanvas = isDarkMode ? 'bg-[#0A0E17] text-[#F1F5F9]' : 'bg-[#FAF9F6] text-[#0F172A]';
-  const cardClass = isDarkMode ? 'editorial-card-dark' : 'editorial-card-light';
-  const mutedText = isDarkMode ? 'text-neutral-400' : 'text-neutral-600';
-  const dividerClass = isDarkMode ? 'border-white/[0.08]' : 'border-black/[0.08]';
-  const navBg = isDarkMode ? 'bg-[#0A0E17]/85 border-white/[0.08]' : 'bg-[#FAF9F6]/85 border-black/[0.06]';
-  const quoteBgClass = isDarkMode ? 'bg-[#0E1424]/80 border-white/[0.08]' : 'bg-[#F4F2EE] border-stone-200/80';
-
-  // Product Carousel Handlers
-  const nextProduct = () => {
-    if (initiatives.length > 0) {
-      setProductIndex((prev) => (prev + 1) % initiatives.length);
-    }
-  };
-
-  const prevProduct = () => {
-    if (initiatives.length > 0) {
-      setProductIndex((prev) => (prev - 1 + initiatives.length) % initiatives.length);
-    }
-  };
-
-  // Testimonial Carousel Handlers
-  const nextTestimonial = () => {
-    if (testimonials.length > 0) {
-      setTestimonialIndex((prev) => (prev + 1) % testimonials.length);
-    }
-  };
-
-  const prevTestimonial = () => {
-    if (testimonials.length > 0) {
-      setTestimonialIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
-    }
-  };
+  const soc = profile.social_links || {};
 
   return (
-    <div className={`min-h-screen ${bgCanvas} font-sans antialiased selection:bg-[#E11D48] selection:text-white relative overflow-x-hidden`}>
+    <div className={`min-h-screen ${bgCanvas} font-sans antialiased selection:bg-[#E11D48] selection:text-white relative`}>
       
       {/* ECIDNI FLOATING RED CONSTELLATION WAVE */}
       <ConstellationCanvas isDarkMode={isDarkMode} />
@@ -169,37 +124,22 @@ export default function DynamicProfilePage() {
       <header className={`sticky top-0 z-40 backdrop-blur-md border-b px-6 py-4 transition-colors ${navBg}`}>
         <div className="max-w-6xl mx-auto flex items-center justify-between">
           
-          {/* Back to Directory Link */}
           <Link href="/" className="flex items-center gap-2 text-xs font-mono font-bold tracking-wider uppercase text-[#E11D48] hover:underline">
             <ArrowLeft className="w-4 h-4" />
-            <span>DIREKTORI PROFIL</span>
+            <span>KEMBALI KE DIREKTORI</span>
           </Link>
 
-          {/* Quick Anchor Navigation Links */}
-          <nav className="hidden md:flex items-center gap-6 text-xs font-semibold tracking-wide uppercase">
+          <nav className="hidden md:flex items-center gap-6 text-xs font-medium tracking-wide uppercase">
             <a href="#tentang" className="hover:text-[#E11D48] transition-colors">Tentang</a>
             <a href="#perjalanan" className="hover:text-[#E11D48] transition-colors">Perjalanan</a>
             <a href="#karya" className="hover:text-[#E11D48] transition-colors">Karya</a>
+            <a href="#galeri" className="hover:text-[#E11D48] transition-colors">Galeri</a>
             <a href="#artikel" className="hover:text-[#E11D48] transition-colors">Artikel</a>
             <a href="#produk" className="hover:text-[#E11D48] transition-colors">Inisiatif</a>
             <a href="#kata-warga" className="hover:text-[#E11D48] transition-colors">Kata Warga</a>
           </nav>
 
-          {/* Actions: Share, Theme Switcher & Menu */}
           <div className="flex items-center gap-3">
-            <button
-              onClick={handleShare}
-              className={`px-3 py-1.5 rounded-lg border text-xs font-medium transition-all flex items-center gap-1.5 ${
-                isDarkMode 
-                  ? 'border-white/10 hover:border-white/20 bg-white/[0.02] text-neutral-300' 
-                  : 'border-black/10 hover:border-black/20 bg-black/[0.02] text-neutral-700'
-              }`}
-              title="Salin Tautan Halaman"
-            >
-              <Share2 className="w-3.5 h-3.5" />
-              <span className="hidden sm:inline">{copiedToast ? 'Tersalin' : 'Bagikan'}</span>
-            </button>
-
             <button
               onClick={() => setIsDarkMode(!isDarkMode)}
               className={`p-2 rounded-xl border text-xs font-semibold flex items-center gap-2 transition-all shadow-sm ${
@@ -237,59 +177,46 @@ export default function DynamicProfilePage() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             className={`fixed inset-0 top-[65px] z-30 p-8 flex flex-col space-y-6 text-xl font-display uppercase tracking-wider backdrop-blur-2xl border-b md:hidden ${
-              isDarkMode ? 'bg-[#0A0E17]/98 border-white/10' : 'bg-[#FAF9F6]/98 border-black/10'
+              isDarkMode ? 'bg-[#0A0E1A]/98 border-white/10' : 'bg-[#F9F8F5]/98 border-black/10'
             }`}
           >
-            <a href="#tentang" onClick={() => setIsMenuOpen(false)} className="hover:text-[#E11D48] transition-colors flex items-center justify-between">
-              <span>01 // Tentang</span>
-              <ArrowUpRight className="w-4 h-4 text-[#E11D48]" />
-            </a>
-            <a href="#perjalanan" onClick={() => setIsMenuOpen(false)} className="hover:text-[#E11D48] transition-colors flex items-center justify-between">
-              <span>02 // Perjalanan Hidup</span>
-              <ArrowUpRight className="w-4 h-4 text-[#E11D48]" />
-            </a>
-            <a href="#karya" onClick={() => setIsMenuOpen(false)} className="hover:text-[#E11D48] transition-colors flex items-center justify-between">
-              <span>03 // Discovery Karya</span>
-              <ArrowUpRight className="w-4 h-4 text-[#E11D48]" />
-            </a>
-            <a href="#artikel" onClick={() => setIsMenuOpen(false)} className="hover:text-[#E11D48] transition-colors flex items-center justify-between">
-              <span>04 // Artikel & Wawasan</span>
-              <ArrowUpRight className="w-4 h-4 text-[#E11D48]" />
-            </a>
-            <a href="#produk" onClick={() => setIsMenuOpen(false)} className="hover:text-[#E11D48] transition-colors flex items-center justify-between">
-              <span>05 // Produk & Inisiatif</span>
-              <ArrowUpRight className="w-4 h-4 text-[#E11D48]" />
-            </a>
-            <a href="#kata-warga" onClick={() => setIsMenuOpen(false)} className="hover:text-[#E11D48] transition-colors flex items-center justify-between">
-              <span>06 // Kata Warga</span>
-              <ArrowUpRight className="w-4 h-4 text-[#E11D48]" />
-            </a>
+            <a href="#tentang" onClick={() => setIsMenuOpen(false)} className="hover:text-[#E11D48] transition-colors">01 // Tentang</a>
+            <a href="#perjalanan" onClick={() => setIsMenuOpen(false)} className="hover:text-[#E11D48] transition-colors">02 // Perjalanan Hidup</a>
+            <a href="#karya" onClick={() => setIsMenuOpen(false)} className="hover:text-[#E11D48] transition-colors">03 // Discovery Karya</a>
+            <a href="#galeri" onClick={() => setIsMenuOpen(false)} className="hover:text-[#E11D48] transition-colors">04 // Galeri Visual</a>
+            <a href="#artikel" onClick={() => setIsMenuOpen(false)} className="hover:text-[#E11D48] transition-colors">05 // Artikel & Wawasan</a>
+            <a href="#produk" onClick={() => setIsMenuOpen(false)} className="hover:text-[#E11D48] transition-colors">06 // Produk & Inisiatif</a>
+            <a href="#kata-warga" onClick={() => setIsMenuOpen(false)} className="hover:text-[#E11D48] transition-colors">07 // Kata Warga</a>
           </motion.div>
         )}
       </AnimatePresence>
 
-      <main className="max-w-4xl mx-auto px-6 relative z-10 space-y-20 md:space-y-28 pt-8 pb-24">
+      <main className="max-w-5xl mx-auto px-6 relative z-10 space-y-24 md:space-y-36 pt-8 pb-24">
 
-        {/* HERO SECTION (CENTERED, BALANCED & PROPORTIONAL) */}
+        {/* HERO SECTION */}
         <section id="hero" className="min-h-[85vh] flex flex-col justify-center items-center text-center space-y-8 pt-4 md:pt-8">
           
           <motion.div 
-            initial={{ opacity: 0, scale: 0.96 }}
+            initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
             className="flex flex-col items-center space-y-6 max-w-2xl mx-auto"
           >
             {/* Portrait Frame */}
-            <div className="relative w-36 h-36 sm:w-44 sm:h-44 rounded-full p-1.5 border border-[#E11D48]/30 bg-gradient-to-b from-[#E11D48]/20 to-transparent shadow-2xl relative overflow-hidden group">
+            <div className="relative w-40 h-48 sm:w-48 sm:h-56 rounded-2xl overflow-hidden bg-neutral-900 shadow-2xl border border-inherit/10 group">
               <Image 
                 src={profile.photo_url} 
                 alt={profile.name} 
                 fill
-                sizes="(max-width: 768px) 144px, 176px"
+                sizes="(max-width: 768px) 192px, 224px"
                 priority
-                className="object-cover rounded-full filter grayscale contrast-120 group-hover:scale-105 transition-transform duration-500 ease-out"
+                className="object-cover filter grayscale contrast-120 group-hover:scale-105 transition-transform duration-700 ease-out"
               />
-              <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 px-2.5 py-0.5 rounded-full bg-black/80 backdrop-blur-md text-[9px] font-mono uppercase tracking-widest text-white border border-white/10 flex items-center gap-1 shadow-md whitespace-nowrap">
+              <div className={`absolute inset-0 bg-gradient-to-t ${
+                isDarkMode ? 'from-[#0A0E1A]/80 via-transparent' : 'from-black/30 via-transparent'
+              }`} />
+              
+              <div className="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-full bg-black/60 backdrop-blur-md text-[9px] font-mono uppercase tracking-widest text-white/90 border border-white/10 flex items-center gap-1">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#E11D48] animate-pulse" />
                 <span>{profile.category}</span>
               </div>
@@ -297,55 +224,57 @@ export default function DynamicProfilePage() {
 
             {/* Typography Stack */}
             <div className="space-y-3">
-              <div className="flex items-center justify-center gap-3">
-                <div className="red-accent-bar-luxe h-8 sm:h-12 shrink-0" />
-                <h1 className="text-5xl sm:text-7xl md:text-8xl font-display uppercase tracking-tight leading-[0.92] text-inherit">
-                  {profile.name}
-                </h1>
-                <div className="red-accent-bar-luxe h-8 sm:h-12 shrink-0" />
-              </div>
-              
+              <span className="text-xs font-mono tracking-widest text-[#E11D48] uppercase font-bold">
+                PROFIL TERVERIFIKASI
+              </span>
+              <h1 className="text-5xl sm:text-7xl md:text-8xl font-display uppercase tracking-tight leading-[0.9]">
+                {profile.name}
+              </h1>
               <p className="font-editorial italic font-semibold text-lg sm:text-2xl text-[#E11D48] tracking-wide pt-1">
                 {profile.title}
               </p>
-              
               <p className={`text-sm sm:text-base max-w-lg mx-auto leading-relaxed pt-1 ${mutedText}`}>
                 {profile.bio_paragraphs[0]}
               </p>
             </div>
 
-            {/* Social Links Bar */}
-            <div className="flex items-center justify-center gap-2.5 pt-1">
-              {profile.social_links.youtube && (
-                <a href={profile.social_links.youtube} target="_blank" rel="noreferrer" className={`w-10 h-10 rounded-xl border flex items-center justify-center transition-all ${isDarkMode ? 'border-white/10 hover:border-[#E11D48] text-neutral-400 hover:text-white' : 'border-black/10 hover:border-[#E11D48] text-neutral-600 hover:text-[#E11D48]'}`}>
+            {/* DYNAMIC SOCIAL LINKS BAR (ONLY RENDER IF PRESENT IN SOCIAL_LINKS) */}
+            <div className="flex items-center justify-center gap-2 flex-wrap pt-2">
+              {soc.youtube && (
+                <a href={soc.youtube} target="_blank" rel="noreferrer" title="YouTube" className={`w-10 h-10 rounded-xl border flex items-center justify-center transition-all ${isDarkMode ? 'border-white/10 hover:border-[#E11D48] text-[#8A93A8]' : 'border-black/10 hover:border-[#E11D48] text-gray-600'}`}>
                   <Youtube className="w-4 h-4" />
                 </a>
               )}
-              {profile.social_links.twitter && (
-                <a href={profile.social_links.twitter} target="_blank" rel="noreferrer" className={`w-10 h-10 rounded-xl border flex items-center justify-center transition-all ${isDarkMode ? 'border-white/10 hover:border-[#E11D48] text-neutral-400 hover:text-white' : 'border-black/10 hover:border-[#E11D48] text-neutral-600 hover:text-[#E11D48]'}`}>
+              {soc.twitter && (
+                <a href={soc.twitter} target="_blank" rel="noreferrer" title="Twitter / X" className={`w-10 h-10 rounded-xl border flex items-center justify-center transition-all ${isDarkMode ? 'border-white/10 hover:border-[#E11D48] text-[#8A93A8]' : 'border-black/10 hover:border-[#E11D48] text-gray-600'}`}>
                   <Twitter className="w-4 h-4" />
                 </a>
               )}
-              {profile.social_links.instagram && (
-                <a href={profile.social_links.instagram} target="_blank" rel="noreferrer" className={`w-10 h-10 rounded-xl border flex items-center justify-center transition-all ${isDarkMode ? 'border-white/10 hover:border-[#E11D48] text-neutral-400 hover:text-white' : 'border-black/10 hover:border-[#E11D48] text-neutral-600 hover:text-[#E11D48]'}`}>
+              {soc.instagram && (
+                <a href={soc.instagram} target="_blank" rel="noreferrer" title="Instagram" className={`w-10 h-10 rounded-xl border flex items-center justify-center transition-all ${isDarkMode ? 'border-white/10 hover:border-[#E11D48] text-[#8A93A8]' : 'border-black/10 hover:border-[#E11D48] text-gray-600'}`}>
                   <Instagram className="w-4 h-4" />
                 </a>
               )}
-              {profile.social_links.spotify && (
-                <a href={profile.social_links.spotify} target="_blank" rel="noreferrer" className={`w-10 h-10 rounded-xl border flex items-center justify-center transition-all ${isDarkMode ? 'border-white/10 hover:border-[#E11D48] text-neutral-400 hover:text-white' : 'border-black/10 hover:border-[#E11D48] text-neutral-600 hover:text-[#E11D48]'}`}>
+              {soc.spotify && (
+                <a href={soc.spotify} target="_blank" rel="noreferrer" title="Spotify" className={`w-10 h-10 rounded-xl border flex items-center justify-center transition-all ${isDarkMode ? 'border-white/10 hover:border-[#E11D48] text-[#8A93A8]' : 'border-black/10 hover:border-[#E11D48] text-gray-600'}`}>
                   <Radio className="w-4 h-4" />
                 </a>
               )}
-              {profile.social_links.email && (
-                <a href={profile.social_links.email} className={`w-10 h-10 rounded-xl border flex items-center justify-center transition-all ${isDarkMode ? 'border-white/10 hover:border-[#E11D48] text-neutral-400 hover:text-white' : 'border-black/10 hover:border-[#E11D48] text-neutral-600 hover:text-[#E11D48]'}`}>
+              {soc.email && (
+                <a href={`mailto:${soc.email}`} title="Email" className={`w-10 h-10 rounded-xl border flex items-center justify-center transition-all ${isDarkMode ? 'border-white/10 hover:border-[#E11D48] text-[#8A93A8]' : 'border-black/10 hover:border-[#E11D48] text-gray-600'}`}>
                   <Mail className="w-4 h-4" />
+                </a>
+              )}
+              {soc.website && (
+                <a href={soc.website} target="_blank" rel="noreferrer" title="Website Personal" className={`w-10 h-10 rounded-xl border flex items-center justify-center transition-all ${isDarkMode ? 'border-white/10 hover:border-[#E11D48] text-[#8A93A8]' : 'border-black/10 hover:border-[#E11D48] text-gray-600'}`}>
+                  <Globe className="w-4 h-4" />
                 </a>
               )}
             </div>
 
             {/* Scroll Cue */}
-            <div className="pt-4 flex flex-col items-center gap-1.5 opacity-60 animate-bounce">
-              <span className="text-[10px] font-mono uppercase tracking-widest">JELAJAHI REKAM JEJAK</span>
+            <div className="pt-8 flex flex-col items-center gap-2 opacity-60 animate-bounce">
+              <span className="text-[10px] font-mono uppercase tracking-widest">GULIR KE BAWAH</span>
               <ArrowDown className="w-3.5 h-3.5 text-[#E11D48]" />
             </div>
 
@@ -353,113 +282,55 @@ export default function DynamicProfilePage() {
 
         </section>
 
-        {/* --------------------------------------------------------- */}
-        {/* 01 // TENTANG                                             */}
-        {/* --------------------------------------------------------- */}
-        <motion.section 
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-80px" }}
-          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-          id="tentang" 
-          className="space-y-8 scroll-mt-24"
-        >
-          <div className={`flex items-center justify-between border-b pb-4 ${dividerClass}`}>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display uppercase tracking-tight text-inherit">
-              Tentang {profile.name}
-            </h2>
-            <span className="font-mono text-xs tracking-widest text-[#E11D48]">
-              01 // BIOGRAFI
-            </span>
+        {/* 01 // TENTANG */}
+        <section id="tentang" className="space-y-8 scroll-mt-24">
+          <div className="flex items-center gap-3 border-b pb-4 border-inherit/10">
+            <span className="font-mono text-xs text-[#E11D48] font-bold">01 //</span>
+            <h2 className="text-3xl sm:text-4xl font-display uppercase tracking-tight">TENTANG {profile.name}</h2>
           </div>
-
-          <div className="space-y-5 text-base sm:text-lg leading-relaxed text-inherit/90 font-normal text-justify">
-            {profile.bio_paragraphs.map((p, i) => (
-              <p key={i}>{p}</p>
-            ))}
-          </div>
-
-          {/* Pull Quote Box with Red Luxe Bar */}
-          <div className={`p-6 sm:p-8 rounded-2xl border flex items-stretch justify-between gap-6 relative ${quoteBgClass}`}>
-            <div className="space-y-3">
-              <blockquote className="font-editorial italic text-lg sm:text-xl leading-relaxed text-inherit">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+            <div className="md:col-span-7 space-y-5 text-base sm:text-lg leading-relaxed font-normal text-justify">
+              {profile.bio_paragraphs.map((p, i) => (
+                <p key={i}>{p}</p>
+              ))}
+            </div>
+            <div className={`md:col-span-5 p-6 sm:p-8 rounded-3xl border flex items-stretch justify-between gap-6 shadow-sm ${cardClass}`}>
+              <blockquote className="font-editorial italic text-base sm:text-lg leading-relaxed text-inherit">
                 &ldquo;{profile.quote}&rdquo;
               </blockquote>
-              <p className="text-xs font-mono tracking-wider text-[#E11D48] uppercase">
-                — Catatan Prinsipil {profile.name}
-              </p>
+              <div className="refined-accent-bar shrink-0" />
             </div>
-            <div className="red-accent-bar-luxe shrink-0" />
           </div>
-        </motion.section>
+        </section>
 
-        {/* --------------------------------------------------------- */}
-        {/* 02 // PERJALANAN HIDUP                                    */}
-        {/* --------------------------------------------------------- */}
+        {/* 02 // PERJALANAN HIDUP */}
         {lifeEvents.length > 0 && (
-          <motion.section 
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-80px" }}
-            transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-            id="perjalanan" 
-            className="space-y-10 scroll-mt-24"
-          >
-            <div className={`flex items-center justify-between border-b pb-4 ${dividerClass}`}>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-display uppercase tracking-tight text-inherit">
-                Perjalanan Hidup
-              </h2>
-              <span className="font-mono text-xs tracking-widest text-[#E11D48]">
-                02 // REKAM JEJAK
-              </span>
+          <section id="perjalanan" className="space-y-8 scroll-mt-24">
+            <div className="flex items-center gap-3 border-b pb-4 border-inherit/10">
+              <span className="font-mono text-xs text-[#E11D48] font-bold">02 //</span>
+              <h2 className="text-3xl sm:text-4xl font-display uppercase tracking-tight">PERJALANAN HIDUP</h2>
             </div>
-
-            <div className="relative pl-7 sm:pl-9 space-y-9">
-              <div className="absolute left-0 top-2 bottom-2 w-[2px] timeline-track-minimal" />
+            <div className="relative pl-8 sm:pl-10 space-y-10">
+              <div className="absolute left-0 top-2 bottom-2 refined-timeline-track" />
               {lifeEvents.map((ev, idx) => (
-                <div key={idx} className="relative space-y-2 group">
-                  <div className={`absolute -left-[32px] sm:-left-[40px] top-1.5 w-3 h-3 rounded-full border-2 border-[#E11D48] transition-all ${
-                    isDarkMode ? 'bg-[#0A0E17] group-hover:bg-[#E11D48]' : 'bg-[#FAF9F6] group-hover:bg-[#E11D48]'
-                  }`} />
-                  
-                  <div className="flex items-center gap-2 text-xs font-mono">
-                    <span className="text-[#E11D48] font-semibold">{ev.year_range}</span>
-                  </div>
-
-                  <h3 className="text-lg sm:text-xl font-display uppercase tracking-wide text-inherit group-hover:text-[#E11D48] transition-colors">
-                    {ev.title}
-                  </h3>
-                  
-                  <p className={`text-xs sm:text-sm leading-relaxed ${mutedText}`}>
-                    {ev.description}
-                  </p>
+                <div key={idx} className="relative space-y-1.5">
+                  <div className="absolute -left-[35px] sm:-left-[43px] top-1.5 w-3.5 h-3.5 rounded-full bg-[#E11D48] shadow-md shadow-[#E11D48]/50" />
+                  <span className="text-xs font-mono font-bold text-[#E11D48] uppercase tracking-wider">{ev.year_range}</span>
+                  <h3 className="text-lg sm:text-xl font-display uppercase text-inherit">{ev.title}</h3>
+                  <p className={`text-sm sm:text-base leading-relaxed ${mutedText}`}>{ev.description}</p>
                 </div>
               ))}
             </div>
-          </motion.section>
+          </section>
         )}
 
-        {/* --------------------------------------------------------- */}
-        {/* 03 // DISCOVERY KARYA                                     */}
-        {/* --------------------------------------------------------- */}
+        {/* 03 // DISCOVERY KARYA */}
         {works.length > 0 && (
-          <motion.section 
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-80px" }}
-            transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-            id="karya" 
-            className="space-y-8 scroll-mt-24"
-          >
-            <div className={`flex items-center justify-between border-b pb-4 ${dividerClass}`}>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-display uppercase tracking-tight text-inherit">
-                Discovery Karya
-              </h2>
-              <span className="font-mono text-xs tracking-widest text-[#E11D48]">
-                03 // INISIATIF
-              </span>
+          <section id="karya" className="space-y-8 scroll-mt-24">
+            <div className="flex items-center gap-3 border-b pb-4 border-inherit/10">
+              <span className="font-mono text-xs text-[#E11D48] font-bold">03 //</span>
+              <h2 className="text-3xl sm:text-4xl font-display uppercase tracking-tight">DISCOVERY KARYA</h2>
             </div>
-
             <div className="space-y-4">
               {works.map((w, idx) => {
                 const isOpen = activeAccordion === idx;
@@ -467,47 +338,24 @@ export default function DynamicProfilePage() {
                   <div 
                     key={idx}
                     onClick={() => setActiveAccordion(isOpen ? null : idx)}
-                    className={`cursor-pointer rounded-2xl p-6 sm:p-7 transition-all ${cardClass} ${
-                      isOpen ? 'border-[#E11D48]/40' : ''
+                    className={`cursor-pointer rounded-2xl p-6 border transition-all ${
+                      isOpen ? cardClass : (isDarkMode ? 'bg-[#0E1424]/60 border-white/[0.06]' : 'bg-[#F9F8F5] border-black/[0.06]')
                     }`}
                   >
-                    <div className="flex items-start sm:items-center justify-between gap-4">
-                      <div className="space-y-1">
-                        <span className="text-[10px] font-mono text-[#E11D48] font-semibold uppercase tracking-wider block">
-                          {w.category}
-                        </span>
-                        <h3 className="text-base sm:text-xl font-display uppercase tracking-wide text-inherit">
-                          {w.title}
-                        </h3>
+                    <div className="flex items-center justify-between gap-4">
+                      <div>
+                        <span className="text-[10px] font-mono text-[#E11D48] font-semibold uppercase tracking-wider block">{w.category}</span>
+                        <h3 className="text-lg sm:text-xl font-display uppercase text-inherit mt-0.5">{w.title}</h3>
                       </div>
-                      <span className={`w-8 h-8 rounded-full border flex items-center justify-center font-mono text-sm shrink-0 transition-transform ${
-                        isOpen 
-                          ? 'border-[#E11D48] bg-[#E11D48] text-white rotate-180' 
-                          : (isDarkMode ? 'border-white/10 text-neutral-400' : 'border-black/10 text-neutral-600')
-                      }`}>
-                        {isOpen ? '−' : '+'}
-                      </span>
+                      <ChevronDown className={`w-5 h-5 text-[#E11D48] transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} />
                     </div>
-
                     <AnimatePresence>
                       {isOpen && (
-                        <motion.div 
-                          initial={{ opacity: 0, height: 0 }} 
-                          animate={{ opacity: 1, height: 'auto' }} 
-                          exit={{ opacity: 0, height: 0 }} 
-                          transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }} 
-                          className="overflow-hidden"
-                        >
-                          <div className={`mt-4 pt-4 border-t ${dividerClass} space-y-4`}>
-                            <p className={`text-xs sm:text-sm leading-relaxed ${mutedText}`}>{w.description}</p>
+                        <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }} transition={{ duration: 0.25 }} className="overflow-hidden">
+                          <div className="mt-4 pt-4 border-t border-inherit/10 space-y-3">
+                            <p className={`text-sm sm:text-base leading-relaxed ${mutedText}`}>{w.description}</p>
                             <div className="flex justify-end">
-                              <a 
-                                href={w.link_url} 
-                                target="_blank" 
-                                rel="noreferrer" 
-                                onClick={(e) => e.stopPropagation()}
-                                className="px-4 py-2 bg-[#E11D48] hover:bg-[#BE123C] text-white font-medium text-xs rounded-lg transition-colors flex items-center gap-1.5 shadow-sm"
-                              >
+                              <a href={w.link_url} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 text-xs font-bold text-[#E11D48] hover:underline">
                                 <span>Buka Rujukan Karya</span>
                                 <ArrowUpRight className="w-3.5 h-3.5" />
                               </a>
@@ -520,60 +368,36 @@ export default function DynamicProfilePage() {
                 );
               })}
             </div>
-
-            {/* 1. SEKSI GALERI PARALLAX ACETERNITY DI BAWAH KARYA */}
-            <div className="pt-8">
-              <ParallaxGallery isDarkMode={isDarkMode} />
-            </div>
-
-          </motion.section>
+          </section>
         )}
 
-        {/* --------------------------------------------------------- */}
-        {/* 04 // ARTIKEL & WAWASAN (DENGAN MODAL READER IMERSIF)     */}
-        {/* --------------------------------------------------------- */}
-        {articles.length > 0 && (
-          <motion.section 
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-80px" }}
-            transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-            id="artikel" 
-            className="space-y-8 scroll-mt-24"
-          >
-            <div className={`flex items-center justify-between border-b pb-4 ${dividerClass}`}>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-display uppercase tracking-tight text-inherit">
-                Artikel & Wawasan
-              </h2>
-              <span className="font-mono text-xs tracking-widest text-[#E11D48]">
-                04 // ESAI & RISET
-              </span>
-            </div>
+        {/* 04 // GALERI VISUAL PARALLAX */}
+        <section id="galeri" className="space-y-8 scroll-mt-24">
+          <div className="flex items-center gap-3 border-b pb-4 border-inherit/10">
+            <span className="font-mono text-xs text-[#E11D48] font-bold">04 //</span>
+            <h2 className="text-3xl sm:text-4xl font-display uppercase tracking-tight">GALERI VISUAL PARALLAX</h2>
+          </div>
+          <ParallaxGallery isDarkMode={isDarkMode} />
+        </section>
 
+        {/* 05 // ARTIKEL & WAWASAN */}
+        {articles.length > 0 && (
+          <section id="artikel" className="space-y-8 scroll-mt-24">
+            <div className="flex items-center gap-3 border-b pb-4 border-inherit/10">
+              <span className="font-mono text-xs text-[#E11D48] font-bold">05 //</span>
+              <h2 className="text-3xl sm:text-4xl font-display uppercase tracking-tight">ARTIKEL & WAWASAN</h2>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {articles.map((art, idx) => (
-                <div 
-                  key={idx} 
-                  className={`p-6 sm:p-8 rounded-3xl border space-y-4 flex flex-col justify-between ${cardClass} group hover:-translate-y-1 transition-transform`}
-                >
+                <div key={idx} className={`p-6 sm:p-8 rounded-3xl border space-y-4 flex flex-col justify-between ${cardClass}`}>
                   <div className="space-y-3">
                     <div className="flex items-center justify-between text-xs font-mono text-[#E11D48]">
-                      <span className="px-2 py-0.5 rounded bg-[#E11D48]/10 font-semibold">{art.tag}</span>
-                      <span className="flex items-center gap-1 opacity-80">
-                        <Clock className="w-3 h-3" />
-                        {art.read_time}
-                      </span>
+                      <span>{art.tag}</span>
+                      <span>{art.read_time}</span>
                     </div>
-
-                    <h3 className="text-xl sm:text-2xl font-display uppercase text-inherit leading-snug group-hover:text-[#E11D48] transition-colors">
-                      {art.title}
-                    </h3>
-
-                    <p className={`text-xs sm:text-sm leading-relaxed ${mutedText}`}>
-                      {art.description}
-                    </p>
+                    <h3 className="text-xl sm:text-2xl font-display uppercase text-inherit leading-snug">{art.title}</h3>
+                    <p className={`text-sm leading-relaxed ${mutedText}`}>{art.description}</p>
                   </div>
-
                   <div className="pt-3 flex justify-between items-center border-t border-inherit/10">
                     <button 
                       onClick={() => setSelectedArticle(art)}
@@ -590,357 +414,182 @@ export default function DynamicProfilePage() {
                 </div>
               ))}
             </div>
-          </motion.section>
+          </section>
         )}
 
-        {/* --------------------------------------------------------- */}
-        {/* 05 // PRODUK & INISIATIF WARGA (SLIDER + VARIASI HARGA)   */}
-        {/* --------------------------------------------------------- */}
+        {/* 06 // PRODUK & INISIATIF WARGA (SLIDER + THUMBNAILS & DIRECT LINKS) */}
         {initiatives.length > 0 && (
-          <motion.section 
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-80px" }}
-            transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-            id="produk" 
-            className="space-y-8 scroll-mt-24"
-          >
-            <div className={`flex items-center justify-between border-b pb-4 ${dividerClass}`}>
-              <div>
-                <h2 className="text-3xl sm:text-4xl md:text-5xl font-display uppercase tracking-tight text-inherit">
-                  Produk & Inisiatif Warga
-                </h2>
-                <p className={`text-xs sm:text-sm pt-1 ${mutedText}`}>
-                  Dukungan langsung terhadap kemandirian riset independen dan gerakan beasiswa.
-                </p>
+          <section id="produk" className="space-y-8 scroll-mt-24">
+            <div className="flex items-center justify-between border-b pb-4 border-inherit/10">
+              <div className="flex items-center gap-3">
+                <span className="font-mono text-xs text-[#E11D48] font-bold">06 //</span>
+                <h2 className="text-3xl sm:text-4xl font-display uppercase tracking-tight">PRODUK & INISIATIF WARGA</h2>
               </div>
-              <span className="font-mono text-xs tracking-widest text-[#E11D48] hidden sm:inline">
-                05 // EKOSISTEM
-              </span>
-            </div>
-
-            {/* Slider Navigation Header */}
-            <div className="flex items-center justify-between">
-              <span className="text-xs font-mono font-semibold uppercase text-[#E11D48]">
-                Item {productIndex + 1} dari {initiatives.length}
-              </span>
+              
               <div className="flex items-center gap-2">
-                <button 
-                  onClick={prevProduct}
-                  className={`w-9 h-9 rounded-xl border flex items-center justify-center transition-all ${
-                    isDarkMode ? 'border-white/10 hover:border-[#E11D48] hover:bg-[#E11D48]/10' : 'border-black/10 hover:border-[#E11D48] hover:bg-[#E11D48]/10'
-                  }`}
-                  aria-label="Previous Product"
+                <button
+                  onClick={() => setProductSlideIndex(Math.max(0, productSlideIndex - 1))}
+                  disabled={productSlideIndex === 0}
+                  className={`p-2 rounded-xl border transition ${productSlideIndex === 0 ? 'opacity-30 cursor-not-allowed' : 'hover:border-[#E11D48]'} ${cardClass}`}
                 >
-                  <ChevronLeft className="w-4 h-4 text-inherit" />
+                  <ArrowLeft className="w-4 h-4" />
                 </button>
-                <button 
-                  onClick={nextProduct}
-                  className={`w-9 h-9 rounded-xl border flex items-center justify-center transition-all ${
-                    isDarkMode ? 'border-white/10 hover:border-[#E11D48] hover:bg-[#E11D48]/10' : 'border-black/10 hover:border-[#E11D48] hover:bg-[#E11D48]/10'
-                  }`}
-                  aria-label="Next Product"
+                <button
+                  onClick={() => setProductSlideIndex(Math.min(initiatives.length - 1, productSlideIndex + 1))}
+                  disabled={productSlideIndex === initiatives.length - 1}
+                  className={`p-2 rounded-xl border transition ${productSlideIndex === initiatives.length - 1 ? 'opacity-30 cursor-not-allowed' : 'hover:border-[#E11D48]'} ${cardClass}`}
                 >
-                  <ChevronRight className="w-4 h-4 text-inherit" />
+                  <ArrowRight className="w-4 h-4" />
                 </button>
               </div>
             </div>
 
-            {/* Interactive Single Slide Showcase Card */}
-            <AnimatePresence mode="wait">
-              {(() => {
-                const currentProd = initiatives[productIndex];
-                if (!currentProd) return null;
-                const variants = currentProd.price_variants || [];
-                const activeVar = selectedVariant[currentProd.id] || (variants[0] || currentProd.price || 'Standar');
-
-                return (
-                  <motion.div 
-                    key={productIndex}
-                    initial={{ opacity: 0, x: 20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    exit={{ opacity: 0, x: -20 }}
-                    transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
-                    className={`p-8 sm:p-10 rounded-3xl border space-y-6 ${cardClass} relative overflow-hidden`}
-                  >
-                    <div className="space-y-3">
-                      <div className="flex flex-wrap items-center justify-between gap-2">
-                        <span className="text-xs font-mono font-bold text-[#E11D48] uppercase tracking-wider">
-                          {currentProd.category}
-                        </span>
-                        <span className="px-3 py-1 rounded-full bg-[#E11D48]/10 text-[#E11D48] text-xs font-mono font-bold">
-                          {currentProd.price || 'Tersedia'}
-                        </span>
-                      </div>
-
-                      <h3 className="text-2xl sm:text-3xl md:text-4xl font-display uppercase tracking-tight text-inherit">
-                        {currentProd.title}
-                      </h3>
-
-                      <p className={`text-sm sm:text-base leading-relaxed ${mutedText}`}>
-                        {currentProd.description}
-                      </p>
-                    </div>
-
-                    {/* Variasi Harga / Pilihan Tiering */}
-                    {variants.length > 0 && (
-                      <div className="space-y-2 pt-2 border-t border-inherit/10">
-                        <span className={`text-[11px] font-mono uppercase font-bold tracking-wider block ${mutedText}`}>
-                          PILIHAN VARIASI & TIERING DUKUNGAN:
-                        </span>
-                        <div className="flex flex-wrap gap-2.5">
-                          {variants.map((v, i) => (
-                            <button
-                              key={i}
-                              onClick={() => setSelectedVariant({ ...selectedVariant, [currentProd.id]: v })}
-                              className={`px-3.5 py-2 rounded-xl text-xs font-medium border transition-all ${
-                                activeVar === v
-                                  ? 'border-[#E11D48] bg-[#E11D48] text-white shadow-sm shadow-[#E11D48]/30 font-semibold'
-                                  : (isDarkMode ? 'border-white/10 hover:border-white/30 bg-white/[0.02]' : 'border-black/10 hover:border-black/30 bg-black/[0.02]')
-                              }`}
-                            >
-                              {v}
-                            </button>
-                          ))}
+            <div className="overflow-hidden">
+              <motion.div 
+                animate={{ x: `-${productSlideIndex * 100}%` }}
+                transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+                className="flex gap-6"
+              >
+                {initiatives.map((prod, idx) => (
+                  <div key={idx} className={`w-full min-w-full md:min-w-[48%] lg:min-w-[32%] p-6 rounded-3xl border flex flex-col justify-between space-y-5 shrink-0 ${cardClass}`}>
+                    <div className="space-y-4">
+                      
+                      {/* Product Thumbnail */}
+                      {prod.image_url && (
+                        <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-neutral-900 border border-inherit/10">
+                          <Image src={prod.image_url} alt={prod.title} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover filter grayscale contrast-110" />
                         </div>
-                      </div>
-                    )}
+                      )}
 
-                    {/* CTA Action */}
-                    <div className="pt-3 flex items-center justify-between">
-                      <div className="text-xs font-mono text-[#E11D48]">
-                        <span>Pilihan aktif: <strong>{activeVar}</strong></span>
-                      </div>
+                      <div className="space-y-2">
+                        <div className="flex items-center justify-between">
+                          <span className="text-[10px] font-mono text-[#E11D48] uppercase font-semibold">{prod.category}</span>
+                          {prod.price && (
+                            <span className="px-2.5 py-1 rounded-full bg-[#E11D48]/10 text-[#E11D48] text-xs font-mono font-bold border border-[#E11D48]/30">
+                              {prod.price}
+                            </span>
+                          )}
+                        </div>
 
-                      <a 
-                        href={currentProd.link_url} 
-                        target="_blank" 
-                        rel="noreferrer" 
-                        className="px-6 py-3 bg-[#E11D48] hover:bg-[#BE123C] text-white font-bold text-xs rounded-xl transition-all flex items-center gap-2 shadow-md shadow-[#E11D48]/30 hover:scale-105"
-                      >
-                        <span>{currentProd.action_text}</span>
-                        <ArrowUpRight className="w-4 h-4" />
-                      </a>
+                        <h3 className="font-display uppercase text-xl text-inherit">{prod.title}</h3>
+                        <p className={`text-xs leading-relaxed ${mutedText}`}>{prod.description}</p>
+                      </div>
                     </div>
-                  </motion.div>
-                );
-              })()}
-            </AnimatePresence>
 
-            {/* Grid Thumbnail Cards for quick browsing */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
-              {initiatives.map((prod, idx) => (
-                <div 
-                  key={idx}
-                  onClick={() => setProductIndex(idx)}
-                  className={`p-5 rounded-2xl border cursor-pointer transition-all ${
-                    productIndex === idx 
-                      ? 'border-[#E11D48] shadow-md shadow-[#E11D48]/20 bg-[#E11D48]/5' 
-                      : (isDarkMode ? 'border-white/5 hover:border-white/20 bg-white/[0.01]' : 'border-black/5 hover:border-black/20 bg-black/[0.01]')
-                  }`}
-                >
-                  <div className="flex items-center justify-between text-[10px] font-mono text-[#E11D48] mb-1">
-                    <span>{prod.category}</span>
-                    <span className="font-bold">{prod.price}</span>
+                    <a href={prod.link_url} target="_blank" rel="noreferrer" className="w-full py-3 bg-[#E11D48] hover:bg-[#BE123C] text-white font-bold text-xs rounded-xl transition-colors flex items-center justify-center gap-1.5 shadow-md shadow-[#E11D48]/30">
+                      <span>{prod.action_text}</span>
+                      <ArrowUpRight className="w-4 h-4" />
+                    </a>
                   </div>
-                  <h4 className="font-display uppercase text-sm truncate text-inherit">{prod.title}</h4>
-                </div>
-              ))}
+                ))}
+              </motion.div>
             </div>
-
-          </motion.section>
+          </section>
         )}
 
-        {/* --------------------------------------------------------- */}
-        {/* 06 // KATA WARGA & TESTIMONI (SLIDER CAROUSEL)            */}
-        {/* --------------------------------------------------------- */}
+        {/* 07 // KATA WARGA & TESTIMONI */}
         {testimonials.length > 0 && (
-          <motion.section 
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-80px" }}
-            transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-            id="kata-warga" 
-            className="space-y-8 scroll-mt-24"
-          >
-            <div className={`flex items-center justify-between border-b pb-4 ${dividerClass}`}>
-              <div>
-                <h2 className="text-3xl sm:text-4xl md:text-5xl font-display uppercase tracking-tight text-inherit">
-                  Kata Warga & Testimoni
-                </h2>
-                <p className={`text-xs sm:text-sm pt-1 ${mutedText}`}>
-                  Pengakuan otentik dari tokoh, musisi, dan warga penerima manfaat.
-                </p>
+          <section id="kata-warga" className="space-y-8 scroll-mt-24">
+            <div className="flex items-center justify-between border-b pb-4 border-inherit/10">
+              <div className="flex items-center gap-3">
+                <span className="font-mono text-xs text-[#E11D48] font-bold">07 //</span>
+                <h2 className="text-3xl sm:text-4xl font-display uppercase tracking-tight">KATA WARGA & TESTIMONI</h2>
               </div>
-              <span className="font-mono text-xs tracking-widest text-[#E11D48] hidden sm:inline">
-                06 // SUARA PUBLIK
-              </span>
-            </div>
 
-            {/* Testimonials Slider Header */}
-            <div className="flex items-center justify-between">
-              <span className="text-xs font-mono font-semibold uppercase text-[#E11D48]">
-                Testimoni {testimonialIndex + 1} dari {testimonials.length}
-              </span>
               <div className="flex items-center gap-2">
-                <button 
-                  onClick={prevTestimonial}
-                  className={`w-9 h-9 rounded-xl border flex items-center justify-center transition-all ${
-                    isDarkMode ? 'border-white/10 hover:border-[#E11D48] hover:bg-[#E11D48]/10' : 'border-black/10 hover:border-[#E11D48] hover:bg-[#E11D48]/10'
-                  }`}
-                  aria-label="Previous Testimonial"
+                <button
+                  onClick={() => setTestimonialSlideIndex(Math.max(0, testimonialSlideIndex - 1))}
+                  disabled={testimonialSlideIndex === 0}
+                  className={`p-2 rounded-xl border transition ${testimonialSlideIndex === 0 ? 'opacity-30 cursor-not-allowed' : 'hover:border-[#E11D48]'} ${cardClass}`}
                 >
-                  <ChevronLeft className="w-4 h-4 text-inherit" />
+                  <ArrowLeft className="w-4 h-4" />
                 </button>
-                <button 
-                  onClick={nextTestimonial}
-                  className={`w-9 h-9 rounded-xl border flex items-center justify-center transition-all ${
-                    isDarkMode ? 'border-white/10 hover:border-[#E11D48] hover:bg-[#E11D48]/10' : 'border-black/10 hover:border-[#E11D48] hover:bg-[#E11D48]/10'
-                  }`}
-                  aria-label="Next Testimonial"
+                <button
+                  onClick={() => setTestimonialSlideIndex(Math.min(testimonials.length - 1, testimonialSlideIndex + 1))}
+                  disabled={testimonialSlideIndex === testimonials.length - 1}
+                  className={`p-2 rounded-xl border transition ${testimonialSlideIndex === testimonials.length - 1 ? 'opacity-30 cursor-not-allowed' : 'hover:border-[#E11D48]'} ${cardClass}`}
                 >
-                  <ChevronRight className="w-4 h-4 text-inherit" />
+                  <ArrowRight className="w-4 h-4" />
                 </button>
               </div>
             </div>
 
-            {/* Active Testimonial Spotlight Slide */}
-            <AnimatePresence mode="wait">
-              {(() => {
-                const currentTest = testimonials[testimonialIndex];
-                if (!currentTest) return null;
-
-                return (
-                  <motion.div 
-                    key={testimonialIndex}
-                    initial={{ opacity: 0, x: 20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    exit={{ opacity: 0, x: -20 }}
-                    transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
-                    className={`p-8 sm:p-12 rounded-3xl border space-y-6 ${cardClass} relative overflow-hidden`}
-                  >
-                    <blockquote className="font-editorial italic text-lg sm:text-2xl leading-relaxed text-inherit">
-                      &ldquo;{currentTest.quote}&rdquo;
-                    </blockquote>
-
-                    <div className={`pt-4 border-t ${dividerClass} flex items-center gap-3`}>
-                      <div className="w-11 h-11 rounded-full bg-[#E11D48]/10 text-[#E11D48] border border-[#E11D48]/20 font-display text-sm flex items-center justify-center shrink-0">
-                        {currentTest.author_name.split(' ').map(n => n[0]).join('').slice(0, 2)}
-                      </div>
-                      <div>
-                        <div className="flex items-center gap-1.5">
-                          <p className="font-display uppercase text-lg text-inherit">{currentTest.author_name}</p>
-                          <CheckCircle2 className="w-4 h-4 text-[#E11D48] shrink-0" />
-                        </div>
-                        <p className={`text-xs ${mutedText}`}>{currentTest.author_role}</p>
-                      </div>
+            <div className="overflow-hidden">
+              <motion.div 
+                animate={{ x: `-${testimonialSlideIndex * 100}%` }}
+                transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+                className="flex gap-6"
+              >
+                {testimonials.map((item, idx) => (
+                  <div key={idx} className={`w-full min-w-full md:min-w-[48%] lg:min-w-[32%] p-6 sm:p-7 rounded-3xl border flex flex-col justify-between space-y-4 shrink-0 ${cardClass}`}>
+                    <blockquote className="font-editorial italic text-sm leading-relaxed text-inherit">&ldquo;{item.quote}&rdquo;</blockquote>
+                    <div className="pt-4 border-t border-inherit/10">
+                      <p className="font-display uppercase text-base text-inherit">{item.author_name}</p>
+                      <p className={`text-xs ${mutedText}`}>{item.author_role}</p>
                     </div>
-                  </motion.div>
-                );
-              })()}
-            </AnimatePresence>
-
-            {/* Testimonials Thumbnail Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
-              {testimonials.map((item, idx) => (
-                <div 
-                  key={idx}
-                  onClick={() => setTestimonialIndex(idx)}
-                  className={`p-5 rounded-2xl border cursor-pointer transition-all ${
-                    testimonialIndex === idx 
-                      ? 'border-[#E11D48] shadow-md shadow-[#E11D48]/20 bg-[#E11D48]/5' 
-                      : (isDarkMode ? 'border-white/5 hover:border-white/20 bg-white/[0.01]' : 'border-black/5 hover:border-black/20 bg-black/[0.01]')
-                  }`}
-                >
-                  <blockquote className="font-editorial italic text-xs leading-relaxed text-inherit line-clamp-2">
-                    &ldquo;{item.quote}&rdquo;
-                  </blockquote>
-                  <div className="pt-2 border-t border-inherit/10 mt-2 flex items-center justify-between">
-                    <p className="font-display uppercase text-xs text-inherit">{item.author_name}</p>
-                    <span className="text-[10px] font-mono text-[#E11D48]">0{idx + 1}</span>
                   </div>
-                </div>
-              ))}
+                ))}
+              </motion.div>
             </div>
-
-          </motion.section>
+          </section>
         )}
 
       </main>
 
-      {/* 2. ARTIKEL READER MODAL / DRAWER (IMERSIF & KEREN) */}
+      {/* FOCUS READING MODAL FOR ARTICLES */}
       <AnimatePresence>
         {selectedArticle && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 backdrop-blur-xl bg-black/60">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setSelectedArticle(null)}
+            className="fixed inset-0 z-50 p-6 flex items-center justify-center bg-black/70 backdrop-blur-md"
+          >
             <motion.div
-              initial={{ opacity: 0, scale: 0.95, y: 20 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.95, y: 20 }}
-              transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-              className={`max-w-2xl w-full max-h-[85vh] overflow-y-auto rounded-3xl border p-6 sm:p-10 shadow-2xl space-y-6 relative ${
-                isDarkMode ? 'bg-[#0E1424] border-white/10 text-white' : 'bg-[#FAF9F6] border-black/10 text-neutral-900'
+              initial={{ scale: 0.95, y: 20 }}
+              animate={{ scale: 1, y: 0 }}
+              exit={{ scale: 0.95, y: 20 }}
+              onClick={(e) => e.stopPropagation()}
+              className={`max-w-2xl w-full p-8 rounded-3xl border shadow-2xl space-y-6 relative max-h-[85vh] overflow-y-auto ${
+                isDarkMode ? 'bg-[#0A0E1A] border-white/20 text-[#EDE8DC]' : 'bg-[#F9F8F5] border-black/20 text-[#0A0E1A]'
               }`}
             >
-              {/* Close Button */}
-              <button
-                onClick={() => setSelectedArticle(null)}
-                className={`absolute top-6 right-6 p-2 rounded-full border transition-all ${
-                  isDarkMode ? 'border-white/10 hover:border-[#E11D48] text-white' : 'border-black/10 hover:border-[#E11D48] text-neutral-800'
-                }`}
-                aria-label="Tutup Artikel"
+              <button 
+                onClick={() => setSelectedArticle(null)} 
+                className="absolute top-6 right-6 p-2 rounded-full border border-inherit/20 hover:border-[#E11D48]"
               >
                 <X className="w-5 h-5" />
               </button>
 
-              {/* Article Meta */}
-              <div className="flex items-center gap-3 text-xs font-mono text-[#E11D48]">
-                <span className="px-2.5 py-1 rounded bg-[#E11D48]/10 font-bold uppercase">{selectedArticle.tag}</span>
-                <span>•</span>
-                <span>{selectedArticle.read_time}</span>
+              <div className="space-y-2">
+                <span className="text-xs font-mono text-[#E11D48] uppercase font-bold">{selectedArticle.tag} • {selectedArticle.read_time}</span>
+                <h2 className="text-2xl sm:text-3xl font-display uppercase leading-tight">{selectedArticle.title}</h2>
               </div>
 
-              {/* Article Title */}
-              <h2 className="text-3xl sm:text-4xl font-display uppercase tracking-tight leading-tight pr-10">
-                {selectedArticle.title}
-              </h2>
-
-              {/* Article Content / Excerpt */}
-              <div className="space-y-4 text-sm sm:text-base leading-relaxed text-inherit/90 font-normal text-justify">
-                <p className="first-letter:text-4xl first-letter:font-display first-letter:text-[#E11D48] first-letter:mr-2 first-letter:float-left">
-                  {selectedArticle.description}
-                </p>
-                <p>
-                  Melalui kajian analitis berbasis data dan observasi sosial mendalam, naskah ini menguraikan bagaimana literasi finansial bukan sekadar persoalan angka, melainkan benteng pertahanan intelektual bagi masa depan generasi muda Indonesia.
-                </p>
-                <div className={`p-5 rounded-2xl border my-4 ${quoteBgClass}`}>
-                  <p className="font-editorial italic text-base leading-relaxed">
-                    &ldquo;Ketika logika diuji dan nalar kritis ditegakkan, manipulasi finansial kehilangan kekuatannya untuk memiskinkan akal sehat kita.&rdquo;
-                  </p>
-                </div>
+              <div className="space-y-4 text-base leading-relaxed text-inherit/90 text-justify border-t pt-4 border-inherit/10 font-serif italic">
+                <p>{selectedArticle.description}</p>
+                {selectedArticle.content_full && (
+                  <div className="pt-2 font-sans not-italic text-sm leading-relaxed whitespace-pre-line">
+                    {selectedArticle.content_full}
+                  </div>
+                )}
               </div>
 
-              {/* Actions Footer */}
-              <div className={`pt-6 border-t ${dividerClass} flex flex-col sm:flex-row items-center justify-between gap-4`}>
-                <span className={`text-xs font-mono ${mutedText}`}>Kurasi Eksklusif Sektor Lokal</span>
-                
-                <a
-                  href={selectedArticle.link_url}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="w-full sm:w-auto px-6 py-3 bg-[#E11D48] hover:bg-[#BE123C] text-white font-bold text-xs rounded-xl transition-all flex items-center justify-center gap-2 shadow-md shadow-[#E11D48]/30"
-                >
-                  <span>Buka Arsip Rujukan Lengkap</span>
-                  <ExternalLink className="w-4 h-4" />
-                </a>
+              <div className="pt-4 border-t border-inherit/10 flex justify-end">
+                <Link href="/artikel/analisis-kritis-literasi-keuangan" className="px-5 py-2.5 bg-[#E11D48] text-white font-bold text-xs rounded-xl flex items-center gap-1.5">
+                  <span>Buka Halaman Artikel (SEO)</span>
+                  <ArrowUpRight className="w-4 h-4" />
+                </Link>
               </div>
             </motion.div>
-          </div>
+          </motion.div>
         )}
       </AnimatePresence>
 
       {/* FOOTER */}
       <footer className={`border-t py-12 px-6 ${isDarkMode ? 'border-white/[0.08]' : 'border-black/[0.08]'}`}>
-        <div className="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
+        <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
           <div className="flex items-center gap-2 font-display text-lg text-inherit">
             <span>SEKTOR LOKAL</span>
             <span className="w-2 h-2 rounded-full bg-[#E11D48]" />

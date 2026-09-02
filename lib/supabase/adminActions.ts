@@ -1,5 +1,5 @@
 import { createClient } from './client';
-import { Profile, LifeEvent, Work, Article, Testimonial, Initiative, FullProfileData } from './types';
+import { Profile, LifeEvent, Work, Article, Testimonial, Initiative, GalleryItem, FullProfileData } from './types';
 import { fallbackProfiles } from './fallbackData';
 
 export async function getAllProfiles(): Promise<Profile[]> {
@@ -31,12 +31,13 @@ export async function getProfileBySlug(slug: string): Promise<FullProfileData> {
 
     if (prof && !pError) {
       const pId = prof.id;
-      const [life, wrk, art, tst, ini] = await Promise.all([
+      const [life, wrk, art, tst, ini, gal] = await Promise.all([
         supabase.from('life_events').select('*').eq('profile_id', pId).order('order_index'),
         supabase.from('works').select('*').eq('profile_id', pId).order('order_index'),
         supabase.from('articles').select('*').eq('profile_id', pId).order('order_index'),
         supabase.from('testimonials').select('*').eq('profile_id', pId).order('order_index'),
         supabase.from('initiatives').select('*').eq('profile_id', pId).order('order_index'),
+        supabase.from('gallery').select('*').eq('profile_id', pId).order('order_index'),
       ]);
 
       return {
@@ -44,6 +45,7 @@ export async function getProfileBySlug(slug: string): Promise<FullProfileData> {
         lifeEvents: life.data || [],
         works: wrk.data || [],
         articles: art.data || [],
+        gallery: gal.data || [],
         testimonials: tst.data || [],
         initiatives: ini.data || []
       };
@@ -56,19 +58,16 @@ export async function getProfileBySlug(slug: string): Promise<FullProfileData> {
 }
 
 export async function saveProfileData(data: FullProfileData): Promise<{ success: boolean; message: string }> {
-  // Always update in-memory fallback cache
   fallbackProfiles[data.profile.slug] = data;
 
   try {
     const supabase = createClient();
-    const { profile, lifeEvents, works, articles, testimonials, initiatives } = data;
+    const { profile, lifeEvents, works, articles, testimonials, initiatives, gallery } = data;
 
-    // Ensure valid UUID for profile.id
     if (!profile.id || !isValidUUID(profile.id)) {
       profile.id = crypto.randomUUID();
     }
 
-    // Upsert Profile
     const { data: upsertedProf, error: profErr } = await supabase
       .from('profiles')
       .upsert(profile, { onConflict: 'slug' })
@@ -76,7 +75,7 @@ export async function saveProfileData(data: FullProfileData): Promise<{ success:
       .single();
 
     if (profErr) {
-      return { success: true, message: `Data tersimpan di cache memori lokal. (${profErr.message})` };
+      return { success: true, message: `Data tersimpan di memori lokal. (Supabase notice: ${profErr.message})` };
     }
 
     const pId = upsertedProf.id;
@@ -88,6 +87,7 @@ export async function saveProfileData(data: FullProfileData): Promise<{ success:
         supabase.from('articles').delete().eq('profile_id', pId),
         supabase.from('testimonials').delete().eq('profile_id', pId),
         supabase.from('initiatives').delete().eq('profile_id', pId),
+        supabase.from('gallery').delete().eq('profile_id', pId),
       ]);
 
       if (lifeEvents.length > 0) {
@@ -121,7 +121,18 @@ export async function saveProfileData(data: FullProfileData): Promise<{ success:
           tag: item.tag || 'ESAI KRITIS',
           read_time: item.read_time || '5 Menit Membaca',
           description: item.description || '',
+          content_full: item.content_full || '',
           link_url: item.link_url || '#',
+          order_index: idx + 1
+        })));
+      }
+
+      if (gallery && gallery.length > 0) {
+        await supabase.from('gallery').insert(gallery.map((item, idx) => ({
+          id: isValidUUID(item.id) ? item.id : crypto.randomUUID(),
+          profile_id: pId,
+          title: item.title || '',
+          image_url: item.image_url || '',
           order_index: idx + 1
         })));
       }
@@ -145,7 +156,7 @@ export async function saveProfileData(data: FullProfileData): Promise<{ success:
           category: item.category || 'Inisiatif',
           description: item.description || '',
           price: item.price || '',
-          price_variants: item.price_variants || [],
+          image_url: item.image_url || '',
           action_text: item.action_text || 'Lihat',
           link_url: item.link_url || '#',
           order_index: idx + 1
@@ -153,7 +164,7 @@ export async function saveProfileData(data: FullProfileData): Promise<{ success:
       }
     }
 
-    return { success: true, message: 'Data profil & ekosistem berhasil tersimpan sempurna ke Supabase!' };
+    return { success: true, message: 'Data profil & ekosistem berhasil tersimpan sempurna!' };
   } catch (err: unknown) {
     const errorMsg = err instanceof Error ? err.message : 'Unknown error';
     return { success: true, message: `Data tersimpan di memori lokal. (${errorMsg})` };

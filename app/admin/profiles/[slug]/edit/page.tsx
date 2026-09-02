@@ -21,23 +21,29 @@ import {
   Calendar,
   Globe,
   ShieldCheck,
-  Sparkles
+  Sparkles,
+  Image as ImageIcon,
+  Link as LinkIcon,
+  Share2,
+  FileText,
+  Feather
 } from 'lucide-react';
 import { getProfileBySlug, saveProfileData } from '../../../../../lib/supabase/adminActions';
-import { FullProfileData, LifeEvent, Work, Article, Testimonial, Initiative } from '../../../../../lib/supabase/types';
+import { FullProfileData, LifeEvent, Work, Article, Testimonial, Initiative, GalleryItem, SocialLinks } from '../../../../../lib/supabase/types';
 
 export default function EditProfileEditorPage() {
   const params = useParams();
   const router = useRouter();
   const slug = (params?.slug as string) || 'ferry-irwandi';
 
-  const [activeTab, setActiveTab] = useState<'profile' | 'events' | 'works' | 'articles' | 'products' | 'testimonials'>('profile');
+  const [activeTab, setActiveTab] = useState<'profile' | 'events' | 'works' | 'articles' | 'gallery' | 'products' | 'testimonials'>('profile');
   const [data, setData] = useState<FullProfileData | null>(null);
   const [toastMsg, setToastMsg] = useState<string | null>(null);
 
   useEffect(() => {
     const load = async () => {
       const res = await getProfileBySlug(slug);
+      if (!res.gallery) res.gallery = [];
       setData(res);
     };
     load();
@@ -52,7 +58,7 @@ export default function EditProfileEditorPage() {
     );
   }
 
-  const { profile, lifeEvents, works, articles, testimonials, initiatives } = data;
+  const { profile, lifeEvents, works, articles, testimonials, initiatives, gallery = [] } = data;
 
   const handleSaveAll = async () => {
     const res = await saveProfileData(data);
@@ -62,6 +68,23 @@ export default function EditProfileEditorPage() {
 
   const inputStyle = "w-full p-2.5 rounded-xl border text-xs font-sans text-gray-900 bg-white dark:bg-[#0A0E1A] dark:text-[#EDE8DC] border-gray-300 dark:border-white/20 focus:border-[#E11D48] focus:outline-none transition-colors";
   const labelStyle = "text-xs font-mono uppercase font-bold text-gray-700 dark:text-gray-300 block mb-1";
+
+  const socialChannels: { key: keyof SocialLinks; label: string; placeholder: string }[] = [
+    { key: 'youtube', label: 'YouTube URL', placeholder: 'https://youtube.com/@channel' },
+    { key: 'twitter', label: 'Twitter / X URL', placeholder: 'https://twitter.com/username' },
+    { key: 'instagram', label: 'Instagram URL', placeholder: 'https://instagram.com/username' },
+    { key: 'spotify', label: 'Spotify URL', placeholder: 'https://open.spotify.com/artist/id' },
+    { key: 'tiktok', label: 'TikTok URL', placeholder: 'https://tiktok.com/@username' },
+    { key: 'linkedin', label: 'LinkedIn URL', placeholder: 'https://linkedin.com/in/username' },
+    { key: 'threads', label: 'Threads URL', placeholder: 'https://threads.net/@username' },
+    { key: 'facebook', label: 'Facebook URL', placeholder: 'https://facebook.com/username' },
+    { key: 'website', label: 'Website Personal', placeholder: 'https://domainku.id' },
+    { key: 'email', label: 'Email Kontak / Surat', placeholder: 'contact@domain.id' },
+    { key: 'substack', label: 'Substack Newsletter', placeholder: 'https://username.substack.com' },
+    { key: 'medium', label: 'Medium Blog', placeholder: 'https://medium.com/@username' },
+    { key: 'trakteer', label: 'Trakteer / Apresiasi', placeholder: 'https://trakteer.id/username' },
+    { key: 'patreon', label: 'Patreon Community', placeholder: 'https://patreon.com/username' },
+  ];
 
   return (
     <div className="space-y-8 max-w-4xl mx-auto pb-20">
@@ -108,12 +131,13 @@ export default function EditProfileEditorPage() {
       {/* NAVIGATION TABS */}
       <div className="flex items-center gap-2 overflow-x-auto no-scrollbar border-b border-inherit/10 pb-3 text-xs font-mono font-bold uppercase">
         {[
-          { id: 'profile', label: '1. Profil Utama' },
+          { id: 'profile', label: '1. Profil & Sosmed A-Z' },
           { id: 'events', label: `2. Linimasa (${lifeEvents.length})` },
           { id: 'works', label: `3. Karya (${works.length})` },
-          { id: 'articles', label: `4. Artikel SEO (${articles.length})` },
-          { id: 'products', label: `5. Produk & Variasi (${initiatives.length})` },
-          { id: 'testimonials', label: `6. Kata Warga (${testimonials.length})` },
+          { id: 'articles', label: `4. Editor Blog Esai (${articles.length})` },
+          { id: 'gallery', label: `5. Galeri Foto (${gallery.length})` },
+          { id: 'products', label: `6. Produk (${initiatives.length})` },
+          { id: 'testimonials', label: `7. Kata Warga (${testimonials.length})` },
         ].map((t) => (
           <button
             key={t.id}
@@ -129,7 +153,7 @@ export default function EditProfileEditorPage() {
         ))}
       </div>
 
-      {/* TAB CONTENT 1: PROFIL UTAMA */}
+      {/* TAB CONTENT 1: PROFIL UTAMA & SOSMED A-Z */}
       {activeTab === 'profile' && (
         <div className="space-y-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -221,42 +245,37 @@ export default function EditProfileEditorPage() {
             />
           </div>
 
-          <div className="pt-4 border-t border-inherit/10 space-y-3">
-            <span className="text-[#E11D48] font-bold font-mono text-xs uppercase">TAUTAN MEDIA SOSIAL:</span>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-              <div>
-                <label className={labelStyle}>YouTube URL:</label>
-                <input 
-                  type="text" 
-                  value={profile.social_links.youtube || ''} 
-                  onChange={(e) => setData({ ...data, profile: { ...profile, social_links: { ...profile.social_links, youtube: e.target.value } } })}
-                  className={inputStyle}
-                />
-              </div>
-              <div>
-                <label className={labelStyle}>Twitter X URL:</label>
-                <input 
-                  type="text" 
-                  value={profile.social_links.twitter || ''} 
-                  onChange={(e) => setData({ ...data, profile: { ...profile, social_links: { ...profile.social_links, twitter: e.target.value } } })}
-                  className={inputStyle}
-                />
-              </div>
-              <div>
-                <label className={labelStyle}>Instagram URL:</label>
-                <input 
-                  type="text" 
-                  value={profile.social_links.instagram || ''} 
-                  onChange={(e) => setData({ ...data, profile: { ...profile, social_links: { ...profile.social_links, instagram: e.target.value } } })}
-                  className={inputStyle}
-                />
-              </div>
+          {/* SOSMED LENGKAP A S/D Z */}
+          <div className="pt-6 border-t border-inherit/10 space-y-4">
+            <div className="space-y-1">
+              <span className="text-[#E11D48] font-bold font-mono text-xs uppercase block">TAUTAN MEDIA SOSIAL (A S/D Z):</span>
+              <p className="text-[11px] text-gray-400 font-mono">
+                *Catatan: Hanya sosial media yang diisi URL-nya yang akan tampil di halaman publik. Jika dikosongkan, ikon tidak akan muncul.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              {socialChannels.map((item) => (
+                <div key={item.key}>
+                  <label className={labelStyle}>{item.label}:</label>
+                  <input 
+                    type="text" 
+                    placeholder={item.placeholder}
+                    value={profile.social_links[item.key] || ''} 
+                    onChange={(e) => {
+                      const nextSoc = { ...profile.social_links, [item.key]: e.target.value };
+                      setData({ ...data, profile: { ...profile, social_links: nextSoc } });
+                    }}
+                    className={inputStyle}
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </div>
       )}
 
-      {/* TAB CONTENT 2: LINIMASA HIDUP (UUID v4 & High Contrast Text) */}
+      {/* TAB CONTENT 2: LINIMASA HIDUP */}
       {activeTab === 'events' && (
         <div className="space-y-6 font-mono text-xs">
           <div className="flex items-center justify-between">
@@ -441,20 +460,25 @@ export default function EditProfileEditorPage() {
         </div>
       )}
 
-      {/* TAB CONTENT 4: ARTIKEL & SEO */}
+      {/* TAB CONTENT 4: FORM ARTIKEL KHUSUS PENULIS (BLOG/MEDIUM STYLE EDITOR) */}
       {activeTab === 'articles' && (
         <div className="space-y-6 font-mono text-xs">
           <div className="flex items-center justify-between">
-            <span className="text-gray-400 uppercase">DAFTAR ESAI ARTIKEL TERPUBLIKASI (SEO)</span>
+            <div>
+              <span className="text-[#E11D48] font-bold uppercase block">DISTRACTION-FREE BLOG WRITER EDITOR</span>
+              <p className="text-gray-400 font-sans text-xs">Ruang nyaman untuk menulis naskah esai & artikel berbobot tinggi.</p>
+            </div>
+
             <button
               onClick={() => {
                 const newArt: Article = {
                   id: crypto.randomUUID(),
                   profile_id: profile.id,
-                  title: 'Judul Analisis Terbaru',
+                  title: 'Judul Analisis Esai Baru',
                   tag: 'ESAI KRITIS',
                   read_time: '5 Menit Membaca',
                   description: 'Ringkasan esai baru...',
+                  content_full: '',
                   link_url: '/artikel/analisis-kritis-literasi-keuangan',
                   order_index: articles.length + 1
                 };
@@ -467,64 +491,93 @@ export default function EditProfileEditorPage() {
             </button>
           </div>
 
-          <div className="space-y-6">
+          <div className="space-y-8">
             {articles.map((art, idx) => (
-              <div key={art.id} className="p-5 rounded-2xl border border-inherit/10 space-y-4 bg-inherit/30">
-                <div className="flex items-center justify-between">
-                  <span className="text-[#E11D48] font-bold">ARTIKEL #{idx + 1}</span>
+              <div key={art.id} className="p-6 rounded-3xl border border-inherit/20 space-y-5 bg-inherit/40 shadow-sm">
+                
+                {/* Header Item */}
+                <div className="flex items-center justify-between border-b pb-3 border-inherit/10">
+                  <div className="flex items-center gap-2">
+                    <Feather className="w-4 h-4 text-[#E11D48]" />
+                    <span className="text-[#E11D48] font-bold">ARTIKEL BLOG #{idx + 1}</span>
+                  </div>
                   <button 
                     onClick={() => setData({ ...data, articles: articles.filter(a => a.id !== art.id) })}
-                    className="p-1 rounded text-red-500 hover:bg-red-500/10"
+                    className="p-1.5 rounded text-red-500 hover:bg-red-500/10 flex items-center gap-1"
                   >
                     <Trash2 className="w-4 h-4" />
+                    <span>Hapus Artikel</span>
                   </button>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {/* Writer Title */}
+                <div>
+                  <label className={labelStyle}>Judul Artikel (Display Title):</label>
+                  <input 
+                    type="text" 
+                    placeholder="Judul Esai Yang Menggugah Nalar..."
+                    value={art.title}
+                    onChange={(e) => {
+                      const next = [...articles];
+                      next[idx].title = e.target.value;
+                      setData({ ...data, articles: next });
+                    }}
+                    className="w-full p-3 rounded-xl border font-display text-xl text-gray-900 bg-white dark:bg-[#0A0E1A] dark:text-[#EDE8DC] border-gray-300 dark:border-white/20 focus:border-[#E11D48] focus:outline-none"
+                  />
+                </div>
+
+                {/* Metadata Row */}
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                   <div>
-                    <label className={labelStyle}>Judul Artikel:</label>
+                    <label className={labelStyle}>Kategori / Tag Badge:</label>
                     <input 
                       type="text" 
-                      value={art.title}
+                      placeholder="ESAI KRITIS / FILSAFAT / INVESTIGASI"
+                      value={art.tag}
                       onChange={(e) => {
                         const next = [...articles];
-                        next[idx].title = e.target.value;
+                        next[idx].tag = e.target.value;
                         setData({ ...data, articles: next });
                       }}
                       className={inputStyle}
                     />
                   </div>
                   <div>
-                    <label className={labelStyle}>Tag & Waktu Baca:</label>
-                    <div className="flex gap-2">
-                      <input 
-                        type="text" 
-                        value={art.tag}
-                        onChange={(e) => {
-                          const next = [...articles];
-                          next[idx].tag = e.target.value;
-                          setData({ ...data, articles: next });
-                        }}
-                        className={inputStyle}
-                      />
-                      <input 
-                        type="text" 
-                        value={art.read_time}
-                        onChange={(e) => {
-                          const next = [...articles];
-                          next[idx].read_time = e.target.value;
-                          setData({ ...data, articles: next });
-                        }}
-                        className={inputStyle}
-                      />
-                    </div>
+                    <label className={labelStyle}>Estimasi Waktu Baca:</label>
+                    <input 
+                      type="text" 
+                      placeholder="5 Menit Membaca"
+                      value={art.read_time}
+                      onChange={(e) => {
+                        const next = [...articles];
+                        next[idx].read_time = e.target.value;
+                        setData({ ...data, articles: next });
+                      }}
+                      className={inputStyle}
+                    />
+                  </div>
+                  <div>
+                    <label className={labelStyle}>Tautan SEO / Slug URL:</label>
+                    <input 
+                      type="text" 
+                      placeholder="/artikel/judul-esai"
+                      value={art.link_url}
+                      onChange={(e) => {
+                        const next = [...articles];
+                        next[idx].link_url = e.target.value;
+                        setData({ ...data, articles: next });
+                      }}
+                      className={inputStyle}
+                    />
                   </div>
                 </div>
 
+                {/* Abstract Summary */}
                 <div>
-                  <label className={labelStyle}>Ringkasan Abstrak:</label>
+                  <label className={labelStyle}>Ringkasan Abstrak (Tampil di Kartu Depan):</label>
                   <textarea 
                     rows={2}
+                    placeholder="Ringkasan 2 kalimat abstrak esai..."
                     value={art.description}
                     onChange={(e) => {
                       const next = [...articles];
@@ -534,29 +587,125 @@ export default function EditProfileEditorPage() {
                     className={inputStyle}
                   />
                 </div>
+
+                {/* Full Comfortable Blog Writer Textarea */}
+                <div>
+                  <div className="flex items-center justify-between mb-1">
+                    <label className={labelStyle}>Naskah Lengkap Artikel (Full Blog Body Content):</label>
+                    <span className="text-[10px] text-gray-400 font-mono">Dukungan Paragraf & Markdown</span>
+                  </div>
+                  <textarea 
+                    rows={8}
+                    placeholder="Tuliskan seluruh naskah esai secara leluasa dan nyaman di sini..."
+                    value={art.content_full || ''}
+                    onChange={(e) => {
+                      const next = [...articles];
+                      next[idx].content_full = e.target.value;
+                      setData({ ...data, articles: next });
+                    }}
+                    className="w-full p-4 rounded-2xl border font-serif text-sm leading-relaxed text-gray-900 bg-white dark:bg-[#0A0E1A] dark:text-[#EDE8DC] border-gray-300 dark:border-white/20 focus:border-[#E11D48] focus:outline-none"
+                  />
+                </div>
+
               </div>
             ))}
           </div>
         </div>
       )}
 
-      {/* TAB CONTENT 5: PRODUK & VARIASI HARGA */}
+      {/* TAB CONTENT 5: GALERI FOTO VISUAL (FORM BARU!) */}
+      {activeTab === 'gallery' && (
+        <div className="space-y-6 font-mono text-xs">
+          <div className="flex items-center justify-between">
+            <span className="text-gray-400 uppercase">FORM KELOLA DOKUMENTASI GALERI VISUAL</span>
+            <button
+              onClick={() => {
+                const newGal: GalleryItem = {
+                  id: crypto.randomUUID(),
+                  profile_id: profile.id,
+                  title: 'Dokumentasi Aksi Warga',
+                  image_url: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80',
+                  order_index: gallery.length + 1
+                };
+                setData({ ...data, gallery: [...gallery, newGal] });
+              }}
+              className="px-3 py-1.5 rounded-lg bg-[#E11D48] text-white flex items-center gap-1 font-mono uppercase font-bold"
+            >
+              <Plus className="w-3.5 h-3.5" />
+              <span>+ TAMBAH FOTO GALERI</span>
+            </button>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {gallery.map((g, idx) => (
+              <div key={g.id} className="p-4 rounded-2xl border border-inherit/10 space-y-3 bg-inherit/30 flex flex-col justify-between">
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between">
+                    <span className="text-[#E11D48] font-bold">FOTO #{idx + 1}</span>
+                    <button 
+                      onClick={() => setData({ ...data, gallery: gallery.filter(item => item.id !== g.id) })}
+                      className="p-1 rounded text-red-500 hover:bg-red-500/10"
+                    >
+                      <Trash2 className="w-4 h-4" />
+                    </button>
+                  </div>
+
+                  {/* Image Preview */}
+                  <div className="relative w-full h-36 rounded-xl overflow-hidden border border-inherit/20 bg-neutral-900">
+                    <Image src={g.image_url} alt={g.title} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
+                  </div>
+
+                  <div>
+                    <label className={labelStyle}>Judul / Caption Foto:</label>
+                    <input 
+                      type="text" 
+                      value={g.title}
+                      onChange={(e) => {
+                        const next = [...gallery];
+                        next[idx].title = e.target.value;
+                        setData({ ...data, gallery: next });
+                      }}
+                      className={inputStyle}
+                    />
+                  </div>
+
+                  <div>
+                    <label className={labelStyle}>Link URL Foto (Image URL):</label>
+                    <input 
+                      type="text" 
+                      value={g.image_url}
+                      onChange={(e) => {
+                        const next = [...gallery];
+                        next[idx].image_url = e.target.value;
+                        setData({ ...data, gallery: next });
+                      }}
+                      className={inputStyle}
+                    />
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* TAB CONTENT 6: PRODUK & INISIATIF (WITH LINK & THUMBNAIL) */}
       {activeTab === 'products' && (
         <div className="space-y-6 font-mono text-xs">
           <div className="flex items-center justify-between">
-            <span className="text-gray-400 uppercase">PRODUK, KARYA CETAK & INISIATIF WARGA</span>
+            <span className="text-gray-400 uppercase">PRODUK & INISIATIF WARGA (LENGKAP THUMBNAIL & LINK)</span>
             <button
               onClick={() => {
                 const newProd: Initiative = {
                   id: crypto.randomUUID(),
                   profile_id: profile.id,
-                  title: 'Inisiatif Baru',
+                  title: 'Inisiatif / Produk Baru',
                   category: 'Merchandise',
                   description: 'Deskripsi produk...',
                   price: 'Rp 199.000',
-                  price_variants: ['Edisi Standar (Rp 199.000)', 'Edisi Khusus (Rp 299.000)'],
+                  image_url: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80',
                   action_text: 'Beli / Dukung',
-                  link_url: '#',
+                  link_url: 'https://malakaproject.id',
                   order_index: initiatives.length + 1
                 };
                 setData({ ...data, initiatives: [...initiatives, newProd] });
@@ -596,7 +745,7 @@ export default function EditProfileEditorPage() {
                     />
                   </div>
                   <div>
-                    <label className={labelStyle}>Harga Utama (Display Badge):</label>
+                    <label className={labelStyle}>Harga Display (misal: Rp 149.000):</label>
                     <input 
                       type="text" 
                       value={prod.price || ''}
@@ -611,27 +760,82 @@ export default function EditProfileEditorPage() {
                   </div>
                 </div>
 
+                {/* Thumbnail Image URL & Preview */}
                 <div>
-                  <label className={labelStyle}>Variasi Harga & Tiering (Pisahkan Komma):</label>
-                  <input 
-                    type="text" 
-                    value={(prod.price_variants || []).join(', ')}
-                    placeholder="Softcover (Rp 149.000), Hardcover Signature (Rp 249.000)"
+                  <label className={labelStyle}>Foto Thumbnail Produk (Image URL):</label>
+                  <div className="flex gap-4 items-center">
+                    <input 
+                      type="text" 
+                      placeholder="https://images.unsplash.com/..."
+                      value={prod.image_url || ''}
+                      onChange={(e) => {
+                        const next = [...initiatives];
+                        next[idx].image_url = e.target.value;
+                        setData({ ...data, initiatives: next });
+                      }}
+                      className={inputStyle}
+                    />
+                    {prod.image_url && (
+                      <div className="relative w-14 h-14 rounded-lg overflow-hidden border border-[#E11D48]/40 shrink-0 bg-neutral-900">
+                        <Image src={prod.image_url} alt="Product Thumbnail" fill sizes="56px" className="object-cover" />
+                      </div>
+                    )}
+                  </div>
+                </div>
+
+                {/* Action Link & Text */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <div>
+                    <label className={labelStyle}>Teks Tombol Aksi (CTA):</label>
+                    <input 
+                      type="text" 
+                      placeholder="Beli Resmi / Salurkan Donasi"
+                      value={prod.action_text}
+                      onChange={(e) => {
+                        const next = [...initiatives];
+                        next[idx].action_text = e.target.value;
+                        setData({ ...data, initiatives: next });
+                      }}
+                      className={inputStyle}
+                    />
+                  </div>
+                  <div>
+                    <label className={labelStyle}>Tautan Link URL Toko / Aksi:</label>
+                    <input 
+                      type="text" 
+                      placeholder="https://malakaproject.id"
+                      value={prod.link_url}
+                      onChange={(e) => {
+                        const next = [...initiatives];
+                        next[idx].link_url = e.target.value;
+                        setData({ ...data, initiatives: next });
+                      }}
+                      className={inputStyle}
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label className={labelStyle}>Deskripsi Produk:</label>
+                  <textarea 
+                    rows={2}
+                    value={prod.description}
                     onChange={(e) => {
                       const next = [...initiatives];
-                      next[idx].price_variants = e.target.value.split(',').map(s => s.trim()).filter(Boolean);
+                      next[idx].description = e.target.value;
                       setData({ ...data, initiatives: next });
                     }}
                     className={inputStyle}
                   />
                 </div>
+
               </div>
             ))}
           </div>
         </div>
       )}
 
-      {/* TAB CONTENT 6: KATA WARGA & TESTIMONI */}
+      {/* TAB CONTENT 7: KATA WARGA & TESTIMONI */}
       {activeTab === 'testimonials' && (
         <div className="space-y-6 font-mono text-xs">
           <div className="flex items-center justify-between">

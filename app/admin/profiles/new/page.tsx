@@ -42,6 +42,7 @@ export default function NewProfilePage() {
       lifeEvents: [],
       works: [],
       articles: [],
+      gallery: [],
       testimonials: [],
       initiatives: []
     });
