@@ -101,3 +101,22 @@ export interface FullProfileData {
   testimonials: Testimonial[];
   initiatives: Initiative[];
 }
+
+export type PipelineStage = 'queued' | 'researching' | 'writing' | 'curating' | 'validating' | 'live' | 'failed';
+
+export interface PipelineQueueItem {
+  id: string;
+  query_name: string;
+  slug?: string;
+  category?: string;
+  status: PipelineStage;
+  current_agent?: string;
+  mode?: 'new' | 'update';
+  progress_percent?: number;
+  log_message?: string;
+  error_message?: string;
+  profile_id?: string;
+  created_at?: string;
+  updated_at?: string;
+}
+

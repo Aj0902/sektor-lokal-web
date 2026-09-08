@@ -1,0 +1,283 @@
+{
+  "name": "Sektor Lokal - Tool-Calling Autonomous Multi-Agent Editorial Pipeline (Google Drive & Serper)",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "editorial-pipeline",
+        "options": {}
+      },
+      "name": "Webhook Trigger",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1.1,
+      "position": [
+        200,
+        300
+      ],
+      "id": "node-webhook"
+    },
+    {
+      "parameters": {
+        "method": "PATCH",
+        "url": "={{ $env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000' }}/api/pipeline/save",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "job_id",
+              "value": "={{ $json.body.job_id }}"
+            },
+            {
+              "name": "status",
+              "value": "researching"
+            },
+            {
+              "name": "current_agent",
+              "value": "Agen Jurnalis Lapangan (Membaca Google Drive & Sheet)"
+            }
+          ]
+        }
+      },
+      "name": "Update Status: Researching",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [
+        420,
+        300
+      ],
+      "id": "node-update-research"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=Tugas Anda adalah meriset dan memverifikasi tokoh: {{ $node[\"Webhook Trigger\"].json.body.query_name }}.\nLangkah Riset Mandiri:\n1. Gunakan tool 'Baca_Dossier_Google_Drive' untuk membaca naskah resume lengkap (.md) dari Google Drive.\n2. Gunakan tool 'Cari_Sheet_Hasil_Serper' untuk menarik data artikel, foto, dan produk terverifikasi.\n3. Jika data belum lengkap atau tokoh baru, gunakan tool 'Serper_Live_Search'.",
+        "hasOutputParser": true,
+        "systemMessage": "Anda adalah Agen Jurnalis Lapangan Sektor Lokal otonom. Anda dibekali 3 Tools: (1) Baca_Dossier_Google_Drive, (2) Cari_Sheet_Hasil_Serper, (3) Serper_Live_Search. Ekstraksi fakta 5W+1H, validasi 10 Laci, milestones karir, dan karya utama."
+      },
+      "name": "1. Agen Jurnalis Lapangan (Tool-Calling)",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.6,
+      "position": [
+        680,
+        300
+      ],
+      "id": "node-agent-jurnalis"
+    },
+    {
+      "parameters": {
+        "name": "Baca_Dossier_Google_Drive",
+        "description": "Tool untuk membaca berkas resume mendalam (.md) berisi Platform Profile dan Fact Master Dossier tokoh langsung dari Google Drive Sektor Lokal.",
+        "url": "={{ $env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000' }}/api/pipeline/read-dossier?slug={query}",
+        "method": "GET"
+      },
+      "name": "Tool: Baca_Dossier_Google_Drive",
+      "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
+      "typeVersion": 1.1,
+      "position": [
+        560,
+        520
+      ],
+      "id": "node-tool-dossier-drive"
+    },
+    {
+      "parameters": {
+        "name": "Cari_Sheet_Hasil_Serper",
+        "description": "Tool untuk mencari data artikel, foto HD resmi, dan produk dari Google Sheet hasil panen Serper terfilter otomatis berdasarkan nama.",
+        "url": "={{ $env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000' }}/api/pipeline/harvest-data?q={query}",
+        "method": "GET"
+      },
+      "name": "Tool: Cari_Sheet_Hasil_Serper",
+      "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
+      "typeVersion": 1.1,
+      "position": [
+        740,
+        520
+      ],
+      "id": "node-tool-sheet"
+    },
+    {
+      "parameters": {
+        "name": "Serper_Live_Search",
+        "description": "Tool pencarian Google / Serper live untuk mencari berita atau kabar terbaru 2024-2026 jika data di sheet belum mencukupi.",
+        "url": "https://google.serper.dev/search",
+        "method": "POST",
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"q\": \"{query}\",\n  \"num\": 5\n}"
+      },
+      "name": "Tool: Serper_Live_Search",
+      "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
+      "typeVersion": 1.1,
+      "position": [
+        920,
+        520
+      ],
+      "id": "node-tool-serper"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.output }}",
+        "hasOutputParser": true,
+        "systemMessage": "Anda adalah Lead Editorial Wordsmith Sektor Lokal. Tulis naskah narasi biografi 4 paragraf bergaya sastrawi Tempo Institute dan 2 artikel esai reflektif berdasarkan brief fakta jurnalis."
+      },
+      "name": "2. Agen Penulis Naskah",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.6,
+      "position": [
+        980,
+        300
+      ],
+      "id": "node-agent-penulis"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=Draf Naskah: {{ $json.output }}\nData Riset Jurnalis: {{ $node[\"1. Agen Jurnalis Lapangan (Tool-Calling)\"].json.output }}",
+        "hasOutputParser": true,
+        "systemMessage": "Anda adalah Kurator Visual & Niaga Sektor Lokal. Kurasi 5-10 foto resolusi tinggi dan 3-5 inisiatif/produk terverifikasi dengan smart deduplication."
+      },
+      "name": "3. Agen Kurator Media",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.6,
+      "position": [
+        1220,
+        300
+      ],
+      "id": "node-agent-kurator"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=Hasil Penulis: {{ $node[\"2. Agen Penulis Naskah\"].json.output }}\nHasil Kurator: {{ $json.output }}",
+        "hasOutputParser": true,
+        "systemMessage": "Anda adalah Pemred Sektor Lokal. Lakukan QA, koreksi fakta, validasi schema, dan bentuk payload FullProfileData final yang siap ditembakkan ke Supabase."
+      },
+      "name": "4. Agen Pemred QA Validator",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.6,
+      "position": [
+        1460,
+        300
+      ],
+      "id": "node-agent-pemred"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000' }}/api/pipeline/save",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"job_id\": \"{{ $node[\"Webhook Trigger\"].json.body.job_id }}\",\n  \"profileData\": {{ $json.output }}\n}"
+      },
+      "name": "5. Supabase Production Pusher",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [
+        1700,
+        300
+      ],
+      "id": "node-push-supabase"
+    }
+  ],
+  "connections": {
+    "Webhook Trigger": {
+      "main": [
+        [
+          {
+            "node": "Update Status: Researching",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Update Status: Researching": {
+      "main": [
+        [
+          {
+            "node": "1. Agen Jurnalis Lapangan (Tool-Calling)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Tool: Baca_Dossier_Google_Drive": {
+      "ai_tool": [
+        [
+          {
+            "node": "1. Agen Jurnalis Lapangan (Tool-Calling)",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Tool: Cari_Sheet_Hasil_Serper": {
+      "ai_tool": [
+        [
+          {
+            "node": "1. Agen Jurnalis Lapangan (Tool-Calling)",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Tool: Serper_Live_Search": {
+      "ai_tool": [
+        [
+          {
+            "node": "1. Agen Jurnalis Lapangan (Tool-Calling)",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "1. Agen Jurnalis Lapangan (Tool-Calling)": {
+      "main": [
+        [
+          {
+            "node": "2. Agen Penulis Naskah",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2. Agen Penulis Naskah": {
+      "main": [
+        [
+          {
+            "node": "3. Agen Kurator Media",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3. Agen Kurator Media": {
+      "main": [
+        [
+          {
+            "node": "4. Agen Pemred QA Validator",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4. Agen Pemred QA Validator": {
+      "main": [
+        [
+          {
+            "node": "5. Supabase Production Pusher",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}

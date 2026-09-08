@@ -1,5 +1,5 @@
 import { createClient } from './client';
-import { Profile, LifeEvent, Work, Article, Testimonial, Initiative, GalleryItem, FullProfileData } from './types';
+import { Profile, LifeEvent, Work, Article, Testimonial, Initiative, GalleryItem, FullProfileData, PipelineQueueItem } from './types';
 import { fallbackProfiles } from './fallbackData';
 
 export async function getAllProfiles(): Promise<Profile[]> {
@@ -220,8 +220,119 @@ export async function deleteProfileBySlug(slug: string): Promise<{ success: bool
   return { success: true, message: `Profil ${slug} telah berhasil dihapus!` };
 }
 
+// ============================================================================
+// PIPELINE QUEUE ACTIONS
+// ============================================================================
+
+export async function getQueueItems(): Promise<PipelineQueueItem[]> {
+  try {
+    const supabase = createClient();
+    const { data, error } = await supabase
+      .from('pipeline_queue')
+      .select('*')
+      .order('created_at', { ascending: false });
+
+    if (data && !error) {
+      return data as PipelineQueueItem[];
+    }
+  } catch (err) {
+    console.warn('Queue fetch error:', err);
+  }
+  return [];
+}
+
+export async function addQueriesToQueue(queries: string[]): Promise<{ success: boolean; added: number; message: string }> {
+  const cleanQueries = queries
+    .map(q => q.trim())
+    .filter(q => q.length > 0);
+
+  if (cleanQueries.length === 0) {
+    return { success: false, added: 0, message: 'Tidak ada nama tokoh yang valid untuk ditambahkan.' };
+  }
+
+  try {
+    const supabase = createClient();
+    const newItems = cleanQueries.map(name => ({
+      id: crypto.randomUUID(),
+      query_name: name,
+      slug: name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, ''),
+      status: 'queued',
+      current_agent: 'Menunggu Antrean',
+      progress_percent: 0,
+      log_message: 'Job dimasukkan ke antrean editorial'
+    }));
+
+    const { data, error } = await supabase
+      .from('pipeline_queue')
+      .insert(newItems)
+      .select();
+
+    if (error) {
+      console.error('Queue insert error:', error);
+      return { success: false, added: 0, message: `Gagal menambahkan ke antrean: ${error.message}` };
+    }
+
+    return { 
+      success: true, 
+      added: data?.length || newItems.length, 
+      message: `Berhasil menambahkan ${data?.length || newItems.length} tokoh ke antrean!` 
+    };
+  } catch (err: any) {
+    return { success: false, added: 0, message: `Error koneksi: ${err.message}` };
+  }
+}
+
+export async function updateQueueStatus(
+  id: string, 
+  updates: Partial<PipelineQueueItem>
+): Promise<{ success: boolean }> {
+  try {
+    const supabase = createClient();
+    const { error } = await supabase
+      .from('pipeline_queue')
+      .update({
+        ...updates,
+        updated_at: new Date().toISOString()
+      })
+      .eq('id', id);
+
+    return { success: !error };
+  } catch {
+    return { success: false };
+  }
+}
+
+export async function deleteQueueItem(id: string): Promise<{ success: boolean }> {
+  try {
+    const supabase = createClient();
+    const { error } = await supabase
+      .from('pipeline_queue')
+      .delete()
+      .eq('id', id);
+
+    return { success: !error };
+  } catch {
+    return { success: false };
+  }
+}
+
+export async function clearFinishedQueue(): Promise<{ success: boolean }> {
+  try {
+    const supabase = createClient();
+    const { error } = await supabase
+      .from('pipeline_queue')
+      .delete()
+      .in('status', ['live', 'failed']);
+
+    return { success: !error };
+  } catch {
+    return { success: false };
+  }
+}
+
 function isValidUUID(str: string): boolean {
   if (!str) return false;
   const regex = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
   return regex.test(str);
 }
+

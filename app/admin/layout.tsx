@@ -38,8 +38,20 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
           {/* Navigation Links */}
           <nav className="space-y-1.5 font-mono text-xs uppercase font-semibold">
             <Link 
+              href="/admin/generator" 
+
+              className="flex items-center justify-between px-3 py-2.5 rounded-xl bg-gradient-to-r from-[#E11D48]/20 to-purple-600/20 border border-[#E11D48]/40 text-[#E11D48] hover:from-[#E11D48]/30 hover:to-purple-600/30 transition-all font-bold"
+            >
+              <span className="flex items-center gap-3">
+                <Sparkles className="w-4 h-4 text-[#E11D48] animate-pulse" />
+                <span>AI GENERATOR</span>
+              </span>
+              <span className="px-1.5 py-0.5 text-[9px] rounded bg-[#E11D48] text-white">N8N</span>
+            </Link>
+
+            <Link 
               href="/admin" 
-              className="flex items-center gap-3 px-3 py-2.5 rounded-xl bg-[#E11D48] text-white shadow-md shadow-[#E11D48]/30 transition-all"
+              className="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-[#E11D48]/10 hover:text-[#E11D48] transition-all"
             >
               <Users className="w-4 h-4" />
               <span>DAFTAR TOKOH</span>
@@ -50,7 +62,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
               className="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-[#E11D48]/10 hover:text-[#E11D48] transition-all"
             >
               <FolderPlus className="w-4 h-4" />
-              <span>+ TAMBAH TOKOH</span>
+              <span>+ TAMBAH MANUAL</span>
             </Link>
 
             <a 
@@ -64,6 +76,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
               </span>
             </a>
           </nav>
+
 
         </div>
 
