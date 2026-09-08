@@ -11,7 +11,10 @@ import {
   Users, 
   ShieldCheck, 
   Filter,
-  X
+  X,
+  Compass,
+  CheckCircle2,
+  BookOpen
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import ConstellationCanvas from '../../../components/ConstellationCanvas';
@@ -76,9 +79,9 @@ function WargaLokalArchiveContent() {
     return matchesSearch && matchesLaci;
   });
 
-  const bgCanvas = isDarkMode ? 'particle-wave-dark text-[#EDE8DC]' : 'particle-wave-light text-[#0A0E1A]';
+  const bgCanvas = isDarkMode ? 'particle-wave-dark text-[#F5EFEB]' : 'particle-wave-light text-[#0A0E1A]';
   const cardClass = isDarkMode ? 'spotlight-card-dark' : 'spotlight-card-light';
-  const mutedText = isDarkMode ? 'text-[#8A93A8]' : 'text-[#64748B]';
+  const mutedText = isDarkMode ? 'text-[#8E95A5]' : 'text-[#64748B]';
 
   return (
     <div className={`min-h-screen ${bgCanvas} font-sans antialiased selection:bg-[#E11D48] selection:text-white relative flex flex-col justify-between`}>
@@ -95,8 +98,8 @@ function WargaLokalArchiveContent() {
         {/* Breadcrumbs */}
         <Breadcrumbs 
           items={[
-            { label: 'Arsip', href: '/arsip' },
-            { label: 'Warga Lokal (100 Tokoh)' }
+            { label: 'Pusat Penemuan', href: '/arsip' },
+            { label: 'Warga Lokal (Series 001–100)' }
           ]} 
           isDarkMode={isDarkMode}
         />
@@ -104,14 +107,14 @@ function WargaLokalArchiveContent() {
         {/* Header Section */}
         <div className="space-y-4 max-w-3xl">
           <div className="inline-flex items-center gap-2 text-xs font-mono text-[#E11D48] font-bold uppercase tracking-widest">
-            <Users className="w-4 h-4" />
-            <span>KATALOG INDEPENDEN 100 WARGA NUSANTARA</span>
+            <Compass className="w-4 h-4" />
+            <span>SERIES 001–100 // 10 LACI PENEMUAN</span>
           </div>
-          <h1 className="text-4xl sm:text-6xl font-display uppercase tracking-tight leading-[0.95]">
-            100 WARGA PENJAGA AKAL SEHAT & PERADABAN
+          <h1 className="text-4xl sm:text-6xl font-display uppercase tracking-tight leading-[0.94]">
+            100 CERITA WARGA YANG LAYAK DITEMUKAN
           </h1>
-          <p className={`text-base leading-relaxed ${mutedText}`}>
-            Mendokumentasikan rekam jejak, dialektika pemikiran, dan aksi nyata 100 warga lintas 10 Laci Peradaban. Dari pejuang adat di rimba pedalaman hingga ilmuwan rekayasa vaksin dunia.
+          <p className={`text-base sm:text-lg leading-relaxed ${mutedText}`}>
+            Di tengah nama-nama yang selalu mondar-mandir di linimasa, ada warga yang justru menarik karena mereka fokus bekerja dalam hening. Ini bukan daftar peringkat, melainkan kumpulan catatan perjalanan orang-orang yang memilih bertindak.
           </p>
         </div>
 
@@ -123,12 +126,12 @@ function WargaLokalArchiveContent() {
             <Search className="w-4 h-4 absolute left-4 top-1/2 -translate-y-1/2 opacity-40 text-inherit" />
             <input 
               type="text" 
-              placeholder="Cari nama tokoh, peran, atau kata kunci gagasan..."
+              placeholder="Cari nama, karya, atau topik inisiatif..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className={`w-full pl-11 pr-10 py-3.5 rounded-2xl border text-sm transition focus:outline-none focus:border-[#E11D48] ${
                 isDarkMode 
-                  ? 'bg-[#111726]/80 border-white/10 text-[#EDE8DC] placeholder-white/30' 
+                  ? 'bg-[#0E131F]/90 border-white/10 text-[#F5EFEB] placeholder-white/30' 
                   : 'bg-white border-black/10 text-[#0A0E1A] placeholder-black/30'
               }`}
             />
@@ -142,7 +145,7 @@ function WargaLokalArchiveContent() {
             )}
           </div>
 
-          {/* 10 Laci Filter Switcher (Horizontal Scrollable Pills) */}
+          {/* 10 Laci Filter Switcher */}
           <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none font-mono text-xs">
             <span className="text-[11px] font-bold text-[#E11D48] uppercase shrink-0 mr-1 flex items-center gap-1">
               <Filter className="w-3 h-3" />
@@ -156,9 +159,9 @@ function WargaLokalArchiveContent() {
                   onClick={() => setSelectedLaci(laci)}
                   className={`px-3.5 py-1.5 rounded-full border transition-all shrink-0 uppercase font-bold tracking-wider ${
                     isSelected
-                      ? 'bg-[#E11D48] border-[#E11D48] text-white shadow-sm shadow-[#E11D48]/40'
+                      ? 'bg-[#E11D48] border-[#E11D48] text-white shadow-crimson-subtle'
                       : isDarkMode
-                        ? 'border-white/10 bg-[#111726]/50 text-[#8A93A8] hover:border-[#E11D48] hover:text-white'
+                        ? 'border-white/10 bg-[#0E131F]/60 text-[#8E95A5] hover:border-[#E11D48] hover:text-white'
                         : 'border-black/10 bg-white text-[#64748B] hover:border-[#E11D48] hover:text-black'
                   }`}
                 >
@@ -171,14 +174,14 @@ function WargaLokalArchiveContent() {
           {/* Result Counter */}
           <div className="flex items-center justify-between text-xs font-mono border-t pt-3 border-inherit/10">
             <span className={mutedText}>
-              Menampilkan <span className="font-bold text-[#E11D48]">{filteredProfiles.length}</span> dari {profiles.length} Warga Terkurasi
+              Menampilkan <span className="font-bold text-[#E11D48]">{filteredProfiles.length}</span> dari {profiles.length} Cerita Warga
             </span>
             {selectedLaci !== 'SEMUA' && (
               <button 
                 onClick={() => setSelectedLaci('SEMUA')}
                 className="text-[#E11D48] hover:underline font-bold"
               >
-                Reset Filter
+                Reset Filter Laci
               </button>
             )}
           </div>
@@ -209,8 +212,8 @@ function WargaLokalArchiveContent() {
                     <span className="inline-block px-2.5 py-0.5 rounded-full bg-[#E11D48]/10 text-[#E11D48] text-[10px] font-mono font-bold border border-[#E11D48]/20 uppercase">
                       {p.category || 'Warga Lokal'}
                     </span>
-                    <div className="flex items-center justify-end gap-1 text-[10px] font-mono text-emerald-500 font-bold">
-                      <ShieldCheck className="w-3 h-3" />
+                    <div className="flex items-center justify-end gap-1 text-[10px] font-mono text-emerald-400 font-bold">
+                      <CheckCircle2 className="w-3 h-3" />
                       <span>TERVERIFIKASI</span>
                     </div>
                   </div>
@@ -228,7 +231,7 @@ function WargaLokalArchiveContent() {
 
                 {/* Quote / Bio */}
                 <blockquote className={`text-xs leading-relaxed line-clamp-3 italic ${mutedText} border-l-2 border-[#E11D48]/40 pl-3`}>
-                  &ldquo;{p.quote || p.bio_paragraphs?.[0] || 'Kemandirian peradaban lokal harus berakar pada nalar sehat dan aksi nyata di tanah air.'}&rdquo;
+                  &ldquo;{p.quote || p.bio_paragraphs?.[0] || 'Kemandirian berakar dari keberanian bertindak di tanah sendiri.'}&rdquo;
                 </blockquote>
               </div>
 
@@ -236,9 +239,9 @@ function WargaLokalArchiveContent() {
               <div className="pt-2 border-t border-inherit/10">
                 <Link 
                   href={`/profil/${p.slug}`}
-                  className="w-full py-3 bg-[#E11D48] hover:bg-[#BE123C] text-white font-mono font-bold text-xs uppercase tracking-wider rounded-xl flex items-center justify-center gap-1.5 shadow-md shadow-[#E11D48]/30 transition"
+                  className="w-full py-3 bg-[#E11D48] hover:bg-[#BE123C] text-white font-mono font-bold text-xs uppercase tracking-wider rounded-xl flex items-center justify-center gap-1.5 shadow-crimson-subtle transition"
                 >
-                  <span>Buka Berkas Profil</span>
+                  <span>Baca Cerita Lengkap</span>
                   <ArrowUpRight className="w-4 h-4" />
                 </Link>
               </div>
@@ -249,7 +252,7 @@ function WargaLokalArchiveContent() {
 
         {filteredProfiles.length === 0 && (
           <div className={`p-12 rounded-3xl border text-center space-y-3 ${cardClass}`}>
-            <p className="text-lg font-display uppercase">Tidak Ada Warga yang Cocok</p>
+            <p className="text-lg font-display uppercase">Tidak Ada Cerita yang Cocok</p>
             <p className={`text-xs font-mono ${mutedText}`}>
               Coba gunakan kata kunci pencarian lain atau reset filter laci kategori.
             </p>
@@ -273,9 +276,9 @@ function WargaLokalArchiveContent() {
 export default function WargaLokalArchivePage() {
   return (
     <Suspense fallback={
-      <div className="min-h-screen bg-[#0A0E1A] text-[#EDE8DC] flex items-center justify-center font-mono text-xs text-[#E11D48]">
-        <div className="w-6 h-6 border-2 border-[#E11D48] border-t-transparent rounded-full animate-spin mr-3" />
-        <span>MEMUAT KATALOG WARGA LOKAL...</span>
+      <div className="min-h-screen bg-[#07090E] text-[#F5EFEB] flex items-center justify-center font-mono text-xs text-[#E11D48]">
+        <div className="w-6 h-6 border-2 border-[#E11D48] border-t-transparent rounded-full animate-spin mr-3 shadow-crimson-subtle" />
+        <span>MEMUAT KATALOG CERITA WARGA...</span>
       </div>
     }>
       <WargaLokalArchiveContent />

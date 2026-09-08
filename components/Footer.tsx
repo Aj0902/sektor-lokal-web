@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { Twitter, Instagram, Youtube, ArrowUpRight, ShieldCheck, FileText, Sparkles } from 'lucide-react';
+import { Twitter, Instagram, Youtube, ArrowUpRight, ShieldCheck, FileText, Sparkles, Compass } from 'lucide-react';
 
 interface FooterProps {
   isDarkMode?: boolean;
@@ -8,10 +8,10 @@ interface FooterProps {
 
 export default function Footer({ isDarkMode = false }: FooterProps) {
   const borderClass = isDarkMode ? 'border-white/[0.08]' : 'border-black/[0.08]';
-  const mutedText = isDarkMode ? 'text-[#8A93A8]' : 'text-[#64748B]';
+  const mutedText = isDarkMode ? 'text-[#8E95A5]' : 'text-[#64748B]';
 
   return (
-    <footer className={`border-t transition-colors ${borderClass} ${isDarkMode ? 'bg-[#0A0E1A] text-[#EDE8DC]' : 'bg-[#F9F8F5] text-[#0A0E1A]'}`}>
+    <footer className={`border-t transition-colors ${borderClass} ${isDarkMode ? 'bg-[#07090E] text-[#F5EFEB]' : 'bg-[#F8F5EE] text-[#0A0E1A]'}`}>
       <div className="max-w-6xl mx-auto px-6 py-16">
         
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 pb-12 border-b border-inherit/10">
@@ -22,10 +22,10 @@ export default function Footer({ isDarkMode = false }: FooterProps) {
               <span className="font-display uppercase text-2xl tracking-tight text-inherit">
                 SEKTOR LOKAL
               </span>
-              <span className="w-2.5 h-2.5 rounded-full bg-[#E11D48] group-hover:scale-125 transition-transform" />
+              <span className="w-2.5 h-2.5 rounded-full bg-[#E11D48] shadow-crimson-subtle group-hover:scale-125 transition-transform" />
             </Link>
             <p className={`text-sm leading-relaxed ${mutedText}`}>
-              Manifestasi jiwa raga bangsa dari sebutan lokal. Zona kurasi independen yang menyatukan karya, cerita, pemikiran, dan manusia Indonesia di tengah era distorsi.
+              Platform media kurasi dan ruang penemuan yang mempertemukan beragam cerita, karya, manusia, dan sumber daya yang berakar di Indonesia.
             </p>
             <div className="pt-2 flex items-center gap-3">
               <a 
@@ -61,23 +61,23 @@ export default function Footer({ isDarkMode = false }: FooterProps) {
           {/* Col 2: Arsip & Direktori */}
           <div className="md:col-span-3 space-y-3">
             <h4 className="text-xs font-mono uppercase tracking-widest text-[#E11D48] font-bold">
-              ARSIP & DIREKTORI
+              PENEMUAN & ARSIP
             </h4>
             <ul className="space-y-2 text-sm font-medium">
               <li>
                 <Link href="/arsip/warga" className="hover:text-[#E11D48] transition flex items-center gap-1">
-                  <span>100 Warga Lokal</span>
+                  <span>100 Cerita Warga</span>
                   <span className="text-[10px] font-mono px-1.5 py-0.2 rounded bg-[#E11D48]/10 text-[#E11D48] border border-[#E11D48]/20">10 LACI</span>
                 </Link>
               </li>
               <li>
                 <Link href="/arsip/brand" className="hover:text-[#E11D48] transition">
-                  Brand Lokal Mandiri
+                  Brand Lokal & Proses
                 </Link>
               </li>
               <li>
                 <Link href="/arsip" className="hover:text-[#E11D48] transition">
-                  Hub Discovery Arsip
+                  Hub Dua Pintu Penemuan
                 </Link>
               </li>
               <li>
@@ -127,7 +127,7 @@ export default function Footer({ isDarkMode = false }: FooterProps) {
             <ul className="space-y-2 text-sm font-medium">
               <li>
                 <Link href="/manifesto" className="hover:text-[#E11D48] transition flex items-center gap-1 text-[#E11D48] font-bold">
-                  <Sparkles className="w-3.5 h-3.5" />
+                  <Compass className="w-3.5 h-3.5" />
                   <span>Manifesto Bangsa</span>
                 </Link>
               </li>
@@ -149,11 +149,11 @@ export default function Footer({ isDarkMode = false }: FooterProps) {
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs font-mono">
           <p className={mutedText}>
-            © 2026 Sektor Lokal. Direktori Kebanggaan Warga & Karya Nusantara.
+            © 2026 Sektor Lokal. Pustaka Penemuan Manusia & Karya Nusantara.
           </p>
           <div className="flex items-center gap-4">
             <span className="inline-flex items-center gap-1 text-[#E11D48] font-bold">
-              <span className="w-2 h-2 rounded-full bg-[#E11D48] animate-pulse" />
+              <span className="w-2 h-2 rounded-full bg-[#E11D48] shadow-crimson-subtle animate-pulse" />
               <span>RADAR 100% LIVE & GROUNDED</span>
             </span>
           </div>

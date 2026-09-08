@@ -17,43 +17,38 @@ body {
   transition: background-color 0.4s cubic-bezier(0.16, 1, 0.3, 1), color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Ecidni Animated Red Particle Wave Background */
+/* Obsidian Black Deep Textured Foundation */
 .particle-wave-dark {
-  background-color: #0A0E1A;
+  background-color: #07090E;
   background-image: 
-    radial-gradient(circle at 50% 30%, rgba(225, 29, 72, 0.07) 0%, transparent 60%),
-    radial-gradient(rgba(225, 29, 72, 0.25) 1.2px, transparent 1.2px),
-    radial-gradient(rgba(251, 113, 133, 0.15) 1px, transparent 1px);
-  background-size: 100% 100%, 120px 120px, 180px 180px;
-  background-position: 0 0, 20px 30px, 90px 110px;
+    radial-gradient(circle at 50% 25%, rgba(225, 29, 72, 0.08) 0%, transparent 65%),
+    radial-gradient(rgba(225, 29, 72, 0.22) 1.2px, transparent 1.2px),
+    radial-gradient(rgba(245, 239, 235, 0.04) 1px, transparent 1px);
+  background-size: 100% 100%, 120px 120px, 60px 60px;
+  background-position: 0 0, 20px 30px, 10px 15px;
 }
 
+/* Soft Ivory Light Foundation */
 .particle-wave-light {
-  background-color: #F9F8F5;
+  background-color: #F8F5EE;
   background-image: 
-    radial-gradient(circle at 50% 20%, rgba(225, 29, 72, 0.035) 0%, transparent 70%),
+    radial-gradient(circle at 50% 20%, rgba(225, 29, 72, 0.04) 0%, transparent 70%),
     radial-gradient(rgba(14, 18, 32, 0.03) 1px, transparent 1px);
   background-size: 100% 100%, 140px 140px;
   background-position: 0 0, 10px 15px;
 }
 
-/* Infinite Single-Row Auto-Play Marquee Sliders */
-@keyframes marquee {
-  0% { transform: translateX(0%); }
-  100% { transform: translateX(-33.333%); }
+/* Deep Crimson Luminous Glow Effects */
+.crimson-glow {
+  box-shadow: 0 0 25px rgba(225, 29, 72, 0.45);
 }
 
-@keyframes marquee-reverse {
-  0% { transform: translateX(-33.333%); }
-  100% { transform: translateX(0%); }
+.crimson-glow-lg {
+  box-shadow: 0 0 45px rgba(225, 29, 72, 0.65);
 }
 
-.animate-marquee {
-  animation: marquee 28s linear infinite;
-}
-
-.animate-marquee-reverse {
-  animation: marquee-reverse 28s linear infinite;
+.crimson-text-glow {
+  text-shadow: 0 0 20px rgba(225, 29, 72, 0.5);
 }
 
 /* Custom Minimalist Scrollbar */
@@ -64,26 +59,29 @@ body {
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(225, 29, 72, 0.4);
+  background: rgba(225, 29, 72, 0.45);
   border-radius: 9999px;
+  box-shadow: 0 0 8px rgba(225, 29, 72, 0.5);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(225, 29, 72, 0.8);
+  background: rgba(225, 29, 72, 0.85);
+  box-shadow: 0 0 14px rgba(225, 29, 72, 0.8);
 }
 
-/* Refined Red Accent Bar */
+/* Refined Deep Crimson Accent Bar */
 .refined-accent-bar {
   width: 5px;
   background: #E11D48;
   border-radius: 3px;
-  box-shadow: 0 0 14px rgba(225, 29, 72, 0.5);
+  box-shadow: 0 0 16px rgba(225, 29, 72, 0.65);
 }
 
 /* Minimalist Glowing Timeline Track */
 .refined-timeline-track {
   width: 2px;
-  background: linear-gradient(180deg, #E11D48 0%, rgba(225, 29, 72, 0.3) 100%);
+  background: linear-gradient(180deg, #E11D48 0%, rgba(225, 29, 72, 0.25) 100%);
   position: relative;
+  box-shadow: 0 0 10px rgba(225, 29, 72, 0.4);
 }
 
 .refined-timeline-track::after {
@@ -103,17 +101,17 @@ body {
   100% { top: 110%; opacity: 0; }
 }
 
-/* Aceternity Spotlight Card Elevation */
+/* Obsidian Glass Card Elevation */
 .spotlight-card-dark {
-  background: rgba(17, 23, 38, 0.75);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(14, 19, 31, 0.8);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(245, 239, 235, 0.07);
   transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .spotlight-card-dark:hover {
-  border-color: rgba(225, 29, 72, 0.5);
-  box-shadow: 0 20px 40px -15px rgba(225, 29, 72, 0.15);
+  border-color: rgba(225, 29, 72, 0.55);
+  box-shadow: 0 20px 45px -15px rgba(225, 29, 72, 0.22), 0 0 20px rgba(225, 29, 72, 0.15);
   transform: translateY(-2px);
 }
 
@@ -135,5 +133,5 @@ body {
   inset: 0;
   pointer-events: none;
   z-index: 0;
-  opacity: 0.6;
+  opacity: 0.65;
 }

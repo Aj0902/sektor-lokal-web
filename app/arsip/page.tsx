@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { Users, Building2, ArrowRight, Sparkles, Layers, ShieldCheck, ArrowUpRight } from 'lucide-react';
+import { Users, Building2, ArrowRight, Sparkles, Layers, ShieldCheck, ArrowUpRight, Compass, Eye } from 'lucide-react';
 import { motion } from 'framer-motion';
 import ConstellationCanvas from '../../components/ConstellationCanvas';
 import Navbar from '../../components/Navbar';
@@ -12,9 +12,9 @@ import Breadcrumbs from '../../components/Breadcrumbs';
 export default function ArsipHubPage() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
-  const bgCanvas = isDarkMode ? 'particle-wave-dark text-[#EDE8DC]' : 'particle-wave-light text-[#0A0E1A]';
+  const bgCanvas = isDarkMode ? 'particle-wave-dark text-[#F5EFEB]' : 'particle-wave-light text-[#0A0E1A]';
   const cardClass = isDarkMode ? 'spotlight-card-dark' : 'spotlight-card-light';
-  const mutedText = isDarkMode ? 'text-[#8A93A8]' : 'text-[#64748B]';
+  const mutedText = isDarkMode ? 'text-[#8E95A5]' : 'text-[#64748B]';
 
   return (
     <div className={`min-h-screen ${bgCanvas} font-sans antialiased selection:bg-[#E11D48] selection:text-white relative flex flex-col justify-between`}>
@@ -30,21 +30,21 @@ export default function ArsipHubPage() {
         
         {/* Semantic Breadcrumbs */}
         <Breadcrumbs 
-          items={[{ label: 'Hub Arsip Sektor Lokal' }]} 
+          items={[{ label: 'Pusat Penemuan & Arsip' }]} 
           isDarkMode={isDarkMode}
         />
 
         {/* Header Title */}
         <div className="space-y-4 max-w-3xl">
           <div className="inline-flex items-center gap-2 text-xs font-mono text-[#E11D48] font-bold uppercase tracking-widest">
-            <Layers className="w-4 h-4" />
-            <span>PUSAT DISCOVERY & DOKUMENTASI LOKAL</span>
+            <Compass className="w-4 h-4" />
+            <span>PINTU DISCOVERY SEKTOR LOKAL</span>
           </div>
-          <h1 className="text-4xl sm:text-6xl md:text-7xl font-display uppercase tracking-tight leading-[0.95]">
-            ARSIP PERADABAN & EKONOMI MANDIRI
+          <h1 className="text-4xl sm:text-6xl md:text-7xl font-display uppercase tracking-tight leading-[0.94]">
+            DUA PINTU UNTUK MENEMUKAN
           </h1>
           <p className={`text-base sm:text-lg leading-relaxed ${mutedText}`}>
-            Pilih gerbang arsip yang ingin Anda jelajahi. Kami memisahkan kurasi manusia (*Warga Lokal*) dan kurasi entitas karya (*Brand Lokal*) agar masing-masing memiliki kedalaman dan penghormatan yang utuh.
+            Sektor Lokal membaca Indonesia melalui dua lensa: manusia yang menggerakkannya, dan karya yang dihasilkannya. Pilih pintu mana yang ingin kamu telusuri terlebih dahulu.
           </p>
         </div>
 
@@ -60,47 +60,48 @@ export default function ArsipHubPage() {
           >
             <div className="space-y-6">
               <div className="flex items-center justify-between">
-                <div className="w-14 h-14 rounded-2xl bg-[#E11D48]/10 text-[#E11D48] border border-[#E11D48]/30 flex items-center justify-center">
+                <div className="w-14 h-14 rounded-2xl bg-[#E11D48]/10 text-[#E11D48] border border-[#E11D48]/30 flex items-center justify-center shadow-crimson-subtle">
                   <Users className="w-7 h-7" />
                 </div>
-                <span className="text-xs font-mono px-3 py-1 rounded-full bg-[#E11D48] text-white font-bold">
-                  100 WARGA • 10 LACI
+                <span className="text-xs font-mono px-3 py-1 rounded-full bg-[#E11D48] text-white font-bold shadow-crimson-subtle">
+                  SERIES 001–100 // 10 LACI
                 </span>
               </div>
 
               <div className="space-y-3">
                 <span className="text-xs font-mono text-[#E11D48] uppercase tracking-widest font-bold">
-                  SEGMEN 01 // AGENSI MANUSIA
+                  PINTU 01 // MANUSIA & TINDAKAN
                 </span>
                 <h2 className="text-3xl sm:text-4xl font-display uppercase text-inherit group-hover:text-[#E11D48] transition">
                   WARGA LOKAL
                 </h2>
                 <p className={`text-sm sm:text-base leading-relaxed ${mutedText}`}>
-                  Dokumentasi 100 tokoh penjaga akal sehat, konservasionis bumi, perintis teknologi rakyat, pejuang adat, sastrawan, hingga edukator nalar kritis lintas 10 Laci Peradaban.
+                  Membaca cerita orang-orang yang memilih bertindak di bidangnya masing-masing. Bukan sekadar daftar riwayat hidup, melainkan keputusan, konflik, dan bukti kerja yang layak diketahui.
                 </p>
               </div>
 
-              <ul className="space-y-2 text-xs font-mono border-t pt-4 border-inherit/10">
+              <ul className="space-y-2.5 text-xs font-mono border-t pt-4 border-inherit/10 text-inherit/80">
                 <li className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#E11D48]" />
-                  <span>4 Paragraf Naratif Standar Tempo</span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#E11D48] shadow-crimson-subtle" />
+                  <span>Hook berbasis temuan & keunikan karya</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#E11D48]" />
-                  <span>Linimasa Perjalanan Hidup Faktual</span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#E11D48] shadow-crimson-subtle" />
+                  <span>Jejak keputusan & konflik nyata di lapangan</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#E11D48]" />
-                  <span>Quotes Emas & Verifikasi Multi-Platform</span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#E11D48] shadow-crimson-subtle" />
+                  <span>Kutipan perenungan & verifikasi rekam jejak</span>
                 </li>
               </ul>
             </div>
 
             <Link 
               href="/arsip/warga"
-              className="w-full py-4 bg-[#E11D48] hover:bg-[#BE123C] text-white font-mono font-bold text-xs uppercase tracking-wider rounded-2xl flex items-center justify-center gap-2 shadow-lg shadow-[#E11D48]/30 transition"
+              className="w-full py-4 bg-[#E11D48] hover:bg-[#BE123C] text-white font-mono font-bold text-xs uppercase tracking-wider rounded-2xl flex items-center justify-center gap-2 shadow-crimson-glow transition"
             >
-              <span>Masuk ke Arsip Warga Lokal</span>
+              <Eye className="w-4 h-4" />
+              <span>Mulai Menelusuri Cerita Warga</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </motion.div>
@@ -114,47 +115,50 @@ export default function ArsipHubPage() {
           >
             <div className="space-y-6">
               <div className="flex items-center justify-between">
-                <div className="w-14 h-14 rounded-2xl bg-indigo-500/10 text-indigo-500 border border-indigo-500/30 flex items-center justify-center">
+                <div className="w-14 h-14 rounded-2xl bg-[#E11D48]/10 text-[#E11D48] border border-[#E11D48]/30 flex items-center justify-center shadow-crimson-subtle">
                   <Building2 className="w-7 h-7" />
                 </div>
-                <span className="text-xs font-mono px-3 py-1 rounded-full bg-indigo-600 text-white font-bold">
-                  KARYA & MANUFAKTUR
+                <span className="text-xs font-mono px-3 py-1 rounded-full border border-inherit/20 text-inherit font-bold">
+                  KARYA & PROSES
                 </span>
               </div>
 
               <div className="space-y-3">
-                <span className="text-xs font-mono text-indigo-500 uppercase tracking-widest font-bold">
-                  SEGMEN 02 // KEDAULATAN EKONOMI
+                <span className="text-xs font-mono text-[#E11D48] uppercase tracking-widest font-bold">
+                  PINTU 02 // PRODUK & EKOSISTEM
                 </span>
-                <h2 className="text-3xl sm:text-4xl font-display uppercase text-inherit group-hover:text-indigo-500 transition">
+                <h2 className="text-3xl sm:text-4xl font-display uppercase text-inherit group-hover:text-[#E11D48] transition">
                   BRAND LOKAL
                 </h2>
                 <p className={`text-sm sm:text-base leading-relaxed ${mutedText}`}>
-                  Eksplorasi entitas bisnis mandiri, kriya kayu, pangan benih pusaka nusantara, fesyen sirkular, dan deep-tech buatan tangan anak bangsa yang berdaya saing global.
+                  Membaca proses di balik jenama yang berakar di Indonesia: bahan bakunya, perajinnya, rantai pasoknya, dan nilai yang ditinggalkan bagi masyarakat sekitar.
                 </p>
               </div>
 
-              <ul className="space-y-2 text-xs font-mono border-t pt-4 border-inherit/10">
+              <ul className="space-y-2.5 text-xs font-mono border-t pt-4 border-inherit/10 text-inherit/80">
                 <li className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-indigo-500" />
-                  <span>Rantai Pasok Etis & Berkelanjutan</span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#E11D48] shadow-crimson-subtle" />
+                  <span>Cerita bahan baku & keunikan manufaktur</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-indigo-500" />
-                  <span>Terkoneksi dengan Figur Pendiri Warga</span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#E11D48] shadow-crimson-subtle" />
+                  <span>Terkoneksi langsung ke profil pendiri warga</span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-indigo-500" />
-                  <span>Akses Langsung ke Kanal Resmi</span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#E11D48] shadow-crimson-subtle" />
+                  <span>Akses informasi produk & kanal resmi</span>
                 </li>
               </ul>
             </div>
 
             <Link 
               href="/arsip/brand"
-              className="w-full py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-mono font-bold text-xs uppercase tracking-wider rounded-2xl flex items-center justify-center gap-2 shadow-lg shadow-indigo-600/30 transition"
+              className={`w-full py-4 border border-inherit/20 hover:border-[#E11D48] hover:text-[#E11D48] font-mono font-bold text-xs uppercase tracking-wider rounded-2xl flex items-center justify-center gap-2 transition ${
+                isDarkMode ? 'bg-[#0E131F]/90 text-[#F5EFEB]' : 'bg-white text-[#0A0E1A]'
+              }`}
             >
-              <span>Masuk ke Arsip Brand Lokal</span>
+              <Building2 className="w-4 h-4 text-[#E11D48]" />
+              <span>Melihat Karya & Proses Brand</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </motion.div>

@@ -15,7 +15,8 @@ import {
   Layers, 
   Calendar,
   Share2,
-  Check
+  Check,
+  Eye
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import ConstellationCanvas from '../../components/ConstellationCanvas';
@@ -73,7 +74,7 @@ const EDITORIAL_ARTICLES: EditorialArticle[] = [
     slug: 'ilusi-kemajuan-di-balik-stigma-lokal',
     title: 'Membongkar Mental Inlander: Mengapa Karya Dusun Bisa Mengungguli Produk Global',
     subtitle: 'Dekonstruksi mitos inferioritas kriya dan teknologi rancang bangun tanah air.',
-    excerpt: 'Dari sepeda bambu Spedagi di Dusun Kandangan hingga algoritma transmisi nirkabel 4G di Kediri—kualitas kelas dunia tidak pernah ditentukan oleh lokasi geografis, melainkan oleh keteguhan metodologi dan kedalaman rasa.',
+    excerpt: 'Dari sepeda bambu Spedagi di Dusun Kandangan hingga paten algoritma transmisi nirkabel di Kediri—kualitas kelas dunia tidak pernah ditentukan oleh lokasi geografis, melainkan oleh keteguhan metodologi dan kedalaman rasa.',
     category: 'Kedaulatan Budaya',
     readTime: '7 Menit Membaca',
     date: '28 Agustus 2026',
@@ -99,7 +100,7 @@ const EDITORIAL_ARTICLES: EditorialArticle[] = [
   },
   {
     slug: 'ekonomi-sirkular-bukan-sekadar-tren',
-    title: 'Manufaktur Sirkular: Saat Sampah Menjadi Modal Kedaulatan Industri',
+    title: 'Manufaktur Sirkular: Saat Residu Menjadi Modal Kedaulatan Industri',
     subtitle: 'Belajar dari para pengolah limbah dan perajin kulit ceker ayam di lorong-lorong kota.',
     excerpt: 'Ekonomi sirkular sejati bukan seminar di hotel berbintang, melainkan keberanian teknis mengubah residu organik dan anorganik menjadi komoditas bernilai tambah tinggi di tangan pengrajin lokal.',
     category: 'Ekonomi Sirkular',
@@ -113,9 +114,9 @@ const EDITORIAL_ARTICLES: EditorialArticle[] = [
   },
   {
     slug: 'merawat-ingatan-melawan-impunitas',
-    title: 'Menolak Lupa: Merawat Ingatan Kolektif sebagai Benteng Demokrasi Warga',
+    title: 'Menolak Lupa: Merawat Ingatan Kolektif sebagai Benteng Nalar Sehat Warga',
     subtitle: 'Pelajaran dari keteguhan payung hitam Kamisan dan arsip dokumenter independen.',
-    excerpt: 'Bangsa yang melupakan sejarah pelanggaran kemanusiaan masa lalunya dikutuk untuk mengulangi kezaliman yang sama di masa depan dengan jubah kekuasaan yang berbeda.',
+    excerpt: 'Masyarakat yang melupakan sejarah pelanggaran masa lalunya rentan mengulangi kesalahan yang sama di masa depan dengan kemasan yang berbeda.',
     category: 'Etika & Nalar',
     readTime: '9 Menit Membaca',
     date: '15 Agustus 2026',
@@ -168,14 +169,14 @@ export default function ArtikelIndexPage() {
     }
   };
 
-  const bgCanvas = isDarkMode ? 'particle-wave-dark text-[#EDE8DC]' : 'particle-wave-light text-[#0A0E1A]';
+  const bgCanvas = isDarkMode ? 'particle-wave-dark text-[#F5EFEB]' : 'particle-wave-light text-[#0A0E1A]';
   const cardClass = isDarkMode ? 'spotlight-card-dark' : 'spotlight-card-light';
-  const mutedText = isDarkMode ? 'text-[#8A93A8]' : 'text-[#64748B]';
+  const mutedText = isDarkMode ? 'text-[#8E95A5]' : 'text-[#64748B]';
 
   return (
     <div className={`min-h-screen ${bgCanvas} font-sans antialiased selection:bg-[#E11D48] selection:text-white relative flex flex-col justify-between`}>
       
-      {/* Schema.org CollectionPage / ItemList Structured Data */}
+      {/* Schema.org CollectionPage */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -220,15 +221,15 @@ export default function ArtikelIndexPage() {
 
         {/* HERO SECTION */}
         <section className="space-y-6">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#E11D48]/30 bg-[#E11D48]/10 text-[#E11D48] text-xs font-mono font-bold tracking-widest uppercase">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-[#E11D48]/40 bg-[#E11D48]/10 text-[#E11D48] text-xs font-mono font-bold tracking-widest uppercase shadow-crimson-subtle">
             <Feather className="w-3.5 h-3.5" />
             <span>RUANG REDAKSI & ESAI INDEPENDEN</span>
           </div>
 
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div className="space-y-3 max-w-3xl">
-              <h1 className="text-4xl sm:text-6xl font-display uppercase tracking-tight leading-[0.95]">
-                REKAM PIKIRAN, DISKURSUS KRITIS, & SIKAP BANGSA
+              <h1 className="text-4xl sm:text-6xl font-display uppercase tracking-tight leading-[0.94]">
+                CATATAN REFLEKTIF, KAJIAN KRITIS, & DISKURSUS
               </h1>
               <p className={`text-base sm:text-lg leading-relaxed ${mutedText}`}>
                 Kompilasi tulisan independen yang membedah kedaulatan kebudayaan, ekonomi sirkular, tantangan kecerdasan buatan, dan benteng akal sehat di tengah era banjir distorsi informasi.
@@ -253,14 +254,14 @@ export default function ArtikelIndexPage() {
           <section className="space-y-4">
             <div className="flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-widest text-[#E11D48]">
               <Sparkles className="w-4 h-4" />
-              <span>PILIHAN UTAMA REDAKSI // FOCUS OF THE WEEK</span>
+              <span>CATATAN PILIHAN REDAKSI // FOCUS OF THE WEEK</span>
             </div>
 
-            <div className={`p-8 sm:p-10 rounded-3xl border ${cardClass} relative overflow-hidden group`}>
+            <div className={`p-8 sm:p-10 rounded-3xl border ${cardClass} relative overflow-hidden group shadow-crimson-subtle`}>
               <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 <div className="lg:col-span-8 space-y-4">
                   <div className="flex flex-wrap items-center gap-3 text-xs font-mono">
-                    <span className="px-3 py-1 rounded-full bg-[#E11D48] text-white font-bold uppercase">
+                    <span className="px-3 py-1 rounded-full bg-[#E11D48] text-white font-bold uppercase shadow-crimson-subtle">
                       {featuredArticle.category}
                     </span>
                     <span className="flex items-center gap-1 text-inherit/70">
@@ -312,12 +313,12 @@ export default function ArtikelIndexPage() {
                         }`}
                         title="Salin Tautan Esai"
                       >
-                        {copiedSlug === featuredArticle.slug ? <Check className="w-4 h-4 text-emerald-500" /> : <Share2 className="w-4 h-4 text-[#E11D48]" />}
+                        {copiedSlug === featuredArticle.slug ? <Check className="w-4 h-4 text-emerald-400" /> : <Share2 className="w-4 h-4 text-[#E11D48]" />}
                       </button>
 
                       <Link
                         href={`/artikel/${featuredArticle.slug}`}
-                        className="px-5 py-2.5 bg-[#E11D48] hover:bg-[#BE123C] text-white font-bold uppercase rounded-xl flex items-center gap-2 shadow-md shadow-[#E11D48]/30 transition"
+                        className="px-5 py-2.5 bg-[#E11D48] hover:bg-[#BE123C] text-white font-bold uppercase rounded-xl flex items-center gap-2 shadow-crimson-glow transition"
                       >
                         <span>BACA ESAI LENGKAP</span>
                         <ArrowRight className="w-4 h-4" />
@@ -327,11 +328,11 @@ export default function ArtikelIndexPage() {
                 </div>
 
                 <div className="lg:col-span-4 hidden lg:flex flex-col justify-center items-center p-6 border-l border-inherit/10 text-center space-y-4">
-                  <div className="w-16 h-16 rounded-2xl bg-[#E11D48]/10 border border-[#E11D48]/30 flex items-center justify-center text-[#E11D48]">
+                  <div className="w-16 h-16 rounded-2xl bg-[#E11D48]/10 border border-[#E11D48]/30 flex items-center justify-center text-[#E11D48] shadow-crimson-subtle">
                     <BookOpen className="w-8 h-8" />
                   </div>
                   <blockquote className="font-serif italic text-sm text-inherit/80">
-                    &ldquo;Ketiadaan nalar kritis adalah pupuk paling subur bagi bertumbuhnya eksploitasi finansial dan intelektual modern.&rdquo;
+                    &ldquo;Ketiadaan nalar kritis adalah pupuk paling subur bagi bertumbuhnya eksploitasi finansial dan manipulasi algoritma modern.&rdquo;
                   </blockquote>
                   <span className="text-[11px] font-mono text-[#E11D48] uppercase tracking-wider font-bold">
                     — KANON SEKTOR LOKAL
@@ -356,7 +357,7 @@ export default function ArtikelIndexPage() {
                 placeholder="Cari esai, topik, atau penulis..."
                 className={`w-full pl-10 pr-4 py-2.5 rounded-2xl text-xs font-sans border transition focus:outline-none focus:ring-2 focus:ring-[#E11D48]/50 ${
                   isDarkMode 
-                    ? 'bg-[#111726]/80 border-white/10 text-[#EDE8DC] placeholder-zinc-500' 
+                    ? 'bg-[#0E131F]/90 border-white/10 text-[#F5EFEB] placeholder-zinc-500' 
                     : 'bg-white/80 border-black/10 text-[#0A0E1A] placeholder-zinc-400'
                 }`}
               />
@@ -388,9 +389,9 @@ export default function ArtikelIndexPage() {
                   onClick={() => setSelectedCategory(cat)}
                   className={`px-4 py-2 rounded-xl text-xs font-mono font-bold tracking-wider uppercase transition-all whitespace-nowrap ${
                     isSelected
-                      ? 'bg-[#E11D48] text-white shadow-md shadow-[#E11D48]/30 scale-105'
+                      ? 'bg-[#E11D48] text-white shadow-crimson-subtle scale-105'
                       : isDarkMode
-                        ? 'bg-[#111726] border border-white/10 text-[#8A93A8] hover:text-[#EDE8DC] hover:border-white/20'
+                        ? 'bg-[#0E131F] border border-white/10 text-[#8E95A5] hover:text-[#F5EFEB] hover:border-white/20'
                         : 'bg-white border border-black/10 text-[#64748B] hover:text-[#0A0E1A] hover:border-black/20'
                   }`}
                 >
@@ -485,15 +486,15 @@ export default function ArtikelIndexPage() {
         {/* CALL TO SUBMIT / WRITING NETWORK */}
         <section className={`p-8 sm:p-10 rounded-3xl border text-center space-y-4 ${cardClass}`}>
           <h3 className="text-xl sm:text-2xl font-display uppercase">
-            PUNYA ANALISIS KRITIS & ESAI TENTANG KEDAULATAN LOKAL?
+            PUNYA CATATAN KRITIS ATAU KAJIAN TENTANG INOVASI LOKAL?
           </h3>
           <p className={`text-xs sm:text-sm max-w-xl mx-auto ${mutedText}`}>
-            Redaksi Sektor Lokal menyambut sumbangsih pemikiran, kajian ilmiah populer, dan narasi investigatif dari seluruh penjuru nusantara.
+            Redaksi Sektor Lokal menyambut sumbangsih pemikiran, kajian ilmiah populer, dan fakta lapangan dari seluruh penjuru nusantara.
           </p>
           <div className="pt-2">
             <Link 
               href="/kontak"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-[#E11D48] hover:bg-[#BE123C] text-white text-xs font-mono font-bold uppercase rounded-xl shadow-md shadow-[#E11D48]/30 transition"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-[#E11D48] hover:bg-[#BE123C] text-white text-xs font-mono font-bold uppercase rounded-xl shadow-crimson-glow transition"
             >
               <span>KIRIM USULAN TULISAN KE REDAKSI</span>
               <ArrowRight className="w-4 h-4" />

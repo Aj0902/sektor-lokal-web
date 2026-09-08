@@ -13,7 +13,8 @@ import {
   CheckCircle2, 
   Sparkles,
   ArrowRight,
-  AlertCircle
+  AlertCircle,
+  Compass
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import ConstellationCanvas from '../../components/ConstellationCanvas';
@@ -44,9 +45,9 @@ export default function KontakPage() {
     }, 1200);
   };
 
-  const bgCanvas = isDarkMode ? 'particle-wave-dark text-[#EDE8DC]' : 'particle-wave-light text-[#0A0E1A]';
+  const bgCanvas = isDarkMode ? 'particle-wave-dark text-[#F5EFEB]' : 'particle-wave-light text-[#0A0E1A]';
   const cardClass = isDarkMode ? 'spotlight-card-dark' : 'spotlight-card-light';
-  const mutedText = isDarkMode ? 'text-[#8A93A8]' : 'text-[#64748B]';
+  const mutedText = isDarkMode ? 'text-[#8E95A5]' : 'text-[#64748B]';
 
   return (
     <div className={`min-h-screen ${bgCanvas} font-sans antialiased selection:bg-[#E11D48] selection:text-white relative flex flex-col justify-between`}>
@@ -58,8 +59,8 @@ export default function KontakPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "ContactPage",
-            "name": "Ruang Dialog, Kolaborasi & Tip-Off Sektor Lokal",
-            "description": "Kanal resmi komunikasi, pengajuan nominasi warga/brand lokal, kolaborasi riset, dan tip-off data berintegritas.",
+            "name": "Ruang Dialog, Kolaborasi & Usulan Sektor Lokal",
+            "description": "Kanal komunikasi, pengajuan usulan warga/brand lokal, kolaborasi riset, dan laporan data berintegritas.",
             "publisher": {
               "@type": "Organization",
               "name": "Sektor Lokal",
@@ -80,23 +81,23 @@ export default function KontakPage() {
         
         {/* BREADCRUMBS */}
         <Breadcrumbs 
-          items={[{ label: 'Ruang Dialog & Kontak' }]} 
+          items={[{ label: 'Ruang Dialog & Usulan' }]} 
           isDarkMode={isDarkMode}
         />
 
         {/* HERO SECTION */}
         <section className="space-y-6">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#E11D48]/30 bg-[#E11D48]/10 text-[#E11D48] text-xs font-mono font-bold tracking-widest uppercase">
-            <Radio className="w-3.5 h-3.5" />
-            <span>JARINGAN KOMUNIKASI & DIALOG WARGA</span>
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-[#E11D48]/40 bg-[#E11D48]/10 text-[#E11D48] text-xs font-mono font-bold tracking-widest uppercase shadow-crimson-subtle">
+            <Compass className="w-3.5 h-3.5" />
+            <span>JARINGAN DIALOG & USULAN WARGA</span>
           </div>
 
           <div className="space-y-3 max-w-3xl">
-            <h1 className="text-4xl sm:text-6xl font-display uppercase tracking-tight leading-[0.95]">
+            <h1 className="text-4xl sm:text-6xl font-display uppercase tracking-tight leading-[0.94]">
               RUANG DIALOG, KOLABORASI, & TIP-OFF
             </h1>
             <p className={`text-base sm:text-lg leading-relaxed ${mutedText}`}>
-              Sektor Lokal berdiri di atas semangat keterbukaan gotong royong warga. Ajukan kolaborasi strategis, nominasikan figur/brand otentik dari pelosok, atau kirimkan laporan riset independen.
+              Sektor Lokal berdiri di atas semangat keterbukaan. Ajukan kolaborasi riset, usulkan sosok atau jenama mandiri di sekitarmu yang layak masuk radar, atau kirimkan fakta temuan lapangan.
             </p>
           </div>
         </section>
@@ -107,25 +108,25 @@ export default function KontakPage() {
             {
               id: 'kolaborasi',
               title: 'Kolaborasi & Riset',
-              desc: 'Kemitraan strategis institusi, aktivasi komunitas, & riset terbuka.',
+              desc: 'Kemitraan strategis institusi, aktivasi komunitas, & riset bersama.',
               icon: Sparkles
             },
             {
               id: 'nominasi',
-              title: 'Usul Figur / Brand',
-              desc: 'Ajukan tokoh inspiratif atau brand mandiri untuk dikurasi redaksi.',
+              title: 'Usul Warga / Brand',
+              desc: 'Rekomendasikan sosok atau jenama mandiri yang layak diketahui publik.',
               icon: UserPlus
             },
             {
               id: 'tipoff',
               title: 'Tip-Off & Data',
-              desc: 'Kanal aman terenkripsi untuk laporan fakta lapangan & investigasi.',
+              desc: 'Kanal aman terenkripsi untuk fakta lapangan & verifikasi.',
               icon: Lock
             },
             {
               id: 'media',
               title: 'Redaksi & Media',
-              desc: 'Pertanyaan pers, wawancara, & lisensi publikasi esai.',
+              desc: 'Pertanyaan pers, wawancara, & lisensi publikasi tulisan.',
               icon: MessageSquare
             }
           ].map((ch) => {
@@ -137,14 +138,14 @@ export default function KontakPage() {
                 onClick={() => { setChannelType(ch.id as any); setIsSuccess(false); }}
                 className={`p-5 rounded-3xl border text-left flex flex-col justify-between space-y-3 transition-all ${
                   isSelected
-                    ? 'border-[#E11D48] bg-[#E11D48]/10 shadow-lg shadow-[#E11D48]/20 scale-[1.02]'
+                    ? 'border-[#E11D48] bg-[#E11D48]/10 shadow-crimson-subtle scale-[1.02]'
                     : isDarkMode
-                      ? 'border-white/10 bg-[#111726]/60 hover:border-white/20'
+                      ? 'border-white/10 bg-[#0E131F]/60 hover:border-white/20'
                       : 'border-black/10 bg-white/60 hover:border-black/20'
                 }`}
               >
                 <div className="flex items-center justify-between">
-                  <div className={`p-2.5 rounded-2xl ${isSelected ? 'bg-[#E11D48] text-white' : 'bg-inherit/60 text-[#E11D48] border border-inherit/10'}`}>
+                  <div className={`p-2.5 rounded-2xl ${isSelected ? 'bg-[#E11D48] text-white shadow-crimson-subtle' : 'bg-inherit/60 text-[#E11D48] border border-inherit/10'}`}>
                     <Icon className="w-5 h-5" />
                   </div>
                   {isSelected && <span className="text-[10px] font-mono font-bold text-[#E11D48] uppercase">PILIHAN</span>}
@@ -169,12 +170,12 @@ export default function KontakPage() {
                 animate={{ opacity: 1, scale: 1 }}
                 className="py-12 text-center space-y-4"
               >
-                <div className="w-16 h-16 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-500 mx-auto flex items-center justify-center">
+                <div className="w-16 h-16 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 mx-auto flex items-center justify-center">
                   <CheckCircle2 className="w-8 h-8" />
                 </div>
                 <h3 className="text-2xl font-display uppercase tracking-tight">PESAN BERHASIL TERKIRIM</h3>
                 <p className={`text-sm max-w-md mx-auto ${mutedText}`}>
-                  Terima kasih atas kontribusi dan suaramu. Tim Redaksi & Dewan Kurator Sektor Lokal akan meninjau pesan ini secara cermat.
+                  Terima kasih atas kontribusi dan suaramu. Tim Redaksi & Kurasi Sektor Lokal akan meninjau pesan ini secara cermat.
                 </p>
                 <button
                   onClick={() => {
@@ -188,7 +189,7 @@ export default function KontakPage() {
                       agreeTerms: true
                     });
                   }}
-                  className="mt-4 px-6 py-2.5 bg-[#E11D48] text-white font-mono text-xs font-bold rounded-xl uppercase hover:bg-[#BE123C] transition"
+                  className="mt-4 px-6 py-2.5 bg-[#E11D48] text-white font-mono text-xs font-bold rounded-xl uppercase hover:bg-[#BE123C] shadow-crimson-subtle transition"
                 >
                   KIRIM PESAN BARU
                 </button>
@@ -201,7 +202,7 @@ export default function KontakPage() {
                     FORMULIR // {channelType.toUpperCase()}
                   </span>
                   {channelType === 'tipoff' && (
-                    <span className="inline-flex items-center gap-1 text-[11px] font-mono text-emerald-500 font-bold">
+                    <span className="inline-flex items-center gap-1 text-[11px] font-mono text-emerald-400 font-bold">
                       <Lock className="w-3 h-3" />
                       <span>ENCRYPTED & CONFIDENTIAL</span>
                     </span>
@@ -221,7 +222,7 @@ export default function KontakPage() {
                       placeholder={channelType === 'tipoff' ? 'Contoh: Warga Kendeng (atau kosongkan)' : 'Nama Anda'}
                       className={`w-full px-4 py-2.5 rounded-2xl text-xs font-sans border transition focus:outline-none focus:ring-2 focus:ring-[#E11D48]/50 ${
                         isDarkMode 
-                          ? 'bg-[#111726] border-white/10 text-[#EDE8DC] placeholder-zinc-500' 
+                          ? 'bg-[#0E131F] border-white/10 text-[#F5EFEB] placeholder-zinc-500' 
                           : 'bg-white border-black/10 text-[#0A0E1A] placeholder-zinc-400'
                       }`}
                       required={channelType !== 'tipoff'}
@@ -240,7 +241,7 @@ export default function KontakPage() {
                       placeholder="email@domain.id atau @username"
                       className={`w-full px-4 py-2.5 rounded-2xl text-xs font-sans border transition focus:outline-none focus:ring-2 focus:ring-[#E11D48]/50 ${
                         isDarkMode 
-                          ? 'bg-[#111726] border-white/10 text-[#EDE8DC] placeholder-zinc-500' 
+                          ? 'bg-[#0E131F] border-white/10 text-[#F5EFEB] placeholder-zinc-500' 
                           : 'bg-white border-black/10 text-[#0A0E1A] placeholder-zinc-400'
                       }`}
                       required
@@ -259,16 +260,16 @@ export default function KontakPage() {
                     onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
                     placeholder={
                       channelType === 'kolaborasi' 
-                        ? 'Contoh: Rencana Kolaborasi Lokakarya Kedaulatan Data di Bandung'
+                        ? 'Contoh: Rencana Kolaborasi Riset Komunitas di Bandung'
                         : channelType === 'nominasi'
-                          ? 'Contoh: Rekomendasi Tokoh Penggerak Mata Air Gunungkidul'
+                          ? 'Contoh: Usulan Cerita Penggerak Mata Air di Gunungkidul'
                           : channelType === 'tipoff'
-                            ? 'Contoh: Temuan Audit Limbah Pabrik Tekstil di Sungai Citarum'
+                            ? 'Contoh: Temuan Lapangan Audit Limbah Sungai'
                             : 'Pertanyaan Liputan / Wawancara Redaksi'
                     }
                     className={`w-full px-4 py-2.5 rounded-2xl text-xs font-sans border transition focus:outline-none focus:ring-2 focus:ring-[#E11D48]/50 ${
                       isDarkMode 
-                        ? 'bg-[#111726] border-white/10 text-[#EDE8DC] placeholder-zinc-500' 
+                        ? 'bg-[#0E131F] border-white/10 text-[#F5EFEB] placeholder-zinc-500' 
                         : 'bg-white border-black/10 text-[#0A0E1A] placeholder-zinc-400'
                     }`}
                     required
@@ -278,7 +279,7 @@ export default function KontakPage() {
                 {/* Message */}
                 <div className="space-y-1.5">
                   <label className="block text-xs font-mono uppercase tracking-wider text-inherit/80">
-                    Rincian Pesan, Fakta Rekam Jejak, atau Deskripsi Ide
+                    Rincian Pesan, Fakta Lapangan, atau Deskripsi Usulan
                   </label>
                   <textarea 
                     rows={6}
@@ -287,7 +288,7 @@ export default function KontakPage() {
                     placeholder="Tuliskan penjelasan lengkap, tautan referensi, rekam jejak, atau data pendukung lainnya..."
                     className={`w-full p-4 rounded-2xl text-xs font-sans border transition focus:outline-none focus:ring-2 focus:ring-[#E11D48]/50 resize-y ${
                       isDarkMode 
-                        ? 'bg-[#111726] border-white/10 text-[#EDE8DC] placeholder-zinc-500' 
+                        ? 'bg-[#0E131F] border-white/10 text-[#F5EFEB] placeholder-zinc-500' 
                         : 'bg-white border-black/10 text-[#0A0E1A] placeholder-zinc-400'
                     }`}
                     required
@@ -305,7 +306,7 @@ export default function KontakPage() {
                     required
                   />
                   <label htmlFor="agreeTerms" className={mutedText}>
-                    Saya menyatakan data dan informasi yang saya sampaikan berlandaskan itikad baik sesuai dengan{' '}
+                    Saya menyatakan informasi yang saya sampaikan berlandaskan itikad baik sesuai dengan{' '}
                     <Link href="/legal/kriteria-kurasi" className="text-[#E11D48] hover:underline font-semibold">
                       Standar Etika Kurasi Sektor Lokal
                     </Link>.
@@ -316,7 +317,7 @@ export default function KontakPage() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full py-3.5 bg-[#E11D48] hover:bg-[#BE123C] text-white font-mono text-xs font-bold uppercase rounded-xl flex items-center justify-center gap-2 shadow-lg shadow-[#E11D48]/30 transition disabled:opacity-50"
+                  className="w-full py-3.5 bg-[#E11D48] hover:bg-[#BE123C] text-white font-mono text-xs font-bold uppercase rounded-xl flex items-center justify-center gap-2 shadow-crimson-glow transition disabled:opacity-50"
                 >
                   {isSubmitting ? (
                     <>
@@ -335,7 +336,7 @@ export default function KontakPage() {
             )}
           </div>
 
-          {/* SIDEBAR: DIRECT CONTACT & SECURITY */}
+          {/* SIDEBAR: DIRECT CONTACT & INTEGRITY */}
           <div className="lg:col-span-4 space-y-6">
             
             {/* Direct Channels */}
@@ -352,15 +353,15 @@ export default function KontakPage() {
                 </div>
 
                 <div className="p-3 rounded-2xl border border-inherit/10 bg-inherit/40 space-y-1">
-                  <div className="flex items-center gap-2 text-indigo-500 font-mono font-bold">
+                  <div className="flex items-center gap-2 text-indigo-400 font-mono font-bold">
                     <Sparkles className="w-3.5 h-3.5" />
-                    <span>KOLABORASI STRATEGIS</span>
+                    <span>KOLABORASI RISET</span>
                   </div>
                   <p className="font-mono text-inherit">kolaborasi@sektorlokal.id</p>
                 </div>
 
                 <div className="p-3 rounded-2xl border border-inherit/10 bg-inherit/40 space-y-1">
-                  <div className="flex items-center gap-2 text-emerald-500 font-mono font-bold">
+                  <div className="flex items-center gap-2 text-emerald-400 font-mono font-bold">
                     <ShieldCheck className="w-3.5 h-3.5" />
                     <span>TIP-OFF / WHISTLEBLOWER</span>
                   </div>
@@ -371,12 +372,12 @@ export default function KontakPage() {
 
             {/* Anti-Titipan Guarantee */}
             <div className={`p-6 rounded-3xl border space-y-3 border-amber-500/20 bg-amber-500/5`}>
-              <div className="flex items-center gap-2 text-amber-500 font-mono text-xs font-bold uppercase">
+              <div className="flex items-center gap-2 text-amber-400 font-mono text-xs font-bold uppercase">
                 <AlertCircle className="w-4 h-4 shrink-0" />
                 <span>IKRAR INTEGRITAS REDAKSI</span>
               </div>
               <p className={`text-xs leading-relaxed ${mutedText}`}>
-                Sektor Lokal tidak menerima titipan berbayar <em>(paid placement)</em> untuk masuk ke dalam kurasi 100 Warga Lokal. Setiap kandidat wajib melewati 6-Tahap Uji Deduktif Redaksi.
+                Sektor Lokal tidak menerima titipan berbayar <em>(paid placement)</em> untuk masuk ke dalam kurasi Warga Lokal. Setiap kandidat ditinjau secara independen oleh Tim Riset & Dewan Kurasi.
               </p>
               <Link 
                 href="/legal/kriteria-kurasi" 

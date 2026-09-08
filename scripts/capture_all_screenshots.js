@@ -98,8 +98,8 @@ async function run() {
     console.log(`📸 [${i + 1}/${PAGES_TO_CAPTURE.length}] Mengambil: ${item.title} (${item.url})...`);
     
     try {
-      await page.goto(item.url, { waitUntil: 'networkidle0', timeout: 30000 });
-      // Short delay for framer motion animations and fonts to settle
+      await page.goto(item.url, { waitUntil: 'domcontentloaded', timeout: 15000 });
+      // Wait for fonts & framer motion entrance animations
       await new Promise(r => setTimeout(r, 1200));
 
       const filename = `${item.name}.png`;
