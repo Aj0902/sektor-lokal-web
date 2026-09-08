@@ -143,17 +143,17 @@ export default function ArticleDetailPage() {
 
   if (!articleData) {
     return (
-      <div className="min-h-screen bg-[#0A0E1A] text-[#EDE8DC] flex items-center justify-center font-mono text-xs text-[#E11D48]">
-        <div className="w-6 h-6 border-2 border-[#E11D48] border-t-transparent rounded-full animate-spin mr-3" />
+      <div className="min-h-screen bg-[#07090E] text-[#F5EFEB] flex items-center justify-center font-mono text-xs text-[#E11D48]">
+        <div className="w-6 h-6 border-2 border-[#E11D48] border-t-transparent rounded-full animate-spin mr-3 shadow-crimson-subtle" />
         <span>MEMUAT ARTIKEL SUPABASE...</span>
       </div>
     );
   }
 
-  const bgCanvas = isDarkMode ? 'particle-wave-dark text-[#EDE8DC]' : 'particle-wave-light text-[#0A0E1A]';
+  const bgCanvas = isDarkMode ? 'particle-wave-dark text-[#F5EFEB]' : 'particle-wave-light text-[#0A0E1A]';
   const cardClass = isDarkMode ? 'spotlight-card-dark' : 'spotlight-card-light';
-  const mutedText = isDarkMode ? 'text-[#8A93A8]' : 'text-[#64748B]';
-  const navBg = isDarkMode ? 'bg-[#0A0E1A]/90 border-white/[0.08]' : 'bg-[#F9F8F5]/90 border-black/[0.08]';
+  const mutedText = isDarkMode ? 'text-[#8E95A5]' : 'text-[#64748B]';
+  const navBg = isDarkMode ? 'bg-[#07090E]/90 border-white/[0.08]' : 'bg-[#F9F8F5]/90 border-black/[0.08]';
 
   return (
     <div className={`min-h-screen ${bgCanvas} font-sans antialiased selection:bg-[#E11D48] selection:text-white relative`}>
@@ -185,7 +185,7 @@ export default function ArticleDetailPage() {
 
       {/* Top Hairline Scroll Progress Bar */}
       <div 
-        className="fixed top-0 left-0 right-0 h-[2px] bg-[#E11D48] z-50 transition-all duration-150"
+        className="fixed top-0 left-0 right-0 h-[2px] bg-[#E11D48] shadow-crimson-glow z-50 transition-all duration-150"
         style={{ width: `${scrollProgress}%` }}
       />
 
@@ -204,7 +204,7 @@ export default function ArticleDetailPage() {
               onClick={handleCopyLink}
               className={`px-3 py-1.5 rounded-xl border text-xs font-semibold flex items-center gap-1.5 transition-all shadow-sm ${
                 isDarkMode 
-                  ? 'bg-[#111726] border-white/10 text-[#EDE8DC] hover:border-[#E11D48]' 
+                  ? 'bg-[#0E131F] border-white/10 text-[#F5EFEB] hover:border-[#E11D48] shadow-crimson-subtle' 
                   : 'bg-white border-black/10 text-[#0A0E1A] hover:border-[#E11D48]'
               }`}
             >
@@ -217,7 +217,7 @@ export default function ArticleDetailPage() {
               onClick={() => setIsDarkMode(!isDarkMode)}
               className={`p-2 rounded-xl border text-xs font-semibold flex items-center gap-2 transition-all shadow-sm ${
                 isDarkMode 
-                  ? 'bg-[#111726] border-white/10 text-[#EDE8DC] hover:border-[#E11D48]' 
+                  ? 'bg-[#0E131F] border-white/10 text-[#F5EFEB] hover:border-[#E11D48]' 
                   : 'bg-white border-black/10 text-[#0A0E1A] hover:border-[#E11D48]'
               }`}
             >
@@ -240,7 +240,7 @@ export default function ArticleDetailPage() {
         >
           {/* Metadata Badges */}
           <div className="flex items-center gap-3 text-xs font-mono font-bold text-[#E11D48]">
-            <span className="px-3 py-1 rounded-full bg-[#E11D48]/10 border border-[#E11D48]/30 uppercase">
+            <span className="px-3 py-1 rounded-full bg-[#E11D48]/10 border border-[#E11D48]/30 uppercase shadow-crimson-subtle">
               {articleData.tag}
             </span>
             <span>•</span>
@@ -264,7 +264,7 @@ export default function ArticleDetailPage() {
 
           {/* Author Byline */}
           <div className="pt-4 border-t border-inherit/10 flex items-center gap-4">
-            <div className="relative w-12 h-12 rounded-full overflow-hidden border border-[#E11D48]/40 shrink-0">
+            <div className="relative w-12 h-12 rounded-full overflow-hidden border border-[#E11D48]/40 shrink-0 shadow-crimson-subtle">
               <Image 
                 src={articleData.authorPhoto} 
                 alt={articleData.authorName} 
@@ -295,7 +295,7 @@ export default function ArticleDetailPage() {
 
           {/* Callout Quote */}
           {articleData.quote && (
-            <div className={`my-8 p-6 sm:p-8 rounded-3xl border shadow-sm ${cardClass}`}>
+            <div className={`my-8 p-6 sm:p-8 rounded-3xl border border-[#E11D48]/30 shadow-crimson-subtle ${cardClass}`}>
               <blockquote className="font-editorial italic text-lg sm:text-xl leading-relaxed text-[#E11D48]">
                 &ldquo;{articleData.quote}&rdquo;
               </blockquote>
@@ -309,7 +309,7 @@ export default function ArticleDetailPage() {
             <ArrowLeft className="w-4 h-4" />
             <span>KEMBALI KE PROFIL FERRY IRWANDI</span>
           </Link>
-          <button onClick={handleCopyLink} className="px-5 py-2.5 bg-[#E11D48] text-white font-bold text-xs rounded-xl flex items-center gap-1.5 shadow-md shadow-[#E11D48]/30">
+          <button onClick={handleCopyLink} className="px-5 py-2.5 bg-[#E11D48] text-white font-bold text-xs rounded-xl flex items-center gap-1.5 shadow-crimson-subtle hover:shadow-crimson-glow transition">
             <Share2 className="w-4 h-4" />
             <span>BAGIKAN ARTIKEL INI</span>
           </button>
@@ -318,11 +318,11 @@ export default function ArticleDetailPage() {
       </main>
 
       {/* FOOTER */}
-      <footer className={`border-t py-12 px-6 mt-16 ${isDarkMode ? 'border-white/[0.08]' : 'border-black/[0.08]'}`}>
+      <footer className={`border-t py-12 px-6 mt-16 ${isDarkMode ? 'border-white/[0.08] bg-[#07090E]' : 'border-black/[0.08] bg-[#F8F5EE]'}`}>
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
           <div className="flex items-center gap-2 font-display text-lg text-inherit">
             <span>SEKTOR LOKAL</span>
-            <span className="w-2 h-2 rounded-full bg-[#E11D48]" />
+            <span className="w-2 h-2 rounded-full bg-[#E11D48] shadow-crimson-subtle" />
           </div>
           <p className={mutedText}>
             © 2026 Sektor Lokal. Penerbitan Esai & Literasi Kritis Warga Indonesia.

@@ -16,7 +16,8 @@ import {
   Calendar,
   Share2,
   Check,
-  Eye
+  Eye,
+  Compass
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import ConstellationCanvas from '../../components/ConstellationCanvas';
@@ -45,7 +46,7 @@ const EDITORIAL_ARTICLES: EditorialArticle[] = [
     slug: 'analisis-kritis-literasi-keuangan',
     title: 'Benteng Nalar Kritis di Tengah Gempuran Distorsi Algoritma',
     subtitle: 'Mengapa skeptisisme metodis adalah alat pertahanan diri paling mendasar generasi muda hari ini.',
-    excerpt: 'Di era di mana informasi bergerak lebih cepat dari nalar sehat, manipulasi kognitif dan ilusi kemakmuran instan merajalela. Stoikisme dan logika sains mengajarkan kita satu hal: pisahkan apa yang berada dalam kendali nalar kita dari rekayasa algoritma asing.',
+    excerpt: 'Di era di mana informasi bergerak lebih cepat dari nalar sehat, manipulasi kognitif dan ilusi kemakmuran instan merajalela. Stoikisme dan logika sains mengajarkan kita satu hal: pisahkan apa yang berada dalam kendali nalar kita dari rekayasa algoritma asing sebelum menyerahkan masa depan finansial kita.',
     category: 'Etika & Nalar',
     readTime: '6 Menit Membaca',
     date: '4 September 2026',
@@ -60,7 +61,7 @@ const EDITORIAL_ARTICLES: EditorialArticle[] = [
     slug: 'kedaulatan-pangan-bukan-gimik',
     title: 'Kedaulatan Pangan Akar Rumput: Melawan Monokultur, Menjaga Benih Leluhur',
     subtitle: 'Bagaimana komunitas adat dan petani gurem menjadi benteng terakhir ketahanan ekologi nusantara.',
-    excerpt: 'Kedaulatan bukan sekadar angka swasembada di atas kertas birokrasi, melainkan hak asasi petani untuk menanam benih pusaka mereka sendiri tanpa intervensi korporasi transnasional.',
+    excerpt: 'Kedaulatan bukan sekadar angka swasembada di atas kertas birokrasi, melainkan hak asasi petani untuk menanam benih pusaka mereka sendiri tanpa ketergantungan pada rantai pasok kimiawi korporasi multinasional.',
     category: 'Krisis Ekologis',
     readTime: '8 Menit Membaca',
     date: '2 September 2026',
@@ -72,9 +73,9 @@ const EDITORIAL_ARTICLES: EditorialArticle[] = [
   },
   {
     slug: 'ilusi-kemajuan-di-balik-stigma-lokal',
-    title: 'Membongkar Mental Inlander: Mengapa Karya Dusun Bisa Mengungguli Produk Global',
+    title: 'Di Balik Sepeda Bambu Temanggung: Mengapa Desain Dusun Dilirik Laboratorium Jerman',
     subtitle: 'Dekonstruksi mitos inferioritas kriya dan teknologi rancang bangun tanah air.',
-    excerpt: 'Dari sepeda bambu Spedagi di Dusun Kandangan hingga paten algoritma transmisi nirkabel di Kediri—kualitas kelas dunia tidak pernah ditentukan oleh lokasi geografis, melainkan oleh keteguhan metodologi dan kedalaman rasa.',
+    excerpt: 'Dari sepeda bambu Spedagi di Dusun Kandangan hingga paten algoritma transmisi nirkabel di Kediri—kualitas kelas dunia tidak pernah ditentukan oleh lokasi geografis megapolitan, melainkan oleh keteguhan metode dan kedalaman rasa terhadap material lokal.',
     category: 'Kedaulatan Budaya',
     readTime: '7 Menit Membaca',
     date: '28 Agustus 2026',
@@ -86,9 +87,9 @@ const EDITORIAL_ARTICLES: EditorialArticle[] = [
   },
   {
     slug: 'ai-dan-masa-depan-bahasa-nusantara',
-    title: 'Kedaulatan Linguistik di Era Kecerdasan Buatan Generatif',
+    title: 'Kedaulatan Bahasa di Era AI Generatif: Mencegah Dialek Nusantara Terhapus',
     subtitle: 'Tantangan korpus bahasa daerah agar tidak terhapus dari peradaban Large Language Models.',
-    excerpt: 'Jika kita membiarkan model AI global hanya dilatih dengan data berbahasa asing, kita sedang membiarkan struktur berpikir generasi penerus terkolonisasi secara perlahan tanpa sadar.',
+    excerpt: 'Jika kita membiarkan model AI global hanya dilatih dengan data berbahasa asing, kita sedang membiarkan struktur berpikir generasi penerus terkolonisasi secara perlahan tanpa sadar. Sektor Lokal menelusuri ikhtiar periset linguistik independen.',
     category: 'Teknologi & AI',
     readTime: '5 Menit Membaca',
     date: '25 Agustus 2026',
@@ -100,9 +101,9 @@ const EDITORIAL_ARTICLES: EditorialArticle[] = [
   },
   {
     slug: 'ekonomi-sirkular-bukan-sekadar-tren',
-    title: 'Manufaktur Sirkular: Saat Residu Menjadi Modal Kedaulatan Industri',
-    subtitle: 'Belajar dari para pengolah limbah dan perajin kulit ceker ayam di lorong-lorong kota.',
-    excerpt: 'Ekonomi sirkular sejati bukan seminar di hotel berbintang, melainkan keberanian teknis mengubah residu organik dan anorganik menjadi komoditas bernilai tambah tinggi di tangan pengrajin lokal.',
+    title: 'Dari Residu Pasar ke Sepatu Mewah: Cara Hirka Mengubah Limbah Jadi Nilai Tambah',
+    subtitle: 'Belajar dari para pengolah residu organik dan perajin kulit ceker ayam di Bandung.',
+    excerpt: 'Ekonomi sirkular sejati bukan seminar di hotel berbintang, melainkan keberanian teknis mengubah residu sisa makanan pasar menjadi material kulit mirip eksotis yang diminati pasar global di tangan perajin lokal.',
     category: 'Ekonomi Sirkular',
     readTime: '6 Menit Membaca',
     date: '20 Agustus 2026',
@@ -114,9 +115,9 @@ const EDITORIAL_ARTICLES: EditorialArticle[] = [
   },
   {
     slug: 'merawat-ingatan-melawan-impunitas',
-    title: 'Menolak Lupa: Merawat Ingatan Kolektif sebagai Benteng Nalar Sehat Warga',
+    title: 'Menolak Lupa: Merawat Ingatan Kolektif sebagai Benteng Akal Sehat Warga',
     subtitle: 'Pelajaran dari keteguhan payung hitam Kamisan dan arsip dokumenter independen.',
-    excerpt: 'Masyarakat yang melupakan sejarah pelanggaran masa lalunya rentan mengulangi kesalahan yang sama di masa depan dengan kemasan yang berbeda.',
+    excerpt: 'Masyarakat yang melupakan sejarah pelanggaran kemanusiaan masa lalunya rentan mengulangi kezaliman yang sama di masa depan dengan jubah kekuasaan yang berbeda. Ingatan adalah instrumen pertahanan warga.',
     category: 'Etika & Nalar',
     readTime: '9 Menit Membaca',
     date: '15 Agustus 2026',
@@ -232,16 +233,16 @@ export default function ArtikelIndexPage() {
                 CATATAN REFLEKTIF, KAJIAN KRITIS, & DISKURSUS
               </h1>
               <p className={`text-base sm:text-lg leading-relaxed ${mutedText}`}>
-                Kompilasi tulisan independen yang membedah kedaulatan kebudayaan, ekonomi sirkular, tantangan kecerdasan buatan, dan benteng akal sehat di tengah era banjir distorsi informasi.
+                Kompilasi esai mendalam yang membedah kedaulatan pangan, masa depan bahasa di era kecerdasan buatan, ekonomi sirkular, dan cara merawat akal sehat di tengah banjir distorsi informasi.
               </p>
             </div>
 
             <div className="flex items-center gap-4 text-xs font-mono shrink-0">
-              <div className="p-3 rounded-2xl border border-inherit/10 bg-inherit/40 text-center">
+              <div className="p-3.5 rounded-2xl border border-inherit/10 bg-inherit/40 text-center shadow-crimson-subtle">
                 <span className="block text-2xl font-display text-[#E11D48]">{EDITORIAL_ARTICLES.length}</span>
                 <span className={mutedText}>ESAI TERBIT</span>
               </div>
-              <div className="p-3 rounded-2xl border border-inherit/10 bg-inherit/40 text-center">
+              <div className="p-3.5 rounded-2xl border border-inherit/10 bg-inherit/40 text-center shadow-crimson-subtle">
                 <span className="block text-2xl font-display text-[#E11D48]">100%</span>
                 <span className={mutedText}>OPEN ACCESS</span>
               </div>
@@ -332,7 +333,7 @@ export default function ArtikelIndexPage() {
                     <BookOpen className="w-8 h-8" />
                   </div>
                   <blockquote className="font-serif italic text-sm text-inherit/80">
-                    &ldquo;Ketiadaan nalar kritis adalah pupuk paling subur bagi bertumbuhnya eksploitasi finansial dan manipulasi algoritma modern.&rdquo;
+                    &ldquo;Ketiadaan nalar kritis adalah pupuk paling subur bagi bertumbuhnya manipulasi kognitif dan ilusi kemakmuran instan.&rdquo;
                   </blockquote>
                   <span className="text-[11px] font-mono text-[#E11D48] uppercase tracking-wider font-bold">
                     — KANON SEKTOR LOKAL
@@ -410,7 +411,7 @@ export default function ArtikelIndexPage() {
               <p className={`text-xs ${mutedText}`}>Coba ubah kata kunci pencarian atau pilih kategori topik lainnya.</p>
               <button 
                 onClick={() => { setSelectedCategory('Semua'); setSearchQuery(''); }}
-                className="mt-2 px-4 py-2 bg-[#E11D48] text-white text-xs font-mono rounded-xl font-bold uppercase"
+                className="mt-2 px-4 py-2 bg-[#E11D48] text-white text-xs font-mono rounded-xl font-bold uppercase shadow-crimson-subtle"
               >
                 Reset Filter
               </button>
@@ -423,7 +424,7 @@ export default function ArtikelIndexPage() {
                   initial={{ opacity: 0, y: 15 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4, delay: idx * 0.05 }}
-                  className={`p-6 rounded-3xl border flex flex-col justify-between space-y-6 group transition-all duration-300 hover:shadow-xl hover:-translate-y-1 ${cardClass}`}
+                  className={`p-6 sm:p-7 rounded-3xl border flex flex-col justify-between space-y-6 group transition-all duration-300 hover:shadow-xl hover:-translate-y-1 ${cardClass}`}
                 >
                   <div className="space-y-4">
                     
@@ -471,7 +472,7 @@ export default function ArtikelIndexPage() {
 
                     <Link
                       href={`/artikel/${article.slug}`}
-                      className="p-2 rounded-xl bg-[#E11D48]/10 text-[#E11D48] hover:bg-[#E11D48] hover:text-white transition-colors"
+                      className="p-2 rounded-xl bg-[#E11D48]/10 text-[#E11D48] hover:bg-[#E11D48] hover:text-white transition-colors shadow-crimson-subtle"
                       title="Baca Esai"
                     >
                       <ArrowRight className="w-4 h-4" />
@@ -484,7 +485,7 @@ export default function ArtikelIndexPage() {
         </section>
 
         {/* CALL TO SUBMIT / WRITING NETWORK */}
-        <section className={`p-8 sm:p-10 rounded-3xl border text-center space-y-4 ${cardClass}`}>
+        <section className={`p-8 sm:p-10 rounded-3xl border text-center space-y-4 shadow-crimson-subtle ${cardClass}`}>
           <h3 className="text-xl sm:text-2xl font-display uppercase">
             PUNYA CATATAN KRITIS ATAU KAJIAN TENTANG INOVASI LOKAL?
           </h3>

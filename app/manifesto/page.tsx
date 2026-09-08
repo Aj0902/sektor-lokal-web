@@ -2,7 +2,20 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { Sparkles, ArrowRight, BookOpen, Quote, ShieldCheck, Compass, Eye, Building2 } from 'lucide-react';
+import { 
+  Sparkles, 
+  ArrowRight, 
+  BookOpen, 
+  Quote, 
+  ShieldCheck, 
+  Compass, 
+  Eye, 
+  Building2,
+  TreePine,
+  Cpu,
+  HeartHandshake,
+  ArrowUpRight
+} from 'lucide-react';
 import { motion } from 'framer-motion';
 import ConstellationCanvas from '../../components/ConstellationCanvas';
 import Navbar from '../../components/Navbar';
@@ -26,7 +39,7 @@ export default function ManifestoPage() {
         onToggleDarkMode={() => setIsDarkMode(!isDarkMode)} 
       />
 
-      <main className="max-w-4xl mx-auto px-6 relative z-10 space-y-16 py-12 flex-1 w-full">
+      <main className="max-w-4xl mx-auto px-6 relative z-10 space-y-20 py-12 flex-1 w-full">
         
         {/* Breadcrumbs */}
         <Breadcrumbs 
@@ -34,98 +47,156 @@ export default function ManifestoPage() {
           isDarkMode={isDarkMode}
         />
 
-        {/* HERO TITLE */}
-        <section className="space-y-6 text-center pt-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-[#E11D48]/40 bg-[#E11D48]/10 text-[#E11D48] text-xs font-mono font-bold tracking-widest uppercase shadow-crimson-subtle">
+        {/* HERO TITLE & COMPASS */}
+        <section className="space-y-8 text-center pt-4">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#E11D48]/40 bg-[#E11D48]/10 text-[#E11D48] text-xs font-mono font-bold tracking-widest uppercase shadow-crimson-subtle">
             <Compass className="w-3.5 h-3.5" />
             <span>DEKLARASI SIKAP & KOMPAS EDITORIAL</span>
           </div>
 
-          <h1 className="text-4xl sm:text-6xl md:text-7xl font-display uppercase tracking-tight leading-[0.94]">
-            MANIFESTASI JIWA RAGA BANGSA DARI SEBUTAN LOKAL
-          </h1>
+          <div className="space-y-4">
+            <h1 className="text-4xl sm:text-6xl md:text-7xl font-display uppercase tracking-tight leading-[0.92]">
+              MANIFESTASI JIWA RAGA BANGSA DARI SEBUTAN LOKAL
+            </h1>
 
-          <p className="font-editorial italic text-xl sm:text-2xl text-[#E11D48] font-semibold max-w-2xl mx-auto pt-2">
-            &ldquo;Lokal bukan batas. Lokal adalah akar.&rdquo;
-          </p>
+            <p className="font-editorial italic text-2xl sm:text-3xl text-[#E11D48] font-semibold max-w-2xl mx-auto pt-2">
+              &ldquo;Lokal bukan batas. Lokal adalah akar.&rdquo;
+            </p>
+          </div>
         </section>
 
-        {/* PULL QUOTE CARD */}
-        <div className={`p-8 sm:p-10 rounded-3xl border shadow-crimson-subtle ${cardClass}`}>
-          <div className="flex items-start gap-4">
-            <Quote className="w-8 h-8 text-[#E11D48] shrink-0 opacity-80" />
-            <div className="space-y-2">
-              <span className="text-xs font-mono text-[#E11D48] font-bold uppercase tracking-widest">
-                BENANG MERAH
+        {/* CENTRAL PULL-QUOTE BOX (BENANG MERAH) */}
+        <div className={`p-8 sm:p-12 rounded-3xl border border-[#E11D48]/30 shadow-crimson-subtle ${cardClass} relative overflow-hidden`}>
+          <div className="absolute top-0 right-0 w-64 h-64 bg-[#E11D48]/5 rounded-full blur-3xl pointer-events-none" />
+          <div className="flex items-start gap-5 relative z-10">
+            <Quote className="w-10 h-10 text-[#E11D48] shrink-0 opacity-90 mt-1" />
+            <div className="space-y-3">
+              <span className="text-xs font-mono text-[#E11D48] font-bold uppercase tracking-widest block">
+                BENANG MERAH KAMI
               </span>
-              <p className="text-base sm:text-lg leading-relaxed font-serif italic text-justify text-inherit/90">
-                Terlalu sibuk melihat yang datang dari luar sampai lupa melihat apa yang tumbuh dari tanah sendiri. Sektor Lokal hadir sebagai ruang untuk menemukan kembali manusia, karya, dan ide yang lahir, tumbuh, bergerak, dan berakar di Indonesia.
+              <p className="text-lg sm:text-xl leading-relaxed font-serif italic text-justify text-inherit">
+                &ldquo;Terlalu sibuk melihat yang datang dari luar sampai lupa melihat apa yang tumbuh dari tanah sendiri. Sektor Lokal hadir sebagai ruang untuk menemukan kembali manusia, karya, dan ide yang lahir, tumbuh, bergerak, dan berakar di Indonesia.&rdquo;
               </p>
             </div>
           </div>
         </div>
 
         {/* 3 BABAK GERAKAN MANIFESTO */}
-        <article className="space-y-16 text-base sm:text-lg leading-relaxed text-justify font-sans">
+        <article className="space-y-20 text-base sm:text-lg leading-relaxed text-justify font-sans">
           
-          {/* BABAK I */}
+          {/* GERAKAN I */}
           <section className="space-y-6">
-            <div className="flex items-center gap-3 border-b pb-3 border-inherit/10">
-              <span className="font-mono text-xs text-[#E11D48] font-bold">GERAKAN I //</span>
-              <h2 className="text-2xl sm:text-3xl font-display uppercase tracking-tight">
+            <div className="flex items-center gap-3 border-b pb-4 border-inherit/10">
+              <span className="font-mono text-xs text-[#E11D48] font-bold px-2 py-0.5 rounded bg-[#E11D48]/10 border border-[#E11D48]/20">
+                GERAKAN 01
+              </span>
+              <h2 className="text-2xl sm:text-4xl font-display uppercase tracking-tight text-inherit">
                 LOKAL BUKAN BATAS, LOKAL ADALAH AKAR
               </h2>
             </div>
             
             <p>
-              Kata <em>&ldquo;lokal&rdquo;</em> kerap disalahartikan sebagai lawan dari modernitas—dianggap kecil, kuno, tradisional yang tertinggal, atau inferior di hadapan gemerlap produk impor. Seolah-olah kemajuan hanya bisa diraih dengan menjiplak mentah-mentah apa pun yang datang dari seberang samudera.
+              Kata <em>&ldquo;lokal&rdquo;</em> terlalu lama disempitkan menjadi stigma yang keliru: dianggap kuno, tradisional yang tertinggal, atau inferior di hadapan gemerlap tren luar. Seolah-olah kemajuan hanya bisa diraih dengan menjadi peniru apa pun yang datang dari seberang samudera.
             </p>
             
             <p>
-              <strong>Sektor Lokal menolak pandangan tersebut.</strong> Bagi kami, ukuran lokal bukan seberapa kuno atau tradisional bentuknya, melainkan seberapa jelas akar relasinya dengan Indonesia. Sebuah teknologi mutakhir dapat lokal. Sebuah riset kecerdasan buatan dapat lokal. Seorang seniman, petani, ilmuwan tomografi di Tangerang, penenun lontar di Flores, hingga perancang sepeda bambu di pelosok Temanggung—semuanya adalah wujud nyata bahwa kualitas kelas dunia bisa tumbuh subur dari tanah air kita sendiri.
+              <strong>Sektor Lokal menolak premis tersebut secara mutlak.</strong> Bagi kami, ukuran lokal bukan seberapa kuno atau tradisional bentuknya, melainkan seberapa jelas akar relasinya dengan tanah air.
             </p>
+
+            {/* Concrete Examples Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+              <div className={`p-5 rounded-2xl border border-inherit/10 bg-inherit/40 space-y-2 text-xs font-mono ${cardClass}`}>
+                <div className="flex items-center gap-2 text-[#E11D48] font-bold">
+                  <Cpu className="w-4 h-4" />
+                  <span>TEKNOLOGI BISA LOKAL</span>
+                </div>
+                <p className={mutedText}>
+                  Dari algoritma transmisi nirkabel 4G di Kediri hingga paten tomografi 4D medan listrik di Tangerang.
+                </p>
+              </div>
+
+              <div className={`p-5 rounded-2xl border border-inherit/10 bg-inherit/40 space-y-2 text-xs font-mono ${cardClass}`}>
+                <div className="flex items-center gap-2 text-[#E11D48] font-bold">
+                  <Building2 className="w-4 h-4" />
+                  <span>KARYA BISA GLOBAL</span>
+                </div>
+                <p className={mutedText}>
+                  Dari sepeda bambu Spedagi di Dusun Kandangan Temanggung yang lolos uji jalan ketat di Jerman dan Jepang.
+                </p>
+              </div>
+
+              <div className={`p-5 rounded-2xl border border-inherit/10 bg-inherit/40 space-y-2 text-xs font-mono ${cardClass}`}>
+                <div className="flex items-center gap-2 text-[#E11D48] font-bold">
+                  <TreePine className="w-4 h-4" />
+                  <span>EKOLOGI BERDAULAT</span>
+                </div>
+                <p className={mutedText}>
+                  Dari pelestarian 900+ varietas benih pusaka petani adat hingga energi mikrohidro mandiri desa.
+                </p>
+              </div>
+            </div>
           </section>
 
-          {/* BABAK II */}
+          {/* GERAKAN II */}
           <section className="space-y-6">
-            <div className="flex items-center gap-3 border-b pb-3 border-inherit/10">
-              <span className="font-mono text-xs text-[#E11D48] font-bold">GERAKAN II //</span>
-              <h2 className="text-2xl sm:text-3xl font-display uppercase tracking-tight">
+            <div className="flex items-center gap-3 border-b pb-4 border-inherit/10">
+              <span className="font-mono text-xs text-[#E11D48] font-bold px-2 py-0.5 rounded bg-[#E11D48]/10 border border-[#E11D48]/20">
+                GERAKAN 02
+              </span>
+              <h2 className="text-2xl sm:text-4xl font-display uppercase tracking-tight text-inherit">
                 MANUSIA DI BALIK BENTANG ALAM
               </h2>
             </div>
             
             <p>
-              Kita terbiasa membanggakan bentang alam nusantara: rimba lebat, laut luas, dan komoditas tambang melimpah. Namun di balik riuh angka statistik ekonomi dan devisa pariwisata, kita kerap melupakan elemen yang paling penting: <strong>manusia-manusianya</strong>.
+              Kita sering kali terjebak dalam romantisisme bentang alam: membanggakan hutan hujan tropis lebat, laut yang luas, dan angka ekspor komoditas tambang. Namun di tengah perbincangan megah tentang devisa dan pertumbuhan statistik, kita kerap melupakan elemen paling berharga: <strong>manusia-manusianya</strong>.
             </p>
             
+            <div className={`p-6 rounded-2xl border-l-4 border-[#E11D48] bg-inherit/50 space-y-2 text-sm sm:text-base font-serif italic ${cardClass}`}>
+              <p>
+                &ldquo;Apa artinya hutan lebat jika penjaga rimba perempuannya diabaikan? Apa artinya ribuan ton biji kakao jika petaninya hanya jadi penonton batangan cokelat impor di rak supermarket kota?&rdquo;
+              </p>
+            </div>
+
             <p>
-              Apa artinya hutan hujan lebat jika perempuan penjaga rimba di garis depannya diabaikan? Apa artinya ribuan ton biji kakao jika petaninya tercekik kemiskinan dan hanya menjadi penonton cokelat impor di rak supermarket kota? Melalui Sektor Lokal, kami mengembalikan perhatian kepada mereka yang bekerja dengan integritas, menjaga ruang hidup, dan merawat masa depan bersama dalam hening.
+              Melalui Sektor Lokal, kami mengembalikan fokus cerita kepada mereka yang bekerja nyata: menjaga ruang hidup, merawat kearifan lokal, dan memperjuangkan masa depan bersama tanpa pamrih pencitraan.
             </p>
           </section>
 
-          {/* BABAK III */}
+          {/* GERAKAN III */}
           <section className="space-y-6">
-            <div className="flex items-center gap-3 border-b pb-3 border-inherit/10">
-              <span className="font-mono text-xs text-[#E11D48] font-bold">GERAKAN III //</span>
-              <h2 className="text-2xl sm:text-3xl font-display uppercase tracking-tight">
+            <div className="flex items-center gap-3 border-b pb-4 border-inherit/10">
+              <span className="font-mono text-xs text-[#E11D48] font-bold px-2 py-0.5 rounded bg-[#E11D48]/10 border border-[#E11D48]/20">
+                GERAKAN 03
+              </span>
+              <h2 className="text-2xl sm:text-4xl font-display uppercase tracking-tight text-inherit">
                 MERATAKAN STATUS SIMBOLIK: SEMUA ADALAH WARGA
               </h2>
             </div>
             
             <p>
-              Kami sengaja menamai segmen manusia kami sebagai <strong>&ldquo;Warga Lokal&rdquo;</strong>. Kata warga dipakai bukan untuk merendahkan, melainkan untuk meratakan status simbolik. Seorang idola publik, ilmuwan paten, pegiat adat, seniman independen, hingga petani bukit tandus yang menanam pohon selama puluhan tahun—pada hakikatnya mereka semua adalah sesama warga negara Indonesia.
+              Kami sengaja menamai kurasi manusia kami sebagai <strong>&ldquo;Warga Lokal&rdquo;</strong>. Kata warga dipakai bukan untuk mengecilkan peran siapa pun, melainkan untuk meratakan status simbolik: seorang idola publik, ilmuwan paten, akademisi hukum tata negara, seniman independen, hingga petani lereng bukit tandus yang menanam beringin selama 25 tahun—semuanya adalah sesama warga negara Indonesia.
             </p>
             
             <p>
-              Tujuan kami bukan membuat pembaca merasa kecil di hadapan figur yang luar biasa. Sebaliknya, kami ingin memperlihatkan bahwa tindakan bermakna dapat lahir dari warga biasa yang memilih bertindak. Di situlah fungsi <strong>&ldquo;asa&rdquo;</strong>: menyalakan keberanian bahwa setiap dari kita pun memiliki ruang untuk memberi arti bagi tanah tempat kita berpijak.
+              Tujuan editorial kami bukan membuat pembaca merasa kerdil di hadapan tokoh-tokoh besar. Sebaliknya, kami ingin memperlihatkan bahwa orang-orang yang melakukan hal luar biasa itu pada mulanya adalah warga biasa yang <strong>memilih bertindak</strong>.
             </p>
+
+            <div className={`p-6 sm:p-8 rounded-2xl border border-inherit/10 space-y-3 bg-[#E11D48]/5 border-[#E11D48]/20`}>
+              <div className="flex items-center gap-2 text-xs font-mono text-[#E11D48] font-bold uppercase">
+                <HeartHandshake className="w-4 h-4" />
+                <span>FUNGSI ASA (EMPOWERMENT)</span>
+              </div>
+              <p className="text-sm sm:text-base text-inherit leading-relaxed">
+                Di situlah letak <strong>asa</strong>: menyadarkan kita bahwa siapapun kita hari ini, kita tidak perlu menunggu panggung megah untuk memulai sesuatu yang bermakna bagi tanah air sendiri.
+              </p>
+            </div>
           </section>
 
         </article>
 
         {/* CLOSING ENDORSEMENT & CTA */}
-        <section className={`p-8 sm:p-12 rounded-3xl border space-y-6 text-center ${cardClass}`}>
+        <section className={`p-8 sm:p-12 rounded-3xl border border-[#E11D48]/30 space-y-6 text-center shadow-crimson-subtle ${cardClass}`}>
           <div className="space-y-2">
             <h3 className="text-2xl sm:text-3xl font-display uppercase">
               MULAI MENJELAJAHI RUANG DISCOVERY KAMI
@@ -155,7 +226,7 @@ export default function ManifestoPage() {
           </div>
 
           <div className="pt-6 border-t border-inherit/10 text-xs font-mono opacity-70">
-            SEKTOR LOKAL • Media Kurasi & Ruang Penemuan Indonesia
+            SEKTOR LOKAL • Ruang Penemuan & Kurasi Indonesia
           </div>
         </section>
 
