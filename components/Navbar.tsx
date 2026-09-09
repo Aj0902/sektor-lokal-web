@@ -50,21 +50,19 @@ export default function Navbar({
   ];
 
   const navBg = isDark 
-    ? 'bg-[#07090E]/90 border-white/[0.08] text-[#F5EFEB]' 
-    : 'bg-[#F8F5EE]/90 border-black/[0.08] text-[#0A0E1A]';
+    ? 'bg-[#07090E]/90 border-white/10 text-[#F5EFEB]' 
+    : 'bg-[#F8F5EE]/90 border-black/10 text-[#0A0E1A]';
 
   return (
     <>
-      {/* Top Hairline Scroll Progress Bar */}
       <div 
-        className="fixed top-0 left-0 right-0 h-[2px] bg-[#E11D48] shadow-crimson-subtle z-50 transition-all duration-150"
+        className="fixed top-0 left-0 right-0 h-[2px] bg-[#E11D48] z-50 transition-all duration-150"
         style={{ width: `${scrollProgress}%` }}
       />
 
-      <header className={`sticky top-0 z-40 backdrop-blur-md border-b px-6 py-4 transition-colors ${navBg}`}>
-        <div className="max-w-6xl mx-auto flex items-center justify-between">
+      <header className={`sticky top-0 z-40 backdrop-blur-md border-b transition-colors ${navBg}`}>
+        <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
           
-          {/* Logo / Back Button */}
           <div className="flex items-center gap-4">
             {showBackButton ? (
               <Link 
@@ -75,93 +73,88 @@ export default function Navbar({
                 <span>{backLabel}</span>
               </Link>
             ) : (
-              <Link href="/" className="flex items-center gap-2.5 group">
-                <span className="font-display uppercase text-xl sm:text-2xl tracking-tight text-inherit">
+              <Link href="/" className="flex items-center gap-2 group">
+                <span className="font-display uppercase text-2xl tracking-tight text-inherit">
                   SEKTOR LOKAL
                 </span>
-                <span className="w-2.5 h-2.5 rounded-full bg-[#E11D48] shadow-crimson-subtle group-hover:scale-125 group-hover:shadow-crimson-glow transition-all" />
+                <span className="w-2.5 h-2.5 rounded-full bg-[#E11D48]" />
               </Link>
             )}
           </div>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-1 text-xs font-mono font-bold tracking-wider uppercase p-1 rounded-full border border-inherit/10 bg-inherit/50 backdrop-blur-sm">
+          <nav className="hidden md:flex items-center gap-8 text-xs font-mono font-bold tracking-widest uppercase">
             {navLinks.map((link) => {
               const isActive = pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href));
               return (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`px-4 py-1.5 rounded-full transition-all ${
-                    isActive
-                      ? 'bg-[#E11D48] text-white shadow-crimson-subtle font-bold'
-                      : 'hover:text-[#E11D48] opacity-80 hover:opacity-100'
+                  className={`relative py-1 group transition-colors ${
+                    isActive ? 'text-[#E11D48]' : 'hover:text-[#E11D48]'
                   }`}
                 >
                   {link.label}
+                  <span 
+                    className={`absolute bottom-0 left-0 h-[2px] bg-[#E11D48] transition-all duration-300 ${
+                      isActive ? 'w-full' : 'w-0 group-hover:w-full'
+                    }`}
+                  />
                 </Link>
               );
             })}
           </nav>
 
-          {/* Controls: DarkMode & Mobile Menu Toggle */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-4">
             <button
               onClick={toggleDark}
-              className={`p-2 rounded-xl border text-xs font-semibold flex items-center gap-2 transition-all shadow-sm ${
-                isDark 
-                  ? 'bg-[#0E131F] border-white/10 text-[#F5EFEB] hover:border-[#E11D48]' 
-                  : 'bg-white border-black/10 text-[#0A0E1A] hover:border-[#E11D48]'
-              }`}
-              title="Ganti Mode Tampilan"
+              className={`p-2 transition-colors hover:text-[#E11D48] ${isDark ? 'text-[#F5EFEB]' : 'text-[#0A0E1A]'}`}
+              aria-label="Toggle Dark Mode"
             >
-              {isDark ? <Sun className="w-3.5 h-3.5 text-amber-400" /> : <Moon className="w-3.5 h-3.5 text-indigo-600" />}
-              <span className="hidden sm:inline text-[11px] font-mono tracking-wider font-bold">
-                {isDark ? 'LIGHT' : 'DARK'}
-              </span>
+              {isDark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
             </button>
 
             <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className={`md:hidden p-2 rounded-xl border transition ${
-                isDark ? 'border-white/10 text-[#F5EFEB] hover:border-[#E11D48]' : 'border-black/10 text-[#0A0E1A] hover:border-[#E11D48]'
-              }`}
-              aria-label="Toggle Menu"
+              onClick={() => setIsMenuOpen(true)}
+              className={`md:hidden p-2 transition-colors hover:text-[#E11D48] ${isDark ? 'text-[#F5EFEB]' : 'text-[#0A0E1A]'}`}
+              aria-label="Open Menu"
             >
-              {isMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+              <Menu className="w-6 h-6" />
             </button>
           </div>
-
         </div>
       </header>
 
-      {/* Mobile Drawer */}
       <AnimatePresence>
         {isMenuOpen && (
           <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-            className={`fixed inset-0 top-[65px] z-30 p-8 flex flex-col space-y-6 text-xl font-display uppercase tracking-wider backdrop-blur-2xl border-b md:hidden ${
-              isDark ? 'bg-[#07090E]/98 border-white/10 text-[#F5EFEB]' : 'bg-[#F8F5EE]/98 border-black/10 text-[#0A0E1A]'
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className={`fixed inset-0 z-50 flex flex-col justify-center items-center ${
+              isDark ? 'bg-[#07090E] text-[#F5EFEB]' : 'bg-[#F8F5EE] text-[#0A0E1A]'
             }`}
           >
-            {navLinks.map((link, idx) => {
-              const isActive = pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href));
-              return (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setIsMenuOpen(false)}
-                  className={`flex items-center justify-between py-2 border-b border-inherit/10 ${
-                    isActive ? 'text-[#E11D48]' : 'hover:text-[#E11D48]'
-                  }`}
-                >
-                  <span>0{idx + 1} // {link.label}</span>
-                  {isActive && <span className="text-xs font-mono px-2 py-0.5 rounded bg-[#E11D48] text-white shadow-crimson-subtle">ACTIVE</span>}
-                </Link>
-              );
-            })}
+            <button 
+              onClick={() => setIsMenuOpen(false)}
+              className="absolute top-6 right-6 p-2 hover:text-[#E11D48] transition-colors"
+            >
+              <X className="w-8 h-8" />
+            </button>
+            <div className="flex flex-col items-center gap-8 font-display text-4xl uppercase tracking-widest">
+              {navLinks.map((link) => {
+                const isActive = pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href));
+                return (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    onClick={() => setIsMenuOpen(false)}
+                    className={`relative group ${isActive ? 'text-[#E11D48]' : 'hover:text-[#E11D48] transition-colors'}`}
+                  >
+                    <span>{link.label}</span>
+                  </Link>
+                );
+              })}
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

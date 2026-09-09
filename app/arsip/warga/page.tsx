@@ -4,23 +4,10 @@ import React, { useState, useEffect, Suspense } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
-import { 
-  Search, 
-  Sparkles, 
-  ArrowUpRight, 
-  Users, 
-  ShieldCheck, 
-  Filter,
-  X,
-  Compass,
-  CheckCircle2,
-  BookOpen
-} from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
-import ConstellationCanvas from '../../../components/ConstellationCanvas';
+import { Search, X, CheckCircle2 } from 'lucide-react';
+import { motion } from 'framer-motion';
 import Navbar from '../../../components/Navbar';
 import Footer from '../../../components/Footer';
-import Breadcrumbs from '../../../components/Breadcrumbs';
 import { directoryProfiles } from '../../../lib/supabase/fallbackData';
 import { Profile } from '../../../lib/supabase/types';
 import { createClient } from '../../../lib/supabase/client';
@@ -29,23 +16,15 @@ function WargaLokalArchiveContent() {
   const searchParams = useSearchParams();
   const initialLaci = searchParams?.get('laci') || 'SEMUA';
 
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedLaci, setSelectedLaci] = useState<string>(initialLaci);
   const [profiles, setProfiles] = useState<Profile[]>(directoryProfiles);
 
   const laciList = [
-    'SEMUA',
-    'Penjaga Nalar',
-    'Penyelamat Bumi',
-    'Pembangun Sistem',
-    'Pejuang Akar Rumput',
-    'Arsitek Usaha Mandiri',
-    'Perawat Jiwa & Rasa',
-    'Penjaga Tawa',
-    'Pencerah Generasi',
-    'Duta Talenta',
-    'Panggung Ekspresi'
+    'SEMUA', 'Penjaga Nalar', 'Penyelamat Bumi', 'Pembangun Sistem',
+    'Pejuang Akar Rumput', 'Arsitek Usaha Mandiri', 'Perawat Jiwa & Rasa',
+    'Penjaga Tawa', 'Pencerah Generasi', 'Duta Talenta', 'Panggung Ekspresi'
   ];
 
   useEffect(() => {
@@ -79,90 +58,56 @@ function WargaLokalArchiveContent() {
     return matchesSearch && matchesLaci;
   });
 
-  const bgCanvas = isDarkMode ? 'particle-wave-dark text-[#F5EFEB]' : 'particle-wave-light text-[#0A0E1A]';
-  const cardClass = isDarkMode ? 'spotlight-card-dark' : 'spotlight-card-light';
-  const mutedText = isDarkMode ? 'text-[#8E95A5]' : 'text-[#64748B]';
+  const bgClass = isDarkMode ? 'bg-[#07090E] text-[#F5EFEB]' : 'bg-[#F8F5EE] text-[#07090E]';
+  const borderClass = isDarkMode ? 'border-white/10' : 'border-black/10';
+  const cardBg = isDarkMode ? 'bg-[#0E131F]' : 'bg-white';
+  const mutedText = isDarkMode ? 'text-white/50' : 'text-black/50';
 
   return (
-    <div className={`min-h-screen ${bgCanvas} font-sans antialiased selection:bg-[#E11D48] selection:text-white relative flex flex-col justify-between`}>
-      
-      <ConstellationCanvas isDarkMode={isDarkMode} />
+    <div className={`min-h-screen ${bgClass} font-sans antialiased selection:bg-[#E11D48] selection:text-white flex flex-col`}>
+      <Navbar isDarkMode={isDarkMode} onToggleDarkMode={() => setIsDarkMode(!isDarkMode)} />
 
-      <Navbar 
-        isDarkMode={isDarkMode} 
-        onToggleDarkMode={() => setIsDarkMode(!isDarkMode)} 
-      />
-
-      <main className="max-w-6xl mx-auto px-6 relative z-10 space-y-8 py-10 flex-1 w-full">
+      <main className="flex-1 w-full max-w-7xl mx-auto px-6 py-12 sm:py-20 flex flex-col gap-12">
         
-        {/* Breadcrumbs */}
-        <Breadcrumbs 
-          items={[
-            { label: 'Pusat Penemuan', href: '/arsip' },
-            { label: 'Warga Lokal (Series 001–100)' }
-          ]} 
-          isDarkMode={isDarkMode}
-        />
-
-        {/* Header Section */}
-        <div className="space-y-4 max-w-3xl">
-          <div className="inline-flex items-center gap-2 text-xs font-mono text-[#E11D48] font-bold uppercase tracking-widest">
-            <Compass className="w-4 h-4" />
-            <span>SERIES 001–100 // 10 LACI PENEMUAN</span>
+        <header className="space-y-6 max-w-4xl border-b pb-8 border-current/10">
+          <div className="text-xs font-mono text-[#E11D48] font-bold uppercase tracking-widest">
+            Katalog 100 Warga Lokal // 10 Laci Kurasi
           </div>
-          <h1 className="text-4xl sm:text-6xl font-display uppercase tracking-tight leading-[0.94]">
-            100 CERITA WARGA YANG LAYAK DITEMUKAN
+          <h1 className="text-5xl sm:text-7xl font-display uppercase tracking-tight leading-[0.9]">
+            Daftar <br/> Penemuan
           </h1>
-          <p className={`text-base sm:text-lg leading-relaxed ${mutedText}`}>
-            Di tengah nama-nama yang selalu mondar-mandir di linimasa, ada warga yang justru menarik karena mereka fokus bekerja dalam hening. Ini bukan daftar peringkat, melainkan kumpulan catatan perjalanan orang-orang yang memilih bertindak.
+          <p className={`text-base sm:text-xl font-editorial italic ${mutedText}`}>
+            Membaca cerita orang-orang yang memilih bertindak di bidangnya masing-masing.
           </p>
-        </div>
+        </header>
 
-        {/* SEARCH & FILTER CONTROLS */}
-        <div className="space-y-4 pt-2">
-          
-          {/* Search Bar */}
-          <div className="relative max-w-xl">
-            <Search className="w-4 h-4 absolute left-4 top-1/2 -translate-y-1/2 opacity-40 text-inherit" />
+        {/* SEARCH & FILTERS */}
+        <section className="space-y-8">
+          <div className="relative max-w-2xl">
+            <Search className={`w-5 h-5 absolute left-0 top-1/2 -translate-y-1/2 ${mutedText}`} />
             <input 
               type="text" 
-              placeholder="Cari nama, karya, atau topik inisiatif..."
+              placeholder="Cari nama, inisiatif, atau profesi..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className={`w-full pl-11 pr-10 py-3.5 rounded-2xl border text-sm transition focus:outline-none focus:border-[#E11D48] ${
-                isDarkMode 
-                  ? 'bg-[#0E131F]/90 border-white/10 text-[#F5EFEB] placeholder-white/30' 
-                  : 'bg-white border-black/10 text-[#0A0E1A] placeholder-black/30'
-              }`}
+              className={`w-full pl-8 pr-10 py-2 bg-transparent text-lg sm:text-xl font-editorial border-b ${borderClass} focus:outline-none focus:border-[#E11D48] transition-colors rounded-none`}
             />
             {searchQuery && (
-              <button 
-                onClick={() => setSearchQuery('')}
-                className="absolute right-3.5 top-1/2 -translate-y-1/2 p-1 rounded-full hover:bg-inherit/20 text-inherit opacity-60"
-              >
-                <X className="w-4 h-4" />
+              <button onClick={() => setSearchQuery('')} className="absolute right-0 top-1/2 -translate-y-1/2 opacity-50 hover:opacity-100">
+                <X className="w-5 h-5" />
               </button>
             )}
           </div>
 
-          {/* 10 Laci Filter Switcher */}
-          <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none font-mono text-xs">
-            <span className="text-[11px] font-bold text-[#E11D48] uppercase shrink-0 mr-1 flex items-center gap-1">
-              <Filter className="w-3 h-3" />
-              <span>LACI:</span>
-            </span>
+          <div className="flex flex-wrap gap-x-6 gap-y-3 border-b pb-4 border-current/10">
             {laciList.map((laci) => {
               const isSelected = selectedLaci.toLowerCase() === laci.toLowerCase();
               return (
                 <button
                   key={laci}
                   onClick={() => setSelectedLaci(laci)}
-                  className={`px-3.5 py-1.5 rounded-full border transition-all shrink-0 uppercase font-bold tracking-wider ${
-                    isSelected
-                      ? 'bg-[#E11D48] border-[#E11D48] text-white shadow-crimson-subtle'
-                      : isDarkMode
-                        ? 'border-white/10 bg-[#0E131F]/60 text-[#8E95A5] hover:border-[#E11D48] hover:text-white'
-                        : 'border-black/10 bg-white text-[#64748B] hover:border-[#E11D48] hover:text-black'
+                  className={`text-xs font-mono uppercase tracking-wider pb-1 border-b-2 transition-colors ${
+                    isSelected ? 'border-[#E11D48] text-[#E11D48] font-bold' : 'border-transparent hover:border-current/30 text-current/60'
                   }`}
                 >
                   {laci}
@@ -170,105 +115,53 @@ function WargaLokalArchiveContent() {
               );
             })}
           </div>
+        </section>
 
-          {/* Result Counter */}
-          <div className="flex items-center justify-between text-xs font-mono border-t pt-3 border-inherit/10">
-            <span className={mutedText}>
-              Menampilkan <span className="font-bold text-[#E11D48]">{filteredProfiles.length}</span> dari {profiles.length} Cerita Warga
-            </span>
-            {selectedLaci !== 'SEMUA' && (
-              <button 
-                onClick={() => setSelectedLaci('SEMUA')}
-                className="text-[#E11D48] hover:underline font-bold"
-              >
-                Reset Filter Laci
-              </button>
-            )}
-          </div>
-
-        </div>
-
-        {/* 100 WARGA BENTO GRID */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-2">
-          {filteredProfiles.map((p) => (
-            <div 
+        {/* GRID */}
+        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10">
+          {filteredProfiles.map((p, idx) => (
+            <motion.div 
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: idx * 0.05 }}
               key={p.id || p.slug}
-              className={`p-6 sm:p-7 rounded-3xl border flex flex-col justify-between space-y-6 transition-all duration-300 hover:scale-[1.01] ${cardClass}`}
+              className={`group flex flex-col space-y-4 ${cardBg} p-4 border ${borderClass}`}
             >
-              <div className="space-y-4">
-                {/* Photo and Badge */}
-                <div className="flex items-start justify-between gap-4">
-                  <div className="relative w-20 h-24 sm:w-24 sm:h-28 rounded-2xl overflow-hidden bg-neutral-900 shrink-0 border border-inherit/10">
-                    <Image 
-                      src={p.photo_url || 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80'} 
-                      alt={p.name} 
-                      fill 
-                      sizes="96px"
-                      className="object-cover filter grayscale contrast-110"
-                    />
-                  </div>
-
-                  <div className="space-y-1.5 text-right">
-                    <span className="inline-block px-2.5 py-0.5 rounded-full bg-[#E11D48]/10 text-[#E11D48] text-[10px] font-mono font-bold border border-[#E11D48]/20 uppercase">
-                      {p.category || 'Warga Lokal'}
-                    </span>
-                    <div className="flex items-center justify-end gap-1 text-[10px] font-mono text-emerald-400 font-bold">
-                      <CheckCircle2 className="w-3 h-3" />
-                      <span>TERVERIFIKASI</span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Name & Title */}
-                <div className="space-y-1">
-                  <h3 className="font-display uppercase text-2xl text-inherit leading-tight">
-                    {p.name}
+              <Link href={`/profil/${p.slug}`} className="block relative aspect-[3/4] overflow-hidden bg-black w-full">
+                <Image 
+                  src={p.photo_url || 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80'} 
+                  alt={p.name} 
+                  fill 
+                  className="object-cover portrait-bw transition-transform duration-700 group-hover:scale-105"
+                />
+              </Link>
+              
+              <div className="space-y-1">
+                <div className="flex justify-between items-start gap-2">
+                  <h3 className="font-display text-xl uppercase leading-none group-hover:text-[#E11D48] transition-colors">
+                    <Link href={`/profil/${p.slug}`}>{p.name}</Link>
                   </h3>
-                  <p className="font-editorial italic text-sm text-[#E11D48] font-semibold line-clamp-1">
-                    {p.title}
-                  </p>
+                  {p.verified !== false && (
+                    <CheckCircle2 className="w-4 h-4 text-[#E11D48] shrink-0" />
+                  )}
                 </div>
-
-                {/* Quote / Bio */}
-                <blockquote className={`text-xs leading-relaxed line-clamp-3 italic ${mutedText} border-l-2 border-[#E11D48]/40 pl-3`}>
-                  &ldquo;{p.quote || p.bio_paragraphs?.[0] || 'Kemandirian berakar dari keberanian bertindak di tanah sendiri.'}&rdquo;
-                </blockquote>
+                <p className="font-editorial text-sm italic text-current/70">{p.title}</p>
+                <div className="pt-2 text-[10px] font-mono uppercase tracking-widest text-[#E11D48]">
+                  {p.category}
+                </div>
               </div>
-
-              {/* Action Button */}
-              <div className="pt-2 border-t border-inherit/10">
-                <Link 
-                  href={`/profil/${p.slug}`}
-                  className="w-full py-3 bg-[#E11D48] hover:bg-[#BE123C] text-white font-mono font-bold text-xs uppercase tracking-wider rounded-xl flex items-center justify-center gap-1.5 shadow-crimson-subtle transition"
-                >
-                  <span>Baca Cerita Lengkap</span>
-                  <ArrowUpRight className="w-4 h-4" />
-                </Link>
-              </div>
-
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </section>
 
         {filteredProfiles.length === 0 && (
-          <div className={`p-12 rounded-3xl border text-center space-y-3 ${cardClass}`}>
-            <p className="text-lg font-display uppercase">Tidak Ada Cerita yang Cocok</p>
-            <p className={`text-xs font-mono ${mutedText}`}>
-              Coba gunakan kata kunci pencarian lain atau reset filter laci kategori.
-            </p>
-            <button 
-              onClick={() => { setSearchQuery(''); setSelectedLaci('SEMUA'); }}
-              className="px-4 py-2 rounded-xl bg-[#E11D48] text-white text-xs font-mono font-bold uppercase"
-            >
-              Reset Pencarian
-            </button>
+          <div className="py-20 text-center font-display text-2xl uppercase text-current/40">
+            Nihil. Coba kata kunci lain.
           </div>
         )}
 
       </main>
-
       <Footer isDarkMode={isDarkMode} />
-
     </div>
   );
 }
@@ -276,9 +169,8 @@ function WargaLokalArchiveContent() {
 export default function WargaLokalArchivePage() {
   return (
     <Suspense fallback={
-      <div className="min-h-screen bg-[#07090E] text-[#F5EFEB] flex items-center justify-center font-mono text-xs text-[#E11D48]">
-        <div className="w-6 h-6 border-2 border-[#E11D48] border-t-transparent rounded-full animate-spin mr-3 shadow-crimson-subtle" />
-        <span>MEMUAT KATALOG CERITA WARGA...</span>
+      <div className="min-h-screen bg-[#07090E] text-[#E11D48] flex items-center justify-center font-mono text-xs uppercase">
+        Memuat...
       </div>
     }>
       <WargaLokalArchiveContent />
