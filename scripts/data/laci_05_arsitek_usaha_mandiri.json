@@ -1,0 +1,262 @@
+[
+  {
+    "slug": "singgih-susilo-kartono",
+    "name": "Singgih Susilo Kartono",
+    "title": "Pendiri Spedagi, Magno Design & Penggagas Pasar Papringan Temanggung",
+    "category": "Arsitek Usaha Mandiri",
+    "quote": "Karya berstandar kelas dunia tidak harus lahir dari gedung pencakar langit kota metropolitan; ia bisa berakar kokoh dari pelosok dusun desa tempat kita memuliakan tanah dan bambu sendiri.",
+    "bio_paragraphs": [
+      "Setelah menyelesaikan studi Desain Produk di ITB dan meraih berbagai tawaran karier mapan di kota besar, Singgih Susilo Kartono memilih jalan yang dianggap anomali: pulang ke kampung halamannya di Dusun Kandangan, Temanggung, Jawa Tengah. Ia menolak anggapan bahwa masa depan cerah hanya milik mereka yang melakukan urbanisasi.",
+      "Dari bengkel kerjanya di desa, Singgih merancang radio kayu Magno yang memenangkan penghargaan desain tertinggi dunia seperti Good Design Award Jepang dan Brit Insurance Design of the Year London. Ia kemudian melahirkan Spedagi—sepeda bambu lestari yang telah teruji melintasi rute Paris-Brest-Paris 1.200 km—serta merekayasa sosial revitalisasi perdesaan melalui Pasar Papringan, sebuah pasar kuliner dan kriya tradisional bebas plastik yang menggerakkan perputaran ekonomi miliaran rupiah bagi ratusan warga desa.",
+      "Bagi generasi muda, Singgih Susilo Kartono adalah bapak gerakan desa kreatif: membuktikan bahwa kemandirian lokal, kelestarian material bambu, dan desain industri presisi mampu mengangkat harkat desa menjadi mercusuar peradaban dunia."
+    ],
+    "lifeEvents": [
+      { "year_range": "2004 — 2008", "title": "KELAHIRAN RADIO KAYU MAGNO & PENGHARGAAN DUNIA", "description": "Merancang radio kayu Magno di Temanggung, diekspor ke puluhan negara dan meraih Good Design Award Jepang serta D&AD Yellow Pencil di London." },
+      { "year_range": "2013 — 2018", "title": "SEPEDA BAMBU SPEDAGI & KELAHIRAN PASAR PAPRINGAN", "description": "Menciptakan sepeda bambu Spedagi berstandar uji Jerman dan menyulap kebun bambu kumuh menjadi Pasar Papringan berbasis koin pring." },
+      { "year_range": "2019 — 2026", "title": "ICVRD & EKOSISTEM DESA LESTARI NUSANTARA", "description": "Memimpin International Conference on Village Revitalization (ICVRD) dan menduplikasi model ekonomi Spedagi ke berbagai penjuru Indonesia." }
+    ],
+    "works": [
+      { "title": "Spedagi Bamboo Bicycle (Sepeda Bambu Lestari)", "category": "Desain Industri Kriya Mobilitas Hijau", "description": "Sepeda bambu berstandar internasional yang mengintegrasikan kekuatan serat bambu lokal Temanggung dengan estetika desain modern.", "link_url": "https://spedagi.com" },
+      { "title": "Pasar Papringan Temanggung", "category": "Rekayasa Sosial & Pasar Tradisional Bebas Plastik", "description": "Destinasi ekonomi komunal dua mingguan di tengah kebun bambu yang memberdayakan ratusan ibu-ibu desa menggunakan mata uang koin bambu.", "link_url": "https://pasarpapringan.com" },
+      { "title": "Magno Wooden Radio & Craft", "category": "Kriya Kayu Berkelanjutan & Reboisasi Desa", "description": "Perangkat audio kayu kerajinan tangan berpresisi tinggi dengan program penanaman kembali pohon untuk setiap kayu yang dipanen.", "link_url": "https://magno-design.com" }
+    ],
+    "articles": [
+      { "title": "Membangun dari Dusun: Mengapa Menjadi Tuan di Desa Sendiri Jauh Lebih Keren dari Urbanisasi", "tag": "REVITALISASI DESA", "read_time": "8 Menit Membaca", "description": "Filosofi Singgih Susilo Kartono tentang potensi ekonomi perdesaan yang mandiri dan berdaya saing global.", "content_full": "Urbanisasi massal telah mengosongkan desa-desa kita dari pemuda-pemuda cerdasnya. Ketika sarjana desa kembali dan mengolah bambu serta tanah kelahirannya dengan desain industri yang matang, desa tidak lagi menjadi wilayah tertinggal, melainkan pusat penciptaan karya bernilai tinggi." },
+      { "title": "Falsafah Pasar Papringan: Mengembalikan Kebun Bambu Menjadi Ruang Perjumpaan Manusia", "tag": "EKONOMI KOMUNAL", "read_time": "7 Menit Membaca", "description": "Bagaimana kebun bambu kotor yang dulunya tempat pembuangan sampah disulap menjadi ruang ekonomi beromzet ratusan juta rupiah.", "content_full": "Pasar Papringan bukan sekadar tempat jual beli makanan tradisional; ia adalah ruang rekonsiliasi manusia dengan alamnya. Mengharamkan kantong plastik dan menggunakan wadah daun pisang serta koin bambu adalah latihan hidup selaras dengan alam." }
+    ]
+  },
+  {
+    "slug": "helianti-hilman",
+    "name": "Helianti Hilman",
+    "title": "Pendiri JAVARA Indigenous Indonesia & Pelopor Pangan Pusaka Nusantara",
+    "category": "Arsitek Usaha Mandiri",
+    "quote": "Kedaulatan pangan bangsa ini terkubur dalam benih pusaka leluhur; saat beras merah dan rempah lokal disajikan di meja dunia, nusantara sedang menegakkan martabat kedaulatan tanahnya.",
+    "bio_paragraphs": [
+      "Meninggalkan karier mapan sebagai konsultan hukum ekonomi internasional, Helianti Hilman tergerak nuraninya saat menjelajahi pelosok perdesaan nusantara dan mendapati para petani tua menyimpan ribuan varietas benih pusaka (heritage seeds) tanaman pangan yang terancam punah akibat penyeragaman benih hibrida industri.",
+      "Pada 2008, Helianti mendirikan JAVARA Indigenous Indonesia. Ia membangun ekosistem rantai pasok pangan organik yang bermitra dengan lebih dari 50.000 petani kecil, nelayan tradisional, dan perajin pangan lokal di seluruh Indonesia. Helianti mengkurasi ratusan produk pangan warisan—mulai dari beras pusaka beraneka warna, gula kelapa kristal, garam laut vulkanik, hingga rempah liar—dan membawanya menembus rak-rak ritel premium di lebih dari 35 negara.",
+      "Dianugerahi Ernst & Young Social Entrepreneur of the Year dan Schwab Foundation Social Innovator di Davos, Helianti membuktikan bahwa kekayaan hayati pangan leluhur adalah komoditas bernilai tambah tertinggi bila dikelola dengan standar mutu modern."
+    ],
+    "lifeEvents": [
+      { "year_range": "2008", "title": "PENDIRIAN JAVARA INDIGENOUS INDONESIA", "description": "Membangun Javara dengan modal swadaya, mendokumentasikan benih pusaka petani lokal dari Aceh hingga Papua." },
+      { "year_range": "2013 — 2018", "title": "EKSPOR PANGAN ORGANIK GLOBAL & EY AWARD", "description": "Mengekspor lebih dari 200 produk pangan pusaka bersertifikat organik ke Eropa, AS, dan Jepang serta meraih EY Social Entrepreneur of the Year." },
+      { "year_range": "2019 — 2026", "title": "SEKOLAH PANGAN ALAMI & AKADEMI TANI MUDA", "description": "Mendirikan Javara Academy untuk melatih petani muda dan perempuan desa dalam mengolah bahan pangan lokal menjadi produk bernilai tambah ekspor." }
+    ],
+    "works": [
+      { "title": "JAVARA Indigenous Indonesia (Pangan Pusaka Nusantara)", "category": "Agribisnis Pangan Organik & Ekspor Heritage", "description": "Kurasi produk pangan alami terbesar di Indonesia yang memasok beras pusaka, garam artisanal, dan rempah liar ke pasar dunia.", "link_url": "https://javara.co.id" },
+      { "title": "Javara Academy & Sekolah Wirausaha Pangan Desa", "category": "Pendidikan Vokasi Agribisnis & Pelestarian Benih", "description": "Inkubator bisnis yang melatih ribuan keluarga petani mengadopsi standar sertifikasi organik internasional dan pengolahan pangan.", "link_url": "https://javara.co.id" },
+      { "title": "Arsip Keanekaragaman Benih Pusaka (Heritage Seeds Bank)", "category": "Konservasi Plasma Nutfah Tanaman Pangan", "description": "Repositori benih tanaman pangan pusaka tradisional tahan perubahan iklim yang dilindungi dari kepunahan industri.", "link_url": "https://javara.co.id" }
+    ],
+    "articles": [
+      { "title": "Menyelamatkan Benih Leluhur: Mengapa Keanekaragaman Hayati Pangan Adalah Senjata Melawan Krisis Iklim", "tag": "KEDAULATAN PANGAN", "read_time": "8 Menit Membaca", "description": "Pentingnya mempertahankan varietas beras dan umbi lokal yang tahan hama alami tanpa ketergantungan pupuk kimia.", "content_full": "Revolusi hijau telah menyeragamkan ribuan varietas beras kita menjadi segelintir benih hibrida yang rentan kekeringan dan bergantung pada pestisida kimia. Memuliakan kembali benih pusaka warisan leluhur adalah satu-satunya jaminan ketahanan pangan bangsa kita di masa depan." },
+      { "title": "Dari Dapur Desa Menembus Pasar Dunia: Cara Membangun Produk Pangan Lokal Berstandar Ekspor", "tag": "AGRIBISNIS SIRKULAR", "read_time": "7 Menit Membaca", "description": "Strategi Helianti Hilman mengemas kearifan garam artisanal dan gula semut kelapa menjadi produk bernilai tinggi.", "content_full": "Petani kita tidak boleh selamanya hanya menjadi penjual gabah mentah dengan harga murah. Memberi sentuhan pengolahan higienis dan sertifikasi organik adalah cara menaikkan derajat ekonomi keluarga tani menjadi bermartabat." }
+    ]
+  },
+  {
+    "slug": "azalea-ayuningtyas",
+    "name": "Azalea Ayuningtyas",
+    "title": "Co-founder & CEO Du'Anyam (Pemberdayaan Kriya Anyaman Lontar & Kesehatan Ibu-Anak NTT)",
+    "category": "Arsitek Usaha Mandiri",
+    "quote": "Menganyam daun lontar di pelosok Flores Timur bukan sekadar melestarikan seni kriya etnik, melainkan instrumen memutus rantai kemiskinan dan malnutrisi ibu-anak melalui kedaulatan ekonomi perempuan.",
+    "bio_paragraphs": [
+      "Setelah menyelesaikan studi di Harvard T.H. Chan School of Public Health di Amerika Serikat, Azalea Ayuningtyas (akrab disapa Ayu) memilih tidak menetap di luar negeri. Ia langsung terjun ke pelosok Flores Timur, Nusa Tenggara Timur—daerah dengan angka kematian ibu melahirkan dan malnutrisi anak yang sangat tinggi.",
+      "Ayu menyadari bahwa akar masalah malnutrisi pada ibu hamil adalah kemiskinan struktural: ibu-ibu desa tidak memiliki penghasilan tunai mandiri untuk membeli makanan bergizi. Melihat potensi keahlian menganyam daun lontar yang diwarisi turun-temurun, Ayu bersama rekan-rekannya mendirikan Du'Anyam pada 2014.",
+      "Du'Anyam menghubungkan ribuan ibu penganyam lontar di pelosok NTT dengan pasar B2B perhotelan, korporasi nasional, hingga suvenir resmi Asian Games. Keuntungan penjualan dialokasikan langsung untuk makanan bergizi, pemeriksaan kehamilan rutin, dan beasiswa anak. Ayu membuktikan kekuatan wirausaha sosial: mengubah anyaman daun lontar menjadi penyelamat nyawa generasi masa depan."
+    ],
+    "lifeEvents": [
+      { "year_range": "2014", "title": "PENDIRIAN DU'ANYAM DI FLORES TIMUR", "description": "Merintis Du'Anyam di pelosok NTT bersama Melia Winata dan Hanna Keraf, mengorganisir puluhan ibu penganyam daun lontar pertama." },
+      { "year_range": "2018", "title": "MERCHANDISE RESMI ASIAN GAMES & FORBES 30U30", "description": "Du'Anyam terpilih sebagai merchandise resmi Asian Games 2018 dan Ayu masuk dalam daftar bergengsi Forbes 30 Under 30 Asia." },
+      { "year_range": "2020 — 2026", "title": "EKSPANSI KARYA ANYAMAN & PLATFORM KRIYA DIGITAL", "description": "Memberdayakan lebih dari 1.500 perempuan perajin anyaman di NTT, Papua, dan Kalimantan Barat serta meluncurkan platform B2B kriya." }
+    ],
+    "works": [
+      { "title": "Du'Anyam (Wirausaha Sosial Kriya Daun Lontar)", "category": "Wirausaha Sosial & Kriya Anyaman Inklusif", "description": "Brand kriya sosial yang memasok produk anyaman berkualitas tinggi untuk sektor hospitality global dan suvenir korporasi.", "link_url": "https://duanyam.com" },
+      { "title": "Program Intervensi Gizi & Kesehatan Ibu Hamil NTT", "category": "Kesehatan Masyarakat & Penanganan Stunting", "description": "Program pemberian paket nutrisi protein dan pendampingan posyandu bagi keluarga penganyam di desa terpencil Flores.", "link_url": "https://duanyam.com" },
+      { "title": "Krealogi (Digitalisasi Rantai Pasok Kriya UMKM)", "category": "Platform Ekosistem Digital Perajin", "description": "Aplikasi manajemen produksi dan pencatatan kas bagi ribuan kelompok perajin kriya akar rumput di berbagai provinsi.", "link_url": "https://krealogi.com" }
+    ],
+    "articles": [
+      { "title": "Anyaman Penyelamat Nyawa: Bagaimana Daun Lontar Memutus Rantai Malnutrisi Ibu di NTT", "tag": "WIRAUSAHA SOSIAL", "read_time": "7 Menit Membaca", "description": "Kisah transformatif para ibu penganyam di Flores Timur yang kini mandiri secara finansial dan mampu membiayai kesehatan anaknya.", "content_full": "Ketika seorang ibu memiliki penghasilan dari anyamannya sendiri, rupiah pertama yang ia belanjakan adalah untuk membeli telur dan susu bagi anak-anaknya. Memberdayakan perempuan desa adalah investasi paling efektif untuk menghapus stunting dari muka bumi." },
+      { "title": "Menembus Pasar Korporasi: Menjual Kriya Etnik Bukan Berdasarkan Rasa Kasihan, Tapi Kualitas", "tag": "MANAJEMEN KRIYA", "read_time": "6 Menit Membaca", "description": "Pentingnya standardisasi mutu dan kontrol kualitas presisi agar produk perajin desa mampu bersaing di pasar hotel bintang lima.", "content_full": "Wirausaha sosial tidak boleh menjual produk atas dasar belas kasihan pembeli. Produk kriya anyaman lontar harus mampu berdiri tegak karena kualitas desain, ketelitian anyaman, dan ketahanan bahannya yang luar biasa." }
+    ]
+  },
+  {
+    "slug": "tissa-aunilla",
+    "name": "Tissa Aunilla",
+    "title": "Co-founder & Master Chocolatier Pipiltin Cocoa (Pelopor Bean-to-Bar Cokelat Nusantara)",
+    "category": "Arsitek Usaha Mandiri",
+    "quote": "Indonesia adalah salah satu penghasil kakao terbesar di dunia, namun selama puluhan tahun kita hanya mengekspor biji mentah dan membeli kembali cokelat Eropa dengan harga mahal. Pipiltin hadir untuk membalikkan takdir itu.",
+    "bio_paragraphs": [
+      "Meninggalkan karier mapan sebagai pengacara korporasi multinasional, Tissa Aunilla memilih banting setir menekuni seni pembuatan cokelat (chocolatier) hingga menempuh pendidikan profesional di Valrhona Chocolate Academy Prancis. Keputusannya didorong oleh rasa miris: Indonesia adalah produsen biji kakao terbesar ketiga dunia, tetapi rakyatnya tidak mengenal cita rasa cokelat asli berkualitas tinggi.",
+      "Pada 2013, bersama kakaknya Irvan Helmi (pendiri Anomali Coffee), Tissa mendirikan Pipiltin Cocoa—pelopor produsen cokelat artisan berbasis metode bean-to-bar di Indonesia. Pipiltin membeli biji kakao fermentasi langsung dari petani di Aceh (Pidie), Bali (Tabanan), Jawa Timur (Glenmore), Flores, dan Papua Barat (Ransiki) dengan harga beli di atas standar pasar.",
+      "Tissa membuktikan bahwa setiap tanah nusantara menghasilkan profil rasa cokelat yang unik—mulai dari fruity, earthy, hingga nutty—dan membawa produk cokelat murni buatan dalam negeri merajai pasar premium ekspor Jepang dan Eropa."
+    ],
+    "lifeEvents": [
+      { "year_range": "2013", "title": "PENDIRIAN PIPILTIN COCOA BEAN-TO-BAR", "description": "Membangun pabrik pengolahan cokelat bean-to-bar pertama di Jakarta, memperkenalkan transparansi asal-usul biji kakao single origin lokal." },
+      { "year_range": "2016 — 2020", "title": "KEMITRAAN PETANI KAKAO RANSIKI PAPUA & BALI", "description": "Membina kelompok tani kakao di Ransiki Papua Barat dan Tabanan Bali dalam teknik fermentasi biji kakao bermutu tinggi." },
+      { "year_range": "2021 — 2026", "title": "EKSPOR COKELAT ARTISAN NUSANTARA KE JEPANG & EROPA", "description": "Mengekspor produk cokelat Pipiltin Cocoa ke ratusan gerai ritel di Jepang dan membuka chocolate experience store di tanah air." }
+    ],
+    "works": [
+      { "title": "Pipiltin Cocoa (Cokelat Artisan Bean-to-Bar Nusantara)", "category": "Manufaktur Cokelat Premium Single Origin", "description": "Lini produk cokelat murni berbahan 100% kakao lokal tanpa lemak nabati sawit yang mengangkat kekayaan profil tanah kepulauan Indonesia.", "link_url": "https://pipiltincocoa.com" },
+      { "title": "Program Kemitraan Fermentasi Petani Kakao Daerah", "category": "Pemberdayaan Rantai Pasok Petani Kakao", "description": "Pelatihan standardisasi fermentasi dan pembelian langsung biji kakao dari petani di Aceh, Flores, Bali, dan Papua dengan harga premium.", "link_url": "https://pipiltincocoa.com" },
+      { "title": "Pipiltin Chocolate Experience & Edukasi Gastronomi", "category": "Pusat Literasi Cokelat & Kuliner Nusantara", "description": "Ruang edukasi rasa bagi publik untuk memahami perbedaan cokelat industri sarat gula dengan cokelat murni berkarakter tanah lokal.", "link_url": "https://pipiltincocoa.com" }
+    ],
+    "articles": [
+      { "title": "Kisah Tanah dalam Sepotong Cokelat: Menjelajahi Profil Rasa Kakao Aceh hingga Papua", "tag": "GASTRONOMI LOKAL", "read_time": "7 Menit Membaca", "description": "Pembedahan Tissa Aunilla tentang bagaimana iklim, tanah vulkanik, dan proses fermentasi membentuk cita rasa cokelat nusantara.", "content_full": "Cokelat dari Tabanan memiliki aroma buah berry yang segar, sementara cokelat dari Ransiki Papua memiliki rasa tanah earthy yang pekat dan elegan. Menikmati cokelat single origin adalah cara mengapresiasi keanekaragaman geologis bumi pertiwi." },
+      { "title": "Menghentikan Kutukan Ekspor Bahan Mentah: Mengapa Hilirisasi Cokelat Harus Dimulai dari Petani", "tag": "KEDAULATAN EKONOMI", "read_time": "6 Menit Membaca", "description": "Pentingnya mengajarkan teknik fermentasi biji kakao agar petani lokal mendapatkan nilai tambah berkali lipat di tanah kelahirannya.", "content_full": "Biji kakao yang tidak difermentasi hanya dihargai murah oleh tengkulak. Ketika petani diajari mengontrol suhu fermentasi secara presisi, harga biji kakao mereka melonjak dan mampu membiayai pendidikan anak-anak mereka hingga bangku kuliah." }
+    ]
+  },
+  {
+    "slug": "yukka-harsono",
+    "name": "Yukka Harsono",
+    "title": "Co-founder & CEO Brodo Footwear (Pelopor Kebangkitan Sepatu Kulit Lokal Cibaduyut)",
+    "category": "Arsitek Usaha Mandiri",
+    "quote": "Kualitas karya pengrajin kulit dalam negeri kita tidak pernah kalah dari brand sepatu ternama dunia; yang mereka butuhkan adalah desain modern, kontrol kualitas industri presisi, dan rasa bangga anak bangsa.",
+    "bio_paragraphs": [
+      "Bermula dari pengalaman pribadi yang kesulitan mencari sepatu formal berukuran 46 saat hendak menghadiri wisuda Teknik Sipil ITB, Yukka Harsono bersama sahabatnya Putera Dwi Karunia memberanikan diri menjelajahi lorong-lorong bengkel pengrajin sepatu legendaris di Cibaduyut, Bandung.",
+      "Di Cibaduyut, Yukka menyaksikan keprihatinan mendalam: sentra pengrajin sepatu kulit terbesar di Indonesia itu mati suri dihantam serbuan sepatu impor murah. Maka pada 2010, dengan modal tabungan Rp 7 juta, Yukka mendirikan Brodo Footwear—brand sepatu pria Direct-to-Consumer (D2C) pertama di Indonesia yang mengawinkan desain kontemporer bergaya urban dengan keahlian jahit tangan pengrajin lokal Cibaduyut.",
+      "Brodo berkembang menjadi ikon kebangkitan brand lokal Indonesia, mempekerjakan ratusan pengrajin sepatu daerah dan terpilih sebagai sepatu resmi kontingen Indonesia di ajang Olimpiade. Yukka membuktikan bahwa anak muda mampu membangun brand manufaktur alas kaki yang bermartabat dan menjadi kebanggaan nasional."
+    ],
+    "lifeEvents": [
+      { "year_range": "2010", "title": "PENDIRIAN BRODO FOOTWEAR DARI CIBADUYUT", "description": "Memulai produksi sepatu kulit model Signore pertama bermitra dengan pengrajin lokal Cibaduyut Bandung." },
+      { "year_range": "2015 — 2018", "title": "PELOPOR D2C DIGITAL & OFFICIAL FOOTWEAR ASIAN GAMES", "description": "Memelopori model bisnis retail online D2C nasional dan menjadi Official Footwear partner resmi Asian Games 2018." },
+      { "year_range": "2020 — 2026", "title": "EXPANSI BRODO GENTLEMAN STORE & FOOTWEAR OLIMPIADE", "description": "Membuka jaringan gerai ritel di berbagai kota besar, memproduksi sepatu kontingen atlet Olimpiade, dan merambah ekspor Asia Tenggara." }
+    ],
+    "works": [
+      { "title": "Brodo Footwear (Brand Sepatu Kulit & Sneakers Lokal)", "category": "Manufaktur Alas Kaki Kontemporer & Direct-to-Consumer", "description": "Lini produk sepatu kulit formal, boots, dan sneakers pria dengan standar uji mutu industri yang diproduksi oleh sentra pengrajin lokal Jawa Barat.", "link_url": "https://bro.do" },
+      { "title": "Ekosistem Mitra Pengrajin Kulit Cibaduyut Brodo", "category": "Pemberdayaan Sentra Manufaktur Tradisional", "description": "Program standardisasi jahit sol, pola presisi, dan transfer teknologi mesin potong kulit bagi puluhan bengkel pengrajin lokal.", "link_url": "https://bro.do" },
+      { "title": "Beli Lokal & Bangga Buatan Indonesia Movement", "category": "Advokasi Kemandirian Industri Kreatif Nasional", "description": "Kampanye kolektif yang mengedukasi generasi muda untuk mengutamakan pembelian produk manufaktur karya anak bangsa.", "link_url": "https://bro.do" }
+    ],
+    "articles": [
+      { "title": "Menghidupkan Kembali Cibaduyut: Kisah Brodo Meruntuhkan Dominasi Sepatu Impor", "tag": "BRAND LOKAL", "read_time": "7 Menit Membaca", "description": "Perjalanan Yukka Harsono merintis brand sepatu dari kamar kos hingga menjadi simbol kebanggaan anak muda perkotaan.", "content_full": "Sepatu buatan tangan pengrajin kita memiliki jiwa dan ketahanan yang luar biasa. Yang selama ini hilang hanyalah pemosisian merek yang tepat dan konsistensi menjaga mutu. Brodo membuktikan bahwa ketika brand lokal dikelola secara profesional, pasar dalam negeri akan menyambutnya dengan bangga." },
+      { "title": "Bertahan dari Gempuran Barang Impor Murah: Resep Daya Tahan Industri Manufaktur Lokal", "tag": "STRATEGI BISNIS", "read_time": "6 Menit Membaca", "description": "Pentingnya inovasi material, loyalitas komunitas konsumen, dan kepemilikan saluran distribusi mandiri bagi pelaku UMKM.", "content_full": "Perang harga dengan barang impor murah dari pabrik raksasa luar negeri adalah bunuh diri bagi pengrajin kecil. Satu-satunya jalan menang adalah membangun kedekatan emosional dengan konsumen dan menjaga cerita otentik di balik setiap pasang sepatu yang diproduksi." }
+    ]
+  },
+  {
+    "slug": "dea-valencia",
+    "name": "Dea Valencia",
+    "title": "Pendiri Batik Kultur Semarang & Pelopor Wirausaha Fesyen Inklusif Difabel",
+    "category": "Arsitek Usaha Mandiri",
+    "quote": "Batik bukan sekadar warisan wastra masa lalu, melainkan medium pembebasan sosial di mana kawan-kawan difabel membuktikan bahwa keterbatasan fisik tidak pernah menghalangi lahirnya karya jahit bermutu mahakarya.",
+    "bio_paragraphs": [
+      "Mengawali usaha pada usia 17 tahun di Semarang dengan memanfaatkan potongan kain perca batik kuno yang tidak terpakai, Dea Valencia Budiampurnamurni membuktikan naluri wirausaha yang luar biasa. Ia melihat keindahan motif wastra batik tradisional yang terancam punah jika tidak dihadirkan dalam potongan busana siap pakai (ready-to-wear) kontemporer yang elegan.",
+      "Pada 2011, Dea mendirikan Batik Kultur. Yang membuat Batik Kultur istimewa dan disegani bukan hanya kehalusan detail jahitannya, melainkan komitmen inklusivitasnya yang radikal: lebih dari 50% dari ratusan pekerjanya adalah kawan-kawan penyandang disabilitas (tuli, bisu, dan tuna daksa). Dea merancang bengkel kerja khusus yang ramah disabilitas dan melatih mereka menjadi perajin pola dan penjahit busana berstandar butik tinggi.",
+      "Masuk dalam daftar Forbes 30 Under 30 Asia, Dea membuktikan bahwa bisnis fesyen mandiri kelas dunia dapat dibangun di atas fondasi keadilan sosial tanpa mengandalkan belas kasihan atau donasi karikatif."
+    ],
+    "lifeEvents": [
+      { "year_range": "2011", "title": "PENDIRIAN BATIK KULTUR DARI KAIN PERCA", "description": "Memulai usaha busana batik di rumahnya di Semarang dengan modal kain perca antik dan merekrut pekerja difabel pertamanya." },
+      { "year_range": "2015 — 2018", "title": "EKSPANSI WORKSHOP INKLUSIF & FORBES 30 UNDER 30", "description": "Membangun fasilitas produksi ramah difabel di Semarang dan dianugerahi penghargaan bergengsi Forbes 30 Under 30 Asia." },
+      { "year_range": "2019 — 2026", "title": "BUTIK JAKARTA & EKSPOR WASTRA NUSANTARA DUNIA", "description": "Membuka galeri butik di Jakarta, melayani puluhan ribu pelanggan internasional di AS, Eropa, dan Asia, serta memberdayakan ratusan perajin difabel." }
+    ],
+    "works": [
+      { "title": "Batik Kultur by Dea Valencia", "category": "Fesyen Wastra Kontemporer & Butik Inklusif", "description": "Brand busana batik ready-to-wear premium yang memadukan kain batik tulis/cap tradisional dengan siluet modern untuk pasar global.", "link_url": "https://batikkultur.com" },
+      { "title": "Workshop Inklusif Pemberdayaan Difabel Semarang", "category": "Fasilitas Manufaktur Ramah Disabilitas", "description": "Sentra produksi garmen yang dirancang ergonomis untuk mempekerjakan puluhan penjahit dan pembuat pola penyandang disabilitas secara setara.", "link_url": "https://batikkultur.com" },
+      { "title": "Program Pelatihan Vokasi Kriya Difabel Mandiri", "category": "Pendidikan Keterampilan Kerja Inklusif", "description": "Pelatihan menjahit busana halus berstandar butik gratis bagi para pemuda difabel dari berbagai pelosok Jawa Tengah.", "link_url": "https://batikkultur.com" }
+    ],
+    "articles": [
+      { "title": "Jahitan Mahakarya dalam Keheningan: Kisah Para Penjahit Tuli di Balik Kemegahan Batik Kultur", "tag": "FESYEN INKLUSIF", "read_time": "7 Menit Membaca", "description": "Perjalanan Dea Valencia membangun ruang kerja tanpa suara di mana ketelitian mata dan rasa para difabel menghasilkan busana kelas dunia.", "content_full": "Di ruang workshop Batik Kultur yang tenang, komunikasi mengalir lewat bahasa isyarat dan senyuman. Kawan-kawan difabel membuktikan bahwa keterbatasan mendengar justru memberi mereka konsentrasi batin yang luar biasa untuk menghasilkan jahitan jelujur batik yang sangat rapi dan presisi." },
+      { "title": "Bukan Donasi, Tapi Kesempatan Setara: Filosofi Bisnis Inklusif yang Berkelanjutan", "tag": "WIRAUSAHA SOSIAL", "read_time": "6 Menit Membaca", "description": "Mengapa penyandang disabilitas berhak mendapatkan gaji standar industri dan jenjang karir profesional yang adil.", "content_full": "Memberdayakan kawan-kawan difabel bukan soal memberi santunan uang receh, melainkan memberi mereka meja kerja, mesin jahit, dan kepercayaan bahwa mereka adalah manusia produktif yang mampu menopang keluarganya dengan penuh martabat." }
+    ]
+  },
+  {
+    "slug": "nurman-farieka-ramdhany",
+    "name": "Nurman Farieka Ramdhany",
+    "title": "Pendiri Hirka Footwear (Inovator Sepatu Kulit Ceker Ayam Pertama di Dunia)",
+    "category": "Arsitek Usaha Mandiri",
+    "quote": "Limbah ceker ayam yang menumpuk di pasar kuliner bukan sampah busuk; dengan sentuhan sains penyamakan kulit alami, ia berubah menjadi material kulit eksotis bertekstur sisik buaya yang bernilai ekonomi tinggi.",
+    "bio_paragraphs": [
+      "Terlahir dalam keluarga perajin penyamakan kulit di Cibaduyut Bandung dan menempuh studi di bidang manajemen bisnis, Nurman Farieka Ramdhany terpantik melihat gunungan sampah kulit ceker ayam yang terbuang percuma setiap hari dari industri kuliner restoran cepat saji dan warung mi ayam.",
+      "Setelah melakukan riset eksperimen penyamakan kulit mandiri selama berbulan-bulan untuk menghilangkan bau amis dan menyempurnakan kelembutan seratnya, pada 2017 Nurman mendirikan Hirka—brand sepatu kulit pertama di dunia yang memanfaatkan material kulit ceker ayam (chicken feet leather). Tekstur sisik ceker ayam yang eksotis terbukti memiliki kemiripan estetika dengan kulit buaya dan ular tanpa harus membunuh satwa liar terancam punah.",
+      "Karya sepatu Hirka berhasil menembus pasar ekspor di Eropa, Singapura, dan Hong Kong serta meraih berbagai penghargaan inovasi sirkular internasional. Nurman membuktikan kejeniusan anak bangsa dalam menyulap sampah dapur menjadi komoditas fesyen mewah yang ramah lingkungan."
+    ],
+    "lifeEvents": [
+      { "year_range": "2015 — 2017", "title": "RISET PENYAMAKAN KULIT CEKER AYAM & PELUNCURAN HIRKA", "description": "Menemukan formula penyamakan kulit ceker ayam ramah lingkungan di Bandung dan meluncurkan produk sepatu sneakers Hirka pertama." },
+      { "year_range": "2019 — 2021", "title": "EKSPOR INTERNASIONAL & PENGHARGAAN CIRCULAR FASHION", "description": "Meraih penghargaan inovasi wirausaha kreatif nasional dan mengekspor sepatu kulit eksotis ke Prancis, Jerman, dan Singapura." },
+      { "year_range": "2022 — 2026", "title": "HILIRISASI MATERIAL KULIT SIRKULAR & KERJASAMA GLOBAL", "description": "Mengembangkan lini dompet, jam tangan, dan memasok lembaran material kulit ceker ayam olahan ke industri fesyen mewah Eropa." }
+    ],
+    "works": [
+      { "title": "Hirka Footwear (Sepatu Kulit Eksotis Ceker Ayam)", "category": "Inovasi Manufaktur Material Sirkular & Fesyen Mewah", "description": "Koleksi sepatu kulit premium berbahan baku limbah ceker ayam dengan pola sisik alami unik yang diproduksi secara handmade di Bandung.", "link_url": "https://hirka.id" },
+      { "title": "Formula Penyamakan Kulit Unggas Ramah Lingkungan", "category": "Rekayasa Kimia Kulit Tepat Guna", "description": "Metode pemrosesan penyamakan kulit ceker ayam tanpa bahan kimia berbahaya kromium yang aman bagi lingkungan dan perajin.", "link_url": "https://hirka.id" },
+      { "title": "Pemberdayaan Rantai Pasok Peternak & Pengepul Unggas", "category": "Integrasi Ekonomi Sirkular Agroindustri", "description": "Kerjasama pengumpulan limbah ceker ayam segar dari rumah potong unggas lokal Jawa Barat untuk meningkatkan nilai tambah peternak.", "link_url": "https://hirka.id" }
+    ],
+    "articles": [
+      { "title": "Dari Limbah Mi Ayam Menjadi Sepatu Mewah Dunia: Kisah Riset Penyamakan Kulit Nurman Farieka", "tag": "INOVASI MATERIAL", "read_time": "7 Menit Membaca", "description": "Perjalanan ilmiah meracik kulit ceker ayam menjadi material alternatif kulit reptil yang berkelanjutan dan bernilai jutaan rupiah.", "content_full": "Industri fesyen mewah dunia selama berabad-abad membantai buaya dan ular demi mendapatkan pola sisik eksotis. Nurman membuktikan bahwa ceker ayam yang dianggap sampah pasar memiliki pola serat yang tak kalah megah bila diolah dengan dedikasi riset sains yang tekun." },
+      { "title": "Ekonomi Sirkular di Sentra Cibaduyut: Pelajaran Inovasi dari Generasi Penerus Pengrajin Kulit", "tag": "INDUSTRI KREATIF", "read_time": "6 Menit Membaca", "description": "Bagaimana generasi muda Bandung menghidupkan kembali tradisi penyamakan kulit dengan prinsip keberlanjutan masa depan.", "content_full": "Tradisi kriya kulit tidak boleh mati di tengah perubahan zaman. Menyuntikkan riset material baru dan kepedulian lingkungan adalah cara terbaik bagi anak-anak muda Cibaduyut untuk membawa nama sentra mereka mendunia." }
+    ]
+  },
+  {
+    "slug": "riza-azyumarridha-azra",
+    "name": "Riza Azyumarridha Azra",
+    "title": "Pendiri & CEO Rumah Mocaf Indonesia (Inovator Rantai Nilai Tepung Singkong Banjarnegara)",
+    "category": "Arsitek Usaha Mandiri",
+    "quote": "Singkong bukan makanan orang miskin yang tertinggal; dengan fermentasi enzimatik modern, singkong lokal adalah tepung bebas gluten masa depan yang membebaskan bangsa ini dari jeratan impor gandum.",
+    "bio_paragraphs": [
+      "Sepulang menempuh studi sarjana dan magister di bidang Teknik Elektro, Riza Azyumarridha Azra merasa teriris hatinya saat kembali ke tanah kelahirannya di Banjarnegara, Jawa Tengah, dan melihat para petani singkong menangis karena harga jual singkong anjlok hingga Rp 200 per kilogram saat panen raya—jauh di bawah biaya tanam.",
+      "Riza menolak membiarkan para petani terlilit utang tengkulak. Pada 2014, ia mendirikan Rumah Mocaf Indonesia. Riza memperkenalkan teknologi fermentasi enzimatik organik untuk mengolah singkong segar menjadi Modified Cassava Flour (Mocaf)—tepung serbaguna bebas gluten (gluten-free) berkualitas tinggi yang mampu menggantikan tepung terigu gandum impor.",
+      "Melalui model koperasi terintegrasi, Rumah Mocaf kini membina ribuan petani dan ibu-ibu pengolah singkong di puluhan desa di Banjarnegara, menyerap ribuan ton singkong dengan harga beli yang adil, serta mengekspor tepung Mocaf dan produk turunannya (mi dan kukis bebas gluten) ke Inggris, Dubai, dan Turki."
+    ],
+    "lifeEvents": [
+      { "year_range": "2014 — 2017", "title": "PENDIRIAN RUMAH MOCAF & PENDAMPINGAN DESA", "description": "Merintis Rumah Mocaf di Banjarnegara, melatih kelompok tani pertama dalam memfermentasi singkong secara higienis." },
+      { "year_range": "2019 — 2021", "title": "SERTIFIKASI ORGANIK & EKSPOR INTERNASIONAL", "description": "Meraih sertifikasi organik internasional, bebas gluten, dan menembus pasar ekspor Eropa dan Timur Tengah." },
+      { "year_range": "2022 — 2026", "title": "PABRIK MOCAF TERPADU & KEDAULATAN TEPUNG LOKAL", "description": "Mengoperasikan fasilitas pengolahan tepung singkong modern berkapasitas ratusan ton per bulan dan membina jaringan petani di Jawa Tengah." }
+    ],
+    "works": [
+      { "title": "Rumah Mocaf Indonesia (Tepung Singkong Bebas Gluten)", "category": "Agroindustri Pangan Lokal & Hilirisasi Pertanian", "description": "Produsen tepung singkong fermentasi organik pengganti terigu gandum bersertifikat bebas gluten yang memasok industri roti dan kue global.", "link_url": "https://rumahmocaf.com" },
+      { "title": "Mocafine & Lini Pangan Olahan Gluten-Free", "category": "Produk Konsumen Sehat Berbasis Singkong", "description": "Produk turunan tepung Mocaf berupa mi sehat non-gandum, tepung bumbu krispi, dan kue kering untuk gaya hidup sehat dan penderita autisme.", "link_url": "https://rumahmocaf.com" },
+      { "title": "Koperasi Petani Singkong Banjarnegara Berdaya", "category": "Pemberdayaan Ekonomi Komunal Perdesaan", "description": "Model rantai pasok terintegrasi yang menjamin kepastian harga beli singkong stabil bagi ribuan petani kecil di Jawa Tengah.", "link_url": "https://rumahmocaf.com" }
+    ],
+    "articles": [
+      { "title": "Melawan Hegemoni Gandum Impor: Bagaimana Singkong Banjarnegara Menjadi Tepung Masa Depan Dunia", "tag": "KEDAULATAN PANGAN", "read_time": "7 Menit Membaca", "description": "Pembedahan potensi tepung Mocaf Riza Azra dalam mengurangi ketergantungan miliaran dolar impor gandum Indonesia.", "content_full": "Indonesia mengimpor lebih dari 10 juta ton gandum setiap tahun karena kita tidak bisa menanam gandum di iklim tropis. Menggantinya dengan tepung singkong Mocaf lokal bukan hanya menyehatkan tubuh karena bebas gluten, melainkan mengalirkan triliunan rupiah langsung ke kantong petani desa." },
+      { "title": "Dari Rp 200 Menjadi Komoditas Ekspor: Mengubah Nasib Petani Singkong Lewat Fermentasi", "tag": "INOVASI AGRIBISNIS", "read_time": "6 Menit Membaca", "description": "Kisah perjuangan meyakinkan para petani desa untuk beralih memproduksi tepung fermentasi higienis.", "content_full": "Kunci memutus kemiskinan perdesaan adalah hilirisasi di tingkat petani. Ketika singkong tidak lagi dijual mentah melainkan diolah menjadi serpihan chip kering terfermentasi di rumah-rumah warga, nilai tambah ekonomi tetap berputar di dalam desa." }
+    ]
+  },
+  {
+    "slug": "stefanie-kurniadi",
+    "name": "Stefanie Kurniadi",
+    "title": "Co-founder Foodizz (Akademi Edukasi Bisnis Kuliner) & Serial Culinary Entrepreneur",
+    "category": "Arsitek Usaha Mandiri",
+    "quote": "Membangun bisnis kuliner bukan sekadar urusan resep masakan yang enak; ia adalah sains manajemen rantai pasok, kepatuhan finansial, standardisasi SOP, dan ketahanan membaca psikologi konsumen.",
+    "bio_paragraphs": [
+      "Setelah sukses merintis dan membesarkan berbagai jenama kuliner lokal ternama di Bandung dan Jakarta—mulai dari Warunk Upnormal, Bakso Boedjangan, hingga Sambal Khas Karmila—Stefanie Kurniadi menyaksikan fakta menyedihkan di lapangan: lebih dari 80% pengusaha kuliner pemula di Indonesia gulung tikar dalam tahun pertama karena minimnya literasi sains bisnis terapan.",
+      "Pada 2018, Stefanie bersama rekan-rekannya mendirikan Foodizz (The 1st F&B EduTech in Indonesia). Melalui Foodizz, Stefanie mengkodifikasi belasan tahun pengalaman jatuh-bangun membangun ratusan gerai kuliner ke dalam kurikulum pembelajaran digital yang terstruktur, mudah dipahami, dan dapat dieksekusi langsung oleh pelaku UMKM makanan-minuman.",
+      "Melalui kelas-kelas inkubasi, podcast edukasi, dan buku panduan bisnis kuliner, Stefanie telah membimbing lebih dari 500.000 pengusaha kuliner di seluruh Indonesia agar mampu membangun bisnis makanan yang berumur panjang, taat pajak, dan mampu membuka jutaan lapangan kerja mandiri."
+    ],
+    "lifeEvents": [
+      { "year_range": "2013 — 2017", "title": "MEMBESARKAN WARUNK UPNORMAL & JARINGAN F&B", "description": "Ikut merintis dan membangun jaringan ratusan gerai kuliner modern berbasis warung kopi lokal di puluhan kota Indonesia." },
+      { "year_range": "2018 — 2020", "title": "PENDIRIAN FOODIZZ THE F&B EDUTECH", "description": "Meluncurkan platform edukasi bisnis kuliner pertama di Indonesia, membagikan modul manajemen rantai pasok dan pemasaran F&B." },
+      { "year_range": "2021 — 2026", "title": "INKUBASI RATUSAN RIBU UMKM KULINER NASIONAL", "description": "Memimpin program inkubasi wirausaha kuliner daerah dan menerbitkan belasan buku panduan operasional F&B teruji." }
+    ],
+    "works": [
+      { "title": "Foodizz (Akademi Bisnis Kuliner Digital)", "category": "EduTech Wirausaha F&B & Inkubator Bisnis", "description": "Platform pembelajaran digital komprehensif yang melatih ratusan ribu pengusaha kuliner dalam tata kelola operasional, HPP, dan scaling-up.", "link_url": "https://foodizz.id" },
+      { "title": "Buku Panduan: 10 Langkah Membangun Bisnis Kuliner yang Berkelanjutan", "category": "Buku Bisnis Terapan & Manajemen F&B", "description": "Karya literatur praktis membedah cara menghitung Food Cost, standardisasi resep, dan manajemen kas restoran.", "link_url": "https://foodizz.id" },
+      { "title": "Podcast Foodizz & Serial Edukasi Kuliner Gratis", "category": "Kanal Literasi Wirausaha Publik", "description": "Ratusan episode bedah kasus bisnis kuliner riil yang diakses jutaan pelaku usaha makanan kecil di seluruh pelosok tanah air.", "link_url": "https://youtube.com" }
+    ],
+    "articles": [
+      { "title": "Mengapa Enak Saja Tidak Cukup: Membongkar 5 Kesalahan Fatal Pemula Bisnis Kuliner", "tag": "BISNIS KULINER", "read_time": "7 Menit Membaca", "description": "Panduan analisis Stefanie Kurniadi tentang pentingnya mengontrol HPP, limbah dapur, dan manajemen arus kas.", "content_full": "Banyak orang membuka restoran karena merasa masakannya dipuji teman-teman. Namun ketika restoran dibuka, ujian sebenarnya adalah matematika bisnis: bagaimana mengunci persentase biaya bahan baku di bawah 35% dan menjaga konsistensi rasa saat memasak 1.000 porsi per hari." },
+      { "title": "Membangun Brand F&B yang Berumur Panjang: Menolak Terjebak Tren Makanan Viral Sesaat", "tag": "STRATEGI MEREK", "read_time": "6 Menit Membaca", "description": "Cara merancang menu inti yang dicintai pelanggan setia dan bertahan melampaui siklus tren musiman media sosial.", "content_full": "Makanan viral yang mengandalkan sensasi media sosial biasanya hanya bertahan 6 bulan sebelum ditinggalkan pelanggan. Bisnis kuliner yang hebat dibangun di atas kenyamanan rasa sehari-hari yang membuat pelanggan selalu ingin kembali lagi." }
+    ]
+  },
+  {
+    "slug": "goris-mustaqim",
+    "name": "Goris Mustaqim",
+    "title": "Pendiri Asgar Muda Foundation & Pelopor Kewirausahaan Sosial Pemuda Garut",
+    "category": "Arsitek Usaha Mandiri",
+    "quote": "Pemuda daerah tidak perlu berbondong-bondong merantau ke Jakarta untuk mencari sesuap nasi; gali potensi unggulan tanah kelahiranmu dan jadilah tuan di tanah sendiri.",
+    "bio_paragraphs": [
+      "Setelah menyelesaikan pendidikan di Teknik Sipil ITB dan meraih berbagai tawaran karier korporasi multinasional, Goris Mustaqim memilih pulang ke kampung halamannya di Garut, Jawa Barat. Ia resah melihat tingginya angka pengangguran pemuda desa dan fenomena urbanisasi liar yang memicu kerentanan sosial.",
+      "Pada 2007, Goris mendirikan Asgar Muda Foundation (Asal Garut Muda)—sebuah inkubator kewirausahaan sosial pemuda pertama di tingkat kabupaten. Goris memetakan komoditas unggulan lokal Garut—mulai dari sentra kerajinan kulit Sukaregang, perkebunan minyak akar wangi (vetiver) kelas dunia, hingga agribisnis jeruk dan domba Garut—dan melatih ribuan pemuda desa menjadi wirausahawan mandiri.",
+      "Diakui sebagai Young Global Leader oleh World Economic Forum (WEF) di Davos dan menerima penghargaan dari Presiden RI, Goris membuktikan bahwa desentralisasi ekonomi kreatif perdesaan adalah kunci pemerataan kemakmuran bangsa."
+    ],
+    "lifeEvents": [
+      { "year_range": "2007", "title": "PENDIRIAN ASGAR MUDA FOUNDATION", "description": "Mendirikan wadah pembinaan wirausaha pemuda di Garut, mencegah urbanisasi pemuda berpendidikan ke kota besar." },
+      { "year_range": "2010 — 2014", "title": "YOUNG GLOBAL LEADER WORLD ECONOMIC FORUM", "description": "Dianugerahi penghargaan Young Global Leader di Davos atas model kewirausahaan sosial berbasis potensi komoditas daerah." },
+      { "year_range": "2015 — 2026", "title": "PENGEMBANGAN SENTRA KULIT & AGRIBISNIS AKAR WANGI", "description": "Memodernisasi rantai pasok industri kerajinan kulit Sukaregang dan ekspor minyak atsiri akar wangi Garut ke pasar kosmetik internasional." }
+    ],
+    "works": [
+      { "title": "Asgar Muda Foundation (Inkubator Wirausaha Pemuda Garut)", "category": "Pemberdayaan Pemuda Perdesaan & Inkubasi Bisnis", "description": "Yayasan sosial yang telah mencetak ribuan wirausahawan muda di Jawa Barat berbasis potensi agribisnis dan kriya lokal.", "link_url": "https://asgarmuda.org" },
+      { "title": "Sentra Kerajinan Kulit Sukaregang Berdaya", "category": "Modernisasi Kriya Tradisional Daerah", "description": "Program peningkatan standar desain dan akses pemasaran digital bagi puluhan bengkel perajin jaket dan tas kulit di Garut.", "link_url": "https://sektorlokal.id" },
+      { "title": "Klaster Agribisnis Minyak Atsiri Akar Wangi (Vetiver Garut)", "category": "Pengembangan Komoditas Ekspor Perdesaan", "description": "Pemberdayaan petani lereng Gunung Cikuray dalam memproduksi minyak akar wangi berkualitas tinggi untuk industri parfum dunia.", "link_url": "https://sektorlokal.id" }
+    ],
+    "articles": [
+      { "title": "Mencegah Eksodus Pemuda Desa: Kisah Sukses Mengubah Potensi Garut Menjadi Lapangan Kerja Riil", "tag": "KEWIRAUSAHAAN SOSIAL", "read_time": "7 Menit Membaca", "description": "Refleksi Goris Mustaqim tentang bagaimana menghentikan fenomena brain drain pemuda perdesaan ke kota-kota besar.", "content_full": "Desa akan tetap miskin bila setiap anak mudanya yang pintar memilih pergi ke kota dan tidak pernah kembali. Ketika pemuda terdidik pulang dan berkolaborasi dengan kearifan petani lokal, desa akan bertransformasi menjadi lumbung kemakmuran yang mandiri." },
+      { "title": "Emas Hijau dari Lereng Cikuray: Menjaga Kualitas Minyak Akar Wangi Terbaik Dunia", "tag": "KOMODITAS LOKAL", "read_time": "6 Menit Membaca", "description": "Potensi ekspor minyak vetiver Garut yang menjadi bahan baku utama industri wewangian mewah Paris dan New York.", "content_full": "Tanah vulkanik Garut menghasilkan minyak akar wangi dengan kualitas aroma terbaik di muka bumi. Mengolahnya menjadi minyak suling murni di dalam negeri membuktikan bahwa bumi kita kaya akan anugerah yang tiada duanya." }
+    ]
+  }
+]

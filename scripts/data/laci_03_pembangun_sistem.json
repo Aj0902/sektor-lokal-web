@@ -1,0 +1,652 @@
+[
+  {
+    "slug": "onno-w-purbo",
+    "name": "Dr. Onno W. Purbo",
+    "title": "Inisiator Internet Rakyat, RT/RW-Net, Wajanbolic & OpenBTS (Pendekar Teknologi Terbuka)",
+    "category": "Pembangun Sistem",
+    "quote": "Ilmu pengetahuan itu seperti air yang mengalir; semakin dibagikan secara cuma-cuma kepada rakyat jelata, ia akan semakin jernih, melimpah, dan berlipat ganda berkahnya bagi bangsa.",
+    "bio_paragraphs": [
+      "Ketika akses internet di era 1990 hingga 2000-an menjadi barang mewah yang dimonopoli korporasi telekomunikasi dan hanya dinikmati elit kota besar, Onno W. Purbo memilih jalan peretas etis (ethical hacker) dan pendidik akar rumput. Mantan dosen ITB ini melepas zona nyaman akademis demi mengabdikan hidupnya mencerdaskan rakyat di pelosok nusantara.",
+      "Dengan kejeniusan rekayasa tepat guna, Onno menciptakan inovasi legendaris antena Wajanbolic (penguat sinyal Wi-Fi dari wajan penggorengan dapur), merintis konsep RT/RW-Net, hingga membangun stasiun pemancar seluler mandiri OpenBTS legal pertama di daerah 3T. Seluruh skema rekayasa, kode program open-source, dan ribuan buku panduannya ia bagikan secara gratis tanpa mematenkannya demi keuntungan pribadi.",
+      "Dianugerahi Jonathan B. Postel Service Award (penghargaan tertinggi internet dunia), Onno adalah ikon kedaulatan teknologi digital Nusantara: membuktikan bahwa kemandirian sains sejati lahir saat teknologi dapat dirakit sendiri oleh rakyat kecil dari barang-barang bekas di sekitarnya."
+    ],
+    "lifeEvents": [
+      {
+        "year_range": "1996 — 2003",
+        "title": "REKAYASA WAJANBOLIC & GERAKAN RT/RW-NET",
+        "description": "Menciptakan antena Wajanbolic e-goen dan memelopori gerakan jaringan internet swadaya RT/RW-Net yang menghubungkan jutaan rumah warga berbiaya murah."
+      },
+      {
+        "year_range": "2010 — 2013",
+        "title": "OPENBTS & KEDAULATAN SELULER DESA TERPENCIL",
+        "description": "Membangun BTS seluler komunitas open-source pertama di Papua dan pelosok Jawa, mendemokratisasi frekuensi telekomunikasi bagi warga yang tidak terjangkau sinyal komersial."
+      },
+      {
+        "year_range": "2020 — 2026",
+        "title": "POSTEL SERVICE AWARD & KAMPUS TERBUKA ONNO CENTER",
+        "description": "Menerima penghargaan tertinggi Internet Society (Postel Award) dan mendirikan OnnoCenter E-Learning gratis yang telah melatih lebih dari 100.000 praktisi IT lokal."
+      }
+    ],
+    "works": [
+      {
+        "title": "OnnoCenter E-Learning (Kampus Terbuka Teknologi Rakyat)",
+        "category": "Platform Pendidikan IT Terbuka & Sertifikasi Gratis",
+        "description": "LMS daring gratis yang menyediakan puluhan modul rekayasa jaringan, cybersecurity, server Linux, dan kecerdasan buatan bagi talenta daerah.",
+        "link_url": "https://lms.onnocenter.or.id"
+      },
+      {
+        "title": "Antena Wajanbolic & Arsitektur OpenBTS Komunitas",
+        "category": "Inovasi Hardware Komunikasi Tepat Guna",
+        "description": "Cetak biru perangkat keras jaringan nirkabel murah berbasis wajan dapur dan software radio terbuka untuk desa terpencil.",
+        "link_url": "https://onnocenter.or.id"
+      },
+      {
+        "title": "Perpustakaan Digital Terbuka & 50+ Buku Teks Rekayasa",
+        "category": "Buku Panduan & Repositori Open Source",
+        "description": "Arsip puluhan buku ajar dan ratusan gigabyte e-book teknologi jaringan yang didistribusikan secara offline ke sekolah-sekolah pedalaman.",
+        "link_url": "https://onnocenter.or.id"
+      }
+    ],
+    "articles": [
+      {
+        "title": "Menembus Batas Sinyal: Cerita dari Balik Wajanbolic dan Perjuangan Membuka Isolasi Internet Desa",
+        "tag": "INTERNET RAKYAT",
+        "read_time": "8 Menit Membaca",
+        "description": "Catatan rekayasa Onno W. Purbo tentang bagaimana peralatan dapur sederhana mampu meruntuhkan monopoli operator telekomunikasi.",
+        "content_full": "Ketika operator besar menolak menarik kabel fiber optik ke desa karena dianggap tidak menguntungkan secara bisnis, warga tidak boleh pasrah hidup dalam kegelapan informasi. Wajanbolic adalah simbol kemandirian: bahwa dengan nalar rekayasa, rakyat mampu membangun jalannya sendiri menuju peradaban dunia."
+      },
+      {
+        "title": "Filosofi Open Source: Mengapa Menyembunyikan Ilmu Pengetahuan Adalah Dosa Peradaban",
+        "tag": "ETIKA SAINS",
+        "read_time": "7 Menit Membaca",
+        "description": "Pentingnya membebaskan ilmu pengetahuan dari belenggu paten komersial demi lompatan kecerdasan bersama anak bangsa.",
+        "content_full": "Ilmu yang dikunci di balik dinding berbayar hanya akan melahirkan ketimpangan sosial. Kedaulatan digital bangsa ini tidak akan pernah tercapai jika generasi mudanya hanya menjadi konsumen pasif teknologi asing tanpa pernah mengerti baris kode di dalamnya."
+      }
+    ]
+  },
+  {
+    "slug": "warsito-p-taruno",
+    "name": "Dr. Warsito P. Taruno",
+    "title": "Penemu Teknologi Tomografi 4D (ECVT) & Pendiri CTech Labs Edwar Technology",
+    "category": "Pembangun Sistem",
+    "quote": "Kemajuan sains terdepan suatu bangsa tidak ditentukan oleh kemegahan gedung risetnya, melainkan oleh keteguhan hati para penelitinya yang pantang menyerah meski dihadang keterbatasan fasilitas dan birokrasi.",
+    "bio_paragraphs": [
+      "Lahir di pedesaan Solo dan menempuh pendidikan sarjana hingga doktoral di bidang Teknik Kimia di Shizuoka University Jepang, Dr. Warsito Purwo Taruno adalah ilmuwan fisika Indonesia yang berhasil memecahkan tantangan pemindaian volumetrik berkecepatan tinggi dunia. Penemuannya, Electrical Capacitance Volume Tomography (ECVT) 4D, diakui sebagai sistem tomografi medan listrik pertama dan tercepat di muka bumi.",
+      "Teknologi ECVT ciptaan Warsito diadopsi oleh badan antariksa dunia NASA untuk pemindaian turbulensi bahan bakar pesawat ulang-alik dan riset eksplorasi energi di AS dan Jepang. Sepulang ke Indonesia, dari sebuah laboratorium riset mandiri di ruko sederhana di Tangerang (CTech Labs), Warsito mengembangkan aplikasi ECVT untuk pemindaian kanker otak dan payudara (ECCT) berbasis medan listrik kapasitif berdaya rendah yang terjangkau bagi rakyat kecil.",
+      "Meski sempat menghadapi resistensi regulasi di dalam negeri, Warsito tetap teguh memegang paten internasionalnya. Ia adalah bukti otentik bahwa riset sains fundamental kelas dunia mampu lahir dari garasi laboratorium mandiri di tanah air."
+    ],
+    "lifeEvents": [
+      {
+        "year_range": "2000 — 2004",
+        "title": "PENEMUAN FUNDAMENTAL ECVT DI JEPANG & AS",
+        "description": "Menemukan rumus matematika rekonstruksi tomografi medan listrik 4D berkecepatan tinggi di Ohio State University dan mematenkannya secara global."
+      },
+      {
+        "year_range": "2005 — 2011",
+        "title": "PENDIRIAN CTECH LABS & APLIKASI MEDIS KANKER",
+        "description": "Mendirikan CTech Labs Edwar Technology di Tangerang, merancang alat pemindai tomografi kanker payudara dan helm medan listrik terapi sel kanker (ECCT)."
+      },
+      {
+        "year_range": "2012 — 2026",
+        "title": "ADOPSI NASA & EKSPANSI KLINIS INTERNASIONAL",
+        "description": "Teknologi tomografinya digunakan dalam rekayasa kedirgantaraan NASA dan uji klinis terapi onkologi di Jepang, India, dan Eropa."
+      }
+    ],
+    "works": [
+      {
+        "title": "Teknologi ECVT 4D (Electrical Capacitance Volume Tomography)",
+        "category": "Paten Sains Terapan & Instrumentasi Industri",
+        "description": "Teknologi pemindaian tomografi volumetrik medan listrik kecepatan tinggi pertama di dunia yang diadopsi NASA dan industri energi internasional.",
+        "link_url": "https://ctechlabs.com"
+      },
+      {
+        "title": "CTech Labs Edwar Technology",
+        "category": "Laboratorium Riset Fisika Medis & Industri Mandiri",
+        "description": "Pusat riset sains terapan di Tangerang yang merancang instrumen tomografi industri dan terapi medis berbasis gelombang listrik kapasitif.",
+        "link_url": "https://ctechlabs.com"
+      },
+      {
+        "title": "ECCT (Electro-Capacitive Cancer Therapy)",
+        "category": "Inovasi Alat Terapi Medis Terjangkau",
+        "description": "Perangkat terapi kanker non-radiasi berdaya rendah yang dirancang untuk menghambat pembelahan sel tumor secara non-invasif.",
+        "link_url": "https://ctechlabs.com"
+      }
+    ],
+    "articles": [
+      {
+        "title": "Dari Garasi Tangerang Menembus NASA: Perjalanan Panjang Paten Tomografi 4D Warsito Taruno",
+        "tag": "SAINS FUNDAMENTAL",
+        "read_time": "8 Menit Membaca",
+        "description": "Kisah di balik layar penemuan rumus matematika rekonstruksi medan listrik yang mengubah standar pemindaian volumetrik dunia.",
+        "content_full": "Sains tidak mengenal paspor atau kasta gedung laboratorium. Di hadapan hukum-hukum fisika, rumus matematika yang dirancang di ruko sederhana Tangerang memiliki kekuatan yang sama mutlaknya dengan laboratorium elit di Silicon Valley."
+      },
+      {
+        "title": "Hilirisasi Sains Mandiri: Menghadapi Tembok Skeptisisme dan Mempertahankan Kedaulatan Riset",
+        "tag": "KEDAULATAN TEKNOLOGI",
+        "read_time": "7 Menit Membaca",
+        "description": "Pentingnya melindungi hak kekayaan intelektual penemu lokal agar tidak dirampas oleh korporasi asing.",
+        "content_full": "Banyak ilmuwan Indonesia di luar negeri tergoda menjual patennya kepada raksasa multinasional. Menolak tawaran triliunan rupiah demi membawa teknologi tersebut pulang ke tanah air adalah bentuk nasionalisme sains yang sesungguhnya."
+      }
+    ]
+  },
+  {
+    "slug": "ainun-najib",
+    "name": "Ainun Najib",
+    "title": "Arsitek Sistem Sains Data Sipil, Inisiator KawalPemilu & KawalCOVID19",
+    "category": "Pembangun Sistem",
+    "quote": "Sains data dan teknologi sipil adalah benteng penjaga kejujuran demokrasi ketika narasi kekuasaan mencoba memanipulasi kenyataan di lapangan.",
+    "bio_paragraphs": [
+      "Berakar dari tanah santri di Gresik hingga menembus olimpiade informatika internasional dan berkarier sebagai arsitek data terkemuka di Singapura, Ainun Najib adalah perintis gerakan teknologi sipil (civic tech) paling berpengaruh dalam sejarah politik modern Indonesia.",
+      "Kala integritas pemilu presiden 2014 terancam oleh klaim kemenangan sepihak dan ancaman manipulasi suara berjenjang, Ainun bersama jaringan diaspora teknologi menginisiasi KawalPemilu.org—sebuah platform crowdsourcing terbuka yang mendigitalkan dan mengagregasi jutaan lembar formulir C1 plano langsung dari Tempat Pemungutan Suara (TPS). Ketika pandemi melanda, ia kembali menggerakkan KawalCOVID19 sebagai rujukan independen data sains wabah.",
+      "Ainun membuktikan bahwa kemampuan koding dan arsitektur data rekayasa tingkat tinggi di tangan warga yang berintegritas dapat menjadi tameng penyelamat demokrasi dan keselamatan nyawa jutaan rakyat dari kebohongan politik."
+    ],
+    "lifeEvents": [
+      {
+        "year_range": "2007 — 2013",
+        "title": "KARIER REKAYASA DATA DI SINGAPURA & GRAB",
+        "description": "Bekerja sebagai konsultan analitika data senior di IBM dan memimpin arsitektur data sains di perusahaan teknologi global."
+      },
+      {
+        "year_range": "2014 — 2019",
+        "title": "INVENTASI KAWALPEMILU & REVOLUSI CIVIC TECH",
+        "description": "Meluncurkan KawalPemilu.org yang memobilisasi puluhan ribu relawan digital memverifikasi formulir C1 secara real-time, mengamankan keabsahan hasil pemilu."
+      },
+      {
+        "year_range": "2020 — 2026",
+        "title": "KAWALCOVID19 & PENGEMBANGAN TALENTA DIGITAL SANTRI",
+        "description": "Menginisiasi KawalCOVID19 untuk transparansi data pandemi dan mengadvokasi percepatan literasi kecerdasan buatan bagi santri di nusantara."
+      }
+    ],
+    "works": [
+      {
+        "title": "KawalPemilu.org (Platform Transparansi Rekapitulasi Suara)",
+        "category": "Civic Tech & Sains Data Demokrasi",
+        "description": "Sistem verifikasi data formulir C1 berbasis crowdsourcing independen yang menjadi jangkar kebenaran publik melawan manipulasi suara.",
+        "link_url": "https://kawalpemilu.org"
+      },
+      {
+        "title": "KawalCOVID19 (Inisiatif Data & Informasi Pandemi)",
+        "category": "Kompilasi Data Sains Kesehatan Masyarakat",
+        "description": "Platform agregasi data independen yang memetakan ketersediaan tempat tidur RS, oksigen, dan verifikasi fakta seputar wabah virus.",
+        "link_url": "https://kawalcovid19.id"
+      },
+      {
+        "title": "Gerakan Ekosistem Diaspora Teknologi Nusantara",
+        "category": "Jejaring Talenta Sains Global & Pembinaan",
+        "description": "Inisiatif menghubungkan insinyur perangkat lunak Indonesia di Silicon Valley, Eropa, dan Asia untuk mentransfer keahlian deep-tech ke dalam negeri.",
+        "link_url": "https://sektorlokal.id"
+      }
+    ],
+    "articles": [
+      {
+        "title": "Civic Tech: Bagaimana Baris Kode Pemrograman Menjaga Kejujuran Kotak Suara Demokrasi",
+        "tag": "DATA & DEMOKRASI",
+        "read_time": "7 Menit Membaca",
+        "description": "Pembedahan arsitektur sistem KawalPemilu dalam memvalidasi jutaan data formulir C1 di tengah serangan siber.",
+        "content_full": "Ketika kedua kubu politik saling mengklaim kemenangan berdasarkan hitung cepat internal, transparansi data mentah TPS adalah satu-satunya juru damai. Gotong royong ribuan relawan mengetik data C1 membuktikan kekuatan teknologi sipil yang merdeka."
+      },
+      {
+        "title": "Sains Data vs Politik Pandemi: Pelajaran dari Keterbukaan Informasi Darurat Kesehatan",
+        "tag": "SAINS DATA",
+        "read_time": "8 Menit Membaca",
+        "description": "Pentingnya penyajian data epidemiologi yang jujur tanpa polesan narasi politik demi menyelamatkan nyawa warga.",
+        "content_full": "Dalam krisis kesehatan masyarakat, satu angka yang disembunyikan dapat berakibat pada ribuan nyawa yang kehilangan akses penanganan. Keterbukaan data publik adalah syarat mutlak keselamatan bersama."
+      }
+    ]
+  },
+  {
+    "slug": "khoirul-anwar",
+    "name": "Dr. Khoirul Anwar",
+    "title": "Penemu Paten Dua FFT OFDM (Fondasi 4G LTE) & Direktur AdWiTech Telkom University",
+    "category": "Pembangun Sistem",
+    "quote": "Dari kesederhanaan pematang sawah di Kediri, rumus matematika nirkabel dapat diracik menjadi standar telekomunikasi yang menghubungkan miliaran telepon pintar di seluruh penjuru bumi.",
+    "bio_paragraphs": [
+      "Tumbuh dari keluarga petani sederhana di Dusun Jabon, Desa Juwet, Kunjang, Kediri, Khoirul Anwar kecil terbiasa belajar matematika di bawah temaram lampu minyak tanah sembari menggembalakan sapi. Ketekunan otodidaknya mengantarkannya meraih beasiswa ke Teknik Elektro ITB hingga menyelesaikan program master dan doktor di Nara Institute of Science and Technology (NAIST) Jepang.",
+      "Kala dunia riset telekomunikasi global buntu menghadapi masalah interferensi sinyal pada transmisi data nirkabel kecepatan tinggi di area padat bangunan, Khoirul Anwar menemukan solusi revolusioner: algoritma transmisi berbasis dua Fast Fourier Transform (FFT) berpasangan (Two-dimensional FFT OFDM). Algoritma temuannya ini kemudian dipatenkan dan diakui secara luas sebagai salah satu fondasi utama standar konektivitas nirkabel 4G LTE dan 5G dunia.",
+      "Sepulang ke Indonesia untuk memimpin Advanced Wireless Technologies (AdWiTech) di Telkom University, Khoirul Anwar konsisten mendidik generasi periset muda: membuktikan bahwa anak desa nusantara mampu memegang kunci arsitektur teknologi komunikasi tercepat dunia."
+    ],
+    "lifeEvents": [
+      {
+        "year_range": "2005 — 2008",
+        "title": "PENEMUAN DUA FFT OFDM DI JEPANG",
+        "description": "Merancang dan mematenkan algoritma komputasi ganda FFT yang memecahkan hambatan interferensi sinyal seluler berkecepatan tinggi di NAIST Jepang."
+      },
+      {
+        "year_range": "2010 — 2015",
+        "title": "STANDARISASI 4G LTE & RISET JAIST",
+        "description": "Menjadi asisten profesor di JAIST dan mematenkan sistem transmisi berdaya hemat energi yang diadopsi dalam standar nirkabel 4G dan 5G."
+      },
+      {
+        "year_range": "2016 — 2026",
+        "title": "PULANG KE TANAH AIR & MEMIMPIN ADWITECH",
+        "description": "Mendirikan AdWiTech di Telkom University Bandung, memimpin riset radar sensor lokal, komunikasi kuantum, dan transmisi satelit nasional."
+      }
+    ],
+    "works": [
+      {
+        "title": "Paten Internasional Dua FFT OFDM (Fondasi Transmisi 4G LTE)",
+        "category": "Paten Teknologi Telekomunikasi Nirkabel",
+        "description": "Algoritma komputasi sinyal nirkabel berefisiensi tinggi yang menjadi salah satu standar fundamental konektivitas 4G LTE dan 5G dunia.",
+        "link_url": "https://adwitech.telkomuniversity.ac.id"
+      },
+      {
+        "title": "AdWiTech (Advanced Wireless Technologies Center)",
+        "category": "Pusat Riset Telekomunikasi Terdepan",
+        "description": "Laboratorium riset nirkabel di Bandung yang mengembangkan teknologi komunikasi kebencanaan, IoT cerdas, dan radar maritim mandiri.",
+        "link_url": "https://adwitech.telkomuniversity.ac.id"
+      },
+      {
+        "title": "Sistem Transmisi Sinyal Bencana Berdaya Rendah",
+        "category": "Rekayasa Teknologi Mitigasi Krisis",
+        "description": "Perangkat pemancar sinyal darurat yang mampu menembus reruntuhan gempa dan daerah tanpa listrik menggunakan algoritma nirkabel adaptif.",
+        "link_url": "https://sektorlokal.id"
+      }
+    ],
+    "articles": [
+      {
+        "title": "Inspirasi dari Kediri untuk Dunia: Kisah di Balik Algoritma Dua FFT yang Menggerakkan 4G LTE",
+        "tag": "REKAYASA TELEKOMUNIKASI",
+        "read_time": "8 Menit Membaca",
+        "description": "Perjalanan hidup Khoirul Anwar dari anak petani Kediri hingga menjadi penemu paten telekomunikasi yang digunakan miliaran orang.",
+        "content_full": "Keterbatasan fasilitas di masa kecil bukanlah penghalang untuk menguasai sains paling rumit di dunia. Ketika kita melatih nalar matematika dengan rasa ingin tahu yang mendalam, rumus-rumus abstrak itu dapat diubah menjadi teknologi yang membebaskan jutaan manusia dari keterisolasian informasi."
+      },
+      {
+        "title": "Kedaulatan Spektrum Nirkabel: Mengapa Indonesia Harus Mengembangkan Teknologi 5G dan 6G Sendiri",
+        "tag": "SAINS & INDUSTRI",
+        "read_time": "7 Menit Membaca",
+        "description": "Pentingnya kemandirian industri perangkat keras telekomunikasi agar tidak selamanya membayar royalti lisensi ke luar negeri.",
+        "content_full": "Sebagai negara kepulauan terbesar di dunia dengan ratusan juta pengguna ponsel pintar, kita tidak boleh hanya menjadi pasar empuk bagi vendor teknologi global. Membangun laboratorium riset nirkabel lokal adalah investasi strategis martabat bangsa."
+      }
+    ]
+  },
+  {
+    "slug": "jim-geovedi",
+    "name": "Jim Geovedi",
+    "title": "Pakar Keamanan Siber Global, Arsitek Infrastruktur Satelit & Peretas Etis Otodidak",
+    "category": "Pembangun Sistem",
+    "quote": "Keamanan sistem digital bukan soal seberapa tebal benteng pertahananmu, melainkan seberapa jujur kamu mengenali celah dan kerapuhan di dalam dirimu sendiri.",
+    "bio_paragraphs": [
+      "Belajar pemrograman dan keamanan jaringan secara otodidak dari kehidupan jalanan di Bandar Lampung setelah lulus SMA, Jim Geovedi menjelma menjadi salah satu legenda keamanan siber paling disegani di dunia. Reputasi globalnya meledak saat ia mendemonstrasikan kemampuan meretas dan mengendalikan arah orbit satelit luar angkasa dalam konferensi keamanan siber internasional pada 2006 dan 2009.",
+      "Jim menolak menggunakan keahlian elitnya untuk kejahatan finansial atau spionase gelap. Ia memilih jalan peretas etis (white-hat hacker), mendirikan perusahaan audit keamanan siber di London dan Berlin, serta membantu mengamankan infrastruktur perbankan global, sistem telekomunikasi satelit, dan pusat data pertahanan kritis dari serangan siber antar-negara.",
+      "Bagi generasi muda penggiat teknologi informasi, Jim Geovedi adalah inspirasi otodidak tertinggi: membuktikan bahwa keahlian teknologi tingkat dewa tidak selalu lahir dari ijazah kampus mahal, melainkan dari rasa ingin tahu yang tak kenal lelah dan komitmen etika integritas yang tak tergoyahkan."
+    ],
+    "lifeEvents": [
+      {
+        "year_range": "1998 — 2004",
+        "title": "BELAJAR OTODIDAK DI JALANAN & RISET JARINGAN",
+        "description": "Mempelajari arsitektur jaringan komputer dan sistem operasi Linux secara mandiri di warung internet, merintis komunitas keamanan siber Indonesia."
+      },
+      {
+        "year_range": "2006 — 2009",
+        "title": "DEMONSTRASI KENDALI SATELIT DI PANGGUNG DUNIA",
+        "description": "Mengguncang dunia keamanan siber internasional di Amsterdam dan Kuala Lumpur atas pembuktian kerentanan sistem navigasi satelit orbit bumi."
+      },
+      {
+        "year_range": "2012 — 2026",
+        "title": "KONSULTANSI INFRASTRUKTUR SIBER GLOBAL DI EROPA",
+        "description": "Memimpin firma audit keamanan siber di London, mengamankan arsitektur kecerdasan buatan, sistem pembayaran finansial, dan data satelit global."
+      }
+    ],
+    "works": [
+      {
+        "title": "Audit Keamanan Infrastruktur Satelit & Telekomunikasi Global",
+        "category": "Keamanan Siber Tingkat Tinggi & Ruang Angkasa",
+        "description": "Layanan uji penetrasi dan audit arsitektur keamanan sistem transmisi satelit dan pusat komputasi awan multinasional.",
+        "link_url": "https://geovedi.com"
+      },
+      {
+        "title": "Arsitektur Kriptografi & Perlindungan Sistem Finansial",
+        "category": "Kriptografi & Rekayasa Keamanan Siber",
+        "description": "Rancang bangun benteng pertahanan siber untuk transaksi perbankan skala masif dan pencegahan kebocoran data nasabah.",
+        "link_url": "https://geovedi.com"
+      },
+      {
+        "title": "Mentorship Komunitas Peretas Etis Nusantara",
+        "category": "Edukasi Keamanan Siber & Etika Digital",
+        "description": "Bimbingan informal bagi ribuan talenta muda keamanan siber Indonesia agar menyalurkan keahliannya untuk melindungi data publik.",
+        "link_url": "https://sektorlokal.id"
+      }
+    ],
+    "articles": [
+      {
+        "title": "Menggeser Orbit Satelit: Pelajaran Penting tentang Kerapuhan Infrastruktur Digital Dunia",
+        "tag": "CYBERSECURITY",
+        "read_time": "7 Menit Membaca",
+        "description": "Catatan investigasi Jim Geovedi tentang bagaimana teknologi luar angkasa yang tampak canggih sering kali menyimpan celah keamanan mendasar.",
+        "content_full": "Tidak ada sistem di dunia ini yang 100% aman. Keangkuhan para pembuat sistem yang merasa bentengnya tak tertembus adalah pintu masuk paling mudah bagi serangan siber. Keamanan sejati membutuhkan kerendahan hati untuk terus menguji dan menambal celah setiap saat."
+      },
+      {
+        "title": "Menjadi Peretas Etis: Memilih Integritas di Tengah Godaan Uang Gelap Dunia Siber",
+        "tag": "ETIKA PERETAS",
+        "read_time": "6 Menit Membaca",
+        "description": "Pentingnya kompas moral bagi generasi muda yang memiliki kemampuan meretas agar tidak terjerumus dalam kejahatan siber transnasional.",
+        "content_full": "Kemampuan meretas seperti memegang pisau bedah bermata dua: kamu bisa menggunakannya untuk menyelamatkan nyawa atau untuk merampok orang lain. Kehormatan seorang hacker diukur dari etika yang ia pegang teguh saat berada dalam kegelapan tanpa pengawasan siapa pun."
+      }
+    ]
+  },
+  {
+    "slug": "ayu-purwarianti",
+    "name": "Dr. Ayu Purwarianti",
+    "title": "Ketua Pusat Riset AI ITB, Co-founder Prosa.ai & Pelopor NLP Bahasa Indonesia",
+    "category": "Pembangun Sistem",
+    "quote": "Kedaulatan linguistik bangsa ini harus dijaga di era kecerdasan buatan; jangan sampai bahasa ibu kita dan ratusan bahasa daerah terhapus dari peradaban komputasi algoritma.",
+    "bio_paragraphs": [
+      "Jauh sebelum demam kecerdasan buatan dan Large Language Models (LLM) melanda dunia, Dr. Ayu Purwarianti telah mendedikasikan lebih dari dua dekade hidupnya meneliti Natural Language Processing (NLP) khusus untuk sintaksis, fonetik, dan korpus Bahasa Indonesia serta bahasa daerah nusantara. Meraih gelar doktor dari Toyohashi University of Technology Jepang, ia kini menjabat sebagai Ketua Pusat Riset AI di ITB.",
+      "Ayu menyadari bahaya laten jika ekosistem komputasi kecerdasan buatan hanya dikuasai oleh model-model bahasa asing: mesin tidak akan mampu memahami konteks kultural, dialek lokal, dan nilai-nilai kebangsaan Indonesia. Maka ia menginisiasi pembangunan korpus dataset bahasa nasional dan ikut mendirikan Prosa.ai—perusahaan deep-tech lokal yang mengembangkan teknologi Speech-to-Text, Voice Biometrics, dan Text Processing berakurasi tinggi untuk dialek Indonesia.",
+      "Bagi generasi muda insinyur AI, Ayu Purwarianti adalah benteng penjaga kedaulatan bahasa: memastikan bahwa peradaban kecerdasan buatan masa depan tetap berakar pada kekayaan linguistik tanah air sendiri."
+    ],
+    "lifeEvents": [
+      {
+        "year_range": "2002 — 2007",
+        "title": "DOKTORAL NLP DI JEPANG & RISET AWAL BAHASA",
+        "description": "Menyelesaikan riset pemrosesan bahasa alami di Jepang dan mulai membangun korpus tata bahasa komputasi Bahasa Indonesia."
+      },
+      {
+        "year_range": "2018 — 2020",
+        "title": "PENDIRIAN PROSA.AI & PUSAT RISET AI ITB",
+        "description": "Ikut mendirikan Prosa.ai dan diangkat sebagai Ketua Pusat Riset Kecerdasan Buatan ITB, memimpin kolaborasi riset AI industri dan akademisi."
+      },
+      {
+        "year_range": "2021 — 2026",
+        "title": "PENGEMBANGAN MODEL LLM & VOICE BIOMETRICS LOKAL",
+        "description": "Memimpin riset Large Language Model berbasis bahasa daerah nusantara dan teknologi pengenalan suara biometrik perbankan nasional."
+      }
+    ],
+    "works": [
+      {
+        "title": "Prosa.ai (Deep-Tech AI NLP & Voice Engine)",
+        "category": "Kecerdasan Buatan & Pemrosesan Bahasa Alami",
+        "description": "Platform AI percakapan dan sintesis suara berbahasa Indonesia berakurasi tinggi yang digunakan oleh sektor perbankan dan layanan publik.",
+        "link_url": "https://prosa.ai"
+      },
+      {
+        "title": "Korpus Data NLP Bahasa Daerah Nusantara (Pusat AI ITB)",
+        "category": "Dataset Sains Komputasi Linguistik",
+        "description": "Basis data terbuka korpus digital bahasa Jawa, Sunda, Minang, dan puluhan bahasa daerah untuk melatih mesin AI masa depan.",
+        "link_url": "https://ai.itb.ac.id"
+      },
+      {
+        "title": "Sistem Biometrik Suara & Pemilah Hoaks Teks AI",
+        "category": "Keamanan Finansial & Forensik Digital",
+        "description": "Inovasi autentikasi identitas berbasis gelombang frekuensi suara unik dan sistem pendeteksi otomatis ujaran kebencian berbasis NLP.",
+        "link_url": "https://prosa.ai"
+      }
+    ],
+    "articles": [
+      {
+        "title": "Kedaulatan Bahasa di Era LLM: Mengapa Kita Harus Melatih Model AI dengan Korpus Lokal Sendiri",
+        "tag": "KECERDASAN BUATAN",
+        "read_time": "7 Menit Membaca",
+        "description": "Analisis Dr. Ayu Purwarianti tentang bahaya bias budaya algoritma jika kita hanya bergantung pada model AI buatan raksasa Silicon Valley.",
+        "content_full": "Bahasa bukan sekadar deretan kata; ia mengandung etika, kesantunan, dan kosmologi sebuah bangsa. Jika mesin kecerdasan buatan hanya belajar dari data bahasa Inggris, cara berpikir generasi kita perlahan akan terasing dari akar budayanya sendiri."
+      },
+      {
+        "title": "Menyelamatkan Bahasa Daerah dari Kepunahan Digital: Misi Sains Melatih Algoritma Berbahasa Ibu",
+        "tag": "LINGUISTIK KOMPUTASI",
+        "read_time": "6 Menit Membaca",
+        "description": "Tantangan mendokumentasikan ratusan dialek nusantara ke dalam format data digital yang dapat dipelajari oleh komputer.",
+        "content_full": "Ratusan bahasa daerah di Indonesia terancam punah karena penutur aslinya kian berkurang. Mendigitalisasikannya ke dalam model NLP adalah ikhtiar sains menjaga warisan leluhur agar tetap hidup di era peradaban algoritma."
+      }
+    ]
+  },
+  {
+    "slug": "irzan-raditya",
+    "name": "Irzan Raditya",
+    "title": "Co-founder & CEO Kata.ai (Pelopor Conversational AI Nusantara)",
+    "category": "Pembangun Sistem",
+    "quote": "Sebuah bangsa akan kehilangan kedaulatan ekonominya jika mesin-mesin kecerdasan buatan masa depan tidak mampu memahami bahasa gaul dan dialek informal rakyatnya sendiri.",
+    "bio_paragraphs": [
+      "Sepulang menempuh studi Computer Science di University of Applied Sciences di Berlin dan sempat berkarier di ekosistem startup Eropa, Irzan Raditya melihat peluang emas untuk membangun produk deep-tech kecerdasan buatan di tanah kelahirannya.",
+      "Pada 2016, Irzan mendirikan Kata.ai—sebuah perusahaan teknologi perintis yang membangun Natural Language Understanding (NLU) komersial pertama yang dirancang khusus untuk membedah dialek informal, bahasa gaul, dan struktur percakapan sehari-hari masyarakat Indonesia. Platform Kata.ai memproses ratusan juta interaksi percakapan konsumen per bulan untuk korporasi besar telekomunikasi, perbankan, hingga ribuan UMKM.",
+      "Irzan membuktikan kepemimpinan wirausaha teknologi muda Indonesia yang mampu membangun deep-tech berstandar global tanpa ketergantungan pada API luar negeri, serta konsisten membuka jalan bagi ekosistem AI nasional."
+    ],
+    "lifeEvents": [
+      {
+        "year_range": "2015 — 2016",
+        "title": "PENDIRIAN YESBOSS & KELAHIRAN KATA.AI",
+        "description": "Merintis layanan asisten virtual YesBoss dan bertransformasi membangun platform B2B Conversational AI Kata.ai."
+      },
+      {
+        "year_range": "2017 — 2020",
+        "title": "EKSPANSI INDUSTRI ENTERPRISE & KATA PLATFORM",
+        "description": "Meluncurkan Kata Platform yang mengotomatisasi interaksi jutaan pelanggan Telkomsel (Veronika), Unilever, dan BCA."
+      },
+      {
+        "year_range": "2021 — 2026",
+        "title": "INTEGRASI GENERATIVE AI & AI ETHICS POLICY",
+        "description": "Mengintegrasikan Generative AI enterprise yang aman dan aktif menyusun peta jalan etika kecerdasan buatan nasional."
+      }
+    ],
+    "works": [
+      {
+        "title": "Kata.ai Conversational Platform (Mesin NLU Bahasa Gaul)",
+        "category": "Platform B2B Conversational AI Enterprise",
+        "description": "Infrastruktur pemrosesan jutaan pesan percakapan harian dengan akurasi pemahaman dialek informal Indonesia tertinggi.",
+        "link_url": "https://kata.ai"
+      },
+      {
+        "title": "Kata Omnichat & Asisten Cerdas UMKM",
+        "category": "Software SaaS Otomasi Layanan Pelanggan",
+        "description": "Platform perpesanan terpadu berbasis AI yang membantu pengusaha kecil mengelola ribuan pesanan WhatsApp secara otomatis.",
+        "link_url": "https://kata.ai"
+      },
+      {
+        "title": "Inisiatif Kolaborasi Komunitas AI Indonesia",
+        "category": "Ekosistem Inovasi Deep-Tech",
+        "description": "Forum lokakarya tahunan yang mempertemukan ratusan insinyur AI lokal untuk berbagi riset terapan kecerdasan buatan.",
+        "link_url": "https://sektorlokal.id"
+      }
+    ],
+    "articles": [
+      {
+        "title": "Membedah Bahasa Gaul dengan Algoritma: Bagaimana Kata.ai Mengajari Mesin Mengerti Konteks Percakapan Warga",
+        "tag": "KECERDASAN BUATAN",
+        "read_time": "7 Menit Membaca",
+        "description": "Tantangan rekayasa NLU saat menghadapi bahasa Indonesia informal yang penuh singkatan, rima gaul, dan kode campur.",
+        "content_full": "Bahasa percakapan di Indonesia adalah salah satu yang paling dinamis di dunia. Kata yang sama bisa memiliki arti bertolak belakang tergantung pada nada dan konteks kalimatnya. Mengajarkan nuansa kultural ini pada mesin adalah karya rekayasa sains yang membutuhkan pemahaman mendalam atas jiwa bangsa kita."
+      },
+      {
+        "title": "Deep-Tech dari Tanah Air: Mengapa Kita Harus Percaya Diri Membangun Infrastruktur AI Sendiri",
+        "tag": "STARTUP & DISRUPSI",
+        "read_time": "6 Menit Membaca",
+        "description": "Pentingnya wirausaha teknologi Indonesia berani berinvestasi pada riset fundamental dan tidak sekadar menjadi agen reseller teknologi luar.",
+        "content_full": "Membangun produk deep-tech membutuhkan nafas panjang dan ketekunan riset bertahun-tahun. Namun inilah satu-satunya cara agar talenta teknologi kita tidak hanya menjadi pasar konsumen, melainkan pemilik arsitektur teknologi itu sendiri."
+      }
+    ]
+  },
+  {
+    "slug": "romi-satria-wahono",
+    "name": "Romi Satria Wahono",
+    "title": "Pendiri IlmuKomputer.com & Brainmatics (Pelopor Open Knowledge Rekayasa Perangkat Lunak)",
+    "category": "Pembangun Sistem",
+    "quote": "Pendidikan teknologi tidak boleh menjadi barang dagangan mahal yang dimonopoli segelintir orang; ilmu rekayasa perangkat lunak harus dibuka selebar-lebarnya agar anak bangsa manapun bisa menjadi arsitek sistem yang unggul.",
+    "bio_paragraphs": [
+      "Di awal era 2000-an saat materi ajar pemrograman komputer dan sistem basis data masih sangat langka, mahal, dan terkunci di universitas ternama, Romi Satria Wahono melakukan revolusi ilmu terbuka. Sepulang menyelesaikan pendidikan sarjana hingga doktor di Saitama University Jepang, ia mendirikan portal IlmuKomputer.com pada 2003.",
+      "Portal IlmuKomputer.com membagikan ribuan artikel, tutorial, dan video rekayasa perangkat lunak secara gratis dengan lisensi terbuka. Atas inisiatifnya tersebut, Romi dianugerahi penghargaan tertinggi World Summit on the Information Society (WSIS Award) dari PBB. Melalui Brainmatics, ia juga secara konsisten melatih ratusan ribu praktisi dan akademisi IT Indonesia dengan metodologi rekayasa software presisi.",
+      "Bagi ratusan ribu programmer dan profesional IT tanah air yang belajar secara otodidak, Romi Satria Wahono adalah guru bangsa: sosok pendidik yang mengajarkan logika algoritma dari prinsip pertama tanpa gimik jalan pintas cepat kaya."
+    ],
+    "lifeEvents": [
+      {
+        "year_range": "2003",
+        "title": "PELUNCURAN ILMUKOMPUTER.COM & PENGHARGAAN PBB",
+        "description": "Mendirikan portal open knowledge IlmuKomputer.com yang memenangkan World Summit Award (WSIS) dari Perserikatan Bangsa-Bangsa di Jenewa."
+      },
+      {
+        "year_range": "2005 — 2012",
+        "title": "PENDIRIAN BRAINMATICS & RISET SOFTWARE ENGINEERING",
+        "description": "Membangun Brainmatics sebagai pusat pelatihan dan riset profesional IT terakreditasi, melahirkan kurikulum software engineering standar industri."
+      },
+      {
+        "year_range": "2013 — 2026",
+        "title": "EDUKASI DATA MINING & AI BERBASIS LOGIKA KUAT",
+        "description": "Memimpin edukasi nasional tentang machine learning, data mining saintifik, dan metodologi riset komputasi bagi ribuan dosen dan mahasiswa."
+      }
+    ],
+    "works": [
+      {
+        "title": "IlmuKomputer.com (Portal Open Knowledge IT Pertama)",
+        "category": "Repositori Pendidikan Komputasi Terbuka",
+        "description": "Situs edukasi teknologi informasi gratis legendaris yang telah melatih jutaan talenta pemrograman dan rekayasa jaringan Indonesia.",
+        "link_url": "https://ilmukomputer.org"
+      },
+      {
+        "title": "Brainmatics (Pusat Pelatihan & Sertifikasi IT Profesional)",
+        "category": "Institusi Pengembangan Talenta Perangkat Lunak",
+        "description": "Lembaga pelatihan standar industri untuk software architecture, database management, dan machine learning bersertifikasi resmi.",
+        "link_url": "https://brainmatics.com"
+      },
+      {
+        "title": "Metodologi Riset Komputasi & Software Engineering Romi",
+        "category": "Karya Akademik & Panduan Penelitian",
+        "description": "Panduan terstruktur merancang penelitian sains komputer yang valid, terukur secara empiris, dan bebas dari plagiarisme ilmiah.",
+        "link_url": "https://romisatriawahono.net"
+      }
+    ],
+    "articles": [
+      {
+        "title": "Belajar Koding dari Logika Dasar: Mengapa Tidak Ada Jalan Pintas Menjadi Software Engineer Andal",
+        "tag": "SOFTWARE ENGINEERING",
+        "read_time": "7 Menit Membaca",
+        "description": "Refleksi Romi Satria Wahono tentang pentingnya menguasai algoritma, struktur data, dan arsitektur sistem dibanding sekadar menghafal framework tren sesaat.",
+        "content_full": "Framework dan bahasa pemrograman akan selalu berganti setiap beberapa tahun sekali. Namun logika berpikir algoritmik dan pemahaman mendalam atas arsitektur sistem adalah fondasi abadi yang membuat seorang insinyur perangkat lunak mampu bertahan menavigasi disrupsi teknologi apa pun."
+      },
+      {
+        "title": "Revolusi Open Knowledge: Catatan 20 Tahun Membuka Pintu Akses Ilmu Komputer untuk Rakyat",
+        "tag": "PENDIDIKAN TERBUKA",
+        "read_time": "6 Menit Membaca",
+        "description": "Kisah perjuangan mendemokratisasi modul ajar pemrograman bagi anak-anak daerah yang tidak mampu kuliah di kampus mahal.",
+        "content_full": "Ketika ilmu pengetahuan dibagikan secara ikhlas tanpa sekat ekonomi, kita sedang menyalakan ribuan lilin harapan di pelosok nusantara. Talenta hebat bisa lahir dari mana saja, asalkan mereka diberi kesempatan dan bahan ajar yang jujur."
+      }
+    ]
+  },
+  {
+    "slug": "sunu-wibirama",
+    "name": "Dr. Eng. Sunu Wibirama",
+    "title": "Peneliti Human-Computer Interaction & AI Biomedis UGM",
+    "category": "Pembangun Sistem",
+    "quote": "Teknologi antarmuka manusia dan komputer bukan sekadar soal membuat gawai canggih yang memukau mata, melainkan bagaimana kecerdasan buatan mampu membaca kerapuhan fisik manusia dan menolongnya pulih.",
+    "bio_paragraphs": [
+      "Menyelesaikan pendidikan magister dan doktor dalam bidang Human-Computer Interaction (HCI) di Tokai University Jepang, Dr. Eng. Sunu Wibirama adalah salah satu periset terdepan Indonesia yang memadukan komputasi kecerdasan buatan, pelacakan pandangan mata (eye-tracking), dan rekayasa biomedis presisi di Universitas Gadjah Mada (UGM).",
+      "Karya-karya riset terapan Sunu berfokus pada instrumen diagnostik kesehatan non-invasif berbiaya rendah—mulai dari deteksi dini gangguan saraf motorik pada pasien stroke, sistem pemantauan kelelahan pengemudi transportasi publik, hingga alat bantu komunikasi bagi penyandang disabilitas fisik total (ALS) menggunakan pergerakan pupil mata.",
+      "Sunu mendedikasikan ilmunya untuk kemanusiaan: konsisten membimbing ratusan mahasiswa rekayasa biomedis lokal dan mematenkan instrumen medis terjangkau agar rumah sakit di daerah terpencil dapat memiliki alat diagnostik berkualitas tinggi."
+    ],
+    "lifeEvents": [
+      {
+        "year_range": "2008 — 2013",
+        "title": "DOKTORAL HCI DI JEPANG & RISET EYE-TRACKING",
+        "description": "Meneliti interaksi visual manusia dan komputer di Tokai University, mengembangkan algoritma pelacakan pandangan mata 3D presisi tinggi."
+      },
+      {
+        "year_range": "2014 — 2020",
+        "title": "PENDIRIAN LAB BIOMEDIS UGM & PATEN ALAT KESEHATAN",
+        "description": "Membangun laboratorium riset antarmuka biomedis di DTETI FT UGM dan mematenkan sistem deteksi kelelahan mata untuk keselamatan transportasi."
+      },
+      {
+        "year_range": "2021 — 2026",
+        "title": "AI DIAGNOSTIK SARAF & INSTRUMEN DISABILITAS",
+        "description": "Mengembangkan perangkat bantu komunikasi bagi pasien lumpuh total dan sistem AI pembacaan citra medis retina untuk deteksi komplikasi diabetes."
+      }
+    ],
+    "works": [
+      {
+        "title": "Sistem Eye-Tracking Diagnostik Pasien Gangguan Saraf (UGM Lab)",
+        "category": "Rekayasa Biomedis & Antarmuka Manusia-Komputer",
+        "description": "Alat pemantau pergerakan pupil mata berkecepatan tinggi untuk mendeteksi disfungsi neurologis dan rehabilitasi stroke secara presisi.",
+        "link_url": "https://sunu.staff.ugm.ac.id"
+      },
+      {
+        "title": "Sistem Deteksi Kelelahan Pengemudi Berbasis AI Visual",
+        "category": "Teknologi Keselamatan Transportasi Cerdas",
+        "description": "Sensor kamera cerdas yang membaca pola kedipan mata dan posisi kepala pengemudi bus/truk untuk mencegah kecelakaan di jalan tol.",
+        "link_url": "https://ugm.ac.id"
+      },
+      {
+        "title": "Alat Bantu Komunikasi Pasien ALS & Lumpuh Total",
+        "category": "Teknologi Asistif Disabilitas Mandiri",
+        "description": "Keyboard virtual yang dikendalikan murni oleh kedipan dan arah pandang mata bagi pasien yang kehilangan kemampuan bicara dan motorik.",
+        "link_url": "https://sunu.staff.ugm.ac.id"
+      }
+    ],
+    "articles": [
+      {
+        "title": "Membaca Pikiran Lewat Sorot Mata: Bagaimana AI Membantu Pasien Lumpuh Berkomunikasi Kembali",
+        "tag": "BIOMEDIS & AI",
+        "read_time": "7 Menit Membaca",
+        "description": "Kisah haru di balik pengembangan teknologi asistif eye-tracking bagi pasien penyakit saraf ALS di Yogyakarta.",
+        "content_full": "Ketika seseorang terkunci dalam tubuhnya sendiri yang tidak bisa digerakkan, matanya adalah satu-satunya jendela batin yang tersisa. Memberi mereka kemampuan berbicara kembali lewat sensor pandangan mata adalah momen di mana sains bertemu dengan mukjizat empati kemanusiaan."
+      },
+      {
+        "title": "Hilirisasi Alat Kesehatan Lokal: Memutus Ketergantungan Rumah Sakit pada Mesin Impor Mahal",
+        "tag": "KEDAULATAN MEDIS",
+        "read_time": "6 Menit Membaca",
+        "description": "Pentingnya memproduksi instrumen biomedis di dalam negeri agar biaya pengobatan rakyat kecil tidak melambung tinggi.",
+        "content_full": "Sebagian besar alat diagnostik di rumah sakit kita adalah barang impor dengan harga miliaran rupiah yang membebani anggaran BPJS. Memproduksi sensor medis berkualitas tinggi dengan komponen lokal adalah kunci pemerataan keadilan kesehatan."
+      }
+    ]
+  },
+  {
+    "slug": "yohanes-surya",
+    "name": "Prof. Yohanes Surya, Ph.D.",
+    "title": "Fisikawan, Arsitek Pembina Tim Olimpiade Fisika Indonesia (TOFI) & Penggagas Metode Gasing",
+    "category": "Pembangun Sistem",
+    "quote": "Tidak ada anak yang bodoh di dunia ini; yang ada hanyalah anak yang belum mendapatkan kesempatan bertemu dengan guru yang mengajar dengan metode yang gampang, asyik, dan menyenangkan.",
+    "bio_paragraphs": [
+      "Meraih gelar Ph.D dalam bidang Fisika Teoretis dari College of William and Mary di Amerika Serikat dengan prestasi gemilang, Prof. Yohanes Surya memilih kembali ke tanah air untuk membuktikan sebuah tesis berani: bahwa anak-anak Indonesia mampu mengalahkan raksasa sains dunia seperti Amerika, Rusia, dan Tiongkok di ajang International Physics Olympiad (IPhO).",
+      "Melalui Tim Olimpiade Fisika Indonesia (TOFI) yang ia asuh dengan disiplin dan kecintaan mendalam, Yohanes melahirkan puluhan peraih medali emas dunia, termasuk predikat Absolute Winner. Tak berhenti di panggung olimpiade elit, Yohanes kemudian mendedikasikan energinya ke daerah paling tertinggal di pelosok Papua, NTT, dan Maluku, melatih anak-anak pedalaman yang dianggap 'tidak bisa berhitung' hingga mampu menguasai matematika kalkulus rumit dalam hitungan bulan melalui Metode GASING (Gampang, Asyik, Menyenangkan).",
+      "Bagi dunia pendidikan Indonesia, Yohanes Surya adalah arsitek pencetak peradaban: membuktikan secara empiris bahwa kecerdasan sains anak bangsa adalah anugerah merata yang hanya membutuhkan metode pengajaran yang memanusiakan akal dan hati."
+    ],
+    "lifeEvents": [
+      {
+        "year_range": "1993 — 2006",
+        "title": "MEMIMPIN TOFI & JUARA DUNIA OLIMPIADE FISIKA",
+        "description": "Membina Tim Olimpiade Fisika Indonesia hingga meraih predikat Juara Umum Dunia dan Absolute Winner IPhO di Singapura dan Salamanca."
+      },
+      {
+        "year_range": "2007 — 2015",
+        "title": "PENDIRIAN SURYA INSTITUTE & GERAKAN PAPUA PINTAR",
+        "description": "Membangun Surya Institute dan melatih ratusan anak-anak suku pedalaman Papua dan NTT menguasai sains dan matematika hingga menembus universitas dunia."
+      },
+      {
+        "year_range": "2016 — 2026",
+        "title": "METODE GASING NASIONAL & PENGENTASAN NUMERASI",
+        "description": "Mengimplementasikan pelatihan numerasi Metode GASING di ratusan kabupaten/kota di seluruh Indonesia, melatih puluhan ribu guru sekolah dasar."
+      }
+    ],
+    "works": [
+      {
+        "title": "Metode GASING (Gampang, Asyik, dan Menyenangkan)",
+        "category": "Metodologi Pengajaran Matematika & Sains Revolusioner",
+        "description": "Pendekatan pembelajaran berhitung tanpa rumus mati berbasis logika visual dan eksplorasi konkret yang mempercepat penguasaan matematika dasar.",
+        "link_url": "https://suryainstitute.org"
+      },
+      {
+        "title": "TOFI (Tim Olimpiade Fisika Indonesia)",
+        "category": "Program Pembinaan Talenta Sains Unggul Dunia",
+        "description": "Kawah candradimuka pembinaan fisika intensif yang telah menyumbangkan lebih dari 100 medali emas internasional bagi Republik Indonesia.",
+        "link_url": "https://suryainstitute.org"
+      },
+      {
+        "title": "Program Transformasi Numerasi Daerah Tertinggal (Papua & 3T)",
+        "category": "Pendidikan Pembebasan & Emansipasi Wilayah 3T",
+        "description": "Inisiatif percepatan numerasi kilat bagi puluhan ribu anak-anak dan guru di pedalaman Papua, NTT, dan kepulauan terluar.",
+        "link_url": "https://suryainstitute.org"
+      }
+    ],
+    "articles": [
+      {
+        "title": "Membongkar Mitos Matematika Sulit: Bagaimana Anak-Anak Pedalaman Papua Menguasai Kalkulus dalam Hitungan Bulan",
+        "tag": "PENDIDIKAN SAINS",
+        "read_time": "8 Menit Membaca",
+        "description": "Kisah di balik keberhasilan metode GASING Yohanes Surya meruntuhkan stigma keterbelakangan kecerdasan di wilayah timur Indonesia.",
+        "content_full": "Ketika seorang anak gagal memahami matematika di sekolah, itu bukan karena otaknya lambat, melainkan karena guru memaksanya menghafal rumus abstrak tanpa membangun pemahaman konkret terlebih dahulu. Ketika rasa takut pada angka dihilangkan dan diganti dengan permainan logika yang asyik, potensi kejeniusan anak akan meledak tanpa batas."
+      },
+      {
+        "title": "Dari Penonton Menjadi Juara Dunia: Pelajaran dari Kawah Candradimuka Olimpiade Fisika",
+        "tag": "KUALITAS TALENTA",
+        "read_time": "7 Menit Membaca",
+        "description": "Filosofi pembinaan mental juara dan disiplin riset dalam menaklukkan soal-soal fisika teoretis tersulit di panggung internasional.",
+        "content_full": "Meraih medali emas olimpiade sains bukan soal memiliki bakat bawaan sejak lahir, melainkan tentang ketahanan duduk berjam-jam membedah kerumitan persoalan dengan kesabaran tanpa batas. Ketahanan mental inilah yang harus kita wariskan kepada seluruh generasi penerus bangsa."
+      }
+    ]
+  }
+]
