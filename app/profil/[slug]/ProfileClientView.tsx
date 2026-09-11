@@ -15,6 +15,7 @@ import Navbar from '../../../components/Navbar';
 import Footer from '../../../components/Footer';
 import { FullProfileData, Article, SocialLinks } from '../../../lib/supabase/types';
 import { createClient } from '../../../lib/supabase/client';
+import { discoveryLenses } from '../../../lib/supabase/discoveryData';
 
 interface ProfileClientViewProps {
   initialData: FullProfileData;
@@ -105,6 +106,17 @@ export default function ProfileClientView({ initialData, slug }: ProfileClientVi
 
   const activeSocials = socialIconMap.filter(item => Boolean(soc[item.key]));
 
+  // Find matching discovery lens (laci)
+  const matchedLens = discoveryLenses.find(
+    (lens) =>
+      lens.figures.some((f) => f.slug === profile.slug || f.name.toLowerCase() === profile.name?.toLowerCase()) ||
+      lens.name.toLowerCase() === profile.category?.toLowerCase() ||
+      lens.slug === profile.category?.toLowerCase().replace(/\s+/g, '-')
+  );
+
+  const laciUrl = matchedLens ? `/warga-lokal/${matchedLens.slug}` : '/warga-lokal';
+  const laciName = matchedLens ? matchedLens.name : (profile.category || 'Warga Lokal');
+
   return (
     <div className={`min-h-screen selection:bg-[#E11D48] selection:text-white font-sans ${isDarkMode ? 'magazine-dark text-[#F5EFEB] bg-[#07090E]' : 'magazine-light text-[#07090E] bg-white'}`}>
       
@@ -130,15 +142,12 @@ export default function ProfileClientView({ initialData, slug }: ProfileClientVi
           <div className="flex flex-wrap items-center justify-between gap-3 pb-6 sm:pb-8 mb-8 sm:mb-12 border-b border-white/10 text-xs font-mono">
             <div className="flex items-center gap-3">
               <Link 
-                href="/arsip/warga" 
-                className="text-white/60 hover:text-white transition-colors flex items-center gap-1.5 uppercase tracking-wider"
+                href={laciUrl} 
+                className="text-white/60 hover:text-[#E11D48] transition-colors flex items-center gap-1.5 uppercase tracking-wider group"
               >
-                <span>&larr; Arsip Warga</span>
+                <span className="group-hover:-translate-x-0.5 transition-transform">&larr;</span>
+                <span>Laci: {laciName}</span>
               </Link>
-              <span className="text-white/20">/</span>
-              <span className="text-[#E11D48] uppercase tracking-widest font-bold">
-                {profile.category}
-              </span>
             </div>
             <div className="flex items-center gap-4 text-white/50 tracking-widest">
               {profile.verified && (
