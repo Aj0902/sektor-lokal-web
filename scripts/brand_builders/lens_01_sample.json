@@ -1,0 +1,129 @@
+{
+  "id": "01",
+  "slug": "pangan-pusaka-agraria-lestari",
+  "name": "Pangan Pusaka & Agraria Lestari",
+  "editorialTitle": "Kedaulatan Benih, Tanah, dan Rasa Nusantara",
+  "definition": "Brand dan produsen pangan berbasis biodiversitas asli, agroekologi tanpa perusak tanah, serta pemutusan rantai pasok tengkulak komoditas.",
+  "narrative": [
+    "Ketika sistem pangan modern bergantung pada bibit impor monokultur dan bahan pengawet sintesis kimia, kedaulatan ragawi warga Indonesia perlahan tergerus. Ketergantungan pangan bukan sekadar isu ekonomi, melainkan ancaman nyata terhadap ketahanan hayati dan warisan rasa leluhur yang telah beradaptasi ratusan tahun dengan iklim kepulauan.",
+    "Brand dalam laci ini membuktikan bahwa hasil tanah nusantara, dari beras pusaka, kakao artisan, sagu alami, hingga garam kristal laut dalam, dapat diolah dengan disiplin mutu kelas dunia tanpa meminggirkan petani kecil dan ekosistem tanah."
+  ],
+  "findingQuestion": "Bagaimana pangan lokal bertransformasi dari sekadar komoditas mentah menjadi kedaulatan nutrisi dan kebanggaan rasa bernilai tinggi?",
+  "color": "border-l-4 border-l-[#10B981]",
+  "accentBorder": "#10B981",
+  "accentHex": "#10B981",
+  "brands": [
+    {
+      "slug": "javara-indigenous-indonesia",
+      "name": "Javara Indigenous Indonesia",
+      "lensSlug": "pangan-pusaka-agraria-lestari",
+      "lensName": "Pangan Pusaka & Agraria Lestari",
+      "curationTier": "Established",
+      "origin": "Jakarta / Banten",
+      "logoUrl": "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=400&q=80",
+      "heroBgUrl": "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1600&q=80",
+      "discoveryTitle": {
+        "anomaly": "Ratusan Varietas Padi Purba Punah dari Pasar Komersial",
+        "question": "Bagaimana Menjual Beras Hitam Melik Tanpa Subsidi Negara?",
+        "paradigm": "Rekayasa Rantai Nilai Benih Pusaka Nusantara"
+      },
+      "coreFinding": "Mengomersialisasikan lebih dari 800 produk pangan berbasis keanekaragaman hayati asli dengan mempertahankan hak pemuliaan benih pusaka di tangan puluhan ribu petani swadaya.",
+      "contextNarrative": {
+        "marketVacuum": "Industrialisasi pertanian pasca-Revolusi Hijau menyeragamkan varietas benih dan mematikan keanekaragaman hayati lokal demi mengejar target tonase massal. Petani kecil kehilangan otonomi atas benih warisan leluhur dan terjerat sistem ketergantungan pupuk kimia sintesis serta harga tengkulak yang fluktuatif.",
+        "disruptedStatusQuo": "Membangun ekosistem pasar pangan premium dan rantai ekspor langsung untuk komoditas non-hibrida. Petani dan peramu adat ditempatkan sebagai mitra pemulia hayati dengan jaminan harga beli di atas rata-rata pasar komoditas, membuka akses pangan pusaka ke lebih dari 30 negara."
+      },
+      "evidenceTelemetry": {
+        "originCoordinates": "Jawa Tengah, Jawa Barat, Bali, NTT, dan Papua (23 Provinsi)",
+        "productionModel": "Jaringan Kemitraan Petani Swadaya dan Fasilitas Pengolahan Berstandar Ekspor",
+        "verifiedClaims": [
+          {
+            "claim": "Bermitra dengan 50.000+ petani dan peramu pangan lokal di seluruh Indonesia.",
+            "evidencePrimary": "Katalog Portofolio Produk Javara mencakup 800+ SKU berbasis hasil panen kelompok tani mitra lokal.",
+            "verificationSource": "Laporan Verifikasi Ekspor & Sertifikasi Organik SNI 6729:2016, USDA Organic, dan EU Organic No. 834/2007.",
+            "editorialInterpretation": "Verifikasi lapangan membuktikan integrasi rantai pasok dari kebun rakyat ke pasar ritel global tanpa ketergantungan pada subsidi komoditas pemerintah."
+          },
+          {
+            "claim": "Menjaga kemurnian varietas padi warisan tanpa rekayasa genetik dan pestisida sintetis.",
+            "evidencePrimary": "Uji laboratorium residu pestisida dan dokumentasi varietas pusaka (Beras Mentik Wangi, Beras Hitam Cempo, Beras Merah Andel).",
+            "verificationSource": "Dokumentasi riset biodiversitas pangan LIPI/BRIN dan liputan investigatif media nasional Tempo.",
+            "editorialInterpretation": "Menyelamatkan plasma nutfah tanaman pangan Indonesia dengan menciptakan nilai ekonomi riil bagi petani penjaga benih."
+          }
+        ]
+      },
+      "flagshipProducts": [
+        {
+          "name": "Beras Pusaka Mentik Susu Organik 1 kg",
+          "specs": "Beras lokal non-hibrida, wangi alami, sertifikasi organik SNI dan USDA",
+          "price": "Rp 45.000",
+          "buyUrl": "https://javara.co.id/product/mentik-susu-rice",
+          "imageUrl": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=800&q=80"
+        },
+        {
+          "name": "Garam Kristal Kusamba Artisan 150 gr",
+          "specs": "Garam laut murni tradisional dijemur di atas batang kelapa, Bali Timur",
+          "price": "Rp 35.000",
+          "buyUrl": "https://javara.co.id/product/kusamba-sea-salt",
+          "imageUrl": "https://images.unsplash.com/photo-1518110925495-5fe2fda0442c?auto=format&fit=crop&w=800&q=80"
+        }
+      ],
+      "milestones": [
+        {
+          "year": "2008",
+          "event": "Inisiasi pendampingan kelompok tani benih pusaka di Jawa Tengah."
+        },
+        {
+          "year": "2012",
+          "event": "Mendapatkan sertifikasi organik internasional (USDA & EU Organic)."
+        },
+        {
+          "year": "2016",
+          "event": "Penetrasi pasar ekspor ke Eropa, Amerika Utara, dan Asia Timur."
+        },
+        {
+          "year": "2023",
+          "event": "Penguatan jaringan lumbung benih swadaya di lebih dari 20 kawasan adat."
+        }
+      ],
+      "sovereigntyMeaning": "Kedaulatan pangan sejati bermula dari kepemilikan benih di tangan petani, bukan di tangan laboratorium korporasi kimia global.",
+      "channels": {
+        "officialStore": [
+          {
+            "platform": "Webstore Resmi",
+            "url": "https://javara.co.id",
+            "label": "javara.co.id"
+          },
+          {
+            "platform": "Tokopedia Official",
+            "url": "https://tokopedia.com/javaraindonesia",
+            "label": "Tokopedia: Javara Official"
+          },
+          {
+            "platform": "Shopee Mall",
+            "url": "https://shopee.co.id/javaraindonesia",
+            "label": "Shopee: Javara Indigenous"
+          }
+        ],
+        "publicSpaces": [
+          {
+            "platform": "Instagram",
+            "url": "https://instagram.com/javaraindonesia",
+            "label": "@javaraindonesia"
+          },
+          {
+            "platform": "Surel Kemitraan",
+            "url": "mailto:info@javara.co.id",
+            "label": "info@javara.co.id"
+          }
+        ]
+      },
+      "scores": {
+        "quality": 25,
+        "discovery": 25,
+        "trackRecord": 25,
+        "story": 24,
+        "total": 99
+      },
+      "statusRedFlag": "CLEAR"
+    }
+  ]
+}

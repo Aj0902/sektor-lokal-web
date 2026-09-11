@@ -44,7 +44,7 @@ export default function Navbar({
   const navLinks = [
     { href: '/', label: 'Beranda' },
     { href: '/warga-lokal', label: 'Warga Lokal' },
-    { href: '/arsip/brand', label: 'Brand Mandiri' },
+    { href: '/brand-lokal', label: 'Brand Lokal' },
     { href: '/artikel', label: 'Ruang Redaksi' },
     { href: '/manifesto', label: 'Manifesto' },
     { href: '/kontak', label: 'Kontak' },
