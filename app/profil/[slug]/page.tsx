@@ -95,7 +95,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
           url: ogImageUrl,
           width: 1200,
           height: 630,
-          alt: `Potret Resmi ${profile.name} (${profile.title})`
+          alt: `Potret Figur ${profile.name} (${profile.title})`
         }
       ]
     },

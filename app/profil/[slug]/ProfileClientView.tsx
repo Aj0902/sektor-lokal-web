@@ -149,13 +149,8 @@ export default function ProfileClientView({ initialData, slug }: ProfileClientVi
                 <span>Laci: {laciName}</span>
               </Link>
             </div>
-            <div className="flex items-center gap-4 text-white/50 tracking-widest">
-              {profile.verified && (
-                <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 bg-[#E11D48]/15 border border-[#E11D48]/40 text-[#E11D48] text-[11px] font-bold">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#E11D48] animate-pulse" />
-                  TERVERIFIKASI
-                </span>
-              )}
+            <div className="flex items-center gap-4 text-white/50 tracking-widest text-[11px]">
+              <span className="uppercase tracking-widest text-white/40 font-mono">TELAAH EDITORIAL</span>
             </div>
           </div>
 
@@ -182,6 +177,9 @@ export default function ProfileClientView({ initialData, slug }: ProfileClientVi
               {/* Pull-Quote with descender safety */}
               {profile.quote && (
                 <div className="border-l-2 border-[#E11D48] pl-4 sm:pl-5 py-1 mb-8 bg-white/[0.02]">
+                  <span className="text-[10px] font-mono text-[#E11D48] uppercase tracking-widest block mb-1">
+                    Kutipan Redaksi
+                  </span>
                   <p className="font-editorial italic text-base sm:text-lg md:text-xl text-[#F8F5EE]/90 leading-snug descender-safe">
                     &ldquo;{profile.quote}&rdquo;
                   </p>
@@ -263,8 +261,8 @@ export default function ProfileClientView({ initialData, slug }: ProfileClientVi
                 
                 {/* Portrait Label */}
                 <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-[10px] font-mono text-white/90 tracking-widest uppercase bg-black/80 backdrop-blur-md px-3 py-1.5 border border-white/10">
-                  <span>POTRET RESMI</span>
-                  <span className="text-[#E11D48] font-bold">TERVERIFIKASI</span>
+                  <span>POTRET FIGUR</span>
+                  <span className="text-[#E11D48] font-bold">KURASI REDAKSI</span>
                 </div>
               </div>
             </motion.div>
@@ -303,7 +301,7 @@ export default function ProfileClientView({ initialData, slug }: ProfileClientVi
                 </div>
                 <div>
                   <span className="text-[#07090E]/50 block uppercase text-[10px]">Status Berkas</span>
-                  <span className="font-bold text-[#07090E]">Arsip Publik Terbuka</span>
+                  <span className="font-bold text-[#07090E]">Telaah Redaksi</span>
                 </div>
               </div>
             </div>
@@ -347,8 +345,8 @@ export default function ProfileClientView({ initialData, slug }: ProfileClientVi
               </div>
 
               <div className="pt-6 border-t border-white/10 font-mono text-xs text-white/50 space-y-1">
-                <p>DISKURSUS PUBLIK & DOKUMENTASI RESMI</p>
-                <p className="text-[#E11D48]">SEKTOR LOKAL | ARSIP TERBUKA</p>
+                <p>CATATAN REDAKSI & TELAAH WACANA</p>
+                <p className="text-[#E11D48]">SEKTOR LOKAL | KURASI INDEPENDEN</p>
               </div>
             </div>
             

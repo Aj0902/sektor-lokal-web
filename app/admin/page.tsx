@@ -86,7 +86,7 @@ export default function AdminDashboardPage() {
             <Users className="w-4 h-4 text-[#E11D48]" />
           </div>
           <p className="text-3xl font-display text-inherit">{profiles.length}</p>
-          <p className="text-[11px] text-emerald-500 font-mono">100% Terverifikasi</p>
+          <p className="text-[11px] text-emerald-500 font-mono">100% Terkurasi</p>
         </div>
 
         <div className="p-6 rounded-2xl border border-inherit/10 bg-inherit/40 space-y-2">

@@ -220,31 +220,36 @@ export default function ArticleDetailPage() {
             </p>
           )}
 
-          {/* Author Byline */}
-          <div className="pt-6 border-t border-current/10 flex items-center justify-between gap-4">
-            <div className="flex items-center gap-4">
-              <div className="relative w-12 h-12 rounded-none border border-current/20 overflow-hidden shrink-0">
-                <Image 
-                  src={articleData.authorPhoto} 
-                  alt={articleData.authorName} 
-                  fill 
-                  className="object-cover portrait-bw"
-                />
+          {/* Related Profile Context */}
+          <div className="pt-6 border-t border-current/10">
+            <span className="text-[10px] font-mono text-[#E11D48] font-bold uppercase tracking-widest block mb-3">
+              PROFIL TERKAIT
+            </span>
+            <div className="flex items-center justify-between gap-4">
+              <div className="flex items-center gap-4">
+                <div className="relative w-12 h-12 rounded-none border border-current/20 overflow-hidden shrink-0">
+                  <Image 
+                    src={articleData.authorPhoto} 
+                    alt={articleData.authorName} 
+                    fill 
+                    className="object-cover portrait-bw"
+                  />
+                </div>
+                <div>
+                  <p className="font-display text-base uppercase text-current">{articleData.authorName}</p>
+                  <p className={`text-xs font-mono ${mutedText}`}>{articleData.authorTitle}</p>
+                </div>
               </div>
-              <div>
-                <p className="font-display text-base uppercase text-current">{articleData.authorName}</p>
-                <p className={`text-xs font-mono ${mutedText}`}>{articleData.authorTitle}</p>
-              </div>
-            </div>
 
-            {articleData.authorSlug && (
-              <Link 
-                href={`/profil/${articleData.authorSlug}`}
-                className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 border border-[#E11D48] text-[#E11D48] text-xs font-mono uppercase font-bold tracking-wider hover:bg-[#E11D48] hover:text-white transition-colors tactile-btn"
-              >
-                <span>Lihat Profil Warga &rarr;</span>
-              </Link>
-            )}
+              {articleData.authorSlug && (
+                <Link 
+                  href={`/profil/${articleData.authorSlug}`}
+                  className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 border border-[#E11D48] text-[#E11D48] text-xs font-mono uppercase font-bold tracking-wider hover:bg-[#E11D48] hover:text-white transition-colors tactile-btn"
+                >
+                  <span>Lihat Profil Figur &rarr;</span>
+                </Link>
+              )}
+            </div>
           </div>
         </motion.header>
 
@@ -265,10 +270,10 @@ export default function ArticleDetailPage() {
           {articleData.quote && (
             <div className="my-10 p-6 sm:p-8 border-l-4 border-[#E11D48] bg-current/[0.03] space-y-2">
               <blockquote className="font-editorial italic text-xl sm:text-2xl leading-snug text-current descender-safe">
-                {articleData.quote}
+                &ldquo;{articleData.quote}&rdquo;
               </blockquote>
               <span className="text-xs font-mono text-[#E11D48] font-bold block uppercase tracking-widest pt-2">
-                {articleData.authorName}
+                KUTIPAN REDAKSI
               </span>
             </div>
           )}
@@ -277,7 +282,7 @@ export default function ArticleDetailPage() {
         {/* BOTTOM ACTION BAR */}
         <div className="pt-8 border-t border-current/10 flex flex-col sm:flex-row items-center justify-between gap-4">
           <Link 
-            href={articleData.authorSlug ? `/profil/${articleData.authorSlug}` : '/arsip/warga'} 
+            href={articleData.authorSlug ? `/profil/${articleData.authorSlug}` : '/warga-lokal'} 
             className="text-xs font-mono font-bold text-[#E11D48] hover:underline flex items-center gap-1 uppercase tracking-wider"
           >
             <ArrowLeft className="w-4 h-4" />
