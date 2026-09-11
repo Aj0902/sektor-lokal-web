@@ -111,16 +111,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-abigail-limuria-1",
-            "profile_id": "gen-abigail-limuria",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Abigail Limuria dalam bidang Penjaga Nalar menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-abigail-limuria-1",
@@ -128,7 +119,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Bijak Memilih (Platform Riset Politik Warga)",
             "category": "Civic-Tech & Data Kebijakan",
             "description": "Platform agregasi data rekam jejak partai politik dan kandidat yang diakses jutaan pemilih muda untuk melihat sikap partai terhadap isu iklim, korupsi, dan ketenagakerjaan.",
-            "price": "Inisiatif Terbuka",
+            "price": "100% Akses Publik Bebas",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://bijakmemilih.id",
@@ -140,7 +131,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Buku: Lalita (51 Cerita Perempuan Hebat Indonesia)",
             "category": "Karya Tulis & Literasi Gender",
             "description": "Buku antologi profil perempuan pelopor Nusantara lintas disiplin dari seni, sains, hingga aktivisme lingkungan hidup.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 85.000 — Rp 185.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://www.gramedia.com",
@@ -258,16 +249,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-bivitri-susanti-1",
-            "profile_id": "gen-bivitri-susanti",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Bivitri Susanti dalam bidang Penjaga Nalar menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-bivitri-susanti-1",
@@ -275,7 +257,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "PSHK (Pusat Studi Hukum & Kebijakan Indonesia)",
             "category": "Lembaga Riset & Advokasi Reformasi Hukum",
             "description": "Think tank independen yang memproduksi analisis kritis rancangan undang-undang dan pengawasan kinerja legislasi parlemen.",
-            "price": "Inisiatif Terbuka",
+            "price": "Riset Independen & Pro-Bono",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://pshk.or.id",
@@ -287,7 +269,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "STHI Jentera (Sekolah Tinggi Hukum Indonesia)",
             "category": "Institusi Pendidikan Hukum Transformatif",
             "description": "Kampus hukum alternatif yang mendidik praktisi dan akademisi hukum berintegritas tinggi dengan beasiswa penuh bagi aktivis masyarakat sipil.",
-            "price": "Inisiatif Terbuka",
+            "price": "Program Sarjana & Beasiswa Penuh",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://jentera.ac.id",
@@ -405,16 +387,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-dandhy-dwi-laksono-1",
-            "profile_id": "gen-dandhy-dwi-laksono",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Dandhy Dwi Laksono dalam bidang Penjaga Nalar menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-dandhy-dwi-laksono-1",
@@ -422,7 +395,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Watchdoc Documentary Maker",
             "category": "Koperasi Jurnalisme Investigasi Audio-Visual",
             "description": "Rumah produksi dokumenter independen yang telah memproduksi lebih dari 200 film investigasi lingkungan, agraria, dan hak asasi manusia.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Donasi Swadaya",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://watchdoc.co.id",
@@ -434,7 +407,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Dokumenter: Sexy Killers",
             "category": "Film Investigasi Oligarki & Energi",
             "description": "Investigasi keterkaitan antara tambang batu bara di Kalimantan, PLTU di Pulau Jawa, dan gurita bisnis elit politik nasional.",
-            "price": "Inisiatif Terbuka",
+            "price": "Tiket Nonton / VOD Rp 45.000 — Rp 75.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://youtube.com",
@@ -552,16 +525,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-fahruddin-faiz-1",
-            "profile_id": "gen-fahruddin-faiz",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Dr. Fahruddin Faiz dalam bidang Penjaga Nalar menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-fahruddin-faiz-1",
@@ -569,7 +533,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Ngaji Filsafat Masjid Jendral Sudirman",
             "category": "Forum Literasi Intelektual & Kebijaksanaan Publik",
             "description": "Kajian filsafat terbuka gratis yang telah berlangsung lebih dari satu dekade dengan arsip ratusan tema pemikiran dunia.",
-            "price": "Inisiatif Terbuka",
+            "price": "Bebas Biaya (Akses Publik)",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://mjsshow.com",
@@ -581,7 +545,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Buku: Menjadi Manusia, Menata Jiwa",
             "category": "Karya Tulis & Filsafat Terapan",
             "description": "Buku panduan reflektif yang mengawinkan kebijaksanaan tasawuf dengan pemikiran kritis filsafat dalam menavigasi luka batin dan kegelisahan modern.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 85.000 — Rp 185.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://www.gramedia.com",
@@ -699,16 +663,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-aribowo-sasmito-1",
-            "profile_id": "gen-aribowo-sasmito",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Aribowo Sasmito dalam bidang Penjaga Nalar menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-aribowo-sasmito-1",
@@ -716,7 +671,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "TurnBackHoax.id (Database Klarifikasi Fakta Terbesar)",
             "category": "Platform Verifikasi Fakta & Civic-Tech",
             "description": "Repositori terbuka verifikasi fakta dengan puluhan ribu arsip klarifikasi hoaks yang menjadi rujukan jurnalis dan aparat penegak hukum.",
-            "price": "Inisiatif Terbuka",
+            "price": "100% Akses Publik Bebas",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://turnbackhoax.id",
@@ -728,7 +683,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "CekFakta.com (Koalisi Cek Fakta Kolaboratif)",
             "category": "Kolaborasi Media & Masyarakat Sipil",
             "description": "Jaringan pemeriksa fakta kolaboratif lintas redaksi media nasional dan komunitas sipil di bawah naungan AJI, AMSI, dan MAFINDO.",
-            "price": "Inisiatif Terbuka",
+            "price": "100% Akses Publik Bebas",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://cekfakta.com",
@@ -846,16 +801,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-yanuar-nugroho-1",
-            "profile_id": "gen-yanuar-nugroho",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Yanuar Nugroho, Ph.D. dalam bidang Penjaga Nalar menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-yanuar-nugroho-1",
@@ -863,7 +809,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Nalar Institute (Think Tank Kebijakan Publik)",
             "category": "Riset Kebijakan & Tata Kelola Negara",
             "description": "Lembaga riset independen yang mengadvokasi perumusan kebijakan berbasis data saintifik dan transparansi tata kelola publik.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Donasi Swadaya",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://nalarinstitute.org",
@@ -875,7 +821,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Inisiatif Satu Data Indonesia",
             "category": "Arsitektur Data Nasional",
             "description": "Kerangka regulasi dan integrasi basis data tunggal nasional untuk memastikan akurasi penyaluran bantuan sosial dan perencanaan pembangunan.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Donasi Swadaya",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://data.go.id",
@@ -993,16 +939,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-sulfikar-amir-1",
-            "profile_id": "gen-sulfikar-amir",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Prof. Sulfikar Amir dalam bidang Penjaga Nalar menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-sulfikar-amir-1",
@@ -1010,7 +947,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Buku: The Technological State in Indonesia",
             "category": "Monograf Sosiologi Teknologi & Sejarah",
             "description": "Karya akademik prestisius yang mengupas sejarah rezim teknonasionallisme Indonesia dan dinamika industri strategis bangsa.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 85.000 — Rp 185.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://routledge.com",
@@ -1022,7 +959,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Simulasi Ketahanan Urban & Pandemi (NTU Lab)",
             "category": "Riset Sains Komputasi & Kebencanaan",
             "description": "Model komputasi epidemiologis yang memetakan kerentanan pemukiman padat dan sistem transportasi massal di Asia Tenggara.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Donasi Swadaya",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://ntu.edu.sg",
@@ -1140,16 +1077,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-zen-rs-1",
-            "profile_id": "gen-zen-rs",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Zen RS (Zen Rachmat Sugito) dalam bidang Penjaga Nalar menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-zen-rs-1",
@@ -1157,7 +1085,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Buku: Simpul Bahasa Sepak Bola",
             "category": "Karya Esai Sosiologi & Sastra Olahraga",
             "description": "Kumpulan esai masterclass yang membedah taktik sepak bola dunia melalui lensa filsafat, sejarah perang, dan kebudayaan.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 85.000 — Rp 185.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://www.gramedia.com",
@@ -1169,7 +1097,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Buku: Jiwa yang Patah (Antologi Esai)",
             "category": "Karya Tulis Humaniora & Refleksi",
             "description": "Pembedahan mendalam tentang kesepian, luka sejarah bangsa, dan pencarian martabat manusia di tengah modernitas.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 85.000 — Rp 185.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://www.gramedia.com",
@@ -1287,16 +1215,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-cania-citta-1",
-            "profile_id": "gen-cania-citta",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Cania Citta Irlanie dalam bidang Penjaga Nalar menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-cania-citta-1",
@@ -1304,7 +1223,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Malaka Project (Kanal Edukasi Pemikiran Kritis)",
             "category": "Media Diskursus Intelektual Independen",
             "description": "Platform video esai politik, filsafat, dan ekonomi yang menjadi rujukan perdebatan rasional anak muda Indonesia.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Donasi Swadaya",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://malakaproject.id",
@@ -1316,7 +1235,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Serial Esai: Batas Wewenang Negara vs Hak Individu",
             "category": "Kajian Filsafat Politik & Konstitusi",
             "description": "Rangkaian analisis video membedah bahaya overregulasi birokrasi dan pentingnya perlindungan privasi serta kebebasan sipil warga.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Donasi Swadaya",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://youtube.com",
@@ -1434,16 +1353,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-rocky-gerung-1",
-            "profile_id": "gen-rocky-gerung",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Rocky Gerung dalam bidang Penjaga Nalar menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-rocky-gerung-1",
@@ -1451,7 +1361,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Rocky Gerung Official (Mimbar Oposisi Akal Sehat)",
             "category": "Kanal Pendidikan Filsafat Publik",
             "description": "Platform video analisis kritis harian yang membedah isu politik nasional dan internasional lewat kacamata filsafat dan hukum tata negara.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Donasi Swadaya",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://youtube.com",
@@ -1463,7 +1373,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Buku & Esai Filsafat Politik Indonesia",
             "category": "Karya Akademik & Kritik Demokrasi",
             "description": "Kumpulan tulisan akademik tentang hak asasi manusia, kebebasan berekspresi, dan etika lingkungan hidup.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 85.000 — Rp 185.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://www.gramedia.com",
@@ -1581,16 +1491,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-farwiza-farhan-1",
-            "profile_id": "gen-farwiza-farhan",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Farwiza Farhan dalam bidang Penyelamat Bumi menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-farwiza-farhan-1",
@@ -1598,7 +1499,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Yayasan HAkA (Hutan, Alam dan Lingkungan Aceh)",
             "category": "Konservasi Hutan Hujan & Advokasi Kebijakan",
             "description": "Organisasi nirlaba penjaga Ekosistem Leuser yang mengintegrasikan sains data pemetaan satelit, litigasi hukum tata ruang, dan pemberdayaan komunitas.",
-            "price": "Inisiatif Terbuka",
+            "price": "Donasi Konservasi (Mulai Rp 50.000)",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://haka.or.id",
@@ -1610,7 +1511,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Inisiatif Patroli Ranger Perempuan Leuser (Mpu Uteun)",
             "category": "Pemberdayaan Perempuan Adat & Satwa Liar",
             "description": "Kelompok perempuan penjaga hutan pertama di Aceh yang secara mandiri memetakan ancaman perambahan dan melindungi sumber air desa.",
-            "price": "Inisiatif Terbuka",
+            "price": "Donasi Konservasi (Mulai Rp 50.000)",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://haka.or.id",
@@ -1728,16 +1629,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-m-bijaksana-junerosano-1",
-            "profile_id": "gen-m-bijaksana-junerosano",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas M. Bijaksana Junerosano dalam bidang Penyelamat Bumi menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-m-bijaksana-junerosano-1",
@@ -1745,7 +1637,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Waste4Change (Sistem Pengelolaan Sampah Holistik)",
             "category": "Inovasi Manajemen Limbah & Daur Ulang",
             "description": "Platform pengelolaan sampah berbasis teknologi yang melayani ratusan kawasan komersial, perumahan, dan industri dengan standar pemilahan ketat.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Donasi Swadaya",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://waste4change.com",
@@ -1757,7 +1649,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Greeneration Foundation",
             "category": "Yayasan Edukasi Perilaku Hijau",
             "description": "Organisasi nirlaba penggerak kampanye diet kantong plastik dan edukasi gaya hidup minim sampah di seluruh Indonesia.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 199.000 — Rp 1.450.000 / paket",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://greeneration.org",
@@ -1875,16 +1767,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-mbah-sadiman-1",
-            "profile_id": "gen-mbah-sadiman",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Mbah Sadiman dalam bidang Penyelamat Bumi menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-mbah-sadiman-1",
@@ -1892,7 +1775,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Hutan Beringin Mandiri Bukit Gendol (250+ Hektare)",
             "category": "Reboisasi Swadaya & Konservasi Air",
             "description": "Hamparan hutan lindung buatan hasil jerih payah tunggal lebih dari 28 tahun menanam 200.000+ pohon beringin yang menghidupkan kembali mata air perdesaan.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Donasi Swadaya",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://sektorlokal.id",
@@ -1904,7 +1787,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Sistem Irigasi Mata Air Sendang Unon",
             "category": "Infrastruktur Air Alami Berkelanjutan",
             "description": "Jaringan mata air yang mengairi sawah ribuan keluarga petani di Kecamatan Bulukerto tanpa pungutan biaya pompa.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Donasi Swadaya",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://sektorlokal.id",
@@ -2022,16 +1905,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-silverius-oscar-unggul-1",
-            "profile_id": "gen-silverius-oscar-unggul",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Silverius Oscar Unggul dalam bidang Penyelamat Bumi menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-silverius-oscar-unggul-1",
@@ -2039,7 +1913,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Perkumpulan Telapak (Gerakan Kedaulatan Sumber Daya Alam)",
             "category": "Advokasi Kehutanan Sosial & Media Investigasi",
             "description": "Organisasi masyarakat sipil yang mempelopori kampanye anti-pembalakan liar dan perhutanan sosial berbasis masyarakat adat.",
-            "price": "Inisiatif Terbuka",
+            "price": "Donasi Konservasi (Mulai Rp 50.000)",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://telapak.org",
@@ -2051,7 +1925,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Koperasi Hutan Jaya Mandiri (KHJM Konawe Selatan)",
             "category": "Koperasi Industri Kayu Lestari Bersertifikat FSC",
             "description": "Badan usaha milik ribuan petani lokal yang mengekspor kayu bersertifikat ramah lingkungan ke pasar Eropa dan Amerika Serikat.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Donasi Swadaya",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://telapak.org",
@@ -2169,16 +2043,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-prigi-arisandi-1",
-            "profile_id": "gen-prigi-arisandi",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Prigi Arisandi dalam bidang Penyelamat Bumi menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-prigi-arisandi-1",
@@ -2186,7 +2051,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "ECOTON (Ecological Observation and Wetlands Conservation)",
             "category": "Lembaga Riset Sains Lahan Basah & Litigasi Lingkungan",
             "description": "Organisasi penjaga sungai terdepan yang memproduksi data kualitas air, mikroplastik, dan litigasi pencemaran limbah B3 industri.",
-            "price": "Inisiatif Terbuka",
+            "price": "Donasi Konservasi (Mulai Rp 50.000)",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://ecoton.or.id",
@@ -2198,7 +2063,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Ekspedisi Sungai Nusantara (ESN)",
             "category": "Sains Warga & Pemetaan Kesehatan Air Nasional",
             "description": "Riset keliling sungai di seluruh kepulauan Indonesia menguji kadar kontaminasi partikel mikroplastik pada air minum dan ikan konsumsi.",
-            "price": "Inisiatif Terbuka",
+            "price": "Donasi Konservasi (Mulai Rp 50.000)",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://ecoton.or.id",
@@ -2316,16 +2181,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-swietenia-puspa-lestari-1",
-            "profile_id": "gen-swietenia-puspa-lestari",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Swietenia Puspa Lestari dalam bidang Penyelamat Bumi menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-swietenia-puspa-lestari-1",
@@ -2333,7 +2189,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Divers Clean Action (DCA Indonesia)",
             "category": "Yayasan Konservasi Laut & Riset Sampah Bahari",
             "description": "Organisasi pemuda maritim yang telah membersihkan ratusan ton sampah bawah laut dan melatih kader penjaga laut di pelosok kepulauan.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Donasi Swadaya",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://diverscleanaction.org",
@@ -2345,7 +2201,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Indonesia Youth Marine Debris Summit (IYMDS)",
             "category": "Konferensi Kepemimpinan Pesisir Generasi Muda",
             "description": "Ajang inkubasi tahunan yang melatih ratusan pemuda dari 34 provinsi untuk merancang program solusi sampah di daerah asalnya.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Donasi Swadaya",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://diverscleanaction.org",
@@ -2463,16 +2319,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-david-christian-1",
-            "profile_id": "gen-david-christian",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas David Christian dalam bidang Penyelamat Bumi menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-david-christian-1",
@@ -2480,7 +2327,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Evoware Seaweed Packaging (Kemasan Dapat Dimakan)",
             "category": "Inovasi Deep-Tech Material Sirkular",
             "description": "Kemasan alternatif pembungkus bumbu mi instan, burger, dan kopi yang larut dalam air dan ramah lingkungan.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 25.000 — Rp 120.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://evoware.id",
@@ -2492,7 +2339,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Evoworld & Gerakan #RethinkPlastic",
             "category": "Platform Produk Ramah Lingkungan & Kampanye",
             "description": "Ekosistem penyedia sedotan beras, kemasan ramah lingkungan, dan edukasi pengurangan plastik sekali pakai untuk sektor perhotelan dan F&B.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Donasi Swadaya",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://rethink-plastic.com",
@@ -2610,16 +2457,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-mohammad-baedowy-1",
-            "profile_id": "gen-mohammad-baedowy",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Mohammad Baedowy dalam bidang Penyelamat Bumi menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-mohammad-baedowy-1",
@@ -2627,7 +2465,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "CV Majestic Buana Group (Pabrik Daur Ulang Plastik)",
             "category": "Manufaktur Sirkular & Pengolahan Biji Plastik",
             "description": "Sentra pengolahan sampah plastik skala industri yang mengolah ribuan ton limbah botol PET dan plastik keras setiap bulannya.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 18.000 — Rp 85.000 / kg",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://sektorlokal.id",
@@ -2639,7 +2477,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Rancang Bangun Mesin Pencacah Plastik Komunal Baedowy",
             "category": "Rekayasa Alat Tepat Guna UMKM",
             "description": "Inovasi mesin pencacah dan pencuci plastik berdaya tahan tinggi yang diadopsi oleh ratusan bank sampah dan koperasi daerah.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Donasi Swadaya",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://sektorlokal.id",
@@ -2757,16 +2595,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-i-gede-robi-supriyanto-1",
-            "profile_id": "gen-i-gede-robi-supriyanto",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas I Gede Robi Supriyanto dalam bidang Penyelamat Bumi menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-i-gede-robi-supriyanto-1",
@@ -2774,7 +2603,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Diskografi Navicula (Album Perlawanan Ekologis)",
             "category": "Karya Musik Grunge & Lirik Kritis",
             "description": "Koleksi album musik independen berdaya dobrak sosial yang mengampanyekan penyelamatan hutan hujan dan keadilan hukum.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 350.000 — Rp 650.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://naviculamusic.com",
@@ -2786,7 +2615,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Film Dokumenter Bioskop: Pulau Plastik",
             "category": "Film Investigasi Sains Lingkungan",
             "description": "Dokumenter layar lebar yang mengungkap anatomi polusi plastik sekali pakai, impor limbah, dan kontaminasi mikroplastik pada tubuh manusia.",
-            "price": "Inisiatif Terbuka",
+            "price": "Tiket Nonton / VOD Rp 45.000 — Rp 75.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://pulauplastik.org",
@@ -2904,16 +2733,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-andrew-kalaweit-1",
-            "profile_id": "gen-andrew-kalaweit",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Andrew Kalaweit dalam bidang Penyelamat Bumi menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-andrew-kalaweit-1",
@@ -2921,7 +2741,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Patroli Udara & Konservasi Rimba Dulan (Yayasan Kalaweit)",
             "category": "Pemantauan Satwa Udara & Perlindungan Kanopi",
             "description": "Operasi pemantauan deforestasi udara menggunakan paramotor dan perlindungan cagar alam satwa owa di pedalaman Kalimantan Tengah.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 150.000 — Rp 450.000 / tiket",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://kalaweit.org",
@@ -2933,7 +2753,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Kanal Dokumenter Alam Rimba Andrew Kalaweit",
             "category": "Karya Audio-Visual & Pendidikan Konservasi",
             "description": "Rangkaian video esai dokumenter kehidupan liar hutan hujan tropis yang telah ditonton puluhan juta kali oleh generasi muda dunia.",
-            "price": "Inisiatif Terbuka",
+            "price": "Tiket Nonton / VOD Rp 45.000 — Rp 75.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://youtube.com",
@@ -3051,16 +2871,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-onno-w-purbo-1",
-            "profile_id": "gen-onno-w-purbo",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Dr. Onno W. Purbo dalam bidang Pembangun Sistem menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-onno-w-purbo-1",
@@ -3068,7 +2879,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "OnnoCenter E-Learning (Kampus Terbuka Teknologi Rakyat)",
             "category": "Platform Pendidikan IT Terbuka & Sertifikasi Gratis",
             "description": "LMS daring gratis yang menyediakan puluhan modul rekayasa jaringan, cybersecurity, server Linux, dan kecerdasan buatan bagi talenta daerah.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Donasi Swadaya",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://lms.onnocenter.or.id",
@@ -3080,7 +2891,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Antena Wajanbolic & Arsitektur OpenBTS Komunitas",
             "category": "Inovasi Hardware Komunikasi Tepat Guna",
             "description": "Cetak biru perangkat keras jaringan nirkabel murah berbasis wajan dapur dan software radio terbuka untuk desa terpencil.",
-            "price": "Inisiatif Terbuka",
+            "price": "100% Akses Publik Bebas",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://onnocenter.or.id",
@@ -3198,16 +3009,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-warsito-p-taruno-1",
-            "profile_id": "gen-warsito-p-taruno",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Dr. Warsito P. Taruno dalam bidang Pembangun Sistem menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-warsito-p-taruno-1",
@@ -3215,7 +3017,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Teknologi ECVT 4D (Electrical Capacitance Volume Tomography)",
             "category": "Paten Sains Terapan & Instrumentasi Industri",
             "description": "Teknologi pemindaian tomografi volumetrik medan listrik kecepatan tinggi pertama di dunia yang diadopsi NASA dan industri energi internasional.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Donasi Swadaya",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://ctechlabs.com",
@@ -3227,7 +3029,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "CTech Labs Edwar Technology",
             "category": "Laboratorium Riset Fisika Medis & Industri Mandiri",
             "description": "Pusat riset sains terapan di Tangerang yang merancang instrumen tomografi industri dan terapi medis berbasis gelombang listrik kapasitif.",
-            "price": "Inisiatif Terbuka",
+            "price": "Freemium / B2B (Mulai Rp 299.000/bln)",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://ctechlabs.com",
@@ -3345,16 +3147,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-ainun-najib-1",
-            "profile_id": "gen-ainun-najib",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Ainun Najib dalam bidang Pembangun Sistem menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-ainun-najib-1",
@@ -3362,7 +3155,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "KawalPemilu.org (Platform Transparansi Rekapitulasi Suara)",
             "category": "Civic Tech & Sains Data Demokrasi",
             "description": "Sistem verifikasi data formulir C1 berbasis crowdsourcing independen yang menjadi jangkar kebenaran publik melawan manipulasi suara.",
-            "price": "Inisiatif Terbuka",
+            "price": "100% Akses Publik Bebas",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://kawalpemilu.org",
@@ -3374,7 +3167,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "KawalCOVID19 (Inisiatif Data & Informasi Pandemi)",
             "category": "Kompilasi Data Sains Kesehatan Masyarakat",
             "description": "Platform agregasi data independen yang memetakan ketersediaan tempat tidur RS, oksigen, dan verifikasi fakta seputar wabah virus.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Donasi Swadaya",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://kawalcovid19.id",
@@ -3492,16 +3285,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-khoirul-anwar-1",
-            "profile_id": "gen-khoirul-anwar",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Dr. Khoirul Anwar dalam bidang Pembangun Sistem menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-khoirul-anwar-1",
@@ -3509,7 +3293,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Paten Internasional Dua FFT OFDM (Fondasi Transmisi 4G LTE)",
             "category": "Paten Teknologi Telekomunikasi Nirkabel",
             "description": "Algoritma komputasi sinyal nirkabel berefisiensi tinggi yang menjadi salah satu standar fundamental konektivitas 4G LTE dan 5G dunia.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Donasi Swadaya",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://adwitech.telkomuniversity.ac.id",
@@ -3521,7 +3305,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "AdWiTech (Advanced Wireless Technologies Center)",
             "category": "Pusat Riset Telekomunikasi Terdepan",
             "description": "Laboratorium riset nirkabel di Bandung yang mengembangkan teknologi komunikasi kebencanaan, IoT cerdas, dan radar maritim mandiri.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Donasi Swadaya",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://adwitech.telkomuniversity.ac.id",
@@ -3639,16 +3423,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-jim-geovedi-1",
-            "profile_id": "gen-jim-geovedi",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Jim Geovedi dalam bidang Pembangun Sistem menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-jim-geovedi-1",
@@ -3656,7 +3431,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Audit Keamanan Infrastruktur Satelit & Telekomunikasi Global",
             "category": "Keamanan Siber Tingkat Tinggi & Ruang Angkasa",
             "description": "Layanan uji penetrasi dan audit arsitektur keamanan sistem transmisi satelit dan pusat komputasi awan multinasional.",
-            "price": "Inisiatif Terbuka",
+            "price": "Swadaya Solidaritas Warga",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://geovedi.com",
@@ -3668,7 +3443,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Arsitektur Kriptografi & Perlindungan Sistem Finansial",
             "category": "Kriptografi & Rekayasa Keamanan Siber",
             "description": "Rancang bangun benteng pertahanan siber untuk transaksi perbankan skala masif dan pencegahan kebocoran data nasabah.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Donasi Swadaya",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://geovedi.com",
@@ -3786,16 +3561,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-ayu-purwarianti-1",
-            "profile_id": "gen-ayu-purwarianti",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Dr. Ayu Purwarianti dalam bidang Pembangun Sistem menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-ayu-purwarianti-1",
@@ -3803,7 +3569,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Prosa.ai (Deep-Tech AI NLP & Voice Engine)",
             "category": "Kecerdasan Buatan & Pemrosesan Bahasa Alami",
             "description": "Platform AI percakapan dan sintesis suara berbahasa Indonesia berakurasi tinggi yang digunakan oleh sektor perbankan dan layanan publik.",
-            "price": "Inisiatif Terbuka",
+            "price": "Freemium / B2B (Mulai Rp 299.000/bln)",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://prosa.ai",
@@ -3815,7 +3581,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Korpus Data NLP Bahasa Daerah Nusantara (Pusat AI ITB)",
             "category": "Dataset Sains Komputasi Linguistik",
             "description": "Basis data terbuka korpus digital bahasa Jawa, Sunda, Minang, dan puluhan bahasa daerah untuk melatih mesin AI masa depan.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Donasi Swadaya",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://ai.itb.ac.id",
@@ -3933,16 +3699,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-irzan-raditya-1",
-            "profile_id": "gen-irzan-raditya",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Irzan Raditya dalam bidang Pembangun Sistem menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-irzan-raditya-1",
@@ -3950,7 +3707,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Kata.ai Conversational Platform (Mesin NLU Bahasa Gaul)",
             "category": "Platform B2B Conversational AI Enterprise",
             "description": "Infrastruktur pemrosesan jutaan pesan percakapan harian dengan akurasi pemahaman dialek informal Indonesia tertinggi.",
-            "price": "Inisiatif Terbuka",
+            "price": "Freemium / B2B (Mulai Rp 299.000/bln)",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://kata.ai",
@@ -3962,7 +3719,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Kata Omnichat & Asisten Cerdas UMKM",
             "category": "Software SaaS Otomasi Layanan Pelanggan",
             "description": "Platform perpesanan terpadu berbasis AI yang membantu pengusaha kecil mengelola ribuan pesanan WhatsApp secara otomatis.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Donasi Swadaya",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://kata.ai",
@@ -4080,16 +3837,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-romi-satria-wahono-1",
-            "profile_id": "gen-romi-satria-wahono",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Romi Satria Wahono dalam bidang Pembangun Sistem menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-romi-satria-wahono-1",
@@ -4097,7 +3845,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "IlmuKomputer.com (Portal Open Knowledge IT Pertama)",
             "category": "Repositori Pendidikan Komputasi Terbuka",
             "description": "Situs edukasi teknologi informasi gratis legendaris yang telah melatih jutaan talenta pemrograman dan rekayasa jaringan Indonesia.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Donasi Swadaya",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://ilmukomputer.org",
@@ -4109,7 +3857,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Brainmatics (Pusat Pelatihan & Sertifikasi IT Profesional)",
             "category": "Institusi Pengembangan Talenta Perangkat Lunak",
             "description": "Lembaga pelatihan standar industri untuk software architecture, database management, dan machine learning bersertifikasi resmi.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 199.000 — Rp 1.450.000 / paket",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://brainmatics.com",
@@ -4227,16 +3975,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-sunu-wibirama-1",
-            "profile_id": "gen-sunu-wibirama",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Dr. Eng. Sunu Wibirama dalam bidang Pembangun Sistem menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-sunu-wibirama-1",
@@ -4244,7 +3983,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Sistem Eye-Tracking Diagnostik Pasien Gangguan Saraf (UGM Lab)",
             "category": "Rekayasa Biomedis & Antarmuka Manusia-Komputer",
             "description": "Alat pemantau pergerakan pupil mata berkecepatan tinggi untuk mendeteksi disfungsi neurologis dan rehabilitasi stroke secara presisi.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Donasi Swadaya",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://sunu.staff.ugm.ac.id",
@@ -4256,7 +3995,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Sistem Deteksi Kelelahan Pengemudi Berbasis AI Visual",
             "category": "Teknologi Keselamatan Transportasi Cerdas",
             "description": "Sensor kamera cerdas yang membaca pola kedipan mata dan posisi kepala pengemudi bus/truk untuk mencegah kecelakaan di jalan tol.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Donasi Swadaya",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://ugm.ac.id",
@@ -4374,16 +4113,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-yohanes-surya-1",
-            "profile_id": "gen-yohanes-surya",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Prof. Yohanes Surya, Ph.D. dalam bidang Pembangun Sistem menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-yohanes-surya-1",
@@ -4391,7 +4121,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Metode GASING (Gampang, Asyik, dan Menyenangkan)",
             "category": "Metodologi Pengajaran Matematika & Sains Revolusioner",
             "description": "Pendekatan pembelajaran berhitung tanpa rumus mati berbasis logika visual dan eksplorasi konkret yang mempercepat penguasaan matematika dasar.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Donasi Swadaya",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://suryainstitute.org",
@@ -4403,7 +4133,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "TOFI (Tim Olimpiade Fisika Indonesia)",
             "category": "Program Pembinaan Talenta Sains Unggul Dunia",
             "description": "Kawah candradimuka pembinaan fisika intensif yang telah menyumbangkan lebih dari 100 medali emas internasional bagi Republik Indonesia.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Donasi Swadaya",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://suryainstitute.org",
@@ -4521,16 +4251,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-rukka-sombolinggi-1",
-            "profile_id": "gen-rukka-sombolinggi",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Rukka Sombolinggi dalam bidang Pejuang Akar Rumput menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-rukka-sombolinggi-1",
@@ -4538,7 +4259,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "AMAN (Aliansi Masyarakat Adat Nusantara)",
             "category": "Organisasi Gerakan Hak Asasi & Kedaulatan Wilayah Adat",
             "description": "Gerakan masyarakat sipil adat terbesar di dunia yang mengadvokasi pengakuan hukum, perlindungan hutan ulayat, dan sekolah adat.",
-            "price": "Inisiatif Terbuka",
+            "price": "Swadaya Solidaritas Warga",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://aman.or.id",
@@ -4550,7 +4271,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Badan Registrasi Wilayah Adat (BRWA)",
             "category": "Sistem Informasi Geografis & Pemetaan Partisipatif",
             "description": "Lembaga pemetaan wilayah adat berbasis data spasial dan sosial mandiri yang telah mendaftarkan belasan juta hektare tanah leluhur.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Donasi Swadaya",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://brwa.or.id",
@@ -4668,16 +4389,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-dr-lie-dharmawan-1",
-            "profile_id": "gen-dr-lie-dharmawan",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas dr. Lie Dharmawan dalam bidang Pejuang Akar Rumput menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-dr-lie-dharmawan-1",
@@ -4685,7 +4397,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Rumah Sakit Apung (RSA) doctorSHARE",
             "category": "Inovasi Fasilitas Medis Maritim Swadaya",
             "description": "Armada kapal bedah terapung berstandar medis internasional yang berlayar ke pulau-pulau 3T melayani operasi bedah mayor dan persalinan gratis.",
-            "price": "Inisiatif Terbuka",
+            "price": "Donasi Medis (Mulai Rp 25.000)",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://doctorshare.org",
@@ -4697,7 +4409,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Dokter Terbang (Flying Doctors Indonesia)",
             "category": "Layanan Darurat Medis Daerah Terisolir",
             "description": "Tim dokter spesialis relawan yang diterbangkan menggunakan pesawat perintis ke lembah-lembah terpencil Papua dan pelosok Kalimantan.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Donasi Swadaya",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://doctorshare.org",
@@ -4815,16 +4527,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-mama-aleta-baun-1",
-            "profile_id": "gen-mama-aleta-baun",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Mama Aleta Baun dalam bidang Pejuang Akar Rumput menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-mama-aleta-baun-1",
@@ -4832,7 +4535,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Koperasi Tenun Pewarna Alami Suku Mollo",
             "category": "Ekonomi Adat Berkelanjutan & Kriya Tradisional",
             "description": "Unit usaha mandiri ratusan perempuan penenun NTT yang menggunakan tanaman pewarna alami tanpa merusak kelestarian hutan.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 450.000 — Rp 2.250.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://sektorlokal.id",
@@ -4844,7 +4547,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Kawasan Lindung Adat Pegunungan Mutis",
             "category": "Konservasi Tanah Ulayat & Mata Air Alami",
             "description": "Wilayah hutan suaka adat yang diselamatkan dari tambang marmer, kini menjadi sumber air abadi bagi ribuan keluarga petani di pulau Timor.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Donasi Swadaya",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://sektorlokal.id",
@@ -4962,16 +4665,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-gunretno-1",
-            "profile_id": "gen-gunretno",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Gunretno dalam bidang Pejuang Akar Rumput menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-gunretno-1",
@@ -4979,7 +4673,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "JMPPK (Jaringan Masyarakat Peduli Pegunungan Kendeng)",
             "category": "Gerakan Perlindungan Ekosistem Karst & Hak Tani",
             "description": "Koalisi petani akar rumput yang memperjuangkan perlindungan tandon air alami Pegunungan Kendeng dari kerusakan tambang.",
-            "price": "Inisiatif Terbuka",
+            "price": "Swadaya Solidaritas Warga",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://jmppkkendeng.org",
@@ -4991,7 +4685,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Praktik Tani Organik Sedulur Sikep Sukolilo",
             "category": "Kedaulatan Pangan Alami & Tanpa Utang Kimia",
             "description": "Model pertanian padi organik mandiri yang tidak bergantung pada benih hibrida industri dan pupuk kimia sintetis.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Donasi Swadaya",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://sektorlokal.id",
@@ -5109,16 +4803,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-lian-gogali-1",
-            "profile_id": "gen-lian-gogali",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Lian Gogali dalam bidang Pejuang Akar Rumput menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-lian-gogali-1",
@@ -5126,7 +4811,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Institut Mosintuwu (Pusat Rekonsiliasi & Kedaulatan Desa)",
             "category": "Lembaga Bina Perdamaian & Hak Asasi Perempuan",
             "description": "Organisasi akar rumput terdepan di Sulawesi Tengah yang melatih ribuan perempuan desa dalam advokasi anggaran, kesehatan reproduksi, dan perdamaian.",
-            "price": "Inisiatif Terbuka",
+            "price": "Swadaya Solidaritas Warga",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://mosintuwu.com",
@@ -5138,7 +4823,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Sekolah Perempuan & Sekolah Toleransi Poso",
             "category": "Pendidikan Kritis Warga Pascakonflik",
             "description": "Kurikulum pendidikan emansipatoris lintas iman yang memulihkan trauma komunal dan membangun solidaritas ekonomi bersama.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 199.000 — Rp 1.450.000 / paket",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://mosintuwu.com",
@@ -5256,16 +4941,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-eva-susanti-bande-1",
-            "profile_id": "gen-eva-susanti-bande",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Eva Susanti Bande dalam bidang Pejuang Akar Rumput menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-eva-susanti-bande-1",
@@ -5273,7 +4949,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "FRAS Sulteng (Front Rakyat Advokasi Sawit)",
             "category": "Serikat Pembela Hak Petani & Keadilan Agraria",
             "description": "Organisasi advokasi lapangan yang mendampingi komunitas petani gurem melawan perampasan tanah dan intimidasi perusahaan perkebunan.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Donasi Swadaya",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://sektorlokal.id",
@@ -5285,7 +4961,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Koperasi Tani Mandiri Berbasis Pangan Polikultur",
             "category": "Kedaulatan Pertanian Rakyat",
             "description": "Inisiatif pemulihan tanah bekas konsesi sawit menjadi kebun pangan polikultur (kakao, jagung, rempah) milik keluarga tani.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Donasi Swadaya",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://sektorlokal.id",
@@ -5403,16 +5079,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-mansetus-balawala-1",
-            "profile_id": "gen-mansetus-balawala",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Mansetus Balawala dalam bidang Pejuang Akar Rumput menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-mansetus-balawala-1",
@@ -5420,7 +5087,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Armada Ambulans Motor Desa Flores Timur (YKS)",
             "category": "Inovasi Transportasi Medis Tepat Guna",
             "description": "Armada sepeda motor modifikasi khusus yang menembus jalan setapak hutan dan pegunungan terjal untuk evakuasi darurat ibu melahirkan.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Donasi Swadaya",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://sektorlokal.id",
@@ -5432,7 +5099,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Skema Asuransi Mikro Gotong Royong Kesehatan",
             "category": "Fintech Sosial Komunal Berbasis Iuran Sukarela",
             "description": "Tabungan kesehatan komunitas yang dikelola bersama warga desa untuk mendanai biaya operasional bensin motor ambulans dan obat-obatan.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Donasi Swadaya",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://sektorlokal.id",
@@ -5550,16 +5217,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-maria-catarina-sumarsih-1",
-            "profile_id": "gen-maria-catarina-sumarsih",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Maria Catarina Sumarsih dalam bidang Pejuang Akar Rumput menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-maria-catarina-sumarsih-1",
@@ -5567,7 +5225,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Aksi Kamisan (Gerakan Payung Hitam Menolak Lupa)",
             "category": "Gerakan Moral Hak Asasi Manusia & Melawan Impunitas",
             "description": "Aksi diam damai setiap Kamis sore di seberang Istana Presiden yang telah berlangsung selama belasan tahun menuntut pengadilan HAM ad hoc.",
-            "price": "Inisiatif Terbuka",
+            "price": "Swadaya Solidaritas Warga",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://aksikamisan.net",
@@ -5579,7 +5237,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "JSKK (Jaringan Solidaritas Korban untuk Keadilan)",
             "category": "Koalisi Keluarga Korban Pelanggaran HAM Berat",
             "description": "Wadah persaudaraan keluarga korban kejahatan kemanusiaan masa lalu yang saling menguatkan dalam merawat ingatan kolektif bangsa.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Donasi Swadaya",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://kontras.org",
@@ -5697,16 +5355,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-hendro-utomo-1",
-            "profile_id": "gen-hendro-utomo",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Hendro Utomo dalam bidang Pejuang Akar Rumput menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-hendro-utomo-1",
@@ -5714,7 +5363,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Food Bank of Indonesia (Jejaring Food Rescue Nasional)",
             "category": "Logistik Kemanusiaan & Penyelamatan Makanan",
             "description": "Organisasi penyelamat makanan berlebih industri yang telah menyalurkan jutaan porsi makanan bergizi ke balita dan lansia prasejahtera.",
-            "price": "Inisiatif Terbuka",
+            "price": "Paket Donasi Pangan Rp 50.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://foodbankindonesia.org",
@@ -5726,7 +5375,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Program Sayap dari Sayap (Nutrisi PAUD & Posyandu)",
             "category": "Intervensi Gizi Dini Anak Negeri",
             "description": "Penyediaan sarapan bergizi harian bagi puluhan ribu anak-anak usia dini di sekolah-sekolah rakyat pelosok kampung.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Donasi Swadaya",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://foodbankindonesia.org",
@@ -5844,16 +5493,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-butet-manurung-1",
-            "profile_id": "gen-butet-manurung",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Saur Marlina (Butet) Manurung dalam bidang Pejuang Akar Rumput menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-butet-manurung-1",
@@ -5861,7 +5501,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Sokola Institute (Sekolah Literasi Kontekstual Adat)",
             "category": "Pendidikan Emansipatoris & Hak Masyarakat Adat",
             "description": "Lembaga pendidikan alternatif nirlaba yang menyediakan akses literasi baca-tulis-hitung kontekstual bagi suku-suku pedalaman nusantara.",
-            "price": "Inisiatif Terbuka",
+            "price": "Bebas Biaya / Donasi Swadaya",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://sokola.org",
@@ -5873,7 +5513,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Buku: Sokola Rimba (Pengalaman Belajar Bersama Orang Rimba)",
             "category": "Karya Literatur Antropologi & Pendidikan",
             "description": "Buku catatan etnografis mendalam tentang dinamika perjumpaan budaya, kearifan rimba, dan perjuangan hak tanah Orang Rimba.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 85.000 — Rp 185.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://www.gramedia.com",
@@ -5991,16 +5631,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-singgih-susilo-kartono-1",
-            "profile_id": "gen-singgih-susilo-kartono",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Singgih Susilo Kartono dalam bidang Arsitek Usaha Mandiri menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-singgih-susilo-kartono-1",
@@ -6008,7 +5639,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Spedagi Bamboo Bicycle (Sepeda Bambu Lestari)",
             "category": "Desain Industri Kriya Mobilitas Hijau",
             "description": "Sepeda bambu berstandar internasional yang mengintegrasikan kekuatan serat bambu lokal Temanggung dengan estetika desain modern.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 7.500.000 — Rp 14.500.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://spedagi.com",
@@ -6020,7 +5651,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Pasar Papringan Temanggung",
             "category": "Rekayasa Sosial & Pasar Tradisional Bebas Plastik",
             "description": "Destinasi ekonomi komunal dua mingguan di tengah kebun bambu yang memberdayakan ratusan ibu-ibu desa menggunakan mata uang koin bambu.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 85.000 — Rp 450.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://pasarpapringan.com",
@@ -6138,16 +5769,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-helianti-hilman-1",
-            "profile_id": "gen-helianti-hilman",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Helianti Hilman dalam bidang Arsitek Usaha Mandiri menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-helianti-hilman-1",
@@ -6155,7 +5777,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "JAVARA Indigenous Indonesia (Pangan Pusaka Nusantara)",
             "category": "Agribisnis Pangan Organik & Ekspor Heritage",
             "description": "Kurasi produk pangan alami terbesar di Indonesia yang memasok beras pusaka, garam artisanal, dan rempah liar ke pasar dunia.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 35.000 — Rp 165.000 / pack",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://javara.co.id",
@@ -6167,7 +5789,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Javara Academy & Sekolah Wirausaha Pangan Desa",
             "category": "Pendidikan Vokasi Agribisnis & Pelestarian Benih",
             "description": "Inkubator bisnis yang melatih ribuan keluarga petani mengadopsi standar sertifikasi organik internasional dan pengolahan pangan.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 35.000 — Rp 165.000 / pack",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://javara.co.id",
@@ -6285,16 +5907,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-azalea-ayuningtyas-1",
-            "profile_id": "gen-azalea-ayuningtyas",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Azalea Ayuningtyas dalam bidang Arsitek Usaha Mandiri menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-azalea-ayuningtyas-1",
@@ -6302,7 +5915,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Du'Anyam (Wirausaha Sosial Kriya Daun Lontar)",
             "category": "Wirausaha Sosial & Kriya Anyaman Inklusif",
             "description": "Brand kriya sosial yang memasok produk anyaman berkualitas tinggi untuk sektor hospitality global dan suvenir korporasi.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 120.000 — Rp 650.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://duanyam.com",
@@ -6314,7 +5927,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Program Intervensi Gizi & Kesehatan Ibu Hamil NTT",
             "category": "Kesehatan Masyarakat & Penanganan Stunting",
             "description": "Program pemberian paket nutrisi protein dan pendampingan posyandu bagi keluarga penganyam di desa terpencil Flores.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 85.000 — Rp 450.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://duanyam.com",
@@ -6432,16 +6045,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-tissa-aunilla-1",
-            "profile_id": "gen-tissa-aunilla",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Tissa Aunilla dalam bidang Arsitek Usaha Mandiri menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-tissa-aunilla-1",
@@ -6449,7 +6053,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Pipiltin Cocoa (Cokelat Artisan Bean-to-Bar Nusantara)",
             "category": "Manufaktur Cokelat Premium Single Origin",
             "description": "Lini produk cokelat murni berbahan 100% kakao lokal tanpa lemak nabati sawit yang mengangkat kekayaan profil tanah kepulauan Indonesia.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 45.000 — Rp 135.000 / bar",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://pipiltincocoa.com",
@@ -6461,7 +6065,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Program Kemitraan Fermentasi Petani Kakao Daerah",
             "category": "Pemberdayaan Rantai Pasok Petani Kakao",
             "description": "Pelatihan standardisasi fermentasi dan pembelian langsung biji kakao dari petani di Aceh, Flores, Bali, dan Papua dengan harga premium.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 45.000 — Rp 135.000 / bar",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://pipiltincocoa.com",
@@ -6579,16 +6183,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-yukka-harsono-1",
-            "profile_id": "gen-yukka-harsono",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Yukka Harsono dalam bidang Arsitek Usaha Mandiri menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-yukka-harsono-1",
@@ -6596,7 +6191,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Brodo Footwear (Brand Sepatu Kulit & Sneakers Lokal)",
             "category": "Manufaktur Alas Kaki Kontemporer & Direct-to-Consumer",
             "description": "Lini produk sepatu kulit formal, boots, dan sneakers pria dengan standar uji mutu industri yang diproduksi oleh sentra pengrajin lokal Jawa Barat.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 375.000 — Rp 899.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://bro.do",
@@ -6608,7 +6203,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Ekosistem Mitra Pengrajin Kulit Cibaduyut Brodo",
             "category": "Pemberdayaan Sentra Manufaktur Tradisional",
             "description": "Program standardisasi jahit sol, pola presisi, dan transfer teknologi mesin potong kulit bagi puluhan bengkel pengrajin lokal.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 375.000 — Rp 899.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://bro.do",
@@ -6726,16 +6321,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-dea-valencia-1",
-            "profile_id": "gen-dea-valencia",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Dea Valencia dalam bidang Arsitek Usaha Mandiri menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-dea-valencia-1",
@@ -6743,7 +6329,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Batik Kultur by Dea Valencia",
             "category": "Fesyen Wastra Kontemporer & Butik Inklusif",
             "description": "Brand busana batik ready-to-wear premium yang memadukan kain batik tulis/cap tradisional dengan siluet modern untuk pasar global.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 450.000 — Rp 2.250.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://batikkultur.com",
@@ -6755,7 +6341,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Workshop Inklusif Pemberdayaan Difabel Semarang",
             "category": "Fasilitas Manufaktur Ramah Disabilitas",
             "description": "Sentra produksi garmen yang dirancang ergonomis untuk mempekerjakan puluhan penjahit dan pembuat pola penyandang disabilitas secara setara.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 85.000 — Rp 450.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://batikkultur.com",
@@ -6873,16 +6459,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-nurman-farieka-ramdhany-1",
-            "profile_id": "gen-nurman-farieka-ramdhany",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Nurman Farieka Ramdhany dalam bidang Arsitek Usaha Mandiri menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-nurman-farieka-ramdhany-1",
@@ -6890,7 +6467,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Hirka Footwear (Sepatu Kulit Eksotis Ceker Ayam)",
             "category": "Inovasi Manufaktur Material Sirkular & Fesyen Mewah",
             "description": "Koleksi sepatu kulit premium berbahan baku limbah ceker ayam dengan pola sisik alami unik yang diproduksi secara handmade di Bandung.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 1.450.000 — Rp 3.200.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://hirka.id",
@@ -6902,7 +6479,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Formula Penyamakan Kulit Unggas Ramah Lingkungan",
             "category": "Rekayasa Kimia Kulit Tepat Guna",
             "description": "Metode pemrosesan penyamakan kulit ceker ayam tanpa bahan kimia berbahaya kromium yang aman bagi lingkungan dan perajin.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 85.000 — Rp 450.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://hirka.id",
@@ -7020,16 +6597,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-riza-azyumarridha-azra-1",
-            "profile_id": "gen-riza-azyumarridha-azra",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Riza Azyumarridha Azra dalam bidang Arsitek Usaha Mandiri menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-riza-azyumarridha-azra-1",
@@ -7037,7 +6605,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Rumah Mocaf Indonesia (Tepung Singkong Bebas Gluten)",
             "category": "Agroindustri Pangan Lokal & Hilirisasi Pertanian",
             "description": "Produsen tepung singkong fermentasi organik pengganti terigu gandum bersertifikat bebas gluten yang memasok industri roti dan kue global.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 85.000 — Rp 450.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://rumahmocaf.com",
@@ -7049,7 +6617,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Mocafine & Lini Pangan Olahan Gluten-Free",
             "category": "Produk Konsumen Sehat Berbasis Singkong",
             "description": "Produk turunan tepung Mocaf berupa mi sehat non-gandum, tepung bumbu krispi, dan kue kering untuk gaya hidup sehat dan penderita autisme.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 85.000 — Rp 450.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://rumahmocaf.com",
@@ -7167,16 +6735,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-stefanie-kurniadi-1",
-            "profile_id": "gen-stefanie-kurniadi",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Stefanie Kurniadi dalam bidang Arsitek Usaha Mandiri menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-stefanie-kurniadi-1",
@@ -7184,7 +6743,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Foodizz (Akademi Bisnis Kuliner Digital)",
             "category": "EduTech Wirausaha F&B & Inkubator Bisnis",
             "description": "Platform pembelajaran digital komprehensif yang melatih ratusan ribu pengusaha kuliner dalam tata kelola operasional, HPP, dan scaling-up.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 199.000 — Rp 1.450.000 / paket",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://foodizz.id",
@@ -7196,7 +6755,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Buku Panduan: 10 Langkah Membangun Bisnis Kuliner yang Berkelanjutan",
             "category": "Buku Bisnis Terapan & Manajemen F&B",
             "description": "Karya literatur praktis membedah cara menghitung Food Cost, standardisasi resep, dan manajemen kas restoran.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 85.000 — Rp 185.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://foodizz.id",
@@ -7314,16 +6873,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-goris-mustaqim-1",
-            "profile_id": "gen-goris-mustaqim",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Goris Mustaqim dalam bidang Arsitek Usaha Mandiri menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-goris-mustaqim-1",
@@ -7331,7 +6881,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Asgar Muda Foundation (Inkubator Wirausaha Pemuda Garut)",
             "category": "Pemberdayaan Pemuda Perdesaan & Inkubasi Bisnis",
             "description": "Yayasan sosial yang telah mencetak ribuan wirausahawan muda di Jawa Barat berbasis potensi agribisnis dan kriya lokal.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 150.000 — Rp 1.200.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://asgarmuda.org",
@@ -7343,7 +6893,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Sentra Kerajinan Kulit Sukaregang Berdaya",
             "category": "Modernisasi Kriya Tradisional Daerah",
             "description": "Program peningkatan standar desain dan akses pemasaran digital bagi puluhan bengkel perajin jaket dan tas kulit di Garut.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 150.000 — Rp 1.200.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://sektorlokal.id",
@@ -7461,16 +7011,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-cholil-mahmud-1",
-            "profile_id": "gen-cholil-mahmud",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Cholil Mahmud dalam bidang Perawat Jiwa & Rasa menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-cholil-mahmud-1",
@@ -7478,7 +7019,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Diskografi Efek Rumah Kaca (Album Perlawanan & Kontemplasi)",
             "category": "Karya Musik Indie & Lirik Kritis Sosial",
             "description": "Album-album mahakarya musik Indonesia (Efek Rumah Kaca, Kamar Gelap, Sinestesia, Rimpang) yang memotret realitas politik dan luka kemanusiaan.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 350.000 — Rp 650.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://efekrumahkaca.net",
@@ -7490,7 +7031,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Pandai Besi & Eksplorasi Musik Akustik Kamar",
             "category": "Kolektif Musik Orkestrasi Eksperimental",
             "description": "Proyek musikal yang merekonstruksi lagu-lagu ERK dalam aransemen megah bernuansa teatrikal yang didanai secara crowdfunding publik.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rilisan Digital / Fisik Rp 49.000 — Rp 250.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://efekrumahkaca.net",
@@ -7608,16 +7149,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-kunto-aji-1",
-            "profile_id": "gen-kunto-aji",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Kunto Aji dalam bidang Perawat Jiwa & Rasa menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-kunto-aji-1",
@@ -7625,7 +7157,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Album: Mantra Mantra (Karya Musik Terapi Mental)",
             "category": "Karya Musik Psikologi Terapan & Pop Eksperimental",
             "description": "Album konsep pemulihan batin yang mengintegrasikan frekuensi audio relaksasi untuk meredakan kecemasan dan serangan panik.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 350.000 — Rp 650.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://open.spotify.com",
@@ -7637,7 +7169,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Album: Pengantar Purwakala (Siklus Pendewasaan Diri)",
             "category": "Eksplorasi Musik Kontemplatif & Pertumbuhan Batin",
             "description": "Lanjutan perjalanan refleksi tentang menerima kehilangan, merawat harapan baru, dan menua dengan penuh kesadaran.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 350.000 — Rp 650.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://open.spotify.com",
@@ -7755,16 +7287,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-sal-priadi-1",
-            "profile_id": "gen-sal-priadi",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Sal Priadi dalam bidang Perawat Jiwa & Rasa menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-sal-priadi-1",
@@ -7772,7 +7295,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Album: MARKERS AND SUCH PENS FLASHDISKS",
             "category": "Karya Musik Pop Puitis & Narasi Kehidupan",
             "description": "Album yang merayakan kehangatan hubungan sehari-hari, peran menjadi ayah, dan rekonsiliasi rindu kepada mereka yang telah tiada.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 350.000 — Rp 650.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://open.spotify.com",
@@ -7784,7 +7307,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Album: Berhati (Eksplorasi Cinta Teatrikal)",
             "category": "Musik Romantisisme Gelap & Sastra Audio",
             "description": "Kumpulan lagu puitis bertema cinta, kepasrahan batin, dan keintiman hubungan manusia dengan aransemen orkestrasi megah.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 85.000 — Rp 185.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://open.spotify.com",
@@ -7902,16 +7425,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-baskara-putra-1",
-            "profile_id": "gen-baskara-putra",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Baskara Putra (Hindia) dalam bidang Perawat Jiwa & Rasa menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-baskara-putra-1",
@@ -7919,7 +7433,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Album Hindia: Menari dengan Bayangan",
             "category": "Karya Musik Pop Alternatif & Kesehatan Mental",
             "description": "Album konsep fenomenal yang merangkum kegelisahan anak muda dalam menavigasi karir, asmara, dan luka masa kecil.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 350.000 — Rp 650.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://open.spotify.com",
@@ -7931,7 +7445,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Album Hindia: Lagipula Hidup Akan Berakhir",
             "category": "Karya Musik Eksistensial & Kritik Zaman",
             "description": "Album ganda 28 trek yang membedah krisis iklim, kapitalisme modern, inflasi harga rumah, dan masa depan generasi muda.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 350.000 — Rp 650.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://open.spotify.com",
@@ -8049,16 +7563,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-nadin-amizah-1",
-            "profile_id": "gen-nadin-amizah",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Nadin Amizah dalam bidang Perawat Jiwa & Rasa menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-nadin-amizah-1",
@@ -8066,7 +7571,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Album: Selamat Ulang Tahun (Karya Mahakarya Pendewasaan)",
             "category": "Karya Musik Folk Akustik & Narasi Keluarga",
             "description": "Album konsep yang mendokumentasikan rasa terima kasih kepada keluarga dan ketakutan menyongsong usia dewasa.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 350.000 — Rp 650.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://open.spotify.com",
@@ -8078,7 +7583,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Album: Untuk Dunia, Cinta, dan Kotornya",
             "category": "Musik Folk Teatrikal & Penerimaan Diri",
             "description": "Eksplorasi emosi tentang mencintai seseorang secara utuh bersama segala trauma dan ketidaksempurnaannya.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 350.000 — Rp 650.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://open.spotify.com",
@@ -8196,16 +7701,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-m-aan-mansyur-1",
-            "profile_id": "gen-m-aan-mansyur",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas M. Aan Mansyur dalam bidang Perawat Jiwa & Rasa menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-m-aan-mansyur-1",
@@ -8213,7 +7709,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Buku: Tidak Ada New York Hari Ini (Kumpulan Puisi)",
             "category": "Karya Sastra Puisi & Fotografi",
             "description": "Antologi puisi kesunyian perkotaan yang fenomenal dengan terjemahan multibahasa dan ilustrasi fotografi analog.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 85.000 — Rp 185.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://www.gramedia.com",
@@ -8225,7 +7721,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Buku: Melihat Api Bekerja",
             "category": "Karya Sastra Puisi & Ilustrasi",
             "description": "Kumpulan puisi pemenang Kusala Sastra Khatulistiwa yang membedah cinta, ingatan kehilangan, dan rasa sakit secara visual puitis.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 85.000 — Rp 185.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://www.gramedia.com",
@@ -8343,16 +7839,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-kamila-andini-1",
-            "profile_id": "gen-kamila-andini",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Kamila Andini dalam bidang Perawat Jiwa & Rasa menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-kamila-andini-1",
@@ -8360,7 +7847,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Film Bioskop: Yuni (Platform Prize TIFF)",
             "category": "Karya Sinema Realisme Sosial & Pendidikan Remaja",
             "description": "Film yang membedah dilema pernikahan dini, impian pendidikan tinggi perempuan muda, dan dogma keagamaan sempit di Banten.",
-            "price": "Inisiatif Terbuka",
+            "price": "Tiket Nonton / VOD Rp 45.000 — Rp 75.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://fourcoloursfilms.com",
@@ -8372,7 +7859,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Film Bioskop: Nana (Before, Now & Then)",
             "category": "Sinema Sejarah Puitis & Trauma Masa Lalu",
             "description": "Drama sejarah berbahasa Sunda tentang ketabahan perempuan korban pergolakan politik 1960-an yang meraih Silver Bear di Berlinale.",
-            "price": "Inisiatif Terbuka",
+            "price": "Tiket Nonton / VOD Rp 45.000 — Rp 75.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://fourcoloursfilms.com",
@@ -8490,16 +7977,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-marchella-fp-1",
-            "profile_id": "gen-marchella-fp",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Marchella FP dalam bidang Perawat Jiwa & Rasa menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-marchella-fp-1",
@@ -8507,7 +7985,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Buku: Nanti Kita Cerita Tentang Hari Ini (NKCTHI)",
             "category": "Karya Literatur Visual & Refleksi Batin",
             "description": "Buku panduan emosional keluarga dan pendewasaan diri yang menjadi rujukan anak muda dalam menavigasi duka dan harapan.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 85.000 — Rp 185.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://www.gramedia.com",
@@ -8519,7 +7997,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Buku: Kamu Terlalu Banyak Bercanda (KTBB)",
             "category": "Karya Tulis Eksplorasi Sisi Gelap & Emosi Manusia",
             "description": "Kumpulan surat batin yang membedah rasa marah, kecewa, dan ketakutan yang sering kali dipaksa disembunyikan di balik senyuman.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 85.000 — Rp 185.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://www.gramedia.com",
@@ -8637,16 +8115,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-eka-kurniawan-1",
-            "profile_id": "gen-eka-kurniawan",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Eka Kurniawan dalam bidang Perawat Jiwa & Rasa menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-eka-kurniawan-1",
@@ -8654,7 +8123,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Novel: Cantik Itu Luka (Beauty Is a Wound)",
             "category": "Mahakarya Sastra Realisme Magis Indonesia",
             "description": "Epik sastra yang mengisahkan sejarah kekerasan Indonesia dari masa penjajahan Belanda, pendudukan Jepang, hingga pembantaian 1965.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 85.000 — Rp 185.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://www.gramedia.com",
@@ -8666,7 +8135,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Novel: Lelaki Harimau (Man Tiger)",
             "category": "Karya Sastra Tragedi & Mitologi Psikologis",
             "description": "Pembedahan mendalam tentang kemiskinan perdesaan, kekerasan domestik, dan mitos harimau gaib yang diakui dunia internasional.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 85.000 — Rp 185.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://www.gramedia.com",
@@ -8784,16 +8253,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-lala-bohang-1",
-            "profile_id": "gen-lala-bohang",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Lala Bohang dalam bidang Perawat Jiwa & Rasa menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-lala-bohang-1",
@@ -8801,7 +8261,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Trilogi Buku: The Book of Forbidden Feelings",
             "category": "Karya Seni Visual & Antologi Sastra Ilustrasi",
             "description": "Seri buku visual batin yang merayakan emosi-emosi manusia yang sering disembunyikan—kesepian, rasa hampa, dan kecanggungan hidup.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 85.000 — Rp 185.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://www.gramedia.com",
@@ -8813,7 +8273,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Pameran Instalasi Seni: Ruang Batin yang Sunyi",
             "category": "Seni Rupa Kontemporer & Ilustrasi Konseptual",
             "description": "Instalasi visual yang menggabungkan gambar tinta, objek temuan sehari-hari, dan rekaman audio monolog batin.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 50.000 — Rp 350.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://lalabohang.com",
@@ -8931,16 +8391,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-pandji-pragiwaksono-1",
-            "profile_id": "gen-pandji-pragiwaksono",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Pandji Pragiwaksono dalam bidang Penjaga Tawa menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-pandji-pragiwaksono-1",
@@ -8948,7 +8399,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Comika Corp (Ekosistem Industri Komedi Tunggal Mandiri)",
             "category": "Industri Kreatif & Platform Monetisasi Komika",
             "description": "Perusahaan media dan manajemen komedi terbesar di Indonesia yang menyediakan aplikasi streaming spesial komedi, akademi, dan festival.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 50.000 — Rp 175.000 / akses",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://comika.id",
@@ -8960,7 +8411,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Spesial Komedi: Juru Bicara & Mesakke Bangsaku",
             "category": "Karya Stand-Up Comedy Satir Sosial-Politik",
             "description": "Pertunjukan komedi tunggal berdurasi 2 jam yang membedah kejahatan korupsi, HAM masa lalu, dan diskriminasi minoritas secara tajam.",
-            "price": "Inisiatif Terbuka",
+            "price": "Mulai Rp 50.000 / tayang",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://comika.id",
@@ -9078,16 +8529,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-arie-kriting-1",
-            "profile_id": "gen-arie-kriting",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Arie Kriting dalam bidang Penjaga Tawa menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-arie-kriting-1",
@@ -9095,7 +8537,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Spesial Komedi Tunggal: Ilmu Gagal",
             "category": "Karya Stand-Up Comedy & Refleksi Kehidupan",
             "description": "Pertunjukan komedi tunggal yang membedah kegagalan, penolakan sosial, dan kebanggaan berdiri sebagai orang timur di ibu kota.",
-            "price": "Inisiatif Terbuka",
+            "price": "Mulai Rp 50.000 / tayang",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://comika.id",
@@ -9107,7 +8549,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Penulisan Skenario Film Sinema Satir Ketimpangan",
             "category": "Karya Sinematografi & Skenario Film",
             "description": "Karya naskah film layar lebar yang mengangkat realitas ketiadaan sinyal telekomunikasi dan ketimpangan fasilitas daerah pelosok.",
-            "price": "Inisiatif Terbuka",
+            "price": "Tiket Nonton / VOD Rp 45.000 — Rp 75.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://sektorlokal.id",
@@ -9225,16 +8667,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-abdur-arsyad-1",
-            "profile_id": "gen-abdur-arsyad",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Abdur Arsyad dalam bidang Penjaga Tawa menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-abdur-arsyad-1",
@@ -9242,7 +8675,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Spesial Komedi: Pahlawan Perlu Tanda Jasa",
             "category": "Karya Komedi Tunggal Satir Pendidikan",
             "description": "Pertunjukan komedi fenomenal yang menuntut kenaikan gaji layak bagi guru honorer dan membongkar kemunafikan birokrasi pendidikan.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 50.000 — Rp 175.000 / akses",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://comika.id",
@@ -9254,7 +8687,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Serial Komedi Tunggal: Kontras Kebijakan Publik",
             "category": "Kritik Kebijakan Berbalut Nalar Matematika",
             "description": "Rangkaian video monolog bedah anggaran negara, subsidi pupuk petani, dan kedaulatan pangan menggunakan logika sains presisi.",
-            "price": "Inisiatif Terbuka",
+            "price": "Mulai Rp 50.000 / tayang",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://youtube.com",
@@ -9372,16 +8805,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-bintang-emon-1",
-            "profile_id": "gen-bintang-emon",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Bintang Emon dalam bidang Penjaga Tawa menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-bintang-emon-1",
@@ -9389,7 +8813,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Serial Video: DPO (Dewan Perwakilan Omel-Omel)",
             "category": "Karya Satir Digital & Pengawasan Kebijakan",
             "description": "Format video esai komedi singkat berdaya viral puluhan juta penonton yang mengkritik absurditas regulasi dan ketidakadilan hukum.",
-            "price": "Inisiatif Terbuka",
+            "price": "Mulai Rp 50.000 / tayang",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://instagram.com/bintangemon",
@@ -9401,7 +8825,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Pertunjukan Komedi Tunggal: Tangkap Gua",
             "category": "Karya Stand-Up Comedy Satir Berani",
             "description": "Spesial komedi berdurasi panjang yang membedah kebebasan berekspresi, paranoia aparat, dan dinamika pernikahan muda.",
-            "price": "Inisiatif Terbuka",
+            "price": "Mulai Rp 50.000 / tayang",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://comika.id",
@@ -9519,16 +8943,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-mamat-alkatiri-1",
-            "profile_id": "gen-mamat-alkatiri",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Mamat Alkatiri dalam bidang Penjaga Tawa menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-mamat-alkatiri-1",
@@ -9536,7 +8951,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Spesial Komedi: Kemarahan dari Fakfak",
             "category": "Karya Stand-Up Comedy Realitas Papua",
             "description": "Pertunjukan komedi tunggal yang membedah keabsurdan janji manis pembangunan dan penderitaan warga pedalaman Papua.",
-            "price": "Inisiatif Terbuka",
+            "price": "Mulai Rp 50.000 / tayang",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://comika.id",
@@ -9548,7 +8963,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Podcast Titik Kumpul & Dialog Lintas Perspektif",
             "category": "Kanal Audio Digital Kebangsaan",
             "description": "Program bincang-bincang santai yang membedah isu sosial, politik, dan kebudayaan tanpa sekat basa-basi bersama tokoh publik.",
-            "price": "Inisiatif Terbuka",
+            "price": "Mulai Rp 50.000 / tayang",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://youtube.com",
@@ -9666,16 +9081,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-sadana-agung-sulistya-1",
-            "profile_id": "gen-sadana-agung-sulistya",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Sadana Agung Sulistya dalam bidang Penjaga Tawa menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-sadana-agung-sulistya-1",
@@ -9683,7 +9089,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Spesial Show Komedi: Balada Wong Tani Kebumen",
             "category": "Karya Stand-Up Comedy Budaya Lokal",
             "description": "Pertunjukan komedi tunggal yang membedah romantika kehidupan pedesaan, birokrasi pupuk subsidi, dan ketangguhan mental petani Jawa.",
-            "price": "Inisiatif Terbuka",
+            "price": "Mulai Rp 50.000 / tayang",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://comika.id",
@@ -9695,7 +9101,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Serial Sketsa Komedi Perdesaan Sadana",
             "category": "Karya Audio-Visual Komedi Sawah",
             "description": "Rangkaian video komedi situasi di pematang sawah dan pos ronda yang memotret kehangatan serta kelucuan warga desa.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 50.000 — Rp 175.000 / akses",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://youtube.com",
@@ -9813,16 +9219,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-bene-dion-rajagukguk-1",
-            "profile_id": "gen-bene-dion-rajagukguk",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Bene Dion Rajagukguk dalam bidang Penjaga Tawa menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-bene-dion-rajagukguk-1",
@@ -9830,7 +9227,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Film Bioskop: Ngeri-Ngeri Sedap (Perwakilan Oscar Indonesia)",
             "category": "Karya Sinema Komedi Drama Keluarga & Budaya Batak",
             "description": "Film fenomenal yang membedah keharmonisan keluarga, luka adat, dan kerinduan orang tua pada anak rantau di tepian Danau Toba.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 50.000 — Rp 175.000 / akses",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://netflix.com",
@@ -9842,7 +9239,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Serial Film: Agak Laen (Box Office Historikal)",
             "category": "Karya Sinema Komedi Komunal & Hiburan Rakyat",
             "description": "Produksi film komedi horor yang memecahkan rekor box office sinema nasional dengan jutaan penonton lintas daerah.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 50.000 — Rp 175.000 / akses",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://ima-jinari.id",
@@ -9960,16 +9357,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-yono-bakrie-1",
-            "profile_id": "gen-yono-bakrie",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Yono Bakrie dalam bidang Penjaga Tawa menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-yono-bakrie-1",
@@ -9977,7 +9365,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Spesial Komedi Tunggal: Balada Perantau Samarinda",
             "category": "Karya Stand-Up Comedy Kelas Pekerja",
             "description": "Pertunjukan komedi tunggal yang membedah keabsurdan adaptasi anak daerah saat bertahan hidup di rimba metropolitan Jakarta.",
-            "price": "Inisiatif Terbuka",
+            "price": "Mulai Rp 50.000 / tayang",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://comika.id",
@@ -9989,7 +9377,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Serial Komedi Sketsa & Konten Relatable Warga",
             "category": "Karya Audio-Visual Komedi Situasional",
             "description": "Rangkaian sketsa komedi digital yang memotret dinamika kehidupan sehari-hari anak kos, ojek daring, dan pekerja paruh waktu.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 50.000 — Rp 175.000 / akses",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://youtube.com",
@@ -10107,16 +9495,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-nopek-novian-1",
-            "profile_id": "gen-nopek-novian",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Nopek Novian dalam bidang Penjaga Tawa menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-nopek-novian-1",
@@ -10124,7 +9503,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Spesial Komedi: Sambat Petani Saradan",
             "category": "Karya Stand-Up Comedy Budaya Perdesaan",
             "description": "Pertunjukan komedi tunggal yang membedah romantika kehidupan anak muda di pedesaan Jawa dan suka duka bertani.",
-            "price": "Inisiatif Terbuka",
+            "price": "Mulai Rp 50.000 / tayang",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://youtube.com",
@@ -10136,7 +9515,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Kanal Vlog Merakyat Nopek Novian",
             "category": "Dokumentasi Komedi Kehidupan Komunal",
             "description": "Serial video dokumentasi kehidupan desa, kuliner warung pinggir jalan, dan interaksi hangat bersama warga kampung.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 50.000 — Rp 175.000 / akses",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://youtube.com",
@@ -10254,16 +9633,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-dustin-tiffani-1",
-            "profile_id": "gen-dustin-tiffani",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Dustin Tiffani dalam bidang Penjaga Tawa menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-dustin-tiffani-1",
@@ -10271,7 +9641,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Program Komedi: Pingin Siaran & Majelis Lucu",
             "category": "Karya Komedi Absurd & Dialog Spontan Digital",
             "description": "Serial bincang-bincang komedi improvisasi yang menampilkan gaya berpikir unik dan reaksi spontan Dustin yang viral jutaan kali.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 50.000 — Rp 175.000 / akses",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://youtube.com",
@@ -10283,7 +9653,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Serial Sketsa Komedi Perkantoran & Percetakan",
             "category": "Karya Audio-Visual Komedi Kelas Pekerja",
             "description": "Sketsa komedi yang mengangkat lika-liku perjuangan pekerja percetakan fotokopi dan buruh harian lepas perkotaan.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 50.000 — Rp 175.000 / akses",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://youtube.com",
@@ -10418,16 +9788,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-ferry-irwandi-1",
-            "profile_id": "gen-ferry-irwandi",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Ferry Irwandi dalam bidang Pencerah Generasi menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-ferry-irwandi-1",
@@ -10435,7 +9796,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Investigasi & Pembongkaran Matematika Judi Online",
             "category": "Riset Finansial & Advokasi Publik",
             "description": "Pembedahan saintifik tentang probabilitas bandar judi online dan arsitektur penipuan finansial digital yang menguras kantong jutaan warga.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Mulai Rp 99.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://youtube.com/@ferryirwandi",
@@ -10447,7 +9808,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Malaka Project (Platform Video Esai Nalar Kritis)",
             "category": "Media Riset & Diskursus Independen",
             "description": "Platform video esai berbobot dengan jutaan pelanggan yang menguliti isu filsafat praktis, ekonomi makro, dan kesadaran politik anak muda.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Mulai Rp 99.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://malakaproject.id",
@@ -10565,16 +9926,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-najwa-shihab-1",
-            "profile_id": "gen-najwa-shihab",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Najwa Shihab dalam bidang Pencerah Generasi menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-najwa-shihab-1",
@@ -10582,7 +9934,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Mata Najwa (Program Dialog Politik & Akuntabilitas)",
             "category": "Jurnalisme Investigasi & Talkshow Kebijakan Publik",
             "description": "Program bincang-bincang politik independen yang menjadi rujukan warga dalam menguji integritas para calon pemimpin dan pembuat kebijakan.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Mulai Rp 99.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://narasi.tv",
@@ -10594,7 +9946,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Narasi TV & Narasi Newsroom (Investigasi Open Source)",
             "category": "Ekosistem Media Digital Warga & Investigasi OSINT",
             "description": "Redaksi jurnalisme data yang mengungkap pembajakan ruang publik, kekerasan aparat, dan penyelewengan kekuasaan.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Mulai Rp 99.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://narasi.tv",
@@ -10712,16 +10064,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-gita-wirjawan-1",
-            "profile_id": "gen-gita-wirjawan",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Gita Wirjawan dalam bidang Pencerah Generasi menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-gita-wirjawan-1",
@@ -10729,7 +10072,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Endgame Podcast (Siniar Geopolitik & Sains Masa Depan)",
             "category": "Media Edukasi Wawasan Global & Wawancara Mendalam",
             "description": "Platform dialog intelektual berkualitas tinggi yang membedah arsitektur kecerdasan buatan, energi terbarukan, dan sejarah peradaban bangsa.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 199.000 — Rp 1.450.000 / paket",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://youtube.com/@GitaWirjawan",
@@ -10741,7 +10084,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Ancora Foundation (Beasiswa Pendidikan Tinggi Global)",
             "category": "Filantropi Pendidikan & Pembinaan Kepemimpinan",
             "description": "Yayasan beasiswa yang telah mengirimkan ratusan talenta terbaik Indonesia menempuh studi magister dan doktoral di Harvard, Oxford, dan Cambridge.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Mulai Rp 99.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://ancorafoundation.com",
@@ -10859,16 +10202,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-kalis-mardiasih-1",
-            "profile_id": "gen-kalis-mardiasih",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Kalis Mardiasih dalam bidang Pencerah Generasi menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-kalis-mardiasih-1",
@@ -10876,7 +10210,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Buku: Muslimah yang Memperdebatkan Kepalsuan",
             "category": "Karya Literatur Fiqih Emansipatoris & Gender",
             "description": "Kumpulan esai reflektif yang membongkar bias patriarki dalam penafsiran agama dan membela otonomi perempuan.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 85.000 — Rp 185.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://www.gramedia.com",
@@ -10888,7 +10222,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Buku: Hijrah Jangan Jauh-Jauh, Nanti Lupa Pulang",
             "category": "Kritik Sosial Fenomena Keagamaan Populer",
             "description": "Pembedahan fenomena hijrah instan perkotaan yang kerap melupakan etika kesantunan dan empati sosial sehari-hari.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 85.000 — Rp 185.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://www.gramedia.com",
@@ -11006,16 +10340,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-gerald-sebastian-1",
-            "profile_id": "gen-gerald-sebastian",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Gerald Sebastian dalam bidang Pencerah Generasi menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-gerald-sebastian-1",
@@ -11023,7 +10348,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Kanal YouTube Kok Bisa? (Platform Animasi Edukasi Terbesar)",
             "category": "Media Edukasi Sains Populer & Animasi Digital",
             "description": "Koleksi ratusan video animasi berstandar riset ilmiah yang telah ditonton lebih dari 700 juta kali oleh pelajar dan keluarga Indonesia.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 199.000 — Rp 1.450.000 / paket",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://youtube.com/@KokBisa",
@@ -11035,7 +10360,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Buku: Kok Bisa? Tanya Jawab Sains Seru Dunia",
             "category": "Karya Literatur Sains Populer Anak & Remaja",
             "description": "Buku visual interaktif yang merangkum misteri sains biologi, fisika, dan teknologi dalam bahasa sederhana yang menyenangkan.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 85.000 — Rp 185.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://www.gramedia.com",
@@ -11153,16 +10478,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-heni-sri-sundani-1",
-            "profile_id": "gen-heni-sri-sundani",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Heni Sri Sundani dalam bidang Pencerah Generasi menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-heni-sri-sundani-1",
@@ -11170,7 +10486,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Gerakan Anak Petani Cerdas (Komunitas Belajar Desa Gratis)",
             "category": "Pendidikan Transformatif & Pengentasan Buta Aksara",
             "description": "Pusat belajar alternatif yang menyediakan bimbingan literasi, komputer, dan bahasa asing gratis bagi ribuan anak petani di Jawa Barat.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Mulai Rp 99.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://sektorlokal.id",
@@ -11182,7 +10498,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "AgroEdu Jampang (Agrowisata Edukasi Pertanian Mandiri)",
             "category": "Kewirausahaan Sosial Agribisnis Berkelanjutan",
             "description": "Unit usaha pertanian organik yang menjadi laboratorium belajar bercocok tanam sekaligus menopang operasional sekolah gratis anak petani.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Mulai Rp 99.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://sektorlokal.id",
@@ -11300,16 +10616,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-angga-fauzan-1",
-            "profile_id": "gen-angga-fauzan",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Angga Fauzan dalam bidang Pencerah Generasi menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-angga-fauzan-1",
@@ -11317,7 +10624,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "MySkill.id (Platform Upskilling Karier & E-Learning Digital)",
             "category": "EduTech Keterampilan Kerja & Bootcamp Vokasi",
             "description": "Platform pembelajaran karier daring terpadu yang menyediakan ratusan modul video interaktif, bootcamp intensif, dan bimbingan portofolio kerja.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 199.000 — Rp 1.450.000 / paket",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://myskill.id",
@@ -11329,7 +10636,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Program Beasiswa Upskilling Talenta Daerah Prasejahtera",
             "category": "Inklusi Digital & Akselerasi Karier Pemuda",
             "description": "Penyaluran ribuan beasiswa pelatihan skill digital gratis bagi mahasiswa dan lulusan baru dari keluarga kurang mampu di luar Pulau Jawa.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Mulai Rp 99.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://myskill.id",
@@ -11447,16 +10754,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-alanda-kariza-1",
-            "profile_id": "gen-alanda-kariza",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Alanda Kariza dalam bidang Pencerah Generasi menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-alanda-kariza-1",
@@ -11464,7 +10762,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Indonesian Youth Conference (IYC & Sinergi Muda)",
             "category": "Gerakan Kepemudaan & Advokasi Kebijakan Publik",
             "description": "Konferensi tahunan pemuda lintas nusantara yang memfasilitasi dialog langsung antara pemuda daerah dengan para pemimpin bangsa.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Mulai Rp 99.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://sinergimuda.org",
@@ -11476,7 +10774,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Buku: Muda, Berdaya, Berkarya & Surat Penggemar",
             "category": "Karya Literatur Kepemudaan & Esai Sosial",
             "description": "Kumpulan tulisan inspiratif memandu pemuda menemukan panggilan kepemimpinan dan merintis inisiatif sosial mandiri.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 85.000 — Rp 185.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://www.gramedia.com",
@@ -11594,16 +10892,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-felicia-putri-tjiasaka-1",
-            "profile_id": "gen-felicia-putri-tjiasaka",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Felicia Putri Tjiasaka dalam bidang Pencerah Generasi menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-felicia-putri-tjiasaka-1",
@@ -11611,7 +10900,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Platform Edukasi Literasi Keuangan Felicia Tjiasaka",
             "category": "Edukasi Finansial & Analisis Pasar Modal Terbuka",
             "description": "Kanal edukasi keuangan dengan jutaan pengikut yang membedah alur laporan keuangan, portofolio investasi, dan perencanaan pensiun.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 199.000 — Rp 1.450.000 / paket",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://youtube.com/@FeliciaPutriTjiasaka",
@@ -11623,7 +10912,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Ternak Uang (Aplikasi Belajar Investasi Generasi Muda)",
             "category": "Fintech EduTech & Komunitas Investor Pemula",
             "description": "Platform pembelajaran modul investasi saham, reksadana, dan properti yang membimbing ratusan ribu investor muda Indonesia.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 199.000 — Rp 1.450.000 / paket",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://ternakuang.id",
@@ -11741,16 +11030,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-dr-indrawan-nugroho-1",
-            "profile_id": "gen-dr-indrawan-nugroho",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Dr. Indrawan Nugroho dalam bidang Pencerah Generasi menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-dr-indrawan-nugroho-1",
@@ -11758,7 +11038,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "CiAS (Corporate Innovation Asia)",
             "category": "Konsultansi Strategi Inovasi & Transformasi Bisnis",
             "description": "Firma konsultan inovasi terdepan yang mendesain arsitektur transformasi korporasi dan inkubasi unit bisnis baru.",
-            "price": "Inisiatif Terbuka",
+            "price": "Akses Terbuka / Mulai Rp 99.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://cias.co",
@@ -11770,7 +11050,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Kanal Analisis Strategi Bisnis Dr. Indrawan Nugroho",
             "category": "Media Edukasi Manajemen & Studi Kasus Disrupsi",
             "description": "Koleksi ratusan video studi kasus mendalam tentang inovasi teknologi, manajemen kepemimpinan, dan persaingan pasar global.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 199.000 — Rp 1.450.000 / paket",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://youtube.com/@IndrawanNugroho",
@@ -11888,16 +11168,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-carina-joe-1",
-            "profile_id": "gen-carina-joe",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Dr. Carina Joe dalam bidang Duta Talenta menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-carina-joe-1",
@@ -11905,7 +11176,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Scale-Up Biomanufaktur Vaksin Oxford-AstraZeneca",
             "category": "Rekayasa Bioteknologi & Kesehatan Global",
             "description": "Metode manufaktur skala industri untuk memproduksi vaksin vektor adenovirus bervolume tinggi dengan efisiensi biaya maksimal.",
-            "price": "Inisiatif Terbuka",
+            "price": "Karya Budaya / Mulai Rp 75.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://www.ndm.ox.ac.uk",
@@ -11917,7 +11188,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Riset Sel Punca & Sistem Formulasi Protein Rekombinan",
             "category": "Publikasi Saintifik Internasional",
             "description": "Kumpulan jurnal ilmiah tentang stabilitas formulasi biologi dan rekayasa ekspresi protein untuk terapi penyakit menular.",
-            "price": "Inisiatif Terbuka",
+            "price": "Karya Budaya / Mulai Rp 75.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://pubmed.ncbi.nlm.nih.gov",
@@ -12035,16 +11306,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-griselda-sastrawinata-1",
-            "profile_id": "gen-griselda-sastrawinata",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Griselda Sastrawinata-Lemay dalam bidang Duta Talenta menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-griselda-sastrawinata-1",
@@ -12052,7 +11314,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Desain Produksi Visual Moana & Moana 2 (Disney)",
             "category": "Desain Seni Sinema Animasi Global",
             "description": "Rancangan visual kostum Tapa cloth, perahu tradisional Wayfinding, dan estetika visual samudera Pasifik.",
-            "price": "Inisiatif Terbuka",
+            "price": "Tiket Nonton / VOD Rp 45.000 — Rp 75.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://disneyanimation.com",
@@ -12064,7 +11326,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Visual Development & Costume Design 'Raya and the Last Dragon'",
             "category": "Visual Development & Wastra Nusantara",
             "description": "Eksplorasi motif kain ikat, batik, dan ornamen arsitektur tradisional rumpun Asia Tenggara ke dalam dunia Kumandra.",
-            "price": "Inisiatif Terbuka",
+            "price": "Karya Budaya / Mulai Rp 75.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://disneyanimation.com",
@@ -12182,16 +11444,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-iko-uwais-1",
-            "profile_id": "gen-iko-uwais",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Iko Uwais dalam bidang Duta Talenta menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-iko-uwais-1",
@@ -12199,7 +11452,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "The Raid: Redemption & The Raid 2 (Sinema Laga)",
             "category": "Film Aksi & Koreografi Pencak Silat",
             "description": "Karya sinema laga revolusioner yang memperkenalkan teknik silat gerak cepat dan pertarungan ruang sempit ke kancah global.",
-            "price": "Inisiatif Terbuka",
+            "price": "Tiket Nonton / VOD Rp 45.000 — Rp 75.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://www.imdb.com/title/tt1899353",
@@ -12211,7 +11464,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Uwais Team (Kolektif Koreografer & Stunt Silat)",
             "category": "Koreografi Laga & Manajemen Stuntman",
             "description": "Pusat pelatihan dan penyedia koreografi aksi laga profesional Indonesia untuk industri sinema Hollywood dan Asia.",
-            "price": "Inisiatif Terbuka",
+            "price": "Karya Budaya / Mulai Rp 75.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://instagram.com/iko.uwais",
@@ -12329,16 +11582,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-joey-alexander-1",
-            "profile_id": "gen-joey-alexander",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Joey Alexander dalam bidang Duta Talenta menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-joey-alexander-1",
@@ -12346,7 +11590,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Album 'My Favorite Things' (Motéma Music)",
             "category": "Album Rekaman Jazz & Grammy Nominee",
             "description": "Album debut bersejarah berisi aransemen ulang mahakarya jazz klasik yang memuncaki tangga lagu Billboard Jazz.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 350.000 — Rp 650.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://joeyalexandermusic.com",
@@ -12358,7 +11602,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Album 'Origin' (Verve / Mack Avenue)",
             "category": "Komposisi Musik Orisinil",
             "description": "Album penuh pertama berisi seluruh karya cipta orisinil Joey Alexander yang menampilkan kematangan eksplorasi harmoni dan ritme.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 350.000 — Rp 650.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://joeyalexandermusic.com",
@@ -12476,16 +11720,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-muhammad-arief-budiman-1",
-            "profile_id": "gen-muhammad-arief-budiman",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Muhammad Arief Budiman, Ph.D. dalam bidang Duta Talenta menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-muhammad-arief-budiman-1",
@@ -12493,7 +11728,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Publikasi Peta Genom Kelapa Sawit (Jurnal Nature)",
             "category": "Publikasi Riset Saintifik Dunia",
             "description": "Pemetaan urutan DNA kelapa sawit dan penemuan gen penentu ketebalan cangkang buah yang meningkatkan rendemen minyak sawit lestari.",
-            "price": "Inisiatif Terbuka",
+            "price": "Karya Budaya / Mulai Rp 75.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://www.nature.com/articles/nature12309",
@@ -12505,7 +11740,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Teknologi Deteksi Dini Bibit Sawit Unggul Berkelanjutan",
             "category": "Bioteknologi Agrikultur Terapan",
             "description": "Metode molekuler untuk mendeteksi varietas tanaman produktif tinggi sejak benih guna mencegah deforestasi lahan.",
-            "price": "Inisiatif Terbuka",
+            "price": "Karya Budaya / Mulai Rp 75.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://oriongenomics.com",
@@ -12623,16 +11858,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-niki-zefanya-1",
-            "profile_id": "gen-niki-zefanya",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas NIKI (Niki Zefanya) dalam bidang Duta Talenta menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-niki-zefanya-1",
@@ -12640,7 +11866,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Penampilan Bersejarah di Coachella Music Festival (2022)",
             "category": "Pementasan Musik Panggung Dunia",
             "description": "Penampilan spektakuler membawakan lagu 'Sempurna' dan karya orisinil di festival musik terbesar Amerika Serikat.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rilisan Digital / Fisik Rp 49.000 — Rp 250.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://youtube.com/watch?v=coachella",
@@ -12652,7 +11878,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Album Studio 'Nicole' & 'Buzz' (88rising / Virgin Music)",
             "category": "Album Rekaman Pop-R&B Kontemporer",
             "description": "Album reflektif berisi lagu-lagu hit global seperti 'High School in Jakarta', 'Oceans & Engines', dan 'Backburner'.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 350.000 — Rp 650.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://nikizefanya.com",
@@ -12770,16 +11996,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-adi-utarini-1",
-            "profile_id": "gen-adi-utarini",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Prof. dr. Adi Utarini, M.Sc., MPH, Ph.D. dalam bidang Duta Talenta menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-adi-utarini-1",
@@ -12787,7 +12004,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Uji Klinis Aplikasi Wolbachia Melawan Demam Berdarah (NEJM)",
             "category": "Publikasi Medis Kelas Dunia & Uji Klinis",
             "description": "Studi ilmiah acak terkendali efektivitas Wolbachia yang menjadi standar emas rujukan penanganan DBD global oleh WHO.",
-            "price": "Inisiatif Terbuka",
+            "price": "Karya Budaya / Mulai Rp 75.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2030243",
@@ -12799,7 +12016,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Buku: Menggugah Partisipasi Masyarakat dalam Sains Biomedis",
             "category": "Karya Literatur Komunikasi Sains",
             "description": "Panduan integrasi riset ilmiah biomedis mutakhir dengan pendekatan sosiologis kader posyandu dan tokoh masyarakat kampung.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 85.000 — Rp 185.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://ugm.ac.id",
@@ -12917,16 +12134,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-prof-ken-soetanto-1",
-            "profile_id": "gen-prof-ken-soetanto",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Prof. Ken Kawan Soetanto dalam bidang Duta Talenta menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-prof-ken-soetanto-1",
@@ -12934,7 +12142,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Paten Teknologi Microbubble Terapi Kanker Ultrasonik",
             "category": "Paten Biomedis Internasional & Terapi Medis",
             "description": "Sistem penghantaran obat tertarget memanfaatkan gelombang ultrasonik dan partikel mikro-gelembung untuk membasmi sel kanker tanpa merusak jaringan sehat.",
-            "price": "Inisiatif Terbuka",
+            "price": "Karya Budaya / Mulai Rp 75.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://patents.google.com",
@@ -12946,7 +12154,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Metode Pembelajaran Motivasi 'Soetanto Effect'",
             "category": "Pedagogi Pendidikan & Psikologi Belajar",
             "description": "Metode pendidikan interaktif yang diadopsi di berbagai universitas Jepang untuk mengubah mahasiswa berpestasi rendah menjadi peneliti unggul.",
-            "price": "Inisiatif Terbuka",
+            "price": "Karya Budaya / Mulai Rp 75.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://www.waseda.jp",
@@ -13064,16 +12272,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-rich-brian-1",
-            "profile_id": "gen-rich-brian",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Rich Brian (Brian Imanuel) dalam bidang Duta Talenta menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-rich-brian-1",
@@ -13081,7 +12280,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Album 'The Sailor' (88rising / 12Tone Music)",
             "category": "Album Rekaman Hip-Hop Sinematik",
             "description": "Album konsep naratif yang memotret pencarian jati diri perantau muda Asia melintasi samudera mimpi dunia.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 350.000 — Rp 650.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://richbrian.com",
@@ -13093,7 +12292,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Lagu & Video Musik 'Kids' (Refleksi Generasi)",
             "category": "Karya Musik & Representasi Budaya",
             "description": "Lagu reflektif bertenaga tentang anak-anak muda Asia yang mendobrak stereotip global dan menjadi tuan di panggung dunia.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rilisan Digital / Fisik Rp 49.000 — Rp 250.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://youtube.com/watch?v=kids",
@@ -13211,16 +12410,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-william-wongso-1",
-            "profile_id": "gen-william-wongso",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas William Wongso dalam bidang Duta Talenta menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-william-wongso-1",
@@ -13228,7 +12418,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Buku 'Flavors of Indonesia: William Wongso's Culinary Wonders'",
             "category": "Literatur Gastronomi Dunia & Best Cookbook of the Year",
             "description": "Ensiklopedi kuliner nusantara komprehensif yang membedah keunikan bumbu, teknik memasak purba, dan filosofi makanan daerah.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 85.000 — Rp 185.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://www.williamwongso.com",
@@ -13240,7 +12430,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Akuisisi Bumbu Otentik 'William Wongso Kuliner' (Bumbu Siap Pakai)",
             "category": "Hilirisasi Kuliner Tradisional Mandiri",
             "description": "Inisiatif standardisasi bumbu pasta rempah tradisional nusantara siap masak tanpa pengawet sintetis untuk pasar global.",
-            "price": "Inisiatif Terbuka",
+            "price": "Karya Budaya / Mulai Rp 75.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://williamwongso.com",
@@ -13358,16 +12548,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-arief-muhammad-1",
-            "profile_id": "gen-arief-muhammad",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Arief Muhammad dalam bidang Panggung Ekspresi menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-arief-muhammad-1",
@@ -13375,7 +12556,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Jaringan Rumah Makan Padang Payakumbuah",
             "category": "Kewirausahaan Kuliner & Rantai Pasok Lokal",
             "description": "Jaringan restoran Minang modern yang menggunakan bahan baku otentik (beras solok, cabai keriting, kelapa) langsung dari petani Sumatra Barat.",
-            "price": "Inisiatif Terbuka",
+            "price": "Karya Budaya / Mulai Rp 75.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://payakumbuah.id",
@@ -13387,7 +12568,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Gerakan Berbagi Digital 'Ikoy-Ikoyan'",
             "category": "Aksi Solidaritas & Filantropi Kreator",
             "description": "Fenomena berbagi rezeki tanpa syarat di media sosial yang membantu ribuan warga terdampak ekonomi krisis pandemi.",
-            "price": "Inisiatif Terbuka",
+            "price": "Karya Budaya / Mulai Rp 75.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://instagram.com/ariefmuhammad",
@@ -13505,16 +12686,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-denny-sumargo-1",
-            "profile_id": "gen-denny-sumargo",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Denny Sumargo dalam bidang Panggung Ekspresi menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-denny-sumargo-1",
@@ -13522,7 +12694,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Siniar 'Curhat Bang Denny Sumargo' (Ruang Mediasi Publik)",
             "category": "Talkshow Humaniora & Mediasi Masalah Sosial",
             "description": "Platform dialog intim jutaan penonton yang mengangkat kisah-kisah perjuangan hidup, penebusan dosa masa lalu, dan resolusi konflik sosial.",
-            "price": "Inisiatif Terbuka",
+            "price": "Karya Budaya / Mulai Rp 75.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://youtube.com/@curhatbang",
@@ -13534,7 +12706,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Peran Sinema 'A Man Called Ahok' & 'Miracle in Cell No. 7'",
             "category": "Seni Peran Layar Lebar",
             "description": "Penampilan akting dramatis berkarakter kuat yang menuai apresiasi luas dari kritikus film dan festival perfilman nasional.",
-            "price": "Inisiatif Terbuka",
+            "price": "Karya Budaya / Mulai Rp 75.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://www.imdb.com/name/nm5436605",
@@ -13652,16 +12824,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-diwantara-anugrah-putra-1",
-            "profile_id": "gen-diwantara-anugrah-putra",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Diwantara Anugrah Putra (Tara Arts) dalam bidang Panggung Ekspresi menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-diwantara-anugrah-putra-1",
@@ -13669,7 +12832,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Kanal Hiburan & Serial Film Pendek VFX 'Tara Arts Movie'",
             "category": "Produksi Film Pendek Efek Visual Mandiri",
             "description": "Koleksi ratusan video parodi aksi dan sains fiksi mandiri dengan standar compositing visual effect internasional.",
-            "price": "Inisiatif Terbuka",
+            "price": "Tiket Nonton / VOD Rp 45.000 — Rp 75.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://youtube.com/@taraartsmovie",
@@ -13681,7 +12844,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Tara Arts Game Indonesia (Platform Gaming Komedi)",
             "category": "Kreator Konten & Komunitas Video Interaktif",
             "description": "Kanal gaming legendaris dengan jutaan subscriber yang mengedepankan etika bermain sportif dan komedi improvisasi santun.",
-            "price": "Inisiatif Terbuka",
+            "price": "Karya Budaya / Mulai Rp 75.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://youtube.com/@taraartsgameindonesia",
@@ -13799,16 +12962,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-dzawin-nur-ikram-1",
-            "profile_id": "gen-dzawin-nur-ikram",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Dzawin Nur Ikram dalam bidang Panggung Ekspresi menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-dzawin-nur-ikram-1",
@@ -13816,7 +12970,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Serial Dokumenter Ekspedisi Gunung & Budaya Desa",
             "category": "Dokumenter Petualangan & Refleksi Budaya",
             "description": "Dokumentasi audio-visual pendakian gunung dengan narasi sastrawi yang menyorot kearifan lokal masyarakat lereng pegunungan.",
-            "price": "Inisiatif Terbuka",
+            "price": "Tiket Nonton / VOD Rp 45.000 — Rp 75.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://youtube.com/@dzawinnur",
@@ -13828,7 +12982,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Kampanye Etika Pendakian 'Gunung Bukan Tempat Sampah'",
             "category": "Konservasi Lingkungan & Advokasi Alam",
             "description": "Gerakan edukasi masif kepada ribuan pendaki muda untuk membawa pulang kembali sampah plastik dari atas gunung.",
-            "price": "Inisiatif Terbuka",
+            "price": "Karya Budaya / Mulai Rp 75.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://instagram.com/dzawin_nur",
@@ -13946,16 +13100,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-eno-bening-1",
-            "profile_id": "gen-eno-bening",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Eno Bening dalam bidang Panggung Ekspresi menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-eno-bening-1",
@@ -13963,7 +13108,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Pembedahan Kritis Dinamika Budaya Internet & Algoritma",
             "category": "Video Esai & Kritik Media Digital",
             "description": "Rangkaian video esai analitis yang membedah arsitektur psikologi platform media sosial, polarisasi digital, dan manipulasi perhatian.",
-            "price": "Inisiatif Terbuka",
+            "price": "Karya Budaya / Mulai Rp 75.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://youtube.com/@enobening",
@@ -13975,7 +13120,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Modul Edukasi 'Social Media Literacy & Digital Awareness'",
             "category": "Kurikulum Pendidikan Literasi Digital",
             "description": "Panduan praktis bagi orang tua dan remaja untuk menavigasi disinformasi, privasi data, dan kecanduan algoritma di ruang digital.",
-            "price": "Inisiatif Terbuka",
+            "price": "Karya Budaya / Mulai Rp 75.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://enobening.com",
@@ -14093,16 +13238,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-gritte-agatha-1",
-            "profile_id": "gen-gritte-agatha",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Gritte Agatha dalam bidang Panggung Ekspresi menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-gritte-agatha-1",
@@ -14110,7 +13246,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Siniar 'Gritte Buka Praktek' (GBP)",
             "category": "Siniar Humaniora & Advokasi Sosial",
             "description": "Program wawancara mendalam yang mengangkat kisah ketabahan hidup para penyintas penyakit kronis dan figur inspiratif akar rumput.",
-            "price": "Inisiatif Terbuka",
+            "price": "Karya Budaya / Mulai Rp 75.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://youtube.com/@gritteagatha",
@@ -14122,7 +13258,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Film Pendek 'Prank' & Karya Sinema Independen",
             "category": "Penyutradaraan Sinema & Edukasi Sosial",
             "description": "Karya film pendek naratif yang mengedukasi bahaya perundungan (*bullying*) dan pentingnya komunikasi sehat dalam keluarga.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 199.000 — Rp 1.450.000 / paket",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://youtube.com/@gritteagatha",
@@ -14240,16 +13376,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-jovial-andovi-da-lopez-1",
-            "profile_id": "gen-jovial-andovi-da-lopez",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Jovial & Andovi da Lopez (SkinnyIndonesian24) dalam bidang Panggung Ekspresi menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-jovial-andovi-da-lopez-1",
@@ -14257,7 +13384,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "DPR Musikal (Pertunjukan Musikal Satir Konstitusi)",
             "category": "Teater Musikal & Kritik Kebijakan Publik",
             "description": "Mahakarya teater musikal orisinil berdurasi penuh yang membongkar korupsi politik dan pengkhianatan amanat rakyat di gedung dewan.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rilisan Digital / Fisik Rp 49.000 — Rp 250.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://youtube.com/watch?v=dprmusikal",
@@ -14269,7 +13396,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Serial 'Epic Rap Battles of Presidents' (1 s.d. 3)",
             "category": "Produksi Hip-Hop Musikal Sejarah Bangsa",
             "description": "Karya musikal sinematik yang mempertemukan para tokoh proklamator dan presiden Indonesia dalam debat gagasan kebangsaan.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rilisan Digital / Fisik Rp 49.000 — Rp 250.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://youtube.com/@skinnyindonesian24",
@@ -14387,16 +13514,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-leonardo-edwin-1",
-            "profile_id": "gen-leonardo-edwin",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Leonardo Edwin dalam bidang Panggung Ekspresi menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-leonardo-edwin-1",
@@ -14404,7 +13522,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Serial Dokumenter Sinematik 'Sabang Sampai Merauke'",
             "category": "Dokumenter Budaya & Eksplorasi Geografi Indonesia",
             "description": "Serial perjalanan sinematik yang mendokumentasikan keindahan alam tersembunyi, tradisi adat, dan kehidupan sosial di pulau-pulau terpencil.",
-            "price": "Inisiatif Terbuka",
+            "price": "Tiket Nonton / VOD Rp 45.000 — Rp 75.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://youtube.com/@leoedw",
@@ -14416,7 +13534,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Buku 'Menjelajah Batas: Catatan Perantau Muda'",
             "category": "Karya Literatur Memoar & Motivasi Belajar",
             "description": "Kisah memoar perjalanan beradaptasi di negeri asing, menembus batasan rasa takut, dan menemukan kembali cinta pada tanah kelahiran.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 85.000 — Rp 185.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://gramedia.com",
@@ -14534,16 +13652,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-nessie-judge-1",
-            "profile_id": "gen-nessie-judge",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Nessie Judge dalam bidang Panggung Ekspresi menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-nessie-judge-1",
@@ -14551,7 +13660,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Serial Investigasi Kasus Nyata & Forensik 'NERROR'",
             "category": "Video Esai Investigasi & Forensik Kriminal",
             "description": "Serial video riset berbasis data investigasi mendalam yang membedah kasus kejahatan global dan misteri sejarah dunia secara saintifik.",
-            "price": "Inisiatif Terbuka",
+            "price": "Karya Budaya / Mulai Rp 75.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://youtube.com/@nessiejudge",
@@ -14563,7 +13672,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Siniar Eksklusif 'The Nerror Podcast' (Spotify Original)",
             "category": "Siniar Audio Sinematik & Profil Psikologi Kriminal",
             "description": "Produksi siniar audio berbasis teater suara yang mengupas profil psikologis pelaku kejahatan dan kronologi misteri tak terpecahkan.",
-            "price": "Inisiatif Terbuka",
+            "price": "Tiket Nonton / VOD Rp 45.000 — Rp 75.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://open.spotify.com",
@@ -14681,16 +13790,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "order_index": 1
         }
     ],
-    "testimonials": [
-        {
-            "id": "t-raditya-dika-1",
-            "profile_id": "gen-raditya-dika",
-            "author_name": "Redaksi Sektor Lokal",
-            "author_role": "Dewan Kurator Warga",
-            "quote": "Dedikasi dan integritas Raditya Dika dalam bidang Panggung Ekspresi menjadi teladan otentik gerakan kemandirian bangsa.",
-            "order_index": 1
-        }
-    ],
+    "testimonials": [],
     "initiatives": [
         {
             "id": "i-raditya-dika-1",
@@ -14698,7 +13798,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Buku-Buku Mahakarya Komedi Bestseller Nasional (Kambing Jantan s.d. Ubur-Ubur Lembur)",
             "category": "Karya Literatur Komedi & Fenomena Perbukuan",
             "description": "Seri buku kumpulan esai komedi personal yang telah dicetak jutaan eksemplar dan menginspirasi jutaan generasi muda untuk menulis.",
-            "price": "Inisiatif Terbuka",
+            "price": "Rp 85.000 — Rp 185.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://gagasmedia.net",
@@ -14710,7 +13810,7 @@ export const fallbackProfiles: Record<string, FullProfileData> = {
             "title": "Filmografi Sinema Box Office (Single, Hangout, Malam Minggu Miko)",
             "category": "Penyutradaraan & Penulisan Skenario Sinema",
             "description": "Karya-karya sinema komedi cerdas yang mengawinkan genre romantis, misteri, dan satire kehidupan urban.",
-            "price": "Inisiatif Terbuka",
+            "price": "Tiket Nonton / VOD Rp 45.000 — Rp 75.000",
             "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
             "action_text": "Dukung Inisiatif",
             "link_url": "https://imdb.com",

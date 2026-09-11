@@ -28,6 +28,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '1999 — 2005', 'KONGRES PERTAMA MASYARAKAT ADAT & ADVOKASI PBB', 'Terlibat dalam pembentukan AMAN dan memimpin advokasi hak-hak masyarakat adat di forum UN Permanent Forum on Indigenous Issues di New York.', 1);
@@ -45,6 +47,10 @@ BEGIN
   VALUES (v_profile_id, 'Tanah Adat Bukan Komoditas: Mengapa Perlindungan Hutan Ulayat Adalah Kunci Selamat dari Krisis Iklim', 'HAK MASYARAKAT ADAT', '8 Menit Membaca', 'Analisis Rukka Sombolinggi tentang peran masyarakat adat sebagai penjaga 80% keanekaragaman hayati bumi.', 'Data sains global membuktikan bahwa tutupan hutan yang paling terjaga dan memiliki serapan karbon tertinggi di dunia adalah hutan yang dikelola oleh masyarakat adat berdasarkan hukum adat. Mengkriminalisasi masyarakat adat sama saja dengan menghancurkan pertahanan iklim kita sendiri.', '/artikel/rukka-sombolinggi-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Menagih Janji RUU Masyarakat Adat: Dua Dekade Terkatung-katung di Meja Parlemen', 'ADVOCACY & HUKUM', '7 Menit Membaca', 'Catatan kritis atas lambannya kemauan politik negara dalam mengakui hak konstitusional jutaan warga adat.', 'Negara tidak boleh terus memandang masyarakat adat sebagai objek ilegal di tanah kelahirannya sendiri. Pengesahan RUU Masyarakat Adat adalah utang sejarah Republik yang harus segera dilunasi demi keadilan antargenerasi.', '/artikel/rukka-sombolinggi-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'AMAN (Aliansi Masyarakat Adat Nusantara)', 'Organisasi Gerakan Hak Asasi & Kedaulatan Wilayah Adat', 'Gerakan masyarakat sipil adat terbesar di dunia yang mengadvokasi pengakuan hukum, perlindungan hutan ulayat, dan sekolah adat.', 'Swadaya Solidaritas Warga', 'Dukung Inisiatif', 'https://aman.or.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Badan Registrasi Wilayah Adat (BRWA)', 'Sistem Informasi Geografis & Pemetaan Partisipatif', 'Lembaga pemetaan wilayah adat berbasis data spasial dan sosial mandiri yang telah mendaftarkan belasan juta hektare tanah leluhur.', 'Akses Terbuka / Donasi Swadaya', 'Dukung Inisiatif', 'https://brwa.or.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: dr. Lie Dharmawan (dr-lie-dharmawan)
@@ -74,6 +80,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2009', 'PENDIRIAN DOCTORSHARE (YAYASAN DOKTER PEDULI)', 'Mendirikan doctorSHARE bersama relawan medis muda untuk memberikan pelayanan kesehatan cuma-cuma bagi korban bencana dan masyarakat terisolasi.', 1);
@@ -91,6 +99,10 @@ BEGIN
   VALUES (v_profile_id, 'Membedah di Atas Gelombang Samudra: Kisah dr. Lie Dharmawan dan Rumah Sakit Apung Pertama Dunia', 'KEMANUSIAAN MEDIS', '8 Menit Membaca', 'Catatan perjuangan para dokter relawan melakukan operasi bedah darurat di tengah goyangan ombak laut timur Indonesia.', 'Ketika lampu ruang operasi dinyalakan di lambung kapal kayu dan pisau bedah digerakkan di tengah hempasan ombak Samudra Pasifik, semua sekat suku, agama, dan status sosial runtuh. Yang ada hanyalah sumpah suci menyelamatkan nyawa manusia yang paling membutuhkan pertolongan.', '/artikel/dr-lie-dharmawan-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Menjual Rumah demi Membeli Kapal: Mengapa Pengabdian Tidak Mengenal Hitung-Hitungan Bisnis', 'INSPIRASI HIDUP', '7 Menit Membaca', 'Refleksi filosofis dr. Lie Dharmawan tentang hakikat kekayaan sejati seorang manusia.', 'Uang dan rumah mewah akan habis ditinggalkan saat kita mati. Namun senyum seorang ibu yang anaknya berhasil diselamatkan dari maut di atas kapal bedah adalah harta abadi yang tidak ternilai oleh apa pun di dunia ini.', '/artikel/dr-lie-dharmawan-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Rumah Sakit Apung (RSA) doctorSHARE', 'Inovasi Fasilitas Medis Maritim Swadaya', 'Armada kapal bedah terapung berstandar medis internasional yang berlayar ke pulau-pulau 3T melayani operasi bedah mayor dan persalinan gratis.', 'Donasi Medis (Mulai Rp 25.000)', 'Dukung Inisiatif', 'https://doctorshare.org', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Dokter Terbang (Flying Doctors Indonesia)', 'Layanan Darurat Medis Daerah Terisolir', 'Tim dokter spesialis relawan yang diterbangkan menggunakan pesawat perintis ke lembah-lembah terpencil Papua dan pelosok Kalimantan.', 'Akses Terbuka / Donasi Swadaya', 'Dukung Inisiatif', 'https://doctorshare.org', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Mama Aleta Baun (mama-aleta-baun)
@@ -120,6 +132,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '1996 — 2007', 'AKSI TENUN DAMAI & PENOLAKAN TAMBANG MARMER', 'Memimpin aksi ratusan perempuan Mollo menenun di lokasi tambang batu marmer Gunung Anjaf dan Nausus hingga izin tambang dibatalkan total.', 1);
@@ -137,6 +151,10 @@ BEGIN
   VALUES (v_profile_id, 'Senjata Bernama Alat Tenun: Bagaimana Ibu-Ibu Mollo Mengalahkan Perusahaan Tambang Raksasa', 'PERLAWANAN DAMAI', '8 Menit Membaca', 'Kisah keberanian Mama Aleta Baun menggelar aksi menenun kain di tengah dinginnya kabut gunung dan ancaman preman bersenjata.', 'Kaum lelaki adat kerap diprovokasi untuk bentrok fisik yang berujung penjara. Mama Aleta mengambil strategi brilian: menempatkan perempuan di garis depan dengan alat tenun mereka. Duduk menenun di mulut tambang membuktikan bahwa kearifan budaya perempuan mampu menghentikan mesin-mesin penghancur bumi.', '/artikel/mama-aleta-baun-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Kosmologi Tubuh dan Tanah: Filsafat Ekologi Suku Mollo yang Mengajarkan Keseimbangan Hidup', 'KEARIFAN ADAT', '7 Menit Membaca', 'Menelusuri ajaran leluhur Timor tentang hubungan sakral antara manusia dan bentang alam sekitarnya.', 'Bagi masyarakat adat Mollo, merusak tanah sama dengan melukai daging sendiri. Menjual batu marmer sama dengan menjual tulang belulang leluhur. Kesadaran kosmis inilah yang menjadi benteng pertahanan moral mereka melawan godaan uang suap tambang.', '/artikel/mama-aleta-baun-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Koperasi Tenun Pewarna Alami Suku Mollo', 'Ekonomi Adat Berkelanjutan & Kriya Tradisional', 'Unit usaha mandiri ratusan perempuan penenun NTT yang menggunakan tanaman pewarna alami tanpa merusak kelestarian hutan.', 'Rp 450.000 — Rp 2.250.000', 'Dukung Inisiatif', 'https://sektorlokal.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Kawasan Lindung Adat Pegunungan Mutis', 'Konservasi Tanah Ulayat & Mata Air Alami', 'Wilayah hutan suaka adat yang diselamatkan dari tambang marmer, kini menjadi sumber air abadi bagi ribuan keluarga petani di pulau Timor.', 'Akses Terbuka / Donasi Swadaya', 'Dukung Inisiatif', 'https://sektorlokal.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Gunretno (gunretno)
@@ -166,6 +184,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2006 — 2014', 'PENDIRIAN JMPPK & PENOLAKAN PABRIK SEMEN DI PATI', 'Mengorganisir petani lintas kabupaten mendirikan JMPPK dan berhasil membatalkan rencana pembangunan pabrik semen di Sukolilo Pati lewat putusan MA.', 1);
@@ -183,6 +203,10 @@ BEGIN
   VALUES (v_profile_id, 'Menyemen Kaki Demi Air: Mengapa Pegunungan Karst Kendeng Adalah Nafas Hidup Petani Jawa', 'HAK AGRARIA', '8 Menit Membaca', 'Catatan perjuangan para Kartini Kendeng menyuarakan jeritan tanah air yang hendak ditambang pabrik semen.', 'Semen tidak bisa dimakan saat paceklik tiba. Ketika gua-gua karst dan sungai bawah tanah di Kendeng diledakkan dinamit, mata air akan mati dan ribuan hektare sawah akan berubah menjadi gurun pasir. Petani berdiri menjaga Kendeng bukan untuk diri mereka sendiri, melainkan agar seluruh rakyat Indonesia tetap bisa makan nasi.', '/artikel/gunretno-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Ajaran Sedulur Sikep: Menolak Kekerasan dan Menjaga Kejujuran di Tengah Godaan Uang Ganti Rugi', 'FALSAFAH HIDUP', '7 Menit Membaca', 'Menelusuri etika hidup Samin yang mengajarkan bahwa tanah adalah ibu yang tidak boleh diperjualbelikan.', 'Bagi masyarakat Sedulur Sikep, bertani bukan sekadar profesi mencari uang, melainkan ibadah merawat bumi. Keteguhan mereka menolak amplop suap perusahaan adalah cermin keluhuran budi pekerti yang menampar kemunafikan modern.', '/artikel/gunretno-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'JMPPK (Jaringan Masyarakat Peduli Pegunungan Kendeng)', 'Gerakan Perlindungan Ekosistem Karst & Hak Tani', 'Koalisi petani akar rumput yang memperjuangkan perlindungan tandon air alami Pegunungan Kendeng dari kerusakan tambang.', 'Swadaya Solidaritas Warga', 'Dukung Inisiatif', 'https://jmppkkendeng.org', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Praktik Tani Organik Sedulur Sikep Sukolilo', 'Kedaulatan Pangan Alami & Tanpa Utang Kimia', 'Model pertanian padi organik mandiri yang tidak bergantung pada benih hibrida industri dan pupuk kimia sintetis.', 'Akses Terbuka / Donasi Swadaya', 'Dukung Inisiatif', 'https://sektorlokal.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Lian Gogali (lian-gogali)
@@ -212,6 +236,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2007 — 2009', 'RISET KONFLIK POSO & PENDIRIAN INSTITUT MOSINTUWU', 'Mewawancarai ratusan korban konflik komunal Poso dan mendirikan Institut Mosintuwu untuk merajut perdamaian berbasis kedaulatan perempuan desa.', 1);
@@ -229,6 +255,10 @@ BEGIN
   VALUES (v_profile_id, 'Merawat Damai dari Dapur Bersama: Kisah Ibu-Ibu Poso Meruntuhkan Tembok Prasangka Agama', 'BINA PERDAMAIAN', '8 Menit Membaca', 'Bagaimana Sekolah Perempuan Mosintuwu menyembuhkan luka trauma perang saudara di Sulawesi Tengah.', 'Ketika para elit politik dan pemuka agama sibuk berdebat di panggung, ibu-ibu desa di Poso memilih bertemu di dapur. Memasak sayur daun kelor bersama dan berbagi resep bumbu membuktikan bahwa kemanusiaan dan cinta kasih ibu selalu lebih kuat dibanding racun fanatisme kebencian.', '/artikel/lian-gogali-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Menjaga Denyut Danau Poso: Melindungi Ikan Sidat Purba dan Ruang Hidup Masyarakat Adat', 'EKOLOGI BUDAYA', '7 Menit Membaca', 'Perjuangan warga Danau Poso mempertahankan tradisi menangkap ikan sidat alami dari pengerukan proyek industri.', 'Danau Poso bukan sekadar waduk penampung air untuk turbin pembangkit listrik; ia adalah ruang spiritual dan sumber pangan ratusan generasi warga adat. Menjaga danau adalah menjaga peradaban Poso yang damai.', '/artikel/lian-gogali-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Institut Mosintuwu (Pusat Rekonsiliasi & Kedaulatan Desa)', 'Lembaga Bina Perdamaian & Hak Asasi Perempuan', 'Organisasi akar rumput terdepan di Sulawesi Tengah yang melatih ribuan perempuan desa dalam advokasi anggaran, kesehatan reproduksi, dan perdamaian.', 'Swadaya Solidaritas Warga', 'Dukung Inisiatif', 'https://mosintuwu.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Sekolah Perempuan & Sekolah Toleransi Poso', 'Pendidikan Kritis Warga Pascakonflik', 'Kurikulum pendidikan emansipatoris lintas iman yang memulihkan trauma komunal dan membangun solidaritas ekonomi bersama.', 'Rp 199.000 — Rp 1.450.000 / paket', 'Dukung Inisiatif', 'https://mosintuwu.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Eva Susanti Bande (eva-susanti-bande)
@@ -258,6 +288,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2007 — 2010', 'PENDIRIAN FRAS & AKSI PETANI BANGGAI', 'Mendirikan Front Rakyat Advokasi Sawit (FRAS) Sulawesi Tengah memobilisasi ribuan petani menuntut pengembalian tanah adat yang dirampas korporasi.', 1);
@@ -275,6 +307,10 @@ BEGIN
   VALUES (v_profile_id, 'Dari Balik Jeruji Penjara ke Pematang Sawah: Catatan Ketabahan Eva Bande Membela Hak Petani', 'HAK ASASI MANUSIA', '8 Menit Membaca', 'Kesaksian Eva Bande tentang bagaimana represi aparat tidak pernah mampu mematahkan solidaritas petani kecil.', 'Penjara hanya bisa mengurung fisik seorang manusia, tetapi ia tidak akan pernah bisa mengurung kebenaran. Selama petani masih lapar di tanah kelahirannya sendiri, perjuangan merebut kembali hak atas tanah adalah mandat konstitusi yang harus terus dijalankan.', '/artikel/eva-susanti-bande-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Monokultur Sawit vs Kedaulatan Pangan: Menghitung Biaya Kerusakan Sosial di Pelosok Sulawesi', 'AGRARIA & EKOLOGI', '7 Menit Membaca', 'Pembedahan mendalam tentang hancurnya struktur ekonomi desa ketika kebun pangan rakyat disulap menjadi perkebunan monokultur kelapa sawit.', 'Ketika seluruh tanah desa ditanami sawit, petani kehilangan kemampuan menanam pangannya sendiri. Mereka terpaksa membeli beras dan sayur dengan harga mahal dari luar. Kedaulatan sejati lahir saat desa mampu memberi makan warganya sendiri.', '/artikel/eva-susanti-bande-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'FRAS Sulteng (Front Rakyat Advokasi Sawit)', 'Serikat Pembela Hak Petani & Keadilan Agraria', 'Organisasi advokasi lapangan yang mendampingi komunitas petani gurem melawan perampasan tanah dan intimidasi perusahaan perkebunan.', 'Akses Terbuka / Donasi Swadaya', 'Dukung Inisiatif', 'https://sektorlokal.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Koperasi Tani Mandiri Berbasis Pangan Polikultur', 'Kedaulatan Pertanian Rakyat', 'Inisiatif pemulihan tanah bekas konsesi sawit menjadi kebun pangan polikultur (kakao, jagung, rempah) milik keluarga tani.', 'Akses Terbuka / Donasi Swadaya', 'Dukung Inisiatif', 'https://sektorlokal.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Mansetus Balawala (mansetus-balawala)
@@ -304,6 +340,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2002', 'PENDIRIAN YAYASAN KESEHATAN UNTUK SEMUA (YKS)', 'Mendirikan YKS di Flores Timur, menggalang sukarelawan pengendara motor untuk menjemput pasien gawat darurat di desa-desa terisolasi.', 1);
@@ -321,6 +359,10 @@ BEGIN
   VALUES (v_profile_id, 'Motor Penyelamat Nyawa di Jalur Cadas Flores: Kisah Kemanusiaan Mansetus Balawala', 'INOVASI KESEHATAN', '7 Menit Membaca', 'Perjalanan dramatis para relawan motor menembus badai malam di pegunungan NTT demi menyelamatkan nyawa ibu dan bayi.', 'Di jalanan sempit berbatu di mana mobil ambulans mogok tak berdaya, deru sepeda motor Mansetus adalah suara harapan bagi seorang ibu yang sedang berjuang antara hidup dan mati. Kemanusiaan sejati tidak menunggu jalan aspal mulus dibangun; ia melompat menembus rintangan demi menyelamatkan sesama.', '/artikel/mansetus-balawala-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Asuransi Beras dan Uang Receh: Pelajaran Kemandirian Kesehatan dari Warga Desa Flores', 'GOTONG ROYONG', '6 Menit Membaca', 'Bagaimana warga miskin desa mampu membiayai sistem ambulans mandiri tanpa bergantung pada subsidi pemerintah.', 'Dengan menyisihkan segenggam beras atau koin receh setiap panen, warga membuktikan bahwa rasa memiliki komunal adalah jaminan kesehatan paling kokoh di pelosok nusantara.', '/artikel/mansetus-balawala-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Armada Ambulans Motor Desa Flores Timur (YKS)', 'Inovasi Transportasi Medis Tepat Guna', 'Armada sepeda motor modifikasi khusus yang menembus jalan setapak hutan dan pegunungan terjal untuk evakuasi darurat ibu melahirkan.', 'Akses Terbuka / Donasi Swadaya', 'Dukung Inisiatif', 'https://sektorlokal.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Skema Asuransi Mikro Gotong Royong Kesehatan', 'Fintech Sosial Komunal Berbasis Iuran Sukarela', 'Tabungan kesehatan komunitas yang dikelola bersama warga desa untuk mendanai biaya operasional bensin motor ambulans dan obat-obatan.', 'Akses Terbuka / Donasi Swadaya', 'Dukung Inisiatif', 'https://sektorlokal.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Maria Catarina Sumarsih (maria-catarina-sumarsih)
@@ -350,6 +392,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '1998', 'GUGURNYA WAWAN DALAM TRAGEDI SEMANGGI I', 'Kehilangan putra sulungnya yang ditembak aparat saat menolong demonstran korban penembakan di Jakarta, mengawali perjalanan advokasi keadilan seumur hidup.', 1);
@@ -367,6 +411,10 @@ BEGIN
   VALUES (v_profile_id, 'Payung Hitam Melawan Lupa: Keteguhan Seorang Ibu yang Menolak Berdamai dengan Impunitas', 'HAK ASASI MANUSIA', '8 Menit Membaca', 'Perjalanan hidup Sumarsih merawat api keadilan di bawah terik dan hujan di seberang gerbang Istana Negara.', 'Negara sering kali berharap para keluarga korban akan lelah, menua, dan perlahan melupakan luka mereka. Namun Sumarsih membuktikan bahwa cinta seorang ibu pada anaknya dan komitmen pada keadilan adalah kekuatan spiritual yang tidak akan pernah bisa dikalahkan oleh waktu atau kekuasaan politik manapun.', '/artikel/maria-catarina-sumarsih-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Menolak Rekonsiliasi Palsu Tanpa Pengungkapan Kebenaran: Mengapa Keadilan HAM Harus Ditegakkan', 'ETIKA REPUBLIK', '7 Menit Membaca', 'Pentingnya mengadili para pelaku kejahatan kemanusiaan agar tragedi kelam masa lalu tidak berulang kepada generasi muda hari ini.', 'Memaafkan tanpa pengakuan bersalah dan pengungkapan kebenaran hukum adalah pemutihan atas kejahatan. Sebuah bangsa tidak akan pernah memiliki fondasi moral yang kokoh jika kuburan para martir demokrasinya terus ditutup-tutupi dengan kepalsuan.', '/artikel/maria-catarina-sumarsih-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Aksi Kamisan (Gerakan Payung Hitam Menolak Lupa)', 'Gerakan Moral Hak Asasi Manusia & Melawan Impunitas', 'Aksi diam damai setiap Kamis sore di seberang Istana Presiden yang telah berlangsung selama belasan tahun menuntut pengadilan HAM ad hoc.', 'Swadaya Solidaritas Warga', 'Dukung Inisiatif', 'https://aksikamisan.net', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'JSKK (Jaringan Solidaritas Korban untuk Keadilan)', 'Koalisi Keluarga Korban Pelanggaran HAM Berat', 'Wadah persaudaraan keluarga korban kejahatan kemanusiaan masa lalu yang saling menguatkan dalam merawat ingatan kolektif bangsa.', 'Akses Terbuka / Donasi Swadaya', 'Dukung Inisiatif', 'https://kontras.org', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Hendro Utomo (hendro-utomo)
@@ -396,6 +444,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2015', 'PENDIRIAN FOOD BANK OF INDONESIA (FOI)', 'Mendirikan FOI sebagai bank makanan nirlaba terstruktur pertama yang mengumpulkan kelebihan makanan layak santap dari ritel dan industri kuliner.', 1);
@@ -413,6 +463,10 @@ BEGIN
   VALUES (v_profile_id, 'Ironi Piring Makanan: Mengapa Kelaparan Balita Terjadi di Tengah Gunungan Sampah Makanan Kota', 'KETAHANAN PANGAN', '7 Menit Membaca', 'Pembedahan data FOI tentang jutaan ton makanan yang terbuang percuma setiap tahun dan solusinya bagi pengentasan stunting.', 'Indonesia adalah salah satu negara pembuang makanan terbesar di dunia, namun pada saat yang sama jutaan anak kita mengalami stunting akibat kekurangan gizi protein. Masalah ini bukanlah ketiadaan makanan, melainkan kegagalan sistem distribusi logistik yang adil.', '/artikel/hendro-utomo-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Ibu-Ibu Kader Posyandu: Garda Terdepan Penyelamat Generasi dari Ancaman Gizi Buruk', 'KEKUATAN KOMUNAL', '6 Menit Membaca', 'Peran vital jaringan ibu-ibu kampung dalam memasak dan membagikan makanan sehat bagi balita rentan.', 'Tanpa dedikasi para ibu kader posyandu yang memasak sukarela di dapur-dapur umum kampung, jutaan porsi makanan bergizi tidak akan pernah sampai ke perut anak-anak yang membutuhkan. Mereka adalah pahlawan ketahanan pangan sejati.', '/artikel/hendro-utomo-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Food Bank of Indonesia (Jejaring Food Rescue Nasional)', 'Logistik Kemanusiaan & Penyelamatan Makanan', 'Organisasi penyelamat makanan berlebih industri yang telah menyalurkan jutaan porsi makanan bergizi ke balita dan lansia prasejahtera.', 'Paket Donasi Pangan Rp 50.000', 'Dukung Inisiatif', 'https://foodbankindonesia.org', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Program Sayap dari Sayap (Nutrisi PAUD & Posyandu)', 'Intervensi Gizi Dini Anak Negeri', 'Penyediaan sarapan bergizi harian bagi puluhan ribu anak-anak usia dini di sekolah-sekolah rakyat pelosok kampung.', 'Akses Terbuka / Donasi Swadaya', 'Dukung Inisiatif', 'https://foodbankindonesia.org', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Saur Marlina (Butet) Manurung (butet-manurung)
@@ -442,6 +496,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '1999 — 2003', 'TINGGAL BERSAMA ORANG RIMBA & SOKOLA RIMBA', 'Tinggal di hutan Bukit Duabelas Jambi, mengembangkan metode belajar membaca di atas pohon dan mendirikan Sokola Rimba pertama.', 1);
@@ -459,6 +515,10 @@ BEGIN
   VALUES (v_profile_id, 'Membaca untuk Bertahan Hidup: Mengapa Literasi Adalah Benteng Perlindungan Hutan Rimba', 'PENDIDIKAN ADAT', '8 Menit Membaca', 'Catatan Butet Manurung tentang bagaimana kemampuan membaca menyelamatkan wilayah adat dari jebakan kontrak palsu korporasi.', 'Anak-anak Orang Rimba belajar membaca bukan untuk mengejar ijazah sekolah atau menjadi pegawai kantoran. Mereka belajar membaca agar mampu membaca surat perjanjian batas tanah konsesi dan menolak ditipu oleh perambah hutan yang ingin mencaplok rumah leluhur mereka.', '/artikel/butet-manurung-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Menghormati Ritme Hidup Pedalaman: Pendidikan yang Tidak Merusak Jiwa dan Budaya Leluhur', 'ANTROPOLOGI PENDIDIKAN', '7 Menit Membaca', 'Bahaya model sekolah formal seragam yang memaksakan kurikulum kota kepada masyarakat adat.', 'Pendidikan yang memaksakan anak rimba memakai seragam rapi dan duduk diam di kelas beton justru akan mencabut mereka dari keterampilan bertahan hidup di alam. Pendidikan sejati harus merangkul kosmologi lokal dan memperkuat jati diri mereka sebagai penjaga rimba.', '/artikel/butet-manurung-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Sokola Institute (Sekolah Literasi Kontekstual Adat)', 'Pendidikan Emansipatoris & Hak Masyarakat Adat', 'Lembaga pendidikan alternatif nirlaba yang menyediakan akses literasi baca-tulis-hitung kontekstual bagi suku-suku pedalaman nusantara.', 'Bebas Biaya / Donasi Swadaya', 'Dukung Inisiatif', 'https://sokola.org', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Buku: Sokola Rimba (Pengalaman Belajar Bersama Orang Rimba)', 'Karya Literatur Antropologi & Pendidikan', 'Buku catatan etnografis mendalam tentang dinamika perjumpaan budaya, kearifan rimba, dan perjuangan hak tanah Orang Rimba.', 'Rp 85.000 — Rp 185.000', 'Dukung Inisiatif', 'https://www.gramedia.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 COMMIT;

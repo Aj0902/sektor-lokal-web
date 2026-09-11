@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { 
   Menu, X, Sun, Moon, Youtube, Twitter, Instagram, Mail, Radio, 
   ArrowUpRight, ArrowDown, ArrowLeft, BookOpen, Globe, Share2, 
-  Video, Linkedin, Facebook, HeartHandshake, Feather, Sparkles, ExternalLink, Check
+  Video, Linkedin, Facebook, HeartHandshake, Feather, Sparkles, ExternalLink, Check, Tag
 } from 'lucide-react';
 
 import Navbar from '../../../components/Navbar';
@@ -84,7 +84,7 @@ export default function ProfileClientView({ initialData, slug }: ProfileClientVi
     setTimeout(() => setCopied(false), 2000);
   };
 
-  const { profile, lifeEvents, works, articles, testimonials, initiatives } = profileData;
+  const { profile, lifeEvents, works, articles, initiatives } = profileData;
   const soc = profile.social_links || {};
 
   const socialIconMap: { key: keyof SocialLinks; label: string; icon: React.ReactNode }[] = [
@@ -120,94 +120,120 @@ export default function ProfileClientView({ initialData, slug }: ProfileClientVi
         {isDarkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
       </button>
 
-      {/* ACT 1: Split Hero Header */}
-      <section className="h-[100vh] min-h-[600px] w-full flex flex-col md:flex-row magazine-split-hero relative overflow-hidden">
-        {/* Left Half: Obsidian */}
-        <div className="flex-1 bg-[#07090E] relative flex flex-col justify-center p-8 md:p-12 lg:p-24 z-10 pt-24 md:pt-12">
-          <div className="hidden lg:block absolute left-4 top-1/2 -translate-y-1/2 -rotate-90 origin-left vertical-text text-[#8A93A8] text-xs tracking-[0.3em] font-mono">
-            BERKAS PROFIL // {new Date().getFullYear()}
-          </div>
-          
-          <div className="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none overflow-hidden">
-            <h1 className="watermark-text text-[12vw] md:text-[15vw] font-display whitespace-nowrap text-white">{profile.name}</h1>
-          </div>
-          
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="relative z-20 space-y-6 max-w-xl"
-          >
-            <span className="inline-block px-3 py-1 border border-[#E11D48] text-[#E11D48] text-[10px] font-mono tracking-widest uppercase">
-              {profile.category}
-            </span>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-display text-white uppercase leading-none tracking-tight">
-              {profile.name}
-            </h1>
-            <p className="font-editorial italic text-[#F5EFEB] text-lg md:text-2xl lg:text-3xl border-l-2 border-[#E11D48] pl-4">
-              &ldquo;{profile.quote}&rdquo;
-            </p>
-          </motion.div>
-        </div>
+      {/* ACT 1: Editorial Hero Header */}
+      <section className="relative w-full bg-[#07090E] text-white overflow-hidden border-b border-white/10 pt-28 pb-16 md:pt-36 md:pb-20 lg:pt-40 lg:pb-24">
+        {/* Subtle Background Lighting & Grid */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#E11D48]/15 via-transparent to-transparent pointer-events-none" />
+        <div className="dot-matrix absolute inset-0 opacity-5 pointer-events-none" />
 
-        {/* Right Half: Crimson */}
-        <div className="flex-1 bg-[#E11D48] relative flex items-center justify-center min-h-[50vh] md:min-h-full">
-          {/* Bleeding portrait */}
-          <motion.div 
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, delay: 0.2 }}
-            className="absolute md:-left-32 lg:-left-40 w-48 h-64 md:w-80 md:h-[28rem] lg:w-96 lg:h-[34rem] z-30 shadow-2xl border-4 border-white/10"
-          >
-            <Image 
-              src={profile.photo_url} 
-              alt={profile.name} 
-              fill 
-              className="object-cover portrait-bw"
-              priority
-            />
-          </motion.div>
-
-          <div className="absolute bottom-8 right-8 lg:bottom-12 lg:right-12 flex flex-col md:flex-row items-end md:items-center gap-4 z-20">
-            <div className="flex gap-2">
-              {socialIconMap.map((item) => {
-                const url = soc[item.key];
-                if (!url) return null;
-                const isMail = item.key === 'email';
-                return (
-                  <a 
-                    key={item.key} 
-                    href={isMail ? `mailto:${url}` : url} 
-                    target="_blank" 
-                    rel="noreferrer" 
-                    title={item.label} 
-                    className="p-2 bg-black/20 hover:bg-black text-white rounded-full transition-colors backdrop-blur-sm"
-                  >
-                    {item.icon}
-                  </a>
-                );
-              })}
-            </div>
-            <button 
-              onClick={handleCopyLink}
-              className="flex items-center gap-2 px-4 py-2 bg-black text-white font-mono text-[10px] uppercase tracking-widest hover:bg-white hover:text-black transition-colors"
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+            
+            {/* Left Column: Editorial Information */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7 }}
+              className="lg:col-span-7 flex flex-col justify-center space-y-6"
             >
-              {copied ? <Check className="w-4 h-4" /> : <Share2 className="w-4 h-4" />}
-              <span>{copied ? 'Tersalin' : 'Bagikan'}</span>
-            </button>
+              {/* Badge & Meta Row */}
+              <div className="flex flex-wrap items-center gap-3">
+                <span className="inline-flex items-center px-3 py-1 bg-[#E11D48]/10 border border-[#E11D48] text-[#E11D48] text-xs font-mono tracking-widest uppercase font-semibold">
+                  {profile.category}
+                </span>
+
+                {profile.verified && (
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-white/5 border border-white/20 text-white/90 text-xs font-mono tracking-widest uppercase">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#E11D48] animate-pulse" />
+                    TERVERIFIKASI
+                  </span>
+                )}
+
+                <span className="hidden sm:inline-block text-[#8A93A8] text-xs font-mono tracking-wider">
+                  BERKAS // {new Date().getFullYear()}
+                </span>
+              </div>
+
+              {/* Title & Name */}
+              <div>
+                <p className="font-mono text-xs md:text-sm text-[#8A93A8] uppercase tracking-wider mb-2">
+                  {profile.title}
+                </p>
+                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display text-white uppercase leading-[1.05] tracking-tight">
+                  {profile.name}
+                </h1>
+              </div>
+
+              {/* Bespoke Editorial Quote */}
+              <div className="border-l-2 border-[#E11D48] pl-4 sm:pl-6 py-1">
+                <p className="font-editorial italic text-lg sm:text-xl md:text-2xl text-[#F5EFEB]/90 leading-snug">
+                  &ldquo;{profile.quote}&rdquo;
+                </p>
+              </div>
+
+              {/* Actions & Social Links */}
+              <div className="pt-2 flex flex-wrap items-center gap-4">
+                {/* Social Icons */}
+                <div className="flex flex-wrap items-center gap-2">
+                  {socialIconMap.map((item) => {
+                    const url = soc[item.key];
+                    if (!url) return null;
+                    const isMail = item.key === 'email';
+                    return (
+                      <a 
+                        key={item.key} 
+                        href={isMail ? `mailto:${url}` : url} 
+                        target="_blank" 
+                        rel="noreferrer" 
+                        title={item.label} 
+                        className="p-2.5 bg-white/5 hover:bg-[#E11D48] text-white/80 hover:text-white border border-white/10 hover:border-[#E11D48] rounded-full transition-all duration-200"
+                      >
+                        {item.icon}
+                      </a>
+                    );
+                  })}
+                </div>
+
+                {/* Share Button */}
+                <button 
+                  onClick={handleCopyLink}
+                  className="flex items-center gap-2 px-4 py-2.5 bg-white/10 hover:bg-white hover:text-black text-white font-mono text-xs uppercase tracking-widest border border-white/20 transition-all duration-200"
+                >
+                  {copied ? <Check className="w-4 h-4 text-emerald-400" /> : <Share2 className="w-4 h-4" />}
+                  <span>{copied ? 'Tautan Tersalin' : 'Bagikan Berkas'}</span>
+                </button>
+              </div>
+            </motion.div>
+
+            {/* Right Column: Framed Editorial Portrait */}
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="lg:col-span-5 flex justify-center lg:justify-end"
+            >
+              <div className="relative w-full max-w-sm sm:max-w-md aspect-[3/4] border-2 border-white/20 bg-[#0E131F] p-3 shadow-[0_20px_50px_rgba(0,0,0,0.8)] group">
+                <div className="relative w-full h-full overflow-hidden bg-black">
+                  <Image 
+                    src={profile.photo_url} 
+                    alt={profile.name} 
+                    fill 
+                    className="object-cover portrait-bw group-hover:scale-105 transition-transform duration-700"
+                    priority
+                  />
+                  {/* Subtle gradient overlay at bottom */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60" />
+                </div>
+                
+                {/* Dossier Label */}
+                <div className="absolute bottom-5 left-5 right-5 flex items-center justify-between text-[10px] font-mono text-white/80 tracking-widest uppercase bg-black/70 backdrop-blur-sm px-3 py-1.5 border border-white/10">
+                  <span>FIG. 01 // POTRET RESMI</span>
+                  <span className="text-[#E11D48] font-bold">TERVERIFIKASI</span>
+                </div>
+              </div>
+            </motion.div>
+
           </div>
-
-          {profile.verified && (
-            <div className="absolute top-24 md:top-12 right-8 lg:right-12 z-20 bg-black text-white px-3 py-1 text-[10px] font-mono tracking-widest flex items-center gap-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#E11D48] animate-pulse" />
-              VERIFIED
-            </div>
-          )}
-        </div>
-
-        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-40 animate-bounce flex flex-col items-center">
-          <span className="text-[10px] font-mono text-white/70 tracking-widest mb-1 drop-shadow-md">SCROLL</span>
-          <ArrowDown className="w-4 h-4 text-white drop-shadow-md" />
         </div>
       </section>
 
@@ -230,17 +256,6 @@ export default function ProfileClientView({ initialData, slug }: ProfileClientVi
                 <p key={i} className="mb-6 break-inside-avoid">{p}</p>
               ))}
             </div>
-            
-            {testimonials.length > 0 && (
-              <div className="mt-16 p-8 border-l-4 border-[#E11D48] bg-white shadow-sm relative">
-                <div className="absolute -top-6 -left-4 text-6xl text-[#E11D48] opacity-20 font-editorial">&ldquo;</div>
-                <p className="font-editorial italic text-xl md:text-2xl mb-6 text-gray-800 leading-snug">
-                  &ldquo;{testimonials[0].quote}&rdquo;
-                </p>
-                <p className="font-mono text-sm uppercase font-bold tracking-wide">{testimonials[0].author_name}</p>
-                <p className="font-mono text-[11px] text-gray-500 uppercase tracking-widest mt-1">{testimonials[0].author_role}</p>
-              </div>
-            )}
           </div>
           
           <div className="md:w-4/12 relative hidden md:block">
@@ -253,7 +268,7 @@ export default function ProfileClientView({ initialData, slug }: ProfileClientVi
                 className="object-cover portrait-bw p-4" 
               />
               <div className="absolute bottom-6 right-6 bg-black text-white text-[9px] font-mono px-2 py-1 tracking-widest">
-                FIG. 1
+                FIG. 2
               </div>
             </div>
           </div>
@@ -334,37 +349,64 @@ export default function ProfileClientView({ initialData, slug }: ProfileClientVi
           {initiatives.length > 0 && (
             <div>
               <div className="h-[1px] w-full bg-white/10 mb-12"></div>
-              <h2 className="text-3xl md:text-5xl font-display uppercase mb-12 text-white">Inisiatif & Produk Warga</h2>
+              <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
+                <div>
+                  <span className="text-xs font-mono text-[#E11D48] tracking-widest uppercase block mb-2 font-bold">
+                    KATALOG INISIATIF //
+                  </span>
+                  <h2 className="text-3xl md:text-5xl font-display uppercase text-white">
+                    Inisiatif & Produk Warga
+                  </h2>
+                </div>
+                <p className="text-sm font-mono text-[#8A93A8] max-w-md">
+                  Koleksi karya mandiri, platform terapan, dan produk bernilai tambah yang dapat diakses dan didukung secara langsung.
+                </p>
+              </div>
               
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 {initiatives.map((ini, i) => (
-                  <div key={i} className="magazine-card-dark bg-[#1A1F2C] border border-white/10 p-6 md:p-8 flex flex-col sm:flex-row gap-6 md:gap-8 group hover:border-[#E11D48]/50 transition-colors">
+                  <div key={i} className="magazine-card-dark bg-[#141926] border border-white/15 p-6 md:p-8 flex flex-col sm:flex-row gap-6 md:gap-8 group hover:border-[#E11D48] transition-all duration-300">
                     {ini.image_url && (
-                      <div className="w-full sm:w-1/3 aspect-square relative bg-[#07090E] overflow-hidden">
+                      <div className="w-full sm:w-2/5 aspect-[4/3] sm:aspect-square relative bg-[#07090E] overflow-hidden border border-white/10 flex-shrink-0">
                         <Image 
                           src={ini.image_url} 
                           alt={ini.title} 
                           fill 
-                          className="object-cover grayscale group-hover:grayscale-0 transition-all duration-500" 
+                          className="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500" 
                         />
                       </div>
                     )}
                     <div className="flex-1 flex flex-col justify-between">
                       <div>
-                        <span className="text-[10px] font-mono text-[#E11D48] tracking-widest uppercase block mb-2">{ini.category}</span>
-                        <h3 className="text-2xl font-display uppercase mb-3 text-white">{ini.title}</h3>
-                        <p className="text-sm text-[#8A93A8] line-clamp-3 mb-6 leading-relaxed">{ini.description}</p>
+                        <span className="text-[10px] font-mono text-[#E11D48] tracking-widest uppercase block mb-2 font-semibold">
+                          {ini.category}
+                        </span>
+                        <h3 className="text-xl md:text-2xl font-display uppercase mb-3 text-white group-hover:text-[#E11D48] transition-colors leading-snug">
+                          {ini.title}
+                        </h3>
+                        <p className="text-sm text-[#8A93A8] line-clamp-3 mb-6 leading-relaxed">
+                          {ini.description}
+                        </p>
                       </div>
                       
-                      <div className="flex items-center justify-between pt-4 border-t border-white/10">
-                        <span className="font-mono text-sm font-bold text-white">{ini.price || 'Gratis'}</span>
+                      <div className="pt-4 border-t border-white/10 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                        <div className="flex flex-col">
+                          <span className="text-[9px] font-mono text-[#8A93A8] uppercase tracking-wider flex items-center gap-1">
+                            <Tag className="w-3 h-3 text-[#E11D48]" /> Estimasi Harga / Akses:
+                          </span>
+                          <span className="font-mono text-sm sm:text-base font-bold text-white mt-0.5">
+                            {ini.price || 'Inisiatif Terbuka'}
+                          </span>
+                        </div>
+                        
                         <a 
-                          href={ini.link_url} 
-                          target="_blank"
-                          rel="noreferrer"
-                          className="px-4 py-2 bg-[#E11D48] text-white font-mono text-[10px] uppercase tracking-widest hover:bg-white hover:text-[#E11D48] transition-colors flex items-center gap-1"
+                          href={ini.link_url || '#'} 
+                          target="_blank" 
+                          rel="noreferrer" 
+                          className="px-4 py-2.5 bg-[#E11D48] hover:bg-white hover:text-black text-white font-mono text-[11px] uppercase font-bold tracking-wider transition-all duration-200 flex items-center justify-center gap-1.5 shadow-md flex-shrink-0"
                         >
-                          {ini.action_text} <ArrowUpRight className="w-3 h-3" />
+                          <span>{ini.action_text || 'Akses Inisiatif'}</span>
+                          <ArrowUpRight className="w-3.5 h-3.5" />
                         </a>
                       </div>
                     </div>

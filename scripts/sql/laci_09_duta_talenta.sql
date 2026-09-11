@@ -28,6 +28,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2010 — 2018', 'STUDI BIOTEKNOLOGI & RISET STEM CELL AUSTRALIA', 'Menyelesaikan pendidikan doktoral dan riset pascadoktoral di bidang bioteknologi dan kultur sel di University of Queensland dan RMIT Australia.', 1);
@@ -45,6 +47,10 @@ BEGIN
   VALUES (v_profile_id, 'Perlombaan Melawan Waktu di Laboratorium Oxford: Catatan Dr. Carina Joe Merakit Miliaran Vaksin', 'SAINS & KEMANUSIAAN', '8 Menit Membaca', 'Kisah di balik layar saat tim peneliti bekerja 16 jam sehari demi memastikan vaksin terjangkau bagi negara-negara berkembang.', 'Di musim semi 2020, laboratorium Oxford dipenuhi ketegangan tinggi. Kami tahu kegagalan di tabung reaksi berarti ribuan nyawa hilang tiap hari. Keputusan untuk melepas paten tanpa keuntungan komersial selama pandemi adalah prinsip moral yang kami pegang teguh: sains sejati ada untuk melayani kaum paling rentan.', '/artikel/carina-joe-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Kedaulatan Bioteknologi: Mengapa Indonesia Harus Menyiapkan Ekosistem Riset Farmasi Mandiri', 'KEDAULATAN KESEHATAN', '7 Menit Membaca', 'Pandangan Dr. Carina Joe tentang pentingnya investasi laboratorium dan apresiasi terhadap peneliti lokal agar tidak bergantung pada impor obat.', 'Indonesia memiliki keanekaragaman hayati raksasa dan talenta muda yang cerdas. Yang kita butuhkan adalah kontinuitas pendanaan riset dasar dan infrastruktur laboratorium berstandar global agar saat pandemi berikutnya datang, kita tidak lagi menjadi konsumen di antrean belakang.', '/artikel/carina-joe-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Scale-Up Biomanufaktur Vaksin Oxford-AstraZeneca', 'Rekayasa Bioteknologi & Kesehatan Global', 'Metode manufaktur skala industri untuk memproduksi vaksin vektor adenovirus bervolume tinggi dengan efisiensi biaya maksimal.', 'Karya Budaya / Mulai Rp 75.000', 'Dukung Inisiatif', 'https://www.ndm.ox.ac.uk', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Riset Sel Punca & Sistem Formulasi Protein Rekombinan', 'Publikasi Saintifik Internasional', 'Kumpulan jurnal ilmiah tentang stabilitas formulasi biologi dan rekayasa ekspresi protein untuk terapi penyakit menular.', 'Karya Budaya / Mulai Rp 75.000', 'Dukung Inisiatif', 'https://pubmed.ncbi.nlm.nih.gov', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Griselda Sastrawinata-Lemay (griselda-sastrawinata)
@@ -74,6 +80,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2005 — 2014', 'ARTCENTER PASADENA & ERA DREAMWORKS ANIMATION', 'Lulus dengan predikat kehormatan di ArtCenter College of Design dan berkontribusi sebagai Visual Development Artist di film Shrek Forever After dan Puss in Boots.', 1);
@@ -91,6 +99,10 @@ BEGIN
   VALUES (v_profile_id, 'Menjahit Dongeng di Kanvas Digital: Rahasia Riset Visual Griselda Sastrawinata', 'SENI ANIMASI', '7 Menit Membaca', 'Bagaimana riset tekstil kuno dan kebiasaan masyarakat adat diterjemahkan menjadi busana digital yang hidup dan bernyawa.', 'Setiap lipatan kain yang dikenakan karakter animasi di layar memiliki cerita masa lalu. Kami menghabiskan ratusan jam mempelajari bagaimana serat pohon dipukul dan diwarnai lumpur agar saat karakter bergerak di tengah badai laut, teksturnya terasa otentik di mata penonton.', '/artikel/griselda-sastrawinata-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Dari Jakarta ke Studio Animasi Hollywood: Pesan Griselda untuk Kreator Muda', 'INDUSTRI KREATIF', '6 Menit Membaca', 'Kiat menjaga kedisiplinan sketsa harian, etika kerja studio, dan keunikan perspektif lokal dalam berkarya.', 'Kunci bertahan di industri kreatif dunia bukanlah bakat bawaan yang instan, melainkan ketahanan merevisi karya ratusan kali tanpa kehilangan cinta pada proses menggambar itu sendiri.', '/artikel/griselda-sastrawinata-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Desain Produksi Visual Moana & Moana 2 (Disney)', 'Desain Seni Sinema Animasi Global', 'Rancangan visual kostum Tapa cloth, perahu tradisional Wayfinding, dan estetika visual samudera Pasifik.', 'Tiket Nonton / VOD Rp 45.000 — Rp 75.000', 'Dukung Inisiatif', 'https://disneyanimation.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Visual Development & Costume Design ''Raya and the Last Dragon''', 'Visual Development & Wastra Nusantara', 'Eksplorasi motif kain ikat, batik, dan ornamen arsitektur tradisional rumpun Asia Tenggara ke dalam dunia Kumandra.', 'Karya Budaya / Mulai Rp 75.000', 'Dukung Inisiatif', 'https://disneyanimation.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Iko Uwais (iko-uwais)
@@ -120,6 +132,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2005 — 2008', 'JUARA PENCAK SILAT NASIONAL & PENEMUAN BAKAT', 'Meraih predikat Pesilat Terbaik Kejuaraan Silat Nasional sebelum ditemukan oleh sutradara Gareth Evans di sanggar silat.', 1);
@@ -137,6 +151,10 @@ BEGIN
   VALUES (v_profile_id, 'Darah, Keringat, dan Filosofi Silat: Perjalanan Iko Uwais Merevolusi Sinema Aksi Dunia', 'SINEMA & BUDAYA', '8 Menit Membaca', 'Kisah perjuangan Iko dari latihan fisik keras di sanggar kayu hingga memimpin koreografi laga bersama aktor-aktor papan atas dunia.', 'Di luar negeri, mereka kagum bukan cuma karena kecepatan pukulan kami, tapi karena di dalam silat ada ritme dan rasa. Setiap gerakan pukulan dan tangkisan selalu diimbangi dengan sikap hormat. Silat adalah pertahanan diri yang menjunjung tinggi kemanusiaan lawan.', '/artikel/iko-uwais-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Membangun Industri Stunt Profesional: Visi Uwais Team untuk Masa Depan Aktor Laga Lokal', 'INDUSTRI KREATIF', '6 Menit Membaca', 'Bagaimana Uwais Team menerapkan standar keselamatan tinggi dan regenerasi atlet silat menjadi stunt performer profesional.', 'Aksi laga yang keren adalah aksi yang aman. Kami tidak ingin talenta muda mengorbankan cedera fatal demi sebuah adegan. Disiplin, perhitungan matematis jarak, dan saling percaya adalah fondasi dari setiap koreografi laga kelas dunia.', '/artikel/iko-uwais-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'The Raid: Redemption & The Raid 2 (Sinema Laga)', 'Film Aksi & Koreografi Pencak Silat', 'Karya sinema laga revolusioner yang memperkenalkan teknik silat gerak cepat dan pertarungan ruang sempit ke kancah global.', 'Tiket Nonton / VOD Rp 45.000 — Rp 75.000', 'Dukung Inisiatif', 'https://www.imdb.com/title/tt1899353', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Uwais Team (Kolektif Koreografer & Stunt Silat)', 'Koreografi Laga & Manajemen Stuntman', 'Pusat pelatihan dan penyedia koreografi aksi laga profesional Indonesia untuk industri sinema Hollywood dan Asia.', 'Karya Budaya / Mulai Rp 75.000', 'Dukung Inisiatif', 'https://instagram.com/iko.uwais', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Joey Alexander (joey-alexander)
@@ -166,6 +184,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2009 — 2013', 'BELAJAR OTODIDAK DI BALI & JUARA GRAND PRIX ODESSA', 'Mempelajari piano jazz lewat rekaman vinyl klasik dan menjuarai kompetisi jazz internasional di Ukraina pada usia 9 tahun.', 1);
@@ -183,6 +203,10 @@ BEGIN
   VALUES (v_profile_id, 'Di Balik Tuts Piano Jazz: Dialog Batin Joey Alexander Menyentuh Panggung Dunia', 'SENI MUSIK', '7 Menit Membaca', 'Kisah tentang kebebasan improvisasi, disiplin latihan sunyi, dan kerendahan hati seorang virtuoso muda di New York.', 'Di atas panggung jazz, tidak ada tempat untuk berbohong. Bila hatimu sedang kalut atau sombong, tuts piano akan membocorkannya ke telinga penonton. Jazz menuntut kejujuran total: kamu harus rela melepas ego dan menjadi instrumen bagi musik itu sendiri.', '/artikel/joey-alexander-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Dari Denpasar ke Carnegie Hall: Perjalanan Panjang Menjaga Kejernihan Rasa Bermusik', 'REFLEKSI KARYA', '6 Menit Membaca', 'Bagaimana Joey menjaga cinta pada musik agar tidak terdistorsi oleh ketenaran panggung industri global.', 'Penghargaan dan nominasi adalah bonus yang menyenangkan, namun kebahagiaan sejati tetap sama seperti saat saya berusia enam tahun di Bali: duduk di depan piano, memejamkan mata, dan menemukan melodi yang mampu menghibur jiwa orang lain.', '/artikel/joey-alexander-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Album ''My Favorite Things'' (Motéma Music)', 'Album Rekaman Jazz & Grammy Nominee', 'Album debut bersejarah berisi aransemen ulang mahakarya jazz klasik yang memuncaki tangga lagu Billboard Jazz.', 'Rp 350.000 — Rp 650.000', 'Dukung Inisiatif', 'https://joeyalexandermusic.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Album ''Origin'' (Verve / Mack Avenue)', 'Komposisi Musik Orisinil', 'Album penuh pertama berisi seluruh karya cipta orisinil Joey Alexander yang menampilkan kematangan eksplorasi harmoni dan ritme.', 'Rp 350.000 — Rp 650.000', 'Dukung Inisiatif', 'https://joeyalexandermusic.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Muhammad Arief Budiman, Ph.D. (muhammad-arief-budiman)
@@ -212,6 +236,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '1994 — 2002', 'IPB, DOKTORAL TEXAS A&M & RISET GENOMIK TANAMAN', 'Menempuh pendidikan biologi molekuler di IPB dan meraih beasiswa doktoral di Texas A&M University dalam pemetaan DNA tanaman.', 1);
@@ -229,6 +255,10 @@ BEGIN
   VALUES (v_profile_id, 'Membaca Kode Rahasia DNA Tanaman: Kisah Dr. Arief Budiman Menembus Jurnal Nature', 'SAINS & LINGKUNGAN', '8 Menit Membaca', 'Bagaimana sains genetika presisi dapat menjadi senjata ampuh menghentikan laju deforestasi hutan tropis.', 'Jika kita bisa memproduksi minyak dua kali lipat lebih banyak dari satu pohon sawit yang sama melalui seleksi genetika yang tepat, petani dan industri tidak perlu lagi menebang hutan perawan. Sains hadir untuk memberikan efisiensi yang menyelamatkan ekosistem.', '/artikel/muhammad-arief-budiman-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Diaspora Peneliti dan Kedaulatan Pangan: Menghubungkan Laboratorium Dunia dengan Sawah Nusantara', 'RISET & INOVASI', '7 Menit Membaca', 'Pentingnya kolaborasi riset genomik tanaman pangan lokal agar Indonesia berdaulat atas benih padinya sendiri.', 'Benih adalah kedaulatan sebuah bangsa. Membiarkan kepemilikan genetik varietas tanaman lokal dikuasai korporasi luar negeri adalah ancaman geopolitik serius. Kita harus membangun bank genom tanaman pangan mandiri yang dijaga oleh anak-anak bangsa.', '/artikel/muhammad-arief-budiman-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Publikasi Peta Genom Kelapa Sawit (Jurnal Nature)', 'Publikasi Riset Saintifik Dunia', 'Pemetaan urutan DNA kelapa sawit dan penemuan gen penentu ketebalan cangkang buah yang meningkatkan rendemen minyak sawit lestari.', 'Karya Budaya / Mulai Rp 75.000', 'Dukung Inisiatif', 'https://www.nature.com/articles/nature12309', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Teknologi Deteksi Dini Bibit Sawit Unggul Berkelanjutan', 'Bioteknologi Agrikultur Terapan', 'Metode molekuler untuk mendeteksi varietas tanaman produktif tinggi sejak benih guna mencegah deforestasi lahan.', 'Karya Budaya / Mulai Rp 75.000', 'Dukung Inisiatif', 'https://oriongenomics.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: NIKI (Niki Zefanya) (niki-zefanya)
@@ -258,6 +288,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2014 — 2017', 'ERA COVERS YOUTUBE DI JAKARTA & PENEMUAN BAKAT', 'Mengunggah lagu-lagu ciptaan sendiri dan cover akustik di YouTube dari kamar tidurnya sebelum direkrut oleh 88rising.', 1);
@@ -275,6 +307,10 @@ BEGIN
   VALUES (v_profile_id, 'Dari Jakarta ke Gurun Coachella: Kejujuran Lirik NIKI Memikat Telinga Dunia', 'SENI MUSIK', '7 Menit Membaca', 'Catatan perjalanan emosional NIKI menulis lagu-lagu personal yang merangkum kerapuhan dan kekuatan perempuan muda.', 'Waktu menulis di kamar tidur dengan gitar tua, saya tidak pernah membayangkan ribuan orang di New York, London, dan Paris akan ikut menyanyikan lirik tentang SMA di Jakarta. Musik punya sihir aneh: semakin spesifik dan jujur cerita pribadimu, semakin universal resonansinya di hati pendengar.', '/artikel/niki-zefanya-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Identitas dan Representasi Asia di Panggung Musik Global: Refleksi NIKI Zefanya', 'KARYA & REPUTASI', '6 Menit Membaca', 'Bagaimana musisi muda Asia Tenggara kini memegang kendali atas narasinya sendiri di industri hiburan barat.', 'Dulu kita terbiasa melihat standar pop barat yang seragam. Hari ini, anak-anak muda di seluruh dunia mendengarkan musisi Asia tanpa merasa itu hal yang aneh. Menjadi diri sendiri dan bangga pada akar budaya adalah kekuatan terbesar seorang seniman.', '/artikel/niki-zefanya-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Penampilan Bersejarah di Coachella Music Festival (2022)', 'Pementasan Musik Panggung Dunia', 'Penampilan spektakuler membawakan lagu ''Sempurna'' dan karya orisinil di festival musik terbesar Amerika Serikat.', 'Rilisan Digital / Fisik Rp 49.000 — Rp 250.000', 'Dukung Inisiatif', 'https://youtube.com/watch?v=coachella', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Album Studio ''Nicole'' & ''Buzz'' (88rising / Virgin Music)', 'Album Rekaman Pop-R&B Kontemporer', 'Album reflektif berisi lagu-lagu hit global seperti ''High School in Jakarta'', ''Oceans & Engines'', dan ''Backburner''.', 'Rp 350.000 — Rp 650.000', 'Dukung Inisiatif', 'https://nikizefanya.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Prof. dr. Adi Utarini, M.Sc., MPH, Ph.D. (adi-utarini)
@@ -304,6 +340,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2000 — 2010', 'DOKTORAL SWEDIA & GURU BESAR FK-KMK UGM', 'Menyelesaikan studi doktoral di Umeå University Swedia dan dikukuhkan sebagai Guru Besar Ilmu Kesehatan Masyarakat FK-KMK UGM.', 1);
@@ -321,6 +359,10 @@ BEGIN
   VALUES (v_profile_id, 'Menjinakkan Nyamuk Bersama Ibu-Ibu Kampung: Rahasia Keberhasilan Riset Wolbachia di Yogyakarta', 'KESEHATAN MASYARAKAT', '8 Menit Membaca', 'Catatan Prof. Adi Utarini tentang bagaimana pendekatan kultural dan transparansi informasi memenangkan kepercayaan warga.', 'Banyak ilmuwan gagal bukan karena hipotesis laboratoriumnya keliru, tapi karena mereka lupa menyapa masyarakat tempat riset itu dijalankan. Di Yogyakarta, kami menitipkan ember-ember telur nyamuk di rumah-rumah warga. Tanpa kerelaan para ibu rumah tangga menjaga ember tersebut di teras rumahnya, sains ini tidak akan pernah menyelamatkan dunia.', '/artikel/adi-utarini-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Daftar TIME100 dan Tanggung Jawab Moral Peneliti Indonesia di Panggung Internasional', 'SAINS & DIPLOMASI', '7 Menit Membaca', 'Refleksi Prof. Adi Utarini tentang pentingnya riset berorientasi pemecahan masalah riil masyarakat kelas bawah.', 'Penghargaan dunia hanyalah pengingat bahwa penderitaan akibat penyakit tropis adalah nyata di negara-negara selatan. Tugas utama periset adalah melahirkan solusi yang terjangkau, aman, dan dapat dinikmati oleh rakyat miskin tanpa terbebani biaya mahal.', '/artikel/adi-utarini-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Uji Klinis Aplikasi Wolbachia Melawan Demam Berdarah (NEJM)', 'Publikasi Medis Kelas Dunia & Uji Klinis', 'Studi ilmiah acak terkendali efektivitas Wolbachia yang menjadi standar emas rujukan penanganan DBD global oleh WHO.', 'Karya Budaya / Mulai Rp 75.000', 'Dukung Inisiatif', 'https://www.nejm.org/doi/full/10.1056/NEJMoa2030243', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Buku: Menggugah Partisipasi Masyarakat dalam Sains Biomedis', 'Karya Literatur Komunikasi Sains', 'Panduan integrasi riset ilmiah biomedis mutakhir dengan pendekatan sosiologis kader posyandu dan tokoh masyarakat kampung.', 'Rp 85.000 — Rp 185.000', 'Dukung Inisiatif', 'https://ugm.ac.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Prof. Ken Kawan Soetanto (prof-ken-soetanto)
@@ -350,6 +392,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '1974 — 1988', 'MERANTAU KE JEPANG & MERAIH 4 GELAR DOKTOR', 'Belajar mandiri di Jepang dan menyelesaikan empat program doktoral dalam rekayasa elektro, kedokteran biomedis, farmasi, dan pedagogi.', 1);
@@ -367,6 +411,10 @@ BEGIN
   VALUES (v_profile_id, 'Menaklukkan Tradisi Akademik Jepang: Perjalanan Prof. Ken Soetanto Meraih 4 Gelar Doktor', 'PENDIDIKAN & KETANGGUHAN', '8 Menit Membaca', 'Kisah inspiratif tentang bagaimana anak kampung dari Surabaya menjadi guru besar legendaris di universitas paling bergengsi di Tokyo.', 'Ketika saya pertama kali tiba di Tokyo tanpa bisa berbahasa Jepang, banyak orang meremehkan. Namun saya berprinsip: jika orang lain belajar 5 jam, saya harus belajar 10 jam. Otak manusia itu elastis; yang membedakan keberhasilan adalah seberapa besar rasa lapar jiwamu untuk menyerap ilmu pengetahuan.', '/artikel/prof-ken-soetanto-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Metode Efek Soetanto: Mengapa Kasih Sayang Guru Lebih Berharga daripada Angka Ujian', 'PEDAGOGI BELAJAR', '7 Menit Membaca', 'Bagaimana mengubah murid yang kehilangan arah menjadi peneliti berprestasi dengan memulihkan harga diri mereka terlebih dahulu.', 'Tidak ada anak yang bodoh sejak lahir. Yang ada adalah anak yang jiwanya layu karena sering direndahkan. Sebelum mengajarkan rumus matematika atau biologi yang rumit, seorang pendidik wajib menyalakan kembali rasa percaya diri di dada muridnya.', '/artikel/prof-ken-soetanto-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Paten Teknologi Microbubble Terapi Kanker Ultrasonik', 'Paten Biomedis Internasional & Terapi Medis', 'Sistem penghantaran obat tertarget memanfaatkan gelombang ultrasonik dan partikel mikro-gelembung untuk membasmi sel kanker tanpa merusak jaringan sehat.', 'Karya Budaya / Mulai Rp 75.000', 'Dukung Inisiatif', 'https://patents.google.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Metode Pembelajaran Motivasi ''Soetanto Effect''', 'Pedagogi Pendidikan & Psikologi Belajar', 'Metode pendidikan interaktif yang diadopsi di berbagai universitas Jepang untuk mengubah mahasiswa berpestasi rendah menjadi peneliti unggul.', 'Karya Budaya / Mulai Rp 75.000', 'Dukung Inisiatif', 'https://www.waseda.jp', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Rich Brian (Brian Imanuel) (rich-brian)
@@ -396,6 +444,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2010 — 2015', 'HOMESCHOOLING JAKARTA & BELAJAR OTODIDAK DI YOUTUBE', 'Mempelajari komposisi musik, video editing, dan bahasa Inggris dari internet dari rumahnya di Jakarta Barat.', 1);
@@ -413,6 +463,10 @@ BEGIN
   VALUES (v_profile_id, 'Dari Kamar Tidur Jakarta Barat ke Puncak Hip-Hop Dunia: Refleksi Brian Imanuel', 'HIP-HOP & IDENTITAS', '7 Menit Membaca', 'Bagaimana rasa ingin tahu otodidak dan keberanian bereksplorasi mengubah seorang remaja pemalu menjadi bintang dunia.', 'Banyak orang mengira saya punya koneksi industri di Amerika. Faktanya, saya merekam rap pertama saya dengan mikrofon murahan di pojok kamar tidur. Internet telah meratakan lapangan bermain; kualitas eksekusi dan keaslian suaramu adalah satu-satunya mata uang yang berlaku.', '/artikel/rich-brian-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'The Sailor: Metafora Perahu Layar dan Keberanian Berkelana Anak Bangsa', 'KARYA & REPUTASI', '6 Menit Membaca', 'Makna di balik simbol pelaut nusantara dalam karya-karya musik internasional Rich Brian.', 'Nenek moyang kita adalah penjelajah samudera yang tidak gentar menghadapi ombak raksasa. Menghidupkan kembali semangat itu di era modern berarti berani melompat ke arena global tanpa pernah melupakan tanah tempat kakimu pertama kali berpijak.', '/artikel/rich-brian-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Album ''The Sailor'' (88rising / 12Tone Music)', 'Album Rekaman Hip-Hop Sinematik', 'Album konsep naratif yang memotret pencarian jati diri perantau muda Asia melintasi samudera mimpi dunia.', 'Rp 350.000 — Rp 650.000', 'Dukung Inisiatif', 'https://richbrian.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Lagu & Video Musik ''Kids'' (Refleksi Generasi)', 'Karya Musik & Representasi Budaya', 'Lagu reflektif bertenaga tentang anak-anak muda Asia yang mendobrak stereotip global dan menjadi tuan di panggung dunia.', 'Rilisan Digital / Fisik Rp 49.000 — Rp 250.000', 'Dukung Inisiatif', 'https://youtube.com/watch?v=kids', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: William Wongso (william-wongso)
@@ -442,6 +496,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '1970 — 1990', 'EKSPLORASI GASTRONOMI EROPA & RISET KULINER TRADISIONAL', 'Menempuh pendidikan kuliner dan pembuatan roti di Prancis, Jerman, dan Swiss sebelum mendedikasikan hidup meriset bumbu nusantara.', 1);
@@ -459,6 +515,10 @@ BEGIN
   VALUES (v_profile_id, 'Menjaga Kemurnian Rempah Leluhur: Catatan 50 Tahun Perjalanan Dapur William Wongso', 'GASTRONOMI NUSANTARA', '8 Menit Membaca', 'Kisah perburuan bumbu asli di pasar-pasar tradisional pedalaman dan perlawanan terhadap simplifikasi bumbu instan.', 'Kuliner kita kaya bukan karena teknik kimianya, tapi karena kita dianugerahi tanah vulkanik paling subur untuk rempah terbaik di dunia. Menghilangkan asam kandis pada masakan Sumatra atau melupakan daun mangkokan pada kuliner Jawa adalah pengkhianatan terhadap warisan rasa leluhur.', '/artikel/william-wongso-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Diplomasi Rendang di Meja Perjamuan Dunia: Mengapa Makanan Adalah Bahasa Tertinggi Bangsa', 'DIPLOMASI BUDAYA', '7 Menit Membaca', 'Bagaimana sepiring kuliner tradisional mampu meruntuhkan sekat diplomasi politik dan membuka pintu penghormatan bangsa-bangsa.', 'Saat para pemimpin negara mencicipi rendang yang dimasak dengan kesabaran api kayu, mereka tidak hanya mengecap makanan yang lezat; mereka sedang mengecap sejarah panjang perdagangan rempah nusantara yang pernah menggerakkan peradaban dunia.', '/artikel/william-wongso-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Buku ''Flavors of Indonesia: William Wongso''s Culinary Wonders''', 'Literatur Gastronomi Dunia & Best Cookbook of the Year', 'Ensiklopedi kuliner nusantara komprehensif yang membedah keunikan bumbu, teknik memasak purba, dan filosofi makanan daerah.', 'Rp 85.000 — Rp 185.000', 'Dukung Inisiatif', 'https://www.williamwongso.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Akuisisi Bumbu Otentik ''William Wongso Kuliner'' (Bumbu Siap Pakai)', 'Hilirisasi Kuliner Tradisional Mandiri', 'Inisiatif standardisasi bumbu pasta rempah tradisional nusantara siap masak tanpa pengawet sintetis untuk pasar global.', 'Karya Budaya / Mulai Rp 75.000', 'Dukung Inisiatif', 'https://williamwongso.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 COMMIT;

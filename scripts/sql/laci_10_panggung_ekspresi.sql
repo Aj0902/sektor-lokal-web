@@ -28,6 +28,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2009 — 2012', 'ERA ANONIM POCONGGG, BUKU LARIS & FILM LAYAR LEBAR', 'Membangun fenomena kultur internet Twitter lewat akun anonim @Poconggg dan merilis novel laris yang diadaptasi ke bioskop.', 1);
@@ -45,6 +47,10 @@ BEGIN
   VALUES (v_profile_id, 'Mengubah Jutaan Followers Jadi Lapangan Kerja Riil: Rahasia Bisnis Arief Muhammad', 'BISNIS KREATIF', '8 Menit Membaca', 'Bagaimana menjembatani popularitas media sosial yang fana menjadi aset fisik, pabrik, dan restoran yang tahan banting.', 'Banyak kreator kaget saat algoritmanya turun dan pemasukannya lenyap. Saya selalu memandang media sosial sebagai corong pemasaran, bukan tujuan akhir. Tujuan akhir adalah membangun bisnis riil dengan tata kelola profesional dan rantai pasok mandiri.', '/artikel/arief-muhammad-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Duta Kuliner Minang: Menjaga Standar Rasa Otentik di Era Waralaba Cepat Saji', 'KULINER TRADISIONAL', '7 Menit Membaca', 'Pentingnya mempertahankan beras Solok dan bumbu asli Sumatra Barat di tengah godaan kompromi efisiensi biaya.', 'Membuat masakan Padang di Jakarta bukan berarti boleh menurunkan kualitas bumbu demi margin keuntungan. Rasa otentik adalah kehormatan budaya. Jika kita kompromi dengan bahan baku tiruan, kita sedang membohongi lidah para penikmat kuliner warisan leluhur.', '/artikel/arief-muhammad-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Jaringan Rumah Makan Padang Payakumbuah', 'Kewirausahaan Kuliner & Rantai Pasok Lokal', 'Jaringan restoran Minang modern yang menggunakan bahan baku otentik (beras solok, cabai keriting, kelapa) langsung dari petani Sumatra Barat.', 'Karya Budaya / Mulai Rp 75.000', 'Dukung Inisiatif', 'https://payakumbuah.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Gerakan Berbagi Digital ''Ikoy-Ikoyan''', 'Aksi Solidaritas & Filantropi Kreator', 'Fenomena berbagi rezeki tanpa syarat di media sosial yang membantu ribuan warga terdampak ekonomi krisis pandemi.', 'Karya Budaya / Mulai Rp 75.000', 'Dukung Inisiatif', 'https://instagram.com/ariefmuhammad', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Denny Sumargo (denny-sumargo)
@@ -74,6 +80,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2000 — 2011', 'JUARA BOLA BASKET NASIONAL & TIMNAS INDONESIA', 'Menjadi bintang guard legendaris di kompetisi IBL, menjuarai liga berkali-kali bersama Satria Muda dan memperkuat Timnas Basket.', 1);
@@ -91,6 +99,10 @@ BEGIN
   VALUES (v_profile_id, 'Seni Mendengarkan Tanpa Menghakimi: Catatan di Balik Meja Siniar Denny Sumargo', 'HUMANIORA & DIALOG', '8 Menit Membaca', 'Mengapa memberi ruang bicara bagi orang yang sedang terpojok adalah bentuk pertolongan pertama bagi kesehatan mental.', 'Saat seseorang datang dengan sejuta masalah dan hujatan publik di pundaknya, hal pertama yang dia butuhkan bukanlah penceramah, melainkan manusia lain yang mau menatap matanya dan mendengarkan keluh kesahnya secara utuh tanpa mencuri panggung.', '/artikel/denny-sumargo-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Kekuatan Penebusan Diri: Dari Lapangan Basket ke Perjalanan Menjadi Manusia Lebih Baik', 'REFLEKSI HIDUP', '7 Menit Membaca', 'Kisah Denny menghadapi titik terendah dalam hidup dan bagaimana kegagalan membentuk kedewasaan emosional.', 'Jatuh dan difitnah itu sakit sekali. Tapi kalau lo tidak melarikan diri dan memilih berdamai dengan rasa sakit itu, lo akan keluar sebagai manusia yang punya empati lebih besar pada penderitaan orang lain.', '/artikel/denny-sumargo-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Siniar ''Curhat Bang Denny Sumargo'' (Ruang Mediasi Publik)', 'Talkshow Humaniora & Mediasi Masalah Sosial', 'Platform dialog intim jutaan penonton yang mengangkat kisah-kisah perjuangan hidup, penebusan dosa masa lalu, dan resolusi konflik sosial.', 'Karya Budaya / Mulai Rp 75.000', 'Dukung Inisiatif', 'https://youtube.com/@curhatbang', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Peran Sinema ''A Man Called Ahok'' & ''Miracle in Cell No. 7''', 'Seni Peran Layar Lebar', 'Penampilan akting dramatis berkarakter kuat yang menuai apresiasi luas dari kritikus film dan festival perfilman nasional.', 'Karya Budaya / Mulai Rp 75.000', 'Dukung Inisiatif', 'https://www.imdb.com/name/nm5436605', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Diwantara Anugrah Putra (Tara Arts) (diwantara-anugrah-putra)
@@ -120,6 +132,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2008 — 2011', 'BELAJAR VFX OTODIDAK & KANAL TARA ARTS MOVIE', 'Mempelajari software After Effects secara mandiri dan memproduksi film-film pendek beranimasi efek visual tinggi yang memukau komunitas internet awal.', 1);
@@ -137,6 +151,10 @@ BEGIN
   VALUES (v_profile_id, 'Magis di Balik Layar Hijau: 15 Tahun Perjalanan Tara Arts Membangun Komunitas Kreatif', 'EFEK VISUAL & SENI', '7 Menit Membaca', 'Bagaimana kecintaan murni pada efek film melahirkan salah satu komunitas kreator paling solid dan loyal di Indonesia.', 'Di masa awal, merender video 30 detik butuh waktu semalaman dan komputernya sering mati mendadak. Tapi rasa takjub saat melihat hasil gambarmu di layar bisa terbang atau mengeluarkan petir membuat rasa lelah itu hilang seketika. Jangan biarkan keterbatasan alat mematikan mimpi kreatifmu.', '/artikel/diwantara-anugrah-putra-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Menjaga Kesantunan di Jagat Digital: Mengapa Komedi Tanpa Toxic Selalu Bertahan Lama', 'KULTUR DIGITAL', '6 Menit Membaca', 'Prinsip etika Tara Arts dalam menyajikan hiburan yang bisa ditonton bersama anak-anak dan orang tua.', 'Membuat orang tertawa dengan mencaci maki atau menyebarkan drama itu jalan pintas murahan. Komedi yang bernyawa adalah komedi yang lahir dari keakraban tulus, celetukan spontan, dan rasa hormat kepada setiap pasang mata penonton.', '/artikel/diwantara-anugrah-putra-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Kanal Hiburan & Serial Film Pendek VFX ''Tara Arts Movie''', 'Produksi Film Pendek Efek Visual Mandiri', 'Koleksi ratusan video parodi aksi dan sains fiksi mandiri dengan standar compositing visual effect internasional.', 'Tiket Nonton / VOD Rp 45.000 — Rp 75.000', 'Dukung Inisiatif', 'https://youtube.com/@taraartsmovie', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Tara Arts Game Indonesia (Platform Gaming Komedi)', 'Kreator Konten & Komunitas Video Interaktif', 'Kanal gaming legendaris dengan jutaan subscriber yang mengedepankan etika bermain sportif dan komedi improvisasi santun.', 'Karya Budaya / Mulai Rp 75.000', 'Dukung Inisiatif', 'https://youtube.com/@taraartsgameindonesia', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Dzawin Nur Ikram (dzawin-nur-ikram)
@@ -166,6 +184,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2014 — 2017', 'SUCI 4, RAJA LAWAK MALAYSIA & STAND UP SATIRE', 'Meraih posisi 3 besar SUCI 4 Kompas TV dan memenangkan panggung komedi internasional Maharaja Lawak Mega di Malaysia.', 1);
@@ -183,6 +203,10 @@ BEGIN
   VALUES (v_profile_id, 'Mencari Tuhan di Puncak Sunyi: Catatan Refleksi Perjalanan Dzawin Nur', 'FILSAFAT ALAM', '7 Menit Membaca', 'Bagaimana dinginnya malam di tenda gunung mengajarkan arti kesederhanaan dan kepasrahan hidup seorang manusia.', 'Saat kamu kehabisan napas di tanjakan berbatu dan suhu menyentuh minus derajat, semua atribut sosial—gelar sarjana, jumlah subscriber, saldo rekening—lenyap seketika. Yang tersisa hanyalah dialog jujur antara napasmu dan Penciptamu.', '/artikel/dzawin-nur-ikram-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Menghormati Keringat Porter: Kisah di Balik Layar Pendakian Gunung Indonesia', 'SOSIAL & EMPATI', '6 Menit Membaca', 'Mengapa kita wajib memanusiakan para warga lokal yang memikul beban di jalur-jalur pendakian rimba nusantara.', 'Banyak pendaki bergaya pahlawan di media sosial setelah sampai puncak, tapi lupa bahwa tenda dan makanannya dipikul oleh bapak-bapak tua yang betisnya mengeras menahan beban puluhan kilogram demi menyekolahkan anaknya. Menghargai mereka adalah ujian empati pertama di gunung.', '/artikel/dzawin-nur-ikram-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Serial Dokumenter Ekspedisi Gunung & Budaya Desa', 'Dokumenter Petualangan & Refleksi Budaya', 'Dokumentasi audio-visual pendakian gunung dengan narasi sastrawi yang menyorot kearifan lokal masyarakat lereng pegunungan.', 'Tiket Nonton / VOD Rp 45.000 — Rp 75.000', 'Dukung Inisiatif', 'https://youtube.com/@dzawinnur', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Kampanye Etika Pendakian ''Gunung Bukan Tempat Sampah''', 'Konservasi Lingkungan & Advokasi Alam', 'Gerakan edukasi masif kepada ribuan pendaki muda untuk membawa pulang kembali sampah plastik dari atas gunung.', 'Karya Budaya / Mulai Rp 75.000', 'Dukung Inisiatif', 'https://instagram.com/dzawin_nur', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Eno Bening (eno-bening)
@@ -212,6 +236,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2012 — 2016', 'STUDI FILSAFAT UI & ANALISIS KULTUR MEME AWAL', 'Mendalami filsafat kontemporer di UI dan mulai membedah fenomena meme internet sebagai bahasa komunikasi baru generasi digital.', 1);
@@ -229,6 +255,10 @@ BEGIN
   VALUES (v_profile_id, 'Di Balik Tirai Algoritma: Bagaimana Media Sosial Merancang Kemarahan Publik Demi Profit', 'KRITIK MEDIA', '8 Menit Membaca', 'Pembedahan teori ekonomi perhatian (attention economy) dan mengapa kabar buruk selalu lebih cepat viral dibanding kabar baik.', 'Algoritma tidak peduli apakah sebuah informasi itu benar atau berbahaya bagi kohesi bangsa. Yang diukur oleh sistem adalah tingkat keterlibatan (engagement). Dan emosi manusia yang paling mudah memicu komentar dan share adalah kemarahan dan ketakutan. Menyadari jebakan ini adalah langkah pertama merebut kembali kemerdekaan berpikir kita.', '/artikel/eno-bening-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Etika Kreator Konten: Batas Antara Menghibur dan Mengeksploitasi Kemiskinan', 'ETIKA DIGITAL', '7 Menit Membaca', 'Kritik tajam terhadap tren ''poverty porn'' dan perlunya martabat manusia dijaga di atas target penonton.', 'Membantu orang miskin di depan kamera dengan musik melankolis demi monetisasi iklan bukanlah filantropi, melainkan eksploitasi martabat kaum rentan. Kreator sejati menciptakan nilai tambah dan inspirasi, bukan menjual penderitaan sesama demi angka penonton.', '/artikel/eno-bening-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Pembedahan Kritis Dinamika Budaya Internet & Algoritma', 'Video Esai & Kritik Media Digital', 'Rangkaian video esai analitis yang membedah arsitektur psikologi platform media sosial, polarisasi digital, dan manipulasi perhatian.', 'Karya Budaya / Mulai Rp 75.000', 'Dukung Inisiatif', 'https://youtube.com/@enobening', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Modul Edukasi ''Social Media Literacy & Digital Awareness''', 'Kurikulum Pendidikan Literasi Digital', 'Panduan praktis bagi orang tua dan remaja untuk menavigasi disinformasi, privasi data, dan kecanduan algoritma di ruang digital.', 'Karya Budaya / Mulai Rp 75.000', 'Dukung Inisiatif', 'https://enobening.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Gritte Agatha (gritte-agatha)
@@ -258,6 +288,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2008 — 2016', 'AKTRIS REMAJA & STUDI DESAIN KOMUNIKASI VISUAL', 'Membintangi puluhan judul film dan sinetron populer nasional sembari menyelesaikan studi sarjana DKV di UMN.', 1);
@@ -275,6 +307,10 @@ BEGIN
   VALUES (v_profile_id, 'Belajar Keberanian dari Para Pejuang Sunyi: Catatan di Balik Meja ''Buka Praktek''', 'HUMANIORA & EMPATI', '7 Menit Membaca', 'Pelajaran berharga tentang arti syukur dan ketabahan batin dari pertemuan dengan ratusan narasumber berjiwa baja.', 'Setiap kali selesai merekam wawancara dengan orang tua yang merawat anak dengan penyakit langka selama belasan tahun tanpa mengeluh, saya merasa masalah hidup saya sehari-hari sangat kecil. Ketabahan mereka adalah guru kehidupan terbaik yang mengajarkan makna cinta tanpa syarat.', '/artikel/gritte-agatha-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Menjaga Etika Wawancara Penyintas Trauma di Era Kejar Penonton', 'ETIKA MEDIA', '6 Menit Membaca', 'Pentingnya mengutamakan kenyamanan psikologis narasumber dibanding mencari potongan klip yang mengejutkan.', 'Narasumber yang membagikan trauma hidupnya bukan komoditas untuk memancing air mata penonton demi views. Kita punya kewajiban moral untuk menjaga batas privasi dan memastikan mereka merasa aman dan didukung setelah kamera dimatikan.', '/artikel/gritte-agatha-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Siniar ''Gritte Buka Praktek'' (GBP)', 'Siniar Humaniora & Advokasi Sosial', 'Program wawancara mendalam yang mengangkat kisah ketabahan hidup para penyintas penyakit kronis dan figur inspiratif akar rumput.', 'Karya Budaya / Mulai Rp 75.000', 'Dukung Inisiatif', 'https://youtube.com/@gritteagatha', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Film Pendek ''Prank'' & Karya Sinema Independen', 'Penyutradaraan Sinema & Edukasi Sosial', 'Karya film pendek naratif yang mengedukasi bahaya perundungan (*bullying*) dan pentingnya komunikasi sehat dalam keluarga.', 'Rp 199.000 — Rp 1.450.000 / paket', 'Dukung Inisiatif', 'https://youtube.com/@gritteagatha', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Jovial & Andovi da Lopez (SkinnyIndonesian24) (jovial-andovi-da-lopez)
@@ -304,6 +340,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2011 — 2014', 'ERA AWAL YOUTUBE INDONESIA & SATIR AKADEMIK UI', 'Merintis video komedi sketsa cerdas dari bangku kuliah UI dan mendobrak kebiasaan komedi slapstick pertelevisian nasional.', 1);
@@ -321,6 +359,10 @@ BEGIN
   VALUES (v_profile_id, 'Di Balik Layar DPR Musikal: Mengapa Kritik Politik Harus Berani dan Berkelas', 'SENI & POLITIK', '8 Menit Membaca', 'Kisah Jovial dan Andovi merogoh tabungan pribadi demi mewujudkan pentas musikal yang membangkitkan kesadaran kritis anak muda.', 'Kritik terhadap dewan perwakilan rakyat tidak melulu harus berupa lemparan batu atau umpatan di jalanan. Ketika kita mengemas fakta kebobrokan sistem ke dalam bait lagu, dialog berbobot, dan orkestrasi yang indah, kritik itu menembus akal sehat penonton dan menetap lama di kepalanya.', '/artikel/jovial-andovi-da-lopez-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Pamit di Puncak Panggung: Menjaga Integritas Karya di Atas Godaan Uang Algoritma', 'INTEGRITAS KREATIF', '7 Menit Membaca', 'Alasan filosofis SkinnyIndonesian24 berhenti tepat di perayaan 10 tahun berkarya.', 'Setiap seniman harus tahu kapan lagu terakhirnya harus dimainkan. Berhenti di saat karyamu masih dihargai dan dicintai adalah cara menjaga kesucian karya agar tidak terdegradasi menjadi sekadar pabrik konten pencari uang receh.', '/artikel/jovial-andovi-da-lopez-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'DPR Musikal (Pertunjukan Musikal Satir Konstitusi)', 'Teater Musikal & Kritik Kebijakan Publik', 'Mahakarya teater musikal orisinil berdurasi penuh yang membongkar korupsi politik dan pengkhianatan amanat rakyat di gedung dewan.', 'Rilisan Digital / Fisik Rp 49.000 — Rp 250.000', 'Dukung Inisiatif', 'https://youtube.com/watch?v=dprmusikal', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Serial ''Epic Rap Battles of Presidents'' (1 s.d. 3)', 'Produksi Hip-Hop Musikal Sejarah Bangsa', 'Karya musikal sinematik yang mempertemukan para tokoh proklamator dan presiden Indonesia dalam debat gagasan kebangsaan.', 'Rilisan Digital / Fisik Rp 49.000 — Rp 250.000', 'Dukung Inisiatif', 'https://youtube.com/@skinnyindonesian24', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Leonardo Edwin (leonardo-edwin)
@@ -350,6 +392,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2018 — 2022', 'KULIAH DI SEATTLE & VLOG PERANTAUAN MANDIRI', 'Menyelesaikan studi di University of Washington sembari bekerja paruh waktu dan mendokumentasikan kehidupan mahasiswa perantau.', 1);
@@ -367,6 +411,10 @@ BEGIN
   VALUES (v_profile_id, 'Menemukan Rumah di Pelosok Negeri: Catatan Perjalanan Leonardo Edwin', 'BUDAYA & PERJALANAN', '7 Menit Membaca', 'Refleksi Leo tentang kehangatan warga desa pedalaman yang mengajarkan arti persaudaraan sejati di tengah perbedaan.', 'Saat singgah di gubuk seorang bapak petani di pedalaman Flores atau Papua, mereka rela menyembelih ayam satu-satunya miliknya demi menjamu tamu yang baru dikenalnya satu jam lalu. Keramahan tulus seperti ini adalah harta karun bangsa kita yang paling mewah.', '/artikel/leonardo-edwin-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Disiplin di Perantauan: Kiat Menjaga Karakter dan Semangat Belajar di Luar Negeri', 'PENDIDIKAN & KARAKTER', '6 Menit Membaca', 'Pengalaman membagi waktu antara kuliah berat, kerja paruh waktu di dapur, dan menjaga konsistensi berkarya.', 'Tinggal jauh dari orang tua melatih kemandirian total. Kamu belajar mengelola uang receh, memasak makananmu sendiri, dan tidak menyerah saat musim dingin membekukan semangatmu. Disiplin diri adalah fondasi dari segala pencapaian besar.', '/artikel/leonardo-edwin-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Serial Dokumenter Sinematik ''Sabang Sampai Merauke''', 'Dokumenter Budaya & Eksplorasi Geografi Indonesia', 'Serial perjalanan sinematik yang mendokumentasikan keindahan alam tersembunyi, tradisi adat, dan kehidupan sosial di pulau-pulau terpencil.', 'Tiket Nonton / VOD Rp 45.000 — Rp 75.000', 'Dukung Inisiatif', 'https://youtube.com/@leoedw', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Buku ''Menjelajah Batas: Catatan Perantau Muda''', 'Karya Literatur Memoar & Motivasi Belajar', 'Kisah memoar perjalanan beradaptasi di negeri asing, menembus batasan rasa takut, dan menemukan kembali cinta pada tanah kelahiran.', 'Rp 85.000 — Rp 185.000', 'Dukung Inisiatif', 'https://gramedia.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Nessie Judge (nessie-judge)
@@ -396,6 +444,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2012 — 2016', 'ERA AWAL KREATIF & MASTER BISNIS FINLANDIA', 'Mempelajari kultur media digital dan menyelesaikan program magister Master of Business Administration di Finlandia.', 1);
@@ -413,6 +463,10 @@ BEGIN
   VALUES (v_profile_id, 'Di Balik Berkas Forensik NERROR: Menjaga Etika Menceritakan Tragedi Korban', 'RISET & ETIKA', '8 Menit Membaca', 'Bagaimana Nessie menyusun naskah investigasi kriminal dengan tetap menghormati duka keluarga korban.', 'Menceritakan kasus kejahatan nyata bukanlah ajang mencari ketakutan murahan. Kami menghabiskan belasan jam memverifikasi laporan persidangan dan hasil otopsi resmi agar tidak menyebarkan fitnah, serta selalu memastikan fokus cerita ada pada penegakan keadilan bagi korban.', '/artikel/nessie-judge-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Pentingnya Melek Forensik bagi Generasi Muda: Jangan Mudah Percaya Konspirasi Liar', 'LITERASI LOGIKA', '7 Menit Membaca', 'Mengapa berpikir kritis dan berbasis bukti adalah benteng melawan kabar bohong di era media sosial.', 'Di internet, teori konspirasi yang liar sangat cepat menyebar karena memuaskan rasa penasaran manusia. Tugas kita adalah melatih nalar skeptis yang sehat: selalu uji sumber informasinya, periksa bukti fisiknya, dan jangan mengambil kesimpulan hanya berdasarkan cocoklogi.', '/artikel/nessie-judge-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Serial Investigasi Kasus Nyata & Forensik ''NERROR''', 'Video Esai Investigasi & Forensik Kriminal', 'Serial video riset berbasis data investigasi mendalam yang membedah kasus kejahatan global dan misteri sejarah dunia secara saintifik.', 'Karya Budaya / Mulai Rp 75.000', 'Dukung Inisiatif', 'https://youtube.com/@nessiejudge', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Siniar Eksklusif ''The Nerror Podcast'' (Spotify Original)', 'Siniar Audio Sinematik & Profil Psikologi Kriminal', 'Produksi siniar audio berbasis teater suara yang mengupas profil psikologis pelaku kejahatan dan kronologi misteri tak terpecahkan.', 'Tiket Nonton / VOD Rp 45.000 — Rp 75.000', 'Dukung Inisiatif', 'https://open.spotify.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Raditya Dika (raditya-dika)
@@ -442,6 +496,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2005 — 2010', 'ERA BLOGGING KAMBING JANTAN & REVOLUSI NOVEL LOKAL', 'Merilis novel debut fenomenal Kambing Jantan yang menjadi pemicu kebangkitan genre buku komedi personal di toko buku Indonesia.', 1);
@@ -459,6 +515,10 @@ BEGIN
   VALUES (v_profile_id, 'Seni Menulis dari Kerapuhan Diri: 20 Tahun Perjalanan Kreatif Raditya Dika', 'PENULISAN & KARYA', '8 Menit Membaca', 'Bagaimana mengubah rasa malu, kegagalan cinta, dan kecanggungan sosial menjadi karya tulisan yang abadi.', 'Saat menulis buku pertama, saya hanya menceritakan betapa bodoh dan canggungnya saya saat kuliah di Adelaide. Pembaca menyukainya bukan karena saya hebat, tapi karena mereka melihat kelemahan diri mereka sendiri di dalam cerita itu. Jangan takut terlihat tidak sempurna dalam tulisanmu.', '/artikel/raditya-dika-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Tenang Finansial di Usia Muda: Mengapa Gaya Hidup Sederhana Menyelamatkan Masa Depan', 'LITERASI KEUANGAN', '7 Menit Membaca', 'Pesan Raditya Dika tentang bahaya jebakan gengsi perkotaan dan nikmatnya memiliki kebebasan waktu.', 'Kaya yang sesungguhnya bukan tentang pamer jam tangan mahal atau mobil mewah di media sosial untuk memukau orang yang tidak kamu sukai. Kaya itu adalah saat kamu punya dana darurat yang cukup, tidak punya utang konsumtif, dan bebas menentukan apa yang ingin kamu kerjakan setiap pagi tanpa tekanan.', '/artikel/raditya-dika-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Buku-Buku Mahakarya Komedi Bestseller Nasional (Kambing Jantan s.d. Ubur-Ubur Lembur)', 'Karya Literatur Komedi & Fenomena Perbukuan', 'Seri buku kumpulan esai komedi personal yang telah dicetak jutaan eksemplar dan menginspirasi jutaan generasi muda untuk menulis.', 'Rp 85.000 — Rp 185.000', 'Dukung Inisiatif', 'https://gagasmedia.net', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Filmografi Sinema Box Office (Single, Hangout, Malam Minggu Miko)', 'Penyutradaraan & Penulisan Skenario Sinema', 'Karya-karya sinema komedi cerdas yang mengawinkan genre romantis, misteri, dan satire kehidupan urban.', 'Tiket Nonton / VOD Rp 45.000 — Rp 75.000', 'Dukung Inisiatif', 'https://imdb.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 COMMIT;

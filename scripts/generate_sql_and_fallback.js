@@ -32,6 +32,123 @@ function escArray(arr) {
   return `ARRAY[${arr.map(s => esc(s)).join(', ')}]::text[]`;
 }
 
+// Helper to determine realistic estimated prices for initiatives
+function getEstimatedPrice(figure, work) {
+  const title = (work.title || '').toLowerCase();
+  const cat = (work.category || '').toLowerCase();
+  const desc = (work.description || '').toLowerCase();
+
+  // 1. Civic Tech & Open Knowledge (Free / Public Access)
+  if (title.includes('turnbackhoax') || title.includes('cekfakta') || title.includes('kawalpemilu') || title.includes('bijak memilih') || title.includes('openbts') || title.includes('internet rakyat') || cat.includes('civic-tech') || cat.includes('civic tech') || cat.includes('open-source')) {
+    return '100% Akses Publik Bebas';
+  }
+  if (title.includes('ngaji filsafat')) {
+    return 'Bebas Biaya (Akses Publik)';
+  }
+  if (title.includes('pshk') || title.includes('sthi jentera')) {
+    if (title.includes('sthi jentera')) return 'Program Sarjana & Beasiswa Penuh';
+    return 'Riset Independen & Pro-Bono';
+  }
+
+  // 2. Physical Products / Fashion / Crafts
+  if (title.includes('spedagi') || title.includes('sepeda')) {
+    return 'Rp 7.500.000 — Rp 14.500.000';
+  }
+  if (title.includes('magno') || title.includes('radio kayu')) {
+    return 'Rp 1.800.000 — Rp 3.500.000';
+  }
+  if (title.includes('hirka') || title.includes('ceker ayam') || title.includes('kulit kaki ayam')) {
+    return 'Rp 1.450.000 — Rp 3.200.000';
+  }
+  if (title.includes('brodo') || (title.includes('sepatu') && !title.includes('hirka'))) {
+    return 'Rp 375.000 — Rp 899.000';
+  }
+  if (title.includes('batik kultur') || title.includes('batik') || title.includes('busana') || title.includes('tenun')) {
+    if (title.includes("du'anyam") || title.includes('lontar')) return 'Rp 120.000 — Rp 650.000';
+    return 'Rp 450.000 — Rp 2.250.000';
+  }
+  if (title.includes('pipiltin') || title.includes('cokelat') || title.includes('kakao')) {
+    return 'Rp 45.000 — Rp 135.000 / bar';
+  }
+  if (title.includes('javara') || title.includes('beras') || title.includes('garam') || title.includes('rempah')) {
+    return 'Rp 35.000 — Rp 165.000 / pack';
+  }
+  if (title.includes("du'anyam") || title.includes('anyaman')) {
+    return 'Rp 120.000 — Rp 650.000';
+  }
+  if (title.includes('asgar') || title.includes('sukaregang') || title.includes('akar wangi')) {
+    return 'Rp 150.000 — Rp 1.200.000';
+  }
+  if (title.includes('majestic buana') || title.includes('biji plastik') || title.includes('daur ulang')) {
+    return 'Rp 18.000 — Rp 85.000 / kg';
+  }
+  if (title.includes('evoware') || title.includes('bioplastik') || title.includes('rumput laut')) {
+    return 'Rp 25.000 — Rp 120.000';
+  }
+
+  // 3. Books & Publications
+  if (title.includes('buku') || title.includes('novel') || title.includes('komik') || cat.includes('buku') || cat.includes('literatur') || cat.includes('sastra')) {
+    return 'Rp 85.000 — Rp 185.000';
+  }
+
+  // 4. Courses / Bootcamps / Masterclasses / Education
+  if (title.includes('foodizz') || title.includes('akademi') || title.includes('kursus') || title.includes('zenius') || title.includes('brainmatics') || title.includes('sekolah') || title.includes('kelas') || cat.includes('edukasi') || cat.includes('edutech')) {
+    if (title.includes('sokola')) return 'Bebas Biaya / Donasi Swadaya';
+    return 'Rp 199.000 — Rp 1.450.000 / paket';
+  }
+
+  // 5. Music, Vinyl, Concerts, Stand-Up Special
+  if (title.includes('album') || title.includes('vinyl') || title.includes('piringan hitam')) {
+    return 'Rp 350.000 — Rp 650.000';
+  }
+  if (title.includes('konser') || title.includes('tur konser') || title.includes('tur dunia') || title.includes('tur stand-up') || title.includes('tiket konser')) {
+    return 'Rp 150.000 — Rp 450.000 / tiket';
+  }
+  if (title.includes('stand-up') || title.includes('special') || title.includes('comika') || cat.includes('komedi')) {
+    return 'Rp 50.000 — Rp 175.000 / akses';
+  }
+  if (cat.includes('musik') || title.includes('diskografi') || title.includes('lagu')) {
+    return 'Rilisan Digital / Fisik Rp 49.000 — Rp 250.000';
+  }
+
+  // 6. Film / Series / Sinema
+  if (cat.includes('sinema') || cat.includes('film') || title.includes('filmografi') || title.includes('dokumenter')) {
+    if (title.includes('watchdoc') || title.includes('ekspedisi indonesia baru')) return 'Akses Terbuka / Donasi Swadaya';
+    return 'Tiket Nonton / VOD Rp 45.000 — Rp 75.000';
+  }
+
+  // 7. Social / Crowdfunding / Humanitarian / Medical / Ecology
+  if (title.includes('doctorshare') || title.includes('rumah sakit apung') || title.includes('medis')) {
+    return 'Donasi Medis (Mulai Rp 25.000)';
+  }
+  if (title.includes('kitabisa') || title.includes('salingjaga')) {
+    return 'Iuran Mulai Rp 10.000 / bln';
+  }
+  if (title.includes('food bank') || title.includes('foi')) {
+    return 'Paket Donasi Pangan Rp 50.000';
+  }
+  if (title.includes('leuser') || title.includes('haka') || title.includes('ecoton') || title.includes('sungai') || title.includes('telapak') || title.includes('ibeka') || title.includes('reboisasi')) {
+    return 'Donasi Konservasi (Mulai Rp 50.000)';
+  }
+  if (title.includes('kamisan') || title.includes('kendeng') || title.includes('aman') || title.includes('mosintuwu')) {
+    return 'Swadaya Solidaritas Warga';
+  }
+
+  // 8. Tech Platforms / AI / SaaS / Deep Tech
+  if (title.includes('kata.ai') || title.includes('prosa.ai') || title.includes('ctech') || title.includes('brainmatics') || cat.includes('kecerdasan buatan') || cat.includes('deep-tech')) {
+    return 'Freemium / B2B (Mulai Rp 299.000/bln)';
+  }
+
+  // Category based fallbacks
+  if (figure.category === 'Arsitek Usaha Mandiri') return 'Rp 85.000 — Rp 450.000';
+  if (figure.category === 'Pencerah Generasi') return 'Akses Terbuka / Mulai Rp 99.000';
+  if (figure.category === 'Perawat Jiwa & Rasa') return 'Rp 50.000 — Rp 350.000';
+  if (figure.category === 'Penjaga Tawa') return 'Mulai Rp 50.000 / tayang';
+  if (figure.category === 'Duta Talenta' || figure.category === 'Panggung Ekspresi') return 'Karya Budaya / Mulai Rp 75.000';
+
+  return 'Akses Terbuka / Donasi Swadaya';
+}
+
 // Generate SQL per Laci (without updated_at)
 files.forEach(file => {
   const laciName = file.replace('.json', '');
@@ -67,7 +184,9 @@ files.forEach(file => {
     // 2. Clear old children
     sql += `  DELETE FROM life_events_warga WHERE profile_id = v_profile_id;\n`;
     sql += `  DELETE FROM works_warga WHERE profile_id = v_profile_id;\n`;
-    sql += `  DELETE FROM articles_warga WHERE profile_id = v_profile_id;\n\n`;
+    sql += `  DELETE FROM articles_warga WHERE profile_id = v_profile_id;\n`;
+    sql += `  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;\n`;
+    sql += `  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;\n\n`;
 
     // 3. Insert life events
     if (p.lifeEvents && p.lifeEvents.length > 0) {
@@ -94,6 +213,15 @@ files.forEach(file => {
       });
     }
 
+    // 6. Insert initiatives with estimated price
+    if (p.works && p.works.length > 0) {
+      p.works.slice(0, 2).forEach((w, idx) => {
+        const estPrice = getEstimatedPrice(p, w);
+        sql += `  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)\n`;
+        sql += `  VALUES (v_profile_id, ${esc(w.title)}, ${esc(w.category)}, ${esc(w.description)}, ${esc(estPrice)}, 'Dukung Inisiatif', ${esc(w.link_url || '#')}, 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', ${idx + 1});\n`;
+      });
+    }
+
     sql += `END $$;\n\n`;
   });
 
@@ -102,6 +230,22 @@ files.forEach(file => {
   fs.writeFileSync(outFile, sql, 'utf-8');
   console.log(`Generated SQL for ${laciName} -> ${outFile}`);
 });
+
+// Generate all_initiatives_clean.sql
+let initSql = `BEGIN;\nDELETE FROM initiatives_warga;\nDELETE FROM testimonials_warga;\n\n`;
+allTokoh.forEach(p => {
+  if (p.works && p.works.length > 0) {
+    p.works.slice(0, 2).forEach((w, idx) => {
+      const estPrice = getEstimatedPrice(p, w);
+      initSql += `INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)\n`;
+      initSql += `SELECT p.id, ${esc(w.title)}, ${esc(w.category)}, ${esc(w.description)}, ${esc(estPrice)}, 'Dukung Inisiatif', ${esc(w.link_url || '#')}, 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', ${idx + 1}\n`;
+      initSql += `FROM profiles_warga p WHERE p.slug = ${esc(p.slug)};\n\n`;
+    });
+  }
+});
+initSql += `COMMIT;\n`;
+fs.writeFileSync(path.join(sqlDir, 'all_initiatives_clean.sql'), initSql, 'utf-8');
+console.log(`Generated all_initiatives_clean.sql!`);
 
 // Also generate full fallbackData.ts
 const fallbackFilePath = path.join(__dirname, '..', 'lib', 'supabase', 'fallbackData.ts');
@@ -166,23 +310,14 @@ allTokoh.forEach(p => {
         order_index: 1
       }
     ],
-    testimonials: [
-      {
-        id: `t-${p.slug}-1`,
-        profile_id: profileId,
-        author_name: 'Redaksi Sektor Lokal',
-        author_role: 'Dewan Kurator Warga',
-        quote: `Dedikasi dan integritas ${p.name} dalam bidang ${p.category} menjadi teladan otentik gerakan kemandirian bangsa.`,
-        order_index: 1
-      }
-    ],
+    testimonials: [],
     initiatives: (p.works || []).slice(0, 2).map((w, idx) => ({
       id: `i-${p.slug}-${idx + 1}`,
       profile_id: profileId,
       title: w.title,
       category: w.category,
       description: w.description,
-      price: 'Inisiatif Terbuka',
+      price: getEstimatedPrice(p, w),
       image_url: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80',
       action_text: 'Dukung Inisiatif',
       link_url: w.link_url || '#',
@@ -197,4 +332,4 @@ fallbackContent += `};\n\n`;
 fallbackContent += `export const directoryProfiles: Profile[] = Object.values(fallbackProfiles).map(item => item.profile);\n`;
 
 fs.writeFileSync(fallbackFilePath, fallbackContent, 'utf-8');
-console.log(`Updated ${fallbackFilePath} with 100 comprehensive profiles!`);
+console.log(`Updated ${fallbackFilePath} with 100 comprehensive profiles and estimated prices!`);

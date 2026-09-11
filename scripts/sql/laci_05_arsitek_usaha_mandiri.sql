@@ -28,6 +28,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2004 — 2008', 'KELAHIRAN RADIO KAYU MAGNO & PENGHARGAAN DUNIA', 'Merancang radio kayu Magno di Temanggung, diekspor ke puluhan negara dan meraih Good Design Award Jepang serta D&AD Yellow Pencil di London.', 1);
@@ -45,6 +47,10 @@ BEGIN
   VALUES (v_profile_id, 'Membangun dari Dusun: Mengapa Menjadi Tuan di Desa Sendiri Jauh Lebih Keren dari Urbanisasi', 'REVITALISASI DESA', '8 Menit Membaca', 'Filosofi Singgih Susilo Kartono tentang potensi ekonomi perdesaan yang mandiri dan berdaya saing global.', 'Urbanisasi massal telah mengosongkan desa-desa kita dari pemuda-pemuda cerdasnya. Ketika sarjana desa kembali dan mengolah bambu serta tanah kelahirannya dengan desain industri yang matang, desa tidak lagi menjadi wilayah tertinggal, melainkan pusat penciptaan karya bernilai tinggi.', '/artikel/singgih-susilo-kartono-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Falsafah Pasar Papringan: Mengembalikan Kebun Bambu Menjadi Ruang Perjumpaan Manusia', 'EKONOMI KOMUNAL', '7 Menit Membaca', 'Bagaimana kebun bambu kotor yang dulunya tempat pembuangan sampah disulap menjadi ruang ekonomi beromzet ratusan juta rupiah.', 'Pasar Papringan bukan sekadar tempat jual beli makanan tradisional; ia adalah ruang rekonsiliasi manusia dengan alamnya. Mengharamkan kantong plastik dan menggunakan wadah daun pisang serta koin bambu adalah latihan hidup selaras dengan alam.', '/artikel/singgih-susilo-kartono-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Spedagi Bamboo Bicycle (Sepeda Bambu Lestari)', 'Desain Industri Kriya Mobilitas Hijau', 'Sepeda bambu berstandar internasional yang mengintegrasikan kekuatan serat bambu lokal Temanggung dengan estetika desain modern.', 'Rp 7.500.000 — Rp 14.500.000', 'Dukung Inisiatif', 'https://spedagi.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Pasar Papringan Temanggung', 'Rekayasa Sosial & Pasar Tradisional Bebas Plastik', 'Destinasi ekonomi komunal dua mingguan di tengah kebun bambu yang memberdayakan ratusan ibu-ibu desa menggunakan mata uang koin bambu.', 'Rp 85.000 — Rp 450.000', 'Dukung Inisiatif', 'https://pasarpapringan.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Helianti Hilman (helianti-hilman)
@@ -74,6 +80,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2008', 'PENDIRIAN JAVARA INDIGENOUS INDONESIA', 'Membangun Javara dengan modal swadaya, mendokumentasikan benih pusaka petani lokal dari Aceh hingga Papua.', 1);
@@ -91,6 +99,10 @@ BEGIN
   VALUES (v_profile_id, 'Menyelamatkan Benih Leluhur: Mengapa Keanekaragaman Hayati Pangan Adalah Senjata Melawan Krisis Iklim', 'KEDAULATAN PANGAN', '8 Menit Membaca', 'Pentingnya mempertahankan varietas beras dan umbi lokal yang tahan hama alami tanpa ketergantungan pupuk kimia.', 'Revolusi hijau telah menyeragamkan ribuan varietas beras kita menjadi segelintir benih hibrida yang rentan kekeringan dan bergantung pada pestisida kimia. Memuliakan kembali benih pusaka warisan leluhur adalah satu-satunya jaminan ketahanan pangan bangsa kita di masa depan.', '/artikel/helianti-hilman-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Dari Dapur Desa Menembus Pasar Dunia: Cara Membangun Produk Pangan Lokal Berstandar Ekspor', 'AGRIBISNIS SIRKULAR', '7 Menit Membaca', 'Strategi Helianti Hilman mengemas kearifan garam artisanal dan gula semut kelapa menjadi produk bernilai tinggi.', 'Petani kita tidak boleh selamanya hanya menjadi penjual gabah mentah dengan harga murah. Memberi sentuhan pengolahan higienis dan sertifikasi organik adalah cara menaikkan derajat ekonomi keluarga tani menjadi bermartabat.', '/artikel/helianti-hilman-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'JAVARA Indigenous Indonesia (Pangan Pusaka Nusantara)', 'Agribisnis Pangan Organik & Ekspor Heritage', 'Kurasi produk pangan alami terbesar di Indonesia yang memasok beras pusaka, garam artisanal, dan rempah liar ke pasar dunia.', 'Rp 35.000 — Rp 165.000 / pack', 'Dukung Inisiatif', 'https://javara.co.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Javara Academy & Sekolah Wirausaha Pangan Desa', 'Pendidikan Vokasi Agribisnis & Pelestarian Benih', 'Inkubator bisnis yang melatih ribuan keluarga petani mengadopsi standar sertifikasi organik internasional dan pengolahan pangan.', 'Rp 35.000 — Rp 165.000 / pack', 'Dukung Inisiatif', 'https://javara.co.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Azalea Ayuningtyas (azalea-ayuningtyas)
@@ -120,6 +132,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2014', 'PENDIRIAN DU''ANYAM DI FLORES TIMUR', 'Merintis Du''Anyam di pelosok NTT bersama Melia Winata dan Hanna Keraf, mengorganisir puluhan ibu penganyam daun lontar pertama.', 1);
@@ -137,6 +151,10 @@ BEGIN
   VALUES (v_profile_id, 'Anyaman Penyelamat Nyawa: Bagaimana Daun Lontar Memutus Rantai Malnutrisi Ibu di NTT', 'WIRAUSAHA SOSIAL', '7 Menit Membaca', 'Kisah transformatif para ibu penganyam di Flores Timur yang kini mandiri secara finansial dan mampu membiayai kesehatan anaknya.', 'Ketika seorang ibu memiliki penghasilan dari anyamannya sendiri, rupiah pertama yang ia belanjakan adalah untuk membeli telur dan susu bagi anak-anaknya. Memberdayakan perempuan desa adalah investasi paling efektif untuk menghapus stunting dari muka bumi.', '/artikel/azalea-ayuningtyas-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Menembus Pasar Korporasi: Menjual Kriya Etnik Bukan Berdasarkan Rasa Kasihan, Tapi Kualitas', 'MANAJEMEN KRIYA', '6 Menit Membaca', 'Pentingnya standardisasi mutu dan kontrol kualitas presisi agar produk perajin desa mampu bersaing di pasar hotel bintang lima.', 'Wirausaha sosial tidak boleh menjual produk atas dasar belas kasihan pembeli. Produk kriya anyaman lontar harus mampu berdiri tegak karena kualitas desain, ketelitian anyaman, dan ketahanan bahannya yang luar biasa.', '/artikel/azalea-ayuningtyas-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Du''Anyam (Wirausaha Sosial Kriya Daun Lontar)', 'Wirausaha Sosial & Kriya Anyaman Inklusif', 'Brand kriya sosial yang memasok produk anyaman berkualitas tinggi untuk sektor hospitality global dan suvenir korporasi.', 'Rp 120.000 — Rp 650.000', 'Dukung Inisiatif', 'https://duanyam.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Program Intervensi Gizi & Kesehatan Ibu Hamil NTT', 'Kesehatan Masyarakat & Penanganan Stunting', 'Program pemberian paket nutrisi protein dan pendampingan posyandu bagi keluarga penganyam di desa terpencil Flores.', 'Rp 85.000 — Rp 450.000', 'Dukung Inisiatif', 'https://duanyam.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Tissa Aunilla (tissa-aunilla)
@@ -166,6 +184,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2013', 'PENDIRIAN PIPILTIN COCOA BEAN-TO-BAR', 'Membangun pabrik pengolahan cokelat bean-to-bar pertama di Jakarta, memperkenalkan transparansi asal-usul biji kakao single origin lokal.', 1);
@@ -183,6 +203,10 @@ BEGIN
   VALUES (v_profile_id, 'Kisah Tanah dalam Sepotong Cokelat: Menjelajahi Profil Rasa Kakao Aceh hingga Papua', 'GASTRONOMI LOKAL', '7 Menit Membaca', 'Pembedahan Tissa Aunilla tentang bagaimana iklim, tanah vulkanik, dan proses fermentasi membentuk cita rasa cokelat nusantara.', 'Cokelat dari Tabanan memiliki aroma buah berry yang segar, sementara cokelat dari Ransiki Papua memiliki rasa tanah earthy yang pekat dan elegan. Menikmati cokelat single origin adalah cara mengapresiasi keanekaragaman geologis bumi pertiwi.', '/artikel/tissa-aunilla-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Menghentikan Kutukan Ekspor Bahan Mentah: Mengapa Hilirisasi Cokelat Harus Dimulai dari Petani', 'KEDAULATAN EKONOMI', '6 Menit Membaca', 'Pentingnya mengajarkan teknik fermentasi biji kakao agar petani lokal mendapatkan nilai tambah berkali lipat di tanah kelahirannya.', 'Biji kakao yang tidak difermentasi hanya dihargai murah oleh tengkulak. Ketika petani diajari mengontrol suhu fermentasi secara presisi, harga biji kakao mereka melonjak dan mampu membiayai pendidikan anak-anak mereka hingga bangku kuliah.', '/artikel/tissa-aunilla-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Pipiltin Cocoa (Cokelat Artisan Bean-to-Bar Nusantara)', 'Manufaktur Cokelat Premium Single Origin', 'Lini produk cokelat murni berbahan 100% kakao lokal tanpa lemak nabati sawit yang mengangkat kekayaan profil tanah kepulauan Indonesia.', 'Rp 45.000 — Rp 135.000 / bar', 'Dukung Inisiatif', 'https://pipiltincocoa.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Program Kemitraan Fermentasi Petani Kakao Daerah', 'Pemberdayaan Rantai Pasok Petani Kakao', 'Pelatihan standardisasi fermentasi dan pembelian langsung biji kakao dari petani di Aceh, Flores, Bali, dan Papua dengan harga premium.', 'Rp 45.000 — Rp 135.000 / bar', 'Dukung Inisiatif', 'https://pipiltincocoa.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Yukka Harsono (yukka-harsono)
@@ -212,6 +236,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2010', 'PENDIRIAN BRODO FOOTWEAR DARI CIBADUYUT', 'Memulai produksi sepatu kulit model Signore pertama bermitra dengan pengrajin lokal Cibaduyut Bandung.', 1);
@@ -229,6 +255,10 @@ BEGIN
   VALUES (v_profile_id, 'Menghidupkan Kembali Cibaduyut: Kisah Brodo Meruntuhkan Dominasi Sepatu Impor', 'BRAND LOKAL', '7 Menit Membaca', 'Perjalanan Yukka Harsono merintis brand sepatu dari kamar kos hingga menjadi simbol kebanggaan anak muda perkotaan.', 'Sepatu buatan tangan pengrajin kita memiliki jiwa dan ketahanan yang luar biasa. Yang selama ini hilang hanyalah pemosisian merek yang tepat dan konsistensi menjaga mutu. Brodo membuktikan bahwa ketika brand lokal dikelola secara profesional, pasar dalam negeri akan menyambutnya dengan bangga.', '/artikel/yukka-harsono-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Bertahan dari Gempuran Barang Impor Murah: Resep Daya Tahan Industri Manufaktur Lokal', 'STRATEGI BISNIS', '6 Menit Membaca', 'Pentingnya inovasi material, loyalitas komunitas konsumen, dan kepemilikan saluran distribusi mandiri bagi pelaku UMKM.', 'Perang harga dengan barang impor murah dari pabrik raksasa luar negeri adalah bunuh diri bagi pengrajin kecil. Satu-satunya jalan menang adalah membangun kedekatan emosional dengan konsumen dan menjaga cerita otentik di balik setiap pasang sepatu yang diproduksi.', '/artikel/yukka-harsono-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Brodo Footwear (Brand Sepatu Kulit & Sneakers Lokal)', 'Manufaktur Alas Kaki Kontemporer & Direct-to-Consumer', 'Lini produk sepatu kulit formal, boots, dan sneakers pria dengan standar uji mutu industri yang diproduksi oleh sentra pengrajin lokal Jawa Barat.', 'Rp 375.000 — Rp 899.000', 'Dukung Inisiatif', 'https://bro.do', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Ekosistem Mitra Pengrajin Kulit Cibaduyut Brodo', 'Pemberdayaan Sentra Manufaktur Tradisional', 'Program standardisasi jahit sol, pola presisi, dan transfer teknologi mesin potong kulit bagi puluhan bengkel pengrajin lokal.', 'Rp 375.000 — Rp 899.000', 'Dukung Inisiatif', 'https://bro.do', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Dea Valencia (dea-valencia)
@@ -258,6 +288,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2011', 'PENDIRIAN BATIK KULTUR DARI KAIN PERCA', 'Memulai usaha busana batik di rumahnya di Semarang dengan modal kain perca antik dan merekrut pekerja difabel pertamanya.', 1);
@@ -275,6 +307,10 @@ BEGIN
   VALUES (v_profile_id, 'Jahitan Mahakarya dalam Keheningan: Kisah Para Penjahit Tuli di Balik Kemegahan Batik Kultur', 'FESYEN INKLUSIF', '7 Menit Membaca', 'Perjalanan Dea Valencia membangun ruang kerja tanpa suara di mana ketelitian mata dan rasa para difabel menghasilkan busana kelas dunia.', 'Di ruang workshop Batik Kultur yang tenang, komunikasi mengalir lewat bahasa isyarat dan senyuman. Kawan-kawan difabel membuktikan bahwa keterbatasan mendengar justru memberi mereka konsentrasi batin yang luar biasa untuk menghasilkan jahitan jelujur batik yang sangat rapi dan presisi.', '/artikel/dea-valencia-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Bukan Donasi, Tapi Kesempatan Setara: Filosofi Bisnis Inklusif yang Berkelanjutan', 'WIRAUSAHA SOSIAL', '6 Menit Membaca', 'Mengapa penyandang disabilitas berhak mendapatkan gaji standar industri dan jenjang karir profesional yang adil.', 'Memberdayakan kawan-kawan difabel bukan soal memberi santunan uang receh, melainkan memberi mereka meja kerja, mesin jahit, dan kepercayaan bahwa mereka adalah manusia produktif yang mampu menopang keluarganya dengan penuh martabat.', '/artikel/dea-valencia-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Batik Kultur by Dea Valencia', 'Fesyen Wastra Kontemporer & Butik Inklusif', 'Brand busana batik ready-to-wear premium yang memadukan kain batik tulis/cap tradisional dengan siluet modern untuk pasar global.', 'Rp 450.000 — Rp 2.250.000', 'Dukung Inisiatif', 'https://batikkultur.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Workshop Inklusif Pemberdayaan Difabel Semarang', 'Fasilitas Manufaktur Ramah Disabilitas', 'Sentra produksi garmen yang dirancang ergonomis untuk mempekerjakan puluhan penjahit dan pembuat pola penyandang disabilitas secara setara.', 'Rp 85.000 — Rp 450.000', 'Dukung Inisiatif', 'https://batikkultur.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Nurman Farieka Ramdhany (nurman-farieka-ramdhany)
@@ -304,6 +340,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2015 — 2017', 'RISET PENYAMAKAN KULIT CEKER AYAM & PELUNCURAN HIRKA', 'Menemukan formula penyamakan kulit ceker ayam ramah lingkungan di Bandung dan meluncurkan produk sepatu sneakers Hirka pertama.', 1);
@@ -321,6 +359,10 @@ BEGIN
   VALUES (v_profile_id, 'Dari Limbah Mi Ayam Menjadi Sepatu Mewah Dunia: Kisah Riset Penyamakan Kulit Nurman Farieka', 'INOVASI MATERIAL', '7 Menit Membaca', 'Perjalanan ilmiah meracik kulit ceker ayam menjadi material alternatif kulit reptil yang berkelanjutan dan bernilai jutaan rupiah.', 'Industri fesyen mewah dunia selama berabad-abad membantai buaya dan ular demi mendapatkan pola sisik eksotis. Nurman membuktikan bahwa ceker ayam yang dianggap sampah pasar memiliki pola serat yang tak kalah megah bila diolah dengan dedikasi riset sains yang tekun.', '/artikel/nurman-farieka-ramdhany-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Ekonomi Sirkular di Sentra Cibaduyut: Pelajaran Inovasi dari Generasi Penerus Pengrajin Kulit', 'INDUSTRI KREATIF', '6 Menit Membaca', 'Bagaimana generasi muda Bandung menghidupkan kembali tradisi penyamakan kulit dengan prinsip keberlanjutan masa depan.', 'Tradisi kriya kulit tidak boleh mati di tengah perubahan zaman. Menyuntikkan riset material baru dan kepedulian lingkungan adalah cara terbaik bagi anak-anak muda Cibaduyut untuk membawa nama sentra mereka mendunia.', '/artikel/nurman-farieka-ramdhany-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Hirka Footwear (Sepatu Kulit Eksotis Ceker Ayam)', 'Inovasi Manufaktur Material Sirkular & Fesyen Mewah', 'Koleksi sepatu kulit premium berbahan baku limbah ceker ayam dengan pola sisik alami unik yang diproduksi secara handmade di Bandung.', 'Rp 1.450.000 — Rp 3.200.000', 'Dukung Inisiatif', 'https://hirka.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Formula Penyamakan Kulit Unggas Ramah Lingkungan', 'Rekayasa Kimia Kulit Tepat Guna', 'Metode pemrosesan penyamakan kulit ceker ayam tanpa bahan kimia berbahaya kromium yang aman bagi lingkungan dan perajin.', 'Rp 85.000 — Rp 450.000', 'Dukung Inisiatif', 'https://hirka.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Riza Azyumarridha Azra (riza-azyumarridha-azra)
@@ -350,6 +392,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2014 — 2017', 'PENDIRIAN RUMAH MOCAF & PENDAMPINGAN DESA', 'Merintis Rumah Mocaf di Banjarnegara, melatih kelompok tani pertama dalam memfermentasi singkong secara higienis.', 1);
@@ -367,6 +411,10 @@ BEGIN
   VALUES (v_profile_id, 'Melawan Hegemoni Gandum Impor: Bagaimana Singkong Banjarnegara Menjadi Tepung Masa Depan Dunia', 'KEDAULATAN PANGAN', '7 Menit Membaca', 'Pembedahan potensi tepung Mocaf Riza Azra dalam mengurangi ketergantungan miliaran dolar impor gandum Indonesia.', 'Indonesia mengimpor lebih dari 10 juta ton gandum setiap tahun karena kita tidak bisa menanam gandum di iklim tropis. Menggantinya dengan tepung singkong Mocaf lokal bukan hanya menyehatkan tubuh karena bebas gluten, melainkan mengalirkan triliunan rupiah langsung ke kantong petani desa.', '/artikel/riza-azyumarridha-azra-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Dari Rp 200 Menjadi Komoditas Ekspor: Mengubah Nasib Petani Singkong Lewat Fermentasi', 'INOVASI AGRIBISNIS', '6 Menit Membaca', 'Kisah perjuangan meyakinkan para petani desa untuk beralih memproduksi tepung fermentasi higienis.', 'Kunci memutus kemiskinan perdesaan adalah hilirisasi di tingkat petani. Ketika singkong tidak lagi dijual mentah melainkan diolah menjadi serpihan chip kering terfermentasi di rumah-rumah warga, nilai tambah ekonomi tetap berputar di dalam desa.', '/artikel/riza-azyumarridha-azra-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Rumah Mocaf Indonesia (Tepung Singkong Bebas Gluten)', 'Agroindustri Pangan Lokal & Hilirisasi Pertanian', 'Produsen tepung singkong fermentasi organik pengganti terigu gandum bersertifikat bebas gluten yang memasok industri roti dan kue global.', 'Rp 85.000 — Rp 450.000', 'Dukung Inisiatif', 'https://rumahmocaf.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Mocafine & Lini Pangan Olahan Gluten-Free', 'Produk Konsumen Sehat Berbasis Singkong', 'Produk turunan tepung Mocaf berupa mi sehat non-gandum, tepung bumbu krispi, dan kue kering untuk gaya hidup sehat dan penderita autisme.', 'Rp 85.000 — Rp 450.000', 'Dukung Inisiatif', 'https://rumahmocaf.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Stefanie Kurniadi (stefanie-kurniadi)
@@ -396,6 +444,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2013 — 2017', 'MEMBESARKAN WARUNK UPNORMAL & JARINGAN F&B', 'Ikut merintis dan membangun jaringan ratusan gerai kuliner modern berbasis warung kopi lokal di puluhan kota Indonesia.', 1);
@@ -413,6 +463,10 @@ BEGIN
   VALUES (v_profile_id, 'Mengapa Enak Saja Tidak Cukup: Membongkar 5 Kesalahan Fatal Pemula Bisnis Kuliner', 'BISNIS KULINER', '7 Menit Membaca', 'Panduan analisis Stefanie Kurniadi tentang pentingnya mengontrol HPP, limbah dapur, dan manajemen arus kas.', 'Banyak orang membuka restoran karena merasa masakannya dipuji teman-teman. Namun ketika restoran dibuka, ujian sebenarnya adalah matematika bisnis: bagaimana mengunci persentase biaya bahan baku di bawah 35% dan menjaga konsistensi rasa saat memasak 1.000 porsi per hari.', '/artikel/stefanie-kurniadi-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Membangun Brand F&B yang Berumur Panjang: Menolak Terjebak Tren Makanan Viral Sesaat', 'STRATEGI MEREK', '6 Menit Membaca', 'Cara merancang menu inti yang dicintai pelanggan setia dan bertahan melampaui siklus tren musiman media sosial.', 'Makanan viral yang mengandalkan sensasi media sosial biasanya hanya bertahan 6 bulan sebelum ditinggalkan pelanggan. Bisnis kuliner yang hebat dibangun di atas kenyamanan rasa sehari-hari yang membuat pelanggan selalu ingin kembali lagi.', '/artikel/stefanie-kurniadi-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Foodizz (Akademi Bisnis Kuliner Digital)', 'EduTech Wirausaha F&B & Inkubator Bisnis', 'Platform pembelajaran digital komprehensif yang melatih ratusan ribu pengusaha kuliner dalam tata kelola operasional, HPP, dan scaling-up.', 'Rp 199.000 — Rp 1.450.000 / paket', 'Dukung Inisiatif', 'https://foodizz.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Buku Panduan: 10 Langkah Membangun Bisnis Kuliner yang Berkelanjutan', 'Buku Bisnis Terapan & Manajemen F&B', 'Karya literatur praktis membedah cara menghitung Food Cost, standardisasi resep, dan manajemen kas restoran.', 'Rp 85.000 — Rp 185.000', 'Dukung Inisiatif', 'https://foodizz.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Goris Mustaqim (goris-mustaqim)
@@ -442,6 +496,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2007', 'PENDIRIAN ASGAR MUDA FOUNDATION', 'Mendirikan wadah pembinaan wirausaha pemuda di Garut, mencegah urbanisasi pemuda berpendidikan ke kota besar.', 1);
@@ -459,6 +515,10 @@ BEGIN
   VALUES (v_profile_id, 'Mencegah Eksodus Pemuda Desa: Kisah Sukses Mengubah Potensi Garut Menjadi Lapangan Kerja Riil', 'KEWIRAUSAHAAN SOSIAL', '7 Menit Membaca', 'Refleksi Goris Mustaqim tentang bagaimana menghentikan fenomena brain drain pemuda perdesaan ke kota-kota besar.', 'Desa akan tetap miskin bila setiap anak mudanya yang pintar memilih pergi ke kota dan tidak pernah kembali. Ketika pemuda terdidik pulang dan berkolaborasi dengan kearifan petani lokal, desa akan bertransformasi menjadi lumbung kemakmuran yang mandiri.', '/artikel/goris-mustaqim-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Emas Hijau dari Lereng Cikuray: Menjaga Kualitas Minyak Akar Wangi Terbaik Dunia', 'KOMODITAS LOKAL', '6 Menit Membaca', 'Potensi ekspor minyak vetiver Garut yang menjadi bahan baku utama industri wewangian mewah Paris dan New York.', 'Tanah vulkanik Garut menghasilkan minyak akar wangi dengan kualitas aroma terbaik di muka bumi. Mengolahnya menjadi minyak suling murni di dalam negeri membuktikan bahwa bumi kita kaya akan anugerah yang tiada duanya.', '/artikel/goris-mustaqim-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Asgar Muda Foundation (Inkubator Wirausaha Pemuda Garut)', 'Pemberdayaan Pemuda Perdesaan & Inkubasi Bisnis', 'Yayasan sosial yang telah mencetak ribuan wirausahawan muda di Jawa Barat berbasis potensi agribisnis dan kriya lokal.', 'Rp 150.000 — Rp 1.200.000', 'Dukung Inisiatif', 'https://asgarmuda.org', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Sentra Kerajinan Kulit Sukaregang Berdaya', 'Modernisasi Kriya Tradisional Daerah', 'Program peningkatan standar desain dan akses pemasaran digital bagi puluhan bengkel perajin jaket dan tas kulit di Garut.', 'Rp 150.000 — Rp 1.200.000', 'Dukung Inisiatif', 'https://sektorlokal.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 COMMIT;

@@ -28,6 +28,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '1996 — 2003', 'REKAYASA WAJANBOLIC & GERAKAN RT/RW-NET', 'Menciptakan antena Wajanbolic e-goen dan memelopori gerakan jaringan internet swadaya RT/RW-Net yang menghubungkan jutaan rumah warga berbiaya murah.', 1);
@@ -45,6 +47,10 @@ BEGIN
   VALUES (v_profile_id, 'Menembus Batas Sinyal: Cerita dari Balik Wajanbolic dan Perjuangan Membuka Isolasi Internet Desa', 'INTERNET RAKYAT', '8 Menit Membaca', 'Catatan rekayasa Onno W. Purbo tentang bagaimana peralatan dapur sederhana mampu meruntuhkan monopoli operator telekomunikasi.', 'Ketika operator besar menolak menarik kabel fiber optik ke desa karena dianggap tidak menguntungkan secara bisnis, warga tidak boleh pasrah hidup dalam kegelapan informasi. Wajanbolic adalah simbol kemandirian: bahwa dengan nalar rekayasa, rakyat mampu membangun jalannya sendiri menuju peradaban dunia.', '/artikel/onno-w-purbo-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Filosofi Open Source: Mengapa Menyembunyikan Ilmu Pengetahuan Adalah Dosa Peradaban', 'ETIKA SAINS', '7 Menit Membaca', 'Pentingnya membebaskan ilmu pengetahuan dari belenggu paten komersial demi lompatan kecerdasan bersama anak bangsa.', 'Ilmu yang dikunci di balik dinding berbayar hanya akan melahirkan ketimpangan sosial. Kedaulatan digital bangsa ini tidak akan pernah tercapai jika generasi mudanya hanya menjadi konsumen pasif teknologi asing tanpa pernah mengerti baris kode di dalamnya.', '/artikel/onno-w-purbo-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'OnnoCenter E-Learning (Kampus Terbuka Teknologi Rakyat)', 'Platform Pendidikan IT Terbuka & Sertifikasi Gratis', 'LMS daring gratis yang menyediakan puluhan modul rekayasa jaringan, cybersecurity, server Linux, dan kecerdasan buatan bagi talenta daerah.', 'Akses Terbuka / Donasi Swadaya', 'Dukung Inisiatif', 'https://lms.onnocenter.or.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Antena Wajanbolic & Arsitektur OpenBTS Komunitas', 'Inovasi Hardware Komunikasi Tepat Guna', 'Cetak biru perangkat keras jaringan nirkabel murah berbasis wajan dapur dan software radio terbuka untuk desa terpencil.', '100% Akses Publik Bebas', 'Dukung Inisiatif', 'https://onnocenter.or.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Dr. Warsito P. Taruno (warsito-p-taruno)
@@ -74,6 +80,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2000 — 2004', 'PENEMUAN FUNDAMENTAL ECVT DI JEPANG & AS', 'Menemukan rumus matematika rekonstruksi tomografi medan listrik 4D berkecepatan tinggi di Ohio State University dan mematenkannya secara global.', 1);
@@ -91,6 +99,10 @@ BEGIN
   VALUES (v_profile_id, 'Dari Garasi Tangerang Menembus NASA: Perjalanan Panjang Paten Tomografi 4D Warsito Taruno', 'SAINS FUNDAMENTAL', '8 Menit Membaca', 'Kisah di balik layar penemuan rumus matematika rekonstruksi medan listrik yang mengubah standar pemindaian volumetrik dunia.', 'Sains tidak mengenal paspor atau kasta gedung laboratorium. Di hadapan hukum-hukum fisika, rumus matematika yang dirancang di ruko sederhana Tangerang memiliki kekuatan yang sama mutlaknya dengan laboratorium elit di Silicon Valley.', '/artikel/warsito-p-taruno-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Hilirisasi Sains Mandiri: Menghadapi Tembok Skeptisisme dan Mempertahankan Kedaulatan Riset', 'KEDAULATAN TEKNOLOGI', '7 Menit Membaca', 'Pentingnya melindungi hak kekayaan intelektual penemu lokal agar tidak dirampas oleh korporasi asing.', 'Banyak ilmuwan Indonesia di luar negeri tergoda menjual patennya kepada raksasa multinasional. Menolak tawaran triliunan rupiah demi membawa teknologi tersebut pulang ke tanah air adalah bentuk nasionalisme sains yang sesungguhnya.', '/artikel/warsito-p-taruno-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Teknologi ECVT 4D (Electrical Capacitance Volume Tomography)', 'Paten Sains Terapan & Instrumentasi Industri', 'Teknologi pemindaian tomografi volumetrik medan listrik kecepatan tinggi pertama di dunia yang diadopsi NASA dan industri energi internasional.', 'Akses Terbuka / Donasi Swadaya', 'Dukung Inisiatif', 'https://ctechlabs.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'CTech Labs Edwar Technology', 'Laboratorium Riset Fisika Medis & Industri Mandiri', 'Pusat riset sains terapan di Tangerang yang merancang instrumen tomografi industri dan terapi medis berbasis gelombang listrik kapasitif.', 'Freemium / B2B (Mulai Rp 299.000/bln)', 'Dukung Inisiatif', 'https://ctechlabs.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Ainun Najib (ainun-najib)
@@ -120,6 +132,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2007 — 2013', 'KARIER REKAYASA DATA DI SINGAPURA & GRAB', 'Bekerja sebagai konsultan analitika data senior di IBM dan memimpin arsitektur data sains di perusahaan teknologi global.', 1);
@@ -137,6 +151,10 @@ BEGIN
   VALUES (v_profile_id, 'Civic Tech: Bagaimana Baris Kode Pemrograman Menjaga Kejujuran Kotak Suara Demokrasi', 'DATA & DEMOKRASI', '7 Menit Membaca', 'Pembedahan arsitektur sistem KawalPemilu dalam memvalidasi jutaan data formulir C1 di tengah serangan siber.', 'Ketika kedua kubu politik saling mengklaim kemenangan berdasarkan hitung cepat internal, transparansi data mentah TPS adalah satu-satunya juru damai. Gotong royong ribuan relawan mengetik data C1 membuktikan kekuatan teknologi sipil yang merdeka.', '/artikel/ainun-najib-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Sains Data vs Politik Pandemi: Pelajaran dari Keterbukaan Informasi Darurat Kesehatan', 'SAINS DATA', '8 Menit Membaca', 'Pentingnya penyajian data epidemiologi yang jujur tanpa polesan narasi politik demi menyelamatkan nyawa warga.', 'Dalam krisis kesehatan masyarakat, satu angka yang disembunyikan dapat berakibat pada ribuan nyawa yang kehilangan akses penanganan. Keterbukaan data publik adalah syarat mutlak keselamatan bersama.', '/artikel/ainun-najib-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'KawalPemilu.org (Platform Transparansi Rekapitulasi Suara)', 'Civic Tech & Sains Data Demokrasi', 'Sistem verifikasi data formulir C1 berbasis crowdsourcing independen yang menjadi jangkar kebenaran publik melawan manipulasi suara.', '100% Akses Publik Bebas', 'Dukung Inisiatif', 'https://kawalpemilu.org', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'KawalCOVID19 (Inisiatif Data & Informasi Pandemi)', 'Kompilasi Data Sains Kesehatan Masyarakat', 'Platform agregasi data independen yang memetakan ketersediaan tempat tidur RS, oksigen, dan verifikasi fakta seputar wabah virus.', 'Akses Terbuka / Donasi Swadaya', 'Dukung Inisiatif', 'https://kawalcovid19.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Dr. Khoirul Anwar (khoirul-anwar)
@@ -166,6 +184,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2005 — 2008', 'PENEMUAN DUA FFT OFDM DI JEPANG', 'Merancang dan mematenkan algoritma komputasi ganda FFT yang memecahkan hambatan interferensi sinyal seluler berkecepatan tinggi di NAIST Jepang.', 1);
@@ -183,6 +203,10 @@ BEGIN
   VALUES (v_profile_id, 'Inspirasi dari Kediri untuk Dunia: Kisah di Balik Algoritma Dua FFT yang Menggerakkan 4G LTE', 'REKAYASA TELEKOMUNIKASI', '8 Menit Membaca', 'Perjalanan hidup Khoirul Anwar dari anak petani Kediri hingga menjadi penemu paten telekomunikasi yang digunakan miliaran orang.', 'Keterbatasan fasilitas di masa kecil bukanlah penghalang untuk menguasai sains paling rumit di dunia. Ketika kita melatih nalar matematika dengan rasa ingin tahu yang mendalam, rumus-rumus abstrak itu dapat diubah menjadi teknologi yang membebaskan jutaan manusia dari keterisolasian informasi.', '/artikel/khoirul-anwar-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Kedaulatan Spektrum Nirkabel: Mengapa Indonesia Harus Mengembangkan Teknologi 5G dan 6G Sendiri', 'SAINS & INDUSTRI', '7 Menit Membaca', 'Pentingnya kemandirian industri perangkat keras telekomunikasi agar tidak selamanya membayar royalti lisensi ke luar negeri.', 'Sebagai negara kepulauan terbesar di dunia dengan ratusan juta pengguna ponsel pintar, kita tidak boleh hanya menjadi pasar empuk bagi vendor teknologi global. Membangun laboratorium riset nirkabel lokal adalah investasi strategis martabat bangsa.', '/artikel/khoirul-anwar-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Paten Internasional Dua FFT OFDM (Fondasi Transmisi 4G LTE)', 'Paten Teknologi Telekomunikasi Nirkabel', 'Algoritma komputasi sinyal nirkabel berefisiensi tinggi yang menjadi salah satu standar fundamental konektivitas 4G LTE dan 5G dunia.', 'Akses Terbuka / Donasi Swadaya', 'Dukung Inisiatif', 'https://adwitech.telkomuniversity.ac.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'AdWiTech (Advanced Wireless Technologies Center)', 'Pusat Riset Telekomunikasi Terdepan', 'Laboratorium riset nirkabel di Bandung yang mengembangkan teknologi komunikasi kebencanaan, IoT cerdas, dan radar maritim mandiri.', 'Akses Terbuka / Donasi Swadaya', 'Dukung Inisiatif', 'https://adwitech.telkomuniversity.ac.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Jim Geovedi (jim-geovedi)
@@ -212,6 +236,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '1998 — 2004', 'BELAJAR OTODIDAK DI JALANAN & RISET JARINGAN', 'Mempelajari arsitektur jaringan komputer dan sistem operasi Linux secara mandiri di warung internet, merintis komunitas keamanan siber Indonesia.', 1);
@@ -229,6 +255,10 @@ BEGIN
   VALUES (v_profile_id, 'Menggeser Orbit Satelit: Pelajaran Penting tentang Kerapuhan Infrastruktur Digital Dunia', 'CYBERSECURITY', '7 Menit Membaca', 'Catatan investigasi Jim Geovedi tentang bagaimana teknologi luar angkasa yang tampak canggih sering kali menyimpan celah keamanan mendasar.', 'Tidak ada sistem di dunia ini yang 100% aman. Keangkuhan para pembuat sistem yang merasa bentengnya tak tertembus adalah pintu masuk paling mudah bagi serangan siber. Keamanan sejati membutuhkan kerendahan hati untuk terus menguji dan menambal celah setiap saat.', '/artikel/jim-geovedi-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Menjadi Peretas Etis: Memilih Integritas di Tengah Godaan Uang Gelap Dunia Siber', 'ETIKA PERETAS', '6 Menit Membaca', 'Pentingnya kompas moral bagi generasi muda yang memiliki kemampuan meretas agar tidak terjerumus dalam kejahatan siber transnasional.', 'Kemampuan meretas seperti memegang pisau bedah bermata dua: kamu bisa menggunakannya untuk menyelamatkan nyawa atau untuk merampok orang lain. Kehormatan seorang hacker diukur dari etika yang ia pegang teguh saat berada dalam kegelapan tanpa pengawasan siapa pun.', '/artikel/jim-geovedi-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Audit Keamanan Infrastruktur Satelit & Telekomunikasi Global', 'Keamanan Siber Tingkat Tinggi & Ruang Angkasa', 'Layanan uji penetrasi dan audit arsitektur keamanan sistem transmisi satelit dan pusat komputasi awan multinasional.', 'Swadaya Solidaritas Warga', 'Dukung Inisiatif', 'https://geovedi.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Arsitektur Kriptografi & Perlindungan Sistem Finansial', 'Kriptografi & Rekayasa Keamanan Siber', 'Rancang bangun benteng pertahanan siber untuk transaksi perbankan skala masif dan pencegahan kebocoran data nasabah.', 'Akses Terbuka / Donasi Swadaya', 'Dukung Inisiatif', 'https://geovedi.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Dr. Ayu Purwarianti (ayu-purwarianti)
@@ -258,6 +288,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2002 — 2007', 'DOKTORAL NLP DI JEPANG & RISET AWAL BAHASA', 'Menyelesaikan riset pemrosesan bahasa alami di Jepang dan mulai membangun korpus tata bahasa komputasi Bahasa Indonesia.', 1);
@@ -275,6 +307,10 @@ BEGIN
   VALUES (v_profile_id, 'Kedaulatan Bahasa di Era LLM: Mengapa Kita Harus Melatih Model AI dengan Korpus Lokal Sendiri', 'KECERDASAN BUATAN', '7 Menit Membaca', 'Analisis Dr. Ayu Purwarianti tentang bahaya bias budaya algoritma jika kita hanya bergantung pada model AI buatan raksasa Silicon Valley.', 'Bahasa bukan sekadar deretan kata; ia mengandung etika, kesantunan, dan kosmologi sebuah bangsa. Jika mesin kecerdasan buatan hanya belajar dari data bahasa Inggris, cara berpikir generasi kita perlahan akan terasing dari akar budayanya sendiri.', '/artikel/ayu-purwarianti-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Menyelamatkan Bahasa Daerah dari Kepunahan Digital: Misi Sains Melatih Algoritma Berbahasa Ibu', 'LINGUISTIK KOMPUTASI', '6 Menit Membaca', 'Tantangan mendokumentasikan ratusan dialek nusantara ke dalam format data digital yang dapat dipelajari oleh komputer.', 'Ratusan bahasa daerah di Indonesia terancam punah karena penutur aslinya kian berkurang. Mendigitalisasikannya ke dalam model NLP adalah ikhtiar sains menjaga warisan leluhur agar tetap hidup di era peradaban algoritma.', '/artikel/ayu-purwarianti-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Prosa.ai (Deep-Tech AI NLP & Voice Engine)', 'Kecerdasan Buatan & Pemrosesan Bahasa Alami', 'Platform AI percakapan dan sintesis suara berbahasa Indonesia berakurasi tinggi yang digunakan oleh sektor perbankan dan layanan publik.', 'Freemium / B2B (Mulai Rp 299.000/bln)', 'Dukung Inisiatif', 'https://prosa.ai', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Korpus Data NLP Bahasa Daerah Nusantara (Pusat AI ITB)', 'Dataset Sains Komputasi Linguistik', 'Basis data terbuka korpus digital bahasa Jawa, Sunda, Minang, dan puluhan bahasa daerah untuk melatih mesin AI masa depan.', 'Akses Terbuka / Donasi Swadaya', 'Dukung Inisiatif', 'https://ai.itb.ac.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Irzan Raditya (irzan-raditya)
@@ -304,6 +340,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2015 — 2016', 'PENDIRIAN YESBOSS & KELAHIRAN KATA.AI', 'Merintis layanan asisten virtual YesBoss dan bertransformasi membangun platform B2B Conversational AI Kata.ai.', 1);
@@ -321,6 +359,10 @@ BEGIN
   VALUES (v_profile_id, 'Membedah Bahasa Gaul dengan Algoritma: Bagaimana Kata.ai Mengajari Mesin Mengerti Konteks Percakapan Warga', 'KECERDASAN BUATAN', '7 Menit Membaca', 'Tantangan rekayasa NLU saat menghadapi bahasa Indonesia informal yang penuh singkatan, rima gaul, dan kode campur.', 'Bahasa percakapan di Indonesia adalah salah satu yang paling dinamis di dunia. Kata yang sama bisa memiliki arti bertolak belakang tergantung pada nada dan konteks kalimatnya. Mengajarkan nuansa kultural ini pada mesin adalah karya rekayasa sains yang membutuhkan pemahaman mendalam atas jiwa bangsa kita.', '/artikel/irzan-raditya-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Deep-Tech dari Tanah Air: Mengapa Kita Harus Percaya Diri Membangun Infrastruktur AI Sendiri', 'STARTUP & DISRUPSI', '6 Menit Membaca', 'Pentingnya wirausaha teknologi Indonesia berani berinvestasi pada riset fundamental dan tidak sekadar menjadi agen reseller teknologi luar.', 'Membangun produk deep-tech membutuhkan nafas panjang dan ketekunan riset bertahun-tahun. Namun inilah satu-satunya cara agar talenta teknologi kita tidak hanya menjadi pasar konsumen, melainkan pemilik arsitektur teknologi itu sendiri.', '/artikel/irzan-raditya-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Kata.ai Conversational Platform (Mesin NLU Bahasa Gaul)', 'Platform B2B Conversational AI Enterprise', 'Infrastruktur pemrosesan jutaan pesan percakapan harian dengan akurasi pemahaman dialek informal Indonesia tertinggi.', 'Freemium / B2B (Mulai Rp 299.000/bln)', 'Dukung Inisiatif', 'https://kata.ai', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Kata Omnichat & Asisten Cerdas UMKM', 'Software SaaS Otomasi Layanan Pelanggan', 'Platform perpesanan terpadu berbasis AI yang membantu pengusaha kecil mengelola ribuan pesanan WhatsApp secara otomatis.', 'Akses Terbuka / Donasi Swadaya', 'Dukung Inisiatif', 'https://kata.ai', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Romi Satria Wahono (romi-satria-wahono)
@@ -350,6 +392,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2003', 'PELUNCURAN ILMUKOMPUTER.COM & PENGHARGAAN PBB', 'Mendirikan portal open knowledge IlmuKomputer.com yang memenangkan World Summit Award (WSIS) dari Perserikatan Bangsa-Bangsa di Jenewa.', 1);
@@ -367,6 +411,10 @@ BEGIN
   VALUES (v_profile_id, 'Belajar Koding dari Logika Dasar: Mengapa Tidak Ada Jalan Pintas Menjadi Software Engineer Andal', 'SOFTWARE ENGINEERING', '7 Menit Membaca', 'Refleksi Romi Satria Wahono tentang pentingnya menguasai algoritma, struktur data, dan arsitektur sistem dibanding sekadar menghafal framework tren sesaat.', 'Framework dan bahasa pemrograman akan selalu berganti setiap beberapa tahun sekali. Namun logika berpikir algoritmik dan pemahaman mendalam atas arsitektur sistem adalah fondasi abadi yang membuat seorang insinyur perangkat lunak mampu bertahan menavigasi disrupsi teknologi apa pun.', '/artikel/romi-satria-wahono-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Revolusi Open Knowledge: Catatan 20 Tahun Membuka Pintu Akses Ilmu Komputer untuk Rakyat', 'PENDIDIKAN TERBUKA', '6 Menit Membaca', 'Kisah perjuangan mendemokratisasi modul ajar pemrograman bagi anak-anak daerah yang tidak mampu kuliah di kampus mahal.', 'Ketika ilmu pengetahuan dibagikan secara ikhlas tanpa sekat ekonomi, kita sedang menyalakan ribuan lilin harapan di pelosok nusantara. Talenta hebat bisa lahir dari mana saja, asalkan mereka diberi kesempatan dan bahan ajar yang jujur.', '/artikel/romi-satria-wahono-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'IlmuKomputer.com (Portal Open Knowledge IT Pertama)', 'Repositori Pendidikan Komputasi Terbuka', 'Situs edukasi teknologi informasi gratis legendaris yang telah melatih jutaan talenta pemrograman dan rekayasa jaringan Indonesia.', 'Akses Terbuka / Donasi Swadaya', 'Dukung Inisiatif', 'https://ilmukomputer.org', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Brainmatics (Pusat Pelatihan & Sertifikasi IT Profesional)', 'Institusi Pengembangan Talenta Perangkat Lunak', 'Lembaga pelatihan standar industri untuk software architecture, database management, dan machine learning bersertifikasi resmi.', 'Rp 199.000 — Rp 1.450.000 / paket', 'Dukung Inisiatif', 'https://brainmatics.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Dr. Eng. Sunu Wibirama (sunu-wibirama)
@@ -396,6 +444,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2008 — 2013', 'DOKTORAL HCI DI JEPANG & RISET EYE-TRACKING', 'Meneliti interaksi visual manusia dan komputer di Tokai University, mengembangkan algoritma pelacakan pandangan mata 3D presisi tinggi.', 1);
@@ -413,6 +463,10 @@ BEGIN
   VALUES (v_profile_id, 'Membaca Pikiran Lewat Sorot Mata: Bagaimana AI Membantu Pasien Lumpuh Berkomunikasi Kembali', 'BIOMEDIS & AI', '7 Menit Membaca', 'Kisah haru di balik pengembangan teknologi asistif eye-tracking bagi pasien penyakit saraf ALS di Yogyakarta.', 'Ketika seseorang terkunci dalam tubuhnya sendiri yang tidak bisa digerakkan, matanya adalah satu-satunya jendela batin yang tersisa. Memberi mereka kemampuan berbicara kembali lewat sensor pandangan mata adalah momen di mana sains bertemu dengan mukjizat empati kemanusiaan.', '/artikel/sunu-wibirama-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Hilirisasi Alat Kesehatan Lokal: Memutus Ketergantungan Rumah Sakit pada Mesin Impor Mahal', 'KEDAULATAN MEDIS', '6 Menit Membaca', 'Pentingnya memproduksi instrumen biomedis di dalam negeri agar biaya pengobatan rakyat kecil tidak melambung tinggi.', 'Sebagian besar alat diagnostik di rumah sakit kita adalah barang impor dengan harga miliaran rupiah yang membebani anggaran BPJS. Memproduksi sensor medis berkualitas tinggi dengan komponen lokal adalah kunci pemerataan keadilan kesehatan.', '/artikel/sunu-wibirama-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Sistem Eye-Tracking Diagnostik Pasien Gangguan Saraf (UGM Lab)', 'Rekayasa Biomedis & Antarmuka Manusia-Komputer', 'Alat pemantau pergerakan pupil mata berkecepatan tinggi untuk mendeteksi disfungsi neurologis dan rehabilitasi stroke secara presisi.', 'Akses Terbuka / Donasi Swadaya', 'Dukung Inisiatif', 'https://sunu.staff.ugm.ac.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Sistem Deteksi Kelelahan Pengemudi Berbasis AI Visual', 'Teknologi Keselamatan Transportasi Cerdas', 'Sensor kamera cerdas yang membaca pola kedipan mata dan posisi kepala pengemudi bus/truk untuk mencegah kecelakaan di jalan tol.', 'Akses Terbuka / Donasi Swadaya', 'Dukung Inisiatif', 'https://ugm.ac.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Prof. Yohanes Surya, Ph.D. (yohanes-surya)
@@ -442,6 +496,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '1993 — 2006', 'MEMIMPIN TOFI & JUARA DUNIA OLIMPIADE FISIKA', 'Membina Tim Olimpiade Fisika Indonesia hingga meraih predikat Juara Umum Dunia dan Absolute Winner IPhO di Singapura dan Salamanca.', 1);
@@ -459,6 +515,10 @@ BEGIN
   VALUES (v_profile_id, 'Membongkar Mitos Matematika Sulit: Bagaimana Anak-Anak Pedalaman Papua Menguasai Kalkulus dalam Hitungan Bulan', 'PENDIDIKAN SAINS', '8 Menit Membaca', 'Kisah di balik keberhasilan metode GASING Yohanes Surya meruntuhkan stigma keterbelakangan kecerdasan di wilayah timur Indonesia.', 'Ketika seorang anak gagal memahami matematika di sekolah, itu bukan karena otaknya lambat, melainkan karena guru memaksanya menghafal rumus abstrak tanpa membangun pemahaman konkret terlebih dahulu. Ketika rasa takut pada angka dihilangkan dan diganti dengan permainan logika yang asyik, potensi kejeniusan anak akan meledak tanpa batas.', '/artikel/yohanes-surya-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Dari Penonton Menjadi Juara Dunia: Pelajaran dari Kawah Candradimuka Olimpiade Fisika', 'KUALITAS TALENTA', '7 Menit Membaca', 'Filosofi pembinaan mental juara dan disiplin riset dalam menaklukkan soal-soal fisika teoretis tersulit di panggung internasional.', 'Meraih medali emas olimpiade sains bukan soal memiliki bakat bawaan sejak lahir, melainkan tentang ketahanan duduk berjam-jam membedah kerumitan persoalan dengan kesabaran tanpa batas. Ketahanan mental inilah yang harus kita wariskan kepada seluruh generasi penerus bangsa.', '/artikel/yohanes-surya-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Metode GASING (Gampang, Asyik, dan Menyenangkan)', 'Metodologi Pengajaran Matematika & Sains Revolusioner', 'Pendekatan pembelajaran berhitung tanpa rumus mati berbasis logika visual dan eksplorasi konkret yang mempercepat penguasaan matematika dasar.', 'Akses Terbuka / Donasi Swadaya', 'Dukung Inisiatif', 'https://suryainstitute.org', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'TOFI (Tim Olimpiade Fisika Indonesia)', 'Program Pembinaan Talenta Sains Unggul Dunia', 'Kawah candradimuka pembinaan fisika intensif yang telah menyumbangkan lebih dari 100 medali emas internasional bagi Republik Indonesia.', 'Akses Terbuka / Donasi Swadaya', 'Dukung Inisiatif', 'https://suryainstitute.org', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 COMMIT;

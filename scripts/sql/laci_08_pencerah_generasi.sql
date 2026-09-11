@@ -28,6 +28,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2013 — 2020', 'ABDI NEGARA & AUDITOR KEMENKEU', 'Mengabdi di bawah bendera Kementerian Keuangan, mengaudit arus anggaran negara dan menyaksikan langsung timpangnya literasi finansial warga.', 1);
@@ -49,6 +51,10 @@ BEGIN
   VALUES (v_profile_id, 'Membongkar Jebakan Ilusi: Catatan Investigasi Ferry Irwandi Melawan Gurita Judol', 'INVESTIGASI & ADVOKASI', '8 Menit Membaca', 'Kisah di balik layar perlawanan Ferry membongkar manipulasi psikologis di balik judi online: mengapa bandar tidak pernah kalah.', 'Sepanjang tahun, pesan masuk Ferry Irwandi dipenuhi curhatan pilu. Mahasiswa kehilangan tabungan kuliah, buruh terjerat utang pinjol demi ''kemenangan semu''. Bagi Ferry, ini bukan masalah nasib buruk, melainkan rekayasa matematika algoritma. Secara probabilitas, sistem judi online dirancang agar pemain 100% bangkrut pada akhirnya. Mengedukasi nalar publik adalah satu-satunya vaksin melawan manipulasi ini.', '/artikel/ferry-irwandi-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Tenang di Tengah Badai: Stoikisme Praktis untuk Generasi yang Gampang Cemas', 'FILSAFAT PRAKTIS', '7 Menit Membaca', 'Bagaimana filosofi dikotomi kendali menyelamatkan Ferry saat menghadapi serangan siber dan risiko resign dari kemapanan.', 'Ketika meninggalkan zona nyaman ASN pada 2021, rasa cemas tentu hadir. Di titik itulah Stoikisme berhenti menjadi sekadar kutipan estetis di media sosial dan menjadi jangkar hidup. Fokus hanya pada apa yang bisa dikendalikan—kualitas karya, kejujuran pikiran, dan keberanian melangkah—adalah cara menjadi batu karang di tengah badai opini publik.', '/artikel/ferry-irwandi-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Investigasi & Pembongkaran Matematika Judi Online', 'Riset Finansial & Advokasi Publik', 'Pembedahan saintifik tentang probabilitas bandar judi online dan arsitektur penipuan finansial digital yang menguras kantong jutaan warga.', 'Akses Terbuka / Mulai Rp 99.000', 'Dukung Inisiatif', 'https://youtube.com/@ferryirwandi', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Malaka Project (Platform Video Esai Nalar Kritis)', 'Media Riset & Diskursus Independen', 'Platform video esai berbobot dengan jutaan pelanggan yang menguliti isu filsafat praktis, ekonomi makro, dan kesadaran politik anak muda.', 'Akses Terbuka / Mulai Rp 99.000', 'Dukung Inisiatif', 'https://malakaproject.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Najwa Shihab (najwa-shihab)
@@ -78,6 +84,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2001 — 2017', 'ERA METRO TV, LIPUTAN TSUNAMI & MATA NAJWA', 'Merintis karir jurnalisme lapangan, meliput bencana Aceh, dan memandu talkshow politik paling berpengaruh di Indonesia, Mata Najwa.', 1);
@@ -95,6 +103,10 @@ BEGIN
   VALUES (v_profile_id, 'Di Balik Wawancara Kursi Kosong: Mengapa Pejabat Publik Wajib Menjawab Pertanyaan Rakyat', 'ETIKA JURNALISME', '8 Menit Membaca', 'Catatan Najwa Shihab tentang fungsi pers sebagai anjing penjaga (watchdog) demokrasi yang tidak boleh tunduk pada protokoler kekuasaan.', 'Jabatan publik dibiayai oleh pajak keringat rakyat. Ketika krisis melanda dan nyawa warga terancam, pejabat yang memegang wewenang tidak boleh bersembunyi di balik ajudan. Bertanya dan menuntut transparansi adalah hak paling mendasar dari setiap warga negara.', '/artikel/najwa-shihab-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Literasi Adalah Kunci Kedaulatan: Mengapa Bangsa yang Malas Membaca Mudah Dibohongi', 'LITERASI BANGSA', '7 Menit Membaca', 'Pentingnya menumbuhkan tradisi membaca buku mendalam di tengah godaan konten pendek yang serba instan.', 'Minat baca yang rendah bukanlah takdir genetik anak Indonesia; ia adalah akibat dari ketiadaan akses buku bermutu di pelosok daerah. Menyalakan perpustakaan keliling dan ruang baca desa adalah ikhtiar merawat kedaulatan akal sehat bangsa.', '/artikel/najwa-shihab-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Mata Najwa (Program Dialog Politik & Akuntabilitas)', 'Jurnalisme Investigasi & Talkshow Kebijakan Publik', 'Program bincang-bincang politik independen yang menjadi rujukan warga dalam menguji integritas para calon pemimpin dan pembuat kebijakan.', 'Akses Terbuka / Mulai Rp 99.000', 'Dukung Inisiatif', 'https://narasi.tv', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Narasi TV & Narasi Newsroom (Investigasi Open Source)', 'Ekosistem Media Digital Warga & Investigasi OSINT', 'Redaksi jurnalisme data yang mengungkap pembajakan ruang publik, kekerasan aparat, dan penyelewengan kekuasaan.', 'Akses Terbuka / Mulai Rp 99.000', 'Dukung Inisiatif', 'https://narasi.tv', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Gita Wirjawan (gita-wirjawan)
@@ -124,6 +136,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2008 — 2014', 'PENGABDIAN NEGARA DI BKPM & KEMENTERIAN PERDAGANGAN', 'Memimpin reformasi iklim investasi nasional di BKPM dan menjabat Menteri Perdagangan memperjuangkan kedaulatan ekspor di WTO Bali 2013.', 1);
@@ -141,6 +155,10 @@ BEGIN
   VALUES (v_profile_id, 'Menghindari Middle Income Trap: Mengapa Reformasi Pendidikan dan Riset Genomik Adalah Harga Mati', 'GEOPOLITIK & EKONOMI', '8 Menit Membaca', 'Analisis Gita Wirjawan tentang bagaimana negara-negara maju seperti Korea Selatan dan Taiwan melompat lewat penguasaan sains mutakhir.', 'Sebuah negara tidak akan pernah kaya hanya dengan mengandalkan ekspor komoditas tanah mentah. Satu-satunya modal yang nilainya berlipat ganda tanpa batas adalah kecerdasan manusia. Menginvestasikan anggaran negara pada riset bioteknologi, kecerdasan buatan, dan matematika murni adalah syarat mutlak agar Indonesia keluar dari jebakan pendapatan menengah.', '/artikel/gita-wirjawan-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Endgame: Merawat Rasa Ingin Tahu Intelektual di Tengah Kedangkalan Informasi', 'LITERASI INTI', '7 Menit Membaca', 'Pentingnya mendengarkan perbincangan panjang yang menguji kedalaman argumen dibanding rangkuman instan.', 'Dunia terlalu rumit untuk dijelaskan dalam video 30 detik. Ketika generasi muda membiasakan diri menyimak dialektika pemikiran panjang berjam-jam, mereka sedang melatih otot kognitif untuk memecahkan persoalan peradaban yang kompleks.', '/artikel/gita-wirjawan-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Endgame Podcast (Siniar Geopolitik & Sains Masa Depan)', 'Media Edukasi Wawasan Global & Wawancara Mendalam', 'Platform dialog intelektual berkualitas tinggi yang membedah arsitektur kecerdasan buatan, energi terbarukan, dan sejarah peradaban bangsa.', 'Rp 199.000 — Rp 1.450.000 / paket', 'Dukung Inisiatif', 'https://youtube.com/@GitaWirjawan', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Ancora Foundation (Beasiswa Pendidikan Tinggi Global)', 'Filantropi Pendidikan & Pembinaan Kepemimpinan', 'Yayasan beasiswa yang telah mengirimkan ratusan talenta terbaik Indonesia menempuh studi magister dan doktoral di Harvard, Oxford, dan Cambridge.', 'Akses Terbuka / Mulai Rp 99.000', 'Dukung Inisiatif', 'https://ancorafoundation.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Kalis Mardiasih (kalis-mardiasih)
@@ -170,6 +188,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2016 — 2019', 'KOLUMNIS ISLAM EMANSIPATORIS & BUKU DEBUT', 'Menulis ratusan esai viral di Mojok.co dan menerbitkan buku Muslimah yang Memperdebatkan Kepalsuan membedah keadilan gender berakar pesantren.', 1);
@@ -187,6 +207,10 @@ BEGIN
   VALUES (v_profile_id, 'Mengaji Keadilan Gender dari Serambi Pesantren: Kisah Kalis Mardiasih Membela Hak Perempuan', 'GENDER & AGAMA', '7 Menit Membaca', 'Bagaimana ajaran kitab kuning klasik sebenarnya sangat menjunjung tinggi martabat dan perlindungan perempuan.', 'Banyak orang mengira perjuangan hak perempuan adalah produk impor dari barat. Kalis membuktikan bahwa nilai-nilai keadilan hakiki, perlindungan dari kekerasan, dan kemuliaan akal perempuan sudah termaktub jelas dalam khazanah Islam klasik yang diajarkan para ulama nusantara.', '/artikel/kalis-mardiasih-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Hijrah Tanpa Kehilangan Akal Sehat: Menolak Ekstremisme Agama yang Menghakimi Sesama', 'LITERASI KEAGAMAAN', '6 Menit Membaca', 'Pentingnya beragama dengan mendahulukan akhlak mulia dan kepedulian sosial dibanding simbol pakaian luar.', 'Beragama bukanlah perlombaan merasa paling suci dan gemar mengkafirkan orang lain. Hijrah sejati adalah ketika perilakumu membuat tetanggamu merasa aman dan orang tuamu merasa dihormati dengan penuh cinta kasih.', '/artikel/kalis-mardiasih-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Buku: Muslimah yang Memperdebatkan Kepalsuan', 'Karya Literatur Fiqih Emansipatoris & Gender', 'Kumpulan esai reflektif yang membongkar bias patriarki dalam penafsiran agama dan membela otonomi perempuan.', 'Rp 85.000 — Rp 185.000', 'Dukung Inisiatif', 'https://www.gramedia.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Buku: Hijrah Jangan Jauh-Jauh, Nanti Lupa Pulang', 'Kritik Sosial Fenomena Keagamaan Populer', 'Pembedahan fenomena hijrah instan perkotaan yang kerap melupakan etika kesantunan dan empati sosial sehari-hari.', 'Rp 85.000 — Rp 185.000', 'Dukung Inisiatif', 'https://www.gramedia.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Gerald Sebastian (gerald-sebastian)
@@ -216,6 +240,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2015', 'PELUNCURAN EPISODE PERTAMA KOK BISA?', 'Merilis video animasi pertama tentang ''Kenapa Kita Bisa Menangis'' dari kamar indekos di Tangerang.', 1);
@@ -233,6 +259,10 @@ BEGIN
   VALUES (v_profile_id, 'Menyalakan Rasa Ingin Tahu: Bagaimana Animasi Mengubah Anak-Anak Menjadi Pecinta Sains', 'TEKNOLOGI PENDIDIKAN', '7 Menit Membaca', 'Metodologi Kok Bisa? meramu jurnal penelitian ilmiah yang rumit menjadi cerita animasi visual yang mudah dimengerti anak SD.', 'Anak-anak pada dasarnya memiliki rasa ingin tahu yang tak terbatas. Kesalahan kita adalah menyajikan sains sebagai rumus angka mati yang harus dihafal untuk ujian. Ketika sains dihadirkan sebagai petualangan menjawab misteri semesta, anak-anak akan belajar dengan mata yang berbinar-binar.', '/artikel/gerald-sebastian-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Demokratisasi Konten Edukasi: Melawan Arus Sensasionalisme Algoritma Media Sosial', 'LITERASI DIGITAL', '6 Menit Membaca', 'Tantangan mempertahankan mutu dan akurasi fakta di tengah ekosistem internet yang lebih menguntungkan konten sensasi.', 'Membuat konten edukasi animasi membutuhkan riset berhari-hari dan biaya produksi yang tidak sedikit. Mempertahankan komitmen mencerdaskan bangsa di tengah godaan konten clickbait adalah bentuk dedikasi kebangsaan yang sesungguhnya.', '/artikel/gerald-sebastian-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Kanal YouTube Kok Bisa? (Platform Animasi Edukasi Terbesar)', 'Media Edukasi Sains Populer & Animasi Digital', 'Koleksi ratusan video animasi berstandar riset ilmiah yang telah ditonton lebih dari 700 juta kali oleh pelajar dan keluarga Indonesia.', 'Rp 199.000 — Rp 1.450.000 / paket', 'Dukung Inisiatif', 'https://youtube.com/@KokBisa', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Buku: Kok Bisa? Tanya Jawab Sains Seru Dunia', 'Karya Literatur Sains Populer Anak & Remaja', 'Buku visual interaktif yang merangkum misteri sains biologi, fisika, dan teknologi dalam bahasa sederhana yang menyenangkan.', 'Rp 85.000 — Rp 185.000', 'Dukung Inisiatif', 'https://www.gramedia.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Heni Sri Sundani (heni-sri-sundani)
@@ -262,6 +292,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2005 — 2011', 'BEKERJA DI HONG KONG & KULIAH CUM LAUDE', 'Bekerja sebagai asisten rumah tangga di Hong Kong sembari menyelesaikan gelar sarjana manajemen bisnis dengan predikat kelulusan tertinggi.', 1);
@@ -279,6 +311,10 @@ BEGIN
   VALUES (v_profile_id, 'Dari Kasur Majikan ke Wisuda Cum Laude: Kisah Ketabahan Heni Sri Sundani', 'INSPIRASI PEREMPUAN', '7 Menit Membaca', 'Perjalanan luar biasa seorang buruh migran belajar di sela-sela mencuci piring demi mengubah nasib anak-anak petani di tanah air.', 'Tidak ada pekerjaan halal yang hina. Ketika Heni mencuci lantai dan menggosok baju di Hong Kong, ia memegang buku pelajaran di tangan kirinya. Ia membuktikan bahwa tekad belajar yang membara mampu meruntuhkan segala sekat diskriminasi sosial.', '/artikel/heni-sri-sundani-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Memutus Rantai Kemiskinan Petani: Mengapa Anak Desa Berhak Mendapatkan Akses Pendidikan Terbaik', 'PENDIDIKAN DESA', '6 Menit Membaca', 'Pentingnya membekali anak-anak perdesaan dengan keterampilan digital dan bahasa global tanpa mencabut mereka dari kecintaan pada pertanian.', 'Anak petani tidak boleh selamanya terjebak menjadi buruh cangkul yang diperas tengkulak. Dengan membekali mereka literasi digital dan teknologi agribisnis modern, mereka akan tumbuh menjadi arsitek-arsitek pertanian mandiri yang memimpin kedaulatan pangan bangsanya.', '/artikel/heni-sri-sundani-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Gerakan Anak Petani Cerdas (Komunitas Belajar Desa Gratis)', 'Pendidikan Transformatif & Pengentasan Buta Aksara', 'Pusat belajar alternatif yang menyediakan bimbingan literasi, komputer, dan bahasa asing gratis bagi ribuan anak petani di Jawa Barat.', 'Akses Terbuka / Mulai Rp 99.000', 'Dukung Inisiatif', 'https://sektorlokal.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'AgroEdu Jampang (Agrowisata Edukasi Pertanian Mandiri)', 'Kewirausahaan Sosial Agribisnis Berkelanjutan', 'Unit usaha pertanian organik yang menjadi laboratorium belajar bercocok tanam sekaligus menopang operasional sekolah gratis anak petani.', 'Akses Terbuka / Mulai Rp 99.000', 'Dukung Inisiatif', 'https://sektorlokal.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Angga Fauzan (angga-fauzan)
@@ -308,6 +344,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2013 — 2019', 'DARI BOYOLALI KE EDINBURGH LEWAT BEASISWA', 'Menempuh studi DKV ITB lewat Bidikmisi dan menyelesaikan S2 di Edinburgh University lewat beasiswa LPDP.', 1);
@@ -325,6 +363,10 @@ BEGIN
   VALUES (v_profile_id, 'Dari Kandang Kambing Menembus Skotlandia: Kisah Perjuangan Hidup Angga Fauzan', 'MOBILITAS SOSIAL', '7 Menit Membaca', 'Perjalanan ketabahan Angga membuktikan bahwa beasiswa pendidikan adalah instrumen pengubah takdir paling nyata di Indonesia.', 'Ketika hidupmu dimulai dari titik minus, menyerah adalah hal yang paling mudah. Namun ketika kamu memegang teguh keyakinan bahwa pendidikan mampu mengubah garis keturunan keluargamu, setiap pintu beasiswa yang terbuka akan kamu perjuangkan dengan darah dan air mata.', '/artikel/angga-fauzan-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Menjembatani Kesenjangan Skill Kerja: Mengapa Ijazah Sarjana Saja Tidak Lagi Cukup', 'KARIER DIGITAL', '6 Menit Membaca', 'Pentingnya penguasaan keterampilan teknis terapan data dan kecerdasan buatan bagi generasi muda di era disrupsi.', 'Industri kerja modern tidak lagi bertanya di mana kamu kuliah, melainkan kemampuan riil apa yang bisa kamu eksekusi dan portofolio apa yang pernah kamu buat. Belajar keterampilan digital secara mandiri adalah cara terbaik mengamankan masa depan karier.', '/artikel/angga-fauzan-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'MySkill.id (Platform Upskilling Karier & E-Learning Digital)', 'EduTech Keterampilan Kerja & Bootcamp Vokasi', 'Platform pembelajaran karier daring terpadu yang menyediakan ratusan modul video interaktif, bootcamp intensif, dan bimbingan portofolio kerja.', 'Rp 199.000 — Rp 1.450.000 / paket', 'Dukung Inisiatif', 'https://myskill.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Program Beasiswa Upskilling Talenta Daerah Prasejahtera', 'Inklusi Digital & Akselerasi Karier Pemuda', 'Penyaluran ribuan beasiswa pelatihan skill digital gratis bagi mahasiswa dan lulusan baru dari keluarga kurang mampu di luar Pulau Jawa.', 'Akses Terbuka / Mulai Rp 99.000', 'Dukung Inisiatif', 'https://myskill.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Alanda Kariza (alanda-kariza)
@@ -354,6 +396,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2009 — 2010', 'PENDIRIAN INDONESIAN YOUTH CONFERENCE (IYC)', 'Menggagas IYC dan mendirikan Sinergi Muda, memobilisasi ribuan pemuda dari seluruh penjuru Indonesia dalam merumuskan agenda pembangunan.', 1);
@@ -371,6 +415,10 @@ BEGIN
   VALUES (v_profile_id, 'Pemuda Bukan Sekadar Objek Politik: Kisah IYC Mengubah Aspirasi Menjadi Kebijakan Riil', 'KEPEMIMPINAN PEMUDA', '7 Menit Membaca', 'Catatan Alanda Kariza tentang pentingnya melibatkan suara anak muda dalam penyusunan undang-undang.', 'Setiap pemilu, pemuda selalu dijadikan komoditas suara kampanye. Melalui IYC, kami membuktikan bahwa pemuda memiliki gagasan teknis yang sangat matang tentang tata kota, pendidikan, dan lingkungan bila diberi ruang bicara yang setara di meja pengambil kebijakan.', '/artikel/alanda-kariza-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Membina Gerakan yang Berkelanjutan: Dari Semangat Emosional Menuju Struktur Organisasi yang Kuat', 'ORGANISASI SOSIAL', '6 Menit Membaca', 'Panduan praktis mengelola komunitas nirlaba agar tidak mati suri setelah acara selesai.', 'Banyak inisiatif sosial pemuda yang bubar setelah setahun karena hanya bersandar pada semangat berapi-api tanpa tata kelola keuangan yang transparan dan regenerasi kepemimpinan. Gerakan yang hebat adalah gerakan yang mampu terus berjalan meski para pendirinya telah melangkah ke peran lain.', '/artikel/alanda-kariza-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Indonesian Youth Conference (IYC & Sinergi Muda)', 'Gerakan Kepemudaan & Advokasi Kebijakan Publik', 'Konferensi tahunan pemuda lintas nusantara yang memfasilitasi dialog langsung antara pemuda daerah dengan para pemimpin bangsa.', 'Akses Terbuka / Mulai Rp 99.000', 'Dukung Inisiatif', 'https://sinergimuda.org', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Buku: Muda, Berdaya, Berkarya & Surat Penggemar', 'Karya Literatur Kepemudaan & Esai Sosial', 'Kumpulan tulisan inspiratif memandu pemuda menemukan panggilan kepemimpinan dan merintis inisiatif sosial mandiri.', 'Rp 85.000 — Rp 185.000', 'Dukung Inisiatif', 'https://www.gramedia.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Felicia Putri Tjiasaka (felicia-putri-tjiasaka)
@@ -400,6 +448,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2016 — 2019', 'ANALIS PASAR MODAL & SERTIFIKASI CFA', 'Bekerja sebagai analis pasar modal di sekuritas terkemuka dan meraih sertifikasi internasional Certified Financial Planner (CFP) dan CFA.', 1);
@@ -417,6 +467,10 @@ BEGIN
   VALUES (v_profile_id, 'Membongkar Ilusi Flexing: Mengapa Gaya Hidup Mewah di Medsos Sering Kali Menyembunyikan Utang', 'LITERASI KEUANGAN', '7 Menit Membaca', 'Pembedahan Felicia Putri tentang bahaya fomo finansial dan pentingnya fokus pada nilai kekayaan bersih (net worth) riil.', 'Banyak anak muda yang rela berutang demi membeli barang bermerek hanya untuk terlihat kaya di depan orang-orang yang bahkan tidak mereka sukai. Kekayaan sejati tidak terlihat pada pakaian yang mencolok, melainkan pada ketenangan pikiran saat memiliki tabungan dana darurat dan aset produktif yang terus bertumbuh.', '/artikel/felicia-putri-tjiasaka-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Investasi Tanpa Rasa Serakah: Cara Membangun Portofolio Saham yang Tahan Badai Krisis', 'PASAR MODAL', '6 Menit Membaca', 'Panduan analisis fundamental memilih perusahaan yang memiliki tata kelola bagus dan arus kas operasional yang sehat.', 'Pasar saham bukan kasino tempat menebak angka keberuntungan. Membeli saham berarti membeli kepemilikan bisnis nyata. Ketika kamu memahami model bisnis perusahaan dan membelinya pada harga yang wajar, kamu tidak akan panik saat pasar sedang terkoreksi turun.', '/artikel/felicia-putri-tjiasaka-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Platform Edukasi Literasi Keuangan Felicia Tjiasaka', 'Edukasi Finansial & Analisis Pasar Modal Terbuka', 'Kanal edukasi keuangan dengan jutaan pengikut yang membedah alur laporan keuangan, portofolio investasi, dan perencanaan pensiun.', 'Rp 199.000 — Rp 1.450.000 / paket', 'Dukung Inisiatif', 'https://youtube.com/@FeliciaPutriTjiasaka', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Ternak Uang (Aplikasi Belajar Investasi Generasi Muda)', 'Fintech EduTech & Komunitas Investor Pemula', 'Platform pembelajaran modul investasi saham, reksadana, dan properti yang membimbing ratusan ribu investor muda Indonesia.', 'Rp 199.000 — Rp 1.450.000 / paket', 'Dukung Inisiatif', 'https://ternakuang.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Dr. Indrawan Nugroho (dr-indrawan-nugroho)
@@ -446,6 +500,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2010 — 2015', 'PENDIRIAN CIAS & KONSULTANSI INOVASI KORPORASI', 'Mendirikan Corporate Innovation Asia (CiAS) dan merancang kerangka kerja inovasi terapan bagi perusahaan-perusahaan terkemuka Indonesia.', 1);
@@ -463,6 +519,10 @@ BEGIN
   VALUES (v_profile_id, 'Jebakan Keberhasilan Masa Lalu: Mengapa Perusahaan Raksasa Kerap Buta Melihat Ancaman Disrupsi', 'STRATEGI BISNIS', '7 Menit Membaca', 'Analisis Dr. Indrawan Nugroho tentang innovator''s dilemma dan mengapa kepuasan pada profit saat ini adalah awal dari kehancuran.', 'Perusahaan besar jarang bangkrut karena produknya buruk; mereka bangkrut karena mereka terlalu lama menikmati kesuksesan produk lama mereka dan menolak berinvestasi pada teknologi baru yang awalnya tampak kecil. Inovasi menuntut kerendahan hati untuk terus merasa lapar dan siap merusak model bisnis sendiri demi masa depan.', '/artikel/dr-indrawan-nugroho-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Memimpin di Era Ketidakpastian: Keterampilan Berpikir Kritis yang Wajib Dimiliki Pemimpin Masa Depan', 'KEPEMIMPINAN', '6 Menit Membaca', 'Pentingnya mengadopsi pola pikir adaptif dan eksperimen cepat dalam menavigasi disrupsi kecerdasan buatan.', 'Rencana bisnis 5 tahunan yang kaku sudah usang. Pemimpin modern harus mampu membaca sinyal-sinyal perubahan pasar yang samar, melakukan eksperimen cepat berbiaya murah, dan berani mengubah haluan kapal sebelum badai disrupsi menenggelamkannya.', '/artikel/dr-indrawan-nugroho-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'CiAS (Corporate Innovation Asia)', 'Konsultansi Strategi Inovasi & Transformasi Bisnis', 'Firma konsultan inovasi terdepan yang mendesain arsitektur transformasi korporasi dan inkubasi unit bisnis baru.', 'Akses Terbuka / Mulai Rp 99.000', 'Dukung Inisiatif', 'https://cias.co', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Kanal Analisis Strategi Bisnis Dr. Indrawan Nugroho', 'Media Edukasi Manajemen & Studi Kasus Disrupsi', 'Koleksi ratusan video studi kasus mendalam tentang inovasi teknologi, manajemen kepemimpinan, dan persaingan pasar global.', 'Rp 199.000 — Rp 1.450.000 / paket', 'Dukung Inisiatif', 'https://youtube.com/@IndrawanNugroho', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 COMMIT;

@@ -28,6 +28,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2001 — 2008', 'KELAHIRAN EFEK RUMAH KACA & ALBUM DEBUT', 'Membentuk Efek Rumah Kaca di Jakarta, meluncurkan album debut dengan hit ''Cinta Melulu'' dan ''Di Udara'' yang menggebrak industri musik arus utama.', 1);
@@ -45,6 +47,10 @@ BEGIN
   VALUES (v_profile_id, 'Di Udara dan Selamanya Mengudara: Kisah di Balik Lagu Perlawanan Mengenang Munir', 'MUSIK & KEADILAN', '8 Menit Membaca', 'Catatan refleksi Cholil Mahmud tentang bagaimana sebaris lirik mampu menjadi benteng penjaga ingatan keadilan generasi muda.', 'Ketika pembunuh Munir masih bebas berkeliaran dan kekuasaan mencoba menghapus jejak kejahatan masa lalu, lagu Di Udara dinyanyikan ribuan anak muda di jalanan. Musik memiliki kekuatan magis untuk menolak lupa saat hukum negara lumpuh tak berdaya.', '/artikel/cholil-mahmud-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Rimpang: Filsafat Menjalar Diam-Diam Melawan Rezim Keangkuhan', 'DIALEKTIKA MUSIK', '7 Menit Membaca', 'Pembedahan konsep filosofis akar rimpang dalam album terbaru Efek Rumah Kaca sebagai model solidaritas komunal.', 'Seperti akar rimpang yang tumbuh diam-diam di bawah tanah yang gelap, gerakan perlawanan warga tidak butuh lampu sorot panggung yang silau. Ia menjalar dan saling menguatkan di bawah tanah hingga mampu merobohkan tembok kezaliman.', '/artikel/cholil-mahmud-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Diskografi Efek Rumah Kaca (Album Perlawanan & Kontemplasi)', 'Karya Musik Indie & Lirik Kritis Sosial', 'Album-album mahakarya musik Indonesia (Efek Rumah Kaca, Kamar Gelap, Sinestesia, Rimpang) yang memotret realitas politik dan luka kemanusiaan.', 'Rp 350.000 — Rp 650.000', 'Dukung Inisiatif', 'https://efekrumahkaca.net', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Pandai Besi & Eksplorasi Musik Akustik Kamar', 'Kolektif Musik Orkestrasi Eksperimental', 'Proyek musikal yang merekonstruksi lagu-lagu ERK dalam aransemen megah bernuansa teatrikal yang didanai secara crowdfunding publik.', 'Rilisan Digital / Fisik Rp 49.000 — Rp 250.000', 'Dukung Inisiatif', 'https://efekrumahkaca.net', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Kunto Aji (kunto-aji)
@@ -74,6 +80,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2014 — 2015', 'HIT TERLALU LAMA SENDIRI & KEMANDIRIAN MUSIK', 'Merilis single Terlalu Lama Sendiri secara independen, memenangkan penghargaan Musik AMI Awards dan menolak didikte label besar.', 1);
@@ -91,6 +99,10 @@ BEGIN
   VALUES (v_profile_id, 'Menenangkan Badai di Kepala: Bagaimana Frekuensi Musik Kunto Aji Menjadi Terapi Kolektif Generasi Cemas', 'KESEHATAN MENTAL', '8 Menit Membaca', 'Pembedahan sains di balik frekuensi 396 Hz dan lirik lagu Rehat dalam menurunkan detak jantung dan hormon stres.', 'Di era linimasa yang menuntut kita untuk selalu produktif dan memamerkan kesuksesan semu, lagu Rehat hadir sebagai pelukan hangat yang berbisik: tidak apa-apa untuk berhenti sejenak. Mengakui bahwa kita sedang tidak baik-baik saja adalah awal dari pemulihan jiwa.', '/artikel/kunto-aji-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Pilu Membiru: Ketika Musik Menjadi Jembatan Berdamai dengan Penyesalan yang Tak Terucapkan', 'KATARSIS BATIN', '7 Menit Membaca', 'Kisah-kisah haru ribuan pendengar yang berhasil melewati duka kehilangan orang tercinta lewat lagu Kunto Aji.', 'Luka batin yang dipendam terlalu lama akan menjadi racun yang menggerogoti kesehatan fisik. Musik yang jujur membuka katup penahan air mata, membiarkan rasa duka mengalir keluar hingga batin kembali merasa lapang.', '/artikel/kunto-aji-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Album: Mantra Mantra (Karya Musik Terapi Mental)', 'Karya Musik Psikologi Terapan & Pop Eksperimental', 'Album konsep pemulihan batin yang mengintegrasikan frekuensi audio relaksasi untuk meredakan kecemasan dan serangan panik.', 'Rp 350.000 — Rp 650.000', 'Dukung Inisiatif', 'https://open.spotify.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Album: Pengantar Purwakala (Siklus Pendewasaan Diri)', 'Eksplorasi Musik Kontemplatif & Pertumbuhan Batin', 'Lanjutan perjalanan refleksi tentang menerima kehilangan, merawat harapan baru, dan menua dengan penuh kesadaran.', 'Rp 350.000 — Rp 650.000', 'Dukung Inisiatif', 'https://open.spotify.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Sal Priadi (sal-priadi)
@@ -120,6 +132,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2017 — 2019', 'DEBUT KULTUSAN & DUET AMIN PALING SERIUS', 'Merilis single debut Kultusan dan berduet bersama Nadin Amizah dalam Amin Paling Serius yang melambungkan namanya di panggung nasional.', 1);
@@ -137,6 +151,10 @@ BEGIN
   VALUES (v_profile_id, 'Gala Bunga Matahari: Bagaimana Sal Priadi Mengubah Rasa Duka Menjadi Doa Rindu yang Menyejukkan', 'SASTRA MUSIK', '7 Menit Membaca', 'Pembedahan lirik puitis tentang dialog imajiner dengan orang tercinta yang telah berpulang ke surga.', 'Kehilangan orang tua atau pasangan adalah duka terberat yang sering kali membuat seseorang merasa hampa. Lirik Gala Bunga Matahari menghadirkan gambaran surga yang indah dan tenang, membantu jutaan orang yang berduka untuk tersenyum sembari melepas rindu dengan penuh keikhlasan.', '/artikel/sal-priadi-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Merawat Diksi Bahasa Indonesia: Keberanian Sal Priadi Menulis Lirik yang Melawan Klise', 'LITERATUR POP', '6 Menit Membaca', 'Bagaimana kekayaan kosakata bahasa Indonesia mampu menghasilkan metafora asmara yang segar dan menggugah batin.', 'Bahasa Indonesia memiliki perbendaharaan kata yang sangat luas dan puitis bila kita berani menggali kamus dan sastra lama. Sal Priadi membuktikan bahwa generasi muda sangat haus akan lirik lagu yang memiliki kedalaman rasa dan estetika bahasa yang anggun.', '/artikel/sal-priadi-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Album: MARKERS AND SUCH PENS FLASHDISKS', 'Karya Musik Pop Puitis & Narasi Kehidupan', 'Album yang merayakan kehangatan hubungan sehari-hari, peran menjadi ayah, dan rekonsiliasi rindu kepada mereka yang telah tiada.', 'Rp 350.000 — Rp 650.000', 'Dukung Inisiatif', 'https://open.spotify.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Album: Berhati (Eksplorasi Cinta Teatrikal)', 'Musik Romantisisme Gelap & Sastra Audio', 'Kumpulan lagu puitis bertema cinta, kepasrahan batin, dan keintiman hubungan manusia dengan aransemen orkestrasi megah.', 'Rp 85.000 — Rp 185.000', 'Dukung Inisiatif', 'https://open.spotify.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Baskara Putra (Hindia) (baskara-putra)
@@ -166,6 +184,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2014 — 2018', 'MEMBESARKAN .FEAST & ROCK SOSIO-POLITIK', 'Merilis album MULTIVERSES dan lagu Peradaban bersama .FEAST, mengkritik keras radikalisme, ketimpangan sosial, dan represi politik.', 1);
@@ -183,6 +203,10 @@ BEGIN
   VALUES (v_profile_id, 'Secukupnya di Tengah Kota yang Menuntut Segalanya: Mengapa Hindia Menjadi Titik Tumpu Anak Muda Urban', 'KULTUR GENERASI', '8 Menit Membaca', 'Analisis sosiologis tentang bagaimana lirik lagu Baskara Putra menangkap keresahan generasi sandwich dan pekerja lepas.', 'Generasi muda hari ini hidup di bawah tekanan ganda: tuntutan ekonomi yang kian mencekik dan ilusi kesempurnaan hidup di media sosial. Lirik Evaluasi dan Secukupnya hadir seperti kawan seperjuangan di gerbong KRL malam yang mengingatkan bahwa kita berhak untuk merasa lelah dan gagal tanpa harus merasa hina.', '/artikel/baskara-putra-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Kemandirian Ekosistem Musik: Bagaimana Sun Eater Membangun Jalur Distribusi Sendiri', 'INDUSTRI MUSIK', '7 Menit Membaca', 'Strategi membesarkan musisi independen tanpa harus menjual hak cipta kepada konglomerat rekaman internasional.', 'Musisi hari ini tidak lagi butuh restu produser eksekutif untuk merilis karyanya. Dengan menguasai hak cipta master rekaman sendiri dan membangun hubungan langsung dengan komunitas pendengar, musisi lokal mampu memiliki kedaulatan ekonomi jangka panjang.', '/artikel/baskara-putra-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Album Hindia: Menari dengan Bayangan', 'Karya Musik Pop Alternatif & Kesehatan Mental', 'Album konsep fenomenal yang merangkum kegelisahan anak muda dalam menavigasi karir, asmara, dan luka masa kecil.', 'Rp 350.000 — Rp 650.000', 'Dukung Inisiatif', 'https://open.spotify.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Album Hindia: Lagipula Hidup Akan Berakhir', 'Karya Musik Eksistensial & Kritik Zaman', 'Album ganda 28 trek yang membedah krisis iklim, kapitalisme modern, inflasi harga rumah, dan masa depan generasi muda.', 'Rp 350.000 — Rp 650.000', 'Dukung Inisiatif', 'https://open.spotify.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Nadin Amizah (nadin-amizah)
@@ -212,6 +236,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2017 — 2019', 'DEBUT ALL GOOD & AMI AWARDS KARYA TERBAIK', 'Meraih AMI Awards Karya Produksi Terbaik di usia belia dan merilis single solo puitis Rumpang dan Sorai.', 1);
@@ -229,6 +255,10 @@ BEGIN
   VALUES (v_profile_id, 'Bertaut: Bagaimana Lagu Cinta Nadin Amizah Memulihkan Jalinan Hati Ibu dan Anak', 'RELASI KELUARGA', '7 Menit Membaca', 'Refleksi tentang kekuatan lirik Bertaut dalam menjembatani jurang komunikasi antargenerasi di dalam rumah.', 'Hubungan antara ibu dan anak perempuan sering kali dipenuhi dinamika rumit yang sulit diungkapkan dengan kata-kata biasa. Lirik Bertaut hadir sebagai jembatan maaf dan terima kasih, mengingatkan bahwa di balik segala salah paham, detak jantung kita pernah berpadu di dalam rahim yang sama.', '/artikel/nadin-amizah-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Merayakan Ketidaksempurnaan: Pelajaran Menerima Diri dari Nadin Amizah', 'KESEHATAN BATIN', '6 Menit Membaca', 'Pentingnya berdamai dengan trauma masa lalu dan menolak standar kesempurnaan hidup yang tidak realistis.', 'Dunia sering kali menuntut kita untuk selalu tampil sempurna, kuat, dan bahagia. Nadin membuktikan bahwa keberanian menunjukkan sisi rapuh dan luka batin justru membuat kita merasa lebih terhubung sebagai sesama manusia yang sedang belajar hidup.', '/artikel/nadin-amizah-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Album: Selamat Ulang Tahun (Karya Mahakarya Pendewasaan)', 'Karya Musik Folk Akustik & Narasi Keluarga', 'Album konsep yang mendokumentasikan rasa terima kasih kepada keluarga dan ketakutan menyongsong usia dewasa.', 'Rp 350.000 — Rp 650.000', 'Dukung Inisiatif', 'https://open.spotify.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Album: Untuk Dunia, Cinta, dan Kotornya', 'Musik Folk Teatrikal & Penerimaan Diri', 'Eksplorasi emosi tentang mencintai seseorang secara utuh bersama segala trauma dan ketidaksempurnaannya.', 'Rp 350.000 — Rp 650.000', 'Dukung Inisiatif', 'https://open.spotify.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: M. Aan Mansyur (m-aan-mansyur)
@@ -258,6 +288,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2005 — 2013', 'PENDIRIAN KOMUNITAS KATAKERJA MAKASSAR', 'Mendirikan ruang kreatif dan perpustakaan komunitas Katakerja di Makassar, menjadi episentrum literasi alternatif pemuda Sulawesi.', 1);
@@ -275,6 +307,10 @@ BEGIN
   VALUES (v_profile_id, 'Seni Merawat Kesunyian: Mengapa Puisi Adalah Terapi Terbaik Melawan Bisingnya Linimasa', 'SASTRA & REFLEKSI', '7 Menit Membaca', 'Catatan Aan Mansyur tentang bagaimana membaca sebaris bait puisi mampu memperlambat detak waktu yang serba terburu-buru.', 'Media sosial membiasakan kita untuk bereaksi cepat atas segala hal tanpa sempat merenungkannya. Puisi hadir sebagai jeda: mengajak kita duduk diam, merasakan hembusan angin, dan mendengarkan suara batin kita sendiri yang sering kali terabaikan.', '/artikel/m-aan-mansyur-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Menyalakan Lilin di Katakerja: Bagaimana Komunitas Literasi Daerah Membuka Cakrawala Pemuda', 'LITERASI AKAR RUMPUT', '6 Menit Membaca', 'Kisah perjuangan merawat ruang belajar swadaya di Makassar yang melahirkan generasi penulis dan pemikir baru.', 'Sebuah perpustakaan kecil di sudut kota yang dikelola dengan cinta mampu mengubah takdir ribuan pemuda. Di Katakerja, buku-buku bukan sekadar pajangan di rak, melainkan pemantik diskusi kritis yang membebaskan pikiran anak-anak muda.', '/artikel/m-aan-mansyur-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Buku: Tidak Ada New York Hari Ini (Kumpulan Puisi)', 'Karya Sastra Puisi & Fotografi', 'Antologi puisi kesunyian perkotaan yang fenomenal dengan terjemahan multibahasa dan ilustrasi fotografi analog.', 'Rp 85.000 — Rp 185.000', 'Dukung Inisiatif', 'https://www.gramedia.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Buku: Melihat Api Bekerja', 'Karya Sastra Puisi & Ilustrasi', 'Kumpulan puisi pemenang Kusala Sastra Khatulistiwa yang membedah cinta, ingatan kehilangan, dan rasa sakit secara visual puitis.', 'Rp 85.000 — Rp 185.000', 'Dukung Inisiatif', 'https://www.gramedia.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Kamila Andini (kamila-andini)
@@ -304,6 +340,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2011', 'DEBUT THE MIRROR NEVER LIES & WAKATOBI', 'Menyutradarai film debut tentang tradisi maritim suku Bajo yang memenangkan penghargaan FFI dan festival internasional di Berlin dan Tokyo.', 1);
@@ -321,6 +359,10 @@ BEGIN
   VALUES (v_profile_id, 'Bahasa Keheningan: Mengapa Film Kamila Andini Berbicara Lebih Dalam Lewat Tatapan Mata', 'ESTETIKA SINEMA', '8 Menit Membaca', 'Analisis gaya bertutur visual puitis Kamila Andini dalam memotret dinamika emosi batin perempuan.', 'Di tengah sinema komersial yang dipenuhi dialog berisik dan ledakan sensasi, film-film Kamila Andini memberi ruang bagi penonton untuk mendengar desau angin, keheningan kamar tidur, dan tatapan mata seorang perempuan yang menahan duka. Di sanalah letak kekuatan magis sinema sejati.', '/artikel/kamila-andini-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Membongkar Belenggu Patriarki: Pesan Emansipasi di Balik Karakter Yuni dan Dasiyah', 'KEADILAN GENDER', '7 Menit Membaca', 'Bagaimana karakter perempuan dalam karya Kamila Andini merebut kembali hak untuk bermimpi dan menentukan nasibnya sendiri.', 'Perempuan dalam sejarah kita kerap diposisikan sebagai pelengkap yang pasif di dapur. Melalui karakter Yuni yang menolak dipaksa menikah muda dan Dasiyah yang memperjuangkan racikan kreteknya, Kamila membuktikan bahwa perempuan nusantara selalu memiliki api perlawanan yang tak pernah padam.', '/artikel/kamila-andini-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Film Bioskop: Yuni (Platform Prize TIFF)', 'Karya Sinema Realisme Sosial & Pendidikan Remaja', 'Film yang membedah dilema pernikahan dini, impian pendidikan tinggi perempuan muda, dan dogma keagamaan sempit di Banten.', 'Tiket Nonton / VOD Rp 45.000 — Rp 75.000', 'Dukung Inisiatif', 'https://fourcoloursfilms.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Film Bioskop: Nana (Before, Now & Then)', 'Sinema Sejarah Puitis & Trauma Masa Lalu', 'Drama sejarah berbahasa Sunda tentang ketabahan perempuan korban pergolakan politik 1960-an yang meraih Silver Bear di Berlinale.', 'Tiket Nonton / VOD Rp 45.000 — Rp 75.000', 'Dukung Inisiatif', 'https://fourcoloursfilms.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Marchella FP (marchella-fp)
@@ -350,6 +392,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2013 — 2015', 'PELUNCURAN GENERASI 90AN & BESTSELLER', 'Menerbitkan buku Generasi 90an yang memicu gelombang nostalgia massal dan membangun komunitas pembaca setia.', 1);
@@ -367,6 +411,10 @@ BEGIN
   VALUES (v_profile_id, 'Menyembuhkan Luka Keluarga Lewat Cerita: Fenomena NKCTHI yang Membuka Ruang Dialog Antargenerasi', 'LITERATUR VISUAL', '7 Menit Membaca', 'Bagaimana buku Marchella FP membuka percakapan yang selama ini tabu di meja makan keluarga Indonesia.', 'Banyak keluarga di Indonesia yang hidup serumah namun saling terasing satu sama lain karena tidak pernah belajar mengekspresikan perasaan secara jujur. NKCTHI menjadi pemantik yang membuat orang tua dan anak saling memeluk dan mengakui kerapuhan masing-masing.', '/artikel/marchella-fp-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Dari Buku Menjadi IP Multimedia: Pelajaran Membangun Universe Cerita yang Bernyawa', 'INDUSTRI KREATIF', '6 Menit Membaca', 'Strategi Marchella FP mengembangkan karya tulis menjadi film layar lebar, merchandise, dan instalasi seni terpadu.', 'Sebuah karya yang hebat berakar pada kejujuran rasa. Ketika sebuah cerita ditulis dari pengalaman batin yang paling otentik, cerita itu akan mampu bertransformasi ke berbagai format media dan tetap menyentuh hati jutaan orang.', '/artikel/marchella-fp-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Buku: Nanti Kita Cerita Tentang Hari Ini (NKCTHI)', 'Karya Literatur Visual & Refleksi Batin', 'Buku panduan emosional keluarga dan pendewasaan diri yang menjadi rujukan anak muda dalam menavigasi duka dan harapan.', 'Rp 85.000 — Rp 185.000', 'Dukung Inisiatif', 'https://www.gramedia.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Buku: Kamu Terlalu Banyak Bercanda (KTBB)', 'Karya Tulis Eksplorasi Sisi Gelap & Emosi Manusia', 'Kumpulan surat batin yang membedah rasa marah, kecewa, dan ketakutan yang sering kali dipaksa disembunyikan di balik senyuman.', 'Rp 85.000 — Rp 185.000', 'Dukung Inisiatif', 'https://www.gramedia.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Eka Kurniawan (eka-kurniawan)
@@ -396,6 +444,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2002', 'PELUNCURAN CANTIK ITU LUKA', 'Menerbitkan novel debut Cantik Itu Luka yang merekonstruksi sejarah kelam bangsa lewat tokoh Dewi Ayu di kota fiktif Halimunda.', 1);
@@ -413,6 +463,10 @@ BEGIN
   VALUES (v_profile_id, 'Halimunda dan Luka Sejarah: Bagaimana Eka Kurniawan Menuliskan Tragedi Bangsa Lewat Realisme Magis', 'KRITIK SASTRA', '8 Menit Membaca', 'Pembedahan karya Cantik Itu Luka dalam membongkar kekerasan militerisme dan trauma korban yang dibungkam.', 'Realisme magis dalam novel Eka Kurniawan bukanlah sekadar bumbu fantasi; ia adalah instrumen untuk menceritakan kengerian sejarah yang terlalu brutal bila diungkapkan dengan kata-kata realistis biasa. Melalui tokoh yang bangkit dari kubur, sastra menolak membiarkan kejahatan masa lalu dilupakan.', '/artikel/eka-kurniawan-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Menulis di Luar Menara Gading: Sastra yang Membumi di Warung Kopi dan Terminal Bus', 'ESTETIKA PENULISAN', '7 Menit Membaca', 'Pentingnya menyerap bahasa percakapan rakyat jelata dan dinamika jalanan ke dalam karya sastra.', 'Sastra yang hebat tidak lahir dari ruang perpustakaan yang steril dari debu kehidupan. Ia menyerap bau keringat para sopir truk, obrolan buruh di warung kopi, dan dendam kaum papa yang tersingkir dari gemerlap pembangunan.', '/artikel/eka-kurniawan-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Novel: Cantik Itu Luka (Beauty Is a Wound)', 'Mahakarya Sastra Realisme Magis Indonesia', 'Epik sastra yang mengisahkan sejarah kekerasan Indonesia dari masa penjajahan Belanda, pendudukan Jepang, hingga pembantaian 1965.', 'Rp 85.000 — Rp 185.000', 'Dukung Inisiatif', 'https://www.gramedia.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Novel: Lelaki Harimau (Man Tiger)', 'Karya Sastra Tragedi & Mitologi Psikologis', 'Pembedahan mendalam tentang kemiskinan perdesaan, kekerasan domestik, dan mitos harimau gaib yang diakui dunia internasional.', 'Rp 85.000 — Rp 185.000', 'Dukung Inisiatif', 'https://www.gramedia.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Lala Bohang (lala-bohang)
@@ -442,6 +496,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2013 — 2016', 'PAMERAN SENI VISUAL & DEBUT FORBIDDEN FEELINGS', 'Menggelar pameran tunggal instalasi seni di Jakarta dan menerbitkan The Book of Forbidden Feelings yang menjadi fenomena literatur visual.', 1);
@@ -459,6 +515,10 @@ BEGIN
   VALUES (v_profile_id, 'Merangkul Emosi yang Terlarang: Mengapa Menangis dan Merasa Hampa Adalah Hak Manusiawi', 'SENI & KESEHATAN BATIN', '7 Menit Membaca', 'Refleksi Lala Bohang tentang bahaya toxic positivity yang memaksa manusia untuk selalu terlihat bahagia dan produktif.', 'Masyarakat modern kerap memandang kesedihan dan rasa cemas sebagai penyakit yang harus segera disingkirkan. Padahal, emosi gelap tersebut adalah bagian alami dari diri kita yang ingin didengarkan. Memberi ruang bagi kesedihan adalah cara kita merawat keutuhan jiwa.', '/artikel/lala-bohang-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Kekuatan Garis Hitam Putih: Bagaimana Kesederhanaan Visual Menggugah Kejujuran Rasa', 'ESTETIKA VISUAL', '6 Menit Membaca', 'Filosofi di balik gambar ilustrasi minimalis Lala Bohang yang mampu menyampaikan makna emosi yang mendalam.', 'Di tengah dunia visual yang penuh warna mencolok dan filter berlebih, goresan tinta hitam di atas kertas putih menghadirkan kejujuran yang menenangkan. Kesederhanaan bentuk memberi ruang bagi imajinasi pembaca untuk mengisi maknanya sendiri.', '/artikel/lala-bohang-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Trilogi Buku: The Book of Forbidden Feelings', 'Karya Seni Visual & Antologi Sastra Ilustrasi', 'Seri buku visual batin yang merayakan emosi-emosi manusia yang sering disembunyikan—kesepian, rasa hampa, dan kecanggungan hidup.', 'Rp 85.000 — Rp 185.000', 'Dukung Inisiatif', 'https://www.gramedia.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Pameran Instalasi Seni: Ruang Batin yang Sunyi', 'Seni Rupa Kontemporer & Ilustrasi Konseptual', 'Instalasi visual yang menggabungkan gambar tinta, objek temuan sehari-hari, dan rekaman audio monolog batin.', 'Rp 50.000 — Rp 350.000', 'Dukung Inisiatif', 'https://lalabohang.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 COMMIT;

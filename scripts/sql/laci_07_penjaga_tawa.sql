@@ -28,6 +28,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2011 — 2013', 'MEMBIDANI STAND-UP COMEDY INDONESIA & MESAKKE BANGSAKU', 'Membentuk komunitas Standupindo dan menggelar tur komedi tunggal Mesakke Bangsaku membedah isu korupsi dan HAM di berbagai kota dunia.', 1);
@@ -45,6 +47,10 @@ BEGIN
   VALUES (v_profile_id, 'Komedi Sebagai Oposisi Nalar: Mengapa Penguasa Selalu Takut pada Lelucon yang Cerdas', 'SATIR POLITIK', '8 Menit Membaca', 'Pembedahan Pandji Pragiwaksono tentang bagaimana tawa rakyat mampu meruntuhkan wibawa palsu kediktatoran.', 'Otoritarianisme bisa membungkam orasi demonstran dengan gas air mata dan pasal karet undang-undang, namun mereka tidak pernah mampu membungkam tawa penonton saat kemunafikan mereka ditertawakan di atas panggung komedi. Tawa adalah bentuk pembangkangan sipil yang paling membahagiakan.', '/artikel/pandji-pragiwaksono-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Membangun Kedaulatan Kreator: Kisah Comika Melawan Monopoli Algoritma Raksasa Digital', 'EKONOMI KREATIF', '7 Menit Membaca', 'Strategi membangun platform digital mandiri agar seniman tidak bergantung pada monetisasi iklan media sosial.', 'Kreator yang hanya menggantungkan hidupnya pada algoritma media sosial asing akan selalu hidup dalam ketakutan disensor. Memiliki platform distribusi berbayar sendiri adalah satu-satunya jalan agar komika bisa bebas berbicara tanpa takut akunnya dimatikan.', '/artikel/pandji-pragiwaksono-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Comika Corp (Ekosistem Industri Komedi Tunggal Mandiri)', 'Industri Kreatif & Platform Monetisasi Komika', 'Perusahaan media dan manajemen komedi terbesar di Indonesia yang menyediakan aplikasi streaming spesial komedi, akademi, dan festival.', 'Rp 50.000 — Rp 175.000 / akses', 'Dukung Inisiatif', 'https://comika.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Spesial Komedi: Juru Bicara & Mesakke Bangsaku', 'Karya Stand-Up Comedy Satir Sosial-Politik', 'Pertunjukan komedi tunggal berdurasi 2 jam yang membedah kejahatan korupsi, HAM masa lalu, dan diskriminasi minoritas secara tajam.', 'Mulai Rp 50.000 / tayang', 'Dukung Inisiatif', 'https://comika.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Arie Kriting (arie-kriting)
@@ -74,6 +80,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2013', 'JUARA STAND-UP COMEDY & PERSONA INDONESIA TIMUR', 'Menjadi juara Stand Up Comedy Indonesia Kompas TV dengan materi kritik ketimpangan pembangunan Indonesia Timur yang fenomenal.', 1);
@@ -91,6 +99,10 @@ BEGIN
   VALUES (v_profile_id, 'Tertawa di Tengah Gelap: Mengapa Komedi Indonesia Timur Bukan Sekadar Aksen Lucu', 'SATIR BUDAYA', '7 Menit Membaca', 'Catatan Arie Kriting tentang bagaimana materi komedinya adalah bentuk jeritan atas ketiadaan listrik dan jalan aspal di pelosok.', 'Banyak orang menertawakan cerita kami tentang tanah yang berbatu dan sinyal yang hilang. Namun di balik tawa itu, ada pesan serius: Indonesia tidak boleh hanya dibangun di Pulau Jawa. Kami bukan penonton di rumah kami sendiri.', '/artikel/arie-kriting-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Merawat Bhinneka Tanpa Kemunafikan: Menolak Standar Ganda dalam Memandang Saudara Timur', 'KEADILAN SOSIAL', '6 Menit Membaca', 'Pentingnya memperlakukan warga Indonesia Timur secara setara dalam hukum, kesempatan kerja, dan representasi media.', 'Persatuan tidak bisa dibangun di atas narasi belas kasihan. Persatuan sejati lahir saat kita mengakui bahwa kekayaan tambang emas dan nikel di timur dinikmati oleh seluruh republik, dan tanah kelahirannya berhak mendapatkan keadilan yang sama.', '/artikel/arie-kriting-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Spesial Komedi Tunggal: Ilmu Gagal', 'Karya Stand-Up Comedy & Refleksi Kehidupan', 'Pertunjukan komedi tunggal yang membedah kegagalan, penolakan sosial, dan kebanggaan berdiri sebagai orang timur di ibu kota.', 'Mulai Rp 50.000 / tayang', 'Dukung Inisiatif', 'https://comika.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Penulisan Skenario Film Sinema Satir Ketimpangan', 'Karya Sinematografi & Skenario Film', 'Karya naskah film layar lebar yang mengangkat realitas ketiadaan sinyal telekomunikasi dan ketimpangan fasilitas daerah pelosok.', 'Tiket Nonton / VOD Rp 45.000 — Rp 75.000', 'Dukung Inisiatif', 'https://sektorlokal.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Abdur Arsyad (abdur-arsyad)
@@ -120,6 +132,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2014', 'RUNNER-UP STAND-UP COMEDY INDONESIA & MONOLOG PUISI', 'Mengguncang panggung komedi nasional dengan gaya tutur monolog puitis bertenaga tinggi tentang realitas pedalaman NTT.', 1);
@@ -137,6 +151,10 @@ BEGIN
   VALUES (v_profile_id, 'Matematika di Balik Lelucon: Mengapa Humor Cerdas Membutuhkan Presisi Logika dan Data', 'LOGIKA KOMEDI', '7 Menit Membaca', 'Analisis Abdur Arsyad tentang bagaimana menyusun premis komedi berbasis data statistik anggaran negara.', 'Membuat lelucon tentang kebijakan pemerintah bukan soal asal memaki di panggung. Kamu harus membaca dokumen APBN, memahami struktur defisit fiskal, dan melihat bagaimana uang rakyat dipotong di tengah jalan. Ketika data itu disajikan dengan logika matematika yang runut, lelucon tersebut menjadi peluru kebenaran yang tak terbantahkan.', '/artikel/abdur-arsyad-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Guru Honorer dan Gaji Rp 300 Ribu: Jeritan dari Balik Papan Tulis Pelosok', 'PENDIDIKAN KRITIS', '6 Menit Membaca', 'Catatan keprihatinan Abdur atas nasib para pendidik yang mencerdaskan anak bangsa di daerah terpencil tanpa jaminan hidup layak.', 'Kita menuntut anak-anak kita menjadi pintar dan berkarakter, namun kita membiarkan para gurunya makan nasi aking dan berutang beras di warung. Menolak menaikkan derajat guru honorer adalah bentuk pengkhianatan paling nyata terhadap masa depan bangsa.', '/artikel/abdur-arsyad-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Spesial Komedi: Pahlawan Perlu Tanda Jasa', 'Karya Komedi Tunggal Satir Pendidikan', 'Pertunjukan komedi fenomenal yang menuntut kenaikan gaji layak bagi guru honorer dan membongkar kemunafikan birokrasi pendidikan.', 'Rp 50.000 — Rp 175.000 / akses', 'Dukung Inisiatif', 'https://comika.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Serial Komedi Tunggal: Kontras Kebijakan Publik', 'Kritik Kebijakan Berbalut Nalar Matematika', 'Rangkaian video monolog bedah anggaran negara, subsidi pupuk petani, dan kedaulatan pangan menggunakan logika sains presisi.', 'Mulai Rp 50.000 / tayang', 'Dukung Inisiatif', 'https://youtube.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Bintang Emon (bintang-emon)
@@ -166,6 +184,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2017', 'JUARA STAND UP COMEDY ACADEMY (SUCA) 3', 'Menjuarai kompetisi komedi nasional di televisi berkat gaya tutur pencerita yang lincah dan membumi.', 1);
@@ -183,6 +203,10 @@ BEGIN
   VALUES (v_profile_id, 'Ga Sengaja dan Absurditas Keadilan: Bagaimana 1 Menit Video Bintang Emon Mengguncang Publik', 'SATIR HUKUM', '7 Menit Membaca', 'Catatan fenomena keberanian Bintang Emon menertawakan kejanggalan tuntutan hukum kasus air keras.', 'Ketika alasan hukum yang diajukan jaksa terasa begitu menghina akal sehat masyarakat, humor Bintang Emon hadir bukan sekadar untuk menghibur, melainkan untuk menegaskan bahwa rakyat tidak sebodoh yang dipikirkan penguasa. Menertawakan kebohongan adalah cara rakyat menolak dibodohi.', '/artikel/bintang-emon-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Menghadapi Teror Buzzer Digital: Mengapa Keberanian Bersuara Tidak Boleh Padam oleh Intimidasi', 'KEBEBASAN BEREKSPRESI', '6 Menit Membaca', 'Refleksi Bintang Emon saat menghadapi serangan fitnah akun anonim setelah melontarkan kritik publik.', 'Buzzer bayaran diciptakan untuk menciptakan rasa takut dan membuat orang-orang waras memilih diam. Ketika jutaan warga bersatu memasang badan membela kebenaran, intimidasi digital tersebut hancur tak berdaya di hadapan kekuatan solidaritas organik.', '/artikel/bintang-emon-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Serial Video: DPO (Dewan Perwakilan Omel-Omel)', 'Karya Satir Digital & Pengawasan Kebijakan', 'Format video esai komedi singkat berdaya viral puluhan juta penonton yang mengkritik absurditas regulasi dan ketidakadilan hukum.', 'Mulai Rp 50.000 / tayang', 'Dukung Inisiatif', 'https://instagram.com/bintangemon', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Pertunjukan Komedi Tunggal: Tangkap Gua', 'Karya Stand-Up Comedy Satir Berani', 'Spesial komedi berdurasi panjang yang membedah kebebasan berekspresi, paranoia aparat, dan dinamika pernikahan muda.', 'Mulai Rp 50.000 / tayang', 'Dukung Inisiatif', 'https://comika.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Mamat Alkatiri (mamat-alkatiri)
@@ -212,6 +236,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2018', 'RUNNER-UP STAND UP COMEDY INDONESIA (SUCI) 7', 'Menjadi runner-up SUCI 7 dengan materi perlawanan stigma daerah timur dan ketimpangan sosial Papua yang menggelegar.', 1);
@@ -229,6 +255,10 @@ BEGIN
   VALUES (v_profile_id, 'Di Balik Nada Tinggi Mamat Alkatiri: Mengapa Tanah Papua Berhak Mendapatkan Keadilan Hakiki', 'KEADILAN SOSIAL', '7 Menit Membaca', 'Kesaksian Mamat tentang eksploitasi sumber daya alam Papua yang berbanding terbalik dengan fasilitas rumah sakit dan sekolah di pelosok.', 'Papua menyumbangkan triliunan rupiah dari tambang tembaga dan gas alamnya untuk kas negara, namun mengapa mama-mama di pasar masih harus melahirkan di atas perahu karena puskesmas tidak memiliki dokter? Kemarahan Mamat di atas panggung adalah suara nurani yang menagih keadilan martabat manusia.', '/artikel/mamat-alkatiri-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Menghapus Stigma Rasial: Menolak Standar Ganda Perlakuan Hukum bagi Mahasiswa Timur', 'HAK ASASI MANUSIA', '6 Menit Membaca', 'Pentingnya merawat persaudaraan kebangsaan yang tulus tanpa prasangka primordial.', 'Kita tidak bisa mengaku mencintai Papua bila kita hanya mencintai tanah dan burung cenderawasihnya, tetapi mencurigai dan merendahkan manusianya. Mencintai Papua berarti mencintai rakyatnya dan mendengarkan jeritan hati mereka.', '/artikel/mamat-alkatiri-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Spesial Komedi: Kemarahan dari Fakfak', 'Karya Stand-Up Comedy Realitas Papua', 'Pertunjukan komedi tunggal yang membedah keabsurdan janji manis pembangunan dan penderitaan warga pedalaman Papua.', 'Mulai Rp 50.000 / tayang', 'Dukung Inisiatif', 'https://comika.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Podcast Titik Kumpul & Dialog Lintas Perspektif', 'Kanal Audio Digital Kebangsaan', 'Program bincang-bincang santai yang membedah isu sosial, politik, dan kebudayaan tanpa sekat basa-basi bersama tokoh publik.', 'Mulai Rp 50.000 / tayang', 'Dukung Inisiatif', 'https://youtube.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Sadana Agung Sulistya (sadana-agung-sulistya)
@@ -258,6 +288,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2016', 'FINALIS 4 BESAR STAND UP COMEDY INDONESIA (SUCI) 6', 'Mencuri perhatian publik nasional dengan materi kehidupan petani Kebumen dan dinamika sosial masyarakat ngapak.', 1);
@@ -275,6 +307,10 @@ BEGIN
   VALUES (v_profile_id, 'Tawa dari Gubuk Sawah: Bagaimana Sadana Agung Membela Martabat Wong Ndeso', 'SATIR PERDESAAN', '7 Menit Membaca', 'Pembedahan gaya komedi Sadana yang membongkar stereotip orang desa yang kerap dipandang rendah di televisi arus utama.', 'Menjadi anak petani di pelosok desa sering kali dijadikan bahan tertawaan oleh orang kota. Melalui panggung komedi tunggal, Sadana membalikkan keadaan: ia menertawakan keangkuhan orang kota yang tidak tahu bagaimana sebutir padi ditanam dan dirawat.', '/artikel/sadana-agung-sulistya-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Menolak Urbanisasi Buta: Mengapa Pemuda Desa Harus Bangga Menjaga Tanah Leluhur', 'SOSIOLOGI DESA', '6 Menit Membaca', 'Pentingnya membangun peradaban ekonomi kreatif yang berakar di kampung halaman tanpa harus terasing di rimba Jakarta.', 'Jika semua pemuda desa pergi merantau ke Jakarta untuk menjadi buruh, siapa yang akan meneruskan sawah orang tua kita? Sadana membuktikan bahwa dengan kreativitas dan konsistensi berkarya, kamu bisa menghidupi keluarga dan membanggakan desamu dari teras rumah sendiri.', '/artikel/sadana-agung-sulistya-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Spesial Show Komedi: Balada Wong Tani Kebumen', 'Karya Stand-Up Comedy Budaya Lokal', 'Pertunjukan komedi tunggal yang membedah romantika kehidupan pedesaan, birokrasi pupuk subsidi, dan ketangguhan mental petani Jawa.', 'Mulai Rp 50.000 / tayang', 'Dukung Inisiatif', 'https://comika.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Serial Sketsa Komedi Perdesaan Sadana', 'Karya Audio-Visual Komedi Sawah', 'Rangkaian video komedi situasi di pematang sawah dan pos ronda yang memotret kehangatan serta kelucuan warga desa.', 'Rp 50.000 — Rp 175.000 / akses', 'Dukung Inisiatif', 'https://youtube.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Bene Dion Rajagukguk (bene-dion-rajagukguk)
@@ -304,6 +340,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2012 — 2014', 'KOMIKA STAND UP COMEDY INDONESIA & PENULIS SKENARIO', 'Menjadi finalis SUCI 3 dan merintis karier sebagai konsultan komedi dan penulis skenario film layar lebar terkemuka.', 1);
@@ -321,6 +359,10 @@ BEGIN
   VALUES (v_profile_id, 'Di Balik Tawa Ngeri-Ngeri Sedap: Mengapa Luka Keluarga Adalah Cerita Paling Menghanyutkan', 'SINEMA & BUDAYA', '8 Menit Membaca', 'Analisis Bene Dion tentang bagaimana membedah benturan ego orang tua dan impian anak rantau tanpa menghakimi.', 'Banyak orang tua di Indonesia yang mencintai anak-anaknya dengan cara yang kaku dan menuntut, sehingga tanpa sadar melukai batin anak mereka sendiri. Ngeri-Ngeri Sedap hadir seperti cermin yang membuat setiap ayah dan anak yang menontonnya saling memaafkan dan berpelukan kembali.', '/artikel/bene-dion-rajagukguk-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Kekuatan Cerita Lokal Nusantara: Menolak Inferioritas Menembus Panggung Academy Awards', 'INDUSTRI FILM', '7 Menit Membaca', 'Strategi mengangkat keunikan budaya daerah Danau Toba menjadi karya sinema yang diakui juri internasional di Los Angeles.', 'Semakin lokal sebuah cerita, semakin universal resonansi emosinya. Kita tidak perlu meniru gaya bercerita Hollywood untuk memikat dunia; cukup gali kejujuran hubungan keluarga di kampung halaman kita sendiri.', '/artikel/bene-dion-rajagukguk-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Film Bioskop: Ngeri-Ngeri Sedap (Perwakilan Oscar Indonesia)', 'Karya Sinema Komedi Drama Keluarga & Budaya Batak', 'Film fenomenal yang membedah keharmonisan keluarga, luka adat, dan kerinduan orang tua pada anak rantau di tepian Danau Toba.', 'Rp 50.000 — Rp 175.000 / akses', 'Dukung Inisiatif', 'https://netflix.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Serial Film: Agak Laen (Box Office Historikal)', 'Karya Sinema Komedi Komunal & Hiburan Rakyat', 'Produksi film komedi horor yang memecahkan rekor box office sinema nasional dengan jutaan penonton lintas daerah.', 'Rp 50.000 — Rp 175.000 / akses', 'Dukung Inisiatif', 'https://ima-jinari.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Yono Bakrie (yono-bakrie)
@@ -350,6 +392,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2018 — 2019', 'PERINTIS STAND-UP SAMARINDA & MERANTAU KE JAKARTA', 'Membangun komunitas Standupindo Samarinda dan nekat merantau ke ibu kota dengan modal tekad mengasah komedi di panggung jalanan.', 1);
@@ -367,6 +411,10 @@ BEGIN
   VALUES (v_profile_id, 'Dari Buruh Pabrik Menjadi Juara Nasional: Kisah Perjuangan Hidup Yono Bakrie', 'INSPIRASI KERJA', '7 Menit Membaca', 'Perjalanan ketekunan Yono Bakrie melewati penolakan demi penolakan sebelum meraih kesuksesan di panggung komedi.', 'Hidup susah bukan untuk diratapi di sudut kamar. Ketika kamu berani membawa kepedihan hidup itu ke atas panggung dan membagikannya menjadi tawa bagi orang lain, kamu sedang mengubah kepedihan menjadi berkah dan sumber penghidupan yang halal.', '/artikel/yono-bakrie-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Kejujuran di Atas Panggung: Mengapa Materi Komedi yang Membumi Selalu Dicintai Rakyat', 'ESTETIKA KOMEDI', '6 Menit Membaca', 'Pentingnya mengangkat cerita riil kehidupan sehari-hari masyarakat biasa dibanding lelucon palsu yang mengada-ada.', 'Penonton tidak pernah bisa dibohongi. Mereka tahu mana lelucon yang dibuat-buat dan mana yang lahir dari pengalaman nyata menahan lapar di akhir bulan. Kejujuran rasa adalah kunci utama seorang penutur cerita.', '/artikel/yono-bakrie-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Spesial Komedi Tunggal: Balada Perantau Samarinda', 'Karya Stand-Up Comedy Kelas Pekerja', 'Pertunjukan komedi tunggal yang membedah keabsurdan adaptasi anak daerah saat bertahan hidup di rimba metropolitan Jakarta.', 'Mulai Rp 50.000 / tayang', 'Dukung Inisiatif', 'https://comika.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Serial Komedi Sketsa & Konten Relatable Warga', 'Karya Audio-Visual Komedi Situasional', 'Rangkaian sketsa komedi digital yang memotret dinamika kehidupan sehari-hari anak kos, ojek daring, dan pekerja paruh waktu.', 'Rp 50.000 — Rp 175.000 / akses', 'Dukung Inisiatif', 'https://youtube.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Nopek Novian (nopek-novian)
@@ -396,6 +444,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2017', 'FINALIS STAND UP COMEDY ACADEMY (SUCA) 3', 'Mencuri perhatian pemirsa nasional di SUCA 3 dengan materi kehidupan anak petani Madiun yang sangat segar dan membumi.', 1);
@@ -413,6 +463,10 @@ BEGIN
   VALUES (v_profile_id, 'Tawa dari Pematang Sawah: Bagaimana Nopek Novian Mengangkat Martabat Petani Desa', 'KOMEDI MERAKYAT', '7 Menit Membaca', 'Kisah di balik materi komedi Nopek yang membongkar realitas kehidupan kaum tani di Jawa Timur.', 'Nopek tidak pernah malu mengakui bahwa orang tuanya adalah petani yang mencangkul tanah setiap pagi. Dengan membawa cerita sawah ke layar gawai jutaan orang kota, ia mengingatkan seluruh bangsa bahwa tanpa jerih payah para petani di desa, orang-orang kota tidak akan pernah bisa makan.', '/artikel/nopek-novian-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Menolak Gengsi Perkotaan: Menjaga Keaslian Diri di Tengah Kemilau Industri Hiburan', 'IDENTITAS LOKAL', '6 Menit Membaca', 'Pentingnya mempertahankan jati diri budaya lokal dan menolak kepalsuan pencitraan selebritas.', 'Banyak orang daerah yang merantau ke Jakarta berusaha keras menyembunyikan logat bicaranya karena takut dianggap udik. Nopek membuktikan sebaliknya: kebanggaan pada bahasa daerah dan ketulusan sikap kampung adalah daya tarik paling otentik yang tidak bisa ditiru siapa pun.', '/artikel/nopek-novian-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Spesial Komedi: Sambat Petani Saradan', 'Karya Stand-Up Comedy Budaya Perdesaan', 'Pertunjukan komedi tunggal yang membedah romantika kehidupan anak muda di pedesaan Jawa dan suka duka bertani.', 'Mulai Rp 50.000 / tayang', 'Dukung Inisiatif', 'https://youtube.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Kanal Vlog Merakyat Nopek Novian', 'Dokumentasi Komedi Kehidupan Komunal', 'Serial video dokumentasi kehidupan desa, kuliner warung pinggir jalan, dan interaksi hangat bersama warga kampung.', 'Rp 50.000 — Rp 175.000 / akses', 'Dukung Inisiatif', 'https://youtube.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Dustin Tiffani (dustin-tiffani)
@@ -442,6 +496,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2016 — 2018', 'DARI PEGAWAI PERCETAKAN KE RADIO KOMUNITAS', 'Bekerja di percetakan fotokopi sembari merintis siaran radio malam di Radio Bahana FM Jakarta dengan gaya absurd khas.', 1);
@@ -459,6 +515,10 @@ BEGIN
   VALUES (v_profile_id, 'Kemenangan Menjadi Diri Sendiri: Kisah Dustin Tiffani Menaklukkan Panggung Hiburan', 'INSPIRASI HIDUP', '7 Menit Membaca', 'Perjalanan hidup Dustin dari anak fotokopi yang sempat diremehkan hingga menjadi ikon komedi terpopuler.', 'Dunia sering kali memaksa kita untuk masuk ke dalam kotak standar yang seragam. Dustin membuktikan bahwa keunikan cara berpikir yang selama ini dianggap aneh oleh orang lain justru menjadi pintu rezeki yang luar biasa ketika dijalani dengan ketulusan hati dan kerja keras.', '/artikel/dustin-tiffani-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Absurditas yang Menyatukan: Mengapa Tawa Spontan Tanpa Skenario Mampu Melegakan Pikiran', 'PSIKOLOGI HUMOR', '6 Menit Membaca', 'Pembedahan fenomena komedi non-linear Dustin dalam meredakan kepenatan hidup masyarakat perkotaan.', 'Di tengah rutinitas kantor yang kaku dan penuh tekanan target kerja, menyaksikan keluguan dan kejujuran Dustin adalah katarsis yang sangat menyegarkan. Tawa yang meledak dari kepolosan murni mengingatkan kita untuk tidak menganggap hidup ini terlalu kaku dan tegang.', '/artikel/dustin-tiffani-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Program Komedi: Pingin Siaran & Majelis Lucu', 'Karya Komedi Absurd & Dialog Spontan Digital', 'Serial bincang-bincang komedi improvisasi yang menampilkan gaya berpikir unik dan reaksi spontan Dustin yang viral jutaan kali.', 'Rp 50.000 — Rp 175.000 / akses', 'Dukung Inisiatif', 'https://youtube.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Serial Sketsa Komedi Perkantoran & Percetakan', 'Karya Audio-Visual Komedi Kelas Pekerja', 'Sketsa komedi yang mengangkat lika-liku perjuangan pekerja percetakan fotokopi dan buruh harian lepas perkotaan.', 'Rp 50.000 — Rp 175.000 / akses', 'Dukung Inisiatif', 'https://youtube.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 COMMIT;

@@ -28,6 +28,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2019 — 2020', 'PELUNCURAN BUKU LALITA & WIUI', 'Menulis buku Lalita: 51 Cerita Perempuan Hebat Indonesia bersama Grace Kadiman dan mendirikan media What Is Up Indonesia untuk menyajikan isu sosial-politik dalam format visual berbahasa Inggris bagi diaspora dan generasi muda.', 1);
@@ -45,6 +47,10 @@ BEGIN
   VALUES (v_profile_id, 'Mendekonstruksi Gimik Politik: Bagaimana Gen-Z Bisa Menguji Janji Kampanye Lewat Rekam Jejak Data', 'LITERASI KEBIJAKAN', '6 Menit Membaca', 'Mengapa menuntut transparansi rekam jejak partai politik adalah satu-satunya benteng melawan manipulasi pemilu di era algoritma.', 'Setiap lima tahun sekali, panggung politik kita dipenuhi tarian gimik, janji manis, dan baliho raksasa yang menutupi pohon-pohon kota. Namun di balik riuhnya pesta demokrasi, substansi kebijakan yang menyangkut hidup jutaan warga sering kali luput dibicarakan. Abigail Limuria dan tim Bijak Memilih membuktikan bahwa ketika data diurai secara jernih berdasarkan isu riil—seperti krisis iklim dan korupsi—pemilih muda memiliki kekuatan nalar luar biasa untuk menentukan arah bangsanya secara bermartabat.', '/artikel/abigail-limuria-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Menolak Terjebak Polarisasi: Mengapa Isu Krisis Iklim Harus Menjadi Ujian Terberat Partai Politik', 'DIALEKTIKA WARGA', '7 Menit Membaca', 'Bagaimana membedah komitmen ekologis partai politik di balik retorika ekonomi ekstraktif yang mengorbankan ruang hidup rakyat.', 'Politik bukan sekadar siapa yang memegang kursi kekuasaan, melainkan kebijakan apa yang akan diputuskan saat hutan dibabat dan banjir menenggelamkan pemukiman warga. Melalui pembedahan sikap fraksi di parlemen, literasi politik independen menjadi instrumen warga untuk menagih pertanggungjawaban etis dari setiap pembuat undang-undang.', '/artikel/abigail-limuria-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Bijak Memilih (Platform Riset Politik Warga)', 'Civic-Tech & Data Kebijakan', 'Platform agregasi data rekam jejak partai politik dan kandidat yang diakses jutaan pemilih muda untuk melihat sikap partai terhadap isu iklim, korupsi, dan ketenagakerjaan.', '100% Akses Publik Bebas', 'Dukung Inisiatif', 'https://bijakmemilih.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Buku: Lalita (51 Cerita Perempuan Hebat Indonesia)', 'Karya Tulis & Literasi Gender', 'Buku antologi profil perempuan pelopor Nusantara lintas disiplin dari seni, sains, hingga aktivisme lingkungan hidup.', 'Rp 85.000 — Rp 185.000', 'Dukung Inisiatif', 'https://www.gramedia.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Bivitri Susanti (bivitri-susanti)
@@ -74,6 +80,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '1998 — 2000', 'REFORMASI & PENDIRIAN PSHK', 'Turun dalam gelombang reformasi 1998 dan mendirikan Pusat Studi Hukum dan Kebijakan Indonesia (PSHK) untuk mengawal reformasi konstitusi dan peradilan.', 1);
@@ -91,6 +99,10 @@ BEGIN
   VALUES (v_profile_id, 'Autocratic Legalism: Bagaimana Penguasa Menggunakan Pasal Hukum untuk Membungkam Demokrasi', 'HUKUM TATA NEGARA', '8 Menit Membaca', 'Membedah cara kerja otoritarianisme baru yang tidak lagi memakai moncong senjata, melainkan manipulasi pasal regulasi dan mahkamah peradilan.', 'Otoritarianisme modern telah bermutasi. Penguasa hari ini tidak perlu lagi membubarkan parlemen dengan dekrit militer; mereka cukup menyusun undang-undang kilat di tengah malam, melumpuhkan komisi antikorupsi lewat revisi regulasi, dan menempatkan kroni di mahkamah konstitusi. Bivitri Susanti mengingatkan kita bahwa ketika hukum telah dibajak menjadi alat kekuasaan, kepatuhan buta adalah bentuk pengkhianatan terhadap keadilan sejati.', '/artikel/bivitri-susanti-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Etika Bernegara yang Hilang: Mengapa Mahkamah Konstitusi Harus Direbut Kembali oleh Rakyat', 'KONSTITUSI & ETIKA', '7 Menit Membaca', 'Refleksi kritis atas runtuhnya marwah penjaga konstitusi dan bagaimana gerakan warga sipil bisa merawat api perlawanan moral.', 'Negara hukum tanpa etika hanyalah kesewenang-wenangan yang dilegalkan di atas kertas bersegel. Memulihkan marwah konstitusi bukanlah pekerjaan instan di meja politisi, melainkan gerakan panjang warga sipil terdidik yang menolak dinormalisasi oleh kepalsuan hukum prosedural.', '/artikel/bivitri-susanti-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'PSHK (Pusat Studi Hukum & Kebijakan Indonesia)', 'Lembaga Riset & Advokasi Reformasi Hukum', 'Think tank independen yang memproduksi analisis kritis rancangan undang-undang dan pengawasan kinerja legislasi parlemen.', 'Riset Independen & Pro-Bono', 'Dukung Inisiatif', 'https://pshk.or.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'STHI Jentera (Sekolah Tinggi Hukum Indonesia)', 'Institusi Pendidikan Hukum Transformatif', 'Kampus hukum alternatif yang mendidik praktisi dan akademisi hukum berintegritas tinggi dengan beasiswa penuh bagi aktivis masyarakat sipil.', 'Program Sarjana & Beasiswa Penuh', 'Dukung Inisiatif', 'https://jentera.ac.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Dandhy Dwi Laksono (dandhy-dwi-laksono)
@@ -120,6 +132,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2009 — 2011', 'PENDIRIAN WATCHDOC DOCUMENTARY', 'Mendirikan Watchdoc bersama Andhy Panca Kurniawan sebagai rumah produksi dokumenter independen berbadan hukum koperasi pekerja media.', 1);
@@ -137,6 +151,10 @@ BEGIN
   VALUES (v_profile_id, 'Layar Tancap di Pematang Sawah: Mengapa Distribusi Terbuka Adalah Nyawa Jurnalisme Independen', 'JURNALISME WARGA', '8 Menit Membaca', 'Catatan refleksi Dandhy Laksono tentang bagaimana lisensi terbuka (Creative Commons) meruntuhkan monopoli informasi korporasi.', 'Ketika media arus utama disandera kepentingan konglomerasi pemilik frekuensi publik, dokumenter investigasi harus menemukan jalannya sendiri menuju rakyat. Memutar film di balai desa diiringi singkong rebus dan kopi tubruk warga adalah bentuk perayaan kedaulatan informasi yang sesungguhnya.', '/artikel/dandhy-dwi-laksono-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Menghitung Harga Nyata Batu Bara: Dari Debu PLTU hingga Hancurnya Ruang Hidup Petani', 'INVESTIGASI EKOLOGI', '9 Menit Membaca', 'Pembedahan mendalam atas biaya ekologis dan kemanusiaan di balik kemilau ekspor komoditas ekstraktif nasional.', 'Listrik yang menyalakan gemerlap kota-kota megapolitan sering kali dibayar mahal dengan hancurnya paru-paru anak-anak di dekat cerobong PLTU dan lubang-lubang maut bekas tambang yang ditinggalkan begitu saja. Jurnalisme hadir untuk memastikan luka tersebut tidak pernah terhapus dari ingatan kolektif bangsa.', '/artikel/dandhy-dwi-laksono-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Watchdoc Documentary Maker', 'Koperasi Jurnalisme Investigasi Audio-Visual', 'Rumah produksi dokumenter independen yang telah memproduksi lebih dari 200 film investigasi lingkungan, agraria, dan hak asasi manusia.', 'Akses Terbuka / Donasi Swadaya', 'Dukung Inisiatif', 'https://watchdoc.co.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Dokumenter: Sexy Killers', 'Film Investigasi Oligarki & Energi', 'Investigasi keterkaitan antara tambang batu bara di Kalimantan, PLTU di Pulau Jawa, dan gurita bisnis elit politik nasional.', 'Tiket Nonton / VOD Rp 45.000 — Rp 75.000', 'Dukung Inisiatif', 'https://youtube.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Dr. Fahruddin Faiz (fahruddin-faiz)
@@ -166,6 +184,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2013', 'AWAL MULA NGAJI FILSAFAT', 'Memulai sesi pertama Ngaji Filsafat di serambi Masjid Jendral Sudirman Yogyakarta bersama segelintir mahasiswa pencari kebenaran.', 1);
@@ -183,6 +203,10 @@ BEGIN
   VALUES (v_profile_id, 'Menenangkan Batin di Tengah Kegaduhan: Mengapa Filsafat Stoik dan Tasawuf Relevan untuk Generasi Cemas', 'FILSAFAT & REFLEKSI', '7 Menit Membaca', 'Menelusuri titik temu antara konsep pengendalian diri Marcus Aurelius dan ketenangan jiwa tasawuf Al-Ghazali.', 'Kecemasan manusia modern kerap lahir dari ketidakmampuan membedakan antara apa yang bisa kita kendalikan dan apa yang berada di luar jangkauan kita. Dr. Fahruddin Faiz mengajak kita melihat bahwa kebijaksanaan sejati bukanlah kemampuan menguasai dunia luar, melainkan kemampuan menaklukkan ego dan hawa nafsu di dalam diri sendiri.', '/artikel/fahruddin-faiz-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Bebas dari Jebakan Sesat Pikir: Menjaga Kejernihan Nalar di Era Algoritma Adu Domba', 'LOGIKA & DIALEKTIKA', '6 Menit Membaca', 'Panduan sederhana mengenali argumentum ad hominem dan false dilemma dalam percakapan publik sehari-hari.', 'Ketika perdebatan di media sosial lebih didominasi oleh cacian personal daripada pengujian premis data, nalar publik sedang mengalami krisis berat. Mengasah logika bukanlah untuk memenangkan adu mulut, melainkan untuk menjaga agar pikiran kita tidak mudah diracuni oleh kebencian.', '/artikel/fahruddin-faiz-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Ngaji Filsafat Masjid Jendral Sudirman', 'Forum Literasi Intelektual & Kebijaksanaan Publik', 'Kajian filsafat terbuka gratis yang telah berlangsung lebih dari satu dekade dengan arsip ratusan tema pemikiran dunia.', 'Bebas Biaya (Akses Publik)', 'Dukung Inisiatif', 'https://mjsshow.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Buku: Menjadi Manusia, Menata Jiwa', 'Karya Tulis & Filsafat Terapan', 'Buku panduan reflektif yang mengawinkan kebijaksanaan tasawuf dengan pemikiran kritis filsafat dalam menavigasi luka batin dan kegelisahan modern.', 'Rp 85.000 — Rp 185.000', 'Dukung Inisiatif', 'https://www.gramedia.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Aribowo Sasmito (aribowo-sasmito)
@@ -212,6 +236,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2015 — 2016', 'GERAKAN FORUM ANTI FITNAH & PENDIRIAN MAFINDO', 'Mengorganisir forum relawan pemeriksa fakta melawan sentimen SARA dan meresmikan Masyarakat Anti Fitnah Indonesia (MAFINDO) sebagai organisasi berbadan hukum.', 1);
@@ -229,6 +255,10 @@ BEGIN
   VALUES (v_profile_id, 'Anatomi Industri Hoaks: Mengapa Kebohongan Bergerak Enam Kali Lebih Cepat dari Fakta?', 'LITERASI DIGITAL', '7 Menit Membaca', 'Analisis saintifik tentang bagaimana algoritma media sosial memonetisasi kemarahan dan bias kognitif manusia.', 'Hoaks tidak lahir di ruang hampa; ia diproduksi secara terstruktur untuk mengeksploitasi rasa takut dan kecemasan warga. Aribowo Sasmito membedah bahwa senjata paling ampuh melawan disinformasi bukanlah sensor represif negara, melainkan daya kritis warga untuk menolak menjadi penyambung lidah kebohongan.', '/artikel/aribowo-sasmito-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Mendeteksi Deepfake dan Rekayasa AI: Panduan Bertahan Hidup di Era Kembaran Digital Palsu', 'SAINS & TEKNOLOGI', '6 Menit Membaca', 'Teknik forensik sederhana membedakan rekaman video/suara asli dengan manipulasi algoritma kecerdasan buatan.', 'Di masa depan di mana suara dan wajah siapa pun dapat dipalsukan hanya dalam hitungan detik, mata telanjang tidak lagi cukup. Memverifikasi metadata dan rantai sumber adalah keterampilan bertahan hidup paling mendasar bagi generasi digital.', '/artikel/aribowo-sasmito-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'TurnBackHoax.id (Database Klarifikasi Fakta Terbesar)', 'Platform Verifikasi Fakta & Civic-Tech', 'Repositori terbuka verifikasi fakta dengan puluhan ribu arsip klarifikasi hoaks yang menjadi rujukan jurnalis dan aparat penegak hukum.', '100% Akses Publik Bebas', 'Dukung Inisiatif', 'https://turnbackhoax.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'CekFakta.com (Koalisi Cek Fakta Kolaboratif)', 'Kolaborasi Media & Masyarakat Sipil', 'Jaringan pemeriksa fakta kolaboratif lintas redaksi media nasional dan komunitas sipil di bawah naungan AJI, AMSI, dan MAFINDO.', '100% Akses Publik Bebas', 'Dukung Inisiatif', 'https://cekfakta.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Yanuar Nugroho, Ph.D. (yanuar-nugroho)
@@ -258,6 +288,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2008 — 2014', 'RISET INTERNASIONAL DI MANCHESTER', 'Menjadi pengajar dan periset senior di Manchester Institute of Innovation Research, meneliti dinamika media sosial, inovasi teknologi, dan masyarakat sipil.', 1);
@@ -275,6 +307,10 @@ BEGIN
   VALUES (v_profile_id, 'Merawat Nalar Teknokratis: Mengapa Kebijakan Berbasis Bukti Adalah Harga Mati Pembangunan', 'KEBIJAKAN PUBLIK', '8 Menit Membaca', 'Mengapa keputusan populis jangka pendek yang mengabaikan data sains selalu berujung pada pemborosan anggaran negara.', 'Ketika keputusan pembangunan hanya didasarkan pada intuisi politisi atau kepentingan oligarki menjelang pemilu, rakyat miskinkah yang menanggung kerugian paling fatal. Evidence-based policy adalah benteng pertahanan akal sehat agar negara dikelola dengan ilmu pengetahuan, bukan angan-angan kosong.', '/artikel/yanuar-nugroho-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Labirin Reformasi Birokrasi: Catatan dari Garis Depan Pengawasan Program Prioritas', 'TATA KELOLA NEGARA', '7 Menit Membaca', 'Strategi membongkar sekat ego sektoral kementerian dan membangun transparansi layanan publik.', 'Mengubah birokrasi yang gemuk dan lamban membutuhkan kombinasi kepemimpinan berani, sistem metrik kinerja yang terukur, dan pengawasan masyarakat sipil yang tak kenal lelah.', '/artikel/yanuar-nugroho-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Nalar Institute (Think Tank Kebijakan Publik)', 'Riset Kebijakan & Tata Kelola Negara', 'Lembaga riset independen yang mengadvokasi perumusan kebijakan berbasis data saintifik dan transparansi tata kelola publik.', 'Akses Terbuka / Donasi Swadaya', 'Dukung Inisiatif', 'https://nalarinstitute.org', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Inisiatif Satu Data Indonesia', 'Arsitektur Data Nasional', 'Kerangka regulasi dan integrasi basis data tunggal nasional untuk memastikan akurasi penyaluran bantuan sosial dan perencanaan pembangunan.', 'Akses Terbuka / Donasi Swadaya', 'Dukung Inisiatif', 'https://data.go.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Prof. Sulfikar Amir (sulfikar-amir)
@@ -304,6 +340,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2005 — 2008', 'DOKTORAL STS DI NEW YORK', 'Menyelesaikan riset doktoral tentang sosiologi teknologi nuklir dan keselamatan industri di Rensselaer Polytechnic Institute AS.', 1);
@@ -321,6 +359,10 @@ BEGIN
   VALUES (v_profile_id, 'Kota yang Rentan: Mengapa Ambisi Beton Tanpa Tata Ruang Hijau Mengundang Bencana', 'SOSIOLOGI TATA KOTA', '8 Menit Membaca', 'Pembedahan mendalam tentang krisis banjir, amblesan tanah Jakarta, dan ilusi penyelesaian berbasis proyek fisik semata.', 'Sebuah kota tidak bisa diselamatkan hanya dengan membangun tanggul raksasa bila eksploitasi air tanah dan perusakan daerah resapan air di hulu terus dibiarkan. Tata kota yang adil harus menempatkan keselamatan warga di atas keuntungan spekulan tanah.', '/artikel/sulfikar-amir-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Sains di Meja Penguasa: Pelajaran Pahit dari Komunikasi Krisis dan Ketahanan Publik', 'SAINS & KEBIJAKAN', '7 Menit Membaca', 'Refleksi kritis atas bahaya mengabaikan peringatan ilmuwan dalam perumusan kebijakan darurat nasional.', 'Ketika data saintifik disembunyikan demi menjaga stabilitas pasar atau citra politik, harga yang harus dibayar adalah nyawa rakyat. Kejujuran data adalah fondasi utama rasa saling percaya antara warga dan negara.', '/artikel/sulfikar-amir-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Buku: The Technological State in Indonesia', 'Monograf Sosiologi Teknologi & Sejarah', 'Karya akademik prestisius yang mengupas sejarah rezim teknonasionallisme Indonesia dan dinamika industri strategis bangsa.', 'Rp 85.000 — Rp 185.000', 'Dukung Inisiatif', 'https://routledge.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Simulasi Ketahanan Urban & Pandemi (NTU Lab)', 'Riset Sains Komputasi & Kebencanaan', 'Model komputasi epidemiologis yang memetakan kerentanan pemukiman padat dan sistem transportasi massal di Asia Tenggara.', 'Akses Terbuka / Donasi Swadaya', 'Dukung Inisiatif', 'https://ntu.edu.sg', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Zen RS (Zen Rachmat Sugito) (zen-rs)
@@ -350,6 +392,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2008 — 2015', 'ERA ESAIS SEPAK BOLA & BUDAYA', 'Menulis kolom-kolom esai legendaris di berbagai media nasional, mengubah cara pandang publik bahwa sepak bola adalah cermin sosiologi dan politik kebudayaan.', 1);
@@ -367,6 +411,10 @@ BEGIN
   VALUES (v_profile_id, 'Seni Membaca Lambat: Mengapa Kedalaman Pikiran Tidak Bisa Dibeli dengan Rangkuman Instan', 'LITERASI & SASTRA', '8 Menit Membaca', 'Refleksi Zen RS tentang bahaya kognitif konsumsi informasi sepotong-sepotong di media sosial.', 'Membaca teks panjang bukanlah sekadar aktivitas mengumpulkan fakta, melainkan melatih kesabaran batin untuk menyelami lapisan-lapisan makna yang tersembunyi. Ketika kita kehilangan kemampuan membaca mendalam, kita perlahan kehilangan kemampuan memahami kerumitan jiwa manusia lain.', '/artikel/zen-rs-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Sepak Bola Sebagai Cermin Bangsa: Dari Drama Taktik Hingga Ketimpangan Struktur Sosial', 'KULTUR & DIALEKTIKA', '7 Menit Membaca', 'Bagaimana lapangan hijau memantulkan luka politik, korupsi federasi, dan ketangguhan suporter akar rumput.', 'Di atas lapangan berumput, kita tidak hanya menyaksikan 22 manusia mengejar bola, melainkan pertarungan identitas kelas, impian kaum papa, dan drama peradaban manusia yang paling jujur dan tanpa tedeng aling-aling.', '/artikel/zen-rs-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Buku: Simpul Bahasa Sepak Bola', 'Karya Esai Sosiologi & Sastra Olahraga', 'Kumpulan esai masterclass yang membedah taktik sepak bola dunia melalui lensa filsafat, sejarah perang, dan kebudayaan.', 'Rp 85.000 — Rp 185.000', 'Dukung Inisiatif', 'https://www.gramedia.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Buku: Jiwa yang Patah (Antologi Esai)', 'Karya Tulis Humaniora & Refleksi', 'Pembedahan mendalam tentang kesepian, luka sejarah bangsa, dan pencarian martabat manusia di tengah modernitas.', 'Rp 85.000 — Rp 185.000', 'Dukung Inisiatif', 'https://www.gramedia.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Cania Citta Irlanie (cania-citta)
@@ -396,6 +444,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '2016 — 2019', 'DEBAT MAHASISWA & AKTIVISME OPOSISI NALAR', 'Merintis karir sebagai analis media dan video esais, dikenal luas atas keberaniannya mendebat kebijakan ekonomi-politik negara di forum publik.', 1);
@@ -413,6 +463,10 @@ BEGIN
   VALUES (v_profile_id, 'Menimbang Batas Negara: Mengapa Kebebasan Individu Adalah Kunci Kemakmuran Bangsa', 'FILSAFAT POLITIK', '7 Menit Membaca', 'Pembedahan kritis atas bahaya paternalisme negara yang merampas inisiatif dan kemandirian warga.', 'Ketika negara mencampuri terlalu jauh ruang privat dan urusan ekonomi warga dengan ribuan izin dan larangan, inovasi akan mati dan korupsi akan tumbuh subur. Kedaulatan sejati lahir saat warga diberi kebebasan bertanggung jawab untuk menentukan jalan hidupnya sendiri.', '/artikel/cania-citta-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Etika Berdebat Tanpa Sesat Pikir: Menolak Normalisasi Ad Hominem di Ruang Publik', 'LOGIKA & DIALEKTIKA', '6 Menit Membaca', 'Panduan praktis menguji validitas argumen tanpa terjebak pada sentimen kebencian personal.', 'Menyerang latar belakang suku, agama, atau fisik seseorang saat beradu pendapat adalah tanda bangkrutnya isi kepala. Sebuah masyarakat hanya akan maju bila warganya mampu menguji ide dan gagasan secara objektif.', '/artikel/cania-citta-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Malaka Project (Kanal Edukasi Pemikiran Kritis)', 'Media Diskursus Intelektual Independen', 'Platform video esai politik, filsafat, dan ekonomi yang menjadi rujukan perdebatan rasional anak muda Indonesia.', 'Akses Terbuka / Donasi Swadaya', 'Dukung Inisiatif', 'https://malakaproject.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Serial Esai: Batas Wewenang Negara vs Hak Individu', 'Kajian Filsafat Politik & Konstitusi', 'Rangkaian analisis video membedah bahaya overregulasi birokrasi dan pentingnya perlindungan privasi serta kebebasan sipil warga.', 'Akses Terbuka / Donasi Swadaya', 'Dukung Inisiatif', 'https://youtube.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 -- Figure: Rocky Gerung (rocky-gerung)
@@ -442,6 +496,8 @@ BEGIN
   DELETE FROM life_events_warga WHERE profile_id = v_profile_id;
   DELETE FROM works_warga WHERE profile_id = v_profile_id;
   DELETE FROM articles_warga WHERE profile_id = v_profile_id;
+  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;
+  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;
 
   INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)
   VALUES (v_profile_id, '1990 — 2015', 'MENGAJAR FILSAFAT DI UNIVERSITAS INDONESIA', 'Mengajar epistemologi, etika politik, dan filsafat hukum di Departemen Filsafat UI, membimbing ribuan mahasiswa berpikir kritis tanpa kompromi.', 1);
@@ -459,6 +515,10 @@ BEGIN
   VALUES (v_profile_id, 'Demokrasi Tanpa Oposisi Adalah Monarki Terselubung: Mengapa Nalar Kritis Harus Terus Bekerja', 'FILSAFAT POLITIK', '8 Menit Membaca', 'Pembedahan filosofis tentang fungsi oposisi sebagai penjaga kesehatan akal sehat republik.', 'Negara tidak boleh meminta warganya untuk selalu memuji dan berterima kasih; tugas negara adalah melayani, dan tugas warga adalah terus mengawasi dan mengkritik. Ketika seluruh partai dan lembaga bungkam bersatu dalam kekuasaan, nalar warga sipillah yang harus menjadi parlemen jalanan.', '/artikel/rocky-gerung-1', 1);
   INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)
   VALUES (v_profile_id, 'Etika Lingkungan vs Kerakusan Ekstraktif: Menagih Hak Konstitusional Generasi Mendatang', 'EKOLOGI & HUKUM', '7 Menit Membaca', 'Mengapa mengeksploitasi alam demi keuntungan oligarki jangka pendek adalah kejahatan antar-generasi.', 'Gunung, hutan, dan sungai bukanlah komoditas mati yang boleh dikeruk hingga tandus demi selembar laporan pertumbuhan ekonomi semu. Alam memiliki hak moral untuk dijaga demi keberlangsungan hidup anak cucu kita.', '/artikel/rocky-gerung-2', 2);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Rocky Gerung Official (Mimbar Oposisi Akal Sehat)', 'Kanal Pendidikan Filsafat Publik', 'Platform video analisis kritis harian yang membedah isu politik nasional dan internasional lewat kacamata filsafat dan hukum tata negara.', 'Akses Terbuka / Donasi Swadaya', 'Dukung Inisiatif', 'https://youtube.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1);
+  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
+  VALUES (v_profile_id, 'Buku & Esai Filsafat Politik Indonesia', 'Karya Akademik & Kritik Demokrasi', 'Kumpulan tulisan akademik tentang hak asasi manusia, kebebasan berekspresi, dan etika lingkungan hidup.', 'Rp 85.000 — Rp 185.000', 'Dukung Inisiatif', 'https://www.gramedia.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2);
 END $$;
 
 COMMIT;
