@@ -11,16 +11,16 @@ export default function HomePage() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   const laciList = [
-    { num: '01', name: 'Penjaga Nalar', desc: 'Jejak nalar kritis, jurnalisme investigasi, dan uji logika.', count: '10 Warga', color: 'border-l-4 border-l-[#E11D48]' },
-    { num: '02', name: 'Penyelamat Bumi', desc: 'Konservasi rimba leuser, daur ulang sirkular, & mikrohidro desa.', count: '10 Warga', color: 'border-l-4 border-l-[#10B981]' },
-    { num: '03', name: 'Pembangun Sistem', desc: 'Internet rakyat, paten tomografi 4D, civic tech, & AI lokal.', count: '10 Warga', color: 'border-l-4 border-l-[#3B82F6]' },
-    { num: '04', name: 'Pejuang Akar Rumput', desc: 'Perlindungan tanah adat, rumah sakit apung, & advokasi tani.', count: '10 Warga', color: 'border-l-4 border-l-[#F59E0B]' },
-    { num: '05', name: 'Arsitek Usaha Mandiri', desc: 'Sepeda bambu, wastra lontar, cokelat artisan, & kriya kulit ceker.', count: '10 Warga', color: 'border-l-4 border-l-[#EC4899]' },
-    { num: '06', name: 'Perawat Jiwa & Rasa', desc: 'Musik kontemplatif, sastra kesunyian, sinema, & empati warga.', count: '10 Warga', color: 'border-l-4 border-l-[#8B5CF6]' },
-    { num: '07', name: 'Penjaga Tawa', desc: 'Komedi satir sosial, penelusuran absurditas, & tawa akal sehat.', count: '10 Warga', color: 'border-l-4 border-l-[#E11D48]' },
-    { num: '08', name: 'Pencerah Generasi', desc: 'Ruang belajar alternatif, literasi sains desa, & beasiswa komunitas.', count: '10 Warga', color: 'border-l-4 border-l-[#06B6D4]' },
-    { num: '09', name: 'Duta Talenta', desc: 'Karya rekayasa sains dunia, sinema internasional, & riset biomedis.', count: '10 Warga', color: 'border-l-4 border-l-[#F97316]' },
-    { num: '10', name: 'Panggung Ekspresi', desc: 'Kanal kreator bermartabat, pengarsipan budaya, & eksplorasi publik.', count: '10 Warga', color: 'border-l-4 border-l-[#E11D48]' }
+    { name: 'Penjaga Nalar', desc: 'Jejak nalar kritis, jurnalisme investigasi, dan uji logika.', color: 'border-l-4 border-l-[#E11D48]' },
+    { name: 'Penyelamat Bumi', desc: 'Konservasi rimba leuser, daur ulang sirkular, dan mikrohidro desa.', color: 'border-l-4 border-l-[#10B981]' },
+    { name: 'Pembangun Sistem', desc: 'Internet rakyat, paten tomografi 4D, civic tech, dan AI lokal.', color: 'border-l-4 border-l-[#3B82F6]' },
+    { name: 'Pejuang Akar Rumput', desc: 'Perlindungan tanah adat, rumah sakit apung, dan advokasi tani.', color: 'border-l-4 border-l-[#F59E0B]' },
+    { name: 'Arsitek Usaha Mandiri', desc: 'Sepeda bambu, wastra lontar, cokelat artisan, dan kriya kulit ceker.', color: 'border-l-4 border-l-[#EC4899]' },
+    { name: 'Perawat Jiwa & Rasa', desc: 'Musik kontemplatif, sastra kesunyian, sinema, dan empati warga.', color: 'border-l-4 border-l-[#8B5CF6]' },
+    { name: 'Penjaga Tawa', desc: 'Komedi satir sosial, penelusuran absurditas, dan tawa akal sehat.', color: 'border-l-4 border-l-[#E11D48]' },
+    { name: 'Pencerah Generasi', desc: 'Ruang belajar alternatif, literasi sains desa, dan beasiswa komunitas.', color: 'border-l-4 border-l-[#06B6D4]' },
+    { name: 'Duta Talenta', desc: 'Karya rekayasa sains dunia, sinema internasional, dan riset biomedis.', color: 'border-l-4 border-l-[#F97316]' },
+    { name: 'Panggung Ekspresi', desc: 'Kanal kreator bermartabat, pengarsipan budaya, dan eksplorasi publik.', color: 'border-l-4 border-l-[#E11D48]' }
   ];
 
   const featuredBrand = {
@@ -29,7 +29,7 @@ export default function HomePage() {
     origin: 'Kandangan, Temanggung',
     founder: 'Singgih S. Kartono',
     highlight: 'Pelopor sepeda bambu lestari berstandar uji keselamatan internasional yang merevitalisasi ekonomi dusun.',
-    spec: 'Material: Bambu Petung Pilihan // Standar Uji DIN Plus Jerman'
+    spec: 'Material: Bambu Petung Pilihan | Standar Uji DIN Plus Jerman'
   };
 
   const supportingBrands = [
@@ -44,7 +44,7 @@ export default function HomePage() {
     {
       title: 'Benteng Nalar Kritis di Tengah Gempuran Distorsi Algoritma',
       tag: 'ETIKA & NALAR',
-      date: '2026 // EDISI 04',
+      date: 'ESAI PILIHAN',
       readTime: '6 Menit Baca',
       desc: 'Skeptisisme metodis adalah instrumen pertahanan diri paling esensial saat linimasa dibanjiri rekayasa informasi dan polarisasi buatan.',
       slug: 'analisis-kritis-literasi-keuangan',
@@ -53,7 +53,7 @@ export default function HomePage() {
     {
       title: 'Kedaulatan Pangan Akar Rumput: Melawan Monokultur, Menjaga Benih',
       tag: 'KRISIS EKOLOGIS',
-      date: '2026 // EDISI 03',
+      date: 'CATATAN KRITIS',
       readTime: '8 Menit Baca',
       desc: 'Komunitas adat dan petani gurem adalah penjaga terakhir keanekaragaman hayati nusantara dari ancaman monopoli benih.',
       slug: 'kedaulatan-pangan-bukan-gimik',
@@ -62,7 +62,7 @@ export default function HomePage() {
     {
       title: 'Membongkar Mental Inlander: Mengapa Karya Dusun Bisa Unggul',
       tag: 'KEDAULATAN BUDAYA',
-      date: '2026 // EDISI 02',
+      date: 'PERSPEKTIF',
       readTime: '7 Menit Baca',
       desc: 'Kualitas kelas dunia lahir bukan dari meniru megapolitan, melainkan dari kedalaman rasa dan kesetiaan pada bahan baku lokal.',
       slug: 'ilusi-kemajuan-di-balik-stigma-lokal',
@@ -88,10 +88,10 @@ export default function HomePage() {
               {/* Left Column (7 Cols): Headline, Editorial Subtext, Primary Actions */}
               <div className="lg:col-span-7 space-y-8">
                 
-                {/* Tactical Telemetry Badge */}
+                {/* Editorial Badge */}
                 <div className="inline-flex items-center gap-2.5 px-3 py-1.5 border border-[#E11D48]/30 bg-[#E11D48]/5 text-[#E11D48] font-mono text-xs font-bold uppercase tracking-widest">
                   <Radio className="w-3.5 h-3.5 animate-pulse" />
-                  <span>RADAR KURASI NASIONAL // DOKUMEN 2026</span>
+                  <span>KURASI INDEPENDEN WARGA NUSANTARA</span>
                 </div>
 
                 {/* Macro Headline */}
@@ -103,7 +103,7 @@ export default function HomePage() {
                 <p className={`font-editorial italic text-lg sm:text-xl md:text-2xl leading-relaxed descender-safe border-l-2 border-[#E11D48] pl-5 max-w-2xl ${
                   isDarkMode ? 'text-[#8E95A5]' : 'text-[#475569]'
                 }`}>
-                  Dokumentasi terbuka atas 100 figur, karya orisinil, dan gagasan berdaulat di Indonesia, sebelum semuanya hilang ditelan riuh linimasa.
+                  Dokumentasi terbuka atas figur mandiri, karya orisinil, dan gagasan berdaulat di Indonesia, sebelum semuanya hilang ditelan riuh linimasa.
                 </p>
 
                 {/* Primary Single-Line CTAs */}
@@ -112,7 +112,7 @@ export default function HomePage() {
                     href="/arsip/warga" 
                     className="inline-flex items-center gap-2.5 px-6 py-3.5 bg-[#E11D48] text-white font-mono text-xs font-bold uppercase tracking-widest hover:bg-[#BE123C] transition-all tactile-btn"
                   >
-                    <span>JELAJAHI 100 WARGA</span>
+                    <span>JELAJAHI ARSIP WARGA</span>
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                   <Link 
@@ -130,7 +130,7 @@ export default function HomePage() {
 
               </div>
 
-              {/* Right Column (5 Cols): Archival Telemetry Radar Card */}
+              {/* Right Column (5 Cols): Editorial Mission Box */}
               <div className="lg:col-span-5">
                 <div className={`p-8 border relative overflow-hidden transition-all ${
                   isDarkMode 
@@ -140,37 +140,37 @@ export default function HomePage() {
                   
                   {/* Card Header */}
                   <div className="flex justify-between items-center pb-6 border-b border-inherit/10 font-mono text-xs tracking-wider uppercase text-[#E11D48] font-bold">
-                    <span>[ TELEMETRY KURASI // V.2.6 ]</span>
+                    <span>PENGARSIPAN & PENEMUAN MANDIRI</span>
                     <span className="flex h-2 w-2 relative">
                       <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#E11D48] opacity-75" />
                       <span className="relative inline-flex rounded-full h-2 w-2 bg-[#E11D48]" />
                     </span>
                   </div>
 
-                  {/* Telemetry Metrics Grid */}
-                  <div className="grid grid-cols-2 gap-6 py-6 border-b border-inherit/10">
-                    <div>
-                      <span className="font-display text-4xl sm:text-5xl text-inherit block leading-none">100</span>
-                      <span className="text-[11px] font-mono uppercase tracking-widest text-[#8E95A5] mt-1 block">Warga Terdaftar</span>
+                  {/* Editorial Pillars */}
+                  <div className="grid grid-cols-2 gap-5 py-6 border-b border-inherit/10">
+                    <div className="space-y-1">
+                      <span className="font-display text-base uppercase text-inherit block">Kedaulatan Karya</span>
+                      <span className="text-[11px] font-mono text-[#8E95A5] block">Orisinalitas & daya tahan lokal</span>
                     </div>
-                    <div>
-                      <span className="font-display text-4xl sm:text-5xl text-inherit block leading-none">10</span>
-                      <span className="text-[11px] font-mono uppercase tracking-widest text-[#8E95A5] mt-1 block">Laci Kurasi</span>
+                    <div className="space-y-1">
+                      <span className="font-display text-base uppercase text-inherit block">Integritas Jejak</span>
+                      <span className="text-[11px] font-mono text-[#8E95A5] block">Bukan popularitas instan</span>
                     </div>
-                    <div>
-                      <span className="font-display text-4xl sm:text-5xl text-inherit block leading-none">200</span>
-                      <span className="text-[11px] font-mono uppercase tracking-widest text-[#8E95A5] mt-1 block">Inisiatif & Produk</span>
+                    <div className="space-y-1">
+                      <span className="font-display text-base uppercase text-inherit block">Akses Terbuka</span>
+                      <span className="text-[11px] font-mono text-[#8E95A5] block">Arsip bebas bagi seluruh warga</span>
                     </div>
-                    <div>
-                      <span className="font-display text-4xl sm:text-5xl text-[#E11D48] block leading-none">100%</span>
-                      <span className="text-[11px] font-mono uppercase tracking-widest text-[#8E95A5] mt-1 block">Akses Terbuka</span>
+                    <div className="space-y-1">
+                      <span className="font-display text-base uppercase text-[#E11D48] block">Riset Mandiri</span>
+                      <span className="text-[11px] font-mono text-[#8E95A5] block">Bebas titipan komersial</span>
                     </div>
                   </div>
 
                   {/* Curated Statement */}
                   <div className="pt-6 space-y-4">
                     <p className={`text-xs font-sans leading-relaxed ${isDarkMode ? 'text-[#8E95A5]' : 'text-[#64748B]'}`}>
-                      Setiap profil dikurasi secara independen melalui 6 tahap verifikasi rekam jejak, kedaulatan karya, dan integritas nilai tanpa titipan komersial.
+                      Setiap profil dan karya dikurasi melalui verifikasi rekam jejak mendalam, kedaulatan gagasan, dan kebermanfaatan nyata bagi ekosistem lokal.
                     </p>
                     <Link 
                       href="/manifesto" 
@@ -188,7 +188,7 @@ export default function HomePage() {
         </section>
 
         {/* ═══════════════════════════════════════════════════════════════
-            SECTION 2: KATALOG 10 LACI (Asymmetric Archival Bento Grid)
+            SECTION 2: KATALOG LACI (Asymmetric Archival Bento Grid)
             ═══════════════════════════════════════════════════════════════ */}
         <section className={`py-24 px-6 md:px-12 border-b transition-colors ${
           isDarkMode ? 'border-white/10 bg-[#0B0F19]' : 'border-black/10 bg-[#F4EFE6]'
@@ -202,7 +202,7 @@ export default function HomePage() {
                   KLASIFIKASI MATRIKS
                 </span>
                 <h2 className="text-3xl md:text-5xl font-display uppercase tracking-tight text-inherit">
-                  10 LACI KURASI WARGA LOKAL
+                  RUANG KURASI TEMATIK
                 </h2>
               </div>
               <Link 
@@ -213,11 +213,11 @@ export default function HomePage() {
               </Link>
             </div>
 
-            {/* 10 Laci Bento Grid */}
+            {/* Laci Bento Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {laciList.map((laci) => (
                 <Link
-                  key={laci.num}
+                  key={laci.name}
                   href={`/arsip/warga?laci=${encodeURIComponent(laci.name)}`}
                   className={`group p-7 border relative overflow-hidden transition-all duration-200 tactile-btn ${
                     isDarkMode 
@@ -225,14 +225,6 @@ export default function HomePage() {
                       : 'bg-white border-black/10 hover:border-[#E11D48]'
                   } ${laci.color}`}
                 >
-                  <div className="flex justify-between items-start mb-6">
-                    <span className="font-display text-4xl md:text-5xl text-inherit/20 group-hover:text-[#E11D48] transition-colors leading-none">
-                      {laci.num}
-                    </span>
-                    <span className="font-mono text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 border border-inherit/10 bg-inherit/5 text-[#E11D48]">
-                      {laci.count}
-                    </span>
-                  </div>
                   <h3 className="font-display text-xl uppercase tracking-tight text-inherit group-hover:text-[#E11D48] transition-colors mb-2">
                     {laci.name}
                   </h3>
@@ -240,7 +232,7 @@ export default function HomePage() {
                     {laci.desc}
                   </p>
                   <div className="mt-6 flex items-center gap-1.5 font-mono text-[10px] font-bold uppercase tracking-widest text-[#E11D48] opacity-0 group-hover:opacity-100 transition-opacity">
-                    <span>LIHAT DAFTAR</span>
+                    <span>TELUSURI LACI</span>
                     <ArrowRight className="w-3 h-3" />
                   </div>
                 </Link>

@@ -73,7 +73,7 @@ function WargaLokalArchiveContent() {
         <header className="space-y-6 max-w-4xl border-b pb-8 border-inherit/10">
           <div className="inline-flex items-center gap-2 text-xs font-mono text-[#E11D48] font-bold uppercase tracking-widest">
             <Radio className="w-3.5 h-3.5 animate-pulse" />
-            <span>KATALOG 100 WARGA LOKAL // 10 LACI KURASI</span>
+            <span>ARSIP & DIREKTORI WARGA LOKAL</span>
           </div>
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-display uppercase tracking-tight leading-[0.92]">
             DIREKTORI <br/> PENEMUAN WARGA
@@ -83,7 +83,7 @@ function WargaLokalArchiveContent() {
           </p>
         </header>
 
-        {/* Search & Telemetry Filter Bar */}
+        {/* Search & Filter Bar */}
         <section className="space-y-6">
           <div className="flex flex-col md:flex-row gap-4 items-stretch md:items-center justify-between">
             
@@ -110,7 +110,7 @@ function WargaLokalArchiveContent() {
 
             {/* Results Count Badge */}
             <div className="font-mono text-xs font-bold uppercase tracking-wider text-[#E11D48] flex items-center gap-2 shrink-0">
-              <span>HASIL: {filteredProfiles.length} / 100 WARGA</span>
+              <span>Menampilkan {filteredProfiles.length} Warga Terpilih</span>
             </div>
 
           </div>
@@ -155,9 +155,6 @@ function WargaLokalArchiveContent() {
                     fill 
                     className="object-cover portrait-bw transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute top-2 left-2 px-2 py-0.5 bg-black/80 text-white font-mono text-[9px] uppercase tracking-widest">
-                    FIG. {String(idx + 1).padStart(2, '0')}
-                  </div>
                 </Link>
                 
                 {/* Profile Meta */}

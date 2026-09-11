@@ -229,7 +229,7 @@ export default function BrandLokalArchivePage() {
             </div>
 
             <span className="text-xs font-mono text-[#E11D48] font-bold tracking-wider uppercase shrink-0">
-              HASIL: {filteredBrands.length} / {brandList.length} BRAND MANDIRI
+              Menampilkan {filteredBrands.length} Brand Mandiri
             </span>
           </div>
         </section>
@@ -251,8 +251,8 @@ export default function BrandLokalArchivePage() {
                     <span className="text-[10px] font-mono text-[#E11D48] uppercase tracking-widest font-bold">
                       {brand.category}
                     </span>
-                    <span className="text-[10px] font-mono text-current/40">
-                      ID // 0{idx + 1}
+                    <span className="text-[10px] font-mono text-current/40 uppercase tracking-widest">
+                      TERKURASI
                     </span>
                   </div>
 

@@ -47,7 +47,7 @@ export default function Footer({ isDarkMode = false }: FooterProps) {
               DIREKTORI
             </h4>
             <ul className={`space-y-3 text-sm font-sans ${mutedText}`}>
-              <li><Link href="/arsip/warga" className="hover:text-[#E11D48] transition-colors">Arsip 100 Warga</Link></li>
+              <li><Link href="/arsip/warga" className="hover:text-[#E11D48] transition-colors">Arsip Warga</Link></li>
               <li><Link href="/arsip/brand" className="hover:text-[#E11D48] transition-colors">Brand Mandiri</Link></li>
               <li><Link href="/arsip" className="hover:text-[#E11D48] transition-colors">Semua Kategori</Link></li>
               <li><Link href="/artikel" className="hover:text-[#E11D48] transition-colors">Ruang Redaksi</Link></li>
@@ -60,7 +60,7 @@ export default function Footer({ isDarkMode = false }: FooterProps) {
               INTEGRITAS
             </h4>
             <ul className={`space-y-3 text-sm font-sans ${mutedText}`}>
-              <li><Link href="/legal/kriteria-kurasi" className="hover:text-[#E11D48] transition-colors">Kriteria 6 Tahap</Link></li>
+              <li><Link href="/legal/kriteria-kurasi" className="hover:text-[#E11D48] transition-colors">Kriteria Kurasi</Link></li>
               <li><Link href="/legal/policy-brief" className="hover:text-[#E11D48] transition-colors">Policy Brief</Link></li>
               <li><Link href="/legal/terms" className="hover:text-[#E11D48] transition-colors">Syarat & Ketentuan</Link></li>
               <li><Link href="/legal/privacy" className="hover:text-[#E11D48] transition-colors">Kebijakan Privasi</Link></li>
@@ -81,11 +81,11 @@ export default function Footer({ isDarkMode = false }: FooterProps) {
 
         </div>
 
-        {/* Telemetry Status Bar */}
+        {/* Status Bar */}
         <div className="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs font-mono">
           <div className="flex items-center gap-2 text-[#E11D48]">
             <Radio className="w-3.5 h-3.5 animate-pulse" />
-            <span className="font-bold tracking-wider">TELEMETRY: RADAR AKTIF // 100 PROFIL // 10 LACI</span>
+            <span className="font-bold tracking-wider uppercase">KURASI INDEPENDEN WARGA NUSANTARA</span>
           </div>
           <p className={mutedText}>
             © 2026 Sektor Lokal. Hak cipta dilindungi undang-undang nalar sehat.

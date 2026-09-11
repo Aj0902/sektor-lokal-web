@@ -141,7 +141,6 @@ export default function ProfileClientView({ initialData, slug }: ProfileClientVi
               </span>
             </div>
             <div className="flex items-center gap-4 text-white/50 tracking-widest">
-              <span className="hidden sm:inline">KODE BERKAS: {slug.toUpperCase()}</span>
               {profile.verified && (
                 <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 bg-[#E11D48]/15 border border-[#E11D48]/40 text-[#E11D48] text-[11px] font-bold">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#E11D48] animate-pulse" />
@@ -253,9 +252,9 @@ export default function ProfileClientView({ initialData, slug }: ProfileClientVi
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60" />
                 </div>
                 
-                {/* Archival Dossier Label */}
+                {/* Portrait Label */}
                 <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-[10px] font-mono text-white/90 tracking-widest uppercase bg-black/80 backdrop-blur-md px-3 py-1.5 border border-white/10">
-                  <span>FIG. 01 // POTRET RESMI</span>
+                  <span>POTRET RESMI</span>
                   <span className="text-[#E11D48] font-bold">TERVERIFIKASI</span>
                 </div>
               </div>
@@ -266,7 +265,7 @@ export default function ProfileClientView({ initialData, slug }: ProfileClientVi
       </section>
 
       {/* ========================================================================= */}
-      {/* ACT 2: EDITORIAL BIOGRAPHY & ARCHIVAL DOSSIER (IVORY PAPER) */}
+      {/* SECTION: EDITORIAL BIOGRAPHY (IVORY PAPER) */}
       {/* ========================================================================= */}
       <section className="w-full bg-[#F8F5EE] text-[#07090E] py-20 sm:py-28 relative border-b border-black/10">
         <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
@@ -277,7 +276,7 @@ export default function ProfileClientView({ initialData, slug }: ProfileClientVi
             <div className="lg:col-span-3 space-y-4">
               <div className="inline-flex items-center gap-2 border-b-2 border-[#E11D48] pb-1">
                 <span className="text-xs font-mono text-[#E11D48] font-bold tracking-widest uppercase">
-                  TENTANG // REKAM JEJAK
+                  REKAM JEJAK
                 </span>
               </div>
               <h2 className="text-3xl sm:text-4xl font-display uppercase tracking-tight text-[#07090E] leading-none">
@@ -295,11 +294,7 @@ export default function ProfileClientView({ initialData, slug }: ProfileClientVi
                 </div>
                 <div>
                   <span className="text-[#07090E]/50 block uppercase text-[10px]">Status Berkas</span>
-                  <span className="font-bold text-[#07090E]">Arsip Terbuka (Public Dossier)</span>
-                </div>
-                <div>
-                  <span className="text-[#07090E]/50 block uppercase text-[10px]">Tahun Kurasi</span>
-                  <span className="font-bold text-[#07090E]">{new Date().getFullYear()}</span>
+                  <span className="font-bold text-[#07090E]">Arsip Publik Terbuka</span>
                 </div>
               </div>
             </div>
@@ -320,7 +315,7 @@ export default function ProfileClientView({ initialData, slug }: ProfileClientVi
       </section>
 
       {/* ========================================================================= */}
-      {/* ACT 3: PERJALANAN & LINIMASA JEJAK (DARK OBSIDIAN) */}
+      {/* SECTION: PERJALANAN & LINIMASA JEJAK (DARK OBSIDIAN) */}
       {/* ========================================================================= */}
       <section className="w-full bg-[#07090E] text-[#F5EFEB] py-20 sm:py-28 relative overflow-hidden border-b border-white/10">
         <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 relative z-10">
@@ -331,7 +326,7 @@ export default function ProfileClientView({ initialData, slug }: ProfileClientVi
             <div className="lg:col-span-5 space-y-6">
               <div className="inline-flex items-center gap-2 border-b border-[#E11D48] pb-1">
                 <span className="text-xs font-mono text-[#E11D48] font-bold tracking-widest uppercase">
-                  ACT 03 // FILOSOFI & ARAH
+                  FILOSOFI & ARAH PERJUANGAN
                 </span>
               </div>
               
@@ -343,8 +338,8 @@ export default function ProfileClientView({ initialData, slug }: ProfileClientVi
               </div>
 
               <div className="pt-6 border-t border-white/10 font-mono text-xs text-white/50 space-y-1">
-                <p>SUMBER // DISKURSUS PUBLIK & DOKUMENTASI RESMI</p>
-                <p className="text-[#E11D48]">SEKTOR LOKAL // ARSIP {new Date().getFullYear()}</p>
+                <p>DISKURSUS PUBLIK & DOKUMENTASI RESMI</p>
+                <p className="text-[#E11D48]">SEKTOR LOKAL | ARSIP TERBUKA</p>
               </div>
             </div>
             
@@ -381,7 +376,7 @@ export default function ProfileClientView({ initialData, slug }: ProfileClientVi
       </section>
 
       {/* ========================================================================= */}
-      {/* ACT 4: KARYA & DISKURSUS (CRIMSON BANNER / WORK TILES) */}
+      {/* SECTION: KARYA & DISKURSUS */}
       {/* ========================================================================= */}
       <section className="w-full bg-[#E11D48] text-white py-20 sm:py-28 border-b border-black/10">
         <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
@@ -389,14 +384,14 @@ export default function ProfileClientView({ initialData, slug }: ProfileClientVi
           <div className="border-b border-white/30 pb-6 mb-12 flex flex-col sm:flex-row sm:justify-between sm:items-end gap-4">
             <div>
               <span className="font-mono text-xs tracking-widest uppercase block text-white/80 font-bold mb-1">
-                ACT 04 // PORTOFOLIO & DISKURSUS
+                PORTOFOLIO & KONTRIBUSI
               </span>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-display uppercase leading-none">
                 Karya & Kontribusi
               </h2>
             </div>
             <span className="font-mono text-xs tracking-widest uppercase text-white/70">
-              {works.length} KARYA TERKURASI
+              KARYA TERPILIH
             </span>
           </div>
           
@@ -444,7 +439,7 @@ export default function ProfileClientView({ initialData, slug }: ProfileClientVi
       </section>
 
       {/* ========================================================================= */}
-      {/* ACT 5: INISIATIF & PRODUK WARGA WITH ESTIMATED PRICING (HIGH INTENT) */}
+      {/* SECTION: INISIATIF & PRODUK WARGA */}
       {/* ========================================================================= */}
       {initiatives.length > 0 && (
         <section id="produk" className="w-full bg-[#0E131F] text-[#F5EFEB] py-20 sm:py-28 border-b border-white/10">
@@ -454,7 +449,7 @@ export default function ProfileClientView({ initialData, slug }: ProfileClientVi
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 pb-6 border-b border-white/10">
               <div>
                 <span className="text-xs font-mono text-[#E11D48] tracking-widest uppercase block mb-2 font-bold">
-                  KATALOG PRODUK & INISIATIF //
+                  KATALOG PRODUK & INISIATIF
                 </span>
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-display uppercase text-white">
                   Inisiatif & Produk Warga
@@ -532,7 +527,7 @@ export default function ProfileClientView({ initialData, slug }: ProfileClientVi
       )}
 
       {/* ========================================================================= */}
-      {/* ACT 6: JURNAL & ARTIKEL TERKAIT */}
+      {/* SECTION: JURNAL & ARTIKEL TERKAIT */}
       {/* ========================================================================= */}
       {articles.length > 0 && (
         <section className="w-full bg-[#07090E] text-[#F5EFEB] py-20 sm:py-28 border-b border-white/10">
@@ -541,7 +536,7 @@ export default function ProfileClientView({ initialData, slug }: ProfileClientVi
             <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12 pb-6 border-b border-white/10">
               <div>
                 <span className="text-xs font-mono text-[#E11D48] tracking-widest uppercase block mb-1 font-bold">
-                  RUANG REDAKSI //
+                  RUANG REDAKSI
                 </span>
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-display uppercase text-white">
                   Jurnal & Wawasan
