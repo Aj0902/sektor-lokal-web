@@ -83,7 +83,7 @@ export default function ManifestoPage() {
                 <h2 className="text-4xl font-display uppercase">Semua Adalah Warga</h2>
                 <div className="text-base leading-relaxed text-current/80 font-sans space-y-6 max-w-2xl">
                   <p>
-                    Kami sengaja menamai kurasi manusia kami sebagai "Warga Lokal". Kata warga dipakai bukan untuk mengecilkan peran, melainkan untuk meratakan status simbolik: seorang ilmuwan paten, seniman independen, hingga petani bukit—semuanya adalah sesama warga negara yang memilih bertindak.
+                    Kami sengaja menamai kurasi manusia kami sebagai "Warga Lokal". Kata warga dipakai bukan untuk mengecilkan peran, melainkan untuk meratakan status simbolik: seorang ilmuwan paten, seniman independen, hingga petani bukit, semuanya adalah sesama warga negara yang memilih bertindak.
                   </p>
                 </div>
               </div>

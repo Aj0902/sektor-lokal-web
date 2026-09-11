@@ -103,7 +103,7 @@ export default function HomePage() {
                 <p className={`font-editorial italic text-lg sm:text-xl md:text-2xl leading-relaxed descender-safe border-l-2 border-[#E11D48] pl-5 max-w-2xl ${
                   isDarkMode ? 'text-[#8E95A5]' : 'text-[#475569]'
                 }`}>
-                  Dokumentasi terbuka atas 100 figur, karya orisinil, dan gagasan berdaulat di Indonesia — sebelum semuanya hilang ditelan riuh linimasa.
+                  Dokumentasi terbuka atas 100 figur, karya orisinil, dan gagasan berdaulat di Indonesia, sebelum semuanya hilang ditelan riuh linimasa.
                 </p>
 
                 {/* Primary Single-Line CTAs */}

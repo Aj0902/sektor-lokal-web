@@ -18,16 +18,16 @@ Pembaruan besar pada antarmuka dan naskah website **Sektor Lokal** telah berhasi
 
 1. **Homepage (Radar Utama - `/`)**:
    - **Headline:** `MENEMUKAN APA YANG TUMBUH DARI TANAH SENDIRI`
-   - **Sub-headline:** *"Menemukan manusia, karya, dan ide yang tumbuh dari Indonesia — sebelum semuanya lewat begitu saja."*
+   - **Sub-headline:** *"Menemukan manusia, karya, dan ide yang tumbuh dari Indonesia, sebelum semuanya lewat begitu saja."*
    - **Tagline Payung:** *“Manifestasi jiwa raga bangsa dari sebutan lokal.”*
    - **Hook 5 Babak:** Mengarahkan pembaca untuk berhenti sejenak, melihat temuan nyata di sekitarnya, bukan mendengarkan pidato kelembagaan.
 
 2. **Hub Discovery Arsip (`/arsip`)**:
    - **Headline:** `DUA PINTU UNTUK MENEMUKAN`
-   - **Dua Pintu:** Memisahkan lensa manusia (*Warga Lokal: Series 001–100*) dan lensa karya (*Brand Lokal: Karya & Proses*).
+   - **Dua Pintu:** Memisahkan lensa manusia (*Warga Lokal: Series 001, 100*) dan lensa karya (*Brand Lokal: Karya & Proses*).
 
 3. **Katalog Warga Lokal (`/arsip/warga`)**:
-   - **Headline:** `100 CERITA WARGA YANG LAYAK DITEMUKAN` *(Series 001–100 // 10 Laci Penemuan)*
+   - **Headline:** `100 CERITA WARGA YANG LAYAK DITEMUKAN` *(Series 001, 100 // 10 Laci Penemuan)*
    - **Kompas Copy:** *"Kamu mungkin belum pernah dengar namanya. Tapi kamu mungkin pernah merasakan dampak kerjanya."*
    - **Framing:** Menghilangkan ranking kompetisi, menegaskan pemerataan bahwa *"semua adalah warga"*.
 

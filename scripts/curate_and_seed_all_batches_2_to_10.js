@@ -96,7 +96,7 @@ function parseDossierMarkdown(laciDir, slug) {
     const genzMatch = content.match(/### G\.\s*Daya Pikat Generasi Muda[^\n]*\n+([\s\S]*?)(?=###|$)/i) || content.match(/### VII\.\s*Mengapa Generasi Muda[^\n]*\n+([\s\S]*?)(?=###|$)/i);
     if (genzMatch) data.genzResonance = genzMatch[1].trim();
 
-    // Extract Career Lines (e.g. - 2012–sekarang: Pendiri Yayasan HAkA)
+    // Extract Career Lines (e.g. - 2012 - sekarang: Pendiri Yayasan HAkA)
     const careerMatches = content.matchAll(/-\s*(\d{4}[^\n:]*):\s*([^\n]+)/g);
     for (const cm of careerMatches) {
       data.careerEvents.push({ year: cm[1].trim(), desc: cm[2].trim() });

@@ -31,7 +31,7 @@ const brandList: BrandItem[] = [
     founder: 'Singgih Susilo Kartono',
     founderSlug: 'singgih-susilo-kartono',
     usp: 'Sepeda bambu petung berstandar uji jalan Jerman berbasis revitalisasi ekonomi desa mandiri.',
-    priceRange: 'Rp 6.500.000 — Rp 18.000.000',
+    priceRange: 'Rp 6.500.000 - Rp 18.000.000',
     description: 'Mengolah bambu petung lokal desa menjadi sepeda berpresisi tinggi yang diekspor ke Jepang, Australia, dan Eropa.',
     linkUrl: 'https://spedagi.com'
   },
@@ -44,7 +44,7 @@ const brandList: BrandItem[] = [
     founder: 'Helianti Hilman',
     founderSlug: 'helianti-hilman',
     usp: 'Pelestari ribuan benih pusaka pangan nusantara dan mitra puluhan ribu petani alami.',
-    priceRange: 'Rp 25.000 — Rp 250.000',
+    priceRange: 'Rp 25.000 - Rp 250.000',
     description: 'Menghubungkan keanekaragaman hayati pangan lokal dengan pasar organik modern di lebih dari 30 negara.',
     linkUrl: 'https://javara.co.id'
   },
@@ -57,7 +57,7 @@ const brandList: BrandItem[] = [
     founder: 'Azalea Ayuningtyas',
     founderSlug: 'azalea-ayuningtyas',
     usp: 'Anyaman daun lontar warisan leluhur yang mendanai gizi dan kesehatan ibu desa 3T.',
-    priceRange: 'Rp 45.000 — Rp 850.000',
+    priceRange: 'Rp 45.000 - Rp 850.000',
     description: 'Memberdayakan ratusan mama penganyam Flores Timur dengan produk kriya interior dan suvenir berstandar global.',
     linkUrl: 'https://duanyam.com'
   },
@@ -70,7 +70,7 @@ const brandList: BrandItem[] = [
     founder: 'Tissa Aunilla',
     founderSlug: 'tissa-aunilla',
     usp: 'Cokelat single-origin murni bean-to-bar dengan transparansi asal-usul tanah kebun petani.',
-    priceRange: 'Rp 35.000 — Rp 195.000',
+    priceRange: 'Rp 35.000 - Rp 195.000',
     description: 'Memproses biji kakao terbaik Indonesia di dalam negeri untuk membuktikan mutu cokelat lokal setara kualitas Eropa.',
     linkUrl: 'https://pipiltincocoa.com'
   },
@@ -83,7 +83,7 @@ const brandList: BrandItem[] = [
     founder: 'Yukka Harsono',
     founderSlug: 'yukka-harsono',
     usp: 'Pelopor kebangkitan alas kaki kulit lokal pria dengan standar kendali mutu industri modern.',
-    priceRange: 'Rp 275.000 — Rp 899.000',
+    priceRange: 'Rp 275.000 - Rp 899.000',
     description: 'Menghidupkan ekosistem pengrajin sepatu Cibaduyut melalui desain kontemporer dan akses langsung ke konsumen.',
     linkUrl: 'https://bro.do'
   },
@@ -96,7 +96,7 @@ const brandList: BrandItem[] = [
     founder: 'Dea Valencia',
     founderSlug: 'dea-valencia',
     usp: 'Busana batik modern siap pakai dengan lebih dari 50% tenaga kerja penjahit difabel.',
-    priceRange: 'Rp 350.000 — Rp 1.500.000',
+    priceRange: 'Rp 350.000 - Rp 1.500.000',
     description: 'Melestarikan kain batik tulis tradisional dalam siluet modern dengan memprioritaskan lapangan kerja inklusif.',
     linkUrl: 'https://batikkultur.com'
   },
@@ -109,7 +109,7 @@ const brandList: BrandItem[] = [
     founder: 'Nurman Farieka Ramdhany',
     founderSlug: 'nurman-farieka-ramdhany',
     usp: 'Inovasi penyamakan kulit ceker ayam limbah kuliner menjadi sepatu bermotif eksotis mirip buaya.',
-    priceRange: 'Rp 450.000 — Rp 2.200.000',
+    priceRange: 'Rp 450.000 - Rp 2.200.000',
     description: 'Sirkularitas limbah makanan pasar menjadi material kulit bernilai ekspor tinggi yang ramah lingkungan.',
     linkUrl: 'https://hirkaofficial.com'
   },

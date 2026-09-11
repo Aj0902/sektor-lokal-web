@@ -20,7 +20,7 @@ SELECT p.id, 'IlmuKomputer.com (Portal Open Knowledge IT Pertama)', 'Repositori 
 FROM profiles_warga p WHERE p.slug = 'romi-satria-wahono';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
-SELECT p.id, 'Brainmatics (Pusat Pelatihan & Sertifikasi IT Profesional)', 'Institusi Pengembangan Talenta Perangkat Lunak', 'Lembaga pelatihan standar industri untuk software architecture, database management, dan machine learning bersertifikasi resmi.', 'Rp 199.000 — Rp 1.450.000 / paket', 'Dukung Inisiatif', 'https://brainmatics.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2
+SELECT p.id, 'Brainmatics (Pusat Pelatihan & Sertifikasi IT Profesional)', 'Institusi Pengembangan Talenta Perangkat Lunak', 'Lembaga pelatihan standar industri untuk software architecture, database management, dan machine learning bersertifikasi resmi.', 'Rp 199.000 - Rp 1.450.000 / paket', 'Dukung Inisiatif', 'https://brainmatics.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2
 FROM profiles_warga p WHERE p.slug = 'romi-satria-wahono';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
@@ -56,7 +56,7 @@ SELECT p.id, 'Dokter Terbang (Flying Doctors Indonesia)', 'Layanan Darurat Medis
 FROM profiles_warga p WHERE p.slug = 'dr-lie-dharmawan';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
-SELECT p.id, 'Koperasi Tenun Pewarna Alami Suku Mollo', 'Ekonomi Adat Berkelanjutan & Kriya Tradisional', 'Unit usaha mandiri ratusan perempuan penenun NTT yang menggunakan tanaman pewarna alami tanpa merusak kelestarian hutan.', 'Rp 450.000 — Rp 2.250.000', 'Dukung Inisiatif', 'https://sektorlokal.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1
+SELECT p.id, 'Koperasi Tenun Pewarna Alami Suku Mollo', 'Ekonomi Adat Berkelanjutan & Kriya Tradisional', 'Unit usaha mandiri ratusan perempuan penenun NTT yang menggunakan tanaman pewarna alami tanpa merusak kelestarian hutan.', 'Rp 450.000 - Rp 2.250.000', 'Dukung Inisiatif', 'https://sektorlokal.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1
 FROM profiles_warga p WHERE p.slug = 'mama-aleta-baun';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
@@ -76,7 +76,7 @@ SELECT p.id, 'Institut Mosintuwu (Pusat Rekonsiliasi & Kedaulatan Desa)', 'Lemba
 FROM profiles_warga p WHERE p.slug = 'lian-gogali';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
-SELECT p.id, 'Sekolah Perempuan & Sekolah Toleransi Poso', 'Pendidikan Kritis Warga Pascakonflik', 'Kurikulum pendidikan emansipatoris lintas iman yang memulihkan trauma komunal dan membangun solidaritas ekonomi bersama.', 'Rp 199.000 — Rp 1.450.000 / paket', 'Dukung Inisiatif', 'https://mosintuwu.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2
+SELECT p.id, 'Sekolah Perempuan & Sekolah Toleransi Poso', 'Pendidikan Kritis Warga Pascakonflik', 'Kurikulum pendidikan emansipatoris lintas iman yang memulihkan trauma komunal dan membangun solidaritas ekonomi bersama.', 'Rp 199.000 - Rp 1.450.000 / paket', 'Dukung Inisiatif', 'https://mosintuwu.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2
 FROM profiles_warga p WHERE p.slug = 'lian-gogali';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
@@ -116,86 +116,86 @@ SELECT p.id, 'Sokola Institute (Sekolah Literasi Kontekstual Adat)', 'Pendidikan
 FROM profiles_warga p WHERE p.slug = 'butet-manurung';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
-SELECT p.id, 'Buku: Sokola Rimba (Pengalaman Belajar Bersama Orang Rimba)', 'Karya Literatur Antropologi & Pendidikan', 'Buku catatan etnografis mendalam tentang dinamika perjumpaan budaya, kearifan rimba, dan perjuangan hak tanah Orang Rimba.', 'Rp 85.000 — Rp 185.000', 'Dukung Inisiatif', 'https://www.gramedia.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2
+SELECT p.id, 'Buku: Sokola Rimba (Pengalaman Belajar Bersama Orang Rimba)', 'Karya Literatur Antropologi & Pendidikan', 'Buku catatan etnografis mendalam tentang dinamika perjumpaan budaya, kearifan rimba, dan perjuangan hak tanah Orang Rimba.', 'Rp 85.000 - Rp 185.000', 'Dukung Inisiatif', 'https://www.gramedia.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2
 FROM profiles_warga p WHERE p.slug = 'butet-manurung';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
-SELECT p.id, 'Spedagi Bamboo Bicycle (Sepeda Bambu Lestari)', 'Desain Industri Kriya Mobilitas Hijau', 'Sepeda bambu berstandar internasional yang mengintegrasikan kekuatan serat bambu lokal Temanggung dengan estetika desain modern.', 'Rp 7.500.000 — Rp 14.500.000', 'Dukung Inisiatif', 'https://spedagi.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1
+SELECT p.id, 'Spedagi Bamboo Bicycle (Sepeda Bambu Lestari)', 'Desain Industri Kriya Mobilitas Hijau', 'Sepeda bambu berstandar internasional yang mengintegrasikan kekuatan serat bambu lokal Temanggung dengan estetika desain modern.', 'Rp 7.500.000 - Rp 14.500.000', 'Dukung Inisiatif', 'https://spedagi.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1
 FROM profiles_warga p WHERE p.slug = 'singgih-susilo-kartono';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
-SELECT p.id, 'Pasar Papringan Temanggung', 'Rekayasa Sosial & Pasar Tradisional Bebas Plastik', 'Destinasi ekonomi komunal dua mingguan di tengah kebun bambu yang memberdayakan ratusan ibu-ibu desa menggunakan mata uang koin bambu.', 'Rp 85.000 — Rp 450.000', 'Dukung Inisiatif', 'https://pasarpapringan.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2
+SELECT p.id, 'Pasar Papringan Temanggung', 'Rekayasa Sosial & Pasar Tradisional Bebas Plastik', 'Destinasi ekonomi komunal dua mingguan di tengah kebun bambu yang memberdayakan ratusan ibu-ibu desa menggunakan mata uang koin bambu.', 'Rp 85.000 - Rp 450.000', 'Dukung Inisiatif', 'https://pasarpapringan.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2
 FROM profiles_warga p WHERE p.slug = 'singgih-susilo-kartono';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
-SELECT p.id, 'JAVARA Indigenous Indonesia (Pangan Pusaka Nusantara)', 'Agribisnis Pangan Organik & Ekspor Heritage', 'Kurasi produk pangan alami terbesar di Indonesia yang memasok beras pusaka, garam artisanal, dan rempah liar ke pasar dunia.', 'Rp 35.000 — Rp 165.000 / pack', 'Dukung Inisiatif', 'https://javara.co.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1
+SELECT p.id, 'JAVARA Indigenous Indonesia (Pangan Pusaka Nusantara)', 'Agribisnis Pangan Organik & Ekspor Heritage', 'Kurasi produk pangan alami terbesar di Indonesia yang memasok beras pusaka, garam artisanal, dan rempah liar ke pasar dunia.', 'Rp 35.000 - Rp 165.000 / pack', 'Dukung Inisiatif', 'https://javara.co.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1
 FROM profiles_warga p WHERE p.slug = 'helianti-hilman';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
-SELECT p.id, 'Javara Academy & Sekolah Wirausaha Pangan Desa', 'Pendidikan Vokasi Agribisnis & Pelestarian Benih', 'Inkubator bisnis yang melatih ribuan keluarga petani mengadopsi standar sertifikasi organik internasional dan pengolahan pangan.', 'Rp 35.000 — Rp 165.000 / pack', 'Dukung Inisiatif', 'https://javara.co.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2
+SELECT p.id, 'Javara Academy & Sekolah Wirausaha Pangan Desa', 'Pendidikan Vokasi Agribisnis & Pelestarian Benih', 'Inkubator bisnis yang melatih ribuan keluarga petani mengadopsi standar sertifikasi organik internasional dan pengolahan pangan.', 'Rp 35.000 - Rp 165.000 / pack', 'Dukung Inisiatif', 'https://javara.co.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2
 FROM profiles_warga p WHERE p.slug = 'helianti-hilman';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
-SELECT p.id, 'Du''Anyam (Wirausaha Sosial Kriya Daun Lontar)', 'Wirausaha Sosial & Kriya Anyaman Inklusif', 'Brand kriya sosial yang memasok produk anyaman berkualitas tinggi untuk sektor hospitality global dan suvenir korporasi.', 'Rp 120.000 — Rp 650.000', 'Dukung Inisiatif', 'https://duanyam.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1
+SELECT p.id, 'Du''Anyam (Wirausaha Sosial Kriya Daun Lontar)', 'Wirausaha Sosial & Kriya Anyaman Inklusif', 'Brand kriya sosial yang memasok produk anyaman berkualitas tinggi untuk sektor hospitality global dan suvenir korporasi.', 'Rp 120.000 - Rp 650.000', 'Dukung Inisiatif', 'https://duanyam.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1
 FROM profiles_warga p WHERE p.slug = 'azalea-ayuningtyas';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
-SELECT p.id, 'Program Intervensi Gizi & Kesehatan Ibu Hamil NTT', 'Kesehatan Masyarakat & Penanganan Stunting', 'Program pemberian paket nutrisi protein dan pendampingan posyandu bagi keluarga penganyam di desa terpencil Flores.', 'Rp 85.000 — Rp 450.000', 'Dukung Inisiatif', 'https://duanyam.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2
+SELECT p.id, 'Program Intervensi Gizi & Kesehatan Ibu Hamil NTT', 'Kesehatan Masyarakat & Penanganan Stunting', 'Program pemberian paket nutrisi protein dan pendampingan posyandu bagi keluarga penganyam di desa terpencil Flores.', 'Rp 85.000 - Rp 450.000', 'Dukung Inisiatif', 'https://duanyam.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2
 FROM profiles_warga p WHERE p.slug = 'azalea-ayuningtyas';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
-SELECT p.id, 'Pipiltin Cocoa (Cokelat Artisan Bean-to-Bar Nusantara)', 'Manufaktur Cokelat Premium Single Origin', 'Lini produk cokelat murni berbahan 100% kakao lokal tanpa lemak nabati sawit yang mengangkat kekayaan profil tanah kepulauan Indonesia.', 'Rp 45.000 — Rp 135.000 / bar', 'Dukung Inisiatif', 'https://pipiltincocoa.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1
+SELECT p.id, 'Pipiltin Cocoa (Cokelat Artisan Bean-to-Bar Nusantara)', 'Manufaktur Cokelat Premium Single Origin', 'Lini produk cokelat murni berbahan 100% kakao lokal tanpa lemak nabati sawit yang mengangkat kekayaan profil tanah kepulauan Indonesia.', 'Rp 45.000 - Rp 135.000 / bar', 'Dukung Inisiatif', 'https://pipiltincocoa.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1
 FROM profiles_warga p WHERE p.slug = 'tissa-aunilla';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
-SELECT p.id, 'Program Kemitraan Fermentasi Petani Kakao Daerah', 'Pemberdayaan Rantai Pasok Petani Kakao', 'Pelatihan standardisasi fermentasi dan pembelian langsung biji kakao dari petani di Aceh, Flores, Bali, dan Papua dengan harga premium.', 'Rp 45.000 — Rp 135.000 / bar', 'Dukung Inisiatif', 'https://pipiltincocoa.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2
+SELECT p.id, 'Program Kemitraan Fermentasi Petani Kakao Daerah', 'Pemberdayaan Rantai Pasok Petani Kakao', 'Pelatihan standardisasi fermentasi dan pembelian langsung biji kakao dari petani di Aceh, Flores, Bali, dan Papua dengan harga premium.', 'Rp 45.000 - Rp 135.000 / bar', 'Dukung Inisiatif', 'https://pipiltincocoa.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2
 FROM profiles_warga p WHERE p.slug = 'tissa-aunilla';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
-SELECT p.id, 'Brodo Footwear (Brand Sepatu Kulit & Sneakers Lokal)', 'Manufaktur Alas Kaki Kontemporer & Direct-to-Consumer', 'Lini produk sepatu kulit formal, boots, dan sneakers pria dengan standar uji mutu industri yang diproduksi oleh sentra pengrajin lokal Jawa Barat.', 'Rp 375.000 — Rp 899.000', 'Dukung Inisiatif', 'https://bro.do', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1
+SELECT p.id, 'Brodo Footwear (Brand Sepatu Kulit & Sneakers Lokal)', 'Manufaktur Alas Kaki Kontemporer & Direct-to-Consumer', 'Lini produk sepatu kulit formal, boots, dan sneakers pria dengan standar uji mutu industri yang diproduksi oleh sentra pengrajin lokal Jawa Barat.', 'Rp 375.000 - Rp 899.000', 'Dukung Inisiatif', 'https://bro.do', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1
 FROM profiles_warga p WHERE p.slug = 'yukka-harsono';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
-SELECT p.id, 'Ekosistem Mitra Pengrajin Kulit Cibaduyut Brodo', 'Pemberdayaan Sentra Manufaktur Tradisional', 'Program standardisasi jahit sol, pola presisi, dan transfer teknologi mesin potong kulit bagi puluhan bengkel pengrajin lokal.', 'Rp 375.000 — Rp 899.000', 'Dukung Inisiatif', 'https://bro.do', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2
+SELECT p.id, 'Ekosistem Mitra Pengrajin Kulit Cibaduyut Brodo', 'Pemberdayaan Sentra Manufaktur Tradisional', 'Program standardisasi jahit sol, pola presisi, dan transfer teknologi mesin potong kulit bagi puluhan bengkel pengrajin lokal.', 'Rp 375.000 - Rp 899.000', 'Dukung Inisiatif', 'https://bro.do', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2
 FROM profiles_warga p WHERE p.slug = 'yukka-harsono';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
-SELECT p.id, 'Batik Kultur by Dea Valencia', 'Fesyen Wastra Kontemporer & Butik Inklusif', 'Brand busana batik ready-to-wear premium yang memadukan kain batik tulis/cap tradisional dengan siluet modern untuk pasar global.', 'Rp 450.000 — Rp 2.250.000', 'Dukung Inisiatif', 'https://batikkultur.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1
+SELECT p.id, 'Batik Kultur by Dea Valencia', 'Fesyen Wastra Kontemporer & Butik Inklusif', 'Brand busana batik ready-to-wear premium yang memadukan kain batik tulis/cap tradisional dengan siluet modern untuk pasar global.', 'Rp 450.000 - Rp 2.250.000', 'Dukung Inisiatif', 'https://batikkultur.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1
 FROM profiles_warga p WHERE p.slug = 'dea-valencia';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
-SELECT p.id, 'Workshop Inklusif Pemberdayaan Difabel Semarang', 'Fasilitas Manufaktur Ramah Disabilitas', 'Sentra produksi garmen yang dirancang ergonomis untuk mempekerjakan puluhan penjahit dan pembuat pola penyandang disabilitas secara setara.', 'Rp 85.000 — Rp 450.000', 'Dukung Inisiatif', 'https://batikkultur.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2
+SELECT p.id, 'Workshop Inklusif Pemberdayaan Difabel Semarang', 'Fasilitas Manufaktur Ramah Disabilitas', 'Sentra produksi garmen yang dirancang ergonomis untuk mempekerjakan puluhan penjahit dan pembuat pola penyandang disabilitas secara setara.', 'Rp 85.000 - Rp 450.000', 'Dukung Inisiatif', 'https://batikkultur.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2
 FROM profiles_warga p WHERE p.slug = 'dea-valencia';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
-SELECT p.id, 'Hirka Footwear (Sepatu Kulit Eksotis Ceker Ayam)', 'Inovasi Manufaktur Material Sirkular & Fesyen Mewah', 'Koleksi sepatu kulit premium berbahan baku limbah ceker ayam dengan pola sisik alami unik yang diproduksi secara handmade di Bandung.', 'Rp 1.450.000 — Rp 3.200.000', 'Dukung Inisiatif', 'https://hirka.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1
+SELECT p.id, 'Hirka Footwear (Sepatu Kulit Eksotis Ceker Ayam)', 'Inovasi Manufaktur Material Sirkular & Fesyen Mewah', 'Koleksi sepatu kulit premium berbahan baku limbah ceker ayam dengan pola sisik alami unik yang diproduksi secara handmade di Bandung.', 'Rp 1.450.000 - Rp 3.200.000', 'Dukung Inisiatif', 'https://hirka.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1
 FROM profiles_warga p WHERE p.slug = 'nurman-farieka-ramdhany';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
-SELECT p.id, 'Formula Penyamakan Kulit Unggas Ramah Lingkungan', 'Rekayasa Kimia Kulit Tepat Guna', 'Metode pemrosesan penyamakan kulit ceker ayam tanpa bahan kimia berbahaya kromium yang aman bagi lingkungan dan perajin.', 'Rp 85.000 — Rp 450.000', 'Dukung Inisiatif', 'https://hirka.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2
+SELECT p.id, 'Formula Penyamakan Kulit Unggas Ramah Lingkungan', 'Rekayasa Kimia Kulit Tepat Guna', 'Metode pemrosesan penyamakan kulit ceker ayam tanpa bahan kimia berbahaya kromium yang aman bagi lingkungan dan perajin.', 'Rp 85.000 - Rp 450.000', 'Dukung Inisiatif', 'https://hirka.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2
 FROM profiles_warga p WHERE p.slug = 'nurman-farieka-ramdhany';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
-SELECT p.id, 'Rumah Mocaf Indonesia (Tepung Singkong Bebas Gluten)', 'Agroindustri Pangan Lokal & Hilirisasi Pertanian', 'Produsen tepung singkong fermentasi organik pengganti terigu gandum bersertifikat bebas gluten yang memasok industri roti dan kue global.', 'Rp 85.000 — Rp 450.000', 'Dukung Inisiatif', 'https://rumahmocaf.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1
+SELECT p.id, 'Rumah Mocaf Indonesia (Tepung Singkong Bebas Gluten)', 'Agroindustri Pangan Lokal & Hilirisasi Pertanian', 'Produsen tepung singkong fermentasi organik pengganti terigu gandum bersertifikat bebas gluten yang memasok industri roti dan kue global.', 'Rp 85.000 - Rp 450.000', 'Dukung Inisiatif', 'https://rumahmocaf.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1
 FROM profiles_warga p WHERE p.slug = 'riza-azyumarridha-azra';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
-SELECT p.id, 'Mocafine & Lini Pangan Olahan Gluten-Free', 'Produk Konsumen Sehat Berbasis Singkong', 'Produk turunan tepung Mocaf berupa mi sehat non-gandum, tepung bumbu krispi, dan kue kering untuk gaya hidup sehat dan penderita autisme.', 'Rp 85.000 — Rp 450.000', 'Dukung Inisiatif', 'https://rumahmocaf.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2
+SELECT p.id, 'Mocafine & Lini Pangan Olahan Gluten-Free', 'Produk Konsumen Sehat Berbasis Singkong', 'Produk turunan tepung Mocaf berupa mi sehat non-gandum, tepung bumbu krispi, dan kue kering untuk gaya hidup sehat dan penderita autisme.', 'Rp 85.000 - Rp 450.000', 'Dukung Inisiatif', 'https://rumahmocaf.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2
 FROM profiles_warga p WHERE p.slug = 'riza-azyumarridha-azra';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
-SELECT p.id, 'Foodizz (Akademi Bisnis Kuliner Digital)', 'EduTech Wirausaha F&B & Inkubator Bisnis', 'Platform pembelajaran digital komprehensif yang melatih ratusan ribu pengusaha kuliner dalam tata kelola operasional, HPP, dan scaling-up.', 'Rp 199.000 — Rp 1.450.000 / paket', 'Dukung Inisiatif', 'https://foodizz.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1
+SELECT p.id, 'Foodizz (Akademi Bisnis Kuliner Digital)', 'EduTech Wirausaha F&B & Inkubator Bisnis', 'Platform pembelajaran digital komprehensif yang melatih ratusan ribu pengusaha kuliner dalam tata kelola operasional, HPP, dan scaling-up.', 'Rp 199.000 - Rp 1.450.000 / paket', 'Dukung Inisiatif', 'https://foodizz.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1
 FROM profiles_warga p WHERE p.slug = 'stefanie-kurniadi';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
-SELECT p.id, 'Buku Panduan: 10 Langkah Membangun Bisnis Kuliner yang Berkelanjutan', 'Buku Bisnis Terapan & Manajemen F&B', 'Karya literatur praktis membedah cara menghitung Food Cost, standardisasi resep, dan manajemen kas restoran.', 'Rp 85.000 — Rp 185.000', 'Dukung Inisiatif', 'https://foodizz.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2
+SELECT p.id, 'Buku Panduan: 10 Langkah Membangun Bisnis Kuliner yang Berkelanjutan', 'Buku Bisnis Terapan & Manajemen F&B', 'Karya literatur praktis membedah cara menghitung Food Cost, standardisasi resep, dan manajemen kas restoran.', 'Rp 85.000 - Rp 185.000', 'Dukung Inisiatif', 'https://foodizz.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2
 FROM profiles_warga p WHERE p.slug = 'stefanie-kurniadi';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
-SELECT p.id, 'Asgar Muda Foundation (Inkubator Wirausaha Pemuda Garut)', 'Pemberdayaan Pemuda Perdesaan & Inkubasi Bisnis', 'Yayasan sosial yang telah mencetak ribuan wirausahawan muda di Jawa Barat berbasis potensi agribisnis dan kriya lokal.', 'Rp 150.000 — Rp 1.200.000', 'Dukung Inisiatif', 'https://asgarmuda.org', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1
+SELECT p.id, 'Asgar Muda Foundation (Inkubator Wirausaha Pemuda Garut)', 'Pemberdayaan Pemuda Perdesaan & Inkubasi Bisnis', 'Yayasan sosial yang telah mencetak ribuan wirausahawan muda di Jawa Barat berbasis potensi agribisnis dan kriya lokal.', 'Rp 150.000 - Rp 1.200.000', 'Dukung Inisiatif', 'https://asgarmuda.org', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1
 FROM profiles_warga p WHERE p.slug = 'goris-mustaqim';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
-SELECT p.id, 'Sentra Kerajinan Kulit Sukaregang Berdaya', 'Modernisasi Kriya Tradisional Daerah', 'Program peningkatan standar desain dan akses pemasaran digital bagi puluhan bengkel perajin jaket dan tas kulit di Garut.', 'Rp 150.000 — Rp 1.200.000', 'Dukung Inisiatif', 'https://sektorlokal.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2
+SELECT p.id, 'Sentra Kerajinan Kulit Sukaregang Berdaya', 'Modernisasi Kriya Tradisional Daerah', 'Program peningkatan standar desain dan akses pemasaran digital bagi puluhan bengkel perajin jaket dan tas kulit di Garut.', 'Rp 150.000 - Rp 1.200.000', 'Dukung Inisiatif', 'https://sektorlokal.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2
 FROM profiles_warga p WHERE p.slug = 'goris-mustaqim';
 COMMIT;

@@ -1,4 +1,4 @@
-# PRD v3.0: Sektor Lokal Web — Mahakarya Editorial Edition
+# PRD v3.0: Sektor Lokal Web, Mahakarya Editorial Edition
 
 ---
 

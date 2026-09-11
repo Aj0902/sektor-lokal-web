@@ -67,7 +67,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   const rawDescription = profile.quote 
-    ? `"${profile.quote}" — ${profile.name} (${profile.title}).`
+    ? `"${profile.quote}" (${profile.name} - ${profile.title})`
     : `${profile.name} (${profile.title}). ${profile.bio_paragraphs?.[0] || 'Dokumentasi otentik rekam jejak warga lokal Indonesia.'}`;
 
   const cleanDescription = rawDescription.length > 160 
@@ -78,13 +78,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const ogImageUrl = profile.photo_url || 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1200&q=80';
 
   return {
-    title: `${profile.name} — ${profile.title} | Warga Lokal`,
+    title: `${profile.name} | ${profile.title} | Warga Lokal`,
     description: cleanDescription,
     alternates: {
       canonical: canonicalUrl,
     },
     openGraph: {
-      title: `${profile.name} — Potret Warga Lokal | Sektor Lokal`,
+      title: `${profile.name} | Potret Warga Lokal | Sektor Lokal`,
       description: cleanDescription,
       url: canonicalUrl,
       siteName: 'Sektor Lokal',
@@ -95,13 +95,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
           url: ogImageUrl,
           width: 1200,
           height: 630,
-          alt: `Potret Resmi ${profile.name} — ${profile.title}`
+          alt: `Potret Resmi ${profile.name} (${profile.title})`
         }
       ]
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${profile.name} — Potret Warga Lokal | Sektor Lokal`,
+      title: `${profile.name} | Potret Warga Lokal | Sektor Lokal`,
       description: cleanDescription,
       images: [ogImageUrl],
       creator: '@sektorlokal'
@@ -170,7 +170,7 @@ export default async function DynamicProfilePage({ params }: PageProps) {
         '@type': 'ProfilePage',
         '@id': `https://sektorlokal.id/profil/${slug}#webpage`,
         'url': `https://sektorlokal.id/profil/${slug}`,
-        'name': `${profile.name} — Potret Warga Lokal | Sektor Lokal`,
+        'name': `${profile.name} | Potret Warga Lokal | Sektor Lokal`,
         'description': profile.quote || profile.bio_paragraphs?.[0] || '',
         'inLanguage': 'id-ID',
         'isPartOf': {

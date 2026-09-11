@@ -12,17 +12,17 @@
     ],
     "lifeEvents": [
       {
-        "year_range": "1996 — 2003",
+        "year_range": "1996 - 2003",
         "title": "REKAYASA WAJANBOLIC & GERAKAN RT/RW-NET",
         "description": "Menciptakan antena Wajanbolic e-goen dan memelopori gerakan jaringan internet swadaya RT/RW-Net yang menghubungkan jutaan rumah warga berbiaya murah."
       },
       {
-        "year_range": "2010 — 2013",
+        "year_range": "2010 - 2013",
         "title": "OPENBTS & KEDAULATAN SELULER DESA TERPENCIL",
         "description": "Membangun BTS seluler komunitas open-source pertama di Papua dan pelosok Jawa, mendemokratisasi frekuensi telekomunikasi bagi warga yang tidak terjangkau sinyal komersial."
       },
       {
-        "year_range": "2020 — 2026",
+        "year_range": "2020 - 2026",
         "title": "POSTEL SERVICE AWARD & KAMPUS TERBUKA ONNO CENTER",
         "description": "Menerima penghargaan tertinggi Internet Society (Postel Award) dan mendirikan OnnoCenter E-Learning gratis yang telah melatih lebih dari 100.000 praktisi IT lokal."
       }
@@ -77,17 +77,17 @@
     ],
     "lifeEvents": [
       {
-        "year_range": "2000 — 2004",
+        "year_range": "2000 - 2004",
         "title": "PENEMUAN FUNDAMENTAL ECVT DI JEPANG & AS",
         "description": "Menemukan rumus matematika rekonstruksi tomografi medan listrik 4D berkecepatan tinggi di Ohio State University dan mematenkannya secara global."
       },
       {
-        "year_range": "2005 — 2011",
+        "year_range": "2005 - 2011",
         "title": "PENDIRIAN CTECH LABS & APLIKASI MEDIS KANKER",
         "description": "Mendirikan CTech Labs Edwar Technology di Tangerang, merancang alat pemindai tomografi kanker payudara dan helm medan listrik terapi sel kanker (ECCT)."
       },
       {
-        "year_range": "2012 — 2026",
+        "year_range": "2012 - 2026",
         "title": "ADOPSI NASA & EKSPANSI KLINIS INTERNASIONAL",
         "description": "Teknologi tomografinya digunakan dalam rekayasa kedirgantaraan NASA dan uji klinis terapi onkologi di Jepang, India, dan Eropa."
       }
@@ -137,22 +137,22 @@
     "quote": "Sains data dan teknologi sipil adalah benteng penjaga kejujuran demokrasi ketika narasi kekuasaan mencoba memanipulasi kenyataan di lapangan.",
     "bio_paragraphs": [
       "Berakar dari tanah santri di Gresik hingga menembus olimpiade informatika internasional dan berkarier sebagai arsitek data terkemuka di Singapura, Ainun Najib adalah perintis gerakan teknologi sipil (civic tech) paling berpengaruh dalam sejarah politik modern Indonesia.",
-      "Kala integritas pemilu presiden 2014 terancam oleh klaim kemenangan sepihak dan ancaman manipulasi suara berjenjang, Ainun bersama jaringan diaspora teknologi menginisiasi KawalPemilu.org—sebuah platform crowdsourcing terbuka yang mendigitalkan dan mengagregasi jutaan lembar formulir C1 plano langsung dari Tempat Pemungutan Suara (TPS). Ketika pandemi melanda, ia kembali menggerakkan KawalCOVID19 sebagai rujukan independen data sains wabah.",
+      "Kala integritas pemilu presiden 2014 terancam oleh klaim kemenangan sepihak dan ancaman manipulasi suara berjenjang, Ainun bersama jaringan diaspora teknologi menginisiasi KawalPemilu.org, sebuah platform crowdsourcing terbuka yang mendigitalkan dan mengagregasi jutaan lembar formulir C1 plano langsung dari Tempat Pemungutan Suara (TPS). Ketika pandemi melanda, ia kembali menggerakkan KawalCOVID19 sebagai rujukan independen data sains wabah.",
       "Ainun membuktikan bahwa kemampuan koding dan arsitektur data rekayasa tingkat tinggi di tangan warga yang berintegritas dapat menjadi tameng penyelamat demokrasi dan keselamatan nyawa jutaan rakyat dari kebohongan politik."
     ],
     "lifeEvents": [
       {
-        "year_range": "2007 — 2013",
+        "year_range": "2007 - 2013",
         "title": "KARIER REKAYASA DATA DI SINGAPURA & GRAB",
         "description": "Bekerja sebagai konsultan analitika data senior di IBM dan memimpin arsitektur data sains di perusahaan teknologi global."
       },
       {
-        "year_range": "2014 — 2019",
+        "year_range": "2014 - 2019",
         "title": "INVENTASI KAWALPEMILU & REVOLUSI CIVIC TECH",
         "description": "Meluncurkan KawalPemilu.org yang memobilisasi puluhan ribu relawan digital memverifikasi formulir C1 secara real-time, mengamankan keabsahan hasil pemilu."
       },
       {
-        "year_range": "2020 — 2026",
+        "year_range": "2020 - 2026",
         "title": "KAWALCOVID19 & PENGEMBANGAN TALENTA DIGITAL SANTRI",
         "description": "Menginisiasi KawalCOVID19 untuk transparansi data pandemi dan mengadvokasi percepatan literasi kecerdasan buatan bagi santri di nusantara."
       }
@@ -207,17 +207,17 @@
     ],
     "lifeEvents": [
       {
-        "year_range": "2005 — 2008",
+        "year_range": "2005 - 2008",
         "title": "PENEMUAN DUA FFT OFDM DI JEPANG",
         "description": "Merancang dan mematenkan algoritma komputasi ganda FFT yang memecahkan hambatan interferensi sinyal seluler berkecepatan tinggi di NAIST Jepang."
       },
       {
-        "year_range": "2010 — 2015",
+        "year_range": "2010 - 2015",
         "title": "STANDARISASI 4G LTE & RISET JAIST",
         "description": "Menjadi asisten profesor di JAIST dan mematenkan sistem transmisi berdaya hemat energi yang diadopsi dalam standar nirkabel 4G dan 5G."
       },
       {
-        "year_range": "2016 — 2026",
+        "year_range": "2016 - 2026",
         "title": "PULANG KE TANAH AIR & MEMIMPIN ADWITECH",
         "description": "Mendirikan AdWiTech di Telkom University Bandung, memimpin riset radar sensor lokal, komunikasi kuantum, dan transmisi satelit nasional."
       }
@@ -272,17 +272,17 @@
     ],
     "lifeEvents": [
       {
-        "year_range": "1998 — 2004",
+        "year_range": "1998 - 2004",
         "title": "BELAJAR OTODIDAK DI JALANAN & RISET JARINGAN",
         "description": "Mempelajari arsitektur jaringan komputer dan sistem operasi Linux secara mandiri di warung internet, merintis komunitas keamanan siber Indonesia."
       },
       {
-        "year_range": "2006 — 2009",
+        "year_range": "2006 - 2009",
         "title": "DEMONSTRASI KENDALI SATELIT DI PANGGUNG DUNIA",
         "description": "Mengguncang dunia keamanan siber internasional di Amsterdam dan Kuala Lumpur atas pembuktian kerentanan sistem navigasi satelit orbit bumi."
       },
       {
-        "year_range": "2012 — 2026",
+        "year_range": "2012 - 2026",
         "title": "KONSULTANSI INFRASTRUKTUR SIBER GLOBAL DI EROPA",
         "description": "Memimpin firma audit keamanan siber di London, mengamankan arsitektur kecerdasan buatan, sistem pembayaran finansial, dan data satelit global."
       }
@@ -332,22 +332,22 @@
     "quote": "Kedaulatan linguistik bangsa ini harus dijaga di era kecerdasan buatan; jangan sampai bahasa ibu kita dan ratusan bahasa daerah terhapus dari peradaban komputasi algoritma.",
     "bio_paragraphs": [
       "Jauh sebelum demam kecerdasan buatan dan Large Language Models (LLM) melanda dunia, Dr. Ayu Purwarianti telah mendedikasikan lebih dari dua dekade hidupnya meneliti Natural Language Processing (NLP) khusus untuk sintaksis, fonetik, dan korpus Bahasa Indonesia serta bahasa daerah nusantara. Meraih gelar doktor dari Toyohashi University of Technology Jepang, ia kini menjabat sebagai Ketua Pusat Riset AI di ITB.",
-      "Ayu menyadari bahaya laten jika ekosistem komputasi kecerdasan buatan hanya dikuasai oleh model-model bahasa asing: mesin tidak akan mampu memahami konteks kultural, dialek lokal, dan nilai-nilai kebangsaan Indonesia. Maka ia menginisiasi pembangunan korpus dataset bahasa nasional dan ikut mendirikan Prosa.ai—perusahaan deep-tech lokal yang mengembangkan teknologi Speech-to-Text, Voice Biometrics, dan Text Processing berakurasi tinggi untuk dialek Indonesia.",
+      "Ayu menyadari bahaya laten jika ekosistem komputasi kecerdasan buatan hanya dikuasai oleh model-model bahasa asing: mesin tidak akan mampu memahami konteks kultural, dialek lokal, dan nilai-nilai kebangsaan Indonesia. Maka ia menginisiasi pembangunan korpus dataset bahasa nasional dan ikut mendirikan Prosa.ai, perusahaan deep-tech lokal yang mengembangkan teknologi Speech-to-Text, Voice Biometrics, dan Text Processing berakurasi tinggi untuk dialek Indonesia.",
       "Bagi generasi muda insinyur AI, Ayu Purwarianti adalah benteng penjaga kedaulatan bahasa: memastikan bahwa peradaban kecerdasan buatan masa depan tetap berakar pada kekayaan linguistik tanah air sendiri."
     ],
     "lifeEvents": [
       {
-        "year_range": "2002 — 2007",
+        "year_range": "2002 - 2007",
         "title": "DOKTORAL NLP DI JEPANG & RISET AWAL BAHASA",
         "description": "Menyelesaikan riset pemrosesan bahasa alami di Jepang dan mulai membangun korpus tata bahasa komputasi Bahasa Indonesia."
       },
       {
-        "year_range": "2018 — 2020",
+        "year_range": "2018 - 2020",
         "title": "PENDIRIAN PROSA.AI & PUSAT RISET AI ITB",
         "description": "Ikut mendirikan Prosa.ai dan diangkat sebagai Ketua Pusat Riset Kecerdasan Buatan ITB, memimpin kolaborasi riset AI industri dan akademisi."
       },
       {
-        "year_range": "2021 — 2026",
+        "year_range": "2021 - 2026",
         "title": "PENGEMBANGAN MODEL LLM & VOICE BIOMETRICS LOKAL",
         "description": "Memimpin riset Large Language Model berbasis bahasa daerah nusantara dan teknologi pengenalan suara biometrik perbankan nasional."
       }
@@ -397,22 +397,22 @@
     "quote": "Sebuah bangsa akan kehilangan kedaulatan ekonominya jika mesin-mesin kecerdasan buatan masa depan tidak mampu memahami bahasa gaul dan dialek informal rakyatnya sendiri.",
     "bio_paragraphs": [
       "Sepulang menempuh studi Computer Science di University of Applied Sciences di Berlin dan sempat berkarier di ekosistem startup Eropa, Irzan Raditya melihat peluang emas untuk membangun produk deep-tech kecerdasan buatan di tanah kelahirannya.",
-      "Pada 2016, Irzan mendirikan Kata.ai—sebuah perusahaan teknologi perintis yang membangun Natural Language Understanding (NLU) komersial pertama yang dirancang khusus untuk membedah dialek informal, bahasa gaul, dan struktur percakapan sehari-hari masyarakat Indonesia. Platform Kata.ai memproses ratusan juta interaksi percakapan konsumen per bulan untuk korporasi besar telekomunikasi, perbankan, hingga ribuan UMKM.",
+      "Pada 2016, Irzan mendirikan Kata.ai, sebuah perusahaan teknologi perintis yang membangun Natural Language Understanding (NLU) komersial pertama yang dirancang khusus untuk membedah dialek informal, bahasa gaul, dan struktur percakapan sehari-hari masyarakat Indonesia. Platform Kata.ai memproses ratusan juta interaksi percakapan konsumen per bulan untuk korporasi besar telekomunikasi, perbankan, hingga ribuan UMKM.",
       "Irzan membuktikan kepemimpinan wirausaha teknologi muda Indonesia yang mampu membangun deep-tech berstandar global tanpa ketergantungan pada API luar negeri, serta konsisten membuka jalan bagi ekosistem AI nasional."
     ],
     "lifeEvents": [
       {
-        "year_range": "2015 — 2016",
+        "year_range": "2015 - 2016",
         "title": "PENDIRIAN YESBOSS & KELAHIRAN KATA.AI",
         "description": "Merintis layanan asisten virtual YesBoss dan bertransformasi membangun platform B2B Conversational AI Kata.ai."
       },
       {
-        "year_range": "2017 — 2020",
+        "year_range": "2017 - 2020",
         "title": "EKSPANSI INDUSTRI ENTERPRISE & KATA PLATFORM",
         "description": "Meluncurkan Kata Platform yang mengotomatisasi interaksi jutaan pelanggan Telkomsel (Veronika), Unilever, dan BCA."
       },
       {
-        "year_range": "2021 — 2026",
+        "year_range": "2021 - 2026",
         "title": "INTEGRASI GENERATIVE AI & AI ETHICS POLICY",
         "description": "Mengintegrasikan Generative AI enterprise yang aman dan aktif menyusun peta jalan etika kecerdasan buatan nasional."
       }
@@ -472,12 +472,12 @@
         "description": "Mendirikan portal open knowledge IlmuKomputer.com yang memenangkan World Summit Award (WSIS) dari Perserikatan Bangsa-Bangsa di Jenewa."
       },
       {
-        "year_range": "2005 — 2012",
+        "year_range": "2005 - 2012",
         "title": "PENDIRIAN BRAINMATICS & RISET SOFTWARE ENGINEERING",
         "description": "Membangun Brainmatics sebagai pusat pelatihan dan riset profesional IT terakreditasi, melahirkan kurikulum software engineering standar industri."
       },
       {
-        "year_range": "2013 — 2026",
+        "year_range": "2013 - 2026",
         "title": "EDUKASI DATA MINING & AI BERBASIS LOGIKA KUAT",
         "description": "Memimpin edukasi nasional tentang machine learning, data mining saintifik, dan metodologi riset komputasi bagi ribuan dosen dan mahasiswa."
       }
@@ -527,22 +527,22 @@
     "quote": "Teknologi antarmuka manusia dan komputer bukan sekadar soal membuat gawai canggih yang memukau mata, melainkan bagaimana kecerdasan buatan mampu membaca kerapuhan fisik manusia dan menolongnya pulih.",
     "bio_paragraphs": [
       "Menyelesaikan pendidikan magister dan doktor dalam bidang Human-Computer Interaction (HCI) di Tokai University Jepang, Dr. Eng. Sunu Wibirama adalah salah satu periset terdepan Indonesia yang memadukan komputasi kecerdasan buatan, pelacakan pandangan mata (eye-tracking), dan rekayasa biomedis presisi di Universitas Gadjah Mada (UGM).",
-      "Karya-karya riset terapan Sunu berfokus pada instrumen diagnostik kesehatan non-invasif berbiaya rendah—mulai dari deteksi dini gangguan saraf motorik pada pasien stroke, sistem pemantauan kelelahan pengemudi transportasi publik, hingga alat bantu komunikasi bagi penyandang disabilitas fisik total (ALS) menggunakan pergerakan pupil mata.",
+      "Karya-karya riset terapan Sunu berfokus pada instrumen diagnostik kesehatan non-invasif berbiaya rendah, mulai dari deteksi dini gangguan saraf motorik pada pasien stroke, sistem pemantauan kelelahan pengemudi transportasi publik, hingga alat bantu komunikasi bagi penyandang disabilitas fisik total (ALS) menggunakan pergerakan pupil mata.",
       "Sunu mendedikasikan ilmunya untuk kemanusiaan: konsisten membimbing ratusan mahasiswa rekayasa biomedis lokal dan mematenkan instrumen medis terjangkau agar rumah sakit di daerah terpencil dapat memiliki alat diagnostik berkualitas tinggi."
     ],
     "lifeEvents": [
       {
-        "year_range": "2008 — 2013",
+        "year_range": "2008 - 2013",
         "title": "DOKTORAL HCI DI JEPANG & RISET EYE-TRACKING",
         "description": "Meneliti interaksi visual manusia dan komputer di Tokai University, mengembangkan algoritma pelacakan pandangan mata 3D presisi tinggi."
       },
       {
-        "year_range": "2014 — 2020",
+        "year_range": "2014 - 2020",
         "title": "PENDIRIAN LAB BIOMEDIS UGM & PATEN ALAT KESEHATAN",
         "description": "Membangun laboratorium riset antarmuka biomedis di DTETI FT UGM dan mematenkan sistem deteksi kelelahan mata untuk keselamatan transportasi."
       },
       {
-        "year_range": "2021 — 2026",
+        "year_range": "2021 - 2026",
         "title": "AI DIAGNOSTIK SARAF & INSTRUMEN DISABILITAS",
         "description": "Mengembangkan perangkat bantu komunikasi bagi pasien lumpuh total dan sistem AI pembacaan citra medis retina untuk deteksi komplikasi diabetes."
       }
@@ -597,17 +597,17 @@
     ],
     "lifeEvents": [
       {
-        "year_range": "1993 — 2006",
+        "year_range": "1993 - 2006",
         "title": "MEMIMPIN TOFI & JUARA DUNIA OLIMPIADE FISIKA",
         "description": "Membina Tim Olimpiade Fisika Indonesia hingga meraih predikat Juara Umum Dunia dan Absolute Winner IPhO di Singapura dan Salamanca."
       },
       {
-        "year_range": "2007 — 2015",
+        "year_range": "2007 - 2015",
         "title": "PENDIRIAN SURYA INSTITUTE & GERAKAN PAPUA PINTAR",
         "description": "Membangun Surya Institute dan melatih ratusan anak-anak suku pedalaman Papua dan NTT menguasai sains dan matematika hingga menembus universitas dunia."
       },
       {
-        "year_range": "2016 — 2026",
+        "year_range": "2016 - 2026",
         "title": "METODE GASING NASIONAL & PENGENTASAN NUMERASI",
         "description": "Mengimplementasikan pelatihan numerasi Metode GASING di ratusan kabupaten/kota di seluruh Indonesia, melatih puluhan ribu guru sekolah dasar."
       }

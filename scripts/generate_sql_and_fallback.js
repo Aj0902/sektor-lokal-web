@@ -52,69 +52,69 @@ function getEstimatedPrice(figure, work) {
 
   // 2. Physical Products / Fashion / Crafts
   if (title.includes('spedagi') || title.includes('sepeda')) {
-    return 'Rp 7.500.000 — Rp 14.500.000';
+    return 'Rp 7.500.000 - Rp 14.500.000';
   }
   if (title.includes('magno') || title.includes('radio kayu')) {
-    return 'Rp 1.800.000 — Rp 3.500.000';
+    return 'Rp 1.800.000 - Rp 3.500.000';
   }
   if (title.includes('hirka') || title.includes('ceker ayam') || title.includes('kulit kaki ayam')) {
-    return 'Rp 1.450.000 — Rp 3.200.000';
+    return 'Rp 1.450.000 - Rp 3.200.000';
   }
   if (title.includes('brodo') || (title.includes('sepatu') && !title.includes('hirka'))) {
-    return 'Rp 375.000 — Rp 899.000';
+    return 'Rp 375.000 - Rp 899.000';
   }
   if (title.includes('batik kultur') || title.includes('batik') || title.includes('busana') || title.includes('tenun')) {
-    if (title.includes("du'anyam") || title.includes('lontar')) return 'Rp 120.000 — Rp 650.000';
-    return 'Rp 450.000 — Rp 2.250.000';
+    if (title.includes("du'anyam") || title.includes('lontar')) return 'Rp 120.000 - Rp 650.000';
+    return 'Rp 450.000 - Rp 2.250.000';
   }
   if (title.includes('pipiltin') || title.includes('cokelat') || title.includes('kakao')) {
-    return 'Rp 45.000 — Rp 135.000 / bar';
+    return 'Rp 45.000 - Rp 135.000 / bar';
   }
   if (title.includes('javara') || title.includes('beras') || title.includes('garam') || title.includes('rempah')) {
-    return 'Rp 35.000 — Rp 165.000 / pack';
+    return 'Rp 35.000 - Rp 165.000 / pack';
   }
   if (title.includes("du'anyam") || title.includes('anyaman')) {
-    return 'Rp 120.000 — Rp 650.000';
+    return 'Rp 120.000 - Rp 650.000';
   }
   if (title.includes('asgar') || title.includes('sukaregang') || title.includes('akar wangi')) {
-    return 'Rp 150.000 — Rp 1.200.000';
+    return 'Rp 150.000 - Rp 1.200.000';
   }
   if (title.includes('majestic buana') || title.includes('biji plastik') || title.includes('daur ulang')) {
-    return 'Rp 18.000 — Rp 85.000 / kg';
+    return 'Rp 18.000 - Rp 85.000 / kg';
   }
   if (title.includes('evoware') || title.includes('bioplastik') || title.includes('rumput laut')) {
-    return 'Rp 25.000 — Rp 120.000';
+    return 'Rp 25.000 - Rp 120.000';
   }
 
   // 3. Books & Publications
   if (title.includes('buku') || title.includes('novel') || title.includes('komik') || cat.includes('buku') || cat.includes('literatur') || cat.includes('sastra')) {
-    return 'Rp 85.000 — Rp 185.000';
+    return 'Rp 85.000 - Rp 185.000';
   }
 
   // 4. Courses / Bootcamps / Masterclasses / Education
   if (title.includes('foodizz') || title.includes('akademi') || title.includes('kursus') || title.includes('zenius') || title.includes('brainmatics') || title.includes('sekolah') || title.includes('kelas') || cat.includes('edukasi') || cat.includes('edutech')) {
     if (title.includes('sokola')) return 'Bebas Biaya / Donasi Swadaya';
-    return 'Rp 199.000 — Rp 1.450.000 / paket';
+    return 'Rp 199.000 - Rp 1.450.000 / paket';
   }
 
   // 5. Music, Vinyl, Concerts, Stand-Up Special
   if (title.includes('album') || title.includes('vinyl') || title.includes('piringan hitam')) {
-    return 'Rp 350.000 — Rp 650.000';
+    return 'Rp 350.000 - Rp 650.000';
   }
   if (title.includes('konser') || title.includes('tur konser') || title.includes('tur dunia') || title.includes('tur stand-up') || title.includes('tiket konser')) {
-    return 'Rp 150.000 — Rp 450.000 / tiket';
+    return 'Rp 150.000 - Rp 450.000 / tiket';
   }
   if (title.includes('stand-up') || title.includes('special') || title.includes('comika') || cat.includes('komedi')) {
-    return 'Rp 50.000 — Rp 175.000 / akses';
+    return 'Rp 50.000 - Rp 175.000 / akses';
   }
   if (cat.includes('musik') || title.includes('diskografi') || title.includes('lagu')) {
-    return 'Rilisan Digital / Fisik Rp 49.000 — Rp 250.000';
+    return 'Rilisan Digital / Fisik Rp 49.000 - Rp 250.000';
   }
 
   // 6. Film / Series / Sinema
   if (cat.includes('sinema') || cat.includes('film') || title.includes('filmografi') || title.includes('dokumenter')) {
     if (title.includes('watchdoc') || title.includes('ekspedisi indonesia baru')) return 'Akses Terbuka / Donasi Swadaya';
-    return 'Tiket Nonton / VOD Rp 45.000 — Rp 75.000';
+    return 'Tiket Nonton / VOD Rp 45.000 - Rp 75.000';
   }
 
   // 7. Social / Crowdfunding / Humanitarian / Medical / Ecology
@@ -140,9 +140,9 @@ function getEstimatedPrice(figure, work) {
   }
 
   // Category based fallbacks
-  if (figure.category === 'Arsitek Usaha Mandiri') return 'Rp 85.000 — Rp 450.000';
+  if (figure.category === 'Arsitek Usaha Mandiri') return 'Rp 85.000 - Rp 450.000';
   if (figure.category === 'Pencerah Generasi') return 'Akses Terbuka / Mulai Rp 99.000';
-  if (figure.category === 'Perawat Jiwa & Rasa') return 'Rp 50.000 — Rp 350.000';
+  if (figure.category === 'Perawat Jiwa & Rasa') return 'Rp 50.000 - Rp 350.000';
   if (figure.category === 'Penjaga Tawa') return 'Mulai Rp 50.000 / tayang';
   if (figure.category === 'Duta Talenta' || figure.category === 'Panggung Ekspresi') return 'Karya Budaya / Mulai Rp 75.000';
 

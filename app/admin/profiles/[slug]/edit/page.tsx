@@ -285,7 +285,7 @@ export default function EditProfileEditorPage() {
                 const newEv: LifeEvent = {
                   id: crypto.randomUUID(),
                   profile_id: profile.id,
-                  year_range: '2025 — 2026',
+                  year_range: '2025 - 2026',
                   title: 'PERISTIWA BARU',
                   description: 'Deskripsi singkat peristiwa...',
                   order_index: lifeEvents.length + 1

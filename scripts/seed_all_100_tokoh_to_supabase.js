@@ -84,7 +84,7 @@ async function seedAll() {
         ? fig.images[0].imageUrl 
         : 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800';
 
-      const quote = fig.quote || `"Kedaulatan sejati lahir dari keberanian merawat nalar sehat dan konsistensi membangun di tanah sendiri." — ${fig.name}`;
+      const quote = fig.quote || `"Kedaulatan sejati lahir dari keberanian merawat nalar sehat dan konsistensi membangun di tanah sendiri."  -  ${fig.name}`;
 
       const profilePayload = {
         name: fig.name,

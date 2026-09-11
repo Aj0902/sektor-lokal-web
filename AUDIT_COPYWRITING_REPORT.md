@@ -137,12 +137,12 @@
 > *Sektor Lokal menolak premis tersebut secara mutlak. Bagi kami, lokal bukan berarti anti-kemajuan. Lokal adalah kesadaran tertinggi atas asal-usul tanah tempat kita berpijak."*
 
 #### BABAK II: Menolak Lupa pada Manusia-Manusianya
-> *"Nusantara ini diberkahi bentang alam yang megah, laut yang melimpah, dan rimba yang berfungsi sebagai paru-paru bumi—sebuah surga di dunia yang tak ternilai harganya. Namun, di tengah perbincangan megah tentang komoditas tambang, devisa pariwisata, dan angka statistik pertumbuhan, kita sering kali melupakan elemen paling berharga dari bangsa ini: manusia-manusianya.*
+> *"Nusantara ini diberkahi bentang alam yang megah, laut yang melimpah, dan rimba yang berfungsi sebagai paru-paru bumi, sebuah surga di dunia yang tak ternilai harganya. Namun, di tengah perbincangan megah tentang komoditas tambang, devisa pariwisata, dan angka statistik pertumbuhan, kita sering kali melupakan elemen paling berharga dari bangsa ini: manusia-manusianya.*
 >
 > *Apa artinya hutan lebat jika penjaga rimba perempuannya dikriminalisasi? Apa artinya jutaan ton biji kakao jika petaninya tercekik kemiskinan dan hanya menjadi penonton batangan cokelat mewah impor? Melalui Sektor Lokal, kami mengembalikan sorotan kepada mereka yang selama ini bekerja dalam hening, menolak tunduk pada oligarki, dan memperjuangkan ruang hidup warga dengan integritas tanpa kompromi."*
 
 #### BABAK III: Meratakan Status Simbolik: Semua adalah Warga
-> *"Kami sengaja menamai kurasi tokoh kami sebagai 'Warga Lokal'. Dari tokoh peraih penghargaan dunia, pemikir filsafat, akademisi hukum tata negara, seniman independen, hingga petani bukit tandus yang menanam beringin selama seperempat abad—kami meratakan status simboliknya.*
+> *"Kami sengaja menamai kurasi tokoh kami sebagai 'Warga Lokal'. Dari tokoh peraih penghargaan dunia, pemikir filsafat, akademisi hukum tata negara, seniman independen, hingga petani bukit tandus yang menanam beringin selama seperempat abad, kami meratakan status simboliknya.*
 >
 > *Kami tidak menempatkan mereka sebagai dewa-dewa langit yang jauh dari jangkauan pembaca. Kami menempatkan mereka sebagai sesama warga negara Indonesia. Sebab, ketika publik menyadari bahwa mereka yang melakukan hal-hal luar biasa itu pada hakikatnya adalah warga biasa yang memilih bertindak, di situlah asa dan daya gerak baru akan menyala di dada setiap anak bangsa."*
 
@@ -166,7 +166,7 @@
 
 3. **Membongkar Mental Inlander: Mengapa Karya Dusun Bisa Mengungguli Produk Global** *(Kedaulatan Budaya)*
    - *Subtitle:* *"Dekonstruksi mitos inferioritas kriya dan teknologi rancang bangun tanah air."*
-   - *Lead:* *"Dari sepeda bambu Spedagi di Dusun Kandangan hingga algoritma transmisi nirkabel 4G di Kediri—kualitas kelas dunia tidak pernah ditentukan oleh lokasi geografis, melainkan oleh keteguhan metodologi dan kedalaman rasa."*
+   - *Lead:* *"Dari sepeda bambu Spedagi di Dusun Kandangan hingga algoritma transmisi nirkabel 4G di Kediri, kualitas kelas dunia tidak pernah ditentukan oleh lokasi geografis, melainkan oleh keteguhan metodologi dan kedalaman rasa."*
 
 4. **Kedaulatan Linguistik di Era Kecerdasan Buatan Generatif** *(Teknologi & AI)*
    - *Subtitle:* *"Tantangan korpus bahasa daerah agar tidak terhapus dari peradaban Large Language Models."*
@@ -189,10 +189,10 @@
 - **Sub-copy:** *"Sektor Lokal berdiri di atas semangat keterbukaan gotong royong warga. Ajukan kolaborasi strategis, nominasikan figur/brand otentik dari pelosok, atau kirimkan laporan riset independen."*
 
 ### 4 Pilar Kanal Interaksi:
-1. **Kolaborasi & Riset** — *"Kemitraan strategis institusi, aktivasi komunitas, & riset terbuka."*
-2. **Usul Figur / Brand (Peer Nomination)** — *"Ajukan tokoh inspiratif atau brand mandiri untuk dikurasi redaksi."*
-3. **Tip-Off & Data (Whistleblower)** — *"Kanal aman terenkripsi untuk laporan fakta lapangan & investigasi."*
-4. **Redaksi & Media** — *"Pertanyaan pers, wawancara, & lisensi publikasi esai."*
+1. **Kolaborasi & Riset**  -  *"Kemitraan strategis institusi, aktivasi komunitas, & riset terbuka."*
+2. **Usul Figur / Brand (Peer Nomination)**  -  *"Ajukan tokoh inspiratif atau brand mandiri untuk dikurasi redaksi."*
+3. **Tip-Off & Data (Whistleblower)**  -  *"Kanal aman terenkripsi untuk laporan fakta lapangan & investigasi."*
+4. **Redaksi & Media**  -  *"Pertanyaan pers, wawancara, & lisensi publikasi esai."*
 
 ### Ikrar Integritas Form:
 - *"Saya menyatakan data dan informasi yang saya sampaikan berlandaskan itikad baik sesuai dengan Standar Etika Kurasi Sektor Lokal."*

@@ -195,7 +195,7 @@ async function runAgentPipeline(queryName, targetSlug, jobId) {
       title: roleTitle,
       category: category,
       bio_paragraphs: bioParagraphs,
-      quote: `"Perubahan sejati tidak pernah datang dari mereka yang menunggu izin, melainkan dari mereka yang berani bertindak di tanahnya sendiri." — ${queryName}`,
+      quote: `"Perubahan sejati tidak pernah datang dari mereka yang menunggu izin, melainkan dari mereka yang berani bertindak di tanahnya sendiri."  -  ${queryName}`,
       photo_url: gallery[0]?.image_url || 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800',
       verified: true,
       status_text: 'TERVERIFIKASI & TERARSIP',

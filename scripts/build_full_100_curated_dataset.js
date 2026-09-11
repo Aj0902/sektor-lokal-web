@@ -203,10 +203,10 @@ function parseUniversalDossier(laciDir, figureIndex, raw) {
 
   // 9. Ekstrak Linimasa Karir & Peristiwa (Tahun / Rentang)
   const careerRegexes = [
-    /-\s*(\d{4}(?:\s*[–-]\s*(?:\d{4}|sekarang|present))?)\s*:\s*([^\n]+)/gi,
+    /-\s*(\d{4}(?:\s*[ - -]\s*(?:\d{4}|sekarang|present))?)\s*:\s*([^\n]+)/gi,
     /-\s*\*\*(\d{4}[^*]+)\*\*:\s*([^\n]+)/g,
     /\d+\.\s*\*\*([^*]+)\*\*\s*:\s*\n+\s*-\s*([^\n]+)/g,
-    /-\s*([^\n]+)\((\d{4}(?:[–-]\d{4}|[–-]sekarang)?)\)/g
+    /-\s*([^\n]+)\((\d{4}(?:[ - -]\d{4}|[ - -]sekarang)?)\)/g
   ];
 
   for (const cr of careerRegexes) {
@@ -294,7 +294,7 @@ function synthesizeLifeEvents(parsed, raw) {
     parsed.careerEvents.slice(0, 3).forEach((ce, idx) => {
       let yr = ce.year.replace(/[:*]/g, '').trim();
       let fullDesc = ce.desc.trim();
-      let title = fullDesc.split(/[-–\.]/)[0].substring(0, 60).trim();
+      let title = fullDesc.split(/[- - \.]/)[0].substring(0, 60).trim();
       events.push({
         year_range: yr || `Fase ${idx + 1}`,
         title: title || `Tonggak Rekam Jejak ${idx + 1}`,

@@ -45,7 +45,7 @@ const BATCH_1_PENJAGA_NALAR = [
     },
     bio_paragraphs: [
       'Di bawah sorot lampu studio dan tatapan jutaan pasang mata, tidak ada tempat berlindung bagi jawaban diplomatis yang berputar-putar. Najwa Shihab duduk tegak, mencengkeram catatan investigasi, menatap langsung ke retina lawan bicaranya. Titik baliknya bermula dari kesadaran bahwa jurnalisme televisi kerap tergelincir menjadi etalase humas kekuasaan dan sensasionalisme algoritma, sementara akuntabilitas ruang publik perlahan terpinggirkan.',
-      'Tahun 2017 menjadi momen keberanian radikal: ia menolak kenyamanan karier mapan 17 tahun di televisi arus utama untuk mendirikan Narasi—sebuah entitas media digital mandiri yang menempatkan jurnalisme warga dan anak muda sebagai kompas utama. Investigasi forensik video pembakaran halte Sarinah pada aksi Reformasi Dikorupsi hingga pembongkaran sel mewah Lapas Sukamiskin menjadi bukti empiris keberaniannya menguji integritas kekuasaan.',
+      'Tahun 2017 menjadi momen keberanian radikal: ia menolak kenyamanan karier mapan 17 tahun di televisi arus utama untuk mendirikan Narasi, sebuah entitas media digital mandiri yang menempatkan jurnalisme warga dan anak muda sebagai kompas utama. Investigasi forensik video pembakaran halte Sarinah pada aksi Reformasi Dikorupsi hingga pembongkaran sel mewah Lapas Sukamiskin menjadi bukti empiris keberaniannya menguji integritas kekuasaan.',
       'Melalui program Mata Najwa, Musyawarah, dan Indonesia Butuh Anak Muda, Najwa merancang arsitektur media yang mengawinkan investigasi open-source intelligence (OSINT) dengan estetika bertutur yang memikat. Ia membuktikan bahwa jurnalisme investigasi berbobot tidak harus elitis, melainkan bisa hidup bersama komunitas pembaca dan relawan di ratusan kota tanpa ketergantungan pada patronase politik.',
       'Bagi generasi muda yang muak dengan konten basa-basi dan histeria media sosial, Najwa adalah personifikasi ketajaman berpikir dan keberanian moral. Ia membimbing pemilih pemula agar tidak mudah terpesona oleh pencitraan elite, sekaligus membuktikan bahwa bersikap cerdas, vokal, dan elegan di depan kekuasaan adalah bentuk tertinggi dari rasa cinta tanah air.'
     ],
@@ -108,13 +108,13 @@ const BATCH_1_PENJAGA_NALAR = [
       }
     ],
     life_events: [
-      { year: '2000–2017', title: 'Koresponden Lapangan & Pembawa Program Mata Najwa', description: 'Meliput Tsunami Aceh 2004 dan memandu program investigasi politik paling berpengaruh di Metro TV.', sort_order: 1 },
-      { year: '2016–2020', title: 'Duta Baca Indonesia', description: 'Didapuk oleh Perpustakaan Nasional RI berkeliling pelosok nusantara menyebarkan virus literasi membaca.', sort_order: 2 },
-      { year: '2018–Sekarang', title: 'Mendirikan Ekosistem Media Narasi', description: 'Membangun ekosistem media independen digital yang memproduksi konten investigasi OSINT dan literasi kewargaan.', sort_order: 3 }
+      { year: '2000 - 2017', title: 'Koresponden Lapangan & Pembawa Program Mata Najwa', description: 'Meliput Tsunami Aceh 2004 dan memandu program investigasi politik paling berpengaruh di Metro TV.', sort_order: 1 },
+      { year: '2016 - 2020', title: 'Duta Baca Indonesia', description: 'Didapuk oleh Perpustakaan Nasional RI berkeliling pelosok nusantara menyebarkan virus literasi membaca.', sort_order: 2 },
+      { year: '2018 - Sekarang', title: 'Mendirikan Ekosistem Media Narasi', description: 'Membangun ekosistem media independen digital yang memproduksi konten investigasi OSINT dan literasi kewargaan.', sort_order: 3 }
     ],
     works: [
       { title: 'Investigasi Forensik Video: Pembakaran Halte Sarinah', description: 'Karya jurnalisme OSINT yang membongkar pelaku riil pembakaran halte dan memaksa kepolisian memberikan klarifikasi terbuka.', year: '2020', sort_order: 1 },
-      { title: 'Buku Catatan Najwa Seri 1 & 2', description: 'Buku esai naratif reflektif mengenai intrik kekuasaan, keadilan sosial, dan harapan masyarakat sipil.', year: '2016–2020', sort_order: 2 }
+      { title: 'Buku Catatan Najwa Seri 1 & 2', description: 'Buku esai naratif reflektif mengenai intrik kekuasaan, keadilan sosial, dan harapan masyarakat sipil.', year: '2016 - 2020', sort_order: 2 }
     ],
     articles: [
       { title: 'Profil dan Kiprah Najwa Shihab: Jurnalis Kritis yang Menginspirasi', source: 'KPU Papua Pegunungan', source_url: 'https://papuapegunungan.kpu.go.id/blog/read/2524_profil-dan-kiprah-najwa-shihab-jurnalis-kritis-yang-menginspirasi-indonesia', excerpt: 'Ulasan rekam jejak independensi Najwa Shihab dalam membangun budaya demokrasi dan literasi kritis publik.', sort_order: 1 },
@@ -142,7 +142,7 @@ const BATCH_1_PENJAGA_NALAR = [
     },
     bio_paragraphs: [
       'Di atas dua roda sepeda motor tua yang melintasi jalan tanah berlubang di pedalaman Kalimantan, Dandhy Dwi Laksono mengikat kamera dan ranselnya. Ia tidak mencari studio megah atau karpet merah festival film internasional. Lensa kameranya diarahkan tepat ke lubang-lubang raksasa tambang batu bara yang menelan anak-anak desa, merekam jeritan yang sengaja diredam oleh kontrak iklan media arus utama.',
-      'Melihat bagaimana konsentrasi kepemilikan media oleh konglomerat politik menciptakan sensor terstruktur atas isu perusakan lingkungan dan perampasan tanah adat, Dandhy memilih keluar dari ruang redaksi televisi mapan. Tahun 2009, ia mendirikan Watchdoc—sebuah rumah produksi berbadan hukum koperasi pekerja yang sepenuhnya menolak ketergantungan dana iklan perusahaan ekstraktif.',
+      'Melihat bagaimana konsentrasi kepemilikan media oleh konglomerat politik menciptakan sensor terstruktur atas isu perusakan lingkungan dan perampasan tanah adat, Dandhy memilih keluar dari ruang redaksi televisi mapan. Tahun 2009, ia mendirikan Watchdoc, sebuah rumah produksi berbadan hukum koperasi pekerja yang sepenuhnya menolak ketergantungan dana iklan perusahaan ekstraktif.',
       'Dandhy memelopori tradisi pemutaran film "Layar Tancap Swadaya". Siapa pun boleh memutar, menggandakan, dan mendiskusikan karya Watchdoc di balai desa, pos ronda, kampus, hingga warung kopi secara cuma-cuma. Dokumenter seperti Sexy Killers, Rayuan Pulau Palsu, hingga Dirty Vote menjadi manifestasi jurnalisme audio-visual paling radikal yang mengguncang panggung elektoral dan kesadaran lingkungan bangsa.',
       'Penghargaan bergengsi Ramon Magsaysay Award 2021 membuktikan bahwa karya yang berakar pada penderitaan rakyat kecil mampu berbicara di panggung dunia. Bagi Gen-Z yang mencari aksi nyata melawan krisis iklim dan oligarki, Dandhy mengajarkan bahwa integritas jurnalisme adalah komitmen tanpa kompromi untuk berdiri bersama mereka yang tertindas.'
     ],
@@ -307,8 +307,8 @@ const BATCH_1_PENJAGA_NALAR = [
       { year: '2020', title: 'Peluncuran Buku Menjadi Manusia Menjadi Hamba', description: 'Karya tulis monumental yang menjembatani spiritualitas tasawuf dan logika nalar kritis.', sort_order: 3 }
     ],
     works: [
-      { title: 'Kajian Ngaji Filsafat Seri 1–400+ (MJS Channel)', description: 'Arsip audio-visual terlengkap mengenai khazanah pemikiran filsafat barat, timur, dan Islam.', year: '2013–Sekarang', sort_order: 1 },
-      { title: 'Buku Filosof Juga Manusia & Menjadi Manusia Menjadi Hamba', description: 'Koleksi esai filsafat terapan yang membumikan konsep-konsep abstrak ke dalam etika kehidupan sehari-hari.', year: '2016–2020', sort_order: 2 }
+      { title: 'Kajian Ngaji Filsafat Seri 1, 400+ (MJS Channel)', description: 'Arsip audio-visual terlengkap mengenai khazanah pemikiran filsafat barat, timur, dan Islam.', year: '2013 - Sekarang', sort_order: 1 },
+      { title: 'Buku Filosof Juga Manusia & Menjadi Manusia Menjadi Hamba', description: 'Koleksi esai filsafat terapan yang membumikan konsep-konsep abstrak ke dalam etika kehidupan sehari-hari.', year: '2016 - 2020', sort_order: 2 }
     ],
     articles: [
       { title: 'Fahruddin Faiz: Mengurai Benang Kusut Pikiran Lewat Ngaji Filsafat', source: 'Kompaspedia', source_url: 'https://kompaspedia.kompas.id/baca/profil/tokoh/fahruddin-faiz', excerpt: 'Profil dedikasi akademisi UIN Sunan Kalijaga dalam merawat akal sehat pemuda lewat kajian filsafat masjid.', sort_order: 1 },
@@ -335,7 +335,7 @@ const BATCH_1_PENJAGA_NALAR = [
       website: 'https://jentera.ac.id'
     },
     bio_paragraphs: [
-      'Di depan majelis hakim Mahkamah Konstitusi dan di hadapan sorot kamera nasional, suara Bivitri Susanti terdengar tenang namun menusuk tepat ke jantung manipulasi regulasi. Tanpa berbelit-belit, ia membedah bagaimana sebuah undang-undang disahkan secara kilat tengah malam, mempopulerkan istilah "autocratic legalism"—situasi di mana penguasa menggunakan prosedur formal hukum justru untuk membunuh demokrasi dari dalam.',
+      'Di depan majelis hakim Mahkamah Konstitusi dan di hadapan sorot kamera nasional, suara Bivitri Susanti terdengar tenang namun menusuk tepat ke jantung manipulasi regulasi. Tanpa berbelit-belit, ia membedah bagaimana sebuah undang-undang disahkan secara kilat tengah malam, mempopulerkan istilah "autocratic legalism" - situasi di mana penguasa menggunakan prosedur formal hukum justru untuk membunuh demokrasi dari dalam.',
       'Sejak era Reformasi 1998, Bivitri menolak jalan nyaman menjadi pengacara korporasi demi mendirikan Pusat Studi Hukum dan Kebijakan Indonesia (PSHK). Kegelisahannya dipicu oleh kenyataan bahwa pembentukan undang-undang kerap dibajak oleh transaksi elite, sementara partisipasi warga hanya dijadikan stempel formalitas belaka.',
       'Melalui Sekolah Tinggi Hukum Indonesia (STHI) Jentera, Bivitri mendesain ulang kurikulum pendidikan hukum nasional agar mencetak sarjana yang berintegritas dan berpihak pada keadilan masyarakat sipil. Dedikasi advokasinya melahirkan konsep "Partisipasi Publik Bermakna" (meaningful participation) yang akhirnya diadopsi MK sebagai syarat wajib konstitusional pembentukan regulasi di tanah air.',
       'Bagi Gen-Z yang peduli pada masa depan supremasi hukum, keterlibatan Bivitri dalam film investigasi Dirty Vote dan berbagai uji materi undang-undang menjadi teladan nyata. Ia membuktikan bahwa seorang akademisi perempuan mampu menjadi benteng pertahanan moral konstitusi di tengah maraknya pelemahan institusi demokrasi.'
@@ -405,7 +405,7 @@ const BATCH_1_PENJAGA_NALAR = [
     ],
     works: [
       { title: 'Konsep Partisipasi Publik Bermakna (Meaningful Participation)', description: 'Kerangka yuridis yang mewajibkan negara mendengar, mempertimbangkan, dan memberi penjelasan atas masukan warga.', year: '2021', sort_order: 1 },
-      { title: 'Kajian Akademis Autocratic Legalism di Indonesia', description: 'Karya riset yang memetakan pola pelemahan institusi demokrasi melalui instrumen peraturan perundang-undangan.', year: '2020–2024', sort_order: 2 }
+      { title: 'Kajian Akademis Autocratic Legalism di Indonesia', description: 'Karya riset yang memetakan pola pelemahan institusi demokrasi melalui instrumen peraturan perundang-undangan.', year: '2020 - 2024', sort_order: 2 }
     ],
     articles: [
       { title: 'Bivitri Susanti dan Suara Kritisnya Mengawal Konstitusi', source: 'STHI Jentera Media', source_url: 'https://www.jentera.ac.id/publikasi/bivitri-susanti-dan-suara-kritisnya', excerpt: 'Rekam jejak konsistensi Bivitri Susanti menantang pelemahan demokrasi dan membela hak rakyat di MK.', sort_order: 1 },
@@ -498,10 +498,10 @@ const BATCH_1_PENJAGA_NALAR = [
     life_events: [
       { year: '2016', title: 'Mendirikan MAFINDO', description: 'Menggalang ribuan relawan di puluhan kota untuk menghentikan polarisasi fitnah digital di media sosial.', sort_order: 1 },
       { year: '2018', title: 'TurnBackHoax.id Tersertifikasi IFCN', description: 'Mendapat sertifikasi standar verifikasi internasional dari Poynter Institute.', sort_order: 2 },
-      { year: '2020–2024', title: 'Pengawalan Informasi Krisis & Pemilu', description: 'Memimpin satgas verifikasi informasi saintifik pada pandemi COVID-19 dan pemilu nasional.', sort_order: 3 }
+      { year: '2020 - 2024', title: 'Pengawalan Informasi Krisis & Pemilu', description: 'Memimpin satgas verifikasi informasi saintifik pada pandemi COVID-19 dan pemilu nasional.', sort_order: 3 }
     ],
     works: [
-      { title: 'Arsip Data Terbuka TurnBackHoax.id (2016–Sekarang)', description: 'Kompilasi repositori forensik digital terbesar di Indonesia untuk rujukan verifikasi kebenaran publik.', year: '2016–Sekarang', sort_order: 1 },
+      { title: 'Arsip Data Terbuka TurnBackHoax.id (2016 - Sekarang)', description: 'Kompilasi repositori forensik digital terbesar di Indonesia untuk rujukan verifikasi kebenaran publik.', year: '2016 - Sekarang', sort_order: 1 },
       { title: 'Modul Pelatihan Kebal Hoaks & Tular Nalar', description: 'Panduan metodologis berpikir skeptis-metodis yang diajarkan ke berbagai komunitas di nusantara.', year: '2020', sort_order: 2 }
     ],
     articles: [
@@ -514,7 +514,7 @@ const BATCH_1_PENJAGA_NALAR = [
   {
     slug: 'yanuar-nugroho',
     name: 'Yanuar Nugroho, Ph.D.',
-    title: 'Peneliti Kebijakan Publik, Koordinator Penasihat KSP (2015–2019) & Co-founder Nalar Institute',
+    title: 'Peneliti Kebijakan Publik, Koordinator Penasihat KSP (2015 - 2019) & Co-founder Nalar Institute',
     category: 'Penjaga Nalar',
     quote: 'Kebijakan publik tanpa data ilmiah adalah resep bencana; ia hanya akan melayani nafsu politik jangka pendek penguasa.',
     photo_url: 'https://nalarinstitute.com/wp-content/uploads/2025/04/Yanuar-Nugroho_lowres.png',
@@ -531,7 +531,7 @@ const BATCH_1_PENJAGA_NALAR = [
     bio_paragraphs: [
       'Di dalam lorong-lorong kekuasaan istana di mana keputusan bernilai triliunan rupiah kerap diambil berdasarkan bisikan politisi atau kalkulasi elektoral semata, Yanuar Nugroho berdiri membawa bundel analisis data kuantitatif dan bukti empiris lapangan. Ia adalah sosok birokrat-ilmuwan langka yang berani berkata lugas: "Jika tidak ada bukti ilmiah yang menjamin efektivitas program ini, kebijakan ini tidak boleh disahkan."',
       'Memiliki karier akademik mapan sebagai staf pengajar dan periset di University of Manchester Inggris, Yanuar memilih pulang ke tanah air. Ia terpanggil untuk mengabdikan keahliannya di Unit Kerja Presiden (UKP4) dan kemudian menjabat sebagai Deputi II Kepala Staf Kepresidenan (KSP) demi menanamkan tradisi pembuatan kebijakan berbasis bukti (evidence-based policy).',
-      'Yanuar membidani lahirnya inisiatif revolusioner "Satu Data Indonesia" dan sistem pemantauan proyek strategis yang transparan. Selepas mengabdi di birokrasi, ia mendirikan Nalar Institute—sebuah wadah think-tank independen yang menjembatani jurang pemisah antara komunitas saintis independen, masyarakat sipil, dan para pembuat keputusan publik.',
+      'Yanuar membidani lahirnya inisiatif revolusioner "Satu Data Indonesia" dan sistem pemantauan proyek strategis yang transparan. Selepas mengabdi di birokrasi, ia mendirikan Nalar Institute, sebuah wadah think-tank independen yang menjembatani jurang pemisah antara komunitas saintis independen, masyarakat sipil, dan para pembuat keputusan publik.',
       'Bagi Gen-Z yang haus akan perubahan substansial, Yanuar mengajarkan bahwa mengkritik negara tidak cukup hanya dengan kemarahan di linimasa. Kritik yang berdaya gentar harus ditopang oleh penguasaan data empiris, nalar teknokratis yang matang, dan rancang bangun solusi nyata yang dapat dieksekusi di lapangan.'
     ],
     gallery: [
@@ -593,13 +593,13 @@ const BATCH_1_PENJAGA_NALAR = [
       }
     ],
     life_events: [
-      { year: '2004–2012', title: 'Karier Akademik di Manchester University', description: 'Mengajar dan meneliti inovasi teknologi dan transformasi sosial di Inggris.', sort_order: 1 },
-      { year: '2015–2019', title: 'Deputi II Kepala Staf Kepresidenan RI', description: 'Memimpin pemantauan program strategis nasional dan meletakkan fondasi Satu Data Indonesia.', sort_order: 2 },
-      { year: '2020–Sekarang', title: 'Mendirikan Nalar Institute & Senior Fellow ISEAS', description: 'Membangun lembaga riset independen dan mengajar filsafat kebijakan di Driyarkara.', sort_order: 3 }
+      { year: '2004 - 2012', title: 'Karier Akademik di Manchester University', description: 'Mengajar dan meneliti inovasi teknologi dan transformasi sosial di Inggris.', sort_order: 1 },
+      { year: '2015 - 2019', title: 'Deputi II Kepala Staf Kepresidenan RI', description: 'Memimpin pemantauan program strategis nasional dan meletakkan fondasi Satu Data Indonesia.', sort_order: 2 },
+      { year: '2020 - Sekarang', title: 'Mendirikan Nalar Institute & Senior Fellow ISEAS', description: 'Membangun lembaga riset independen dan mengajar filsafat kebijakan di Driyarkara.', sort_order: 3 }
     ],
     works: [
       { title: 'Inisiasi Kebijakan Satu Data Indonesia (Perpres No. 39/2019)', description: 'Regulasi fundamental yang mewajibkan interoperabilitas data dalam setiap pengambilan keputusan negara.', year: '2019', sort_order: 1 },
-      { title: 'Buku & Publikasi Internasional Evidence-Based Policy Making', description: 'Kumpulan monograf riset mengenai peran sains dalam memandu tata kelola pemerintahan demokratis.', year: '2018–2024', sort_order: 2 }
+      { title: 'Buku & Publikasi Internasional Evidence-Based Policy Making', description: 'Kumpulan monograf riset mengenai peran sains dalam memandu tata kelola pemerintahan demokratis.', year: '2018 - 2024', sort_order: 2 }
     ],
     articles: [
       { title: 'Profil Yanuar Nugroho: Mengawal Nalar Saintifik di Jantung Kekuasaan', source: 'The Conversation Indonesia', source_url: 'https://theconversation.com/profiles/yanuar-nugroho-100234', excerpt: 'Ulasan dedikasi Yanuar Nugroho dalam menjembatani riset saintifik global dengan birokrasi Indonesia.', sort_order: 1 },
@@ -691,12 +691,12 @@ const BATCH_1_PENJAGA_NALAR = [
     ],
     life_events: [
       { year: '2016', title: 'Menerbitkan Buku Simulakra Sepakbola', description: 'Menghadirkan genre penulisan esai sepak bola berkedalaman filosofis dan kultural.', sort_order: 1 },
-      { year: '2016–2021', title: 'Pemimpin Redaksi Tirto.id', description: 'Membangun ekosistem media jurnalisme data presisi yang disegani di Indonesia.', sort_order: 2 },
-      { year: '2022–Sekarang', title: 'Penulis & Kurator Narasi Independen', description: 'Menulis esai-esai reflektif dan membimbing generasi baru pegiat literasi naratif.', sort_order: 3 }
+      { year: '2016 - 2021', title: 'Pemimpin Redaksi Tirto.id', description: 'Membangun ekosistem media jurnalisme data presisi yang disegani di Indonesia.', sort_order: 2 },
+      { year: '2022 - Sekarang', title: 'Penulis & Kurator Narasi Independen', description: 'Menulis esai-esai reflektif dan membimbing generasi baru pegiat literasi naratif.', sort_order: 3 }
     ],
     works: [
       { title: 'Buku Simulakra Sepakbola (2016)', description: 'Masterpiece penulisan esai naratif yang mengaitkan sepak bola dengan filsafat dan sejarah kebudayaan.', year: '2016', sort_order: 1 },
-      { title: 'Arsip Esai Jurnalisme Presisi & Kebudayaan', description: 'Ratusan esai panjang yang menjadi materi ajar jurnalisme naratif di berbagai universitas.', year: '2015–2024', sort_order: 2 }
+      { title: 'Arsip Esai Jurnalisme Presisi & Kebudayaan', description: 'Ratusan esai panjang yang menjadi materi ajar jurnalisme naratif di berbagai universitas.', year: '2015 - 2024', sort_order: 2 }
     ],
     articles: [
       { title: 'Sepak Bola dalam Perspektif Zen RS: Membaca Simulakra Sepakbola', source: 'Agung Wicaksono Reviews', source_url: 'https://www.agungwicaks.com/2025/01/membaca-simulakra-sepakbola.html', excerpt: 'Tinjauan mendalam atas teknik bercerita dan kepekaan sosial dalam karya esai Zen RS.', sort_order: 1 },
@@ -724,7 +724,7 @@ const BATCH_1_PENJAGA_NALAR = [
     },
     bio_paragraphs: [
       'Ketika para pejabat negara membanggakan maket gedung-gedung megah dan proyek infrastruktur mercusuar, seorang ilmuwan sosiologi di NTU Singapura membuka simulasi data kerentanan gempa, kenaikan permukaan air laut, dan kesiapan sistem evakuasi warga. Melalui kanal publik @sociotalker, Prof. Sulfikar Amir mengajukan pertanyaan paling mendasar: "Apakah pembangunan ini dirancang untuk melindungi keselamatan rakyat, atau sekadar monumen prestise politik?"',
-      'Sulfikar mendedikasikan riset akademisnya pada "Sosiologi Bencana"—disiplin ilmu yang membedah bagaimana keruntuhan teknologi selalu berakar pada kegagalan sistem sosial, korupsi birokrasi, dan ketidakadilan tata ruang. Karyanya "The Technological State in Indonesia" menjadi rujukan wajib dunia untuk memahami bagaimana kekuasaan menggunakan teknologi sebagai instrumen legitimasi politik.',
+      'Sulfikar mendedikasikan riset akademisnya pada "Sosiologi Bencana" - disiplin ilmu yang membedah bagaimana keruntuhan teknologi selalu berakar pada kegagalan sistem sosial, korupsi birokrasi, dan ketidakadilan tata ruang. Karyanya "The Technological State in Indonesia" menjadi rujukan wajib dunia untuk memahami bagaimana kekuasaan menggunakan teknologi sebagai instrumen legitimasi politik.',
       'Ia menolak berdiam diri di menara gading. Sulfikar secara konsisten turun ke linimasa media sosial, menerjemahkan data teknis transportasi massal perkotaan (MRT/LRT), analisis penanganan pandemi, hingga mitigasi risiko tata kota IKN ke dalam infografik yang jernih dan mudah dipahami publik awam.',
       'Bagi Gen-Z yang menghadapi masa depan di bawah ancaman nyata krisis iklim dan ancaman gempa megathrust, Sulfikar memberikan perangkat bernalar kritis: bagaimana menuntut hak atas kota yang aman, tangguh bencana, dan manusiawi untuk ditinggali.'
     ],
@@ -788,12 +788,12 @@ const BATCH_1_PENJAGA_NALAR = [
     ],
     life_events: [
       { year: '2012', title: 'Menerbitkan Buku The Technological State', description: 'Mendapat apresiasi luas atas kajian sosiologi teknologi di negara berkembang.', sort_order: 1 },
-      { year: '2020–2022', title: 'Advokasi Sains Publik Penanganan Pandemi', description: 'Mengedukasi masyarakat mengenai ventilasi udara, epidemiologi sosial, dan mitigasi berbasis data.', sort_order: 2 },
-      { year: '2023–Sekarang', title: 'Kritik Saintifik Tata Ruang & Keselamatan Megathrust', description: 'Memelopori diskursus ketahanan infrastruktur publik dan mitigasi bencana di Indonesia.', sort_order: 3 }
+      { year: '2020 - 2022', title: 'Advokasi Sains Publik Penanganan Pandemi', description: 'Mengedukasi masyarakat mengenai ventilasi udara, epidemiologi sosial, dan mitigasi berbasis data.', sort_order: 2 },
+      { year: '2023 - Sekarang', title: 'Kritik Saintifik Tata Ruang & Keselamatan Megathrust', description: 'Memelopori diskursus ketahanan infrastruktur publik dan mitigasi bencana di Indonesia.', sort_order: 3 }
     ],
     works: [
       { title: 'The Technological State in Indonesia (Routledge, 2012)', description: 'Buku fundamental mengenai dinamika politik sains dan teknologi pada era pembangunan nasional.', year: '2012', sort_order: 1 },
-      { title: 'Simulasi Pemodelan Resiliensi Sosial Bencana Fukushima & Indonesia', description: 'Kajian komparatif kesiapsiagaan darurat kebencanaan di kawasan rawan cincin api Pasifik.', year: '2018–2024', sort_order: 2 }
+      { title: 'Simulasi Pemodelan Resiliensi Sosial Bencana Fukushima & Indonesia', description: 'Kajian komparatif kesiapsiagaan darurat kebencanaan di kawasan rawan cincin api Pasifik.', year: '2018 - 2024', sort_order: 2 }
     ],
     articles: [
       { title: 'Sulfikar Amir: Mitigasi Bencana Erat Kaitannya dengan Kepentingan Publik', source: 'Universitas Airlangga News', source_url: 'https://unair.ac.id/sulfikar-amir-mitigasi-bencana-dan-kebijakan-publik/', excerpt: 'Analisis sosiologi mengenai urgensi menempatkan keselamatan nyawa warga di atas kalkulasi komersial.', sort_order: 1 },
@@ -821,7 +821,7 @@ const BATCH_1_PENJAGA_NALAR = [
     },
     bio_paragraphs: [
       'Menjelang perhelatan pemilu ketika linimasa media sosial dijejali oleh video joget politisi dan drama gimik personal yang dangkal, sebuah platform web minimalis mendadak viral di kalangan anak muda. Di balik layar, Abigail Limuria tersenyum lega: jutaan pemilih pemula akhirnya memiliki kompas rasional untuk membedah sikap partai politik bukan dari baliho jalanan, melainkan dari rekam jejak nyata atas isu krisis iklim, hak buruh, dan korupsi.',
-      'Abigail menolak pasrah pada apatisme politik generasi muda yang muak dengan polarisasi dan politik uang. Menggandeng think-tank Think Policy, ia menginisiasi "Bijak Memilih"—sebuah platform civic-tech independen yang menerjemahkan ratusan lembar dokumen visi-misi dan rekam jejak voting parlemen menjadi infografik interaktif yang renyah.',
+      'Abigail menolak pasrah pada apatisme politik generasi muda yang muak dengan polarisasi dan politik uang. Menggandeng think-tank Think Policy, ia menginisiasi "Bijak Memilih" - sebuah platform civic-tech independen yang menerjemahkan ratusan lembar dokumen visi-misi dan rekam jejak voting parlemen menjadi infografik interaktif yang renyah.',
       'Tanpa menerima dana dari paslon mana pun, platform ini murni membedah isu-isu substantif yang menyangkut hajat hidup rakyat. Kerja kolektif ini membuktikan bahwa anak muda tidak apatis terhadap politik ketika informasi disajikan secara objektif, transparan, dan relevan dengan realitas harian mereka.',
       'Melalui buku karyanya "Lalita: 51 Cerita Perempuan Hebat" dan berbagai gerakan kewargaan, Abigail membuktikan bahwa anak muda mampu menciptakan teknologi kewargaan yang menjaga marwah demokrasi dari pembodohan massal.'
     ],
@@ -886,10 +886,10 @@ const BATCH_1_PENJAGA_NALAR = [
     life_events: [
       { year: '2019', title: 'Menerbitkan Buku Lalita', description: 'Menggalang gerakan literasi perempuan hebat nusantara yang menjadi bacaan inspiratif anak muda.', sort_order: 1 },
       { year: '2023', title: 'Meluncurkan Platform Bijak Memilih', description: 'Membangun arsitektur informasi politik berbasis isu yang diakses jutaan anak muda.', sort_order: 2 },
-      { year: '2024–Sekarang', title: 'Advokasi Literasi Kebijakan Berkelanjutan', description: 'Memperluas cakupan civic-tech untuk mengawal kebijakan parlemen pascapemilu.', sort_order: 3 }
+      { year: '2024 - Sekarang', title: 'Advokasi Literasi Kebijakan Berkelanjutan', description: 'Memperluas cakupan civic-tech untuk mengawal kebijakan parlemen pascapemilu.', sort_order: 3 }
     ],
     works: [
-      { title: 'Platform Edukasi Politik BijakMemilih.id', description: 'Inovasi arsitektur data pemilu yang memecah isu rumit menjadi visualisasi perbandingan yang adil.', year: '2023–2024', sort_order: 1 },
+      { title: 'Platform Edukasi Politik BijakMemilih.id', description: 'Inovasi arsitektur data pemilu yang memecah isu rumit menjadi visualisasi perbandingan yang adil.', year: '2023 - 2024', sort_order: 1 },
       { title: 'Buku Lalita: 51 Cerita Perempuan Hebat di Indonesia', description: 'Dokumentasi biografi naratif mengenai kepemimpinan dan dedikasi perempuan nusantara.', year: '2019', sort_order: 2 }
     ],
     articles: [
@@ -981,13 +981,13 @@ const BATCH_1_PENJAGA_NALAR = [
       }
     ],
     life_events: [
-      { year: '1986–2015', title: 'Dosen Filsafat Universitas Indonesia', description: 'Mengajar epistemologi, etika politik, dan filsafat hukum di FIB UI.', sort_order: 1 },
+      { year: '1986 - 2015', title: 'Dosen Filsafat Universitas Indonesia', description: 'Mengajar epistemologi, etika politik, dan filsafat hukum di FIB UI.', sort_order: 1 },
       { year: '2005', title: 'Mendirikan Setara Institute', description: 'Bersama Gus Dur dan para pegiat mendirikan lembaga advokasi kesetaraan dan perdamaian.', sort_order: 2 },
-      { year: '2018–Sekarang', title: 'Menginisiasi Gerakan Diskursus Akal Sehat', description: 'Mengedukasi publik lintas generasi mengenai seni membongkar kesesatan berpikir kekuasaan.', sort_order: 3 }
+      { year: '2018 - Sekarang', title: 'Menginisiasi Gerakan Diskursus Akal Sehat', description: 'Mengedukasi publik lintas generasi mengenai seni membongkar kesesatan berpikir kekuasaan.', sort_order: 3 }
     ],
     works: [
       { title: 'Buku Obat Dungu Resep Akal Sehat (2020)', description: 'Kumpulan pemikiran filosofis mengenai keharusan merawat oposisi batin dan akal sehat bernegara.', year: '2020', sort_order: 1 },
-      { title: 'Riset Indeks Toleransi & Kebebasan Beragama (Setara Institute)', description: 'Laporan tahunan kondisi kebebasan sipil dan hak asasi manusia di seluruh kota di Indonesia.', year: '2007–2024', sort_order: 2 }
+      { title: 'Riset Indeks Toleransi & Kebebasan Beragama (Setara Institute)', description: 'Laporan tahunan kondisi kebebasan sipil dan hak asasi manusia di seluruh kota di Indonesia.', year: '2007 - 2024', sort_order: 2 }
     ],
     articles: [
       { title: 'Rocky Gerung: Filsafat Adalah Interupsi Terhadap Arogansi Kekuasaan', source: 'Jurnal Perempuan', source_url: 'https://www.jurnalperempuan.org/warta-feminis/rocky-gerung-filsafat-adalah-interupsi-terhadap-arogansi', excerpt: 'Wawancara mengenai bagaimana metode dialektika filsafat meruntuhkan kepalsuan dogmatisme.', sort_order: 1 },

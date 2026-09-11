@@ -268,7 +268,7 @@ export default function ArticleDetailPage() {
                 {articleData.quote}
               </blockquote>
               <span className="text-xs font-mono text-[#E11D48] font-bold block uppercase tracking-widest pt-2">
-                — {articleData.authorName}
+                {articleData.authorName}
               </span>
             </div>
           )}

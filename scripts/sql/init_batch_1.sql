@@ -4,7 +4,7 @@ SELECT p.id, 'Bijak Memilih (Platform Riset Politik Warga)', 'Civic-Tech & Data 
 FROM profiles_warga p WHERE p.slug = 'abigail-limuria';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
-SELECT p.id, 'Buku: Lalita (51 Cerita Perempuan Hebat Indonesia)', 'Karya Tulis & Literasi Gender', 'Buku antologi profil perempuan pelopor Nusantara lintas disiplin dari seni, sains, hingga aktivisme lingkungan hidup.', 'Rp 85.000 — Rp 185.000', 'Dukung Inisiatif', 'https://www.gramedia.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2
+SELECT p.id, 'Buku: Lalita (51 Cerita Perempuan Hebat Indonesia)', 'Karya Tulis & Literasi Gender', 'Buku antologi profil perempuan pelopor Nusantara lintas disiplin dari seni, sains, hingga aktivisme lingkungan hidup.', 'Rp 85.000 - Rp 185.000', 'Dukung Inisiatif', 'https://www.gramedia.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2
 FROM profiles_warga p WHERE p.slug = 'abigail-limuria';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
@@ -20,7 +20,7 @@ SELECT p.id, 'Watchdoc Documentary Maker', 'Koperasi Jurnalisme Investigasi Audi
 FROM profiles_warga p WHERE p.slug = 'dandhy-dwi-laksono';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
-SELECT p.id, 'Dokumenter: Sexy Killers', 'Film Investigasi Oligarki & Energi', 'Investigasi keterkaitan antara tambang batu bara di Kalimantan, PLTU di Pulau Jawa, dan gurita bisnis elit politik nasional.', 'Tiket Nonton / VOD Rp 45.000 — Rp 75.000', 'Dukung Inisiatif', 'https://youtube.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2
+SELECT p.id, 'Dokumenter: Sexy Killers', 'Film Investigasi Oligarki & Energi', 'Investigasi keterkaitan antara tambang batu bara di Kalimantan, PLTU di Pulau Jawa, dan gurita bisnis elit politik nasional.', 'Tiket Nonton / VOD Rp 45.000 - Rp 75.000', 'Dukung Inisiatif', 'https://youtube.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2
 FROM profiles_warga p WHERE p.slug = 'dandhy-dwi-laksono';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
@@ -28,7 +28,7 @@ SELECT p.id, 'Ngaji Filsafat Masjid Jendral Sudirman', 'Forum Literasi Intelektu
 FROM profiles_warga p WHERE p.slug = 'fahruddin-faiz';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
-SELECT p.id, 'Buku: Menjadi Manusia, Menata Jiwa', 'Karya Tulis & Filsafat Terapan', 'Buku panduan reflektif yang mengawinkan kebijaksanaan tasawuf dengan pemikiran kritis filsafat dalam menavigasi luka batin dan kegelisahan modern.', 'Rp 85.000 — Rp 185.000', 'Dukung Inisiatif', 'https://www.gramedia.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2
+SELECT p.id, 'Buku: Menjadi Manusia, Menata Jiwa', 'Karya Tulis & Filsafat Terapan', 'Buku panduan reflektif yang mengawinkan kebijaksanaan tasawuf dengan pemikiran kritis filsafat dalam menavigasi luka batin dan kegelisahan modern.', 'Rp 85.000 - Rp 185.000', 'Dukung Inisiatif', 'https://www.gramedia.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2
 FROM profiles_warga p WHERE p.slug = 'fahruddin-faiz';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
@@ -48,7 +48,7 @@ SELECT p.id, 'Inisiatif Satu Data Indonesia', 'Arsitektur Data Nasional', 'Keran
 FROM profiles_warga p WHERE p.slug = 'yanuar-nugroho';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
-SELECT p.id, 'Buku: The Technological State in Indonesia', 'Monograf Sosiologi Teknologi & Sejarah', 'Karya akademik prestisius yang mengupas sejarah rezim teknonasionallisme Indonesia dan dinamika industri strategis bangsa.', 'Rp 85.000 — Rp 185.000', 'Dukung Inisiatif', 'https://routledge.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1
+SELECT p.id, 'Buku: The Technological State in Indonesia', 'Monograf Sosiologi Teknologi & Sejarah', 'Karya akademik prestisius yang mengupas sejarah rezim teknonasionallisme Indonesia dan dinamika industri strategis bangsa.', 'Rp 85.000 - Rp 185.000', 'Dukung Inisiatif', 'https://routledge.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1
 FROM profiles_warga p WHERE p.slug = 'sulfikar-amir';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
@@ -56,11 +56,11 @@ SELECT p.id, 'Simulasi Ketahanan Urban & Pandemi (NTU Lab)', 'Riset Sains Komput
 FROM profiles_warga p WHERE p.slug = 'sulfikar-amir';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
-SELECT p.id, 'Buku: Simpul Bahasa Sepak Bola', 'Karya Esai Sosiologi & Sastra Olahraga', 'Kumpulan esai masterclass yang membedah taktik sepak bola dunia melalui lensa filsafat, sejarah perang, dan kebudayaan.', 'Rp 85.000 — Rp 185.000', 'Dukung Inisiatif', 'https://www.gramedia.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1
+SELECT p.id, 'Buku: Simpul Bahasa Sepak Bola', 'Karya Esai Sosiologi & Sastra Olahraga', 'Kumpulan esai masterclass yang membedah taktik sepak bola dunia melalui lensa filsafat, sejarah perang, dan kebudayaan.', 'Rp 85.000 - Rp 185.000', 'Dukung Inisiatif', 'https://www.gramedia.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1
 FROM profiles_warga p WHERE p.slug = 'zen-rs';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
-SELECT p.id, 'Buku: Jiwa yang Patah (Antologi Esai)', 'Karya Tulis Humaniora & Refleksi', 'Pembedahan mendalam tentang kesepian, luka sejarah bangsa, dan pencarian martabat manusia di tengah modernitas.', 'Rp 85.000 — Rp 185.000', 'Dukung Inisiatif', 'https://www.gramedia.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2
+SELECT p.id, 'Buku: Jiwa yang Patah (Antologi Esai)', 'Karya Tulis Humaniora & Refleksi', 'Pembedahan mendalam tentang kesepian, luka sejarah bangsa, dan pencarian martabat manusia di tengah modernitas.', 'Rp 85.000 - Rp 185.000', 'Dukung Inisiatif', 'https://www.gramedia.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2
 FROM profiles_warga p WHERE p.slug = 'zen-rs';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
@@ -76,7 +76,7 @@ SELECT p.id, 'Rocky Gerung Official (Mimbar Oposisi Akal Sehat)', 'Kanal Pendidi
 FROM profiles_warga p WHERE p.slug = 'rocky-gerung';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
-SELECT p.id, 'Buku & Esai Filsafat Politik Indonesia', 'Karya Akademik & Kritik Demokrasi', 'Kumpulan tulisan akademik tentang hak asasi manusia, kebebasan berekspresi, dan etika lingkungan hidup.', 'Rp 85.000 — Rp 185.000', 'Dukung Inisiatif', 'https://www.gramedia.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2
+SELECT p.id, 'Buku & Esai Filsafat Politik Indonesia', 'Karya Akademik & Kritik Demokrasi', 'Kumpulan tulisan akademik tentang hak asasi manusia, kebebasan berekspresi, dan etika lingkungan hidup.', 'Rp 85.000 - Rp 185.000', 'Dukung Inisiatif', 'https://www.gramedia.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2
 FROM profiles_warga p WHERE p.slug = 'rocky-gerung';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
@@ -92,7 +92,7 @@ SELECT p.id, 'Waste4Change (Sistem Pengelolaan Sampah Holistik)', 'Inovasi Manaj
 FROM profiles_warga p WHERE p.slug = 'm-bijaksana-junerosano';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
-SELECT p.id, 'Greeneration Foundation', 'Yayasan Edukasi Perilaku Hijau', 'Organisasi nirlaba penggerak kampanye diet kantong plastik dan edukasi gaya hidup minim sampah di seluruh Indonesia.', 'Rp 199.000 — Rp 1.450.000 / paket', 'Dukung Inisiatif', 'https://greeneration.org', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2
+SELECT p.id, 'Greeneration Foundation', 'Yayasan Edukasi Perilaku Hijau', 'Organisasi nirlaba penggerak kampanye diet kantong plastik dan edukasi gaya hidup minim sampah di seluruh Indonesia.', 'Rp 199.000 - Rp 1.450.000 / paket', 'Dukung Inisiatif', 'https://greeneration.org', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2
 FROM profiles_warga p WHERE p.slug = 'm-bijaksana-junerosano';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
@@ -128,7 +128,7 @@ SELECT p.id, 'Indonesia Youth Marine Debris Summit (IYMDS)', 'Konferensi Kepemim
 FROM profiles_warga p WHERE p.slug = 'swietenia-puspa-lestari';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
-SELECT p.id, 'Evoware Seaweed Packaging (Kemasan Dapat Dimakan)', 'Inovasi Deep-Tech Material Sirkular', 'Kemasan alternatif pembungkus bumbu mi instan, burger, dan kopi yang larut dalam air dan ramah lingkungan.', 'Rp 25.000 — Rp 120.000', 'Dukung Inisiatif', 'https://evoware.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1
+SELECT p.id, 'Evoware Seaweed Packaging (Kemasan Dapat Dimakan)', 'Inovasi Deep-Tech Material Sirkular', 'Kemasan alternatif pembungkus bumbu mi instan, burger, dan kopi yang larut dalam air dan ramah lingkungan.', 'Rp 25.000 - Rp 120.000', 'Dukung Inisiatif', 'https://evoware.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1
 FROM profiles_warga p WHERE p.slug = 'david-christian';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
@@ -136,7 +136,7 @@ SELECT p.id, 'Evoworld & Gerakan #RethinkPlastic', 'Platform Produk Ramah Lingku
 FROM profiles_warga p WHERE p.slug = 'david-christian';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
-SELECT p.id, 'CV Majestic Buana Group (Pabrik Daur Ulang Plastik)', 'Manufaktur Sirkular & Pengolahan Biji Plastik', 'Sentra pengolahan sampah plastik skala industri yang mengolah ribuan ton limbah botol PET dan plastik keras setiap bulannya.', 'Rp 18.000 — Rp 85.000 / kg', 'Dukung Inisiatif', 'https://sektorlokal.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1
+SELECT p.id, 'CV Majestic Buana Group (Pabrik Daur Ulang Plastik)', 'Manufaktur Sirkular & Pengolahan Biji Plastik', 'Sentra pengolahan sampah plastik skala industri yang mengolah ribuan ton limbah botol PET dan plastik keras setiap bulannya.', 'Rp 18.000 - Rp 85.000 / kg', 'Dukung Inisiatif', 'https://sektorlokal.id', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1
 FROM profiles_warga p WHERE p.slug = 'mohammad-baedowy';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
@@ -144,19 +144,19 @@ SELECT p.id, 'Rancang Bangun Mesin Pencacah Plastik Komunal Baedowy', 'Rekayasa 
 FROM profiles_warga p WHERE p.slug = 'mohammad-baedowy';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
-SELECT p.id, 'Diskografi Navicula (Album Perlawanan Ekologis)', 'Karya Musik Grunge & Lirik Kritis', 'Koleksi album musik independen berdaya dobrak sosial yang mengampanyekan penyelamatan hutan hujan dan keadilan hukum.', 'Rp 350.000 — Rp 650.000', 'Dukung Inisiatif', 'https://naviculamusic.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1
+SELECT p.id, 'Diskografi Navicula (Album Perlawanan Ekologis)', 'Karya Musik Grunge & Lirik Kritis', 'Koleksi album musik independen berdaya dobrak sosial yang mengampanyekan penyelamatan hutan hujan dan keadilan hukum.', 'Rp 350.000 - Rp 650.000', 'Dukung Inisiatif', 'https://naviculamusic.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1
 FROM profiles_warga p WHERE p.slug = 'i-gede-robi-supriyanto';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
-SELECT p.id, 'Film Dokumenter Bioskop: Pulau Plastik', 'Film Investigasi Sains Lingkungan', 'Dokumenter layar lebar yang mengungkap anatomi polusi plastik sekali pakai, impor limbah, dan kontaminasi mikroplastik pada tubuh manusia.', 'Tiket Nonton / VOD Rp 45.000 — Rp 75.000', 'Dukung Inisiatif', 'https://pulauplastik.org', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2
+SELECT p.id, 'Film Dokumenter Bioskop: Pulau Plastik', 'Film Investigasi Sains Lingkungan', 'Dokumenter layar lebar yang mengungkap anatomi polusi plastik sekali pakai, impor limbah, dan kontaminasi mikroplastik pada tubuh manusia.', 'Tiket Nonton / VOD Rp 45.000 - Rp 75.000', 'Dukung Inisiatif', 'https://pulauplastik.org', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2
 FROM profiles_warga p WHERE p.slug = 'i-gede-robi-supriyanto';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
-SELECT p.id, 'Patroli Udara & Konservasi Rimba Dulan (Yayasan Kalaweit)', 'Pemantauan Satwa Udara & Perlindungan Kanopi', 'Operasi pemantauan deforestasi udara menggunakan paramotor dan perlindungan cagar alam satwa owa di pedalaman Kalimantan Tengah.', 'Rp 150.000 — Rp 450.000 / tiket', 'Dukung Inisiatif', 'https://kalaweit.org', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1
+SELECT p.id, 'Patroli Udara & Konservasi Rimba Dulan (Yayasan Kalaweit)', 'Pemantauan Satwa Udara & Perlindungan Kanopi', 'Operasi pemantauan deforestasi udara menggunakan paramotor dan perlindungan cagar alam satwa owa di pedalaman Kalimantan Tengah.', 'Rp 150.000 - Rp 450.000 / tiket', 'Dukung Inisiatif', 'https://kalaweit.org', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 1
 FROM profiles_warga p WHERE p.slug = 'andrew-kalaweit';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)
-SELECT p.id, 'Kanal Dokumenter Alam Rimba Andrew Kalaweit', 'Karya Audio-Visual & Pendidikan Konservasi', 'Rangkaian video esai dokumenter kehidupan liar hutan hujan tropis yang telah ditonton puluhan juta kali oleh generasi muda dunia.', 'Tiket Nonton / VOD Rp 45.000 — Rp 75.000', 'Dukung Inisiatif', 'https://youtube.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2
+SELECT p.id, 'Kanal Dokumenter Alam Rimba Andrew Kalaweit', 'Karya Audio-Visual & Pendidikan Konservasi', 'Rangkaian video esai dokumenter kehidupan liar hutan hujan tropis yang telah ditonton puluhan juta kali oleh generasi muda dunia.', 'Tiket Nonton / VOD Rp 45.000 - Rp 75.000', 'Dukung Inisiatif', 'https://youtube.com', 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', 2
 FROM profiles_warga p WHERE p.slug = 'andrew-kalaweit';
 
 INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)

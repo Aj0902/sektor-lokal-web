@@ -10,7 +10,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://sektorlokal.id'),
   title: {
-    default: 'Sektor Lokal — Manifestasi Jiwa Raga Bangsa dari Sebutan Lokal',
+    default: 'Sektor Lokal | Manifestasi Jiwa Raga Bangsa dari Sebutan Lokal',
     template: '%s | Sektor Lokal'
   },
   description: 'Zona kurasi dan ekosistem independen yang menyatukan karya, cerita, pemikiran, dan manusia Indonesia. Menjaga akal sehat, kedaulatan tanah air, dan martabat peradaban lokal.',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     canonical: 'https://sektorlokal.id'
   },
   openGraph: {
-    title: 'Sektor Lokal — Manifestasi Jiwa Raga Bangsa dari Sebutan Lokal',
+    title: 'Sektor Lokal | Manifestasi Jiwa Raga Bangsa dari Sebutan Lokal',
     description: 'Zona kurasi dan ekosistem independen yang menyatukan karya, cerita, pemikiran, dan manusia Indonesia.',
     url: 'https://sektorlokal.id',
     siteName: 'Sektor Lokal',
@@ -42,13 +42,13 @@ export const metadata: Metadata = {
         url: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80',
         width: 1200,
         height: 630,
-        alt: 'Sektor Lokal — Kanon Kurasi Warga Nusantara'
+        alt: 'Sektor Lokal | Kanon Kurasi Warga Nusantara'
       }
     ]
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Sektor Lokal — Manifestasi Jiwa Raga Bangsa dari Sebutan Lokal',
+    title: 'Sektor Lokal | Manifestasi Jiwa Raga Bangsa dari Sebutan Lokal',
     description: 'Zona kurasi dan ekosistem independen yang menyatukan karya, cerita, pemikiran, dan manusia Indonesia.',
     creator: '@sektorlokal',
     images: ['https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80']

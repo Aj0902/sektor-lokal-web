@@ -212,7 +212,7 @@ function pickCleanAvatarAndGallery(images, defaultName) {
   cleanList.forEach((img) => {
     if (!pickedUrls.has(img.imageUrl) && gallery.length < 4) {
       pickedUrls.add(img.imageUrl);
-      let t = (img.title || `${defaultName} Dokumentasi`).split(/[-–|]/)[0].substring(0, 60).trim();
+      let t = (img.title || `${defaultName} Dokumentasi`).split(/[- - |]/)[0].substring(0, 60).trim();
       gallery.push({
         title: t || `Dokumentasi Resmi ${defaultName} #${gallery.length + 1}`,
         image_url: img.imageUrl,
@@ -226,7 +226,7 @@ function pickCleanAvatarAndGallery(images, defaultName) {
     images.forEach(img => {
       if (img.imageUrl && !pickedUrls.has(img.imageUrl) && gallery.length < 3) {
         pickedUrls.add(img.imageUrl);
-        let t = (img.title || `${defaultName} Dokumentasi`).split(/[-–|]/)[0].substring(0, 60).trim();
+        let t = (img.title || `${defaultName} Dokumentasi`).split(/[- - |]/)[0].substring(0, 60).trim();
         gallery.push({
           title: t || `Dokumentasi Arsip ${defaultName} #${gallery.length + 1}`,
           image_url: img.imageUrl,
@@ -322,7 +322,7 @@ function parseDossierFiles(laciDir, slug, name) {
   });
 
   // 4. Career lines
-  const careerLines = fullText.match(/-\s*([^\n]+(?:\(\d{4}[^)]*\)|\d{4}\s*[-–]\s*(?:\d{4}|sekarang)))/gi) || [];
+  const careerLines = fullText.match(/-\s*([^\n]+(?:\(\d{4}[^)]*\)|\d{4}\s*[- - ]\s*(?:\d{4}|sekarang)))/gi) || [];
   careerLines.forEach(l => {
     const clean = l.replace(/^-\s*/, '').replace(/[*_]/g, '').trim();
     if (clean.length > 10 && !result.career.includes(clean)) result.career.push(clean);
@@ -359,15 +359,15 @@ function buildSharpLifeEvents(parsed, raw) {
     if (yrMatch) eduYear = yrMatch[1];
     events.push({
       year_range: eduYear,
-      title: eduItem.split(/[,–-]/)[0].substring(0, 50).trim() || 'Pendidikan & Formasi Kompetensi',
+      title: eduItem.split(/[, - -]/)[0].substring(0, 50).trim() || 'Pendidikan & Formasi Kompetensi',
       description: `Menempuh dan menyelesaikan fondasi keahlian di bidangnya: ${eduItem}.`,
       order_index: 1
     });
   } else if (parsed.career[0]) {
-    const yrMatch = parsed.career[0].match(/\b(19\d{2}|20\d{2}(?:[-–](?:20\d{2}|sekarang))?)\b/);
+    const yrMatch = parsed.career[0].match(/\b(19\d{2}|20\d{2}(?:[- - ](?:20\d{2}|sekarang))?)\b/);
     events.push({
       year_range: yrMatch ? yrMatch[1] : 'Fase Perintisan',
-      title: parsed.career[0].split(/[\(–-]/)[0].substring(0, 50).trim(),
+      title: parsed.career[0].split(/[\( - -]/)[0].substring(0, 50).trim(),
       description: `Merintis langkah awal pengabdian profesional dan gerakan masyarakat: ${parsed.career[0]}.`,
       order_index: 1
     });
@@ -383,10 +383,10 @@ function buildSharpLifeEvents(parsed, raw) {
   // Tonggak 2: Inisiasi Gerakan / Panggilan Karya Utama
   let careerItem = parsed.career.find(c => c !== parsed.career[0]) || parsed.career[1] || '';
   if (careerItem) {
-    const yrMatch = careerItem.match(/\b(19\d{2}|20\d{2}(?:[-–](?:20\d{2}|sekarang))?)\b/);
+    const yrMatch = careerItem.match(/\b(19\d{2}|20\d{2}(?:[- - ](?:20\d{2}|sekarang))?)\b/);
     events.push({
       year_range: yrMatch ? yrMatch[1] : 'Fase Gerakan',
-      title: careerItem.split(/[\(–-]/)[0].substring(0, 50).trim(),
+      title: careerItem.split(/[\( - -]/)[0].substring(0, 50).trim(),
       description: `Mendirikan instrumen advokasi, ekosistem mandiri, dan memimpin karya inovatif: ${careerItem}.`,
       order_index: 2
     });
@@ -405,16 +405,16 @@ function buildSharpLifeEvents(parsed, raw) {
     const yrMatch = awardItem.match(/\b(20\d{2})\b/);
     events.push({
       year_range: yrMatch ? yrMatch[1] : 'Era Sekarang',
-      title: awardItem.split(/[-–\(]/)[0].substring(0, 50).trim(),
+      title: awardItem.split(/[- - \(]/)[0].substring(0, 50).trim(),
       description: `Mendapatkan rekognisi terhormat atas konsistensi kontribusi dan dampak bagi bangsa: ${awardItem}.`,
       order_index: 3
     });
   } else if (parsed.career.length >= 3) {
     const lastCareer = parsed.career[parsed.career.length - 1];
-    const yrMatch = lastCareer.match(/\b(19\d{2}|20\d{2}(?:[-–](?:20\d{2}|sekarang))?)\b/);
+    const yrMatch = lastCareer.match(/\b(19\d{2}|20\d{2}(?:[- - ](?:20\d{2}|sekarang))?)\b/);
     events.push({
       year_range: yrMatch ? yrMatch[1] : 'Konsolidasi',
-      title: lastCareer.split(/[\(–-]/)[0].substring(0, 50).trim(),
+      title: lastCareer.split(/[\( - -]/)[0].substring(0, 50).trim(),
       description: `Konsisten memperluas jangkauan pembinaan dan kepemimpinan gerakan di tingkat nasional dan dunia: ${lastCareer}.`,
       order_index: 3
     });
@@ -460,7 +460,7 @@ function buildCuratedInitiatives(parsed, raw, harvestProducts, photos) {
   // 2. Dari awards/karya unggulan
   if (parsed.awards && parsed.awards.length > 0) {
     parsed.awards.forEach(aw => {
-      let t = aw.split(/[-–\(]/)[0].substring(0, 45).trim();
+      let t = aw.split(/[- - \(]/)[0].substring(0, 45).trim();
       if (initiatives.length < 3 && !usedTitles.has(t.toLowerCase())) {
         usedTitles.add(t.toLowerCase());
         const imgUrl = (photos && photos[initiatives.length]) ? photos[initiatives.length].image_url : (raw.photo_url || 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=800&q=80');

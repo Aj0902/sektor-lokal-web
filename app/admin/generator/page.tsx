@@ -516,7 +516,7 @@ export default function GeneratorAdminPage() {
                       <span className="text-[#E11D48] font-bold">Agen Aktif:</span>
                       <span className="text-inherit">{item.current_agent || 'Menunggu giliran'}</span>
                       {item.log_message && (
-                        <span className="text-gray-500 italic hidden md:inline">— {item.log_message}</span>
+                        <span className="text-gray-500 italic hidden md:inline">({item.log_message})</span>
                       )}
                     </div>
 
