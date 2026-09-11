@@ -25,14 +25,14 @@ export default function ManifestoPage() {
             <h1 className="text-5xl sm:text-7xl font-display uppercase tracking-tight leading-[0.9]">
               Manifesto <br/> Jiwa Raga Bangsa
             </h1>
-            <p className="font-editorial italic text-2xl text-[#E11D48]">
-              "Lokal bukan batas. Lokal adalah akar."
+            <p className="font-editorial italic text-2xl text-[#E11D48] descender-safe">
+              &ldquo;Lokal bukan batas. Lokal adalah akar.&rdquo;
             </p>
           </header>
 
           <section className="relative pl-12 sm:pl-20 max-w-3xl border-l-2 border-[#E11D48]">
-            <div className="absolute top-0 left-0 -ml-[0.4rem] text-6xl text-[#E11D48] font-editorial leading-none">"</div>
-            <p className="text-xl sm:text-3xl font-editorial italic leading-relaxed">
+            <div className="absolute top-0 left-0 -ml-[0.4rem] text-6xl text-[#E11D48] font-editorial leading-none">&ldquo;</div>
+            <p className="text-xl sm:text-3xl font-editorial italic leading-relaxed descender-safe">
               Terlalu sibuk melihat yang datang dari luar sampai lupa melihat apa yang tumbuh dari tanah sendiri. Sektor Lokal hadir sebagai ruang untuk menemukan kembali manusia, karya, dan ide yang lahir, tumbuh, bergerak, dan berakar di Indonesia.
             </p>
           </section>

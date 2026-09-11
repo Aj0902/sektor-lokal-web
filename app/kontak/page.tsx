@@ -46,7 +46,7 @@ export default function KontakPage() {
                   <button
                     key={ch.id}
                     onClick={() => { setChannelType(ch.id); setIsSuccess(false); }}
-                    className={`text-left p-4 border ${channelType === ch.id ? 'border-[#E11D48] text-[#E11D48] font-bold' : `${borderClass} opacity-60 hover:opacity-100`} text-sm font-mono uppercase tracking-wider transition-colors`}
+                    className={`text-left p-4 border ${channelType === ch.id ? 'border-[#E11D48] text-[#E11D48] font-bold' : `${borderClass} opacity-60 hover:opacity-100`} text-sm font-mono uppercase tracking-wider transition-colors tactile-btn`}
                   >
                     {ch.title}
                   </button>
@@ -67,8 +67,8 @@ export default function KontakPage() {
               <div className={`p-12 border ${borderClass} text-center space-y-6`}>
                 <CheckCircle2 className="w-12 h-12 text-[#E11D48] mx-auto" />
                 <h2 className="font-display text-3xl uppercase">Pesan Diterima</h2>
-                <p className="font-editorial text-lg italic text-current/70">Terima kasih atas kontribusi Anda. Redaksi akan meninjau pesan secara cermat.</p>
-                <button onClick={() => setIsSuccess(false)} className="text-[#E11D48] font-mono text-xs uppercase font-bold underline">Kirim pesan lain</button>
+                <p className="font-editorial text-lg italic text-current/70 descender-safe">Terima kasih atas kontribusi Anda. Redaksi akan meninjau pesan secara cermat.</p>
+                <button onClick={() => setIsSuccess(false)} className="text-[#E11D48] font-mono text-xs uppercase font-bold underline tactile-btn">Kirim pesan lain</button>
               </div>
             ) : (
               <form onSubmit={(e) => { e.preventDefault(); setIsSuccess(true); }} className="space-y-6">
@@ -93,7 +93,7 @@ export default function KontakPage() {
                   <textarea rows={6} required className={`w-full p-4 border rounded-none focus:outline-none focus:border-[#E11D48] ${inputClass}`}></textarea>
                 </div>
 
-                <button type="submit" className="px-8 py-4 bg-[#E11D48] text-white font-mono text-xs font-bold uppercase hover:bg-[#BE123C] transition-colors flex items-center gap-2">
+                <button type="submit" className="px-8 py-4 bg-[#E11D48] text-white font-mono text-xs font-bold uppercase hover:bg-[#BE123C] transition-colors flex items-center gap-2 tactile-btn">
                   Kirim Pesan <ArrowRight className="w-4 h-4" />
                 </button>
               </form>

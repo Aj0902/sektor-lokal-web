@@ -1,11 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,400..800;1,400..800&family=JetBrains+Mono:wght@400;500;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  color-scheme: light;
+  color-scheme: light dark;
+  --font-display: 'Anton', 'Impact', sans-serif;
+  --font-editorial: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
 }
 
 html {
@@ -14,55 +18,43 @@ html {
 
 body {
   overflow-x: hidden;
-  transition: background-color 0.4s cubic-bezier(0.16, 1, 0.3, 1), color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  font-family: var(--font-sans);
+  transition: background-color 0.3s cubic-bezier(0.16, 1, 0.3, 1), color 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 /* ═══════════════════════════════════════════════════
-   BOLD MINIMALISM MAGAZINE — DESIGN SYSTEM
+   ANTI-SLOP EDITORIAL DESIGN SYSTEM — SEKTOR LOKAL
    ═══════════════════════════════════════════════════ */
 
-/* Obsidian Dark Foundation — Clean, no particle noise */
+/* Locked Color Palette Foundations */
 .magazine-dark {
   background-color: #07090E;
   color: #F5EFEB;
 }
 
-/* Ivory Light Foundation — Clean editorial white */
 .magazine-light {
   background-color: #F8F5EE;
   color: #0A0E1A;
 }
 
-/* Crimson Full-Width Block */
 .magazine-crimson {
   background-color: #E11D48;
   color: #FFFFFF;
 }
 
-/* Split Hero: 50/50 Color Blocking */
-.magazine-split-hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  min-height: 100vh;
-  position: relative;
-  overflow: hidden;
+/* High-Performance Noise Texture Overlay */
+.bg-noise {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.035'/%3E%3C/svg%3E");
 }
 
-@media (max-width: 768px) {
-  .magazine-split-hero {
-    grid-template-columns: 1fr;
-    min-height: auto;
-  }
-}
-
-/* Watermark Typography — Giant background text */
+/* Watermark Typography — Scaled Archival Display */
 .watermark-text {
-  font-family: 'Anton', 'Impact', sans-serif;
+  font-family: var(--font-display);
   text-transform: uppercase;
   position: absolute;
-  font-size: clamp(6rem, 18vw, 20rem);
+  font-size: clamp(6rem, 16vw, 18rem);
   line-height: 0.85;
-  opacity: 0.06;
+  opacity: 0.04;
   pointer-events: none;
   user-select: none;
   white-space: nowrap;
@@ -77,42 +69,41 @@ body {
   color: #07090E;
 }
 
-/* Vertical Gutter Text (Side Labels) */
+/* Vertical Gutter Telemetry Text */
 .vertical-text {
   writing-mode: vertical-rl;
   text-orientation: mixed;
   white-space: nowrap;
-  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  font-family: var(--font-mono);
   font-size: 0.65rem;
   letter-spacing: 0.25em;
   text-transform: uppercase;
   font-weight: 700;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
-/* Dot Matrix Pattern (Geometric Texture) */
-.dot-matrix {
-  background-image: radial-gradient(circle, currentColor 0.8px, transparent 0.8px);
-  background-size: 16px 16px;
-  opacity: 0.08;
+/* Italic Descender Safe Clearance */
+.descender-safe {
+  line-height: 1.15 !important;
+  padding-bottom: 0.15em;
 }
 
-/* Deep Crimson Luminous Glow Effects */
-.crimson-glow {
-  box-shadow: 0 0 25px rgba(225, 29, 72, 0.45);
+/* Tactile Interactive States */
+.tactile-btn {
+  transition: transform 0.15s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.2s ease, border-color 0.2s ease;
 }
 
-.crimson-glow-lg {
-  box-shadow: 0 0 45px rgba(225, 29, 72, 0.65);
+.tactile-btn:hover {
+  transform: translateY(-1px);
 }
 
-.crimson-text-glow {
-  text-shadow: 0 0 20px rgba(225, 29, 72, 0.5);
+.tactile-btn:active {
+  transform: scale(0.98);
 }
 
 /* Custom Minimalist Scrollbar */
 ::-webkit-scrollbar {
-  width: 4px;
+  width: 5px;
 }
 ::-webkit-scrollbar-track {
   background: transparent;
@@ -122,26 +113,24 @@ body {
   border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(225, 29, 72, 0.7);
+  background: rgba(225, 29, 72, 0.8);
 }
 
-/* Refined Deep Crimson Accent Bar */
+/* Editorial Dividers & Accents */
 .refined-accent-bar {
   width: 4px;
   background: #E11D48;
   border-radius: 2px;
 }
 
-/* Magazine Divider — Thin red line */
 .magazine-divider {
   height: 1px;
-  background: linear-gradient(90deg, transparent, #E11D48, transparent);
-  opacity: 0.4;
+  background: linear-gradient(90deg, transparent, rgba(225, 29, 72, 0.4), transparent);
 }
 
 /* Editorial Quote Mark */
 .editorial-quote-mark {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: var(--font-editorial);
   font-size: clamp(4rem, 8vw, 10rem);
   line-height: 1;
   color: #E11D48;
@@ -149,78 +138,64 @@ body {
   font-weight: 900;
 }
 
-/* Magazine Card — Clean elevation without glass noise */
+/* Magazine Archival Cards */
 .magazine-card-dark {
   background: #0E131F;
-  border: 1px solid rgba(245, 239, 235, 0.06);
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid rgba(245, 239, 235, 0.08);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .magazine-card-dark:hover {
-  border-color: rgba(225, 29, 72, 0.4);
+  border-color: rgba(225, 29, 72, 0.5);
   transform: translateY(-2px);
 }
 
 .magazine-card-light {
   background: #FFFFFF;
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .magazine-card-light:hover {
-  border-color: rgba(225, 29, 72, 0.4);
+  border-color: rgba(225, 29, 72, 0.5);
   transform: translateY(-2px);
 }
 
-/* B&W Portrait Filter */
+/* Black & White Tactile Portrait */
 .portrait-bw {
-  filter: grayscale(100%) contrast(1.2);
-  transition: filter 0.5s ease;
+  filter: grayscale(100%) contrast(1.15);
+  transition: filter 0.4s ease, transform 0.4s ease;
 }
 
 .portrait-bw:hover {
-  filter: grayscale(70%) contrast(1.1);
+  filter: grayscale(30%) contrast(1.05);
 }
 
-/* Legacy compat aliases (used by existing pages not yet migrated) */
-.particle-wave-dark {
-  background-color: #07090E;
+/* Archival Telemetry Dot Grid */
+.telemetry-grid {
+  background-image: radial-gradient(circle, currentColor 0.75px, transparent 0.75px);
+  background-size: 20px 20px;
+  opacity: 0.06;
 }
 
-.particle-wave-light {
-  background-color: #F8F5EE;
-}
-
+/* Legacy compat aliases */
+.particle-wave-dark { background-color: #07090E; }
+.particle-wave-light { background-color: #F8F5EE; }
 .spotlight-card-dark {
-  background: rgba(14, 19, 31, 0.8);
-  backdrop-filter: blur(14px);
-  border: 1px solid rgba(245, 239, 235, 0.07);
-  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  background: #0E131F;
+  border: 1px solid rgba(245, 239, 235, 0.08);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
-
 .spotlight-card-dark:hover {
-  border-color: rgba(225, 29, 72, 0.55);
-  box-shadow: 0 20px 45px -15px rgba(225, 29, 72, 0.22), 0 0 20px rgba(225, 29, 72, 0.15);
+  border-color: rgba(225, 29, 72, 0.5);
   transform: translateY(-2px);
 }
-
 .spotlight-card-light {
   background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.08);
-  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
-
 .spotlight-card-light:hover {
-  border-color: rgba(225, 29, 72, 0.4);
-  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.07);
+  border-color: rgba(225, 29, 72, 0.5);
   transform: translateY(-2px);
-}
-
-/* Floating Constellation Canvas Layer — toned down */
-.constellation-svg {
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 0;
-  opacity: 0.25;
 }
