@@ -11,16 +11,16 @@ export default function HomePage() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   const laciList = [
-    { name: 'Penjaga Nalar', desc: 'Jejak nalar kritis, jurnalisme investigasi, dan uji logika.', color: 'border-l-4 border-l-[#E11D48]' },
-    { name: 'Penyelamat Bumi', desc: 'Konservasi rimba leuser, daur ulang sirkular, dan mikrohidro desa.', color: 'border-l-4 border-l-[#10B981]' },
-    { name: 'Pembangun Sistem', desc: 'Internet rakyat, paten tomografi 4D, civic tech, dan AI lokal.', color: 'border-l-4 border-l-[#3B82F6]' },
-    { name: 'Pejuang Akar Rumput', desc: 'Perlindungan tanah adat, rumah sakit apung, dan advokasi tani.', color: 'border-l-4 border-l-[#F59E0B]' },
-    { name: 'Arsitek Usaha Mandiri', desc: 'Sepeda bambu, wastra lontar, cokelat artisan, dan kriya kulit ceker.', color: 'border-l-4 border-l-[#EC4899]' },
-    { name: 'Perawat Jiwa & Rasa', desc: 'Musik kontemplatif, sastra kesunyian, sinema, dan empati warga.', color: 'border-l-4 border-l-[#8B5CF6]' },
-    { name: 'Penjaga Tawa', desc: 'Komedi satir sosial, penelusuran absurditas, dan tawa akal sehat.', color: 'border-l-4 border-l-[#E11D48]' },
-    { name: 'Pencerah Generasi', desc: 'Ruang belajar alternatif, literasi sains desa, dan beasiswa komunitas.', color: 'border-l-4 border-l-[#06B6D4]' },
-    { name: 'Duta Talenta', desc: 'Karya rekayasa sains dunia, sinema internasional, dan riset biomedis.', color: 'border-l-4 border-l-[#F97316]' },
-    { name: 'Panggung Ekspresi', desc: 'Kanal kreator bermartabat, pengarsipan budaya, dan eksplorasi publik.', color: 'border-l-4 border-l-[#E11D48]' }
+    { slug: 'penjaga-nalar', name: 'Penjaga Nalar', desc: 'Jejak nalar kritis, jurnalisme investigasi, dan uji logika.', color: 'border-l-4 border-l-[#E11D48]' },
+    { slug: 'penyelamat-bumi', name: 'Penyelamat Bumi', desc: 'Konservasi rimba leuser, daur ulang sirkular, dan mikrohidro desa.', color: 'border-l-4 border-l-[#10B981]' },
+    { slug: 'pembangun-sistem', name: 'Pembangun Sistem', desc: 'Internet rakyat, paten tomografi 4D, civic tech, dan AI lokal.', color: 'border-l-4 border-l-[#3B82F6]' },
+    { slug: 'pejuang-akar-rumput', name: 'Pejuang Akar Rumput', desc: 'Perlindungan tanah adat, rumah sakit apung, dan advokasi tani.', color: 'border-l-4 border-l-[#F59E0B]' },
+    { slug: 'arsitek-usaha-mandiri', name: 'Arsitek Usaha Mandiri', desc: 'Sepeda bambu, wastra lontar, cokelat artisan, dan kriya kulit ceker.', color: 'border-l-4 border-l-[#EC4899]' },
+    { slug: 'perawat-jiwa-rasa', name: 'Perawat Jiwa & Rasa', desc: 'Musik kontemplatif, sastra kesunyian, sinema, dan empati warga.', color: 'border-l-4 border-l-[#8B5CF6]' },
+    { slug: 'penjaga-tawa', name: 'Penjaga Tawa', desc: 'Komedi satir sosial, penelusuran absurditas, dan tawa akal sehat.', color: 'border-l-4 border-l-[#E11D48]' },
+    { slug: 'pencerah-generasi', name: 'Pencerah Generasi', desc: 'Ruang belajar alternatif, literasi sains desa, dan beasiswa komunitas.', color: 'border-l-4 border-l-[#06B6D4]' },
+    { slug: 'duta-talenta', name: 'Duta Talenta', desc: 'Karya rekayasa sains dunia, sinema internasional, dan riset biomedis.', color: 'border-l-4 border-l-[#F97316]' },
+    { slug: 'panggung-ekspresi', name: 'Panggung Ekspresi', desc: 'Kanal kreator bermartabat, pengarsipan budaya, dan eksplorasi publik.', color: 'border-l-4 border-l-[#E11D48]' }
   ];
 
   const featuredBrand = {
@@ -109,10 +109,10 @@ export default function HomePage() {
                 {/* Primary Single-Line CTAs */}
                 <div className="flex flex-wrap items-center gap-4 pt-2">
                   <Link 
-                    href="/arsip/warga" 
+                    href="/warga-lokal" 
                     className="inline-flex items-center gap-2.5 px-6 py-3.5 bg-[#E11D48] text-white font-mono text-xs font-bold uppercase tracking-widest hover:bg-[#BE123C] transition-all tactile-btn"
                   >
-                    <span>JELAJAHI ARSIP WARGA</span>
+                    <span>JELAJAHI WARGA LOKAL</span>
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                   <Link 
@@ -206,10 +206,10 @@ export default function HomePage() {
                 </h2>
               </div>
               <Link 
-                href="/arsip/warga" 
+                href="/warga-lokal" 
                 className="inline-flex items-center gap-2 font-mono text-xs font-bold uppercase tracking-widest text-[#E11D48] hover:underline shrink-0"
               >
-                BUKA DIREKTORI LENGKAP <ArrowRight className="w-4 h-4" />
+                LIHAT SEMUA LENSA <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
 
@@ -217,8 +217,8 @@ export default function HomePage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {laciList.map((laci) => (
                 <Link
-                  key={laci.name}
-                  href={`/arsip/warga?laci=${encodeURIComponent(laci.name)}`}
+                  key={laci.slug}
+                  href={`/warga-lokal/${laci.slug}`}
                   className={`group p-7 border relative overflow-hidden transition-all duration-200 tactile-btn ${
                     isDarkMode 
                       ? 'bg-[#0E131F] border-white/10 hover:border-[#E11D48]' 
@@ -232,7 +232,7 @@ export default function HomePage() {
                     {laci.desc}
                   </p>
                   <div className="mt-6 flex items-center gap-1.5 font-mono text-[10px] font-bold uppercase tracking-widest text-[#E11D48] opacity-0 group-hover:opacity-100 transition-opacity">
-                    <span>TELUSURI LACI</span>
+                    <span>TELUSURI LENSA</span>
                     <ArrowRight className="w-3 h-3" />
                   </div>
                 </Link>
