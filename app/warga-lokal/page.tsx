@@ -2,8 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
-import { ArrowRight, Compass, Radio, Sparkles, CheckCircle2 } from 'lucide-react';
+import { ArrowRight, Radio } from 'lucide-react';
 import { motion } from 'framer-motion';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
@@ -50,7 +49,7 @@ export default function WargaLokalHubPage() {
           </div>
         </header>
 
-        {/* Bento Grid 10 Discovery Lenses */}
+        {/* Bento Grid 10 Discovery Lenses (Simple & Clean) */}
         <section className="space-y-6">
           <div className="flex justify-between items-center border-b pb-4 border-inherit/10">
             <span className="font-mono text-xs font-bold text-[#E11D48] tracking-widest uppercase">
@@ -68,9 +67,9 @@ export default function WargaLokalHubPage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: idx * 0.05 }}
                 key={lens.slug}
-                className={`p-6 sm:p-8 border ${borderClass} ${cardBg} ${lens.color} flex flex-col justify-between group hover:border-[#E11D48] transition-all duration-300 tactile-btn`}
+                className={`p-6 sm:p-8 border ${borderClass} ${cardBg} ${lens.color} flex flex-col justify-between group hover:border-[#E11D48] transition-all duration-300 tactile-btn space-y-6`}
               >
-                <div className="space-y-5">
+                <div className="space-y-4">
                   
                   {/* Card Header Meta */}
                   <div className="flex justify-between items-center border-b border-inherit/10 pb-3">
@@ -93,51 +92,21 @@ export default function WargaLokalHubPage() {
                   </p>
 
                   {/* Narrative Teaser */}
-                  <p className={`text-xs sm:text-sm font-sans leading-relaxed line-clamp-2 ${mutedText}`}>
+                  <p className={`text-xs sm:text-sm font-sans leading-relaxed line-clamp-3 ${mutedText}`}>
                     {lens.narrative[0]}
                   </p>
-
-                  {/* Finding Question Box */}
-                  <div className="p-3.5 border border-dashed border-[#E11D48]/30 bg-[#E11D48]/5">
-                    <span className="font-mono text-[10px] text-[#E11D48] uppercase tracking-widest block font-bold mb-1">
-                      Pertanyaan Temuan:
-                    </span>
-                    <p className="font-editorial italic text-xs sm:text-sm text-inherit descender-safe">
-                      &ldquo;{lens.findingQuestion}&rdquo;
-                    </p>
-                  </div>
-
-                  {/* Figure Avatars & Names Teaser */}
-                  <div className="pt-2">
-                    <span className={`text-[10px] font-mono uppercase tracking-wider block mb-2 ${mutedText}`}>
-                      Figur Terkurasi di Laci Ini:
-                    </span>
-                    <div className="flex flex-wrap items-center gap-2">
-                      {lens.figures.map((fig) => (
-                        <span 
-                          key={fig.slug}
-                          className={`text-xs font-mono px-2.5 py-1 border ${borderClass} bg-inherit/5 text-inherit`}
-                        >
-                          {fig.name}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
 
                 </div>
 
                 {/* Bottom CTA Action */}
-                <div className="mt-8 pt-4 border-t border-inherit/10 flex justify-between items-center">
+                <div className="pt-4 border-t border-inherit/10 flex justify-between items-center">
                   <Link
                     href={`/warga-lokal/${lens.slug}`}
                     className="inline-flex items-center gap-2 font-mono text-xs font-bold uppercase tracking-widest text-[#E11D48] group-hover:underline"
                   >
-                    <span>TELUSURI LENSA & FIGUR</span>
+                    <span>TELUSURI LENSA</span>
                     <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                   </Link>
-                  <span className={`text-[11px] font-mono uppercase ${mutedText}`}>
-                    {lens.figures.length} Tokoh Terverifikasi
-                  </span>
                 </div>
 
               </motion.div>

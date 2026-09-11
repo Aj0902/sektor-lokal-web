@@ -1,13 +1,16 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowLeft, ArrowRight, ArrowUpRight, CheckCircle2, Radio, Share2, Check } from 'lucide-react';
+import { ArrowLeft, ArrowRight, ArrowUpRight, CheckCircle2, Share2, Check } from 'lucide-react';
 import { motion } from 'framer-motion';
 import Navbar from '../../../components/Navbar';
 import Footer from '../../../components/Footer';
 import { DiscoveryLens, discoveryLenses } from '../../../lib/supabase/discoveryData';
+import { directoryProfiles } from '../../../lib/supabase/fallbackData';
+import { Profile } from '../../../lib/supabase/types';
+import { createClient } from '../../../lib/supabase/client';
 
 interface DiscoveryLensClientViewProps {
   lens: DiscoveryLens;
@@ -16,6 +19,33 @@ interface DiscoveryLensClientViewProps {
 export default function DiscoveryLensClientView({ lens }: DiscoveryLensClientViewProps) {
   const [isDarkMode, setIsDarkMode] = useState(true);
   const [copied, setCopied] = useState(false);
+  const [profiles, setProfiles] = useState<Profile[]>(directoryProfiles);
+
+  useEffect(() => {
+    const fetchCategoryProfiles = async () => {
+      try {
+        const supabase = createClient();
+        const { data, error } = await supabase
+          .from('profiles_warga')
+          .select('*')
+          .eq('category', lens.name)
+          .order('name', { ascending: true });
+
+        if (data && data.length > 0 && !error) {
+          setProfiles(data);
+        }
+      } catch {
+        // use directoryProfiles fallback
+      }
+    };
+    fetchCategoryProfiles();
+  }, [lens.name]);
+
+  // Filter profiles matching this lens category
+  const lensProfiles = profiles.filter(
+    p => (p.category || '').toLowerCase() === lens.name.toLowerCase() ||
+         (p.category || '').toLowerCase().includes(lens.name.toLowerCase())
+  );
 
   // Find next lens for discovery loop
   const currentIndex = discoveryLenses.findIndex(l => l.slug === lens.slug);
@@ -113,7 +143,7 @@ export default function DiscoveryLensClientView({ lens }: DiscoveryLensClientVie
         </section>
 
         {/* ========================================================================= */}
-        {/* SEKSI 2: LINE-UP FIGUR TERPILIH DI BALIK ISU */}
+        {/* SEKSI 2: FIGUR TERKURASI DENGAN THUMBNAIL FOTO REAL (FORMAT ARSIP) */}
         {/* ========================================================================= */}
         <section className="space-y-8">
           
@@ -130,66 +160,45 @@ export default function DiscoveryLensClientView({ lens }: DiscoveryLensClientVie
             </p>
           </div>
 
-          {/* Curated Figures Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            {lens.figures.map((fig, idx) => (
-              <motion.div
-                initial={{ opacity: 0, y: 16 }}
+          {/* Archival Figure Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {lensProfiles.map((p, idx) => (
+              <motion.div 
+                initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: idx * 0.05 }}
-                key={fig.slug}
-                className={`p-6 sm:p-8 border ${borderClass} ${cardBg} flex flex-col justify-between group hover:border-[#E11D48] transition-all duration-300 tactile-btn space-y-6`}
+                transition={{ duration: 0.3, delay: Math.min(idx * 0.03, 0.5) }}
+                key={p.id || p.slug}
+                className={`group flex flex-col justify-between ${cardBg} p-5 border ${borderClass} hover:border-[#E11D48] transition-all duration-200 tactile-btn`}
               >
                 <div>
-                  
-                  {/* Photo & Role Tag */}
-                  <Link href={`/profil/${fig.slug}`} className="block relative aspect-[4/5] overflow-hidden bg-black w-full mb-5 border border-inherit/10">
-                    <Image
-                      src={fig.photoUrl || 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80'}
-                      alt={fig.name}
-                      fill
+                  {/* Photo Frame */}
+                  <Link href={`/profil/${p.slug}`} className="block relative aspect-[4/5] overflow-hidden bg-black w-full mb-4 border border-inherit/10">
+                    <Image 
+                      src={p.photo_url || 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80'} 
+                      alt={p.name} 
+                      fill 
                       className="object-cover portrait-bw transition-transform duration-500 group-hover:scale-105"
                     />
-                    <div className="absolute top-2 left-2 px-2 py-0.5 bg-black/80 text-white font-mono text-[10px] uppercase tracking-widest flex items-center gap-1">
-                      <CheckCircle2 className="w-3 h-3 text-[#E11D48]" />
-                      <span>TERVERIFIKASI</span>
-                    </div>
                   </Link>
-
-                  {/* Figure Meta */}
-                  <div className="space-y-2 mb-4">
-                    <span className="text-[10px] font-mono text-[#E11D48] uppercase tracking-widest block font-bold">
-                      {lens.name}
-                    </span>
-                    <h3 className="font-display text-2xl uppercase leading-snug group-hover:text-[#E11D48] transition-colors">
-                      <Link href={`/profil/${fig.slug}`}>
-                        {fig.name}
-                      </Link>
-                    </h3>
-                    <p className="font-mono text-xs text-inherit/70 uppercase">
-                      {fig.role}
-                    </p>
+                  
+                  {/* Profile Meta */}
+                  <div className="space-y-1.5">
+                    <div className="flex justify-between items-start gap-2">
+                      <h3 className="font-display text-xl uppercase leading-snug group-hover:text-[#E11D48] transition-colors">
+                        <Link href={`/profil/${p.slug}`}>{p.name}</Link>
+                      </h3>
+                      {p.verified !== false && (
+                        <CheckCircle2 className="w-4 h-4 text-[#E11D48] shrink-0 mt-0.5" />
+                      )}
+                    </div>
+                    <p className="font-editorial text-xs italic text-current/80 line-clamp-2">{p.title}</p>
                   </div>
-
-                  {/* Connecting Diction (Resonance Link) */}
-                  <div className="p-3.5 border-t border-inherit/10 bg-inherit/5 text-xs font-sans leading-relaxed text-inherit/90">
-                    <span className="font-mono text-[9px] text-[#E11D48] uppercase tracking-widest block font-bold mb-1">
-                      Peran Temuan:
-                    </span>
-                    <p>{fig.connectingDiction}</p>
-                  </div>
-
                 </div>
 
-                {/* Bottom Action */}
-                <div className="pt-4 border-t border-inherit/10 flex justify-between items-center">
-                  <Link
-                    href={`/profil/${fig.slug}`}
-                    className="inline-flex items-center gap-1.5 font-mono text-xs font-bold uppercase tracking-wider text-[#E11D48] hover:underline"
-                  >
-                    <span>BUKA BERKAS PROFIL</span>
-                    <ArrowUpRight className="w-3.5 h-3.5" />
-                  </Link>
+                {/* Bottom Category Tag */}
+                <div className="mt-4 pt-3 border-t border-inherit/10 flex justify-between items-center text-[10px] font-mono uppercase tracking-wider text-[#E11D48] font-bold">
+                  <span>{p.category}</span>
+                  <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
                 </div>
 
               </motion.div>
