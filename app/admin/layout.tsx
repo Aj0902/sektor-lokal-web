@@ -58,11 +58,27 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
             </Link>
 
             <Link 
-              href="/admin/profiles/new" 
+              href="/admin/brands" 
               className="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-[#E11D48]/10 hover:text-[#E11D48] transition-all"
             >
+              <FolderPlus className="w-4 h-4 text-[#E11D48]" />
+              <span>DAFTAR BRAND LOKAL</span>
+            </Link>
+
+            <Link 
+              href="/admin/profiles/new" 
+              className="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-[#E11D48]/10 hover:text-[#E11D48] transition-all opacity-80"
+            >
+              <Users className="w-4 h-4" />
+              <span>+ TAMBAH TOKOH</span>
+            </Link>
+
+            <Link 
+              href="/admin/brands/new" 
+              className="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-[#E11D48]/10 hover:text-[#E11D48] transition-all opacity-80"
+            >
               <FolderPlus className="w-4 h-4" />
-              <span>+ TAMBAH MANUAL</span>
+              <span>+ TAMBAH BRAND</span>
             </Link>
 
             <a 

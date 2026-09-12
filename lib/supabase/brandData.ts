@@ -5,6 +5,7 @@ export interface BrandProduct {
   name: string;
   specs: string;
   price: string;
+  action_text?: string;
   buyUrl: string;
   imageUrl?: string;
   category?: string;
