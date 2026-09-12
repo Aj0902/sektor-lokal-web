@@ -4,24 +4,15 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import {
   ArrowLeft,
-  ArrowRight,
-  ShieldCheck,
-  Building2,
   MapPin,
   ExternalLink,
-  Award,
-  Layers,
-  FileCheck,
-  CheckCircle2,
-  Sparkles,
   ShoppingBag,
-  Clock,
-  Compass,
   Radio,
   Share2,
-  Check
+  Check,
+  Sparkles,
+  ShieldCheck
 } from 'lucide-react';
-import { motion } from 'framer-motion';
 import Navbar from '../../../components/Navbar';
 import Footer from '../../../components/Footer';
 import { BrandProfile, brandProfiles } from '../../../lib/supabase/brandData';
@@ -37,7 +28,7 @@ export default function BrandClientView({ brand }: Props) {
   const bgClass = isDarkMode ? 'bg-[#07090E] text-[#F5EFEB]' : 'bg-[#F8F5EE] text-[#0A0E1A]';
   const borderClass = isDarkMode ? 'border-white/10' : 'border-black/10';
   const cardBg = isDarkMode ? 'bg-[#0E131F]' : 'bg-white';
-  const subCardBg = isDarkMode ? 'bg-black/30' : 'bg-[#F1EDE4]';
+  const subCardBg = isDarkMode ? 'bg-black/20' : 'bg-[#F1EDE4]';
   const mutedText = isDarkMode ? 'text-[#8E95A5]' : 'text-[#64748B]';
 
   // Get other brands in the same lens
@@ -70,9 +61,9 @@ export default function BrandClientView({ brand }: Props) {
     <div className={`min-h-screen ${bgClass} font-sans antialiased selection:bg-[#E11D48] selection:text-white flex flex-col`}>
       <Navbar isDarkMode={isDarkMode} onToggleDarkMode={() => setIsDarkMode(!isDarkMode)} />
 
-      <main className="flex-1 w-full max-w-6xl mx-auto px-5 sm:px-8 lg:px-12 py-10 sm:py-16 flex flex-col gap-12 sm:gap-16">
+      <main className="flex-1 w-full max-w-4xl mx-auto px-5 sm:px-8 py-10 sm:py-16 flex flex-col gap-10 sm:gap-14">
         
-        {/* Navigation Breadcrumb (No status bar) */}
+        {/* Top Navigation Bar */}
         <div className="flex items-center justify-between gap-4 border-b border-inherit/10 pb-4">
           <Link
             href={`/brand-lokal/${brand.lensSlug}`}
@@ -89,229 +80,101 @@ export default function BrandClientView({ brand }: Props) {
             {copied ? (
               <>
                 <Check className="w-3.5 h-3.5 text-[#10B981]" />
-                <span className="text-[#10B981]">Tersalin!</span>
+                <span className="text-[#10B981]">Tersalin</span>
               </>
             ) : (
               <>
                 <Share2 className="w-3.5 h-3.5" />
-                <span>Bagikan Berkas</span>
+                <span>Bagikan</span>
               </>
             )}
           </button>
         </div>
 
-        {/* Master Brand Hero Section */}
-        <header className={`p-6 sm:p-10 border ${borderClass} ${cardBg} relative overflow-hidden space-y-8`}>
-          
-          {/* Top Badges & Meta */}
-          <div className="flex flex-wrap items-center justify-between gap-4 border-b border-inherit/10 pb-5">
-            <div className="flex flex-wrap items-center gap-2.5">
-              <span className={`px-3 py-1 text-xs font-mono font-bold tracking-wider uppercase border ${getTierColor(brand.curationTier)}`}>
-                {brand.curationTier}
-              </span>
-              <span className={`px-3 py-1 text-xs font-mono uppercase tracking-wider border ${borderClass} flex items-center gap-1.5`}>
-                <MapPin className="w-3.5 h-3.5 text-[#E11D48]" />
-                <span>{brand.origin}</span>
-              </span>
-            </div>
-
-            <div className="flex items-center gap-2 font-mono text-xs">
-              <ShieldCheck className="w-4 h-4 text-[#10B981]" />
-              <span className="text-[#10B981] font-bold">Skor Verifikasi: {brand.scores.total}/100</span>
-            </div>
-          </div>
-
-          {/* Brand Logo & Name Header */}
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
-            
-            {/* Logo Avatar Frame (Brand Logo Only) */}
-            <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-none border border-white/20 bg-black/40 overflow-hidden relative shrink-0 flex items-center justify-center p-2 shadow-lg">
-              <img
-                src={brand.logoUrl}
-                alt={brand.name}
-                className="w-full h-full object-cover"
-              />
-            </div>
-
-            <div className="space-y-2">
-              <span className="font-mono text-xs text-[#E11D48] font-bold uppercase tracking-widest">
-                BERKAS DISCOVERY BRAND LOKAL
-              </span>
-              <h1 className="text-3xl sm:text-5xl md:text-6xl font-display uppercase tracking-tight leading-[0.95]">
-                {brand.name}
-              </h1>
-              <p className="font-mono text-xs sm:text-sm uppercase tracking-wider opacity-75">
-                Kategori Lensa: <strong className="text-inherit font-semibold">{brand.lensName}</strong>
-              </p>
-            </div>
-
-          </div>
-
-          {/* Discovery Title: Anomali -> Pertanyaan -> Paradigma */}
-          <div className={`p-5 sm:p-6 border ${borderClass} ${subCardBg} space-y-3`}>
-            <span className="font-mono text-[10px] text-[#D97706] font-bold uppercase tracking-widest block">
-              DIALEKTIKA PENEMUAN UTAMA
+        {/* 1. Header & Lead (Di Atas Hero) */}
+        <header className="space-y-4">
+          <div className="flex flex-wrap items-center gap-2.5">
+            <span className={`px-2.5 py-0.5 text-[11px] font-mono font-bold tracking-wider uppercase border ${getTierColor(brand.curationTier)}`}>
+              {brand.curationTier}
             </span>
-            <div className="space-y-2">
-              <p className="font-editorial italic text-base sm:text-lg text-inherit leading-relaxed descender-safe">
-                &ldquo;{brand.discoveryTitle.anomaly}&rdquo;
-              </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs font-mono border-t border-inherit/10">
-                <div>
-                  <span className="text-[#E11D48] font-bold">Pertanyaan: </span>
-                  <span className={mutedText}>{brand.discoveryTitle.question}</span>
-                </div>
-                <div>
-                  <span className="text-[#10B981] font-bold">Paradigma: </span>
-                  <span className={mutedText}>{brand.discoveryTitle.paradigm}</span>
-                </div>
-              </div>
-            </div>
+            <span className="text-xs font-mono text-[#E11D48] uppercase tracking-wider font-semibold">
+              {brand.lensName}
+            </span>
           </div>
 
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-display uppercase tracking-tight leading-[1.05]">
+            {brand.discoveryTitle.anomaly || brand.name}
+          </h1>
+
+          <p className="font-editorial italic text-lg sm:text-xl text-[#E11D48] leading-relaxed descender-safe">
+            {brand.coreFinding}
+          </p>
         </header>
 
-        {/* 7-STAGE EVIDENCE-FIRST DOSSIER */}
-
-        {/* STAGE 01: TEMUAN */}
-        <section className="space-y-4">
-          <div className="flex items-center gap-3 border-b border-inherit/10 pb-3">
-            <span className="font-mono text-xs font-bold text-[#E11D48] tracking-widest">
-              01. TEMUAN
-            </span>
-            <span className="font-mono text-xs uppercase tracking-widest opacity-60">
-              THE CORE ANOMALY
-            </span>
+        {/* 2. Hero Visual Brand (Minimalis & Elegan) */}
+        <section className={`p-6 sm:p-8 border ${borderClass} ${cardBg} flex flex-col sm:flex-row items-center sm:items-start gap-6`}>
+          {/* Logo Frame */}
+          <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-none border border-white/20 bg-black/40 overflow-hidden relative shrink-0 flex items-center justify-center p-3 shadow-md">
+            <img
+              src={brand.logoUrl}
+              alt={brand.name}
+              className="w-full h-full object-contain"
+            />
           </div>
 
-          <div className={`p-6 sm:p-8 border-l-4 border-l-[#E11D48] border ${borderClass} ${cardBg} space-y-3`}>
-            <div className="flex items-center gap-2 font-mono text-xs text-[#E11D48] font-bold uppercase tracking-wider">
-              <Sparkles className="w-4 h-4" />
-              <span>TEMUAN UTAMA REDAKSI</span>
+          {/* Identity Meta */}
+          <div className="space-y-2 text-center sm:text-left flex-1">
+            <h2 className="text-2xl sm:text-3xl font-display uppercase tracking-tight text-inherit">
+              {brand.name}
+            </h2>
+            <div className="flex flex-wrap items-center justify-center sm:justify-start gap-3 text-xs font-mono opacity-80">
+              <span className="flex items-center gap-1.5">
+                <MapPin className="w-3.5 h-3.5 text-[#E11D48]" />
+                {brand.origin}
+              </span>
+              <span>•</span>
+              <span className="flex items-center gap-1.5 text-[#10B981]">
+                <ShieldCheck className="w-3.5 h-3.5" />
+                Terverifikasi Sektor Lokal
+              </span>
             </div>
-            <p className="text-base sm:text-lg font-sans leading-relaxed font-medium">
-              {brand.coreFinding}
+            <p className={`text-xs sm:text-sm font-sans leading-relaxed pt-1 ${mutedText}`}>
+              {brand.evidenceTelemetry.productionModel}
             </p>
           </div>
         </section>
 
-        {/* STAGE 02: KONTEKS */}
-        <section className="space-y-4">
-          <div className="flex items-center gap-3 border-b border-inherit/10 pb-3">
-            <span className="font-mono text-xs font-bold text-[#E11D48] tracking-widest">
-              02. KONTEKS
-            </span>
-            <span className="font-mono text-xs uppercase tracking-widest opacity-60">
-              THE LANDSCAPE &amp; MARKET VACUUM
+        {/* 3. Esai Naratif Terpadu (Satu Cerita Utuh yang Mengalir) */}
+        <article className="space-y-6 text-sm sm:text-base font-sans leading-relaxed">
+          <div className="border-b border-inherit/10 pb-3">
+            <span className="font-mono text-xs font-bold text-[#E11D48] tracking-widest uppercase">
+              CATATAN REDAKSI
             </span>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
-            <div className={`p-6 sm:p-8 border ${borderClass} ${cardBg} space-y-3`}>
-              <span className="font-mono text-xs text-[#E11D48] font-bold uppercase tracking-wider block">
-                KONDISI PASAR &amp; MASALAH STRUKTURAL
-              </span>
-              <p className={`text-sm font-sans leading-relaxed ${mutedText}`}>
-                {brand.contextNarrative.marketVacuum}
+          <div className="space-y-4 text-inherit/90 font-sans leading-loose text-justify sm:text-left">
+            <p>
+              {brand.contextNarrative.marketVacuum}
+            </p>
+            <p>
+              {brand.contextNarrative.disruptedStatusQuo}
+            </p>
+            {brand.evidenceTelemetry.verifiedClaims && brand.evidenceTelemetry.verifiedClaims[0] && (
+              <p className={`p-4 border-l-2 border-[#10B981] ${subCardBg} text-xs sm:text-sm italic font-sans`}>
+                {brand.evidenceTelemetry.verifiedClaims[0].editorialInterpretation}
               </p>
-            </div>
-
-            <div className={`p-6 sm:p-8 border ${borderClass} ${cardBg} space-y-3`}>
-              <span className="font-mono text-xs text-[#10B981] font-bold uppercase tracking-wider block">
-                TEROBOSAN OPERASIONAL &amp; STANDAR BARU
-              </span>
-              <p className={`text-sm font-sans leading-relaxed ${mutedText}`}>
-                {brand.contextNarrative.disruptedStatusQuo}
-              </p>
-            </div>
+            )}
           </div>
-        </section>
+        </article>
 
-        {/* STAGE 03: BUKTI */}
-        <section className="space-y-4">
-          <div className="flex items-center gap-3 border-b border-inherit/10 pb-3">
-            <span className="font-mono text-xs font-bold text-[#E11D48] tracking-widest">
-              03. BUKTI
+        {/* 4. Karya Pilihan & Harga Riil */}
+        <section className="space-y-6">
+          <div className="flex items-center justify-between border-b border-inherit/10 pb-3">
+            <span className="font-mono text-xs font-bold text-[#E11D48] tracking-widest uppercase">
+              KARYA PILIHAN
             </span>
-            <span className="font-mono text-xs uppercase tracking-widest opacity-60">
-              EMPIRICAL VERIFICATION &amp; TELEMETRY
-            </span>
-          </div>
-
-          {/* Telemetry Grid */}
-          <div className={`grid grid-cols-1 sm:grid-cols-2 gap-4 p-5 sm:p-6 border ${borderClass} ${cardBg}`}>
-            <div className="space-y-1">
-              <span className="font-mono text-[10px] text-[#E11D48] font-bold uppercase tracking-widest">
-                KOORDINAT HULU &amp; ASAL BAHAN
-              </span>
-              <p className="font-sans text-sm font-semibold">{brand.evidenceTelemetry.originCoordinates}</p>
-            </div>
-            <div className="space-y-1">
-              <span className="font-mono text-[10px] text-[#10B981] font-bold uppercase tracking-widest">
-                MODEL PRODUKSI &amp; MANUFAKTUR
-              </span>
-              <p className="font-sans text-sm font-semibold">{brand.evidenceTelemetry.productionModel}</p>
-            </div>
-          </div>
-
-          {/* Verified Claims Breakdown */}
-          <div className="space-y-4 pt-2">
-            <span className="font-mono text-xs font-bold uppercase tracking-wider opacity-80 block">
-              RANTAI VERIFIKASI KLAIM (CLAIM → EVIDENCE → VERIFICATION → INTERPRETATION)
-            </span>
-
-            <div className="grid grid-cols-1 gap-4">
-              {brand.evidenceTelemetry.verifiedClaims.map((claim, idx) => (
-                <div key={idx} className={`p-6 border ${borderClass} ${cardBg} space-y-4`}>
-                  
-                  {/* Claim Box */}
-                  <div className="border-b border-inherit/10 pb-3">
-                    <span className="font-mono text-[10px] text-[#E11D48] font-bold uppercase tracking-widest">
-                      KLAIM UTAMA ({idx + 1})
-                    </span>
-                    <p className="font-sans text-sm font-bold text-inherit mt-1">
-                      &ldquo;{claim.claim}&rdquo;
-                    </p>
-                  </div>
-
-                  {/* 3 Steps Chain */}
-                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs font-sans">
-                    <div className={`p-3 border ${borderClass} ${subCardBg} space-y-1`}>
-                      <span className="font-mono text-[10px] text-[#2563EB] font-bold uppercase tracking-widest">
-                        BUKTI PRIMER
-                      </span>
-                      <p className={mutedText}>{claim.evidencePrimary}</p>
-                    </div>
-
-                    <div className={`p-3 border ${borderClass} ${subCardBg} space-y-1`}>
-                      <span className="font-mono text-[10px] text-[#10B981] font-bold uppercase tracking-widest">
-                        SUMBER VERIFIKASI
-                      </span>
-                      <p className={mutedText}>{claim.verificationSource}</p>
-                    </div>
-
-                    <div className={`p-3 border ${borderClass} ${subCardBg} space-y-1`}>
-                      <span className="font-mono text-[10px] text-[#D97706] font-bold uppercase tracking-widest">
-                        TAFSIR REDAKSI
-                      </span>
-                      <p className={mutedText}>{claim.editorialInterpretation}</p>
-                    </div>
-                  </div>
-
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* STAGE 04: KARYA */}
-        <section className="space-y-4">
-          <div className="flex items-center gap-3 border-b border-inherit/10 pb-3">
-            <span className="font-mono text-xs font-bold text-[#E11D48] tracking-widest">
-              04. KARYA
-            </span>
-            <span className="font-mono text-xs uppercase tracking-widest opacity-60">
-              FLAGSHIP ARTIFACTS &amp; PRICING
+            <span className={`font-mono text-xs ${mutedText}`}>
+              ESTIMASI HARGA RIIL
             </span>
           </div>
 
@@ -321,9 +184,9 @@ export default function BrandClientView({ brand }: Props) {
                 key={idx}
                 className={`border ${borderClass} ${cardBg} overflow-hidden flex flex-col justify-between group hover:border-[#E11D48] transition-colors`}
               >
-                {/* Product Image */}
+                {/* Product Photo */}
                 {prod.imageUrl && (
-                  <div className="w-full h-48 sm:h-56 bg-black/40 overflow-hidden relative">
+                  <div className="w-full h-48 sm:h-52 bg-black/40 overflow-hidden relative">
                     <img
                       src={prod.imageUrl}
                       alt={prod.name}
@@ -333,32 +196,30 @@ export default function BrandClientView({ brand }: Props) {
                   </div>
                 )}
 
-                <div className="p-6 space-y-4 flex-1 flex flex-col justify-between">
-                  <div className="space-y-2">
-                    <div className="flex justify-between items-start gap-2">
-                      <h4 className="font-display text-lg sm:text-xl uppercase tracking-tight text-inherit group-hover:text-[#E11D48] transition-colors">
-                        {prod.name}
-                      </h4>
-                    </div>
+                <div className="p-5 space-y-4 flex-1 flex flex-col justify-between">
+                  <div className="space-y-1.5">
+                    <h3 className="font-display text-base sm:text-lg uppercase tracking-tight text-inherit group-hover:text-[#E11D48] transition-colors">
+                      {prod.name}
+                    </h3>
                     <p className={`text-xs font-sans ${mutedText} leading-relaxed`}>
                       {prod.specs}
                     </p>
                   </div>
 
-                  <div className="pt-4 border-t border-inherit/10 flex items-center justify-between gap-4">
+                  <div className="pt-3 border-t border-inherit/10 flex items-center justify-between gap-3">
                     <div>
-                      <span className="font-mono text-[10px] uppercase opacity-60 block">Kisaran Harga Riil</span>
-                      <span className="font-mono text-sm font-bold text-[#10B981]">{prod.price}</span>
+                      <span className="font-mono text-[10px] uppercase opacity-60 block">Kisaran Harga</span>
+                      <span className="font-mono text-xs sm:text-sm font-bold text-[#10B981]">{prod.price}</span>
                     </div>
 
                     <a
                       href={prod.buyUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 px-3.5 py-2 font-mono text-xs font-bold uppercase tracking-wider bg-[#E11D48] text-white hover:bg-[#BE123C] transition-colors"
+                      className="inline-flex items-center gap-1.5 px-3 py-1.5 font-mono text-xs font-bold uppercase tracking-wider bg-[#E11D48] text-white hover:bg-[#BE123C] transition-colors"
                     >
                       <span>Beli Resmi</span>
-                      <ExternalLink className="w-3.5 h-3.5" />
+                      <ExternalLink className="w-3 h-3" />
                     </a>
                   </div>
                 </div>
@@ -368,122 +229,59 @@ export default function BrandClientView({ brand }: Props) {
           </div>
         </section>
 
-        {/* STAGE 05: JEJAK */}
+        {/* 5. Catatan Refleksi Penutup (Story Conclusion) */}
+        <section className={`p-6 sm:p-8 border ${borderClass} ${cardBg} space-y-3`}>
+          <div className="flex items-center gap-2 text-xs font-mono text-[#D97706] font-bold uppercase tracking-wider">
+            <Sparkles className="w-4 h-4" />
+            <span>REFLEKSI AKHIR</span>
+          </div>
+          <p className="font-editorial italic text-base sm:text-lg leading-relaxed descender-safe text-inherit">
+            &ldquo;{brand.sovereigntyMeaning}&rdquo;
+          </p>
+        </section>
+
+        {/* 6. Akses Resmi (Minimalis) */}
         <section className="space-y-4">
-          <div className="flex items-center gap-3 border-b border-inherit/10 pb-3">
-            <span className="font-mono text-xs font-bold text-[#E11D48] tracking-widest">
-              05. JEJAK
-            </span>
-            <span className="font-mono text-xs uppercase tracking-widest opacity-60">
-              VERIFIED MILESTONES
+          <div className="border-b border-inherit/10 pb-3">
+            <span className="font-mono text-xs font-bold text-[#E11D48] tracking-widest uppercase">
+              KANAL RESMI
             </span>
           </div>
 
-          <div className={`p-6 sm:p-8 border ${borderClass} ${cardBg}`}>
-            <div className="relative border-l-2 border-[#E11D48]/40 pl-6 sm:pl-8 space-y-8 my-2">
-              {brand.milestones.map((ms, idx) => (
-                <div key={idx} className="relative group">
-                  {/* Timeline Node */}
-                  <div className="absolute -left-[31px] sm:-left-[39px] top-1 w-3.5 h-3.5 rounded-full bg-[#E11D48] border-2 border-inherit" />
+          <div className="flex flex-wrap gap-3">
+            {brand.channels.officialStore.map((ch, idx) => (
+              <a
+                key={idx}
+                href={ch.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`inline-flex items-center gap-2 px-4 py-2 font-mono text-xs font-semibold border ${borderClass} ${cardBg} hover:border-[#10B981] hover:text-[#10B981] transition-all`}
+              >
+                <ShoppingBag className="w-3.5 h-3.5 text-[#10B981]" />
+                <span>{ch.platform}: {ch.label}</span>
+                <ExternalLink className="w-3 h-3 opacity-60" />
+              </a>
+            ))}
 
-                  <div className="space-y-1">
-                    <span className="font-mono text-xs text-[#E11D48] font-bold uppercase tracking-wider">
-                      {ms.year}
-                    </span>
-                    <p className="font-sans text-sm text-inherit leading-relaxed">
-                      {ms.event}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
+            {brand.channels.publicSpaces.map((ch, idx) => (
+              <a
+                key={idx}
+                href={ch.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`inline-flex items-center gap-2 px-4 py-2 font-mono text-xs font-semibold border ${borderClass} ${cardBg} hover:border-[#2563EB] hover:text-[#2563EB] transition-all`}
+              >
+                <Radio className="w-3.5 h-3.5 text-[#2563EB]" />
+                <span>{ch.platform}: {ch.label}</span>
+                <ExternalLink className="w-3 h-3 opacity-60" />
+              </a>
+            ))}
           </div>
         </section>
 
-        {/* STAGE 06: MAKNA */}
-        <section className="space-y-4">
-          <div className="flex items-center gap-3 border-b border-inherit/10 pb-3">
-            <span className="font-mono text-xs font-bold text-[#E11D48] tracking-widest">
-              06. MAKNA
-            </span>
-            <span className="font-mono text-xs uppercase tracking-widest opacity-60">
-              SOVEREIGNTY &amp; CULTURAL THESIS
-            </span>
-          </div>
-
-          <div className={`p-6 sm:p-8 border ${borderClass} ${cardBg} space-y-3`}>
-            <span className="font-mono text-xs text-[#D97706] font-bold uppercase tracking-wider block">
-              TESIS KEDAULATAN &amp; KELUARGA BESAR KARYA
-            </span>
-            <p className="font-editorial italic text-base sm:text-lg leading-relaxed descender-safe text-inherit">
-              &ldquo;{brand.sovereigntyMeaning}&rdquo;
-            </p>
-          </div>
-        </section>
-
-        {/* STAGE 07: TERHUBUNG */}
-        <section className="space-y-4">
-          <div className="flex items-center gap-3 border-b border-inherit/10 pb-3">
-            <span className="font-mono text-xs font-bold text-[#E11D48] tracking-widest">
-              07. TERHUBUNG
-            </span>
-            <span className="font-mono text-xs uppercase tracking-widest opacity-60">
-              TWO-TIER DIRECTORY
-            </span>
-          </div>
-
-          <div className="space-y-6">
-            
-            {/* Row 1: Akses Penjualan Resmi */}
-            <div className={`p-6 border ${borderClass} ${cardBg} space-y-4`}>
-              <span className="font-mono text-xs text-[#10B981] font-bold uppercase tracking-wider block">
-                BARIS 1: AKSES PENJUALAN RESMI (COMMERCE CHANNELS)
-              </span>
-              <div className="flex flex-wrap gap-3">
-                {brand.channels.officialStore.map((ch, idx) => (
-                  <a
-                    key={idx}
-                    href={ch.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`inline-flex items-center gap-2 px-4 py-2.5 font-mono text-xs font-semibold border ${borderClass} ${subCardBg} hover:border-[#10B981] hover:text-[#10B981] transition-all`}
-                  >
-                    <ShoppingBag className="w-3.5 h-3.5 text-[#10B981]" />
-                    <span>{ch.platform}: {ch.label}</span>
-                    <ExternalLink className="w-3 h-3 opacity-60" />
-                  </a>
-                ))}
-              </div>
-            </div>
-
-            {/* Row 2: Ruang Publik & Informasi */}
-            <div className={`p-6 border ${borderClass} ${cardBg} space-y-4`}>
-              <span className="font-mono text-xs text-[#2563EB] font-bold uppercase tracking-wider block">
-                BARIS 2: RUANG PUBLIK &amp; KOMUNIKASI (PUBLIC CHANNELS)
-              </span>
-              <div className="flex flex-wrap gap-3">
-                {brand.channels.publicSpaces.map((ch, idx) => (
-                  <a
-                    key={idx}
-                    href={ch.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`inline-flex items-center gap-2 px-4 py-2.5 font-mono text-xs font-semibold border ${borderClass} ${subCardBg} hover:border-[#2563EB] hover:text-[#2563EB] transition-all`}
-                  >
-                    <Radio className="w-3.5 h-3.5 text-[#2563EB]" />
-                    <span>{ch.platform}: {ch.label}</span>
-                    <ExternalLink className="w-3 h-3 opacity-60" />
-                  </a>
-                ))}
-              </div>
-            </div>
-
-          </div>
-        </section>
-
-        {/* Related Brands in the Same Lens */}
+        {/* 7. Brand Terkait di Lensa yang Sama */}
         {relatedBrands.length > 0 && (
-          <section className="space-y-6 pt-6 border-t border-inherit/10">
+          <section className="space-y-4 pt-6 border-t border-inherit/10">
             <div className="flex justify-between items-center">
               <span className="font-mono text-xs font-bold text-[#E11D48] tracking-widest uppercase">
                 BRAND LAIN DI LENSA {brand.lensName}
@@ -492,7 +290,7 @@ export default function BrandClientView({ brand }: Props) {
                 href={`/brand-lokal/${brand.lensSlug}`}
                 className={`font-mono text-xs ${mutedText} hover:text-[#E11D48] transition-colors`}
               >
-                Lihat Semua 10 Brand →
+                Lihat Lensa Lengkap →
               </Link>
             </div>
 
@@ -501,14 +299,14 @@ export default function BrandClientView({ brand }: Props) {
                 <Link
                   key={rel.slug}
                   href={`/brand/${rel.slug}`}
-                  className={`p-5 border ${borderClass} ${cardBg} group hover:border-[#E11D48] transition-all flex flex-col justify-between space-y-4`}
+                  className={`p-4 border ${borderClass} ${cardBg} group hover:border-[#E11D48] transition-all flex flex-col justify-between space-y-3`}
                 >
                   <div className="space-y-2">
                     <div className="flex items-center gap-2.5">
                       <div className="w-8 h-8 rounded-none border border-white/20 bg-black/40 overflow-hidden relative shrink-0">
-                        <img src={rel.logoUrl} alt={rel.name} className="w-full h-full object-cover" />
+                        <img src={rel.logoUrl} alt={rel.name} className="w-full h-full object-contain" />
                       </div>
-                      <span className="font-display text-sm uppercase tracking-tight group-hover:text-[#E11D48] transition-colors">
+                      <span className="font-display text-sm uppercase tracking-tight group-hover:text-[#E11D48] transition-colors line-clamp-1">
                         {rel.name}
                       </span>
                     </div>
@@ -518,7 +316,7 @@ export default function BrandClientView({ brand }: Props) {
                   </div>
                   <div className="flex items-center justify-between text-[11px] font-mono opacity-80 pt-2 border-t border-inherit/10">
                     <span>{rel.origin}</span>
-                    <span className="text-[#E11D48] group-hover:translate-x-1 transition-transform">Lihat →</span>
+                    <span className="text-[#E11D48] group-hover:translate-x-1 transition-transform">Baca →</span>
                   </div>
                 </Link>
               ))}

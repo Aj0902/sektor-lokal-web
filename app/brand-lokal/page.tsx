@@ -54,7 +54,7 @@ export default function BrandLokalHubPage() {
               </div>
               <div className="flex items-center gap-2">
                 <Building2 className="w-4 h-4 text-[#2563EB]" />
-                <span>100% Evidence-First</span>
+                <span>Kurasi Independen</span>
               </div>
             </div>
           </div>

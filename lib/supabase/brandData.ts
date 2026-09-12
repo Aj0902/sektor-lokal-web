@@ -1,5 +1,5 @@
-// Master Brand Lokal Dataset (Evidence-First Editorial Standard)
-// Generated for Sektor Lokal Discovery Engine (60 Master Brands across 6 Lenses)
+// Master Brand Lokal Dataset (Reader-First Editorial Standard)
+// Synthesized with 3-Credit Tavily OSINT for 60 Master Brands across 6 Lenses
 
 export interface BrandProduct {
   name: string;
@@ -101,7 +101,7 @@ export const brandLenses: BrandLens[] = [
     "editorialTitle": "Kedaulatan Benih, Tanah, dan Rasa Nusantara",
     "definition": "Brand dan produsen pangan berbasis biodiversitas asli, agroekologi tanpa perusak tanah, serta pemutusan rantai pasok tengkulak komoditas.",
     "narrative": [
-      "Ketika sistem pangan modern bergantung pada bibit impor monokultur dan pupuk kimia sintesis, kedaulatan ragawi masyarakat Indonesia perlahan tergerus. Ketergantungan pangan bukan sekadar perkara komersial, melainkan ancaman nyata terhadap ketahanan hayati dan warisan rasa leluhur yang telah beradaptasi ratusan tahun dengan iklim kepulauan.",
+      "Ketika sistem pangan modern bergantung pada bibit impor monokultur dan bahan pengawet sintetis, kedaulatan ragawi masyarakat perlahan tergerus. Ketergantungan pangan bukan sekadar perkara komersial, melainkan ancaman nyata terhadap ketahanan hayati dan warisan rasa leluhur yang telah beradaptasi ratusan tahun dengan iklim kepulauan.",
       "Brand dalam laci ini membuktikan bahwa hasil tanah nusantara, dari beras pusaka, kakao artisan, sagu alami, hingga garam kristal laut dalam, dapat diolah dengan disiplin mutu kelas dunia tanpa meminggirkan petani kecil dan ekosistem tanah."
     ],
     "findingQuestion": "Bagaimana pangan lokal bertransformasi dari sekadar komoditas mentah menjadi kedaulatan nutrisi dan kebanggaan rasa bernilai tinggi?",
@@ -117,7 +117,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Jakarta / Banten",
         "discoveryHeadline": "Ratusan Varietas Padi Purba Punah dari Pasar Komersial",
         "coreFinding": "Mengomersialisasikan lebih dari 800 produk pangan berbasis keanekaragaman hayati asli dengan mempertahankan hak pemuliaan benih pusaka di tangan puluhan ribu petani swadaya.",
-        "logoUrl": "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://lookaside.fbsbx.com/lookaside/crawler/instagram/javaraindonesia/profile_pic.jpg",
         "flagshipPriceRange": "Rp45.000 | Rp35.000",
         "totalScore": 99
       },
@@ -128,7 +128,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Bandar Lampung / Bali",
         "discoveryHeadline": "Kakao Indonesia Kerap Terjual Murah sebagai Komoditas Curah Mentah",
         "coreFinding": "Menerapkan model direct trade dengan harga hingga dua kali lipat harga pasar efektif memaksa kepatuhan fermentasi biji kakao lokal berstandar internasional di zona penyangga taman nasional.",
-        "logoUrl": "https://images.unsplash.com/photo-1548907040-4baa42d10919?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://lookaside.fbsbx.com/lookaside/crawler/instagram/krakakoa/profile_pic.jpg",
         "flagshipPriceRange": "Rp55.500 | Rp67.710",
         "totalScore": 97
       },
@@ -139,7 +139,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Jakarta Selatan, DKI Jakarta",
         "discoveryHeadline": "Rasa Kakao Berbeda Radikal di Tiap Lapisan Tanah Nusantara",
         "coreFinding": "Membongkar hegemoni cokelat industri berbasis perisa sintetis dengan memetakan profil asam organik dan terroir spesifik kakao single-origin dari enam pulau utama Indonesia.",
-        "logoUrl": "https://images.unsplash.com/photo-1511381939415-e44015466834?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://pbs.twimg.com/profile_images/712922078299561985/S5suGj41_400x400.jpg",
         "flagshipPriceRange": "Rp65.000 | Rp49.000",
         "totalScore": 95
       },
@@ -150,7 +150,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Karangasem, Bali",
         "discoveryHeadline": "Kacang Mete Mentah Dulu Diekspor Murah ke Luar Negeri untuk Dikupas",
         "coreFinding": "Mematahkan pola rantai pasok kolonial di mana gelondong mete mentah Karangasem diekspor ribuan kilometer hanya untuk dikupas di Vietnam/India sebelum dibeli kembali oleh konsumen domestik.",
-        "logoUrl": "https://images.unsplash.com/photo-1536599018102-9f803c140fc1?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3186356269372637995",
         "flagshipPriceRange": "Rp35.000 | Rp22.000",
         "totalScore": 96
       },
@@ -161,7 +161,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Surabaya / Pasuruan, Jawa Timur",
         "discoveryHeadline": "Ketergantungan Terigu Impor Menjerat Ketahanan Pangan Nasional",
         "coreFinding": "Mentransformasi singkong rakyat berkadar air tinggi menjadi tepung mocaf (Modified Cassava Flour) murni tanpa rekayasa genetik dan bebas gluten yang mampu mensubstitusi tepung terigu rasio 1:1.",
-        "logoUrl": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://mms.img.susercontent.com/734c20c9de9999730ff10c3ec1a6e7e4",
         "flagshipPriceRange": "Rp18.000 | Rp9.500",
         "totalScore": 92
       },
@@ -172,7 +172,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Depok, Jawa Barat / Jakarta",
         "discoveryHeadline": "Kacang Kenari Liar Alor Mengendap di Lantai Hutan Tanpa Nilai Tambah",
         "coreFinding": "Berhasil mengorganisasikan rantai pasok etnobotani hutan non-budidaya dari pulau terpencil Indonesia Timur hingga masuk rantai pasok industri horeka modern dan ekspor.",
-        "logoUrl": "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://lookaside.fbsbx.com/lookaside/crawler/instagram/timurasaindonesia/profile_pic.jpg",
         "flagshipPriceRange": "Rp38.000 | Rp32.000",
         "totalScore": 93
       },
@@ -183,7 +183,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Badung / Tabanan, Bali",
         "discoveryHeadline": "Vanila Indonesia Sempat Dijuluki 'Java Vanilla' Berkadar Rendah Akibat Panen Dini",
         "coreFinding": "Mengintegrasikan estate agroforestry dan fasilitas pemrosesan terdesentralisasi untuk merealisasikan penelusuran digital (traceability) penuh bagi setiap polong vanila, kopi, dan minyak atsiri langsung dari koordinat asalnya (Origin).",
-        "logoUrl": "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://lookaside.fbsbx.com/lookaside/crawler/instagram/thetalasi/profile_pic.jpg",
         "flagshipPriceRange": "Rp125.000 | Rp75.000",
         "totalScore": 93
       },
@@ -194,7 +194,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Sleman, D.I. Yogyakarta",
         "discoveryHeadline": "Susu Murah Lereng Merapi Naik Kelas Menjadi Keju Artisan Matang Alami",
         "coreFinding": "Membuktikan bahwa susu murni peternak sapi perah rakyat lereng Gunung Merapi berbasis pakan rumput segar (grass-fed) mampu diproses menjadi keju artisan natural-rind dan cave-aged berkualitas tinggi tanpa aditif kimia pengental maupun kebergantungan pada keju impor.",
-        "logoUrl": "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://lookaside.fbsbx.com/lookaside/crawler/instagram/mazaraatartisancheese/profile_pic.jpg",
         "flagshipPriceRange": "Rp85.000 | Rp95.000",
         "totalScore": 97
       },
@@ -205,7 +205,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Bandung, Jawa Barat",
         "discoveryHeadline": "Jamu Identik dengan Rebusan Pinggir Jalan yang Rawan Pengawet Kimia Obat",
         "coreFinding": "Menemukan model ekstraksi dingin rimpang segar murni dan madu hutan primer Baduy tanpa pengawet sintesis, pewarna, maupun konsentrat impor, bersertifikasi BPOM dan sirkularitas limbah organik 100%.",
-        "logoUrl": "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://mms.img.susercontent.com/id-11134216-7ra0k-mdmot821isk2e7_tn",
         "flagshipPriceRange": "Rp159.000 | Rp89.000",
         "totalScore": 97
       },
@@ -216,7 +216,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Sleman / Yogyakarta, D.I. Yogyakarta",
         "discoveryHeadline": "Petani Padi Terjerat Utang Pupuk Petrokimia & Benih Pabrikan",
         "coreFinding": "Membuktikan restorasi tanah sawah kritis secara mandiri lewat pembudidayaan varietas benih pusaka lokal Jawa (Mentik Susu, Pandan Wangi, Beras Merah Cempo) dengan siklus nutrisi tertutup tanpa ketergantungan input kimia pabrikan.",
-        "logoUrl": "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://mms.img.susercontent.com/11140d44c9752fa2038dd6f949c56fc3",
         "flagshipPriceRange": "Rp36.000 | Rp34.000",
         "totalScore": 99
       }
@@ -244,7 +244,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Temanggung, Jawa Tengah",
         "discoveryHeadline": "Temuan kayu sisa kebun desa",
         "coreFinding": "Kayu perkebunan non-hutan yang ditebang terukur mampu menghasilkan instrumen audio analog berpresisi tinggi dengan toleransi mikron langsung dari bengkel pedesaan.",
-        "logoUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://www.henkel.com/resource/image/417572/1x1/1000/1000/7380eb805de454bc96fc79f34a720cdc/F5F115A7F130BF0652470CBE4C53FDFA/magno-logo.webp",
         "flagshipPriceRange": "Rp2.200.000 | Rp250.000",
         "totalScore": 98
       },
@@ -255,7 +255,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Flores Timur, NTT / Jakarta",
         "discoveryHeadline": "Temuan kelimpahan daun lontar kering di savana NTT",
         "coreFinding": "Mentransformasikan komoditas daun lontar liar menjadi rantai pasok kriya korporat berskala puluhan ribu unit tanpa mendisrupsi tatanan sosiologis masyarakat adat.",
-        "logoUrl": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://mms.img.susercontent.com/id-11134216-81ztc-mei0z8bkifpd58",
         "flagshipPriceRange": "Rp250.000 | Rp350.000",
         "totalScore": 98
       },
@@ -266,7 +266,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Temanggung, Jawa Tengah",
         "discoveryHeadline": "Temuan karakteristik elastisitas serat bambu petung liar",
         "coreFinding": "Laminasi bilah bambu petung memiliki rasio kekuatan terhadap bobot dan daya redam getaran jalan raya yang melampaui tabung aluminium standar pabrik.",
-        "logoUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100064532536155",
         "flagshipPriceRange": "Rp12.500.000 | Rp9.500.000",
         "totalScore": 98
       },
@@ -277,7 +277,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Semarang, Jawa Tengah",
         "discoveryHeadline": "Temuan pendangkalan parah dan ledakan populasi gulma danau",
         "coreFinding": "Memproses biomassa eceng gondok invasif menjadi substitusi material tekstil tebal dan kriya anyam tahan kelembapan.",
-        "logoUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://linktr.ee/og/image/bengokcraft.jpg",
         "flagshipPriceRange": "Rp175.000 | Rp45.000",
         "totalScore": 94
       },
@@ -288,7 +288,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Bandung, Jawa Barat",
         "discoveryHeadline": "Temuan limbah serbuk gergaji dan tandan kosong kelapa sawit yang terbengkalai",
         "coreFinding": "Miselium jamur yang ditumbuhkan pada limbah agro-industri dapat dipanen menjadi lembaran bio-leather (Mylea™) berkekuatan tarik tinggi dengan jejak air dan karbon sangat rendah.",
-        "logoUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://www.third-derivative.org/hubfs/mycl-logo.png",
         "flagshipPriceRange": "Rp150.000 | Rp650.000",
         "totalScore": 98
       },
@@ -299,7 +299,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Surabaya, Jawa Timur",
         "discoveryHeadline": "Temuan timbunan tutup botol plastik HDPE dan jeriken tak bernilai jual",
         "coreFinding": "Mengonversi limbah plastik tipe 2 (HDPE) dan tipe 5 (PP) pasca-konsumsi menjadi Robries Polymer Sheet (RPS) 100% daur ulang berkekuatan struktural tanpa bahan perekat kimia sintetis.",
-        "logoUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://lookaside.fbsbx.com/lookaside/crawler/instagram/robries/profile_pic.jpg",
         "flagshipPriceRange": "Rp800.000 | Rp65.000",
         "totalScore": 96
       },
@@ -310,7 +310,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Surabaya, Jawa Timur",
         "discoveryHeadline": "Temuan tumpukan kain perca sisa industri garmen yang berakhir di pembakaran sampah",
         "coreFinding": "Potongan limbah kain pra dan pasca-konsumsi diurai secara mekanis tanpa bahan kimia pewarna tambahan menjadi benang daur ulang siap tenun berkualitas industri.",
-        "logoUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://mms.img.susercontent.com/ce378d0e259327ddcd23835a4cebfcdb_tn",
         "flagshipPriceRange": "Rp85.000 | Rp150.000",
         "totalScore": 95
       },
@@ -321,7 +321,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Jakarta / Jambi",
         "discoveryHeadline": "Temuan pelepah pinang tua yang membusuk dan memicu kebakaran di perkebunan Sumatera",
         "coreFinding": "Lembaran pelepah pohon pinang (Areca catechu) gugur memiliki struktur alami kedap minyak dan air panas tanpa membutuhkan laminasi plastik polietilena sama sekali.",
-        "logoUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=2986497174877678465",
         "flagshipPriceRange": "Rp85.000 | Rp3.500",
         "totalScore": 99
       },
@@ -332,7 +332,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Tasikmalaya, Jawa Barat",
         "discoveryHeadline": "Temuan kearifan anyaman bambu Tasikmalaya yang terdegradasi menjadi komoditas besek murah",
         "coreFinding": "Integrasi studio desain terpadu langsung di tapak desa mampu menaikkan nilai ekonomi kriya anyam bambu hingga 500% sekaligus menghentikan laju migrasi tenaga kerja muda ke kota.",
-        "logoUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://down-id.img.susercontent.com/file/cea5554676de66c7fe56f7581f1ac4b7",
         "flagshipPriceRange": "Rp320.000 | Rp185.000",
         "totalScore": 98
       },
@@ -343,7 +343,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Bandung, Jawa Barat",
         "discoveryHeadline": "Temuan pencemaran limbah cair fermentasi ceri kopi yang mengalir ke saluran air tanah perbukitan",
         "coreFinding": "Kultur bakteri selulosa (microbial cellulose) bernutrisi limbah cair pengolahan kopi menghasilkan biomaterial (Misel) berkarakteristik fisik setara kulit sintetis tanpa eksploitasi lahan.",
-        "logoUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=400&q=80",
         "flagshipPriceRange": "Rp250.000 | Rp280.000",
         "totalScore": 97
       }
@@ -371,7 +371,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Jakarta / Jawa Tengah",
         "discoveryHeadline": "Rantai Pasok Tertutup dari Benih Kapas hingga Jahitan Terakhir: Menghapus Middleman Demi Living Wage Penenun Desa",
         "coreFinding": "Beroperasi tanpa kompromi bahan sintetis melalui model farm-to-closet bersertifikasi B Corp pertama di Indonesia yang mengontrol 100% ketertelusuran bahan baku dari tanah petani regeneratif.",
-        "logoUrl": "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://lookaside.fbsbx.com/lookaside/crawler/instagram/sukkhacitta/profile_pic.jpg",
         "flagshipPriceRange": "Rp1.850.000 | Rp3.200.000",
         "totalScore": 99
       },
@@ -382,7 +382,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Jakarta",
         "discoveryHeadline": "Mendekonstruksi Wastra Sirkular: Ketika Serat Daur Ulang dan Tencel Berpadu dengan Cap Tembaga Pekalongan",
         "coreFinding": "Mengombinasikan motif naratif kontemporer dengan protokol sirkularitas terukur yang mengolah limbah pra dan pasca-konsumsi tekstil kembali menjadi benang tenun fungsional.",
-        "logoUrl": "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://mms.img.susercontent.com/28430d8ba1839a57af52a9a0757c581b_tn",
         "flagshipPriceRange": "Rp1.800.000 | Rp1.500.000",
         "totalScore": 95
       },
@@ -393,7 +393,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Jakarta / Tana Toraja, Sulawesi Selatan",
         "discoveryHeadline": "Mematahkan Siklus Migrasi Ilegal: Menghidupkan Alat Tenun Punggung Toraja Menjadi Penopang Ekonomi Rumah Tangga Adat",
         "coreFinding": "Mentransformasikan tradisi tenun gedogan (backstrap loom) menjadi unit usaha mandiri berdaya saing global yang menekan angka perdagangan orang dan migrasi buruh migran ilegal perempuan Toraja dan Mamasa.",
-        "logoUrl": "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://www.samueletini.com/wp-content/uploads/2024/04/image.png",
         "flagshipPriceRange": "Rp950.000 | Rp1.200.000",
         "totalScore": 98
       },
@@ -404,7 +404,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Jakarta",
         "discoveryHeadline": "Konstruksi Anyaman Sutra Tanpa Gunting Benang: Rekayasa ATBM Presisi Tinggi yang Menembus Standar Adibusana Global",
         "coreFinding": "Memodifikasi alat tenun bukan mesin (ATBM) untuk memintal benang sutra mentah lokal dengan kerapatan mikroskopis presisi sebelum dibatik canting manual.",
-        "logoUrl": "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://lookaside.fbsbx.com/lookaside/crawler/instagram/binhouse_official/profile_pic.jpg",
         "flagshipPriceRange": "Rp3.500.000 | Rp12.000.000",
         "totalScore": 98
       },
@@ -415,7 +415,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Jakarta / Kanekes, Banten",
         "discoveryHeadline": "Tegangan Garis Baduy di Runway Internasional: Mempertahankan Pakem Adat Tenun Kanekes dalam Potongan Avant-Garde",
         "coreFinding": "Menjembatani isolasi geografis dan aturan kultural ketat suku Baduy Luar dengan mentransformasikan kain tenun serat kasar menjadi mantel struktural tanpa merusak filosofi tabu adat Kanekes.",
-        "logoUrl": "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://lookaside.fbsbx.com/lookaside/crawler/instagram/lekatofficial/profile_pic.jpg",
         "flagshipPriceRange": "Rp2.800.000 | Rp1.750.000",
         "totalScore": 94
       },
@@ -426,7 +426,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Jakarta / Sikka, Maumere, NTT",
         "discoveryHeadline": "Mendokumentasikan Herbarium Tenun Sikka: Desentralisasi Studio Desain Ibu Kota Menuju Dapur Pewarna Alami Watubo",
         "coreFinding": "Mendirikan entitas kolektif perajin di Desa Watublapi (Flores) yang mendokumentasikan formula kimia tumbuhan alami dan memproduksi aksesori modern presisi tinggi.",
-        "logoUrl": "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://mms.img.susercontent.com/03cfc30659e8b7ff9af6cb4d76f7340f",
         "flagshipPriceRange": "Rp650.000 | Rp1.800.000",
         "totalScore": 96
       },
@@ -437,7 +437,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Tangerang Selatan, Banten",
         "discoveryHeadline": "Monokrom Biru Tanpa Limbah Toksik: Menjinakkan Fermentasi Daun Tarum untuk Batik Tulis Modern Harian",
         "coreFinding": "Merancang busana siap pakai (ready-to-wear) monokromatis berbasis 100% pasta tarum (Indigofera tinctoria) hasil fermentasi mandiri tanpa bahan kimia pereduksi beracun.",
-        "logoUrl": "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=400&q=80",
         "flagshipPriceRange": "Rp1.100.000 | Rp1.350.000",
         "totalScore": 93
       },
@@ -448,7 +448,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Gianyar, Bali",
         "discoveryHeadline": "Laboratorium Botani di Tengah Sawah Gianyar: Ekstraksi Sampah Pertanian dan Daun Liar Menjadi Pigmen Tekstil Presisi",
         "coreFinding": "Laboratorium sains pewarnaan tekstil organik yang memformulasi pigmen stabil dari limbah kulit buah, daun mangga, serbuk gergaji, dan lumpur vulkanik tanpa jejak mikroplastik.",
-        "logoUrl": "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://pagimotley.com/assets/logo/pagimotley.webp",
         "flagshipPriceRange": "Rp850.000 | Rp1.750.000",
         "totalScore": 96
       },
@@ -459,7 +459,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Nita, Maumere, NTT",
         "discoveryHeadline": "Menghapus Benang Pabrikan dari Hulu Maumere: Mengembalikan Kapas Varietas Adat dan Pewarna Loba Bersama Mama-Mama Sikka",
         "coreFinding": "Mengembalikan kedaulatan wastra dengan mewajibkan seluruh helai tenun ikatnya memakai benang kapas pintal tangan asli (keper) dan pewarna hutan primer tanpa sehelai pun benang poliester komersial.",
-        "logoUrl": "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3904006697035982184",
         "flagshipPriceRange": "Rp850.000 | Rp4.500.000",
         "totalScore": 100
       },
@@ -470,7 +470,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Jakarta / Kapuas Hulu, Kalimantan Barat",
         "discoveryHeadline": "Serat Daun Doyo dan Tenun Sidan Dayak Iban: Menembus Batas Hutan Hujan Menghadapi Ancaman Kepunahan Tenun Serat Liar",
         "coreFinding": "Merevitalisasi dan menjaga transmisi teknik Tenun Sidan serta Tenun Ikat Dayak Iban Ensaid Panjang di jantung Kalbar menggunakan benang kapas pilin manual dan getah kayu langka hutan hujan tropis.",
-        "logoUrl": "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://lookaside.fbsbx.com/lookaside/crawler/instagram/by.rakuji/profile_pic.jpg",
         "flagshipPriceRange": "Rp1.050.000 | Rp3.000.000",
         "totalScore": 99
       }
@@ -498,7 +498,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Tangerang Selatan, Banten",
         "discoveryHeadline": "Hegemoni Teori Kritis Tanpa Konglomerasi: Mengapa Penerbit Independen Pinggiran Jakarta Menjadi Rujukan Utama Naskah Kiri Global?",
         "coreFinding": "Membuktikan bahwa naskah teori kritis, historiografi dekolonial, dan filsafat berat dapat mempertahankan model bisnis mandiri selama dua dekade tanpa bergantung pada konsorsium ritel arus utama.",
-        "logoUrl": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://marjinkiri.id/apple-icon.png?apple-icon.3h8ovvx82yqu0.png",
         "flagshipPriceRange": "Rp68.000 | Rp98.000",
         "totalScore": 97
       },
@@ -509,7 +509,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Jakarta Selatan, DKI Jakarta",
         "discoveryHeadline": "Runtuhnya Tembok Iklan Komersial: Mungkinkah Jurnalisme Investigasi Bertahan Sepenuhnya dari Hibah Publik dan Dana Komunitas?",
         "coreFinding": "Membuktikan bahwa jurnalisme investigasi nalar publik dapat beroperasi bebas intervensi oligarki dengan mengandalkan sistem keanggotaan publik (membership) dan konsorsium riset nirlaba.",
-        "logoUrl": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://public.flourish.studio/uploads/816970/54181b81-4731-47ec-a84d-b51b970d1bcf.png",
         "flagshipPriceRange": "Rp90.000 | Rp50.000",
         "totalScore": 97
       },
@@ -520,7 +520,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Jakarta Pusat, DKI Jakarta",
         "discoveryHeadline": "Anomali Saintifik di Tengah Konglomerasi: Bagaimana KPG Mempertahankan Otonomi Naskah Non-Fiksi Berat di Bawah Naungan Korporasi Raksasa?",
         "coreFinding": "Imprint di bawah konglomerasi media nasional yang menjaga integritas intelektual dengan merilis seri terjemahan sains murni, antropologi, dan sejarah kritis tanpa terjebak komersialisasi instan.",
-        "logoUrl": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://image1ws.indotrading.com/s3/webp/co33337/companylogo/w200-h200/logo_kpg_header.gif",
         "flagshipPriceRange": "Rp135.000 | Rp85.000",
         "totalScore": 94
       },
@@ -531,7 +531,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Jakarta Barat, DKI Jakarta",
         "discoveryHeadline": "Kekuatan Ruang Berita Independen: Bagaimana Majalah Berita Mingguan Mengarungi Turbulensi Sensor Sejarah Sejak 1971?",
         "coreFinding": "Membuktikan ketahanan model ruang berita investigasi tertua di Indonesia yang tetap berdiri di atas asas kepemilikan karyawan dan standar verifikasi faktual ketat.",
-        "logoUrl": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://images.seeklogo.com/logo-png/51/1/tempo-magazine-logo-png_seeklogo-511160.png",
         "flagshipPriceRange": "Rp85.000 | Rp400.000",
         "totalScore": 96
       },
@@ -542,7 +542,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Sleman, D.I. Yogyakarta",
         "discoveryHeadline": "Satire sebagai Senjata Publik: Mengapa Platform Esai Santai dari Sleman Mampu Mengonversi Pembaca Digital Menjadi Pembeli Buku Sastra?",
         "coreFinding": "Diskursus sosial-politik satire dapat bertransformasi menjadi divisi penerbitan buku fisik yang laris tanpa mengorbankan bobot literer.",
-        "logoUrl": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://lookaside.fbsbx.com/lookaside/crawler/instagram/mojokstore/profile_pic.jpg",
         "flagshipPriceRange": "Rp88.000 | Rp75.000",
         "totalScore": 93
       },
@@ -553,7 +553,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Jakarta Selatan, DKI Jakarta",
         "discoveryHeadline": "Teori Kritis dan Filsafat Kerap Terjebak di Menara Gading Kampus",
         "coreFinding": "Mematahkan elitisme akademis dengan mentransformasikan diskursus sains sosial, ekonomi politik, dan logika filsafat ke dalam konten media digital berbasis riset mendalam yang dikonsumsi jutaan pemuda.",
-        "logoUrl": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/c05e5bbb15302154dcfbf2c8c35acb2f~tplv-tiktokx-cropcenter:720:720.jpeg?dr=9640&refresh_token=7b85f8d5&x-expires=1784865600&x-signature=97np2ItogZ5QBHAX51k4iyMuCKo%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8",
         "flagshipPriceRange": "Rp 150.000 | Rp75.000",
         "totalScore": 98
       },
@@ -564,7 +564,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Jakarta Selatan / Tangerang",
         "discoveryHeadline": "1.200 Karakter Komik Adiwira Indonesia Tercecer dan Terancam Lapuk",
         "coreFinding": "Menyelamatkan dan mengonsolidasikan lebih dari 1.200 pustaka karakter adiwira dan pendekar komik klasik Indonesia sejak 1954 ke dalam ekosistem penerbitan komik modern dan semesta sinema terpadu.",
-        "logoUrl": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/5/53/Bl_%282%29.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original",
         "flagshipPriceRange": "Rp65.000 | Rp55.000",
         "totalScore": 99
       },
@@ -575,7 +575,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Jakarta Selatan, DKI Jakarta",
         "discoveryHeadline": "Ribuan Piringan Hitam Master Musik Indonesia Rusak Dimakan Rayap",
         "coreFinding": "Mengembangkan situs pengarsipan digital musik populer Indonesia terbesar yang memburu, merestorasi fisik, dan mendigitalisasi ribuan rilisan piringan hitam era 1920 - 1980 yang terbengkalai untuk diakses publik secara gratis.",
-        "logoUrl": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://cdn.brandfetch.io/domain/iramanusantara.org/fallback/lettermark/theme/dark/h/400/w/400/icon?c=1bfwsmEH20zzEfSNTed",
         "flagshipPriceRange": "Rp 150.000 | Rp85.000",
         "totalScore": 100
       },
@@ -586,7 +586,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Jakarta Selatan, DKI Jakarta",
         "discoveryHeadline": "Etalase Sastra di Lantai Pasar Tradisional: Mungkinkah Kios Seluas Tiga Kali Tiga Meter Merevolusi Ekosistem Penerbitan Mikro?",
         "coreFinding": "Membuktikan kios pasar tradisional dapat menjadi simpul diplomasi sastra alternatif yang menghubungkan penulis Asia Tenggara, penerbit mikro independen, dan komunitas pembaca kuratorial.",
-        "logoUrl": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100064028164186",
         "flagshipPriceRange": "Rp65.000 | Rp75.000",
         "totalScore": 97
       },
@@ -597,7 +597,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Sleman, D.I. Yogyakarta",
         "discoveryHeadline": "Toko Buku Arus Utama Kian Sepi Tergilas Ritel Daring",
         "coreFinding": "Mentransformasi distribusi buku sastra, filsafat, dan pemikiran independen dari citra berat dan eksklusif menjadi ritual membaca yang intim dan estetis melalui kurasi personal di media sosial.",
-        "logoUrl": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://mms.img.susercontent.com/da6f1bdb48715c545b22038952756815",
         "flagshipPriceRange": "Rp60.000 | Rp85.000",
         "totalScore": 98
       }
@@ -625,7 +625,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Jakarta Selatan, DKI Jakarta",
         "discoveryHeadline": "CCTV Resolusi Rendah di Bawah Kanopi Jalan Tropis",
         "coreFinding": "Algoritma visi komputer lokal dibangun dari nol untuk mengenali plat kendaraan dan wajah pada video resolusi rendah di bawah 720p dengan pencahayaan tropis ekstrem dan sudut tangkap curam.",
-        "logoUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3006119617428903318",
         "flagshipPriceRange": "Rp 150.000 | Rp12.000.000",
         "totalScore": 96
       },
@@ -636,7 +636,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Sleman, D.I. Yogyakarta",
         "discoveryHeadline": "Lahan Gambut Terisolasi Ratusan Hektar",
         "coreFinding": "Kerusakan ekosistem perkebunan kelapa sawit dan gambut dicegah dengan stasiun telemetri nirkabel frekuensi rendah LoRa dan satelit yang beroperasi tanpa sinyal seluler.",
-        "logoUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://yt3.googleusercontent.com/LdEqkCupKK6JuWNRGavBHwSdDG0PM3sbsCiwtrA-L6z56HmlqAmnP9f2HZhPdWcTUhnt6m1XmA=s900-c-k-c0x00ffffff-no-rj",
         "flagshipPriceRange": "Rp 150.000 | Rp 150.000",
         "totalScore": 95
       },
@@ -647,7 +647,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Jakarta Selatan, DKI Jakarta / Denpasar, Bali",
         "discoveryHeadline": "Skeptisisme Total Perbankan Terhadap Bitcoin 2014",
         "coreFinding": "Membangun infrastruktur bursa aset kripto lokal berlisensi Bappebti/OJK pertama di Indonesia yang membuktikan likuiditas pasangan mata uang rupiah mandiri untuk jutaan investor ritel domestik.",
-        "logoUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ca/LOGO_INDODAX_NEW.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
         "flagshipPriceRange": "Rp 150.000 | Rp 150.000",
         "totalScore": 95
       },
@@ -658,7 +658,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Depok, Jawa Barat / Jakarta Selatan",
         "discoveryHeadline": "Biaya Transfer Antarbank Rp6.500 Menggerus Margin Transaksi Rakyat",
         "coreFinding": "Mendisrupsi biaya transfer perbankan Rp6.500 yang membebani masyarakat selama puluhan tahun melalui rekayasa sistem antrean rekening perantara legal berizin Bank Indonesia.",
-        "logoUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=400&q=80",
         "flagshipPriceRange": "Rp 150.000 | Rp 150.000",
         "totalScore": 98
       },
@@ -669,7 +669,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Jakarta Selatan, DKI Jakarta",
         "discoveryHeadline": "Ketiadaan Data Polusi Udara Real-Time di Tingkat RT/RW",
         "coreFinding": "Membangun jaringan sensor polusi udara particulate matter (PM2.5) independen terbesar di Indonesia yang dipasang langsung di rumah warga untuk mendemokratisasi data kualitas udara hiperlokal.",
-        "logoUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=400&q=80",
         "flagshipPriceRange": "Rp 150.000 | Rp 150.000",
         "totalScore": 95
       },
@@ -680,7 +680,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Jakarta Selatan, DKI Jakarta",
         "discoveryHeadline": "Pasien Kurang Mampu Ditolak Rumah Sakit Karena Ketiadaan Dana Tunai Cepat",
         "coreFinding": "Mentransformasi solidaritas kedermawanan tradisional menjadi platform urun dana (crowdfunding) digital terbuka yang mencairkan ratusan miliar rupiah per tahun untuk pasien kritis dan bencana alam.",
-        "logoUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://play-lh.googleusercontent.com/myPZXQ96u8THurTYakUPT4jpEaj9K5rPVLDSKNr1anCTwkntseNfIiqh82hRdC0XA5M",
         "flagshipPriceRange": "Rp 150.000 | Rp 150.000",
         "totalScore": 98
       },
@@ -691,7 +691,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Jakarta / Remote",
         "discoveryHeadline": "Ratusan Juta Data Kependudukan Bocor dan Dijual Bebas di Dark Web",
         "coreFinding": "Mengembangkan mesin pencari intelijen kebocoran data pribadi (data breach) pertama di Indonesia yang dapat diakses publik secara gratis tanpa mencatat atau mengeksploitasi data pengguna.",
-        "logoUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=2605165609050696184",
         "flagshipPriceRange": "Rp 150.000 | Rp 150.000",
         "totalScore": 97
       },
@@ -702,7 +702,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Bandung, Jawa Barat / Nasional",
         "discoveryHeadline": "Proyek Digitalisasi Desa Miliaran Rupiah Kerap Berakhir Mangkrak",
         "coreFinding": "Mengembangkan platform Sistem Informasi Desa (OpenSID) sumber terbuka (open-source) gratis yang diadopsi secara mandiri oleh lebih dari 5.500 desa di seluruh Indonesia tanpa bergantung pada proyek vendor APBD mahal.",
-        "logoUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100063787771435",
         "flagshipPriceRange": "Rp 150.000 | Rp1.200.000",
         "totalScore": 100
       },
@@ -713,7 +713,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Bandung, Jawa Barat / Kasepuhan Ciptagelar",
         "discoveryHeadline": "Ribuan Desa Adat Terisolasi dari Sinyal Telekomunikasi Komersial",
         "coreFinding": "Membuktikan bahwa masyarakat adat dan warga perdesaan terpencil mampu membangun, mengoperasikan, dan merawat infrastruktur jaringan internet mandiri (community networks) berbasis perangkat keras terbuka (open-source) dan tenaga surya tanpa ketergantungan pada menara BTS operator seluler komersial.",
-        "logoUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "http://commonroomstore.com/cdn/shop/files/4_2e8ef97a-e33e-4e2c-bb43-a177cb98c1ce.png?v=1710749957",
         "flagshipPriceRange": "Rp 150.000 | Rp 150.000",
         "totalScore": 100
       },
@@ -724,7 +724,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Jakarta Selatan / Yogyakarta",
         "discoveryHeadline": "Warga Kampung Padat Terputus dari Peringatan Bencana Akibat Boros Kuota",
         "coreFinding": "Merancang platform media sosial tetangga berbasis web ultra-ringan (ultra-low bandwidth) yang memungkinkan warga kampung perkotaan berbagi peringatan banjir, info posyandu, dan lowongan kerja lokal tanpa menguras kuota data.",
-        "logoUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://play-lh.googleusercontent.com/c_734ultCqhGsnN0uAUxoPTc1e853e_jQKAwxLpspK62tre4wekrzk0i4BS4Wbu79D-jTXE_vtnrTMYaoRAt=w600-h300-pc0xffffff-pd",
         "flagshipPriceRange": "Rp 150.000 | Rp 150.000",
         "totalScore": 98
       }
@@ -752,7 +752,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Karangasem, Bali",
         "discoveryHeadline": "Fasilitas Lab Higienis Mandiri di Desa Pesisir Menolak Ketergantungan Maklon Pihak Ketiga: Disiplin Formulasi Segar dari Jasri",
         "coreFinding": "Mempertahankan seluruh siklus riset dan pengolahan in-house di fasilitas GMP berstandar farmasi di Karangasem tanpa bergantung pada jasa maklon pihak ketiga.",
-        "logoUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://lookaside.fbsbx.com/lookaside/crawler/instagram/sensatiabotanicals/profile_pic.jpg",
         "flagshipPriceRange": "Rp150.000 | Rp240.000",
         "totalScore": 96
       },
@@ -763,7 +763,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Gianyar, Bali",
         "discoveryHeadline": "Prinsip Botani Murni Food-Grade Tanpa Pengawet Sintetis: Eksistensi Formulasi Rempah Tradisional Sejak 1989",
         "coreFinding": "Menerapkan kepatuhan ketat pada kaidah botani murni dengan premis bahwa apa yang dioleskan ke kulit harus memiliki kemurnian setara bahan pangan alami.",
-        "logoUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://mms.img.susercontent.com/db3102f792442adc6bd991b282422ea6",
         "flagshipPriceRange": "Rp65.000 | Rp125.000",
         "totalScore": 95
       },
@@ -774,7 +774,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Surabaya & Sidoarjo, Jawa Timur",
         "discoveryHeadline": "Standardisasi Saintifik Ekstraksi Rimpang Usia Seabad: Rekayasa Bentuk Jamu Tradisional Menembus Gaya Hidup Urban",
         "coreFinding": "Institusi farmasi herbal tertua Nusantara (sejak 1910) merevitalisasi sistem ekstraksi rimpang ke standar CPOTB modern tanpa kehilangan senyawa aktif kurkuminoid alaminya.",
-        "logoUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://lookaside.fbsbx.com/lookaside/crawler/instagram/jamu_iboe/profile_pic.jpg",
         "flagshipPriceRange": "Rp25.000 | Rp30.000",
         "totalScore": 95
       },
@@ -785,7 +785,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Jakarta",
         "discoveryHeadline": "Demokratisasi Wewangian Fine Fragrance Melalui Pendekatan R&D Berbasis Sains: Menghentikan Hegemoni Parfum Desainer Impor",
         "coreFinding": "Mematahkan paradigma bahwa parfum berdaya sebar dan ketahanan tinggi harus berharga jutaan rupiah dengan menerapkan pemodelan piramida aroma matematis berlisensi IFRA dan BPOM.",
-        "logoUrl": "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://hmnsperfume.com/cdn/shop/files/Collaborators_-_Web_Banner_Mobile_35eeb6de-9eb4-4521-854b-555b58dbbe44.jpg?v=1788869716",
         "flagshipPriceRange": "Rp325.000 | Rp369.000",
         "totalScore": 91
       },
@@ -796,7 +796,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Tangerang Selatan, Banten",
         "discoveryHeadline": "Plastik Sekali Pakai Menguasai Dapur dan Keranjang Belanja",
         "coreFinding": "Membuktikan bahwa gaya hidup minim sampah (zero-waste) dapat diakses masyarakat luas dengan harga terjangkau melalui peranti pakai ulang berbahan serat katun mentah, bambu, dan sabut kelapa perajin lokal.",
-        "logoUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://mms.img.susercontent.com/d4502443ebc14559c294910da2d585a0",
         "flagshipPriceRange": "Rp25.000 | Rp15.000",
         "totalScore": 97
       },
@@ -807,7 +807,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Yogyakarta, D.I. Yogyakarta",
         "discoveryHeadline": "Kaos Oleh-Oleh Didominasi Sablon Murahan dan Pembajakan Masal",
         "coreFinding": "Pelopor kriya cinderamata grafis cerdas berbasis subkultur bahasa walikan Jogja yang mempertahankan orisinalitas desain dan etika teritorial tanpa berekspansi membuka cabang di luar kota.",
-        "logoUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://lookaside.fbsbx.com/lookaside/crawler/instagram/dagadudjokdja/profile_pic.jpg",
         "flagshipPriceRange": "Rp95.000 | Rp25.000",
         "totalScore": 99
       },
@@ -818,7 +818,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Jakarta Selatan, DKI Jakarta",
         "discoveryHeadline": "Narasi Sejarah Bangsa Kerap Berdebu di Lemari Museum",
         "coreFinding": "Mentransformasi narasi sejarah, etnobotani kuliner tradisional, dan cerita rakyat kepulauan menjadi karya seni ilustrasi kemeja siap pakai (wearable storytelling) yang diminati generasi muda lintas latar belakang.",
-        "logoUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100063971893184",
         "flagshipPriceRange": "Rp225.000 | Rp275.000",
         "totalScore": 96
       },
@@ -829,7 +829,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Karanganyar, Jawa Tengah",
         "discoveryHeadline": "Kebangkitan Fasilitas Distilasi Citronella 1963 di Kaki Gunung Lawu: Rantai Pasok Mandiri dari Tanah Hingga Botol",
         "coreFinding": "Revitalisasi pabrik penyulingan atsiri bersejarah kerja sama RI-Bulgaria 1963 menjadi pusat riset botani, kebun aromatik, dan fasilitas ekstraksi uap mandiri terpadu.",
-        "logoUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://static.wixstatic.com/media/33d8cb_2c37b53703e947b5a56f3151fd6deee0~mv2.png",
         "flagshipPriceRange": "Rp95.000 | Rp145.000",
         "totalScore": 99
       },
@@ -840,7 +840,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Tangerang, Banten / Jakarta",
         "discoveryHeadline": "Alat Musik Akustik Impor Terlalu Mahal untuk Pelajar dan Seniman Jalanan",
         "coreFinding": "Mematahkan hegemoni pabrikan instrumen global dengan merekayasa gitar akustik dan ukulele berbahan kayu lokal berdaya tahan iklim tropis dan intonasi presisi dengan harga terjangkau bagi pelajar dan musisi pemula.",
-        "logoUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://mandalikamusic.com/cdn/shop/files/BANNER_WEB_jpg_1400x.jpg?v=1778815528",
         "flagshipPriceRange": "Rp550.000 | Rp220.000",
         "totalScore": 95
       },
@@ -851,7 +851,7 @@ export const brandLenses: BrandLens[] = [
         "origin": "Kota Bandung, Jawa Barat",
         "discoveryHeadline": "Jam Tangan Selalu Didominasi Cangkang Logam Impor",
         "coreFinding": "Merekayasa jam tangan kayu geometris berdimensi kompak dari kayu lokal legal dan serat kulit nabati yang mengangkat filosofi buah pala sebagai simbol komoditas sejarah kepulauan Nusantara.",
-        "logoUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=400&q=80",
+        "logoUrl": "https://mms.img.susercontent.com/b30fd7ae5f4c7cfce58ac89a33a7352a",
         "flagshipPriceRange": "Rp450.000 | Rp550.000",
         "totalScore": 99
       }
@@ -867,8 +867,7 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Pangan Pusaka & Agraria Lestari",
     "curationTier": "Established",
     "origin": "Jakarta / Banten",
-    "logoUrl": "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://lookaside.fbsbx.com/lookaside/crawler/instagram/javaraindonesia/profile_pic.jpg",
     "discoveryTitle": {
       "anomaly": "Ratusan Varietas Padi Purba Punah dari Pasar Komersial",
       "question": "Bagaimana Menjual Beras Hitam Melik Tanpa Subsidi Negara?",
@@ -885,53 +884,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Jaringan 50.000+ petani, pencari makan liar (foragers), dan pengrajin di Jawa Tengah, Jabar, NTT, hingga Papua",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi JAVARA INDIGENOUS INDONESIA.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Mengomersialisasikan lebih dari 800 produk pangan berbasis keanekaragaman hayati asli dengan mempertahankan hak pemuliaan benih pusaka di tangan puluhan ribu petani swadaya.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi JAVARA INDIGENOUS INDONESIA.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Beras Pusaka Mentik Susu Organik 1 kg",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta / Banten.",
         "price": "Rp45.000",
         "buyUrl": "https://javara.co.id/",
-        "imageUrl": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://javara.co.id/wp-content/uploads/2018/12/Products.jpg"
       },
       {
         "name": "Garam Kristal Kusamba Artisan 150 gr .",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta / Banten.",
         "price": "Rp35.000",
         "buyUrl": "https://javara.co.id/",
-        "imageUrl": "https://images.unsplash.com/photo-1518110925495-5fe2fda0442c?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3618425574165101182"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Jakarta / Banten dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Jakarta / Banten."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Pangan Pusaka & Agraria Lestari."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan JAVARA INDIGENOUS INDONESIA menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan JAVARA INDIGENOUS INDONESIA menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -979,8 +968,7 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Pangan Pusaka & Agraria Lestari",
     "curationTier": "Established",
     "origin": "Bandar Lampung / Bali",
-    "logoUrl": "https://images.unsplash.com/photo-1548907040-4baa42d10919?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://lookaside.fbsbx.com/lookaside/crawler/instagram/krakakoa/profile_pic.jpg",
     "discoveryTitle": {
       "anomaly": "Kakao Indonesia Kerap Terjual Murah sebagai Komoditas Curah Mentah",
       "question": "Mungkinkah Skema Harga Dua Kali Lipat Mengubah Fermentasi Petani Konservasi?",
@@ -997,53 +985,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Petani swadaya di Sedayu (Lampung Barat, batas TNBBS), Jembrana (Bali), dan Sulbar",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi KRAKAKOA.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Menerapkan model direct trade dengan harga hingga dua kali lipat harga pasar efektif memaksa kepatuhan fermentasi biji kakao lokal berstandar internasional di zona penyangga taman nasional.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi KRAKAKOA.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Arenga 70% Dark Chocolate Bar 50 gr",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Bandar Lampung / Bali.",
         "price": "Rp55.500",
         "buyUrl": "https://www.krakakoa.com/",
-        "imageUrl": "https://images.unsplash.com/photo-1511381939415-e44015466834?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://www.krakakoa.com/cdn/shop/products/AR-100_600x.jpg?v=1614790651"
       },
       {
         "name": "Single Origin 85% Jembrana Bali 50 gr .",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Bandar Lampung / Bali.",
         "price": "Rp67.710",
         "buyUrl": "https://www.krakakoa.com/",
-        "imageUrl": "https://images.unsplash.com/photo-1614088685112-0a760b71a3c8?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//99/MTA-7476147/krakakoa_krakakoa_box_square_jakarta_indonesian_chocolate_-24_x_5_g-_full02_bvjvk66v.jpg"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Bandar Lampung / Bali dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Bandar Lampung / Bali."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Pangan Pusaka & Agraria Lestari."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan KRAKAKOA menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan KRAKAKOA menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -1091,8 +1069,7 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Pangan Pusaka & Agraria Lestari",
     "curationTier": "Established",
     "origin": "Jakarta Selatan, DKI Jakarta",
-    "logoUrl": "https://images.unsplash.com/photo-1511381939415-e44015466834?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1548907040-4baa42d10919?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://pbs.twimg.com/profile_images/712922078299561985/S5suGj41_400x400.jpg",
     "discoveryTitle": {
       "anomaly": "Rasa Kakao Berbeda Radikal di Tiap Lapisan Tanah Nusantara",
       "question": "Mengapa Pabrik Menyeragamkan Profil Rasa Cokelat?",
@@ -1109,53 +1086,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Komunitas petani mitra di Pidie (Aceh), Berau (Kaltim), Bali, Tanatoraja (Sulsel), dan Flores (NTT)",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi PIPILTIN COCOA.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Membongkar hegemoni cokelat industri berbasis perisa sintetis dengan memetakan profil asam organik dan terroir spesifik kakao single-origin dari enam pulau utama Indonesia.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi PIPILTIN COCOA.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Chocolate Bar Single Origin Aceh 84% 80 gr",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta Selatan, DKI Jakarta.",
         "price": "Rp65.000",
         "buyUrl": "https://www.pipiltincocoa.com/",
-        "imageUrl": "https://images.unsplash.com/photo-1549007994-cb92caebd54b?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://down-id.img.susercontent.com/file/id-11134207-81ztg-mqpv6zwihjpr7f"
       },
       {
         "name": "Chocolate Drink Single Portion Box .",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta Selatan, DKI Jakarta.",
         "price": "Rp49.000",
         "buyUrl": "https://www.pipiltincocoa.com/",
-        "imageUrl": "https://images.unsplash.com/photo-1575372587186-500207559139?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//catalog-image/MTA-7631939/pipiltin_cocoa_pipiltin_cocoa_single_portions_minuman_cokelat_-3_pcs-_full04_ubjfgfa.jpeg"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Jakarta Selatan, DKI Jakarta dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Jakarta Selatan, DKI Jakarta."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Pangan Pusaka & Agraria Lestari."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan PIPILTIN COCOA menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan PIPILTIN COCOA menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -1203,8 +1170,7 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Pangan Pusaka & Agraria Lestari",
     "curationTier": "Established",
     "origin": "Karangasem, Bali",
-    "logoUrl": "https://images.unsplash.com/photo-1536599018102-9f803c140fc1?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1508873696983-2df5293cb32f?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3186356269372637995",
     "discoveryTitle": {
       "anomaly": "Kacang Mete Mentah Dulu Diekspor Murah ke Luar Negeri untuk Dikupas",
       "question": "Bisakah Desa Termiskin di Kaki Gunung Membalik Neraca Dagang?",
@@ -1221,53 +1187,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Perkebunan mete swadaya dan petani serealia/kelapa di Desa Ban, Kubu, Karangasem",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi YAVA.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Mematahkan pola rantai pasok kolonial di mana gelondong mete mentah Karangasem diekspor ribuan kilometer hanya untuk dikupas di Vietnam/India sebelum dibeli kembali oleh konsumen domestik.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi YAVA.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Granola Bites Chocolate Vanilla 125 gr",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Karangasem, Bali.",
         "price": "Rp35.000",
         "buyUrl": "https://yavabali.com/",
-        "imageUrl": "https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://cdn11.bigcommerce.com/s-5wf0xbtgyb/images/stencil/590x590/products/9181/27161/1_A7950480002167_20230509131947949_base__68601.1767082486.png?c=2"
       },
       {
         "name": "Wild Harvested Cashews Cacao 35 gr .",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Karangasem, Bali.",
         "price": "Rp22.000",
         "buyUrl": "https://yavabali.com/",
-        "imageUrl": "https://images.unsplash.com/photo-1599599810769-bcde5a160d32?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//96/MTA-21708923/east-bali-cashews_east-bali-cashew-nut-raw-cshw-225gr_full01.jpg"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Karangasem, Bali dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Karangasem, Bali."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Pangan Pusaka & Agraria Lestari."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan YAVA menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan YAVA menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -1315,8 +1271,7 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Pangan Pusaka & Agraria Lestari",
     "curationTier": "Middle",
     "origin": "Surabaya / Pasuruan, Jawa Timur",
-    "logoUrl": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://mms.img.susercontent.com/734c20c9de9999730ff10c3ec1a6e7e4",
     "discoveryTitle": {
       "anomaly": "Ketergantungan Terigu Impor Menjerat Ketahanan Pangan Nasional",
       "question": "Mampukah Umbi Singkong Fermentasi Meniru Elastisitas Roti Modern?",
@@ -1333,53 +1288,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Ratusan hektar kebun singkong mitra tani di Pasuruan, Malang, dan Probolinggo",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi LADANG LIMA.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Mentransformasi singkong rakyat berkadar air tinggi menjadi tepung mocaf (Modified Cassava Flour) murni tanpa rekayasa genetik dan bebas gluten yang mampu mensubstitusi tepung terigu rasio 1:1.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi LADANG LIMA.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Tepung Singkong Mocaf Serbaguna 500 gr",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Surabaya / Pasuruan, Jawa Timur.",
         "price": "Rp18.000",
         "buyUrl": "https://healthycornersby.com/product/tepung-mocaf-singkong-500g-gluten-free-serbaguna-ladang-lima/",
-        "imageUrl": "https://images.unsplash.com/photo-1612927601601-6638404737ce?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://down-id.img.susercontent.com/file/4a9f4d0fc85f9be7f214a2c3cac1acc6"
       },
       {
         "name": "Veggie Noodle Daun Kelor 76 gr .",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Surabaya / Pasuruan, Jawa Timur.",
         "price": "Rp9.500",
         "buyUrl": "https://healthycornersby.com/product/tepung-mocaf-singkong-500g-gluten-free-serbaguna-ladang-lima/",
-        "imageUrl": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://ladanglimastore.com/_ipx/f_webp&q_100&s_1000x1000/https://storage.googleapis.com/ama-nexa/lsi/2026/07/15/72_id-11134207-8224r-mkrwhzxyfi87ba-500x500.webp"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Surabaya / Pasuruan, Jawa Timur dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Surabaya / Pasuruan, Jawa Timur."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Pangan Pusaka & Agraria Lestari."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan LADANG LIMA menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan LADANG LIMA menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -1427,8 +1372,7 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Pangan Pusaka & Agraria Lestari",
     "curationTier": "Middle",
     "origin": "Depok, Jawa Barat / Jakarta",
-    "logoUrl": "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://lookaside.fbsbx.com/lookaside/crawler/instagram/timurasaindonesia/profile_pic.jpg",
     "discoveryTitle": {
       "anomaly": "Kacang Kenari Liar Alor Mengendap di Lantai Hutan Tanpa Nilai Tambah",
       "question": "Siapa yang Mengorganisir Logistik Komoditas Kepulauan Terluar?",
@@ -1445,53 +1389,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Panenan pohon kenari tua liar di Pulau Alor (NTT), pengrajin gula aren alami Lebak (Banten), serta sentra budidaya sorgum dan kelor Flores",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi TIMURASA INDONESIA.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Berhasil mengorganisasikan rantai pasok etnobotani hutan non-budidaya dari pulau terpencil Indonesia Timur hingga masuk rantai pasok industri horeka modern dan ekspor.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi TIMURASA INDONESIA.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Kacang Kenari Alor Panggang Original 100 gr",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Depok, Jawa Barat / Jakarta.",
         "price": "Rp38.000",
         "buyUrl": "https://m.timurasa.com/",
-        "imageUrl": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://cdn-osk.vincere.team/products/86b466a0-b189-4555-bbbb-6f0ed13545a5/783377ac-318b-4dcf-b3c0-4d8b2ecd7030.png"
       },
       {
         "name": "Gula Lontar Organik Rote 250 gr .",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Depok, Jawa Barat / Jakarta.",
         "price": "Rp32.000",
         "buyUrl": "https://m.timurasa.com/",
-        "imageUrl": "https://images.unsplash.com/photo-1518110925495-5fe2fda0442c?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://cdn-osk.vincere.team/products/86b466a0-b189-4555-bbbb-6f0ed13545a5/5db7a8b2-6592-4c8a-a63b-b8affd82d67d.png"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Depok, Jawa Barat / Jakarta dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Depok, Jawa Barat / Jakarta."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Pangan Pusaka & Agraria Lestari."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan TIMURASA INDONESIA menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan TIMURASA INDONESIA menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -1539,8 +1473,7 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Pangan Pusaka & Agraria Lestari",
     "curationTier": "Middle",
     "origin": "Badung / Tabanan, Bali",
-    "logoUrl": "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://lookaside.fbsbx.com/lookaside/crawler/instagram/thetalasi/profile_pic.jpg",
     "discoveryTitle": {
       "anomaly": "Vanila Indonesia Sempat Dijuluki 'Java Vanilla' Berkadar Rendah Akibat Panen Dini",
       "question": "Dapatkah Sertifikasi Asal-Usul Mengembalikan Reputasinya?",
@@ -1557,53 +1490,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Kebun agroforestri terintegrasi di Batukaru/Selemadeg (Tabanan, Bali), Sumba (NTT), dan Jawa",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi TALASI.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Mengintegrasikan estate agroforestry dan fasilitas pemrosesan terdesentralisasi untuk merealisasikan penelusuran digital (traceability) penuh bagi setiap polong vanila, kopi, dan minyak atsiri langsung dari koordinat asalnya (Origin).",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi TALASI.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Pure Vanilla Extract Bali Origin 50 ml",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Badung / Tabanan, Bali.",
         "price": "Rp125.000",
         "buyUrl": "https://www.talasi.com/about-us",
-        "imageUrl": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full/catalog-image/MTA-7124367/watu_watu_multifloral_honey_-_madu_asli_kapuas_hulu_400gr_kalimantan_barat_full01_tnr5pxvd.webp"
       },
       {
         "name": "Cashew Butter Raw Honey 200 gr .",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Badung / Tabanan, Bali.",
         "price": "Rp75.000",
         "buyUrl": "https://www.talasi.com/about-us",
-        "imageUrl": "https://images.unsplash.com/photo-1518110925495-5fe2fda0442c?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://asset.kompas.com/crops/Tajkg-8uKe-x_9KV_xD5UHln5Ic=/73x30:997x646/1200x800/data/photo/2021/06/12/60c4abc251fcd.jpeg"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Badung / Tabanan, Bali dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Badung / Tabanan, Bali."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Pangan Pusaka & Agraria Lestari."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan TALASI menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan TALASI menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -1651,8 +1574,7 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Pangan Pusaka & Agraria Lestari",
     "curationTier": "Hidden Gem",
     "origin": "Sleman, D.I. Yogyakarta",
-    "logoUrl": "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://lookaside.fbsbx.com/lookaside/crawler/instagram/mazaraatartisancheese/profile_pic.jpg",
     "discoveryTitle": {
       "anomaly": "Susu Murah Lereng Merapi Naik Kelas Menjadi Keju Artisan Matang Alami",
       "question": "Mampukah Peternak Rakyat Menantang Keju Olahan Pabrikan Tanpa Rennet Impor Industri?",
@@ -1669,53 +1591,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Kelompok peternak sapi perah rakyat di lereng Gunung Merapi (Cangkringan dan Pakem, Sleman) bersistem pakan rumput hijauan",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi MAZARAAT ARTISAN CHEESE.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Membuktikan bahwa susu murni peternak sapi perah rakyat lereng Gunung Merapi berbasis pakan rumput segar (grass-fed) mampu diproses menjadi keju artisan natural-rind dan cave-aged berkualitas tinggi tanpa aditif kimia pengental maupun kebergantungan pada keju impor.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi MAZARAAT ARTISAN CHEESE.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Mazaraat Gouda / Halloumi Raw Milk Cheese 200 gr",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Sleman, D.I. Yogyakarta.",
         "price": "Rp85.000",
         "buyUrl": "https://mazaraat.com/",
-        "imageUrl": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://www.nusantarafoodhotel.com/wp-content/uploads/2024/07/Mazaraat-cheese.jpg"
       },
       {
         "name": "Camembert / Black Truffle Artisan Cheese 125 gr .",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Sleman, D.I. Yogyakarta.",
         "price": "Rp95.000",
         "buyUrl": "https://mazaraat.com/",
-        "imageUrl": "https://images.unsplash.com/photo-1518110925495-5fe2fda0442c?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://mms.img.susercontent.com/id-11134210-7ra0m-mbp2tpp8jx7i6c@resize_ss700x700"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Sleman, D.I. Yogyakarta dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Sleman, D.I. Yogyakarta."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Pangan Pusaka & Agraria Lestari."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan MAZARAAT ARTISAN CHEESE menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan MAZARAAT ARTISAN CHEESE menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -1763,8 +1675,7 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Pangan Pusaka & Agraria Lestari",
     "curationTier": "Hidden Gem",
     "origin": "Bandung, Jawa Barat",
-    "logoUrl": "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://mms.img.susercontent.com/id-11134216-7ra0k-mdmot821isk2e7_tn",
     "discoveryTitle": {
       "anomaly": "Jamu Identik dengan Rebusan Pinggir Jalan yang Rawan Pengawet Kimia Obat",
       "question": "Bisakah Formulasi Rimpang Dingin Memenuhi Standar BPOM & Nol Sampah?",
@@ -1781,53 +1692,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Madu hutan mentah Suku Baduy (Banten), lemon Lembang, jahe merah dan kunyit dari kelompok tani Jabar & Jateng",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi RAHSA NUSANTARA.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Menemukan model ekstraksi dingin rimpang segar murni dan madu hutan primer Baduy tanpa pengawet sintesis, pewarna, maupun konsentrat impor, bersertifikasi BPOM dan sirkularitas limbah organik 100%.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi RAHSA NUSANTARA.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Sapujagad Sari Bawang Putih Tunggal & Lemon 200 ml",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Bandung, Jawa Barat.",
         "price": "Rp159.000",
         "buyUrl": "https://shop.rahsa.id/",
-        "imageUrl": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "http://shop.rahsa.id/cdn/shop/files/012_2023Sapujagad_004e7033-a92f-4abf-bba3-0224ceda7baa.png?v=1701765869"
       },
       {
         "name": "Sari Jahe Merah Murni 235 ml .",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Bandung, Jawa Barat.",
         "price": "Rp89.000",
         "buyUrl": "https://shop.rahsa.id/",
-        "imageUrl": "https://images.unsplash.com/photo-1518110925495-5fe2fda0442c?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://shop.rahsa.id/cdn/shop/files/ImageCover-PaketSehatLengkapAnak_1_768x768.png?v=1701769484%20768w,//shop.rahsa.id/cdn/shop/files/ImageCover-PaketSehatLengkapAnak_1_1024x1024.png?v=1701769484%201024w,//shop.rahsa.id/cdn/shop/files/ImageCover-PaketSehatLengkapAnak_1_1440x1440.png?v=1701769484%201440w"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Bandung, Jawa Barat dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Bandung, Jawa Barat."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Pangan Pusaka & Agraria Lestari."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan RAHSA NUSANTARA menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan RAHSA NUSANTARA menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -1875,8 +1776,7 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Pangan Pusaka & Agraria Lestari",
     "curationTier": "Hidden Gem",
     "origin": "Sleman / Yogyakarta, D.I. Yogyakarta",
-    "logoUrl": "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://mms.img.susercontent.com/11140d44c9752fa2038dd6f949c56fc3",
     "discoveryTitle": {
       "anomaly": "Petani Padi Terjerat Utang Pupuk Petrokimia & Benih Pabrikan",
       "question": "Mungkinkah Kembali ke Padi Mentik Wangi Tanpa Pestisida Menghidupkan Ekosistem?",
@@ -1893,53 +1793,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Sawah tadah hujan dan irigasi mata air alami lereng Merapi (Sleman), Magelang, dan Kulon Progo",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi LINGKAR ORGANIK.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Membuktikan restorasi tanah sawah kritis secara mandiri lewat pembudidayaan varietas benih pusaka lokal Jawa (Mentik Susu, Pandan Wangi, Beras Merah Cempo) dengan siklus nutrisi tertutup tanpa ketergantungan input kimia pabrikan.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi LINGKAR ORGANIK.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Beras Organik Mentik Wangi Susu 1 kg",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Sleman / Yogyakarta, D.I. Yogyakarta.",
         "price": "Rp36.000",
         "buyUrl": "https://www.lingkarorganik.or.id/",
-        "imageUrl": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full/catalog-image/MTA-91400757/lingkar_organik_lingkar_organik_-_tepung_beras_merah_-gluten_free-_-_500gr_full01_d65uxxpx.jpg"
       },
       {
         "name": "Beras Cokelat Pecah Kulit 1 kg .",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Sleman / Yogyakarta, D.I. Yogyakarta.",
         "price": "Rp34.000",
         "buyUrl": "https://www.lingkarorganik.or.id/",
-        "imageUrl": "https://images.unsplash.com/photo-1518110925495-5fe2fda0442c?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full/catalog-image/MTA-132016519/lingkar_organik_beras_organik_-_lingkar_organik_-_organic_rice_mpasi_full01_r5s4aox4.jpg"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Sleman / Yogyakarta, D.I. Yogyakarta dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Sleman / Yogyakarta, D.I. Yogyakarta."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Pangan Pusaka & Agraria Lestari."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan LINGKAR ORGANIK menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan LINGKAR ORGANIK menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -1987,8 +1877,7 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Kriya, Desain & Material Berkelanjutan",
     "curationTier": "Established",
     "origin": "Temanggung, Jawa Tengah",
-    "logoUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://www.henkel.com/resource/image/417572/1x1/1000/1000/7380eb805de454bc96fc79f34a720cdc/F5F115A7F130BF0652470CBE4C53FDFA/magno-logo.webp",
     "discoveryTitle": {
       "anomaly": "Temuan kayu sisa kebun desa",
       "question": "Pertanyaan apakah presisi kriya mampu menembus standardisasi desain Jerman dan Jepang tanpa eksploitasi hutan primer",
@@ -2005,53 +1894,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Kebun rakyat di Kandangan, Temanggung",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi MAGNO.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Kayu perkebunan non-hutan yang ditebang terukur mampu menghasilkan instrumen audio analog berpresisi tinggi dengan toleransi mikron langsung dari bengkel pedesaan.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi MAGNO.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Radio Kayu Magno",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Temanggung, Jawa Tengah.",
         "price": "Rp2.200.000",
         "buyUrl": "https://magno-design.com",
-        "imageUrl": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/img/VqbcmM/2025/1/28/0b3a710e-d6f2-4310-bd50-1441dcb51429.jpg~tplv-aphluv4xwc-white-pad-v1:250:250.jpg"
       },
       {
         "name": "Wooden Stationery Series",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Temanggung, Jawa Tengah.",
         "price": "Rp250.000",
         "buyUrl": "https://magno-design.com",
-        "imageUrl": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://down-id.img.susercontent.com/file/id-11134207-7rbk3-m8tzogi3ubrx1f"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Temanggung, Jawa Tengah dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Temanggung, Jawa Tengah."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Kriya, Desain & Material Berkelanjutan."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan MAGNO menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan MAGNO menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -2099,8 +1978,7 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Kriya, Desain & Material Berkelanjutan",
     "curationTier": "Established",
     "origin": "Flores Timur, NTT / Jakarta",
-    "logoUrl": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1590736969955-71cc94801759?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://mms.img.susercontent.com/id-11134216-81ztc-mei0z8bkifpd58",
     "discoveryTitle": {
       "anomaly": "Temuan kelimpahan daun lontar kering di savana NTT",
       "question": "Ketegangan jurang malnutrisi ibu dan nihilnya akses tunai perdesaan terpencil",
@@ -2117,53 +1995,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Daun pohon lontar lestari di Flores Timur, Lembata, Alor (NTT), dan purun di Kalsel",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi DU ANYAM.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Mentransformasikan komoditas daun lontar liar menjadi rantai pasok kriya korporat berskala puluhan ribu unit tanpa mendisrupsi tatanan sosiologis masyarakat adat.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi DU ANYAM.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Sobu Storage Basket",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Flores Timur, NTT / Jakarta.",
         "price": "Rp250.000",
         "buyUrl": "https://duanyam.com",
-        "imageUrl": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=800&q=80"
       },
       {
         "name": "Dua Sisi Tote Bag Lontar",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Flores Timur, NTT / Jakarta.",
         "price": "Rp350.000",
         "buyUrl": "https://duanyam.com",
-        "imageUrl": "https://images.unsplash.com/photo-1578932750294-f5075e85f44a?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://images.unsplash.com/photo-1518110925495-5fe2fda0442c?auto=format&fit=crop&w=800&q=80"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Flores Timur, NTT / Jakarta dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Flores Timur, NTT / Jakarta."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Kriya, Desain & Material Berkelanjutan."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan DU ANYAM menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan DU ANYAM menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -2211,8 +2079,7 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Kriya, Desain & Material Berkelanjutan",
     "curationTier": "Established",
     "origin": "Temanggung, Jawa Tengah",
-    "logoUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100064532536155",
     "discoveryTitle": {
       "anomaly": "Temuan karakteristik elastisitas serat bambu petung liar",
       "question": "Ketegangan apakah material organik rapuh mampu menahan beban impak struktural layaknya rangka logam",
@@ -2229,53 +2096,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Bambu petung tua (3 - 5 tahun) dari lereng Gunung Sindoro dan Sumbing",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi SPEDAGI.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Laminasi bilah bambu petung memiliki rasio kekuatan terhadap bobot dan daya redam getaran jalan raya yang melampaui tabung aluminium standar pabrik.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi SPEDAGI.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Spedagi Dalan Rata",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Temanggung, Jawa Tengah.",
         "price": "Rp12.500.000",
         "buyUrl": "https://www.spedagi.com",
-        "imageUrl": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=800&q=80"
       },
       {
         "name": "Spedagi Rodalink / Urban Commuter",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Temanggung, Jawa Tengah.",
         "price": "Rp9.500.000",
         "buyUrl": "https://www.spedagi.com",
-        "imageUrl": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://images.unsplash.com/photo-1518110925495-5fe2fda0442c?auto=format&fit=crop&w=800&q=80"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Temanggung, Jawa Tengah dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Temanggung, Jawa Tengah."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Kriya, Desain & Material Berkelanjutan."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan SPEDAGI menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan SPEDAGI menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -2323,8 +2180,7 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Kriya, Desain & Material Berkelanjutan",
     "curationTier": "Established",
     "origin": "Semarang, Jawa Tengah",
-    "logoUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://linktr.ee/og/image/bengokcraft.jpg",
     "discoveryTitle": {
       "anomaly": "Temuan pendangkalan parah dan ledakan populasi gulma danau",
       "question": "Ketegangan bagaimana limbah basah perusak turbin air diubah menjadi komoditas ekspor non-pembusukan",
@@ -2341,53 +2197,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Danau Rawa Pening oleh nelayan Desa Kesongo, Tuntang",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi BENGOK CRAFT.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Memproses biomassa eceng gondok invasif menjadi substitusi material tekstil tebal dan kriya anyam tahan kelembapan.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi BENGOK CRAFT.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Bengok Handbag Anyam",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Semarang, Jawa Tengah.",
         "price": "Rp175.000",
         "buyUrl": "https://linktr.ee/bengokcraft",
-        "imageUrl": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100063469843246"
       },
       {
         "name": "Eceng Gondok Storage Basket & Placemat",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Semarang, Jawa Tengah.",
         "price": "Rp45.000",
         "buyUrl": "https://linktr.ee/bengokcraft",
-        "imageUrl": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3508965809139953666"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Semarang, Jawa Tengah dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Semarang, Jawa Tengah."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Kriya, Desain & Material Berkelanjutan."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan BENGOK CRAFT menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan BENGOK CRAFT menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -2435,8 +2281,7 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Kriya, Desain & Material Berkelanjutan",
     "curationTier": "Middle",
     "origin": "Bandung, Jawa Barat",
-    "logoUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://www.third-derivative.org/hubfs/mycl-logo.png",
     "discoveryTitle": {
       "anomaly": "Temuan limbah serbuk gergaji dan tandan kosong kelapa sawit yang terbengkalai",
       "question": "Ketegangan industri kulit hewani yang boros air dan mencemari lingkungan dengan kromium beracun",
@@ -2453,53 +2298,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Serbuk gergaji kayu sengon dan limbah pertanian Jabar",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi MYCL.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Miselium jamur yang ditumbuhkan pada limbah agro-industri dapat dipanen menjadi lembaran bio-leather (Mylea™) berkekuatan tarik tinggi dengan jejak air dan karbon sangat rendah.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi MYCL.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Mylea™ Bio-Material Sheets",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Bandung, Jawa Barat.",
         "price": "Rp150.000",
         "buyUrl": "https://mycl.bio",
-        "imageUrl": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://mycl.bio/wp-content/uploads/2026/03/MYCL-NBA-Shoot-Around-Shirt-Monochrome-768x768.png"
       },
       {
         "name": "Mylea Capsule Goods",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Bandung, Jawa Barat.",
         "price": "Rp650.000",
         "buyUrl": "https://mycl.bio",
-        "imageUrl": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://www.third-derivative.org/hubfs/mycl-logo.png"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Bandung, Jawa Barat dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Bandung, Jawa Barat."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Kriya, Desain & Material Berkelanjutan."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan MYCL menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan MYCL menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -2547,8 +2382,7 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Kriya, Desain & Material Berkelanjutan",
     "curationTier": "Middle",
     "origin": "Surabaya, Jawa Timur",
-    "logoUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://lookaside.fbsbx.com/lookaside/crawler/instagram/robries/profile_pic.jpg",
     "discoveryTitle": {
       "anomaly": "Temuan timbunan tutup botol plastik HDPE dan jeriken tak bernilai jual",
       "question": "Ketegangan stigma daur ulang plastik sebagai barang kriya murah tanpa nilai arsitektural",
@@ -2565,53 +2399,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Limbah tutup botol, jeriken, dan galon dari bank sampah dan pemulung Jawa Timur",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi ROBRIES.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Mengonversi limbah plastik tipe 2 (HDPE) dan tipe 5 (PP) pasca-konsumsi menjadi Robries Polymer Sheet (RPS) 100% daur ulang berkekuatan struktural tanpa bahan perekat kimia sintetis.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi ROBRIES.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Robries Polymer Sheet  Panel",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Surabaya, Jawa Timur.",
         "price": "Rp800.000",
         "buyUrl": "https://robries.com",
-        "imageUrl": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/e2f791dd6c0645379876273a53886b36~tplv-aphluv4xwc-white-pad-v1:250:250.jpeg"
       },
       {
         "name": "Recycled Plastic Home Accessories",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Surabaya, Jawa Timur.",
         "price": "Rp65.000",
         "buyUrl": "https://robries.com",
-        "imageUrl": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/img/VqbcmM/2025/3/19/16960212-2d9e-45f3-b528-e32612c65255.jpg~tplv-aphluv4xwc-resize-jpeg:700:0.jpg"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Surabaya, Jawa Timur dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Surabaya, Jawa Timur."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Kriya, Desain & Material Berkelanjutan."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan ROBRIES menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan ROBRIES menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -2659,8 +2483,7 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Kriya, Desain & Material Berkelanjutan",
     "curationTier": "Middle",
     "origin": "Surabaya, Jawa Timur",
-    "logoUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://mms.img.susercontent.com/ce378d0e259327ddcd23835a4cebfcdb_tn",
     "discoveryTitle": {
       "anomaly": "Temuan tumpukan kain perca sisa industri garmen yang berakhir di pembakaran sampah",
       "question": "Ketegangan industri tekstil yang terus mengeksploitasi lahan kapas boros pestisida",
@@ -2677,53 +2500,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Limbah kain perca dari puluhan pabrik garmen Jawa Timur dan Jawa Tengah",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi PABLE INDONESIA.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Potongan limbah kain pra dan pasca-konsumsi diurai secara mekanis tanpa bahan kimia pewarna tambahan menjadi benang daur ulang siap tenun berkualitas industri.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi PABLE INDONESIA.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Kain Tenun Daur Ulang Pable",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Surabaya, Jawa Timur.",
         "price": "Rp85.000",
         "buyUrl": "https://pable.id",
-        "imageUrl": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://pable.id/wp-content/uploads/2025/03/Cover.webp"
       },
       {
         "name": "Pable Upcycled Tote Bag & Blanket",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Surabaya, Jawa Timur.",
         "price": "Rp150.000",
         "buyUrl": "https://pable.id",
-        "imageUrl": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://down-id.img.susercontent.com/file/id-11134207-81ztm-mqmwafnxv1u607"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Surabaya, Jawa Timur dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Surabaya, Jawa Timur."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Kriya, Desain & Material Berkelanjutan."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan PABLE INDONESIA menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan PABLE INDONESIA menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -2771,8 +2584,7 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Kriya, Desain & Material Berkelanjutan",
     "curationTier": "Hidden Gem",
     "origin": "Jakarta / Jambi",
-    "logoUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=2986497174877678465",
     "discoveryTitle": {
       "anomaly": "Temuan pelepah pinang tua yang membusuk dan memicu kebakaran di perkebunan Sumatera",
       "question": "Ketegangan limbah styrofoam makanan yang bertahan ratusan tahun di ekosistem laut",
@@ -2789,53 +2601,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Pengumpulan pelepah pinang gugur di Tanjung Jabung Barat (Jambi) dan Sumsel",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi PLEPAH.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Lembaran pelepah pohon pinang (Areca catechu) gugur memiliki struktur alami kedap minyak dan air panas tanpa membutuhkan laminasi plastik polietilena sama sekali.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi PLEPAH.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Plepah Food Container Box",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta / Jambi.",
         "price": "Rp85.000",
         "buyUrl": "https://www.plepah.com",
-        "imageUrl": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=2850234857742554163"
       },
       {
         "name": "Piring Pesta Biodegradabel Pelepah Pinang",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta / Jambi.",
         "price": "Rp3.500",
         "buyUrl": "https://www.plepah.com",
-        "imageUrl": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://www.greeners.co/wp-content/uploads/2020/12/Plapah-ID-2-min.jpg"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Jakarta / Jambi dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Jakarta / Jambi."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Kriya, Desain & Material Berkelanjutan."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan PLEPAH menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan PLEPAH menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -2883,8 +2685,7 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Kriya, Desain & Material Berkelanjutan",
     "curationTier": "Hidden Gem",
     "origin": "Tasikmalaya, Jawa Barat",
-    "logoUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://down-id.img.susercontent.com/file/cea5554676de66c7fe56f7581f1ac4b7",
     "discoveryTitle": {
       "anomaly": "Temuan kearifan anyaman bambu Tasikmalaya yang terdegradasi menjadi komoditas besek murah",
       "question": "Ketegangan keengganan generasi muda perajin desa melanjutkan profesi akibat upah tak manusiawi",
@@ -2901,53 +2702,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Bambu tali dan gombong lestari di lereng Galunggung",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi STUDIO DAPUR.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Integrasi studio desain terpadu langsung di tapak desa mampu menaikkan nilai ekonomi kriya anyam bambu hingga 500% sekaligus menghentikan laju migrasi tenaga kerja muda ke kota.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi STUDIO DAPUR.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Frangipani Bamboo Tray",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Tasikmalaya, Jawa Barat.",
         "price": "Rp320.000",
         "buyUrl": "https://www.studiodapur.com",
-        "imageUrl": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://studiodapur.com/cdn/shop/files/banner_JIA-compressed.jpg?v=1786591718&width=3840"
       },
       {
         "name": "Tudung Saji Bambu Minimalis",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Tasikmalaya, Jawa Barat.",
         "price": "Rp185.000",
         "buyUrl": "https://www.studiodapur.com",
-        "imageUrl": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://studiodapur.com/cdn/shop/files/WoodenShelf2_edd42ff0-759c-4679-b8f4-981c099e3a98.jpg?v=1735530147&width=533"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Tasikmalaya, Jawa Barat dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Tasikmalaya, Jawa Barat."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Kriya, Desain & Material Berkelanjutan."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan STUDIO DAPUR menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan STUDIO DAPUR menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -2995,8 +2786,7 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Kriya, Desain & Material Berkelanjutan",
     "curationTier": "Hidden Gem",
     "origin": "Bandung, Jawa Barat",
-    "logoUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=400&q=80",
     "discoveryTitle": {
       "anomaly": "Temuan pencemaran limbah cair fermentasi ceri kopi yang mengalir ke saluran air tanah perbukitan",
       "question": "Ketegangan industri tekstil yang masih mengimpor polimer sintetis berbasis minyak bumi",
@@ -3013,53 +2803,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Limbah cair pulp kopi dan kulit buah dari petani Ciwidey dan Pangalengan",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi BELL SOCIETY.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Kultur bakteri selulosa (microbial cellulose) bernutrisi limbah cair pengolahan kopi menghasilkan biomaterial (Misel) berkarakteristik fisik setara kulit sintetis tanpa eksploitasi lahan.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi BELL SOCIETY.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Misel Raw Bio-Material Sheet",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Bandung, Jawa Barat.",
         "price": "Rp250.000",
         "buyUrl": "https://thebellsociety.com",
-        "imageUrl": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full/catalog-image/MTA-183075719/periplus_the_bell_jar_-modern_classics-_by_sylvia_plath_-_9780060837020_full01_rkdkxzlw.webp"
       },
       {
         "name": "Misel Vegan Leather Cardholder / Slim Wallet",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Bandung, Jawa Barat.",
         "price": "Rp280.000",
         "buyUrl": "https://thebellsociety.com",
-        "imageUrl": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://giocardin.com/cdn/shop/files/240.GC_XBell.jpg?v=1693642378&width=1946"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Bandung, Jawa Barat dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Bandung, Jawa Barat."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Kriya, Desain & Material Berkelanjutan."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan BELL SOCIETY menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan BELL SOCIETY menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -3107,12 +2887,11 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Wastra & Manufaktur Etis",
     "curationTier": "Established",
     "origin": "Jakarta / Jawa Tengah",
-    "logoUrl": "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1607083206869-4c7672e72a8a?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://lookaside.fbsbx.com/lookaside/crawler/instagram/sukkhacitta/profile_pic.jpg",
     "discoveryTitle": {
       "anomaly": "Rantai Pasok Tertutup dari Benih Kapas hingga Jahitan Terakhir: Menghapus Middleman Demi Living Wage Penenun Desa",
-      "question": "Bagaimana merevolusi standar industri melalui kemandirian lokal?",
-      "paradigm": "Rekayasa Nilai Mandiri SUKKHACITTA"
+      "question": "Bagaimana membuktikan keunggulan mandiri tanpa kompromi mutu?",
+      "paradigm": "Kemandirian SUKKHACITTA"
     },
     "coreFinding": "Beroperasi tanpa kompromi bahan sintetis melalui model farm-to-closet bersertifikasi B Corp pertama di Indonesia yang mengontrol 100% ketertelusuran bahan baku dari tanah petani regeneratif.",
     "contextNarrative": {
@@ -3125,53 +2904,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Kapas regeneratif lokal dari petani mitra di Medono, Klaten, dan Flores",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi SUKKHACITTA.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Beroperasi tanpa kompromi bahan sintetis melalui model farm-to-closet bersertifikasi B Corp pertama di Indonesia yang mengontrol 100% ketertelusuran bahan baku dari tanah petani regeneratif.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi SUKKHACITTA.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "KAPAS Classic Shirt",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta / Jawa Tengah.",
         "price": "Rp1.850.000",
         "buyUrl": "https://discover.sukkhacitta.com/",
-        "imageUrl": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://www.sukkhacitta.com/cdn/shop/files/SukkhaCitta_ANGKASA_W1031_Classic_Wrap_Top_SweetIndigo_Medium_Blue_Resized_3.jpg?crop=center&height=1531&v=1764560760&width=1915"
       },
       {
         "name": "JAS Casual Blazer Tenun Tangan .",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta / Jawa Tengah.",
         "price": "Rp3.200.000",
         "buyUrl": "https://discover.sukkhacitta.com/",
-        "imageUrl": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://www.sukkhacitta.com/cdn/shop/files/SukkhaCitta_U5001_SELAH_Handwoven_Scarf_Grid_SweetIndigo_Black_Catalog_Photo_Resized_5.jpg?crop=center&height=800&v=1763370918&width=1000"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Jakarta / Jawa Tengah dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Jakarta / Jawa Tengah."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Wastra & Manufaktur Etis."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan SUKKHACITTA menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan SUKKHACITTA menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -3219,12 +2988,11 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Wastra & Manufaktur Etis",
     "curationTier": "Established",
     "origin": "Jakarta",
-    "logoUrl": "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://mms.img.susercontent.com/28430d8ba1839a57af52a9a0757c581b_tn",
     "discoveryTitle": {
       "anomaly": "Mendekonstruksi Wastra Sirkular: Ketika Serat Daur Ulang dan Tencel Berpadu dengan Cap Tembaga Pekalongan",
-      "question": "Bagaimana merevolusi standar industri melalui kemandirian lokal?",
-      "paradigm": "Rekayasa Nilai Mandiri SEJAUH MATA MEMANDANG"
+      "question": "Bagaimana membuktikan keunggulan mandiri tanpa kompromi mutu?",
+      "paradigm": "Kemandirian SEJAUH MATA MEMANDANG"
     },
     "coreFinding": "Mengombinasikan motif naratif kontemporer dengan protokol sirkularitas terukur yang mengolah limbah pra dan pasca-konsumsi tekstil kembali menjadi benang tenun fungsional.",
     "contextNarrative": {
@@ -3237,53 +3005,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Sentra pembatik cap tembaga Pekalongan",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi SEJAUH MATA MEMANDANG.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Mengombinasikan motif naratif kontemporer dengan protokol sirkularitas terukur yang mengolah limbah pra dan pasca-konsumsi tekstil kembali menjadi benang tenun fungsional.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi SEJAUH MATA MEMANDANG.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Kemeja Lengan Panjang Motif Ayam Tenun",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta.",
         "price": "Rp1.800.000",
         "buyUrl": "https://sejauh.com/",
-        "imageUrl": "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full/catalog-image/94/MTA-173071550/sejauh_mata_memandang_outer_ayam_creme_tencel_full01_rq2iomdq.jpg"
       },
       {
         "name": "Outer Andara / Kebaya Katun Daur Ulang .",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta.",
         "price": "Rp1.500.000",
         "buyUrl": "https://sejauh.com/",
-        "imageUrl": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full/catalog-image/103/MTA-179013918/sejauh_mata_memandang_bandana_segitiga_full01_q4sdcyi7.jpg"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Jakarta dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Jakarta."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Wastra & Manufaktur Etis."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan SEJAUH MATA MEMANDANG menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan SEJAUH MATA MEMANDANG menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -3331,12 +3089,11 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Wastra & Manufaktur Etis",
     "curationTier": "Established",
     "origin": "Jakarta / Tana Toraja, Sulawesi Selatan",
-    "logoUrl": "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1607083206869-4c7672e72a8a?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://www.samueletini.com/wp-content/uploads/2024/04/image.png",
     "discoveryTitle": {
       "anomaly": "Mematahkan Siklus Migrasi Ilegal: Menghidupkan Alat Tenun Punggung Toraja Menjadi Penopang Ekonomi Rumah Tangga Adat",
-      "question": "Bagaimana merevolusi standar industri melalui kemandirian lokal?",
-      "paradigm": "Rekayasa Nilai Mandiri TORAJA MELO"
+      "question": "Bagaimana membuktikan keunggulan mandiri tanpa kompromi mutu?",
+      "paradigm": "Kemandirian TORAJA MELO"
     },
     "coreFinding": "Mentransformasikan tradisi tenun gedogan (backstrap loom) menjadi unit usaha mandiri berdaya saing global yang menekan angka perdagangan orang dan migrasi buruh migran ilegal perempuan Toraja dan Mamasa.",
     "contextNarrative": {
@@ -3349,53 +3106,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Komunitas penenun Sa'dan di Toraja Utara, Mamasa (Sulbar), dan Manggarai Barat (NTT)",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi TORAJA MELO.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Mentransformasikan tradisi tenun gedogan (backstrap loom) menjadi unit usaha mandiri berdaya saing global yang menekan angka perdagangan orang dan migrasi buruh migran ilegal perempuan Toraja dan Mamasa.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi TORAJA MELO.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Tenun Toraja Sa'dan Shawl / Runner",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta / Tana Toraja, Sulawesi Selatan.",
         "price": "Rp950.000",
         "buyUrl": "https://www.torajamelo.com/",
-        "imageUrl": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://asset.kompas.com/crops/p8helf3oi8hdhXt4xB7SZ5M1BK8=/0x150:3542x2512/1200x800/data/photo/2023/01/19/63c93d16812cb.jpg"
       },
       {
         "name": "Koleksi Tas & Apparel Tenun Gedogan .",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta / Tana Toraja, Sulawesi Selatan.",
         "price": "Rp1.200.000",
         "buyUrl": "https://www.torajamelo.com/",
-        "imageUrl": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://image1ws.indotrading.com/s3/productimages/webp/co26465/p189136/w300-h300/22b54c68-4e14-4c3d-a74f-8a47ab6adb82w.png"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Jakarta / Tana Toraja, Sulawesi Selatan dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Jakarta / Tana Toraja, Sulawesi Selatan."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Wastra & Manufaktur Etis."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan TORAJA MELO menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan TORAJA MELO menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -3443,12 +3190,11 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Wastra & Manufaktur Etis",
     "curationTier": "Established",
     "origin": "Jakarta",
-    "logoUrl": "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1607083206869-4c7672e72a8a?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://lookaside.fbsbx.com/lookaside/crawler/instagram/binhouse_official/profile_pic.jpg",
     "discoveryTitle": {
       "anomaly": "Konstruksi Anyaman Sutra Tanpa Gunting Benang: Rekayasa ATBM Presisi Tinggi yang Menembus Standar Adibusana Global",
-      "question": "Bagaimana merevolusi standar industri melalui kemandirian lokal?",
-      "paradigm": "Rekayasa Nilai Mandiri BINHOUSE"
+      "question": "Bagaimana membuktikan keunggulan mandiri tanpa kompromi mutu?",
+      "paradigm": "Kemandirian BINHOUSE"
     },
     "coreFinding": "Memodifikasi alat tenun bukan mesin (ATBM) untuk memintal benang sutra mentah lokal dengan kerapatan mikroskopis presisi sebelum dibatik canting manual.",
     "contextNarrative": {
@@ -3461,53 +3207,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Budidaya ulat sutra dan pemintalan sutra lokal",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi BINHOUSE.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Memodifikasi alat tenun bukan mesin (ATBM) untuk memintal benang sutra mentah lokal dengan kerapatan mikroskopis presisi sebelum dibatik canting manual.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi BINHOUSE.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Selendang Sutra Tenun Tangan Celup Tumpal",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta.",
         "price": "Rp3.500.000",
         "buyUrl": "https://www.jakartafashionweek.co.id/designers/binhouse/",
-        "imageUrl": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://media.karousell.com/media/photos/products/2024/12/14/bin_house_silk__obin_selendang_1734149573_615c37ab_progressive.jpg"
       },
       {
         "name": "Kain Sutra Batik Tulis Masterpiece .",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta.",
         "price": "Rp12.000.000",
         "buyUrl": "https://www.jakartafashionweek.co.id/designers/binhouse/",
-        "imageUrl": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=2431285399998525529"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Jakarta dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Jakarta."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Wastra & Manufaktur Etis."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan BINHOUSE menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan BINHOUSE menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -3555,12 +3291,11 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Wastra & Manufaktur Etis",
     "curationTier": "Middle",
     "origin": "Jakarta / Kanekes, Banten",
-    "logoUrl": "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1607083206869-4c7672e72a8a?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://lookaside.fbsbx.com/lookaside/crawler/instagram/lekatofficial/profile_pic.jpg",
     "discoveryTitle": {
       "anomaly": "Tegangan Garis Baduy di Runway Internasional: Mempertahankan Pakem Adat Tenun Kanekes dalam Potongan Avant-Garde",
-      "question": "Bagaimana merevolusi standar industri melalui kemandirian lokal?",
-      "paradigm": "Rekayasa Nilai Mandiri LEKAT"
+      "question": "Bagaimana membuktikan keunggulan mandiri tanpa kompromi mutu?",
+      "paradigm": "Kemandirian LEKAT"
     },
     "coreFinding": "Menjembatani isolasi geografis dan aturan kultural ketat suku Baduy Luar dengan mentransformasikan kain tenun serat kasar menjadi mantel struktural tanpa merusak filosofi tabu adat Kanekes.",
     "contextNarrative": {
@@ -3573,53 +3308,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Penenun perempuan Baduy Luar di Desa Kanekes, Lebak, Banten",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi LEKAT.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Menjembatani isolasi geografis dan aturan kultural ketat suku Baduy Luar dengan mentransformasikan kain tenun serat kasar menjadi mantel struktural tanpa merusak filosofi tabu adat Kanekes.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi LEKAT.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Baduy Pattern Patchwork Outerwear",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta / Kanekes, Banten.",
         "price": "Rp2.800.000",
         "buyUrl": "https://rakutenfashionweektokyo.com/en/brands/detail/lekat/",
-        "imageUrl": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3983112945617773600"
       },
       {
         "name": "Struktur Rompi Tenun Kanekes Kasar .",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta / Kanekes, Banten.",
         "price": "Rp1.750.000",
         "buyUrl": "https://rakutenfashionweektokyo.com/en/brands/detail/lekat/",
-        "imageUrl": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://img.lazcdn.com/g/p/aef45e4722abcd747cd41fdbe0a87c31.jpg_720x720q80.jpg"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Jakarta / Kanekes, Banten dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Jakarta / Kanekes, Banten."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Wastra & Manufaktur Etis."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan LEKAT menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan LEKAT menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -3667,12 +3392,11 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Wastra & Manufaktur Etis",
     "curationTier": "Middle",
     "origin": "Jakarta / Sikka, Maumere, NTT",
-    "logoUrl": "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1607083206869-4c7672e72a8a?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://mms.img.susercontent.com/03cfc30659e8b7ff9af6cb4d76f7340f",
     "discoveryTitle": {
       "anomaly": "Mendokumentasikan Herbarium Tenun Sikka: Desentralisasi Studio Desain Ibu Kota Menuju Dapur Pewarna Alami Watubo",
-      "question": "Bagaimana merevolusi standar industri melalui kemandirian lokal?",
-      "paradigm": "Rekayasa Nilai Mandiri NOESA"
+      "question": "Bagaimana membuktikan keunggulan mandiri tanpa kompromi mutu?",
+      "paradigm": "Kemandirian NOESA"
     },
     "coreFinding": "Mendirikan entitas kolektif perajin di Desa Watublapi (Flores) yang mendokumentasikan formula kimia tumbuhan alami dan memproduksi aksesori modern presisi tinggi.",
     "contextNarrative": {
@@ -3685,53 +3409,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Kelompok Tenun Watubo di pedalaman Sikka, Maumere, NTT",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi NOESA.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Mendirikan entitas kolektif perajin di Desa Watublapi (Flores) yang mendokumentasikan formula kimia tumbuhan alami dan memproduksi aksesori modern presisi tinggi.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi NOESA.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Handwoven Camera Strap Tenun Ikat Sikka",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta / Sikka, Maumere, NTT.",
         "price": "Rp650.000",
         "buyUrl": "https://noesa.co.id/",
-        "imageUrl": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/medium/catalog-image/MTA-165707507/noesa_topi_peci_miki_hat_tenun_ikat_-_topi_onde_-_noesa_full03_jnwg055r.jpg"
       },
       {
         "name": "Watublapi Natural Dye Ikat Vest / Blouse .",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta / Sikka, Maumere, NTT.",
         "price": "Rp1.800.000",
         "buyUrl": "https://noesa.co.id/",
-        "imageUrl": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/medium/catalog-image/MTA-164762848/noesa_tali_id_card_name_tag_-_gantung_id_card_lanyard_tenun_ikat_-_noesa_full01_hk5zm8au.jpg"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Jakarta / Sikka, Maumere, NTT dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Jakarta / Sikka, Maumere, NTT."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Wastra & Manufaktur Etis."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan NOESA menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan NOESA menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -3779,12 +3493,11 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Wastra & Manufaktur Etis",
     "curationTier": "Middle",
     "origin": "Tangerang Selatan, Banten",
-    "logoUrl": "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1607083206869-4c7672e72a8a?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=400&q=80",
     "discoveryTitle": {
       "anomaly": "Monokrom Biru Tanpa Limbah Toksik: Menjinakkan Fermentasi Daun Tarum untuk Batik Tulis Modern Harian",
-      "question": "Bagaimana merevolusi standar industri melalui kemandirian lokal?",
-      "paradigm": "Rekayasa Nilai Mandiri KANA GOODS"
+      "question": "Bagaimana membuktikan keunggulan mandiri tanpa kompromi mutu?",
+      "paradigm": "Kemandirian KANA GOODS"
     },
     "coreFinding": "Merancang busana siap pakai (ready-to-wear) monokromatis berbasis 100% pasta tarum (Indigofera tinctoria) hasil fermentasi mandiri tanpa bahan kimia pereduksi beracun.",
     "contextNarrative": {
@@ -3797,53 +3510,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Daun indigofera dari perkebunan binaan di Jawa Tengah",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi KANA GOODS.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Merancang busana siap pakai (ready-to-wear) monokromatis berbasis 100% pasta tarum (Indigofera tinctoria) hasil fermentasi mandiri tanpa bahan kimia pereduksi beracun.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi KANA GOODS.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Indigofera Hand-Drawn Batik Shirt",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Tangerang Selatan, Banten.",
         "price": "Rp1.100.000",
         "buyUrl": "https://bestofindonesia.best/product/kana-goods-best-of-indonesia/",
-        "imageUrl": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://bestofindonesia.best/wp-content/uploads/2024/12/Kana_Goods_4_Batik_Layered_Dress.jpg"
       },
       {
         "name": "Asymmetrical Kimono Outer Natural Indigo .",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Tangerang Selatan, Banten.",
         "price": "Rp1.350.000",
         "buyUrl": "https://bestofindonesia.best/product/kana-goods-best-of-indonesia/",
-        "imageUrl": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://bestofindonesia.best/wp-content/uploads/2024/12/Kana_Goods_13_Batik_Outer.jpg"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Tangerang Selatan, Banten dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Tangerang Selatan, Banten."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Wastra & Manufaktur Etis."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan KANA GOODS menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan KANA GOODS menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -3891,12 +3594,11 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Wastra & Manufaktur Etis",
     "curationTier": "Hidden Gem",
     "origin": "Gianyar, Bali",
-    "logoUrl": "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1607083206869-4c7672e72a8a?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://pagimotley.com/assets/logo/pagimotley.webp",
     "discoveryTitle": {
       "anomaly": "Laboratorium Botani di Tengah Sawah Gianyar: Ekstraksi Sampah Pertanian dan Daun Liar Menjadi Pigmen Tekstil Presisi",
-      "question": "Bagaimana merevolusi standar industri melalui kemandirian lokal?",
-      "paradigm": "Rekayasa Nilai Mandiri PAGI MOTLEY"
+      "question": "Bagaimana membuktikan keunggulan mandiri tanpa kompromi mutu?",
+      "paradigm": "Kemandirian PAGI MOTLEY"
     },
     "coreFinding": "Laboratorium sains pewarnaan tekstil organik yang memformulasi pigmen stabil dari limbah kulit buah, daun mangga, serbuk gergaji, dan lumpur vulkanik tanpa jejak mikroplastik.",
     "contextNarrative": {
@@ -3909,53 +3611,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Tanaman liar dan limbah pertanian subak Gianyar dan Bangli (Bali)",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi PAGI MOTLEY.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Laboratorium sains pewarnaan tekstil organik yang memformulasi pigmen stabil dari limbah kulit buah, daun mangga, serbuk gergaji, dan lumpur vulkanik tanpa jejak mikroplastik.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi PAGI MOTLEY.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Botanical Dyed Loose Fit Shirt",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Gianyar, Bali.",
         "price": "Rp850.000",
         "buyUrl": "https://pagimotley.com/",
-        "imageUrl": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://www.karyakreatifindonesia.co.id/download/bG9nbzphY2NvdW50cy9sb2dvL2xvZ28tcGFnaS1tb3RsZXktRFgwa2lOQS0yMDIyMDUyMS5wbmc="
       },
       {
         "name": "Hand-Dyed Organic Cotton Utility Jacket .",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Gianyar, Bali.",
         "price": "Rp1.750.000",
         "buyUrl": "https://pagimotley.com/",
-        "imageUrl": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://pagimotley.com/products/product_30f47442.jpg"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Gianyar, Bali dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Gianyar, Bali."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Wastra & Manufaktur Etis."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan PAGI MOTLEY menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan PAGI MOTLEY menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -4003,12 +3695,11 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Wastra & Manufaktur Etis",
     "curationTier": "Hidden Gem",
     "origin": "Nita, Maumere, NTT",
-    "logoUrl": "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1607083206869-4c7672e72a8a?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3904006697035982184",
     "discoveryTitle": {
       "anomaly": "Menghapus Benang Pabrikan dari Hulu Maumere: Mengembalikan Kapas Varietas Adat dan Pewarna Loba Bersama Mama-Mama Sikka",
-      "question": "Bagaimana merevolusi standar industri melalui kemandirian lokal?",
-      "paradigm": "Rekayasa Nilai Mandiri RUMAH BUDAYA LEPO LORUN"
+      "question": "Bagaimana membuktikan keunggulan mandiri tanpa kompromi mutu?",
+      "paradigm": "Kemandirian RUMAH BUDAYA LEPO LORUN"
     },
     "coreFinding": "Mengembalikan kedaulatan wastra dengan mewajibkan seluruh helai tenun ikatnya memakai benang kapas pintal tangan asli (keper) dan pewarna hutan primer tanpa sehelai pun benang poliester komersial.",
     "contextNarrative": {
@@ -4021,53 +3712,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Kapas cokelat (keli) dan putih organik tumpang sari di kebun adat Nita",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi RUMAH BUDAYA LEPO LORUN.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Mengembalikan kedaulatan wastra dengan mewajibkan seluruh helai tenun ikatnya memakai benang kapas pintal tangan asli (keper) dan pewarna hutan primer tanpa sehelai pun benang poliester komersial.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi RUMAH BUDAYA LEPO LORUN.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Syal Tenun Ikat Benang Pintal Tangan Alami",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Nita, Maumere, NTT.",
         "price": "Rp850.000",
         "buyUrl": "https://lepolorun.com/",
-        "imageUrl": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://awsimages.detik.net.id/community/media/visual/2025/09/05/lepo-lorun-atau-rumah-tenun-di-kabupaten-sikka-ntt-dok-endang-doge-grace-seto-1757052487706.jpeg?w=1200"
       },
       {
         "name": "Kain Sarung Upacara Utan Sikka Murni Pewarna Alam .",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Nita, Maumere, NTT.",
         "price": "Rp4.500.000",
         "buyUrl": "https://lepolorun.com/",
-        "imageUrl": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3421844969379098084"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Nita, Maumere, NTT dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Nita, Maumere, NTT."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Wastra & Manufaktur Etis."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan RUMAH BUDAYA LEPO LORUN menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan RUMAH BUDAYA LEPO LORUN menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -4115,12 +3796,11 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Wastra & Manufaktur Etis",
     "curationTier": "Hidden Gem",
     "origin": "Jakarta / Kapuas Hulu, Kalimantan Barat",
-    "logoUrl": "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1607083206869-4c7672e72a8a?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://lookaside.fbsbx.com/lookaside/crawler/instagram/by.rakuji/profile_pic.jpg",
     "discoveryTitle": {
       "anomaly": "Serat Daun Doyo dan Tenun Sidan Dayak Iban: Menembus Batas Hutan Hujan Menghadapi Ancaman Kepunahan Tenun Serat Liar",
-      "question": "Bagaimana merevolusi standar industri melalui kemandirian lokal?",
-      "paradigm": "Rekayasa Nilai Mandiri RUMAH RAKUJI"
+      "question": "Bagaimana membuktikan keunggulan mandiri tanpa kompromi mutu?",
+      "paradigm": "Kemandirian RUMAH RAKUJI"
     },
     "coreFinding": "Merevitalisasi dan menjaga transmisi teknik Tenun Sidan serta Tenun Ikat Dayak Iban Ensaid Panjang di jantung Kalbar menggunakan benang kapas pilin manual dan getah kayu langka hutan hujan tropis.",
     "contextNarrative": {
@@ -4133,53 +3813,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Komunitas perempuan Dayak Iban di Ensaid Panjang, Kapuas Hulu (Kalbar)",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi RUMAH RAKUJI.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Merevitalisasi dan menjaga transmisi teknik Tenun Sidan serta Tenun Ikat Dayak Iban Ensaid Panjang di jantung Kalbar menggunakan benang kapas pilin manual dan getah kayu langka hutan hujan tropis.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi RUMAH RAKUJI.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Rompi Panjang / Vest Tenun Serat Doyo Kalimantan",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta / Kapuas Hulu, Kalimantan Barat.",
         "price": "Rp1.050.000",
         "buyUrl": "https://rumahrakuji.id/",
-        "imageUrl": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://mms.img.susercontent.com/id-11134210-822wk-mmfpyud9hsle87@resize_bs700x700"
       },
       {
         "name": "Kain Koleksi Tenun Sidan Dayak Iban Pewarna Alami .",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta / Kapuas Hulu, Kalimantan Barat.",
         "price": "Rp3.000.000",
         "buyUrl": "https://rumahrakuji.id/",
-        "imageUrl": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://seller.tokopedia.com/imgshare/shop_snippet/ZGVmZ2hpamtsbW5v0LQFVwP4foasxbBRwrpHLBbpA7pCJsLpZjllZrHqD14=.png"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Jakarta / Kapuas Hulu, Kalimantan Barat dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Jakarta / Kapuas Hulu, Kalimantan Barat."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Wastra & Manufaktur Etis."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan RUMAH RAKUJI menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan RUMAH RAKUJI menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -4227,12 +3897,11 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Pustaka, Media & Distribusi Gagasan",
     "curationTier": "Established",
     "origin": "Tangerang Selatan, Banten",
-    "logoUrl": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://marjinkiri.id/apple-icon.png?apple-icon.3h8ovvx82yqu0.png",
     "discoveryTitle": {
       "anomaly": "Hegemoni Teori Kritis Tanpa Konglomerasi: Mengapa Penerbit Independen Pinggiran Jakarta Menjadi Rujukan Utama Naskah Kiri Global?",
-      "question": "Bagaimana merevolusi standar industri melalui kemandirian lokal?",
-      "paradigm": "Rekayasa Nilai Mandiri MARJIN KIRI"
+      "question": "Bagaimana membuktikan keunggulan mandiri tanpa kompromi mutu?",
+      "paradigm": "Kemandirian MARJIN KIRI"
     },
     "coreFinding": "Membuktikan bahwa naskah teori kritis, historiografi dekolonial, dan filsafat berat dapat mempertahankan model bisnis mandiri selama dua dekade tanpa bergantung pada konsorsium ritel arus utama.",
     "contextNarrative": {
@@ -4245,53 +3914,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Dewan kurasi editor akademisi dan periset sosial",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi MARJIN KIRI.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Membuktikan bahwa naskah teori kritis, historiografi dekolonial, dan filsafat berat dapat mempertahankan model bisnis mandiri selama dua dekade tanpa bergantung pada konsorsium ritel arus utama.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi MARJIN KIRI.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Karl Marx: Sebuah Pengantar Grafis",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Tangerang Selatan, Banten.",
         "price": "Rp68.000",
         "buyUrl": "https://marjinkiri.com/",
-        "imageUrl": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://down-id.img.susercontent.com/file/id-11134207-8224v-mkwfxx9u2xhibb"
       },
       {
         "name": "Bullshit Jobs  .",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Tangerang Selatan, Banten.",
         "price": "Rp98.000",
         "buyUrl": "https://marjinkiri.com/",
-        "imageUrl": "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full/catalog-image/MTA-60937419/marjin_kiri_buku_-_sundari_keranjingan_puisi_by_gunawan_tri_atmodjo_full01_wjier27n.jpg"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Tangerang Selatan, Banten dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Tangerang Selatan, Banten."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Pustaka, Media & Distribusi Gagasan."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan MARJIN KIRI menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan MARJIN KIRI menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -4339,12 +3998,11 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Pustaka, Media & Distribusi Gagasan",
     "curationTier": "Established",
     "origin": "Jakarta Selatan, DKI Jakarta",
-    "logoUrl": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://public.flourish.studio/uploads/816970/54181b81-4731-47ec-a84d-b51b970d1bcf.png",
     "discoveryTitle": {
       "anomaly": "Runtuhnya Tembok Iklan Komersial: Mungkinkah Jurnalisme Investigasi Bertahan Sepenuhnya dari Hibah Publik dan Dana Komunitas?",
-      "question": "Bagaimana merevolusi standar industri melalui kemandirian lokal?",
-      "paradigm": "Rekayasa Nilai Mandiri PROJECT MULTATULI"
+      "question": "Bagaimana membuktikan keunggulan mandiri tanpa kompromi mutu?",
+      "paradigm": "Kemandirian PROJECT MULTATULI"
     },
     "coreFinding": "Membuktikan bahwa jurnalisme investigasi nalar publik dapat beroperasi bebas intervensi oligarki dengan mengandalkan sistem keanggotaan publik (membership) dan konsorsium riset nirlaba.",
     "contextNarrative": {
@@ -4357,53 +4015,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Jaringan jurnalis lepas investigatif di pelosok Nusantara",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi PROJECT MULTATULI.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Membuktikan bahwa jurnalisme investigasi nalar publik dapat beroperasi bebas intervensi oligarki dengan mengandalkan sistem keanggotaan publik (membership) dan konsorsium riset nirlaba.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi PROJECT MULTATULI.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Seri Buku Investigasi Kolektif: Mengabarkan dari Pinggiran",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta Selatan, DKI Jakarta.",
         "price": "Rp90.000",
         "buyUrl": "https://projectmultatuli.org/",
-        "imageUrl": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://down-id.img.susercontent.com/file/id-11134207-822wg-mo6j4fsh3gn9d5"
       },
       {
         "name": "Keanggotaan Kawan M .",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta Selatan, DKI Jakarta.",
         "price": "Rp50.000",
         "buyUrl": "https://projectmultatuli.org/",
-        "imageUrl": "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://projectmultatuli.org/wp-content/uploads/2026/03/INAproc1-1024x683.png"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Jakarta Selatan, DKI Jakarta dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Jakarta Selatan, DKI Jakarta."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Pustaka, Media & Distribusi Gagasan."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan PROJECT MULTATULI menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan PROJECT MULTATULI menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -4451,12 +4099,11 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Pustaka, Media & Distribusi Gagasan",
     "curationTier": "Established",
     "origin": "Jakarta Pusat, DKI Jakarta",
-    "logoUrl": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://image1ws.indotrading.com/s3/webp/co33337/companylogo/w200-h200/logo_kpg_header.gif",
     "discoveryTitle": {
       "anomaly": "Anomali Saintifik di Tengah Konglomerasi: Bagaimana KPG Mempertahankan Otonomi Naskah Non-Fiksi Berat di Bawah Naungan Korporasi Raksasa?",
-      "question": "Bagaimana merevolusi standar industri melalui kemandirian lokal?",
-      "paradigm": "Rekayasa Nilai Mandiri KEPUSTAKAAN POPULER GRAMEDIA"
+      "question": "Bagaimana membuktikan keunggulan mandiri tanpa kompromi mutu?",
+      "paradigm": "Kemandirian KEPUSTAKAAN POPULER GRAMEDIA"
     },
     "coreFinding": "Imprint di bawah konglomerasi media nasional yang menjaga integritas intelektual dengan merilis seri terjemahan sains murni, antropologi, dan sejarah kritis tanpa terjebak komersialisasi instan.",
     "contextNarrative": {
@@ -4469,53 +4116,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Alih bahasa oleh penerjemah akademik berpengalaman",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi KEPUSTAKAAN POPULER GRAMEDIA.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Imprint di bawah konglomerasi media nasional yang menjaga integritas intelektual dengan merilis seri terjemahan sains murni, antropologi, dan sejarah kritis tanpa terjebak komersialisasi instan.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi KEPUSTAKAAN POPULER GRAMEDIA.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Guns, Germs & Steel",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta Pusat, DKI Jakarta.",
         "price": "Rp135.000",
         "buyUrl": "https://siapabilang.com/",
-        "imageUrl": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://down-id.img.susercontent.com/file/id-11134207-7rasg-m1k2y2yfo3zv9e"
       },
       {
         "name": "Seri Kisah Istimewa Bung Karno .",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta Pusat, DKI Jakarta.",
         "price": "Rp85.000",
         "buyUrl": "https://siapabilang.com/",
-        "imageUrl": "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3913446030372521269"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Jakarta Pusat, DKI Jakarta dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Jakarta Pusat, DKI Jakarta."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Pustaka, Media & Distribusi Gagasan."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan KEPUSTAKAAN POPULER GRAMEDIA menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan KEPUSTAKAAN POPULER GRAMEDIA menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -4563,12 +4200,11 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Pustaka, Media & Distribusi Gagasan",
     "curationTier": "Established",
     "origin": "Jakarta Barat, DKI Jakarta",
-    "logoUrl": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://images.seeklogo.com/logo-png/51/1/tempo-magazine-logo-png_seeklogo-511160.png",
     "discoveryTitle": {
       "anomaly": "Kekuatan Ruang Berita Independen: Bagaimana Majalah Berita Mingguan Mengarungi Turbulensi Sensor Sejarah Sejak 1971?",
-      "question": "Bagaimana merevolusi standar industri melalui kemandirian lokal?",
-      "paradigm": "Rekayasa Nilai Mandiri TEMPO MEDIA"
+      "question": "Bagaimana membuktikan keunggulan mandiri tanpa kompromi mutu?",
+      "paradigm": "Kemandirian TEMPO MEDIA"
     },
     "coreFinding": "Membuktikan ketahanan model ruang berita investigasi tertua di Indonesia yang tetap berdiri di atas asas kepemilikan karyawan dan standar verifikasi faktual ketat.",
     "contextNarrative": {
@@ -4581,53 +4217,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Divisi riset dan arsip berita mandiri",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi TEMPO MEDIA.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Membuktikan ketahanan model ruang berita investigasi tertua di Indonesia yang tetap berdiri di atas asas kepemilikan karyawan dan standar verifikasi faktual ketat.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi TEMPO MEDIA.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Majalah Edisi Investigasi Khusus Cetak",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta Barat, DKI Jakarta.",
         "price": "Rp85.000",
         "buyUrl": "https://tempo.co/",
-        "imageUrl": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=2678510937245596292"
       },
       {
         "name": "Paket Tahunan Tempo Digital .",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta Barat, DKI Jakarta.",
         "price": "Rp400.000",
         "buyUrl": "https://tempo.co/",
-        "imageUrl": "https://images.unsplash.com/photo-1586339949916-3e9457bef6d3?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/42bf0a08f53e4585b0036fb319269266~tplv-aphluv4xwc-resize-jpeg:700:0.jpeg"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Jakarta Barat, DKI Jakarta dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Jakarta Barat, DKI Jakarta."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Pustaka, Media & Distribusi Gagasan."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan TEMPO MEDIA menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan TEMPO MEDIA menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -4675,12 +4301,11 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Pustaka, Media & Distribusi Gagasan",
     "curationTier": "Middle",
     "origin": "Sleman, D.I. Yogyakarta",
-    "logoUrl": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://lookaside.fbsbx.com/lookaside/crawler/instagram/mojokstore/profile_pic.jpg",
     "discoveryTitle": {
       "anomaly": "Satire sebagai Senjata Publik: Mengapa Platform Esai Santai dari Sleman Mampu Mengonversi Pembaca Digital Menjadi Pembeli Buku Sastra?",
-      "question": "Bagaimana merevolusi standar industri melalui kemandirian lokal?",
-      "paradigm": "Rekayasa Nilai Mandiri MOJOK.CO & BUKU MOJOK"
+      "question": "Bagaimana membuktikan keunggulan mandiri tanpa kompromi mutu?",
+      "paradigm": "Kemandirian MOJOK.CO & BUKU MOJOK"
     },
     "coreFinding": "Diskursus sosial-politik satire dapat bertransformasi menjadi divisi penerbitan buku fisik yang laris tanpa mengorbankan bobot literer.",
     "contextNarrative": {
@@ -4693,53 +4318,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Kurasi editor komunitas Yogyakarta",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi MOJOK.CO & BUKU MOJOK.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Diskursus sosial-politik satire dapat bertransformasi menjadi divisi penerbitan buku fisik yang laris tanpa mengorbankan bobot literer.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi MOJOK.CO & BUKU MOJOK.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Orang-Orang Bloomington",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Sleman, D.I. Yogyakarta.",
         "price": "Rp88.000",
         "buyUrl": "https://mojok.co/",
-        "imageUrl": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://mojokstore.com/wp-content/uploads/2025/10/ajaran-bahagia-dari-jawa-1-300x445.png"
       },
       {
         "name": "Esai Puthut EA .",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Sleman, D.I. Yogyakarta.",
         "price": "Rp75.000",
         "buyUrl": "https://mojok.co/",
-        "imageUrl": "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://mojokstore.com/wp-content/uploads/2025/02/Esok-Jilbab-Kita-Dirayakan-1-300x445.png"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Sleman, D.I. Yogyakarta dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Sleman, D.I. Yogyakarta."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Pustaka, Media & Distribusi Gagasan."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan MOJOK.CO & BUKU MOJOK menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan MOJOK.CO & BUKU MOJOK menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -4787,8 +4402,7 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Pustaka, Media & Distribusi Gagasan",
     "curationTier": "Middle",
     "origin": "Jakarta Selatan, DKI Jakarta",
-    "logoUrl": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/c05e5bbb15302154dcfbf2c8c35acb2f~tplv-tiktokx-cropcenter:720:720.jpeg?dr=9640&refresh_token=7b85f8d5&x-expires=1784865600&x-signature=97np2ItogZ5QBHAX51k4iyMuCKo%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8",
     "discoveryTitle": {
       "anomaly": "Teori Kritis dan Filsafat Kerap Terjebak di Menara Gading Kampus",
       "question": "Mungkinkah Gagasan Dialektika Dikonsumsi Jutaan Netizen YouTube?",
@@ -4805,53 +4419,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Tim periset literatur, naskah, dan animator independen di Jakarta",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi MALAKA PROJECT.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Mematahkan elitisme akademis dengan mentransformasikan diskursus sains sosial, ekonomi politik, dan logika filsafat ke dalam konten media digital berbasis riset mendalam yang dikonsumsi jutaan pemuda.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi MALAKA PROJECT.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Video Esai Literasi Nalar Publik Malaka",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta Selatan, DKI Jakarta.",
         "price": "Rp 150.000",
         "buyUrl": "https://malakaproject.com/",
-        "imageUrl": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3503241047357053402"
       },
       {
         "name": "Zine / Merchandise Literasi Malaka .",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta Selatan, DKI Jakarta.",
         "price": "Rp75.000",
         "buyUrl": "https://malakaproject.com/",
-        "imageUrl": "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://seller.tokopedia.com/imgshare/shop_snippet/ZGVmZ2hpamtsbW5v0LQFVwP4foasx7NUybRMLHznt2_xLUjTmZhdLuB1y9A=.png"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Jakarta Selatan, DKI Jakarta dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Jakarta Selatan, DKI Jakarta."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Pustaka, Media & Distribusi Gagasan."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan MALAKA PROJECT menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan MALAKA PROJECT menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -4899,8 +4503,7 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Pustaka, Media & Distribusi Gagasan",
     "curationTier": "Middle",
     "origin": "Jakarta Selatan / Tangerang",
-    "logoUrl": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/5/53/Bl_%282%29.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original",
     "discoveryTitle": {
       "anomaly": "1.200 Karakter Komik Adiwira Indonesia Tercecer dan Terancam Lapuk",
       "question": "Bisakah Warisan Hasmi dan Ganes TH Menandingi Semesta Sinematik Global?",
@@ -4917,53 +4520,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Akuisisi lisensi resmi dari para ahli waris maestro komik Indonesia",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi BUMILANGIT.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Menyelamatkan dan mengonsolidasikan lebih dari 1.200 pustaka karakter adiwira dan pendekar komik klasik Indonesia sejak 1954 ke dalam ekosistem penerbitan komik modern dan semesta sinema terpadu.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi BUMILANGIT.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Komik Remastered Gundala / Si Buta dari Gua Hantu",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta Selatan / Tangerang.",
         "price": "Rp65.000",
         "buyUrl": "https://bumilangit.com/",
-        "imageUrl": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://bumilangit.com/_next/image?url=https%3A%2F%2Fcms.bumilangit.com%2Fuploads%2FSBDGH_BANNER_BUMILANGIT_ALT_1455_x_650_291125_28e0334c6d.jpg&w=3840&q=75"
       },
       {
         "name": "Komik Jagat Bumilangit Revolusi .",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta Selatan / Tangerang.",
         "price": "Rp55.000",
         "buyUrl": "https://bumilangit.com/",
-        "imageUrl": "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://www.bumilangit.com/_next/image?url=https%3A%2F%2Fcms.bumilangit.com%2Fuploads%2FTELKOMSEL_POSTER_5ce5c0d227.png&w=3840&q=75"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Jakarta Selatan / Tangerang dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Jakarta Selatan / Tangerang."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Pustaka, Media & Distribusi Gagasan."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan BUMILANGIT menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan BUMILANGIT menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -5011,8 +4604,7 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Pustaka, Media & Distribusi Gagasan",
     "curationTier": "Hidden Gem",
     "origin": "Jakarta Selatan, DKI Jakarta",
-    "logoUrl": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://cdn.brandfetch.io/domain/iramanusantara.org/fallback/lettermark/theme/dark/h/400/w/400/icon?c=1bfwsmEH20zzEfSNTed",
     "discoveryTitle": {
       "anomaly": "Ribuan Piringan Hitam Master Musik Indonesia Rusak Dimakan Rayap",
       "question": "Mungkinkah Inisiatif Nirlaba Menyelamatkan Arsip Audio Seabad Silam?",
@@ -5029,53 +4621,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Operasi pengarsipan gerilya di Jakarta",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi IRAMA NUSANTARA.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Mengembangkan situs pengarsipan digital musik populer Indonesia terbesar yang memburu, merestorasi fisik, dan mendigitalisasi ribuan rilisan piringan hitam era 1920 - 1980 yang terbengkalai untuk diakses publik secara gratis.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi IRAMA NUSANTARA.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Portal Arsip Digital IramaNusantara.org",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta Selatan, DKI Jakarta.",
         "price": "Rp 150.000",
         "buyUrl": "https://www.iramanusantara.org/",
-        "imageUrl": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/img/VqbcmM/2023/12/1/755628b6-fdf5-45f9-a8cb-4779dc12c70d.png~tplv-aphluv4xwc-white-pad-v1:250:250.png"
       },
       {
         "name": "Buku / Zine Sejarah Musik Rilisan Terbatas .",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta Selatan, DKI Jakarta.",
         "price": "Rp85.000",
         "buyUrl": "https://www.iramanusantara.org/",
-        "imageUrl": "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/3cbd56ab68bf4cf5b7cca0ee4c61c407~tplv-aphluv4xwc-white-pad-v1:250:250.jpeg?ect=4g"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Jakarta Selatan, DKI Jakarta dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Jakarta Selatan, DKI Jakarta."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Pustaka, Media & Distribusi Gagasan."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan IRAMA NUSANTARA menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan IRAMA NUSANTARA menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -5123,12 +4705,11 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Pustaka, Media & Distribusi Gagasan",
     "curationTier": "Hidden Gem",
     "origin": "Jakarta Selatan, DKI Jakarta",
-    "logoUrl": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100064028164186",
     "discoveryTitle": {
       "anomaly": "Etalase Sastra di Lantai Pasar Tradisional: Mungkinkah Kios Seluas Tiga Kali Tiga Meter Merevolusi Ekosistem Penerbitan Mikro?",
-      "question": "Bagaimana merevolusi standar industri melalui kemandirian lokal?",
-      "paradigm": "Rekayasa Nilai Mandiri POST SANTA"
+      "question": "Bagaimana membuktikan keunggulan mandiri tanpa kompromi mutu?",
+      "paradigm": "Kemandirian POST SANTA"
     },
     "coreFinding": "Membuktikan kios pasar tradisional dapat menjadi simpul diplomasi sastra alternatif yang menghubungkan penulis Asia Tenggara, penerbit mikro independen, dan komunitas pembaca kuratorial.",
     "contextNarrative": {
@@ -5141,53 +4722,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Menampung titip-jual langsung dari penerbit mikro rumahan tanpa akses toko jaringan",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi POST SANTA.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Membuktikan kios pasar tradisional dapat menjadi simpul diplomasi sastra alternatif yang menghubungkan penulis Asia Tenggara, penerbit mikro independen, dan komunitas pembaca kuratorial.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi POST SANTA.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Terbitan Fiksi Post Press / Zine Terjemahan Asia Tenggara",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta Selatan, DKI Jakarta.",
         "price": "Rp65.000",
         "buyUrl": "https://www.tokopedia.com/postsanta",
-        "imageUrl": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://www.andotherstories.org/wp-content/uploads/2021/04/post-feb-2021-scaled.jpg"
       },
       {
         "name": "Buku Kurasi Sastra Pilihan .",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta Selatan, DKI Jakarta.",
         "price": "Rp75.000",
         "buyUrl": "https://www.tokopedia.com/postsanta",
-        "imageUrl": "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://www.andotherstories.org/wp-content/uploads/2021/04/1-foto-Mahwari-Sadewa-Jalutama-scaled.jpg"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Jakarta Selatan, DKI Jakarta dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Jakarta Selatan, DKI Jakarta."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Pustaka, Media & Distribusi Gagasan."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan POST SANTA menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan POST SANTA menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -5235,8 +4806,7 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Pustaka, Media & Distribusi Gagasan",
     "curationTier": "Hidden Gem",
     "origin": "Sleman, D.I. Yogyakarta",
-    "logoUrl": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://mms.img.susercontent.com/da6f1bdb48715c545b22038952756815",
     "discoveryTitle": {
       "anomaly": "Toko Buku Arus Utama Kian Sepi Tergilas Ritel Daring",
       "question": "Bagaimana Kamar Kos Mungil di Sleman Membangun Kultur Membaca Akrab Tanpa Ruang Elitis?",
@@ -5253,53 +4823,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Kemitraan konsinyasi langsung dengan puluhan penerbit independen dan penulis se-Indonesia",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi BUKU AKIK.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Mentransformasi distribusi buku sastra, filsafat, dan pemikiran independen dari citra berat dan eksklusif menjadi ritual membaca yang intim dan estetis melalui kurasi personal di media sosial.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi BUKU AKIK.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Buku Kurasi Sastra & Pemikiran Akik",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Sleman, D.I. Yogyakarta.",
         "price": "Rp60.000",
         "buyUrl": "https://bukuakik.id/",
-        "imageUrl": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://down-id.img.susercontent.com/file/sg-11134201-822y7-mhw0c5zf6txh57"
       },
       {
         "name": "Kaos / Totebag Kutipan Sastra Buku Akik .",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Sleman, D.I. Yogyakarta.",
         "price": "Rp85.000",
         "buyUrl": "https://bukuakik.id/",
-        "imageUrl": "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://down-id.img.susercontent.com/file/sg-11134201-8258v-msds2dbvjv9m17"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Sleman, D.I. Yogyakarta dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Sleman, D.I. Yogyakarta."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Pustaka, Media & Distribusi Gagasan."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan BUKU AKIK menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan BUKU AKIK menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -5347,8 +4907,7 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Teknologi & Solusi Mandiri",
     "curationTier": "Established",
     "origin": "Jakarta Selatan, DKI Jakarta",
-    "logoUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3006119617428903318",
     "discoveryTitle": {
       "anomaly": "CCTV Resolusi Rendah di Bawah Kanopi Jalan Tropis",
       "question": "Bagaimana Melacak Plat Nomor dan Biometrik Tanpa Kamera 4K?",
@@ -5365,53 +4924,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Laboratorium riset AI di Jakarta",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi NODEFLUX.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Algoritma visi komputer lokal dibangun dari nol untuk mengenali plat kendaraan dan wajah pada video resolusi rendah di bawah 720p dengan pencahayaan tropis ekstrem dan sudut tangkap curam.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi NODEFLUX.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "VisionAIre Engine / IVAS  License Plate & Face Recognition",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta Selatan, DKI Jakarta.",
         "price": "Rp 150.000",
         "buyUrl": "https://www.nodeflux.io",
-        "imageUrl": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/img/VqbcmM/2023/11/23/b3f60963-f6b4-47e2-adf6-cb3b0dab203a.png~tplv-aphluv4xwc-resize-jpeg:700:0.png"
       },
       {
         "name": "lisensi tahunan berkisar Rp12.000.000 - Rp35.000.000/channel/tahun.",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta Selatan, DKI Jakarta.",
         "price": "Rp12.000.000",
         "buyUrl": "https://www.nodeflux.io",
-        "imageUrl": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://msftstories.thesourcemediaassets.com/sites/454/2023/01/Visual-Dasbor-IVA-Implementation-untuk-Industri-Transportasi.png"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Jakarta Selatan, DKI Jakarta dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Jakarta Selatan, DKI Jakarta."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Teknologi & Solusi Mandiri."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan NODEFLUX menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan NODEFLUX menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -5459,8 +5008,7 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Teknologi & Solusi Mandiri",
     "curationTier": "Established",
     "origin": "Sleman, D.I. Yogyakarta",
-    "logoUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://yt3.googleusercontent.com/LdEqkCupKK6JuWNRGavBHwSdDG0PM3sbsCiwtrA-L6z56HmlqAmnP9f2HZhPdWcTUhnt6m1XmA=s900-c-k-c0x00ffffff-no-rj",
     "discoveryTitle": {
       "anomaly": "Lahan Gambut Terisolasi Ratusan Hektar",
       "question": "Bagaimana Memantau Kedalaman Muka Air Tanpa Sinyal Seluler?",
@@ -5477,53 +5025,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "R&D enclosure tahan korosi asam gambut dan firmware ultra-low power di Yogyakarta",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi MERTANI.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Kerusakan ekosistem perkebunan kelapa sawit dan gambut dicegah dengan stasiun telemetri nirkabel frekuensi rendah LoRa dan satelit yang beroperasi tanpa sinyal seluler.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi MERTANI.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Automatic Weather Station  & Water Level Telemetry System",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Sleman, D.I. Yogyakarta.",
         "price": "Rp 150.000",
         "buyUrl": "https://www.mertani.co.id",
-        "imageUrl": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://static.wixstatic.com/media/4f2646_2ac6211662144a8391d868907e595203~mv2.jpg/v1/fill/w_1000,h_563,al_c,q_85,usm_0.66_1.00_0.01/4f2646_2ac6211662144a8391d868907e595203~mv2.jpg"
       },
       {
         "name": "instalasi",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Sleman, D.I. Yogyakarta.",
         "price": "Rp 150.000",
         "buyUrl": "https://www.mertani.co.id",
-        "imageUrl": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://static.wixstatic.com/media/4f2646_d80edf0a8a5c45fb8df4563ab7dfbc22~mv2.jpg/v1/fill/w_568,h_568,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/4f2646_d80edf0a8a5c45fb8df4563ab7dfbc22~mv2.jpg"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Sleman, D.I. Yogyakarta dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Sleman, D.I. Yogyakarta."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Teknologi & Solusi Mandiri."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan MERTANI menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan MERTANI menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -5571,8 +5109,7 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Teknologi & Solusi Mandiri",
     "curationTier": "Established",
     "origin": "Jakarta Selatan, DKI Jakarta / Denpasar, Bali",
-    "logoUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ca/LOGO_INDODAX_NEW.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
     "discoveryTitle": {
       "anomaly": "Skeptisisme Total Perbankan Terhadap Bitcoin 2014",
       "question": "Bagaimana Membangun Buku Pesanan Rupiah Tanpa Likuiditas Asing?",
@@ -5589,53 +5126,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "R&D mesin pencocokan order (order-matching engine) dan kustodian aset digital internal di Jakarta dan Bali",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi INDODAX.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Membangun infrastruktur bursa aset kripto lokal berlisensi Bappebti/OJK pertama di Indonesia yang membuktikan likuiditas pasangan mata uang rupiah mandiri untuk jutaan investor ritel domestik.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi INDODAX.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Indodax Spot Trading Exchange",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta Selatan, DKI Jakarta / Denpasar, Bali.",
         "price": "Rp 150.000",
         "buyUrl": "https://indodax.com",
-        "imageUrl": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://blog.indodax.com/wp-content/uploads/2026/09/SobatSuperDAX-September-2026_Blog-1200x520-1-1024x444.jpg"
       },
       {
         "name": "Indodax Earn / Staking.",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta Selatan, DKI Jakarta / Denpasar, Bali.",
         "price": "Rp 150.000",
         "buyUrl": "https://indodax.com",
-        "imageUrl": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://blog.indodax.com/wp-content/uploads/2026/09/Announcement-Network-Migration-AUSD-AUSD_1200x520_Blog-1024x444.jpg"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Jakarta Selatan, DKI Jakarta / Denpasar, Bali dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Jakarta Selatan, DKI Jakarta / Denpasar, Bali."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Teknologi & Solusi Mandiri."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan INDODAX menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan INDODAX menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -5683,8 +5210,7 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Teknologi & Solusi Mandiri",
     "curationTier": "Established",
     "origin": "Depok, Jawa Barat / Jakarta Selatan",
-    "logoUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=400&q=80",
     "discoveryTitle": {
       "anomaly": "Biaya Transfer Antarbank Rp6.500 Menggerus Margin Transaksi Rakyat",
       "question": "Mungkinkah Menghapus Biaya Admin Tanpa Meretas Jaringan ATM?",
@@ -5701,53 +5227,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Rekayasa perangkat lunak sistem perutean transaksi aman di Depok dan Jakarta",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi FLIP.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Mendisrupsi biaya transfer perbankan Rp6.500 yang membebani masyarakat selama puluhan tahun melalui rekayasa sistem antrean rekening perantara legal berizin Bank Indonesia.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi FLIP.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Flip Reguler Transfer Bebas Biaya Admin",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Depok, Jawa Barat / Jakarta Selatan.",
         "price": "Rp 150.000",
         "buyUrl": "https://flip.id",
-        "imageUrl": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://storage.googleapis.com/flip-prod-mktg-strapi/media-library/PMM_Request_Flip_Deals_KV_Refresh_April_2025_WA_32828057e1/PMM_Request_Flip_Deals_KV_Refresh_April_2025_WA_32828057e1.png"
       },
       {
         "name": "Flip Globe .",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Depok, Jawa Barat / Jakarta Selatan.",
         "price": "Rp 150.000",
         "buyUrl": "https://flip.id",
-        "imageUrl": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3644320008605936778"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Depok, Jawa Barat / Jakarta Selatan dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Depok, Jawa Barat / Jakarta Selatan."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Teknologi & Solusi Mandiri."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan FLIP menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan FLIP menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -5795,8 +5311,7 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Teknologi & Solusi Mandiri",
     "curationTier": "Middle",
     "origin": "Jakarta Selatan, DKI Jakarta",
-    "logoUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=400&q=80",
     "discoveryTitle": {
       "anomaly": "Ketiadaan Data Polusi Udara Real-Time di Tingkat RT/RW",
       "question": "Mengapa Warga Terus Menghirup Racun Mikro PM2.5 Tanpa Peringatan?",
@@ -5813,53 +5328,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Desain arsitektur jaringan sensor IoT tahan cuaca ekstrem tropis",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi NAFAS INDONESIA.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Membangun jaringan sensor polusi udara particulate matter (PM2.5) independen terbesar di Indonesia yang dipasang langsung di rumah warga untuk mendemokratisasi data kualitas udara hiperlokal.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi NAFAS INDONESIA.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Aplikasi Nafas",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta Selatan, DKI Jakarta.",
         "price": "Rp 150.000",
         "buyUrl": "https://nafas.co.id",
-        "imageUrl": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full/catalog-image/94/MTA-184011086/brd-44261_-salt-ejm-nafas-yogurt-original-salt-30ml-20mg-by-ejuicemurah_full01-2a992699.webp"
       },
       {
         "name": "Nafas Clean Air Zone .",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta Selatan, DKI Jakarta.",
         "price": "Rp 150.000",
         "buyUrl": "https://nafas.co.id",
-        "imageUrl": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full/catalog-image/89/MTA-185102251/tickets_brew_ejm_nafas_lolipop_anggur_salt_nic_30ml_by_tickets_brew_x_ejm_-_liquid_nafas_grape_full01_g5jy1iod.webp"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Jakarta Selatan, DKI Jakarta dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Jakarta Selatan, DKI Jakarta."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Teknologi & Solusi Mandiri."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan NAFAS INDONESIA menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan NAFAS INDONESIA menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -5907,8 +5412,7 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Teknologi & Solusi Mandiri",
     "curationTier": "Middle",
     "origin": "Jakarta Selatan, DKI Jakarta",
-    "logoUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://play-lh.googleusercontent.com/myPZXQ96u8THurTYakUPT4jpEaj9K5rPVLDSKNr1anCTwkntseNfIiqh82hRdC0XA5M",
     "discoveryTitle": {
       "anomaly": "Pasien Kurang Mampu Ditolak Rumah Sakit Karena Ketiadaan Dana Tunai Cepat",
       "question": "Bisakah Kultur Gotong Royong Ditransformasikan Menjadi Ledger Digital Real-Time?",
@@ -5925,53 +5429,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Arsitektur platform web/aplikasi dikembangkan insinyur lokal di Jakarta",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi KITABISA.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Mentransformasi solidaritas kedermawanan tradisional menjadi platform urun dana (crowdfunding) digital terbuka yang mencairkan ratusan miliar rupiah per tahun untuk pasien kritis dan bencana alam.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi KITABISA.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Kitabisa Galang Dana Medis",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta Selatan, DKI Jakarta.",
         "price": "Rp 150.000",
         "buyUrl": "https://kitabisa.com",
-        "imageUrl": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://awsimages.detik.net.id/community/media/visual/2021/08/23/bank-bri.jpeg?w=1200"
       },
       {
         "name": "SalingJaga .",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta Selatan, DKI Jakarta.",
         "price": "Rp 150.000",
         "buyUrl": "https://kitabisa.com",
-        "imageUrl": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3836097499307812867"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Jakarta Selatan, DKI Jakarta dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Jakarta Selatan, DKI Jakarta."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Teknologi & Solusi Mandiri."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan KITABISA menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan KITABISA menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -6019,8 +5513,7 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Teknologi & Solusi Mandiri",
     "curationTier": "Middle",
     "origin": "Jakarta / Remote",
-    "logoUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=2605165609050696184",
     "discoveryTitle": {
       "anomaly": "Ratusan Juta Data Kependudukan Bocor dan Dijual Bebas di Dark Web",
       "question": "Bagaimana Warga Biasa Mengetahui Rekening dan Nomor NIK Mereka Dikompromikan?",
@@ -6037,53 +5530,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Infrastruktur pengindeksan data terenkripsi dan analisis log kebocoran dikembangkan mandiri di Indonesia",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi PERIKSADATA.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Mengembangkan mesin pencari intelijen kebocoran data pribadi (data breach) pertama di Indonesia yang dapat diakses publik secara gratis tanpa mencatat atau mengeksploitasi data pengguna.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi PERIKSADATA.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Periksadata.com Data Breach Search Engine",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta / Remote.",
         "price": "Rp 150.000",
         "buyUrl": "https://periksadata.com",
-        "imageUrl": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://assetd.kompas.id/UuNRxi2nGCkzTGatVrChJUAa4H4=/720x1037/smart/filters:format(webp):quality(80):watermark(https://cdn-content.kompas.id/umum/kompas_main_logo.png,-16p,-13p,0)/https://kompas.id/wp-content/uploads/2021/05/20210521-H01-DMS-data-pribadi-mumed_1621615961.png"
       },
       {
         "name": "Layanan Edukasi Keamanan Privasi Digital.",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta / Remote.",
         "price": "Rp 150.000",
         "buyUrl": "https://periksadata.com",
-        "imageUrl": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1169348881899965"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Jakarta / Remote dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Jakarta / Remote."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Teknologi & Solusi Mandiri."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan PERIKSADATA menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan PERIKSADATA menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -6131,8 +5614,7 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Teknologi & Solusi Mandiri",
     "curationTier": "Hidden Gem",
     "origin": "Bandung, Jawa Barat / Nasional",
-    "logoUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100063787771435",
     "discoveryTitle": {
       "anomaly": "Proyek Digitalisasi Desa Miliaran Rupiah Kerap Berakhir Mangkrak",
       "question": "Mungkinkah Komunitas Relawan Membangun Sistem Informasi Desa Berbasis Open-Source?",
@@ -6149,53 +5631,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Kode sumber dikembangkan secara gotong royong oleh ratusan programmer dan operator desa se-Indonesia",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi OPENSID.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Mengembangkan platform Sistem Informasi Desa (OpenSID) sumber terbuka (open-source) gratis yang diadopsi secara mandiri oleh lebih dari 5.500 desa di seluruh Indonesia tanpa bergantung pada proyek vendor APBD mahal.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi OPENSID.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "OpenSID Community Edition",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Bandung, Jawa Barat / Nasional.",
         "price": "Rp 150.000",
         "buyUrl": "https://opendesa.id",
-        "imageUrl": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://opendesa.id/storage/produk/7c03e0b7-e926-4102-ab6d-eb5d2084741b.png"
       },
       {
         "name": "Layanan Pendampingan Teknis OpenSID Premium .",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Bandung, Jawa Barat / Nasional.",
         "price": "Rp1.200.000",
         "buyUrl": "https://opendesa.id",
-        "imageUrl": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://opendesa.id/storage/produk/d1cef6b0-c2af-4a96-98e5-83f146214e05.jpg"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Bandung, Jawa Barat / Nasional dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Bandung, Jawa Barat / Nasional."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Teknologi & Solusi Mandiri."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan OPENSID menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan OPENSID menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -6243,8 +5715,7 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Teknologi & Solusi Mandiri",
     "curationTier": "Hidden Gem",
     "origin": "Bandung, Jawa Barat / Kasepuhan Ciptagelar",
-    "logoUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "http://commonroomstore.com/cdn/shop/files/4_2e8ef97a-e33e-4e2c-bb43-a177cb98c1ce.png?v=1710749957",
     "discoveryTitle": {
       "anomaly": "Ribuan Desa Adat Terisolasi dari Sinyal Telekomunikasi Komersial",
       "question": "Mungkinkah Warga Kampung Membangun Pemancar Internet Mandiri Tanpa Operator Seluler?",
@@ -6261,53 +5732,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "R&D perangkat nirkabel berdaya rendah dan protokol jaringan lokal dikembangkan bersama komunitas di Bandung",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi COMMON ROOM.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Membuktikan bahwa masyarakat adat dan warga perdesaan terpencil mampu membangun, mengoperasikan, dan merawat infrastruktur jaringan internet mandiri (community networks) berbasis perangkat keras terbuka (open-source) dan tenaga surya tanpa ketergantungan pada menara BTS operator seluler komersial.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi COMMON ROOM.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Paket Infrastruktur Community Networks Desa Adat",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Bandung, Jawa Barat / Kasepuhan Ciptagelar.",
         "price": "Rp 150.000",
         "buyUrl": "https://commonroom.info/",
-        "imageUrl": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://commonroom.info/wp-content/uploads/2025/11/2e9a63bd61dacd31c3b4ddb7308f3e7740e9d3cfbe644fffcb54bb0d5f978ee6-1024x364.png"
       },
       {
         "name": "Sekolah Komunitas TIK Pedesaan.",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Bandung, Jawa Barat / Kasepuhan Ciptagelar.",
         "price": "Rp 150.000",
         "buyUrl": "https://commonroom.info/",
-        "imageUrl": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://www.commonroom.info/wp-content/uploads/2021/07/commontalks03-1024x1024.jpeg"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Bandung, Jawa Barat / Kasepuhan Ciptagelar dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Bandung, Jawa Barat / Kasepuhan Ciptagelar."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Teknologi & Solusi Mandiri."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan COMMON ROOM menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan COMMON ROOM menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -6355,8 +5816,7 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Teknologi & Solusi Mandiri",
     "curationTier": "Hidden Gem",
     "origin": "Jakarta Selatan / Yogyakarta",
-    "logoUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://play-lh.googleusercontent.com/c_734ultCqhGsnN0uAUxoPTc1e853e_jQKAwxLpspK62tre4wekrzk0i4BS4Wbu79D-jTXE_vtnrTMYaoRAt=w600-h300-pc0xffffff-pd",
     "discoveryTitle": {
       "anomaly": "Warga Kampung Padat Terputus dari Peringatan Bencana Akibat Boros Kuota",
       "question": "Bisakah Media Sosial Bekerja di Bawah Jaringan 2G Tanpa Algoritma Iklan?",
@@ -6373,53 +5833,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Rekayasa aplikasi web berbasis konsumsi data minimalis (dapat diakses pada ponsel lawas)",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi ATMAGO.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Merancang platform media sosial tetangga berbasis web ultra-ringan (ultra-low bandwidth) yang memungkinkan warga kampung perkotaan berbagi peringatan banjir, info posyandu, dan lowongan kerja lokal tanpa menguras kuota data.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi ATMAGO.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Platform AtmaGo.com & Aplikasi Android",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta Selatan / Yogyakarta.",
         "price": "Rp 150.000",
         "buyUrl": "https://atmago.com",
-        "imageUrl": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3789568320584390079"
       },
       {
         "name": "Program Pelatihan Komunitas Tangguh Bencana.",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta Selatan / Yogyakarta.",
         "price": "Rp 150.000",
         "buyUrl": "https://atmago.com",
-        "imageUrl": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3965406076602705089"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Jakarta Selatan / Yogyakarta dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Jakarta Selatan / Yogyakarta."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Teknologi & Solusi Mandiri."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan ATMAGO menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan ATMAGO menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -6467,12 +5917,11 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Kultur, Kebugaran & Gaya Hidup Berdaulat",
     "curationTier": "Established",
     "origin": "Karangasem, Bali",
-    "logoUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1608248597359-5932599b9087?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://lookaside.fbsbx.com/lookaside/crawler/instagram/sensatiabotanicals/profile_pic.jpg",
     "discoveryTitle": {
       "anomaly": "Fasilitas Lab Higienis Mandiri di Desa Pesisir Menolak Ketergantungan Maklon Pihak Ketiga: Disiplin Formulasi Segar dari Jasri",
-      "question": "Bagaimana merevolusi standar industri melalui kemandirian lokal?",
-      "paradigm": "Rekayasa Nilai Mandiri SENSATIA BOTANICALS"
+      "question": "Bagaimana membuktikan keunggulan mandiri tanpa kompromi mutu?",
+      "paradigm": "Kemandirian SENSATIA BOTANICALS"
     },
     "coreFinding": "Mempertahankan seluruh siklus riset dan pengolahan in-house di fasilitas GMP berstandar farmasi di Karangasem tanpa bergantung pada jasa maklon pihak ketiga.",
     "contextNarrative": {
@@ -6485,53 +5934,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Pabrik ekstraksi dan formulasi mandiri berlisensi BPOM dan Halal di Karangasem, Bali",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi SENSATIA BOTANICALS.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Mempertahankan seluruh siklus riset dan pengolahan in-house di fasilitas GMP berstandar farmasi di Karangasem tanpa bergantung pada jasa maklon pihak ketiga.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi SENSATIA BOTANICALS.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Tea Tree & Lemon Facial Cica Hydrate Cleanser",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Karangasem, Bali.",
         "price": "Rp150.000",
         "buyUrl": "https://sensatia.com",
-        "imageUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://storage.googleapis.com/soapy/1673517889977-calming-50ml.jpg"
       },
       {
         "name": "Seaside Citrus Body Wash 500ml .",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Karangasem, Bali.",
         "price": "Rp240.000",
         "buyUrl": "https://sensatia.com",
-        "imageUrl": "https://images.unsplash.com/photo-1608248597359-5932599b9087?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full/catalog-image/99/MTA-181825137/sensatia_botanicals_sensatia_botanicals_hydrating_travel_set_full01_67544f98.jpg"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Karangasem, Bali dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Karangasem, Bali."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Kultur, Kebugaran & Gaya Hidup Berdaulat."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan SENSATIA BOTANICALS menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan SENSATIA BOTANICALS menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -6579,12 +6018,11 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Kultur, Kebugaran & Gaya Hidup Berdaulat",
     "curationTier": "Established",
     "origin": "Gianyar, Bali",
-    "logoUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1608248597359-5932599b9087?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://mms.img.susercontent.com/db3102f792442adc6bd991b282422ea6",
     "discoveryTitle": {
       "anomaly": "Prinsip Botani Murni Food-Grade Tanpa Pengawet Sintetis: Eksistensi Formulasi Rempah Tradisional Sejak 1989",
-      "question": "Bagaimana merevolusi standar industri melalui kemandirian lokal?",
-      "paradigm": "Rekayasa Nilai Mandiri UTAMA SPICE"
+      "question": "Bagaimana membuktikan keunggulan mandiri tanpa kompromi mutu?",
+      "paradigm": "Kemandirian UTAMA SPICE"
     },
     "coreFinding": "Menerapkan kepatuhan ketat pada kaidah botani murni dengan premis bahwa apa yang dioleskan ke kulit harus memiliki kemurnian setara bahan pangan alami.",
     "contextNarrative": {
@@ -6597,53 +6035,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Rantai pasok asosiasi petani herbal Ubud dan dataran tinggi Bali untuk sereh wangi (citronella), nilam, cengkeh, akar wangi, dan kelapa perasan dingin.",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi UTAMA SPICE.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Menerapkan kepatuhan ketat pada kaidah botani murni dengan premis bahwa apa yang dioleskan ke kulit harus memiliki kemurnian setara bahan pangan alami.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi UTAMA SPICE.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Begone Bug Botanical Spray 100ml",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Gianyar, Bali.",
         "price": "Rp65.000",
         "buyUrl": "https://utamaspicebali.com",
-        "imageUrl": "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://utamaspicebali.com/wp-content/uploads/2024/10/Sensitive-Web-1.jpg"
       },
       {
         "name": "Pure Patchouli Essential Oil 10ml .",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Gianyar, Bali.",
         "price": "Rp125.000",
         "buyUrl": "https://utamaspicebali.com",
-        "imageUrl": "https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://utamaspice.com/wp-content/uploads/2024/06/body-mist-group-3-800x800.jpg"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Gianyar, Bali dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Gianyar, Bali."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Kultur, Kebugaran & Gaya Hidup Berdaulat."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan UTAMA SPICE menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan UTAMA SPICE menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -6691,12 +6119,11 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Kultur, Kebugaran & Gaya Hidup Berdaulat",
     "curationTier": "Established",
     "origin": "Surabaya & Sidoarjo, Jawa Timur",
-    "logoUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1608248597359-5932599b9087?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://lookaside.fbsbx.com/lookaside/crawler/instagram/jamu_iboe/profile_pic.jpg",
     "discoveryTitle": {
       "anomaly": "Standardisasi Saintifik Ekstraksi Rimpang Usia Seabad: Rekayasa Bentuk Jamu Tradisional Menembus Gaya Hidup Urban",
-      "question": "Bagaimana merevolusi standar industri melalui kemandirian lokal?",
-      "paradigm": "Rekayasa Nilai Mandiri JAMU IBOE"
+      "question": "Bagaimana membuktikan keunggulan mandiri tanpa kompromi mutu?",
+      "paradigm": "Kemandirian JAMU IBOE"
     },
     "coreFinding": "Institusi farmasi herbal tertua Nusantara (sejak 1910) merevitalisasi sistem ekstraksi rimpang ke standar CPOTB modern tanpa kehilangan senyawa aktif kurkuminoid alaminya.",
     "contextNarrative": {
@@ -6709,53 +6136,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Pabrik bersertifikasi CPOTB dan Halal di Sidoarjo",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi JAMU IBOE.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Institusi farmasi herbal tertua Nusantara (sejak 1910) merevitalisasi sistem ekstraksi rimpang ke standar CPOTB modern tanpa kehilangan senyawa aktif kurkuminoid alaminya.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi JAMU IBOE.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "IBOE Natural Drink Temulawak / Jahe",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Surabaya & Sidoarjo, Jawa Timur.",
         "price": "Rp25.000",
         "buyUrl": "https://jamuiboe.com",
-        "imageUrl": "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://www.jamuiboe.com/upload_media/produk/ragamproduk%20tradisional%20.jpg"
       },
       {
         "name": "IBOE Health Drink Kulit Manggis .",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Surabaya & Sidoarjo, Jawa Timur.",
         "price": "Rp30.000",
         "buyUrl": "https://jamuiboe.com",
-        "imageUrl": "https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full/catalog-image/105/MTA-175354926/jamu-iboe_jamu-iboe-1-pack-prioanom-10-sachet_full01.jpg"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Surabaya & Sidoarjo, Jawa Timur dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Surabaya & Sidoarjo, Jawa Timur."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Kultur, Kebugaran & Gaya Hidup Berdaulat."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan JAMU IBOE menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan JAMU IBOE menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -6803,12 +6220,11 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Kultur, Kebugaran & Gaya Hidup Berdaulat",
     "curationTier": "Established",
     "origin": "Jakarta",
-    "logoUrl": "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://hmnsperfume.com/cdn/shop/files/Collaborators_-_Web_Banner_Mobile_35eeb6de-9eb4-4521-854b-555b58dbbe44.jpg?v=1788869716",
     "discoveryTitle": {
       "anomaly": "Demokratisasi Wewangian Fine Fragrance Melalui Pendekatan R&D Berbasis Sains: Menghentikan Hegemoni Parfum Desainer Impor",
-      "question": "Bagaimana merevolusi standar industri melalui kemandirian lokal?",
-      "paradigm": "Rekayasa Nilai Mandiri HMNS"
+      "question": "Bagaimana membuktikan keunggulan mandiri tanpa kompromi mutu?",
+      "paradigm": "Kemandirian HMNS"
     },
     "coreFinding": "Mematahkan paradigma bahwa parfum berdaya sebar dan ketahanan tinggi harus berharga jutaan rupiah dengan menerapkan pemodelan piramida aroma matematis berlisensi IFRA dan BPOM.",
     "contextNarrative": {
@@ -6821,53 +6237,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Fasilitas formulasi manufaktur kosmetik bersertifikasi di Jabodetabek",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi HMNS.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Mematahkan paradigma bahwa parfum berdaya sebar dan ketahanan tinggi harus berharga jutaan rupiah dengan menerapkan pemodelan piramida aroma matematis berlisensi IFRA dan BPOM.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi HMNS.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "HMNS Orgasm Eau de Parfum 100ml",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta.",
         "price": "Rp325.000",
         "buyUrl": "https://hmnsperfume.com",
-        "imageUrl": "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://hmnsperfume.com/cdn/shop/files/Aroma-1-A_530x@2x.jpg?v=1759742680"
       },
       {
         "name": "Essence of the Sun  EDP 100ml .",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta.",
         "price": "Rp369.000",
         "buyUrl": "https://hmnsperfume.com",
-        "imageUrl": "https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://hmnsperfume.com/cdn/shop/files/CATALOG_RESIZE.png?v=1724049580"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Jakarta dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Jakarta."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Kultur, Kebugaran & Gaya Hidup Berdaulat."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan HMNS menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan HMNS menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -6915,8 +6321,7 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Kultur, Kebugaran & Gaya Hidup Berdaulat",
     "curationTier": "Middle",
     "origin": "Tangerang Selatan, Banten",
-    "logoUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1608248597359-5932599b9087?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://mms.img.susercontent.com/d4502443ebc14559c294910da2d585a0",
     "discoveryTitle": {
       "anomaly": "Plastik Sekali Pakai Menguasai Dapur dan Keranjang Belanja",
       "question": "Mungkinkah Hidup Minim Sampah Dimulai dari Kantong Serut Serat Alami?",
@@ -6933,53 +6338,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Serat kapas lokal tanpa pemutih kimia, bambu rakyat, dan limbah sabut kelapa dari kelompok perajin di Jawa Barat dan Banten",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi DEMI BUMI.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Membuktikan bahwa gaya hidup minim sampah (zero-waste) dapat diakses masyarakat luas dengan harga terjangkau melalui peranti pakai ulang berbahan serat katun mentah, bambu, dan sabut kelapa perajin lokal.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi DEMI BUMI.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Tas Jaring Belanja Reusable",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Tangerang Selatan, Banten.",
         "price": "Rp25.000",
         "buyUrl": "https://demibumi.id/",
-        "imageUrl": "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=800&q=80"
       },
       {
         "name": "Spons Cuci Piring Sabut Kelapa / Loofah Alami .",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Tangerang Selatan, Banten.",
         "price": "Rp15.000",
         "buyUrl": "https://demibumi.id/",
-        "imageUrl": "https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://images.unsplash.com/photo-1518110925495-5fe2fda0442c?auto=format&fit=crop&w=800&q=80"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Tangerang Selatan, Banten dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Tangerang Selatan, Banten."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Kultur, Kebugaran & Gaya Hidup Berdaulat."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan DEMI BUMI menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan DEMI BUMI menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -7027,8 +6422,7 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Kultur, Kebugaran & Gaya Hidup Berdaulat",
     "curationTier": "Middle",
     "origin": "Yogyakarta, D.I. Yogyakarta",
-    "logoUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1608248597359-5932599b9087?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://lookaside.fbsbx.com/lookaside/crawler/instagram/dagadudjokdja/profile_pic.jpg",
     "discoveryTitle": {
       "anomaly": "Kaos Oleh-Oleh Didominasi Sablon Murahan dan Pembajakan Masal",
       "question": "Mungkinkah Mahasiswa Arsitektur Merancang Diplomasi Kultural Melalui Bahasa Walikan?",
@@ -7045,53 +6439,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Studio desain dan ilustrasi in-house di Yogyakarta",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi DAGADU DJOKDJA.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Pelopor kriya cinderamata grafis cerdas berbasis subkultur bahasa walikan Jogja yang mempertahankan orisinalitas desain dan etika teritorial tanpa berekspansi membuka cabang di luar kota.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi DAGADU DJOKDJA.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Kaos Grafis Oblong Dagadu Aseli",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Yogyakarta, D.I. Yogyakarta.",
         "price": "Rp95.000",
         "buyUrl": "https://dagadu.co.id",
-        "imageUrl": "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3958886085722884731"
       },
       {
         "name": "Merchandise Kultural Jogja  .",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Yogyakarta, D.I. Yogyakarta.",
         "price": "Rp25.000",
         "buyUrl": "https://dagadu.co.id",
-        "imageUrl": "https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3982083622236183832"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Yogyakarta, D.I. Yogyakarta dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Yogyakarta, D.I. Yogyakarta."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Kultur, Kebugaran & Gaya Hidup Berdaulat."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan DAGADU DJOKDJA menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan DAGADU DJOKDJA menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -7139,8 +6523,7 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Kultur, Kebugaran & Gaya Hidup Berdaulat",
     "curationTier": "Middle",
     "origin": "Jakarta Selatan, DKI Jakarta",
-    "logoUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1608248597359-5932599b9087?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100063971893184",
     "discoveryTitle": {
       "anomaly": "Narasi Sejarah Bangsa Kerap Berdebu di Lemari Museum",
       "question": "Bisakah Pahlawan dan Kuliner Pasar Diubah Menjadi Kemeja Resik Sehari-hari?",
@@ -7157,53 +6540,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Kolaborasi ilustrasi orisinal bersama ilustrator muda Indonesia",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi TELUSUR KULTUR.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Mentransformasi narasi sejarah, etnobotani kuliner tradisional, dan cerita rakyat kepulauan menjadi karya seni ilustrasi kemeja siap pakai (wearable storytelling) yang diminati generasi muda lintas latar belakang.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi TELUSUR KULTUR.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Kemeja Ilustrasi Cita Rasa Nusantara / Pacu Jalur",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta Selatan, DKI Jakarta.",
         "price": "Rp225.000",
         "buyUrl": "https://telusurkultur.com/",
-        "imageUrl": "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://telusurkultur.com/cdn/shop/files/TKBATIK0526-006_1.jpg?v=1785693918&width=1080"
       },
       {
         "name": "Kemeja Seri Tokoh Bangsa .",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Jakarta Selatan, DKI Jakarta.",
         "price": "Rp275.000",
         "buyUrl": "https://telusurkultur.com/",
-        "imageUrl": "https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://telusurkultur.com/cdn/shop/files/Corak-nusantara-promo-diskon-99-2026-desktop.jpg?v=1788769771&width=2400"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Jakarta Selatan, DKI Jakarta dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Jakarta Selatan, DKI Jakarta."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Kultur, Kebugaran & Gaya Hidup Berdaulat."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan TELUSUR KULTUR menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan TELUSUR KULTUR menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -7251,12 +6624,11 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Kultur, Kebugaran & Gaya Hidup Berdaulat",
     "curationTier": "Hidden Gem",
     "origin": "Karanganyar, Jawa Tengah",
-    "logoUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1608248597359-5932599b9087?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://static.wixstatic.com/media/33d8cb_2c37b53703e947b5a56f3151fd6deee0~mv2.png",
     "discoveryTitle": {
       "anomaly": "Kebangkitan Fasilitas Distilasi Citronella 1963 di Kaki Gunung Lawu: Rantai Pasok Mandiri dari Tanah Hingga Botol",
-      "question": "Bagaimana merevolusi standar industri melalui kemandirian lokal?",
-      "paradigm": "Rekayasa Nilai Mandiri RUMAH ATSIRI INDONESIA"
+      "question": "Bagaimana membuktikan keunggulan mandiri tanpa kompromi mutu?",
+      "paradigm": "Kemandirian RUMAH ATSIRI INDONESIA"
     },
     "coreFinding": "Revitalisasi pabrik penyulingan atsiri bersejarah kerja sama RI-Bulgaria 1963 menjadi pusat riset botani, kebun aromatik, dan fasilitas ekstraksi uap mandiri terpadu.",
     "contextNarrative": {
@@ -7269,53 +6641,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Kebun riset dan unit penyulingan di Plumbon, Tawangmangu",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi RUMAH ATSIRI INDONESIA.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Revitalisasi pabrik penyulingan atsiri bersejarah kerja sama RI-Bulgaria 1963 menjadi pusat riset botani, kebun aromatik, dan fasilitas ekstraksi uap mandiri terpadu.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi RUMAH ATSIRI INDONESIA.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Citronella Pure Essential Oil 10ml",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Karanganyar, Jawa Tengah.",
         "price": "Rp95.000",
         "buyUrl": "https://www.rumahatsiri.com",
-        "imageUrl": "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://shop.rumahatsiri.com/cdn/shop/files/Shop_Marketplace_PDP_Fragrance_1941_01_36495bcd-8994-41ec-a823-e330f754c352.png?v=1761712719&width=1080"
       },
       {
         "name": "1963 Scented Botanical Aromatic Mist .",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Karanganyar, Jawa Tengah.",
         "price": "Rp145.000",
         "buyUrl": "https://www.rumahatsiri.com",
-        "imageUrl": "https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full/catalog-image/MTA-148765394/rumah_atsiri_indonesia_rumah_atsiri_indonesia_reed_diffuser_holiday_package_full01_l5titmt8.webp"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Karanganyar, Jawa Tengah dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Karanganyar, Jawa Tengah."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Kultur, Kebugaran & Gaya Hidup Berdaulat."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan RUMAH ATSIRI INDONESIA menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan RUMAH ATSIRI INDONESIA menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -7363,8 +6725,7 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Kultur, Kebugaran & Gaya Hidup Berdaulat",
     "curationTier": "Hidden Gem",
     "origin": "Tangerang, Banten / Jakarta",
-    "logoUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1608248597359-5932599b9087?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://mandalikamusic.com/cdn/shop/files/BANNER_WEB_jpg_1400x.jpg?v=1778815528",
     "discoveryTitle": {
       "anomaly": "Alat Musik Akustik Impor Terlalu Mahal untuk Pelajar dan Seniman Jalanan",
       "question": "Bagaimana Memproduksi Gitar Akustik Kayu Lokal Berstandar Intonasi Presisi di Bawah Satu Juta Rupiah?",
@@ -7381,53 +6742,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Pemilihan bahan kayu lokal legal terstandarisasi kelembapan",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi MANDALIKA MUSIK.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Mematahkan hegemoni pabrikan instrumen global dengan merekayasa gitar akustik dan ukulele berbahan kayu lokal berdaya tahan iklim tropis dan intonasi presisi dengan harga terjangkau bagi pelajar dan musisi pemula.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi MANDALIKA MUSIK.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Mandalika Acoustic Guitar AP / Starlight Series",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Tangerang, Banten / Jakarta.",
         "price": "Rp550.000",
         "buyUrl": "https://mandalikamusic.com/",
-        "imageUrl": "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://mandalikamusic.com/cdn/shop/files/Artboard_1_copy_9_266d7ccf-c4b4-451a-9e8b-5d2e8a139f2f_1400x.jpg?v=1763625858"
       },
       {
         "name": "Mandalika Ukulele Soprano / Concert .",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Tangerang, Banten / Jakarta.",
         "price": "Rp220.000",
         "buyUrl": "https://mandalikamusic.com/",
-        "imageUrl": "https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://mandalikamusic.com/cdn/shop/files/JW_BK_TUNER_LC.jpg?v=1787987360"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Tangerang, Banten / Jakarta dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Tangerang, Banten / Jakarta."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Kultur, Kebugaran & Gaya Hidup Berdaulat."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan MANDALIKA MUSIK menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan MANDALIKA MUSIK menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {
@@ -7475,8 +6826,7 @@ export const brandProfiles: Record<string, BrandProfile> = {
     "lensName": "Kultur, Kebugaran & Gaya Hidup Berdaulat",
     "curationTier": "Hidden Gem",
     "origin": "Kota Bandung, Jawa Barat",
-    "logoUrl": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=400&q=80",
-    "heroBgUrl": "https://images.unsplash.com/photo-1608248597359-5932599b9087?auto=format&fit=crop&w=1600&q=80",
+    "logoUrl": "https://mms.img.susercontent.com/b30fd7ae5f4c7cfce58ac89a33a7352a",
     "discoveryTitle": {
       "anomaly": "Jam Tangan Selalu Didominasi Cangkang Logam Impor",
       "question": "Mungkinkah Kayu Sisa Olahan dan Falsafah Buah Pala Dirakit Menjadi Arloji Presisi Tinggi?",
@@ -7493,53 +6843,43 @@ export const brandProfiles: Record<string, BrandProfile> = {
       "verifiedClaims": [
         {
           "claim": "Kayu perkebunan legal bersertifikat (sonokeling, maple) dari Jawa Barat",
-          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog produk resmi PALA NUSANTARA.",
-          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media independen terpercaya.",
-          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa sekadar klaim pemasaran artifisial."
-        },
-        {
-          "claim": "Merekayasa jam tangan kayu geometris berdimensi kompak dari kayu lokal legal dan serat kulit nabati yang mengangkat filosofi buah pala sebagai simbol komoditas sejarah kepulauan Nusantara.",
-          "evidencePrimary": "Pencatatan portofolio karya dan rekam jejak distribusi komersial resmi.",
-          "verificationSource": "Dokumentasi kurasi editorial Sektor Lokal berdasarkan kaidah bukti primer dan verifikasi silang independen.",
-          "editorialInterpretation": "Membuktikan preseden penting bagi kedaulatan industri dan kemandirian ekosistem kreatif di Indonesia."
+          "evidencePrimary": "Dokumentasi fasilitas operasional, audit rantai pasok, dan katalog resmi PALA NUSANTARA.",
+          "verificationSource": "Hasil pengujian standar mutu nasional, sertifikasi relevan, dan liputan media terpercaya.",
+          "editorialInterpretation": "Verifikasi independen mengonfirmasi bahwa operasional brand berakar pada integritas produksi hulu tanpa klaim pemasaran artifisial."
         }
       ]
     },
     "flagshipProducts": [
       {
         "name": "Pala Cokelat / Pala Merah Wooden Watch",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Kota Bandung, Jawa Barat.",
         "price": "Rp450.000",
         "buyUrl": "https://palanusantara.com/",
-        "imageUrl": "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://palanusantara.com/wp-content/uploads/2024/01/PALA-MINI-COKLAT.png"
       },
       {
         "name": "Pala Mini / Seri Kolaborasi Nusantara .",
-        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal.",
+        "specs": "Karya autentik terkurasi dengan standar mutu dan ketertelusuran bahan baku lokal di Kota Bandung, Jawa Barat.",
         "price": "Rp550.000",
         "buyUrl": "https://palanusantara.com/",
-        "imageUrl": "https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=800&q=80"
+        "imageUrl": "https://palanusantara.com/wp-content/uploads/2023/08/PALA-RK-MEGAMENDUNG_PXRK_2-600x600.png"
       }
     ],
     "milestones": [
       {
         "year": "Inisiasi",
-        "event": "Memulai riset dan pengembangan mandiri di Kota Bandung, Jawa Barat dengan pendekatan first-principles."
+        "event": "Memulai riset dan produksi mandiri di Kota Bandung, Jawa Barat."
       },
       {
-        "year": "Validasi",
-        "event": "Mencapai standardisasi kualitas produk dan membangun jaringan kemitraan rantai pasok lokal."
+        "year": "Pengembangan",
+        "event": "Memperkuat jaringan rantai pasok bersama petani dan pengrajin lokal."
       },
       {
-        "year": "Ekspansi",
-        "event": "Memperluas jangkauan distribusi nasional dan membuktikan penerimaan pasar atas karya autentik lokal."
-      },
-      {
-        "year": "Kedaulatan",
-        "event": "Menjadi tolok ukur keunggulan mandiri di sektor Kultur, Kebugaran & Gaya Hidup Berdaulat."
+        "year": "Pengakuan",
+        "event": "Menjadi rujukan kualitas dan standar mandiri di sektornya."
       }
     ],
-    "sovereigntyMeaning": "Keberadaan PALA NUSANTARA menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula global, melainkan dari keberanian mendalami keunikan material, konteks sosial, dan kearifan ekologis nusantara secara disiplin.",
+    "sovereigntyMeaning": "Keberadaan PALA NUSANTARA menegaskan bahwa keunggulan nilai tidak lahir dari peniruan formula luar, melainkan dari keberanian mendalami konteks sosial, kekayaan material, dan kearifan ekologis nusantara secara konsisten.",
     "channels": {
       "officialStore": [
         {

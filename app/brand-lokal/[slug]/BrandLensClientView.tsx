@@ -204,7 +204,7 @@ export default function BrandLensClientView({ lens }: Props) {
                       href={`/brand/${brand.slug}`}
                       className="inline-flex items-center justify-between w-full font-mono text-xs font-bold uppercase tracking-widest text-[#E11D48] group-hover:translate-x-1 transition-transform"
                     >
-                      <span>Buka Berkas 7-Tahap Brand</span>
+                      <span>Baca Profil Lengkap</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </Link>
                   </div>
