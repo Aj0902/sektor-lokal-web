@@ -1023,7 +1023,7 @@ async function seedBatch1() {
     };
 
     const { data: profileRecord, error: profileErr } = await supabase
-      .from('profiles_warga')
+      .from('profiles_warga_demo1')
       .upsert(profilePayload, { onConflict: 'slug' })
       .select('id')
       .single();
@@ -1036,11 +1036,11 @@ async function seedBatch1() {
     const profileId = profileRecord.id;
 
     // 2. Bersihkan Child Tables sebelum diisi data kurasi terverifikasi
-    await supabase.from('gallery_warga').delete().eq('profile_id', profileId);
-    await supabase.from('initiatives_warga').delete().eq('profile_id', profileId);
-    await supabase.from('life_events_warga').delete().eq('profile_id', profileId);
-    await supabase.from('works_warga').delete().eq('profile_id', profileId);
-    await supabase.from('articles_warga').delete().eq('profile_id', profileId);
+    await supabase.from('gallery_warga_demo1').delete().eq('profile_id', profileId);
+    await supabase.from('initiatives_warga_demo1').delete().eq('profile_id', profileId);
+    await supabase.from('life_events_warga_demo1').delete().eq('profile_id', profileId);
+    await supabase.from('works_warga_demo1').delete().eq('profile_id', profileId);
+    await supabase.from('articles_warga_demo1').delete().eq('profile_id', profileId);
 
     // 3. Masukkan Gallery (3-4 foto terbaik Si Mael)
     if (item.gallery && item.gallery.length > 0) {
@@ -1051,7 +1051,7 @@ async function seedBatch1() {
         image_url: g.image_url,
         order_index: g.sort_order || idx + 1
       }));
-      const { error: gErr } = await supabase.from('gallery_warga').insert(galleryPayload);
+      const { error: gErr } = await supabase.from('gallery_warga_demo1').insert(galleryPayload);
       if (gErr) console.warn(`   ⚠️ Gallery error: ${gErr.message}`);
     }
 
@@ -1069,7 +1069,7 @@ async function seedBatch1() {
         link_url: ini.action_url || ini.link_url || '#',
         order_index: ini.sort_order || idx + 1
       }));
-      const { error: iErr } = await supabase.from('initiatives_warga').insert(initPayload);
+      const { error: iErr } = await supabase.from('initiatives_warga_demo1').insert(initPayload);
       if (iErr) console.warn(`   ⚠️ Initiatives error: ${iErr.message}`);
     }
 
@@ -1083,7 +1083,7 @@ async function seedBatch1() {
         description: le.description,
         order_index: le.sort_order || idx + 1
       }));
-      const { error: leErr } = await supabase.from('life_events_warga').insert(lePayload);
+      const { error: leErr } = await supabase.from('life_events_warga_demo1').insert(lePayload);
       if (leErr) console.warn(`   ⚠️ Life Events error: ${leErr.message}`);
     }
     if (item.works && item.works.length > 0) {
@@ -1096,7 +1096,7 @@ async function seedBatch1() {
         link_url: '#',
         order_index: w.sort_order || idx + 1
       }));
-      const { error: wErr } = await supabase.from('works_warga').insert(wPayload);
+      const { error: wErr } = await supabase.from('works_warga_demo1').insert(wPayload);
       if (wErr) console.warn(`   ⚠️ Works error: ${wErr.message}`);
     }
 
@@ -1113,7 +1113,7 @@ async function seedBatch1() {
         link_url: art.source_url || art.link_url || '#',
         order_index: art.sort_order || idx + 1
       }));
-      const { error: artErr } = await supabase.from('articles_warga').insert(artPayload);
+      const { error: artErr } = await supabase.from('articles_warga_demo1').insert(artPayload);
       if (artErr) console.warn(`   ⚠️ Articles error: ${artErr.message}`);
     }
 

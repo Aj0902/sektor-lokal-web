@@ -32,7 +32,7 @@ function WargaLokalArchiveContent() {
       try {
         const supabase = createClient();
         const { data, error } = await supabase
-          .from('profiles_warga')
+          .from('profiles_warga_demo1')
           .select('*')
           .order('name', { ascending: true });
         

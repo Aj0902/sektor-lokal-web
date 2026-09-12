@@ -21,8 +21,8 @@ async function check() {
 
   for (const slug of slugs) {
     const { data: p, error } = await supabase
-      .from('profiles_warga')
-      .select('name, title, category, quote, bio_paragraphs, gallery_warga(*), initiatives_warga(*), life_events_warga(*), works_warga(*)')
+      .from('profiles_warga_demo1')
+      .select('name, title, category, quote, bio_paragraphs, gallery_warga_demo1(*), initiatives_warga_demo1(*), life_events_warga_demo1(*), works_warga_demo1(*)')
       .eq('slug', slug)
       .single();
 
@@ -37,16 +37,16 @@ async function check() {
     console.log(`💬 QUOTE: "${p.quote}"`);
     console.log(`📝 BIO PARAGRAF COUNT: ${p.bio_paragraphs?.length || 0} Paragraf Tempo Style`);
     console.log(`   Paragraf 1: ${p.bio_paragraphs?.[0] ? p.bio_paragraphs[0].substring(0, 120) + '...' : '-'}`);
-    console.log(`⏳ PERJALANAN HIDUP (Linimasa): ${p.life_events_warga?.length || 0} Tonggak Sejarah`);
-    if (p.life_events_warga) {
-      p.life_events_warga.forEach((le, idx) => {
+    console.log(`⏳ PERJALANAN HIDUP (Linimasa): ${p.life_events_warga_demo1?.length || 0} Tonggak Sejarah`);
+    if (p.life_events_warga_demo1) {
+      p.life_events_warga_demo1.forEach((le, idx) => {
         console.log(`   [${le.year_range}] ${le.title} -> ${le.description}`);
       });
     }
-    console.log(`📸 FOTO GALLERY (Si Mael): ${p.gallery_warga?.length || 0} Foto HD Terkurasi`);
-    console.log(`🛍️ INISIATIF/PRODUK (Bang Marko): ${p.initiatives_warga?.length || 0} Item Terkurasi`);
-    if (p.initiatives_warga) {
-      p.initiatives_warga.forEach((ini, idx) => {
+    console.log(`📸 FOTO GALLERY (Si Mael): ${p.gallery_warga_demo1?.length || 0} Foto HD Terkurasi`);
+    console.log(`🛍️ INISIATIF/PRODUK (Bang Marko): ${p.initiatives_warga_demo1?.length || 0} Item Terkurasi`);
+    if (p.initiatives_warga_demo1) {
+      p.initiatives_warga_demo1.forEach((ini, idx) => {
         console.log(`   ${idx + 1}. ${ini.title} [${ini.category}] -> ${ini.link_url}`);
       });
     }

@@ -26,7 +26,7 @@ export default function DiscoveryLensClientView({ lens }: DiscoveryLensClientVie
       try {
         const supabase = createClient();
         const { data, error } = await supabase
-          .from('profiles_warga')
+          .from('profiles_warga_demo1')
           .select('*')
           .eq('category', lens.name)
           .order('name', { ascending: true });

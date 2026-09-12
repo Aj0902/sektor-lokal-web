@@ -11,7 +11,7 @@ export async function getAllBrandProfiles(): Promise<BrandProfile[]> {
   try {
     const supabase = createClient();
     const { data, error } = await supabase
-      .from('profiles_brand')
+      .from('profiles_brand_demo1')
       .select('*')
       .order('name', { ascending: true });
 
@@ -62,7 +62,7 @@ export async function getBrandFullData(slug: string): Promise<BrandProfile> {
   try {
     const supabase = createClient();
     const { data: prof, error: pError } = await supabase
-      .from('profiles_brand')
+      .from('profiles_brand_demo1')
       .select('*')
       .eq('slug', slug)
       .single();
@@ -70,8 +70,8 @@ export async function getBrandFullData(slug: string): Promise<BrandProfile> {
     if (prof && !pError) {
       const bId = prof.id;
       const [msRes, prRes] = await Promise.allSettled([
-        supabase.from('milestones_brand').select('*').eq('brand_id', bId).order('order_index'),
-        supabase.from('products_brand').select('*').eq('brand_id', bId).order('order_index'),
+        supabase.from('milestones_brand_demo1').select('*').eq('brand_id', bId).order('order_index'),
+        supabase.from('products_brand_demo1').select('*').eq('brand_id', bId).order('order_index'),
       ]);
 
       const milestones: BrandMilestone[] = (msRes.status === 'fulfilled' && msRes.value?.data)
@@ -143,9 +143,9 @@ export async function saveBrandData(brand: BrandProfile): Promise<{ success: boo
   try {
     const supabase = createClient();
 
-    // 1. Upsert profiles_brand
+    // 1. Upsert profiles_brand_demo1
     const { data: upserted, error: pErr } = await supabase
-      .from('profiles_brand')
+      .from('profiles_brand_demo1')
       .upsert({
         slug: brand.slug,
         name: brand.name,
@@ -174,7 +174,7 @@ export async function saveBrandData(brand: BrandProfile): Promise<{ success: boo
     const brandId = upserted.id;
 
     // 2. Save Milestones
-    await supabase.from('milestones_brand').delete().eq('brand_id', brandId);
+    await supabase.from('milestones_brand_demo1').delete().eq('brand_id', brandId);
     if (brand.milestones && brand.milestones.length > 0) {
       const msRows = brand.milestones.map((m, idx) => ({
         brand_id: brandId,
@@ -183,11 +183,11 @@ export async function saveBrandData(brand: BrandProfile): Promise<{ success: boo
         description: m.description,
         order_index: idx
       }));
-      await supabase.from('milestones_brand').insert(msRows);
+      await supabase.from('milestones_brand_demo1').insert(msRows);
     }
 
     // 3. Save Products
-    await supabase.from('products_brand').delete().eq('brand_id', brandId);
+    await supabase.from('products_brand_demo1').delete().eq('brand_id', brandId);
     if (brand.flagshipProducts && brand.flagshipProducts.length > 0) {
       const prodRows = brand.flagshipProducts.map((p, idx) => ({
         brand_id: brandId,
@@ -200,7 +200,7 @@ export async function saveBrandData(brand: BrandProfile): Promise<{ success: boo
         category: p.category || (idx === 0 ? 'Karya Utama' : 'Koleksi Pilihan'),
         order_index: idx
       }));
-      await supabase.from('products_brand').insert(prodRows);
+      await supabase.from('products_brand_demo1').insert(prodRows);
     }
 
     return { success: true, message: `Berkas brand "${brand.name}" berhasil disimpan ke database!` };
@@ -212,7 +212,7 @@ export async function saveBrandData(brand: BrandProfile): Promise<{ success: boo
 export async function deleteBrandBySlug(slug: string): Promise<{ success: boolean; message: string }> {
   try {
     const supabase = createClient();
-    const { error } = await supabase.from('profiles_brand').delete().eq('slug', slug);
+    const { error } = await supabase.from('profiles_brand_demo1').delete().eq('slug', slug);
     if (error) throw error;
     delete brandProfiles[slug];
     return { success: true, message: 'Berkas brand berhasil dihapus.' };

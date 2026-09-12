@@ -14,8 +14,8 @@ envFile.split('\n').forEach(line => {
 const supabase = createClient(env.NEXT_PUBLIC_SUPABASE_URL, env.NEXT_PUBLIC_SUPABASE_ANON_KEY);
 
 async function check() {
-  const { data: p } = await supabase.from('profiles_warga').select('id, name').eq('slug', 'najwa-shihab').single();
-  const { data: events, error } = await supabase.from('life_events_warga').select('*').eq('profile_id', p.id);
+  const { data: p } = await supabase.from('profiles_warga_demo1').select('id, name').eq('slug', 'najwa-shihab').single();
+  const { data: events, error } = await supabase.from('life_events_warga_demo1').select('*').eq('profile_id', p.id);
   console.log('Najwa Shihab ID:', p.id);
   console.log('Najwa Shihab life events count:', events?.length);
   console.log('Events Data:', events);

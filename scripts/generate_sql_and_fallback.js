@@ -156,17 +156,17 @@ files.forEach(file => {
   let sql = `-- SQL Batch for ${laciName}\nBEGIN;\n\n`;
 
   figures.forEach(p => {
-    // 1. Upsert / Update profiles_warga
+    // 1. Upsert / Update profiles_warga_demo1
     sql += `-- Figure: ${p.name} (${p.slug})\n`;
     sql += `DO $$ \n`;
     sql += `DECLARE \n`;
     sql += `  v_profile_id UUID;\n`;
     sql += `BEGIN \n`;
     sql += `  -- Check if profile exists by slug\n`;
-    sql += `  SELECT id INTO v_profile_id FROM profiles_warga WHERE slug = ${esc(p.slug)} LIMIT 1;\n`;
+    sql += `  SELECT id INTO v_profile_id FROM profiles_warga_demo1 WHERE slug = ${esc(p.slug)} LIMIT 1;\n`;
     sql += `  \n`;
     sql += `  IF v_profile_id IS NOT NULL THEN\n`;
-    sql += `    UPDATE profiles_warga SET\n`;
+    sql += `    UPDATE profiles_warga_demo1 SET\n`;
     sql += `      name = ${esc(p.name)},\n`;
     sql += `      title = ${esc(p.title)},\n`;
     sql += `      category = ${esc(p.category)},\n`;
@@ -176,22 +176,22 @@ files.forEach(file => {
     sql += `      verified = true\n`;
     sql += `    WHERE id = v_profile_id;\n`;
     sql += `  ELSE\n`;
-    sql += `    INSERT INTO profiles_warga (slug, name, title, category, quote, bio_paragraphs, status_text, verified, photo_url)\n`;
+    sql += `    INSERT INTO profiles_warga_demo1 (slug, name, title, category, quote, bio_paragraphs, status_text, verified, photo_url)\n`;
     sql += `    VALUES (${esc(p.slug)}, ${esc(p.name)}, ${esc(p.title)}, ${esc(p.category)}, ${esc(p.quote)}, ${escArray(p.bio_paragraphs)}, 'VERIFIKASI TERKURASI', true, 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80')\n`;
     sql += `    RETURNING id INTO v_profile_id;\n`;
     sql += `  END IF;\n\n`;
 
     // 2. Clear old children
-    sql += `  DELETE FROM life_events_warga WHERE profile_id = v_profile_id;\n`;
-    sql += `  DELETE FROM works_warga WHERE profile_id = v_profile_id;\n`;
-    sql += `  DELETE FROM articles_warga WHERE profile_id = v_profile_id;\n`;
-    sql += `  DELETE FROM initiatives_warga WHERE profile_id = v_profile_id;\n`;
-    sql += `  DELETE FROM testimonials_warga WHERE profile_id = v_profile_id;\n\n`;
+    sql += `  DELETE FROM life_events_warga_demo1 WHERE profile_id = v_profile_id;\n`;
+    sql += `  DELETE FROM works_warga_demo1 WHERE profile_id = v_profile_id;\n`;
+    sql += `  DELETE FROM articles_warga_demo1 WHERE profile_id = v_profile_id;\n`;
+    sql += `  DELETE FROM initiatives_warga_demo1 WHERE profile_id = v_profile_id;\n`;
+    sql += `  DELETE FROM testimonials_warga_demo1 WHERE profile_id = v_profile_id;\n\n`;
 
     // 3. Insert life events
     if (p.lifeEvents && p.lifeEvents.length > 0) {
       p.lifeEvents.forEach((le, idx) => {
-        sql += `  INSERT INTO life_events_warga (profile_id, year_range, title, description, order_index)\n`;
+        sql += `  INSERT INTO life_events_warga_demo1 (profile_id, year_range, title, description, order_index)\n`;
         sql += `  VALUES (v_profile_id, ${esc(le.year_range)}, ${esc(le.title)}, ${esc(le.description)}, ${idx + 1});\n`;
       });
     }
@@ -199,7 +199,7 @@ files.forEach(file => {
     // 4. Insert works
     if (p.works && p.works.length > 0) {
       p.works.forEach((w, idx) => {
-        sql += `  INSERT INTO works_warga (profile_id, title, category, description, link_url, order_index)\n`;
+        sql += `  INSERT INTO works_warga_demo1 (profile_id, title, category, description, link_url, order_index)\n`;
         sql += `  VALUES (v_profile_id, ${esc(w.title)}, ${esc(w.category)}, ${esc(w.description)}, ${esc(w.link_url || '#')}, ${idx + 1});\n`;
       });
     }
@@ -208,7 +208,7 @@ files.forEach(file => {
     if (p.articles && p.articles.length > 0) {
       p.articles.forEach((a, idx) => {
         const articleSlug = `/artikel/${p.slug}-${idx + 1}`;
-        sql += `  INSERT INTO articles_warga (profile_id, title, tag, read_time, description, content_full, link_url, order_index)\n`;
+        sql += `  INSERT INTO articles_warga_demo1 (profile_id, title, tag, read_time, description, content_full, link_url, order_index)\n`;
         sql += `  VALUES (v_profile_id, ${esc(a.title)}, ${esc(a.tag)}, ${esc(a.read_time)}, ${esc(a.description)}, ${esc(a.content_full)}, ${esc(articleSlug)}, ${idx + 1});\n`;
       });
     }
@@ -217,7 +217,7 @@ files.forEach(file => {
     if (p.works && p.works.length > 0) {
       p.works.slice(0, 2).forEach((w, idx) => {
         const estPrice = getEstimatedPrice(p, w);
-        sql += `  INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)\n`;
+        sql += `  INSERT INTO initiatives_warga_demo1 (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)\n`;
         sql += `  VALUES (v_profile_id, ${esc(w.title)}, ${esc(w.category)}, ${esc(w.description)}, ${esc(estPrice)}, 'Dukung Inisiatif', ${esc(w.link_url || '#')}, 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', ${idx + 1});\n`;
       });
     }
@@ -232,14 +232,14 @@ files.forEach(file => {
 });
 
 // Generate all_initiatives_clean.sql
-let initSql = `BEGIN;\nDELETE FROM initiatives_warga;\nDELETE FROM testimonials_warga;\n\n`;
+let initSql = `BEGIN;\nDELETE FROM initiatives_warga_demo1;\nDELETE FROM testimonials_warga_demo1;\n\n`;
 allTokoh.forEach(p => {
   if (p.works && p.works.length > 0) {
     p.works.slice(0, 2).forEach((w, idx) => {
       const estPrice = getEstimatedPrice(p, w);
-      initSql += `INSERT INTO initiatives_warga (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)\n`;
+      initSql += `INSERT INTO initiatives_warga_demo1 (profile_id, title, category, description, price, action_text, link_url, image_url, order_index)\n`;
       initSql += `SELECT p.id, ${esc(w.title)}, ${esc(w.category)}, ${esc(w.description)}, ${esc(estPrice)}, 'Dukung Inisiatif', ${esc(w.link_url || '#')}, 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80', ${idx + 1}\n`;
-      initSql += `FROM profiles_warga p WHERE p.slug = ${esc(p.slug)};\n\n`;
+      initSql += `FROM profiles_warga_demo1 p WHERE p.slug = ${esc(p.slug)};\n\n`;
     });
   }
 });

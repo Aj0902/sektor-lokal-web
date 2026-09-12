@@ -5,7 +5,7 @@ const key = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZi
 const supabase = createClient(url, key);
 
 async function check() {
-  const tables = ['profiles_warga', 'life_events_warga', 'works_warga', 'articles_warga', 'gallery_warga', 'initiatives_warga', 'testimonials_warga'];
+  const tables = ['profiles_warga_demo1', 'life_events_warga_demo1', 'works_warga_demo1', 'articles_warga_demo1', 'gallery_warga_demo1', 'initiatives_warga_demo1', 'testimonials_warga_demo1'];
   for (const t of tables) {
     const { count, error } = await supabase.from(t).select('*', { count: 'exact', head: true });
     console.log('Table ' + t + ': count = ' + count + ', error = ' + (error ? error.message : 'none'));

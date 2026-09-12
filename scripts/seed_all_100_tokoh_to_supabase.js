@@ -106,7 +106,7 @@ async function seedAll() {
 
       // 2. Upsert Profile
       const { data: upsertedProf, error: profErr } = await supabase
-        .from('profiles_warga')
+        .from('profiles_warga_demo1')
         .upsert(profilePayload, { onConflict: 'slug' })
         .select()
         .single();
@@ -147,8 +147,8 @@ async function seedAll() {
         }
       ];
 
-      await supabase.from('life_events_warga').delete().eq('profile_id', pId);
-      const { error: leErr } = await supabase.from('life_events_warga').insert(lifeEventsData);
+      await supabase.from('life_events_warga_demo1').delete().eq('profile_id', pId);
+      const { error: leErr } = await supabase.from('life_events_warga_demo1').insert(lifeEventsData);
       if (!leErr) totalLifeEventsUpserted += lifeEventsData.length;
 
       // 4. Upsert Works (2 Works)
@@ -173,8 +173,8 @@ async function seedAll() {
         }
       ];
 
-      await supabase.from('works_warga').delete().eq('profile_id', pId);
-      const { error: wrkErr } = await supabase.from('works_warga').insert(worksData);
+      await supabase.from('works_warga_demo1').delete().eq('profile_id', pId);
+      const { error: wrkErr } = await supabase.from('works_warga_demo1').insert(worksData);
       if (!wrkErr) totalWorksUpserted += worksData.length;
 
       // 5. Upsert Articles (All Extracted Articles)
@@ -191,8 +191,8 @@ async function seedAll() {
           order_index: aIdx + 1
         }));
 
-        await supabase.from('articles_warga').delete().eq('profile_id', pId);
-        const { error: artErr } = await supabase.from('articles_warga').insert(articlesPayload);
+        await supabase.from('articles_warga_demo1').delete().eq('profile_id', pId);
+        const { error: artErr } = await supabase.from('articles_warga_demo1').insert(articlesPayload);
         if (!artErr) totalArticlesUpserted += articlesPayload.length;
       }
 
@@ -206,8 +206,8 @@ async function seedAll() {
           order_index: gIdx + 1
         }));
 
-        await supabase.from('gallery_warga').delete().eq('profile_id', pId);
-        const { error: galErr } = await supabase.from('gallery_warga').insert(galleryPayload);
+        await supabase.from('gallery_warga_demo1').delete().eq('profile_id', pId);
+        const { error: galErr } = await supabase.from('gallery_warga_demo1').insert(galleryPayload);
         if (!galErr) totalGalleryUpserted += galleryPayload.length;
       }
 
@@ -226,8 +226,8 @@ async function seedAll() {
           order_index: pIdx + 1
         }));
 
-        await supabase.from('initiatives_warga').delete().eq('profile_id', pId);
-        const { error: iniErr } = await supabase.from('initiatives_warga').insert(initiativesPayload);
+        await supabase.from('initiatives_warga_demo1').delete().eq('profile_id', pId);
+        const { error: iniErr } = await supabase.from('initiatives_warga_demo1').insert(initiativesPayload);
         if (!iniErr) totalInitiativesUpserted += initiativesPayload.length;
       }
 
@@ -251,8 +251,8 @@ async function seedAll() {
         }
       ];
 
-      await supabase.from('testimonials_warga').delete().eq('profile_id', pId);
-      await supabase.from('testimonials_warga').insert(testPayload);
+      await supabase.from('testimonials_warga_demo1').delete().eq('profile_id', pId);
+      await supabase.from('testimonials_warga_demo1').insert(testPayload);
 
       console.log(`   ✅ [${figIdx + 1}/10] ${fig.name} (/${slug}) -> ${(fig.articles || []).length} artikel, ${(fig.images || []).length} foto, ${(fig.products || []).length} produk`);
     }

@@ -8,7 +8,7 @@ const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 async function match() {
-  const { data: dbProfiles, error } = await supabase.from('profiles_warga').select('id, slug, name, category');
+  const { data: dbProfiles, error } = await supabase.from('profiles_warga_demo1').select('id, slug, name, category');
   if (error) {
     console.error('Supabase error:', error);
     return;

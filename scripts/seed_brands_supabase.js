@@ -13,9 +13,9 @@ async function seed() {
   console.log('Seeding 60 brands into Supabase...');
 
   for (const [slug, brand] of Object.entries(brandProfiles)) {
-    // 1. Upsert profiles_brand
+    // 1. Upsert profiles_brand_demo1
     const { data: prof, error: pErr } = await supabase
-      .from('profiles_brand')
+      .from('profiles_brand_demo1')
       .upsert({
         slug: brand.slug,
         name: brand.name,
@@ -44,7 +44,7 @@ async function seed() {
     const brandId = prof.id;
 
     // 2. Delete and insert milestones
-    await supabase.from('milestones_brand').delete().eq('brand_id', brandId);
+    await supabase.from('milestones_brand_demo1').delete().eq('brand_id', brandId);
     if (brand.milestones && brand.milestones.length > 0) {
       const msRows = brand.milestones.map((m, idx) => ({
         brand_id: brandId,
@@ -53,12 +53,12 @@ async function seed() {
         description: m.description,
         order_index: idx
       }));
-      const { error: mErr } = await supabase.from('milestones_brand').insert(msRows);
+      const { error: mErr } = await supabase.from('milestones_brand_demo1').insert(msRows);
       if (mErr) console.error('Error inserting milestones:', brand.slug, mErr);
     }
 
     // 3. Delete and insert products
-    await supabase.from('products_brand').delete().eq('brand_id', brandId);
+    await supabase.from('products_brand_demo1').delete().eq('brand_id', brandId);
     if (brand.flagshipProducts && brand.flagshipProducts.length > 0) {
       const prodRows = brand.flagshipProducts.map((p, idx) => {
         let actionText = 'Beli di Toko Resmi';
@@ -83,7 +83,7 @@ async function seed() {
         };
       });
 
-      const { error: prErr } = await supabase.from('products_brand').insert(prodRows);
+      const { error: prErr } = await supabase.from('products_brand_demo1').insert(prodRows);
       if (prErr) console.error('Error inserting products:', brand.slug, prErr);
     }
 

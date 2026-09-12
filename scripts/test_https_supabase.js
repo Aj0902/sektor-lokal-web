@@ -6,7 +6,7 @@ const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS
 const options = {
   hostname: 'urauzxjgaaymjnfulxdb.supabase.co',
   port: 443,
-  path: '/rest/v1/profiles_warga?select=slug,name&limit=5',
+  path: '/rest/v1/profiles_warga_demo1?select=slug,name&limit=5',
   method: 'GET',
   rejectUnauthorized: false,
   headers: {

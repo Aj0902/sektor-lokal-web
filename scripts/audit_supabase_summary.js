@@ -15,7 +15,7 @@ const supabase = createClient(env.NEXT_PUBLIC_SUPABASE_URL, env.NEXT_PUBLIC_SUPA
 
 async function main() {
   const { data: profiles, error } = await supabase
-    .from('profiles_warga')
+    .from('profiles_warga_demo1')
     .select('*')
     .limit(5);
 
@@ -23,10 +23,10 @@ async function main() {
     console.error('Error fetching profiles:', error);
     return;
   }
-  console.log('Columns in profiles_warga:', Object.keys(profiles[0] || {}));
+  console.log('Columns in profiles_warga_demo1:', Object.keys(profiles[0] || {}));
 
   const { data: allProfiles } = await supabase
-    .from('profiles_warga')
+    .from('profiles_warga_demo1')
     .select('id, slug, name, category, verified');
 
   const catMap = {};
@@ -40,8 +40,8 @@ async function main() {
 
   // Test sample 1 profile with child relations
   const { data: sample, error: sampleErr } = await supabase
-    .from('profiles_warga')
-    .select('name, slug, category, gallery_warga(*), articles_warga(*), initiatives_warga(*), life_events_warga(*), works_warga(*)')
+    .from('profiles_warga_demo1')
+    .select('name, slug, category, gallery_warga_demo1(*), articles_warga_demo1(*), initiatives_warga_demo1(*), life_events_warga_demo1(*), works_warga_demo1(*)')
     .eq('slug', 'ferry-irwandi')
     .single();
 
@@ -51,11 +51,11 @@ async function main() {
       name: sample.name,
       slug: sample.slug,
       category: sample.category,
-      gallery_count: sample.gallery_warga?.length || 0,
-      articles_count: sample.articles_warga?.length || 0,
-      initiatives_count: sample.initiatives_warga?.length || 0,
-      life_events_count: sample.life_events_warga?.length || 0,
-      works_count: sample.works_warga?.length || 0,
+      gallery_count: sample.gallery_warga_demo1?.length || 0,
+      articles_count: sample.articles_warga_demo1?.length || 0,
+      initiatives_count: sample.initiatives_warga_demo1?.length || 0,
+      life_events_count: sample.life_events_warga_demo1?.length || 0,
+      works_count: sample.works_warga_demo1?.length || 0,
     });
   }
 }

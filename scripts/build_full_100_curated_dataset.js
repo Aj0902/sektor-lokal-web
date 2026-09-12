@@ -575,7 +575,7 @@ async function runFull100Curation() {
       };
 
       const { data: profileRecord, error: pErr } = await supabase
-        .from('profiles_warga')
+        .from('profiles_warga_demo1')
         .upsert(profilePayload, { onConflict: 'slug' })
         .select('id')
         .single();
@@ -588,11 +588,11 @@ async function runFull100Curation() {
       const pId = profileRecord.id;
 
       // Bersihkan Child Tables sebelum diisi data presisi baru
-      await supabase.from('gallery_warga').delete().eq('profile_id', pId);
-      await supabase.from('initiatives_warga').delete().eq('profile_id', pId);
-      await supabase.from('life_events_warga').delete().eq('profile_id', pId);
-      await supabase.from('works_warga').delete().eq('profile_id', pId);
-      await supabase.from('articles_warga').delete().eq('profile_id', pId);
+      await supabase.from('gallery_warga_demo1').delete().eq('profile_id', pId);
+      await supabase.from('initiatives_warga_demo1').delete().eq('profile_id', pId);
+      await supabase.from('life_events_warga_demo1').delete().eq('profile_id', pId);
+      await supabase.from('works_warga_demo1').delete().eq('profile_id', pId);
+      await supabase.from('articles_warga_demo1').delete().eq('profile_id', pId);
 
       // Insert Gallery (3-4 foto)
       if (photos.length > 0) {
@@ -603,7 +603,7 @@ async function runFull100Curation() {
           image_url: p.image_url,
           order_index: p.order_index
         }));
-        await supabase.from('gallery_warga').insert(galPayload);
+        await supabase.from('gallery_warga_demo1').insert(galPayload);
       }
 
       // Insert Initiatives (2-3 inisiatif)
@@ -620,7 +620,7 @@ async function runFull100Curation() {
           link_url: ini.link_url,
           order_index: ini.order_index
         }));
-        await supabase.from('initiatives_warga').insert(iniPayload);
+        await supabase.from('initiatives_warga_demo1').insert(iniPayload);
       }
 
       // Insert Life Events (year_range)
@@ -633,7 +633,7 @@ async function runFull100Curation() {
           description: le.description,
           order_index: le.order_index
         }));
-        await supabase.from('life_events_warga').insert(lePayload);
+        await supabase.from('life_events_warga_demo1').insert(lePayload);
       }
 
       // Insert Works
@@ -647,7 +647,7 @@ async function runFull100Curation() {
           link_url: w.link_url,
           order_index: w.order_index
         }));
-        await supabase.from('works_warga').insert(wPayload);
+        await supabase.from('works_warga_demo1').insert(wPayload);
       }
 
       // Insert Articles
@@ -663,7 +663,7 @@ async function runFull100Curation() {
           link_url: art.link_url,
           order_index: art.order_index
         }));
-        await supabase.from('articles_warga').insert(artPayload);
+        await supabase.from('articles_warga_demo1').insert(artPayload);
       }
 
       console.log(`   ✅ [${i + 1}/10] ${raw.name} (/${slug}) -> 4 Paragraf Tempo, ${photos.length} Foto, ${initiatives.length} Inisiatif, ${lifeEvents.length} Linimasa.`);

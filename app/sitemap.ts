@@ -104,7 +104,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   try {
     const supabase = createClient();
     const { data: profiles } = await supabase
-      .from('profiles_warga')
+      .from('profiles_warga_demo1')
       .select('slug, updated_at');
 
     if (profiles && profiles.length > 0) {

@@ -18,7 +18,7 @@ async function getProfileData(slug: string): Promise<FullProfileData> {
   try {
     const supabase = createClient();
     const { data: prof, error: pError } = await supabase
-      .from('profiles_warga')
+      .from('profiles_warga_demo1')
       .select('*')
       .eq('slug', slug)
       .single();
@@ -26,12 +26,12 @@ async function getProfileData(slug: string): Promise<FullProfileData> {
     if (prof && !pError) {
       const pId = prof.id;
       const [life, wrk, art, tst, ini, gal] = await Promise.all([
-        supabase.from('life_events_warga').select('*').eq('profile_id', pId).order('order_index'),
-        supabase.from('works_warga').select('*').eq('profile_id', pId).order('order_index'),
-        supabase.from('articles_warga').select('*').eq('profile_id', pId).order('order_index'),
-        supabase.from('testimonials_warga').select('*').eq('profile_id', pId).order('order_index'),
-        supabase.from('initiatives_warga').select('*').eq('profile_id', pId).order('order_index'),
-        supabase.from('gallery_warga').select('*').eq('profile_id', pId).order('order_index'),
+        supabase.from('life_events_warga_demo1').select('*').eq('profile_id', pId).order('order_index'),
+        supabase.from('works_warga_demo1').select('*').eq('profile_id', pId).order('order_index'),
+        supabase.from('articles_warga_demo1').select('*').eq('profile_id', pId).order('order_index'),
+        supabase.from('testimonials_warga_demo1').select('*').eq('profile_id', pId).order('order_index'),
+        supabase.from('initiatives_warga_demo1').select('*').eq('profile_id', pId).order('order_index'),
+        supabase.from('gallery_warga_demo1').select('*').eq('profile_id', pId).order('order_index'),
       ]);
 
       return {
@@ -122,7 +122,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export async function generateStaticParams() {
   try {
     const supabase = createClient();
-    const { data: profiles } = await supabase.from('profiles_warga').select('slug');
+    const { data: profiles } = await supabase.from('profiles_warga_demo1').select('slug');
     if (profiles && profiles.length > 0) {
       return profiles.map((p) => ({ slug: p.slug }));
     }

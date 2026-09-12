@@ -656,7 +656,7 @@ async function runMasterCuration() {
         });
       }
 
-      // Upsert ke Supabase (Schema sesuai profiles_warga)
+      // Upsert ke Supabase (Schema sesuai profiles_warga_demo1)
       const profilePayload = {
         slug: targetSlug,
         name: raw.name,
@@ -678,7 +678,7 @@ async function runMasterCuration() {
 
       try {
         const { data: upsertedProfile, error: profileErr } = await supabase
-          .from('profiles_warga')
+          .from('profiles_warga_demo1')
           .upsert(profilePayload, { onConflict: 'slug' })
           .select('id, slug')
           .single();
@@ -692,10 +692,10 @@ async function runMasterCuration() {
 
         // Clean and Upsert child tables (Life Events, Gallery, Initiatives, Works)
         await Promise.all([
-          supabase.from('life_events_warga').delete().eq('profile_id', profileId),
-          supabase.from('gallery_warga').delete().eq('profile_id', profileId),
-          supabase.from('initiatives_warga').delete().eq('profile_id', profileId),
-          supabase.from('works_warga').delete().eq('profile_id', profileId)
+          supabase.from('life_events_warga_demo1').delete().eq('profile_id', profileId),
+          supabase.from('gallery_warga_demo1').delete().eq('profile_id', profileId),
+          supabase.from('initiatives_warga_demo1').delete().eq('profile_id', profileId),
+          supabase.from('works_warga_demo1').delete().eq('profile_id', profileId)
         ]);
 
         if (lifeEvents.length > 0) {
@@ -707,7 +707,7 @@ async function runMasterCuration() {
             description: le.description,
             order_index: le.order_index
           }));
-          await supabase.from('life_events_warga').insert(leRows);
+          await supabase.from('life_events_warga_demo1').insert(leRows);
         }
 
         if (gallery.length > 0) {
@@ -718,7 +718,7 @@ async function runMasterCuration() {
             image_url: g.image_url,
             order_index: g.order_index
           }));
-          await supabase.from('gallery_warga').insert(galRows);
+          await supabase.from('gallery_warga_demo1').insert(galRows);
         }
 
         if (initiatives.length > 0) {
@@ -734,7 +734,7 @@ async function runMasterCuration() {
             link_url: inItem.link_url,
             order_index: inItem.order_index
           }));
-          await supabase.from('initiatives_warga').insert(initRows);
+          await supabase.from('initiatives_warga_demo1').insert(initRows);
         }
 
         if (works.length > 0) {
@@ -747,7 +747,7 @@ async function runMasterCuration() {
             link_url: w.link_url,
             order_index: w.order_index
           }));
-          await supabase.from('works_warga').insert(wRows);
+          await supabase.from('works_warga_demo1').insert(wRows);
         }
 
         totalSuccess++;

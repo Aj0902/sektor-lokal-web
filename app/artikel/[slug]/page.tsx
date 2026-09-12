@@ -57,7 +57,7 @@ export default function ArticleDetailPage() {
         const supabase = createClient();
         
         // Fetch all articles from Supabase to find best slug match
-        const { data: articles, error } = await supabase.from('articles_warga').select('*');
+        const { data: articles, error } = await supabase.from('articles_warga_demo1').select('*');
         
         if (articles && articles.length > 0 && !error) {
           const cleanRawSlug = decodeURIComponent(rawSlug).toLowerCase().trim().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-');
@@ -80,7 +80,7 @@ export default function ArticleDetailPage() {
             let authorSlug = "ferry-irwandi";
 
             if (matched.profile_id) {
-              const { data: prof } = await supabase.from('profiles_warga').select('*').eq('id', matched.profile_id).single();
+              const { data: prof } = await supabase.from('profiles_warga_demo1').select('*').eq('id', matched.profile_id).single();
               if (prof) {
                 authorName = prof.name || authorName;
                 authorTitle = prof.title || authorTitle;
